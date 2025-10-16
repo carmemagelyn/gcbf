@@ -804,29 +804,7 @@ const sharedPrayers = ref([
 
 const ministryReports = ref([
   {
-    name: 'Children\'s Ministry',
-    participants: 65,
-    budget: 2500,
-    spent: 2100,
-    updates: [
-      'VBS planning is underway for next summer',
-      'New volunteer training scheduled for November',
-      'Added 8 new children this month'
-    ]
-  },
-  {
-    name: 'Youth Ministry',
-    participants: 45,
-    budget: 3200,
-    spent: 2800,
-    updates: [
-      'Fall retreat was a huge success with 38 attendees',
-      'Planning Christmas service project',
-      'Youth band is preparing special Christmas music'
-    ]
-  },
-  {
-    name: 'Worship Ministry',
+    name: 'Worship',
     participants: 25,
     budget: 1800,
     spent: 1400,
@@ -837,7 +815,29 @@ const ministryReports = ref([
     ]
   },
   {
-    name: 'Missions Ministry',
+    name: 'Bible Night Class',
+    participants: 85,
+    budget: 800,
+    spent: 650,
+    updates: [
+      'New Bible study series on Romans started',
+      'Wednesday night attendance up 20%',
+      'Study materials for next quarter ordered'
+    ]
+  },
+  {
+    name: 'Small Groups',
+    participants: 40,
+    budget: 1200,
+    spent: 950,
+    updates: [
+      'Started 3 new small groups this month',
+      'Leadership training scheduled for November',
+      'Small group curriculum for Q1 2026 selected'
+    ]
+  },
+  {
+    name: 'Mission',
     participants: 30,
     budget: 4200,
     spent: 3900,
@@ -845,28 +845,6 @@ const ministryReports = ref([
       'Supported 3 new missionaries this month',
       'Guatemala mission trip raised ₱8,000',
       'Local food bank partnership established'
-    ]
-  },
-  {
-    name: 'Adult Education',
-    participants: 85,
-    budget: 800,
-    spent: 650,
-    updates: [
-      'New Bible study series on Romans started',
-      'Men\'s breakfast attendance up 20%',
-      'Women\'s retreat planning in progress'
-    ]
-  },
-  {
-    name: 'Community Outreach',
-    participants: 40,
-    budget: 2000,
-    spent: 1750,
-    updates: [
-      'Served 150 families at food distribution',
-      'Partnered with local homeless shelter',
-      'Community garden project launched'
     ]
   }
 ])

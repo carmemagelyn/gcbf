@@ -23,11 +23,16 @@ const handleLogout = () => {
   logout()
   router.push('/')
 }
+
+const handleLogin = (loggedInUser) => {
+  // The user state will automatically update via the computed property
+  // No need to do anything here as auth.js handles localStorage
+}
 </script>
 
 <template>
   <div id="app">
-    <Navbar v-if="showNavbar" :user="user" @logout="handleLogout" />
+    <Navbar v-if="showNavbar" :user="user" @logout="handleLogout" @login="handleLogin" />
     <main>
       <router-view />
     </main>
