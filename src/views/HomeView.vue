@@ -7,7 +7,7 @@
           <div class="col-lg-6">
             <h1 class="display-4 fw-bold mb-4">Welcome to Graced Community Bible Fellowship</h1>
             <p class="lead mb-4">
-              Shaped by the Potter's love to live out His Kingdom purpose through Jesus Christ and the work of the Holy Spirit.
+              Shaped by the Potter’s love to live out His Kingdom purpose through Jesus Christ by the work of the Holy Spirit.
             </p>
 
             <div class="d-flex gap-3">
@@ -313,7 +313,7 @@ const monthlyNewsletters = ref([
     excerpt: 'Celebrating God\'s abundant harvest with thanksgiving, community service, and special events throughout October.',
     issueNumber: 22,
     pageCount: 12,
-    publishedBy: 'Pastor Michael',
+    publishedBy: 'Pastor John Louie Berdejo',
     coverImage: '/newsletter-covers/october-2025.jpg', // Would be uploaded by admin
     downloadUrl: '/newsletters/october-2025.pdf', // PDF file uploaded by admin
     highlights: [
@@ -331,7 +331,7 @@ const monthlyNewsletters = ref([
       <p>We're organizing a community food drive throughout October to help local families in need. Please bring non-perishable items to any of our services. Our goal is to collect 1,000 items this month!</p>
       
       <h5>New Member Classes</h5>
-      <p>Starting in November, we'll be offering new member orientation classes. If you're interested in officially joining our church family, please speak with Pastor Michael or register through our church portal.</p>
+      <p>Starting in November, we'll be offering new member orientation classes. If you're interested in officially joining our church family, please speak with Pastor John Louie Berdejo or register through our church portal.</p>
       
       <h5>Upcoming Events</h5>
       <ul>
@@ -349,7 +349,7 @@ const monthlyNewsletters = ref([
     excerpt: 'Starting the new season with renewed faith, education ministry updates, and preparing for fall activities.',
     issueNumber: 21,
     pageCount: 10,
-    publishedBy: 'Pastor Michael',
+    publishedBy: 'Pastor John Louie Berdejo',
     coverImage: '/newsletter-covers/september-2025.jpg',
     downloadUrl: '/newsletters/september-2025.pdf',
     highlights: [
@@ -374,7 +374,7 @@ const monthlyNewsletters = ref([
     excerpt: 'Reflecting on a wonderful summer of ministry, missions, and memorable moments in our church family.',
     issueNumber: 20,
     pageCount: 14,
-    publishedBy: 'Pastor Michael',
+    publishedBy: 'Pastor John Louie Berdejo',
     coverImage: '/newsletter-covers/august-2025.jpg',
     downloadUrl: '/newsletters/august-2025.pdf',
     highlights: [

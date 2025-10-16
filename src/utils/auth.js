@@ -28,7 +28,7 @@ export const initializeDemoUsers = () => {
         id: '3',
         email: 'pastor@gcbf.org',
         password: 'admin123',
-        name: 'Pastor Michael',
+        name: 'Pastor John Louie Berdejo',
         userType: 'pastor',
         joinDate: '2020-06-01'
       },

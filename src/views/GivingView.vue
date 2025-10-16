@@ -605,7 +605,7 @@ const loadGifts = () => {
             receiptUrl: 'data:image/jpeg;base64,sample',
             referenceNumber: '',
             verificationStatus: 'approved',
-            verifiedBy: 'Pastor Michael',
+            verifiedBy: 'Pastor John Louie Berdejo',
             verifiedDate: '2024-10-02',
             notes: 'Paid via GCash'
           },
@@ -736,7 +736,7 @@ const loadGifts = () => {
             receiptUrl: 'data:image/jpeg;base64,sample',
             referenceNumber: '',
             verificationStatus: 'approved',
-            verifiedBy: 'Pastor Michael',
+            verifiedBy: 'Pastor John Louie Berdejo',
             verifiedDate: '2024-10-07',
             notes: 'Paid via PayMaya'
           },

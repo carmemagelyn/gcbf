@@ -778,7 +778,7 @@ const sharedPrayers = ref([
     title: 'Mission Trip Safety',
     category: 'Missions',
     request: 'Our youth mission team is traveling to Guatemala next week. Please pray for their safety and for hearts to be touched.',
-    requestedBy: 'Pastor Michael',
+    requestedBy: 'Pastor John Louie Berdejo',
     dateRequested: '2024-10-10',
     status: 'active'
   },
@@ -858,7 +858,7 @@ const publishedNewsletters = ref([
     excerpt: 'Celebrating God\'s abundant harvest with thanksgiving, community service, and special events throughout October.',
     issueNumber: 22,
     pageCount: 12,
-    publishedBy: 'Pastor Michael',
+    publishedBy: 'Pastor John Louie Berdejo',
     coverImage: '/newsletter-covers/october-2025.jpg',
     downloadUrl: '/newsletters/october-2025.pdf',
     highlights: [
@@ -876,7 +876,7 @@ const publishedNewsletters = ref([
     excerpt: 'Starting the new season with renewed faith, education ministry updates, and preparing for fall activities.',
     issueNumber: 21,
     pageCount: 10,
-    publishedBy: 'Pastor Michael',
+    publishedBy: 'Pastor John Louie Berdejo',
     coverImage: '/newsletter-covers/september-2025.jpg',
     downloadUrl: '/newsletters/september-2025.pdf',
     highlights: [
@@ -894,7 +894,7 @@ const publishedNewsletters = ref([
     excerpt: 'Reflecting on a wonderful summer of ministry, missions, and memorable moments in our church family.',
     issueNumber: 20,
     pageCount: 14,
-    publishedBy: 'Pastor Michael',
+    publishedBy: 'Pastor John Louie Berdejo',
     coverImage: '/newsletter-covers/august-2025.jpg',
     downloadUrl: '/newsletters/august-2025.pdf',
     highlights: [
