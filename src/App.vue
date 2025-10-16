@@ -1,28 +1,22 @@
 <script setup>
 import { computed, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
-import { isAuthenticated, getCurrentUser, logout, initializeDemoUsers, login } from './utils/auth'
+import { isAuthenticated, getCurrentUser, logout, initializeDemoUsers } from './utils/auth'
 import Navbar from './components/Navbar.vue'
 
 const router = useRouter()
 const route = useRoute()
 
 const user = computed(() => getCurrentUser())
-const showNavbar = computed(() => route.name !== 'Login' && route.name !== 'Register')
+const showNavbar = computed(() => 
+  route.name !== 'Login' && 
+  route.name !== 'Register' && 
+  route.name !== 'AdminLogin'
+)
 
-// Auto-login for testing purposes
+// Initialize demo users on mount
 onMounted(() => {
   initializeDemoUsers()
-  
-  // Auto-login with demo user if not already authenticated
-  if (!isAuthenticated()) {
-    const result = login('john.doe@email.com', 'password123')
-    if (result.success) {
-      console.log('Auto-logged in with demo user for testing')
-      // Navigate to giving page to test the functionality
-      router.push('/giving')
-    }
-  }
 })
 
 const handleLogout = () => {
