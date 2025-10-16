@@ -307,34 +307,101 @@
                   </div>
                 </div>
 
-                <!-- Year-to-Date Summary -->
+                <!-- Current Month Trend -->
                 <div class="col-12">
                   <div class="card border-0 shadow-sm">
                     <div class="card-header bg-white border-0">
-                      <h5 class="fw-bold mb-0">Year-to-Date Financial Summary</h5>
+                      <h5 class="fw-bold mb-0">Current Month Financial Trend</h5>
+                      <p class="mb-0 text-muted small">{{ currentMonth }} income vs expenses overview</p>
                     </div>
                     <div class="card-body">
-                      <div class="row g-4">
+                      <div class="row g-4 mb-4">
                         <div class="col-md-4 text-center">
-                          <h3 class="text-success fw-bold">₱{{ ytdIncome.toLocaleString() }}</h3>
-                          <p class="mb-0 text-muted">Total Income</p>
+                          <div class="p-3 rounded bg-success bg-opacity-10">
+                            <h3 class="text-success fw-bold mb-1">₱{{ totalIncome.toLocaleString() }}</h3>
+                            <p class="mb-0 text-muted">Total Income</p>
+                          </div>
                         </div>
                         <div class="col-md-4 text-center">
-                          <h3 class="text-danger fw-bold">₱{{ ytdExpenses.toLocaleString() }}</h3>
-                          <p class="mb-0 text-muted">Total Expenses</p>
+                          <div class="p-3 rounded bg-danger bg-opacity-10">
+                            <h3 class="text-danger fw-bold mb-1">₱{{ totalExpenses.toLocaleString() }}</h3>
+                            <p class="mb-0 text-muted">Total Expenses</p>
+                          </div>
                         </div>
                         <div class="col-md-4 text-center">
-                          <h3 class="fw-bold" :class="ytdNet >= 0 ? 'text-success' : 'text-danger'">
-                            ₱{{ ytdNet.toLocaleString() }}
-                          </h3>
-                          <p class="mb-0 text-muted">Net {{ ytdNet >= 0 ? 'Surplus' : 'Deficit' }}</p>
+                          <div class="p-3 rounded" :class="netIncome >= 0 ? 'bg-success bg-opacity-10' : 'bg-warning bg-opacity-10'">
+                            <h3 class="fw-bold mb-1" :class="netIncome >= 0 ? 'text-success' : 'text-warning'">
+                              ₱{{ Math.abs(netIncome).toLocaleString() }}
+                            </h3>
+                            <p class="mb-0 text-muted">{{ netIncome >= 0 ? 'Surplus' : 'Deficit' }}</p>
+                          </div>
                         </div>
                       </div>
 
-                      <!-- Monthly Trend Chart -->
+                      <!-- Weekly Breakdown -->
                       <div class="mt-4">
-                        <h6 class="fw-bold mb-3">Monthly Trend (Last 6 Months)</h6>
-                        <canvas id="trendChart" style="max-height: 250px;"></canvas>
+                        <h6 class="fw-bold mb-3">Weekly Progress</h6>
+                        <div class="row g-3">
+                          <div class="col-6 col-md-3">
+                            <div class="text-center p-3 border rounded">
+                              <div class="fw-bold text-primary mb-1">Week 1</div>
+                              <div class="small text-muted">₱{{ (totalSundayCollection > 0 ? sundayCollection.first : 0).toLocaleString() }}</div>
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-3">
+                            <div class="text-center p-3 border rounded">
+                              <div class="fw-bold text-primary mb-1">Week 2</div>
+                              <div class="small text-muted">₱{{ (totalSundayCollection > 0 ? sundayCollection.second : 0).toLocaleString() }}</div>
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-3">
+                            <div class="text-center p-3 border rounded">
+                              <div class="fw-bold text-primary mb-1">Week 3</div>
+                              <div class="small text-muted">₱{{ (totalSundayCollection > 0 ? sundayCollection.third : 0).toLocaleString() }}</div>
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-3">
+                            <div class="text-center p-3 border rounded">
+                              <div class="fw-bold text-primary mb-1">Week 4</div>
+                              <div class="small text-muted">₱{{ (totalSundayCollection > 0 ? sundayCollection.fourth : 0).toLocaleString() }}</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Income vs Expenses Progress Bar -->
+                      <div class="mt-4">
+                        <h6 class="fw-bold mb-3">Budget Health</h6>
+                        <div class="d-flex justify-content-between mb-2">
+                          <span class="small">Income</span>
+                          <span class="small fw-bold text-success">₱{{ totalIncome.toLocaleString() }}</span>
+                        </div>
+                        <div class="progress mb-3" style="height: 25px;">
+                          <div class="progress-bar bg-success" :style="{ width: (totalIncome > 0 ? 100 : 0) + '%' }">
+                            {{ totalIncome > 0 ? '100%' : '0%' }}
+                          </div>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between mb-2">
+                          <span class="small">Expenses</span>
+                          <span class="small fw-bold text-danger">₱{{ totalExpenses.toLocaleString() }}</span>
+                        </div>
+                        <div class="progress" style="height: 25px;">
+                          <div class="progress-bar bg-danger" :style="{ width: (totalIncome > 0 ? (totalExpenses / totalIncome * 100) : 0) + '%' }">
+                            {{ totalIncome > 0 ? Math.round(totalExpenses / totalIncome * 100) : 0 }}%
+                          </div>
+                        </div>
+                        <div class="text-center mt-2">
+                          <small class="text-muted">
+                            <i class="bi bi-info-circle me-1"></i>
+                            {{ totalIncome > 0 ? 
+                              (totalExpenses / totalIncome * 100 <= 100 ? 
+                                'Expenses are within budget' : 
+                                'Expenses exceed income') : 
+                              'No income recorded yet' 
+                            }}
+                          </small>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -696,13 +763,51 @@
                       </div>
                     </div>
                     <div class="card-body">
+                      <!-- Ministry Budget Breakdown - At Top -->
+                      <div class="ministry-breakdown mb-4">
+                        <div class="card bg-danger bg-opacity-10 border-0">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                              <div>
+                                <label class="form-label mb-0 fw-bold">
+                                  <i class="bi bi-people me-1"></i>
+                                  Ministry Breakdown
+                                </label>
+                                <small class="d-block text-muted">Ministry spending allocation</small>
+                              </div>
+                              <div class="badge bg-danger fs-6">
+                                Total: ₱{{ totalMinistrySpent.toLocaleString() }}
+                              </div>
+                            </div>
+                            
+                            <div class="row g-3">
+                              <div v-for="ministry in ministryReports" :key="ministry.name" class="col-md-3 col-6">
+                                <label class="form-label small fw-bold">{{ ministry.name }}</label>
+                                <div class="input-group input-group-sm">
+                                  <span class="input-group-text">₱</span>
+                                  <input 
+                                    type="number" 
+                                    class="form-control" 
+                                    v-model.number="ministry.spent"
+                                    :readonly="user?.userType !== 'admin'"
+                                    min="0"
+                                    placeholder="0"
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Other Expense Categories -->
                       <div class="row g-4">
                         <div v-for="(expense, index) in defaultMonthlyExpenses" :key="index" class="col-md-6">
-                          <div class="card bg-danger bg-opacity-10 border-0">
+                          <div v-if="expense.category !== 'Ministries & Programs'" class="card bg-danger bg-opacity-10 border-0">
                             <div class="card-body">
                               <div class="d-flex justify-content-between align-items-center mb-2">
                                 <label class="form-label mb-0 fw-bold">{{ expense.category }}</label>
-                                <button v-if="user?.userType === 'admin' && defaultMonthlyExpenses.length > 1 && expense.category !== 'Ministries & Programs'" 
+                                <button v-if="user?.userType === 'admin' && defaultMonthlyExpenses.length > 1" 
                                   class="btn btn-sm btn-outline-danger" 
                                   @click="removeExpenseCategory(index)"
                                 >
@@ -711,7 +816,7 @@
                               </div>
                               
                               <!-- Regular expense input -->
-                              <div v-if="expense.category !== 'Ministries & Programs'" class="input-group">
+                              <div class="input-group">
                                 <span class="input-group-text">₱</span>
                                 <input 
                                   type="number" 
@@ -720,38 +825,6 @@
                                   :readonly="user?.userType !== 'admin'"
                                   min="0"
                                 >
-                              </div>
-
-                              <!-- Ministries & Programs - Auto-calculated from ministry budgets -->
-                              <div v-else>
-                              
-                           
-
-                                <!-- Ministry Budget Breakdown -->
-                                <div class="ministry-breakdown">
-                                  <small class="text-muted fw-bold d-block mb-2">Ministry Breakdown:</small>
-                                  <div v-for="ministry in ministryReports" :key="ministry.name" class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom">
-                                    <div class="flex-grow-1">
-                                      <small class="fw-bold">{{ ministry.name }}</small>
-                                      <div class="d-flex align-items-center gap-2 mt-1">
-                                        <small class="text-muted">Spent:</small>
-                                        <input 
-                                          v-if="user?.userType === 'admin'"
-                                          type="number" 
-                                          class="form-control form-control-sm" 
-                                          style="width: 100px;"
-                                          v-model.number="ministry.spent"
-                                          min="0"
-                                        >
-                                        <small v-else class="text-danger fw-bold">₱{{ (ministry.spent || 0).toLocaleString() }}</small>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="d-flex justify-content-between align-items-center mt-2 pt-2 border-top">
-                                    <small class="fw-bold">Total Spent:</small>
-                                    <small class="fw-bold text-danger">₱{{ totalMinistrySpent.toLocaleString() }}</small>
-                                  </div>
-                                </div>
                               </div>
                             </div>
                           </div>
@@ -765,10 +838,42 @@
                         </button>
                       </div>
 
-                      <div class="mt-4 p-3 bg-danger bg-opacity-10 rounded">
-                        <div class="d-flex justify-content-between align-items-center">
-                          <h6 class="fw-bold mb-0">Total Monthly Expenses:</h6>
-                          <h5 class="text-danger fw-bold mb-0">₱{{ totalDefaultExpensesWithMinistries.toLocaleString() }}</h5>
+                      <!-- Total Monthly Expenses with Breakdown -->
+                      <div class="mt-4">
+                        <div class="expense-details">
+                          <div v-for="(expense, index) in defaultMonthlyExpenses" :key="expense.category" 
+                               class="expense-item border-bottom pb-3 mb-3"
+                               :class="{ 'border-0 pb-0 mb-0': index === defaultMonthlyExpenses.length - 1 }">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                              <div class="d-flex flex-column">
+                                <span class="fw-bold">{{ expense.category }}</span>
+                                <small v-if="expense.category === 'Ministries & Programs'" class="text-muted">
+                                  <i class="bi bi-people-fill me-1"></i>
+                                  Total Ministry Spent: ₱{{ totalMinistrySpent.toLocaleString() }}
+                                </small>
+                              </div>
+                              <strong class="text-danger fs-5">
+                                ₱{{ (expense.category === 'Ministries & Programs' ? totalMinistrySpent : expense.amount).toLocaleString() }}
+                              </strong>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                              <div class="progress-bar bg-danger" 
+                                   :style="{ width: (((expense.category === 'Ministries & Programs' ? totalMinistrySpent : expense.amount) / totalDefaultExpensesWithMinistries) * 100) + '%' }"
+                                   :title="(((expense.category === 'Ministries & Programs' ? totalMinistrySpent : expense.amount) / totalDefaultExpensesWithMinistries) * 100).toFixed(1) + '%'">
+                              </div>
+                            </div>
+                            <small class="text-muted">
+                              {{ (((expense.category === 'Ministries & Programs' ? totalMinistrySpent : expense.amount) / totalDefaultExpensesWithMinistries) * 100).toFixed(1) }}% of total expenses
+                            </small>
+                          </div>
+                        </div>
+                        
+                        <!-- Total at Bottom -->
+                        <div class="mt-4 pt-3 border-top">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="fw-bold mb-0">Total Monthly Expenses:</h6>
+                            <h4 class="text-danger fw-bold mb-0">₱{{ totalDefaultExpensesWithMinistries.toLocaleString() }}</h4>
+                          </div>
                         </div>
                       </div>
                     </div>

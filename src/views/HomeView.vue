@@ -147,7 +147,7 @@
             </p>
           </div>
         </div>
-        <div class="ratio ratio-21x9 mb-0">
+        <div class="ratio ratio-21x5 mb-0">
           <iframe 
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Twinbee+Print+Ads+Corp,General+Luna+St,Iloilo+City&zoom=15" 
             style="border:0;" 
