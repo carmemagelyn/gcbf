@@ -43,10 +43,10 @@
       
       <div class="collapse navbar-collapse order-lg-1" id="navbarNav">
         <ul class="navbar-nav me-auto">
-          <li v-if="user" class="nav-item">
+          <li v-if="user && user.userType !== 'pastor' && user.userType !== 'admin'" class="nav-item">
             <router-link class="nav-link" to="/dashboard" active-class="active">Dashboard</router-link>
           </li>
-          <li v-if="user" class="nav-item dropdown">
+          <li v-if="user && user.userType !== 'pastor' && user.userType !== 'admin'" class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
               My Activities
             </a>
@@ -56,7 +56,7 @@
               <li><router-link class="dropdown-item" to="/prayer-list">Prayer List</router-link></li>
             </ul>
           </li>
-          <li v-if="user && user.userType === 'member'" class="nav-item">
+          <li v-if="user && (user.userType === 'member' || user.userType === 'pastor' || user.userType === 'admin')" class="nav-item">
             <router-link class="nav-link" to="/church-portal" active-class="active">Church Portal</router-link>
           </li>
         </ul>
@@ -165,7 +165,8 @@
               <div class="demo-creds">
                 <small class="d-block mb-1"><strong>Member:</strong> john.doe@email.com / password123</small>
                 <small class="d-block mb-1"><strong>Visitor:</strong> jane.smith@email.com / password123</small>
-                <small class="d-block"><strong>Pastor:</strong> pastor@gcbf.org / admin123</small>
+                <small class="d-block mb-1"><strong>Pastor:</strong> pastor@gcbf.org / admin123</small>
+                <small class="d-block"><strong>Admin:</strong> admin@gcbf.org / admin2024</small>
               </div>
             </div>
           </div>

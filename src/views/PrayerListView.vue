@@ -90,6 +90,16 @@
                 Confidential ({{ confidentialPrayers.length }})
               </button>
             </li>
+            <li v-if="user?.userType === 'admin' || user?.userType === 'pastor'" class="nav-item">
+              <button 
+                class="nav-link"
+                :class="{ active: activeTab === 'pending' }"
+                @click="activeTab = 'pending'"
+              >
+                Pending Approval
+                <span v-if="pendingPrayers.length > 0" class="badge bg-danger ms-1">{{ pendingPrayers.length }}</span>
+              </button>
+            </li>
           </ul>
 
           <!-- Prayer Content -->
@@ -114,9 +124,17 @@
                           <span class="badge me-2" :class="getCategoryBadgeClass(prayer.category)">
                             {{ prayer.category }}
                           </span>
-                          <span class="badge" :class="getVisibilityBadgeClass(prayer.visibility)">
+                          <span class="badge me-2" :class="getVisibilityBadgeClass(prayer.visibility)">
                             <i :class="getVisibilityIcon(prayer.visibility)" class="me-1"></i>
                             {{ capitalizeFirst(prayer.visibility) }}
+                          </span>
+                          <span v-if="prayer.approved === false && prayer.visibility === 'public'" class="badge bg-warning text-dark">
+                            <i class="bi bi-clock-history me-1"></i>
+                            Pending Approval
+                          </span>
+                          <span v-else-if="prayer.approved === true" class="badge bg-success">
+                            <i class="bi bi-check-circle me-1"></i>
+                            Approved
                           </span>
                         </div>
                         <div class="dropdown">
@@ -253,6 +271,70 @@
                 </div>
               </div>
             </div>
+
+            <!-- Pending Approval Tab (Admin/Pastor Only) -->
+            <div v-if="activeTab === 'pending' && (user?.userType === 'admin' || user?.userType === 'pastor')" class="tab-pane fade show active">
+              <div v-if="pendingPrayers.length === 0" class="text-center py-5">
+                <i class="bi bi-clock-history display-1 opacity-25"></i>
+                <h4 class="mt-3 text-muted">No pending prayers</h4>
+                <p class="text-muted">Prayer requests awaiting approval will appear here</p>
+              </div>
+
+              <div v-else class="row g-4">
+                <div v-for="prayer in pendingPrayers" :key="prayer.id" class="col-lg-6">
+                  <div class="prayer-card card border-0 shadow-sm border-warning">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div>
+                          <span class="badge me-2" :class="getCategoryBadgeClass(prayer.category)">
+                            {{ prayer.category }}
+                          </span>
+                          <span class="badge bg-warning text-dark">
+                            <i class="bi bi-clock-history me-1"></i>
+                            Pending Approval
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-person-circle me-2 church-purple"></i>
+                        <strong>{{ prayer.requestedBy }}</strong>
+                      </div>
+
+                      <p class="card-text mb-3">{{ prayer.request }}</p>
+
+                      <div class="prayer-meta mb-3">
+                        <small class="text-muted d-block mb-1">
+                          <i class="bi bi-calendar me-1"></i>
+                          Submitted: {{ formatDate(prayer.dateRequested) }}
+                        </small>
+                        <small class="text-muted d-block">
+                          <i class="bi bi-eye me-1"></i>
+                          Visibility: {{ capitalizeFirst(prayer.visibility) }}
+                        </small>
+                      </div>
+
+                      <div class="d-flex gap-2">
+                        <button 
+                          class="btn btn-success btn-sm flex-fill"
+                          @click="approvePrayer(prayer)"
+                        >
+                          <i class="bi bi-check-circle me-1"></i>
+                          Approve
+                        </button>
+                        <button 
+                          class="btn btn-danger btn-sm flex-fill"
+                          @click="rejectPrayer(prayer)"
+                        >
+                          <i class="bi bi-x-circle me-1"></i>
+                          Reject
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -382,7 +464,7 @@ const myPrayers = computed(() => {
 })
 
 const communityPrayers = computed(() => {
-  return prayers.value.filter(p => p.visibility === 'public' && p.userId !== user?.id)
+  return prayers.value.filter(p => p.visibility === 'public' && p.userId !== user?.id && p.approved === true)
 })
 
 const confidentialPrayers = computed(() => {
@@ -391,6 +473,11 @@ const confidentialPrayers = computed(() => {
 
 const answeredPrayers = computed(() => {
   return prayers.value.filter(p => p.status === 'answered').length
+})
+
+const pendingPrayers = computed(() => {
+  if (user?.userType !== 'admin' && user?.userType !== 'pastor') return []
+  return prayers.value.filter(p => p.approved === false)
 })
 
 onMounted(() => {
@@ -404,7 +491,28 @@ const loadPrayers = () => {
   const allPrayers = []
 
   allUsers.forEach(user => {
-    const userPrayers = JSON.parse(localStorage.getItem(`gcbf_prayers_${user.id}`) || '[]')
+    let userPrayers = JSON.parse(localStorage.getItem(`gcbf_prayers_${user.id}`) || '[]')
+    
+    // Migration: Add approval fields to existing prayers if they don't have them
+    let needsUpdate = false
+    userPrayers = userPrayers.map(prayer => {
+      if (prayer.approved === undefined) {
+        needsUpdate = true
+        return {
+          ...prayer,
+          approved: false,
+          approvedBy: null,
+          approvedAt: null
+        }
+      }
+      return prayer
+    })
+    
+    // Save migrated data back to localStorage
+    if (needsUpdate) {
+      localStorage.setItem(`gcbf_prayers_${user.id}`, JSON.stringify(userPrayers))
+    }
+    
     userPrayers.forEach(prayer => {
       allPrayers.push({
         ...prayer,
@@ -462,6 +570,9 @@ const savePrayer = () => {
         userId: userId,
         dateRequested: new Date().toISOString().split('T')[0],
         status: 'active',
+        approved: false,
+        approvedBy: null,
+        approvedAt: null,
         createdAt: new Date().toISOString()
       }
       userPrayers.push(newPrayer)
@@ -543,6 +654,37 @@ const getPrayingCount = (prayerId) => {
   // In a real app, this would count across all users
   // For demo, return a random number between 1-10
   return Math.floor(Math.random() * 10) + 1
+}
+
+const approvePrayer = (prayer) => {
+  if (!user || (user.userType !== 'admin' && user.userType !== 'pastor')) return
+  
+  const prayerUserId = prayer.userId
+  let userPrayers = JSON.parse(localStorage.getItem(`gcbf_prayers_${prayerUserId}`) || '[]')
+  const index = userPrayers.findIndex(p => p.id === prayer.id)
+  
+  if (index !== -1) {
+    userPrayers[index].approved = true
+    userPrayers[index].approvedBy = user.name
+    userPrayers[index].approvedAt = new Date().toISOString()
+    
+    localStorage.setItem(`gcbf_prayers_${prayerUserId}`, JSON.stringify(userPrayers))
+    loadPrayers()
+  }
+}
+
+const rejectPrayer = (prayer) => {
+  if (!user || (user.userType !== 'admin' && user.userType !== 'pastor')) return
+  if (!confirm('Are you sure you want to reject this prayer request? The user will be notified.')) return
+  
+  const prayerUserId = prayer.userId
+  let userPrayers = JSON.parse(localStorage.getItem(`gcbf_prayers_${prayerUserId}`) || '[]')
+  
+  // Remove the prayer entirely or you could mark it as rejected
+  userPrayers = userPrayers.filter(p => p.id !== prayer.id)
+  
+  localStorage.setItem(`gcbf_prayers_${prayerUserId}`, JSON.stringify(userPrayers))
+  loadPrayers()
 }
 
 const closeModal = () => {

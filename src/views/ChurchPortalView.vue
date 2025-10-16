@@ -107,6 +107,16 @@
             <li class="nav-item">
               <button 
                 class="nav-link"
+                :class="{ active: activeSection === 'expenses' }"
+                @click="activeSection = 'expenses'"
+              >
+                <i class="bi bi-receipt me-2"></i>
+                Monthly Budget
+              </button>
+            </li>
+            <li class="nav-item">
+              <button 
+                class="nav-link"
                 :class="{ active: activeSection === 'forecast' }"
                 @click="activeSection = 'forecast'"
               >
@@ -144,19 +154,72 @@
             <!-- Financial Reports -->
             <div v-if="activeSection === 'finance'" class="section-content">
               <div class="row g-4">
+                <!-- Monthly Summary Card -->
+                <div class="col-12">
+                  <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                      <div class="alert alert-info mb-0">
+                        <div class="d-flex align-items-center">
+                          <i class="bi bi-info-circle me-2"></i>
+                          <div>
+                            <strong>Note:</strong> Financial Reports are automatically synced from your Monthly Budget. 
+                            Tithes & Offerings includes verified payments (₱{{ totalVerifiedPaymentsThisMonth.toLocaleString() }}) 
+                            + Sunday collections (₱{{ totalSundayCollection.toLocaleString() }}).
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <!-- Income Breakdown -->
                 <div class="col-lg-6">
                   <div class="card border-0 shadow-sm">
-                    <div class="card-header bg-white border-0">
-                      <h5 class="fw-bold mb-0">Income Breakdown - {{ currentMonth }}</h5>
+                    <div class="card-header bg-success bg-opacity-10 border-0">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="fw-bold mb-0 text-success">
+                          <i class="bi bi-cash-stack me-2"></i>Income Breakdown
+                        </h5>
+                        <span class="badge bg-success">{{ currentMonth }}</span>
+                      </div>
                     </div>
                     <div class="card-body">
-                      <canvas id="incomeChart" style="max-height: 300px;"></canvas>
+                      <div class="income-details">
+                        <div v-for="(income, index) in incomeData" :key="income.category" 
+                             class="income-item border-bottom pb-3 mb-3"
+                             :class="{ 'border-0 pb-0 mb-0': index === incomeData.length - 1 }">
+                          <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div class="d-flex flex-column">
+                              <span class="fw-bold">{{ income.category }}</span>
+                              <small v-if="income.category === 'Tithes & Offerings'" class="text-muted">
+                                <i class="bi bi-check-circle-fill text-success me-1"></i>
+                                Verified Payments: ₱{{ totalVerifiedPaymentsThisMonth.toLocaleString() }}<br>
+                                <i class="bi bi-cash me-1"></i>
+                                Sunday Collections: ₱{{ totalSundayCollection.toLocaleString() }}
+                              </small>
+                            </div>
+                            <strong class="text-success fs-5">
+                              ₱{{ (income.category === 'Tithes & Offerings' ? totalVerifiedPaymentsThisMonth + totalSundayCollection : income.amount).toLocaleString() }}
+                            </strong>
+                          </div>
+                          <div v-if="income.category === 'Tithes & Offerings'" class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-success" 
+                                 :style="{ width: ((totalVerifiedPaymentsThisMonth / (totalVerifiedPaymentsThisMonth + totalSundayCollection)) * 100) + '%' }"
+                                 :title="'Verified: ' + ((totalVerifiedPaymentsThisMonth / (totalVerifiedPaymentsThisMonth + totalSundayCollection)) * 100).toFixed(1) + '%'">
+                            </div>
+                            <div class="progress-bar bg-info" 
+                                 :style="{ width: ((totalSundayCollection / (totalVerifiedPaymentsThisMonth + totalSundayCollection)) * 100) + '%' }"
+                                 :title="'Sunday: ' + ((totalSundayCollection / (totalVerifiedPaymentsThisMonth + totalSundayCollection)) * 100).toFixed(1) + '%'">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                       
-                      <div class="income-details mt-3">
-                        <div v-for="income in incomeData" :key="income.category" class="d-flex justify-content-between align-items-center mb-2">
-                          <span>{{ income.category }}</span>
-                          <strong class="text-success">₱{{ income.amount.toLocaleString() }}</strong>
+                      <!-- Total Income -->
+                      <div class="mt-4 pt-3 border-top">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h6 class="fw-bold mb-0">Total Monthly Income:</h6>
+                          <h4 class="text-success fw-bold mb-0">₱{{ totalIncome.toLocaleString() }}</h4>
                         </div>
                       </div>
                     </div>
@@ -166,16 +229,78 @@
                 <!-- Expense Breakdown -->
                 <div class="col-lg-6">
                   <div class="card border-0 shadow-sm">
-                    <div class="card-header bg-white border-0">
-                      <h5 class="fw-bold mb-0">Expense Breakdown - {{ currentMonth }}</h5>
+                    <div class="card-header bg-danger bg-opacity-10 border-0">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="fw-bold mb-0 text-danger">
+                          <i class="bi bi-wallet2 me-2"></i>Expense Breakdown
+                        </h5>
+                        <span class="badge bg-danger">{{ currentMonth }}</span>
+                      </div>
                     </div>
                     <div class="card-body">
-                      <canvas id="expenseChart" style="max-height: 300px;"></canvas>
+                      <div class="expense-details">
+                        <div v-for="(expense, index) in expenseData" :key="expense.category" 
+                             class="expense-item border-bottom pb-3 mb-3"
+                             :class="{ 'border-0 pb-0 mb-0': index === expenseData.length - 1 }">
+                          <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div class="d-flex flex-column">
+                              <span class="fw-bold">{{ expense.category }}</span>
+                              <small v-if="expense.category === 'Ministries & Programs'" class="text-muted">
+                                <i class="bi bi-people-fill me-1"></i>
+                                Total Ministry Budget: ₱{{ totalMinistryBudget.toLocaleString() }}
+                              </small>
+                            </div>
+                            <strong class="text-danger fs-5">
+                              ₱{{ expense.amount.toLocaleString() }}
+                            </strong>
+                          </div>
+                          <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-danger" 
+                                 :style="{ width: ((expense.amount / totalExpenses) * 100) + '%' }"
+                                 :title="((expense.amount / totalExpenses) * 100).toFixed(1) + '%'">
+                            </div>
+                          </div>
+                          <small class="text-muted">
+                            {{ ((expense.amount / totalExpenses) * 100).toFixed(1) }}% of total expenses
+                          </small>
+                        </div>
+                      </div>
                       
-                      <div class="expense-details mt-3">
-                        <div v-for="expense in expenseData" :key="expense.category" class="d-flex justify-content-between align-items-center mb-2">
-                          <span>{{ expense.category }}</span>
-                          <strong class="text-danger">₱{{ expense.amount.toLocaleString() }}</strong>
+                      <!-- Total Expenses -->
+                      <div class="mt-4 pt-3 border-top">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h6 class="fw-bold mb-0">Total Monthly Expenses:</h6>
+                          <h4 class="text-danger fw-bold mb-0">₱{{ totalExpenses.toLocaleString() }}</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Net Income Card -->
+                <div class="col-12">
+                  <div class="card border-0 shadow-sm" :class="netIncome >= 0 ? 'bg-success bg-opacity-10' : 'bg-warning bg-opacity-10'">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col-md-8">
+                          <h5 class="fw-bold mb-2" :class="netIncome >= 0 ? 'text-success' : 'text-warning'">
+                            <i class="bi bi-calculator me-2"></i>
+                            Net Income for {{ currentMonth }}
+                          </h5>
+                          <p class="mb-0 text-muted">
+                            {{ netIncome >= 0 ? 
+                               'The church has a surplus this month. Consider allocating funds to savings or special projects.' : 
+                               'The church is operating at a deficit this month. Review expenses and consider increasing income sources.' 
+                            }}
+                          </p>
+                        </div>
+                        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                          <h2 class="fw-bold mb-0" :class="netIncome >= 0 ? 'text-success' : 'text-warning'">
+                            ₱{{ netIncome.toLocaleString() }}
+                          </h2>
+                          <small class="text-muted">
+                            {{ netIncome >= 0 ? 'Surplus' : 'Deficit' }}
+                          </small>
                         </div>
                       </div>
                     </div>
@@ -270,47 +395,412 @@
             <!-- Ministry Reports -->
             <div v-if="activeSection === 'ministry'" class="section-content">
               <div class="row g-4">
-                <div v-for="ministry in ministryReports" :key="ministry.name" class="col-lg-4">
-                  <div class="card border-0 shadow-sm">
-                    <div class="card-header bg-white border-0">
+                <div v-for="ministry in ministryReports" :key="ministry.name" class="col-lg-6">
+                  <div class="card border-0 shadow-sm h-100">
+                    <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
                       <h5 class="fw-bold mb-0">{{ ministry.name }}</h5>
+                      <div class="d-flex gap-2">
+                        <button v-if="user?.userType === 'admin'" class="btn btn-sm btn-outline-success" @click="showAddAttendance(ministry)">
+                          <i class="bi bi-plus-circle"></i> Add Attendance
+                        </button>
+                        <button v-if="user?.userType === 'admin'" class="btn btn-sm btn-outline-primary" @click="editMinistry(ministry)">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                      </div>
                     </div>
                     <div class="card-body">
-                      <div class="ministry-stats">
+                      <!-- Statistics -->
+                      <div class="ministry-stats mb-4">
                         <div class="stat-item mb-3">
                           <div class="d-flex justify-content-between">
-                            <span>Participants</span>
+                            <span><i class="bi bi-people me-1"></i>Regular Participants</span>
                             <strong class="church-purple">{{ ministry.participants }}</strong>
                           </div>
                         </div>
                         <div class="stat-item mb-3">
                           <div class="d-flex justify-content-between">
-                            <span>Monthly Budget</span>
-                            <strong class="text-success">₱{{ ministry.budget.toLocaleString() }}</strong>
+                            <span><i class="bi bi-calendar-check me-1"></i>Average Attendance</span>
+                            <strong class="text-info">{{ getAverageAttendance(ministry) }}</strong>
                           </div>
-                        </div>
-                        <div class="stat-item mb-3">
-                          <div class="d-flex justify-content-between">
-                            <span>Spent This Month</span>
-                            <strong class="text-danger">₱{{ ministry.spent.toLocaleString() }}</strong>
-                          </div>
-                        </div>
-                        <div class="progress mb-3" style="height: 8px;">
-                          <div 
-                            class="progress-bar bg-success" 
-                            :style="{ width: (ministry.spent / ministry.budget) * 100 + '%' }"
-                          ></div>
                         </div>
                       </div>
-                      
-                      <div class="ministry-updates">
-                        <h6 class="fw-bold mb-2">Recent Updates</h6>
-                        <ul class="list-unstyled small">
-                          <li v-for="update in ministry.updates" :key="update" class="mb-1">
-                            <i class="bi bi-chevron-right me-2 text-muted"></i>
-                            {{ update }}
-                          </li>
-                        </ul>
+
+                      <!-- Recent Attendance -->
+                      <div v-if="ministry.attendance && ministry.attendance.length > 0" class="mb-3">
+                        <h6 class="fw-bold mb-2">Recent Attendance</h6>
+                        <div class="attendance-list" style="max-height: 150px; overflow-y: auto;">
+                          <div v-for="(record, index) in ministry.attendance.slice(-5).reverse()" :key="index" 
+                            class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom">
+                            <div>
+                              <small class="text-muted d-block">{{ formatDate(record.date) }}</small>
+                            </div>
+                            <div class="text-end">
+                              <strong class="text-primary">{{ record.count }}</strong>
+                              <small class="text-muted d-block">attendees</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div v-else class="text-center text-muted py-2 mb-3">
+                        <small>No attendance records yet</small>
+                      </div>
+
+                      <!-- Admin Notes -->
+                      <div class="admin-notes mt-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                          <h6 class="fw-bold mb-0"><i class="bi bi-sticky me-1"></i>Admin Notes</h6>
+                          <button v-if="user?.userType === 'admin'" class="btn btn-sm btn-link p-0" @click="editMinistryNotes(ministry)">
+                            <i class="bi bi-pencil-square"></i>
+                          </button>
+                        </div>
+                        <div class="card bg-light border-0">
+                          <div class="card-body py-2">
+                            <small class="text-muted" v-if="!ministry.notes || ministry.notes.trim() === ''">
+                              <em>No notes added yet</em>
+                            </small>
+                            <small v-else style="white-space: pre-wrap;">{{ ministry.notes }}</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Monthly Budget Settings -->
+            <div v-if="activeSection === 'expenses'" class="section-content">
+              <div class="row g-4">
+                <!-- Default Monthly Income -->
+                <div class="col-12">
+                  <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5 class="fw-bold mb-1">Monthly Income</h5>
+                        <p class="mb-0 text-muted small">Set expected monthly income sources for budget forecasting</p>
+                      </div>
+                      <button v-if="user?.userType === 'admin'" class="btn btn-success" @click="saveDefaultIncome">
+                        <i class="bi bi-save me-1"></i>
+                        Save Changes
+                      </button>
+                    </div>
+                    <div class="card-body">
+                      <div class="row g-4">
+                        <!-- Verified Tithes & Offerings (Auto-calculated, Non-editable) -->
+                        <div class="col-12">
+                          <div class="card bg-primary bg-opacity-10 border-primary border-2">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                  <label class="form-label mb-0 fw-bold text-primary">
+                                    <i class="bi bi-shield-check me-1"></i>
+                                    Tithes & Offerings (Verified Payments)
+                                  </label>
+                                  <small class="d-block text-muted">Auto-calculated from verified payments</small>
+                                </div>
+                                <i class="bi bi-lock-fill text-primary"></i>
+                              </div>
+                              <div class="input-group">
+                                <span class="input-group-text bg-primary text-white">₱</span>
+                                <input 
+                                  type="text" 
+                                  class="form-control bg-white fw-bold" 
+                                  :value="totalVerifiedPaymentsThisMonth.toLocaleString()"
+                                  readonly
+                                  style="cursor: not-allowed;"
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Sunday Collection Breakdown (Editable) -->
+                        <div class="col-12">
+                          <div class="card bg-success bg-opacity-10 border-0">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                  <label class="form-label mb-0 fw-bold">
+                                    <i class="bi bi-cash-stack me-1"></i>
+                                    Sunday Collection
+                                  </label>
+                                  <small class="d-block text-muted">Weekly tithes & offerings from Sunday services</small>
+                                </div>
+                                <div class="badge bg-success fs-6">
+                                  Total: ₱{{ totalSundayCollection.toLocaleString() }}
+                                </div>
+                              </div>
+                              
+                              <!-- Sunday Collection Grid -->
+                              <div class="row g-3">
+                                <div class="col-md-3 col-6">
+                                  <label class="form-label small fw-bold">1st Sunday</label>
+                                  <div class="input-group input-group-sm">
+                                    <span class="input-group-text">₱</span>
+                                    <input 
+                                      type="number" 
+                                      class="form-control" 
+                                      v-model.number="sundayCollection.first"
+                                      :readonly="user?.userType !== 'admin'"
+                                      min="0"
+                                      placeholder="0"
+                                    >
+                                  </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                  <label class="form-label small fw-bold">2nd Sunday</label>
+                                  <div class="input-group input-group-sm">
+                                    <span class="input-group-text">₱</span>
+                                    <input 
+                                      type="number" 
+                                      class="form-control" 
+                                      v-model.number="sundayCollection.second"
+                                      :readonly="user?.userType !== 'admin'"
+                                      min="0"
+                                      placeholder="0"
+                                    >
+                                  </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                  <label class="form-label small fw-bold">3rd Sunday</label>
+                                  <div class="input-group input-group-sm">
+                                    <span class="input-group-text">₱</span>
+                                    <input 
+                                      type="number" 
+                                      class="form-control" 
+                                      v-model.number="sundayCollection.third"
+                                      :readonly="user?.userType !== 'admin'"
+                                      min="0"
+                                      placeholder="0"
+                                    >
+                                  </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                  <label class="form-label small fw-bold">4th Sunday</label>
+                                  <div class="input-group input-group-sm">
+                                    <span class="input-group-text">₱</span>
+                                    <input 
+                                      type="number" 
+                                      class="form-control" 
+                                      v-model.number="sundayCollection.fourth"
+                                      :readonly="user?.userType !== 'admin'"
+                                      min="0"
+                                      placeholder="0"
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Other Income Categories -->
+                        <div v-for="(income, index) in defaultMonthlyIncome" :key="index" class="col-md-6">
+                          <div class="card bg-success bg-opacity-10 border-0">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between align-items-center mb-2">
+                                <label class="form-label mb-0 fw-bold">{{ income.category }}</label>
+                                <button v-if="user?.userType === 'admin' && defaultMonthlyIncome.length > 1" 
+                                  class="btn btn-sm btn-outline-danger" 
+                                  @click="removeIncomeCategory(index)"
+                                >
+                                  <i class="bi bi-trash"></i>
+                                </button>
+                              </div>
+                              <div class="input-group">
+                                <span class="input-group-text">₱</span>
+                                <input 
+                                  type="number" 
+                                  class="form-control" 
+                                  v-model.number="income.amount"
+                                  :readonly="user?.userType !== 'admin'"
+                                  min="0"
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div v-if="user?.userType === 'admin'" class="mt-4">
+                        <button class="btn btn-outline-success" @click="showAddIncomeCategoryModal = true">
+                          <i class="bi bi-plus-circle me-2"></i>
+                          Add Income Category
+                        </button>
+                      </div>
+
+                      <div class="mt-4 p-3 bg-success bg-opacity-10 rounded">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h6 class="fw-bold mb-0">Total Monthly Income:</h6>
+                          <h5 class="text-success fw-bold mb-0">₱{{ totalDefaultIncomeWithVerified.toLocaleString() }}</h5>
+                        </div>
+                        <hr class="my-2">
+                        <div class="small text-muted">
+                          <div class="d-flex justify-content-between mb-1">
+                            <span>Verified Payments:</span>
+                            <span class="fw-bold">₱{{ totalVerifiedPaymentsThisMonth.toLocaleString() }}</span>
+                          </div>
+                          <div class="d-flex justify-content-between mb-1">
+                            <span>Sunday Collection:</span>
+                            <span class="fw-bold">₱{{ totalSundayCollection.toLocaleString() }}</span>
+                          </div>
+                          <div class="ms-3 border-start border-2 ps-2 mb-1">
+                            <div class="d-flex justify-content-between">
+                              <small class="text-muted">1st Sunday:</small>
+                              <small class="fw-bold">₱{{ sundayCollection.first.toLocaleString() }}</small>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                              <small class="text-muted">2nd Sunday:</small>
+                              <small class="fw-bold">₱{{ sundayCollection.second.toLocaleString() }}</small>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                              <small class="text-muted">3rd Sunday:</small>
+                              <small class="fw-bold">₱{{ sundayCollection.third.toLocaleString() }}</small>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                              <small class="text-muted">4th Sunday:</small>
+                              <small class="fw-bold">₱{{ sundayCollection.fourth.toLocaleString() }}</small>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <span>Other Income:</span>
+                            <span class="fw-bold">₱{{ totalDefaultIncome.toLocaleString() }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Default Monthly Expenses -->
+                <div class="col-12">
+                  <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5 class="fw-bold mb-1">Monthly Expenses</h5>
+                        <p class="mb-0 text-muted small">Set default monthly expense amounts for budget forecasting</p>
+                      </div>
+                      <div v-if="user?.userType === 'admin'" class="d-flex gap-2">
+                        <button class="btn btn-warning" @click="resetExpensesToDefault">
+                          <i class="bi bi-arrow-clockwise me-1"></i>
+                          Reset to Default
+                        </button>
+                        <button class="btn btn-success" @click="saveDefaultExpenses">
+                          <i class="bi bi-save me-1"></i>
+                          Save Expenses
+                        </button>
+                        <button class="btn btn-primary" @click="saveMinistryAllocations">
+                          <i class="bi bi-save me-1"></i>
+                          Save Ministry Spending
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="row g-4">
+                        <div v-for="(expense, index) in defaultMonthlyExpenses" :key="index" class="col-md-6">
+                          <div class="card bg-danger bg-opacity-10 border-0">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between align-items-center mb-2">
+                                <label class="form-label mb-0 fw-bold">{{ expense.category }}</label>
+                                <button v-if="user?.userType === 'admin' && defaultMonthlyExpenses.length > 1 && expense.category !== 'Ministries & Programs'" 
+                                  class="btn btn-sm btn-outline-danger" 
+                                  @click="removeExpenseCategory(index)"
+                                >
+                                  <i class="bi bi-trash"></i>
+                                </button>
+                              </div>
+                              
+                              <!-- Regular expense input -->
+                              <div v-if="expense.category !== 'Ministries & Programs'" class="input-group">
+                                <span class="input-group-text">₱</span>
+                                <input 
+                                  type="number" 
+                                  class="form-control" 
+                                  v-model.number="expense.amount"
+                                  :readonly="user?.userType !== 'admin'"
+                                  min="0"
+                                >
+                              </div>
+
+                              <!-- Ministries & Programs - Auto-calculated from ministry budgets -->
+                              <div v-else>
+                              
+                           
+
+                                <!-- Ministry Budget Breakdown -->
+                                <div class="ministry-breakdown">
+                                  <small class="text-muted fw-bold d-block mb-2">Ministry Breakdown:</small>
+                                  <div v-for="ministry in ministryReports" :key="ministry.name" class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom">
+                                    <div class="flex-grow-1">
+                                      <small class="fw-bold">{{ ministry.name }}</small>
+                                      <div class="d-flex align-items-center gap-2 mt-1">
+                                        <small class="text-muted">Spent:</small>
+                                        <input 
+                                          v-if="user?.userType === 'admin'"
+                                          type="number" 
+                                          class="form-control form-control-sm" 
+                                          style="width: 100px;"
+                                          v-model.number="ministry.spent"
+                                          min="0"
+                                        >
+                                        <small v-else class="text-danger fw-bold">₱{{ (ministry.spent || 0).toLocaleString() }}</small>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="d-flex justify-content-between align-items-center mt-2 pt-2 border-top">
+                                    <small class="fw-bold">Total Spent:</small>
+                                    <small class="fw-bold text-danger">₱{{ totalMinistrySpent.toLocaleString() }}</small>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div v-if="user?.userType === 'admin'" class="mt-4">
+                        <button class="btn btn-outline-primary" @click="showAddExpenseCategoryModal = true">
+                          <i class="bi bi-plus-circle me-2"></i>
+                          Add Expense Category
+                        </button>
+                      </div>
+
+                      <div class="mt-4 p-3 bg-danger bg-opacity-10 rounded">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h6 class="fw-bold mb-0">Total Monthly Expenses:</h6>
+                          <h5 class="text-danger fw-bold mb-0">₱{{ totalDefaultExpensesWithMinistries.toLocaleString() }}</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Budget Summary -->
+                <div class="col-12">
+                  <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                      <h5 class="fw-bold mb-3">Monthly Budget Summary</h5>
+                      <div class="row g-3">
+                        <div class="col-md-4">
+                          <div class="text-center p-3 bg-success bg-opacity-10 rounded">
+                            <small class="text-muted d-block mb-1">Expected Income</small>
+                            <h4 class="text-success fw-bold mb-0">₱{{ totalDefaultIncomeWithVerified.toLocaleString() }}</h4>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="text-center p-3 bg-danger bg-opacity-10 rounded">
+                            <small class="text-muted d-block mb-1">Expected Expenses</small>
+                            <h4 class="text-danger fw-bold mb-0">₱{{ totalDefaultExpensesWithMinistries.toLocaleString() }}</h4>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="text-center p-3 rounded" :class="defaultBudgetNet >= 0 ? 'bg-success bg-opacity-10' : 'bg-warning bg-opacity-10'">
+                            <small class="text-muted d-block mb-1">Expected Net</small>
+                            <h4 class="fw-bold mb-0" :class="defaultBudgetNet >= 0 ? 'text-success' : 'text-warning'">
+                              ₱{{ defaultBudgetNet.toLocaleString() }}
+                            </h4>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -324,15 +814,60 @@
                 <div class="col-12">
                   <div class="card border-0 shadow-sm">
                     <div class="card-header bg-white border-0">
-                      <h5 class="fw-bold mb-0">6-Month Budget Forecast</h5>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <h5 class="fw-bold mb-1">6-Month Budget Forecast</h5>
+                          <p class="mb-0 text-muted small">Based on member pledges and default monthly expenses</p>
+                        </div>
+                      </div>
                     </div>
                     <div class="card-body">
+                      <div class="alert alert-info mb-4">
+                        <h6 class="fw-bold mb-2"><i class="bi bi-info-circle me-2"></i>Forecast Calculation</h6>
+                        <ul class="mb-0 small">
+                          <li><strong>Income:</strong> Based on total member pledges (₱{{ totalPledges.toLocaleString() }}/month)</li>
+                          <li><strong>Expenses:</strong> Based on default monthly expenses including ministry budgets (₱{{ totalDefaultExpensesWithMinistries.toLocaleString() }}/month)</li>
+                        </ul>
+                      </div>
+
                       <canvas id="forecastChart" style="max-height: 350px;"></canvas>
                       
                       <div class="forecast-summary mt-4">
                         <div class="row g-4">
-                          <div class="col-md-6">
+                          <div class="col-md-4">
                             <div class="card bg-light border-0">
+                              <div class="card-body text-center">
+                                <small class="text-muted d-block mb-1">Monthly Average</small>
+                                <h6 class="fw-bold text-success mb-0">₱{{ totalPledges.toLocaleString() }}</h6>
+                                <small class="text-muted">Income (from pledges)</small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card bg-light border-0">
+                              <div class="card-body text-center">
+                                <small class="text-muted d-block mb-1">Monthly Average</small>
+                                <h6 class="fw-bold text-danger mb-0">₱{{ totalDefaultExpensesWithMinistries.toLocaleString() }}</h6>
+                                <small class="text-muted">Expenses (with ministries)</small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card bg-light border-0">
+                              <div class="card-body text-center">
+                                <small class="text-muted d-block mb-1">Monthly Net</small>
+                                <h6 class="fw-bold mb-0" :class="(totalPledges - totalDefaultExpensesWithMinistries) >= 0 ? 'text-success' : 'text-danger'">
+                                  ₱{{ (totalPledges - totalDefaultExpensesWithMinistries).toLocaleString() }}
+                                </h6>
+                                <small class="text-muted">{{ (totalPledges - totalDefaultExpensesWithMinistries) >= 0 ? 'Surplus' : 'Deficit' }}</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row g-4 mt-2">
+                          <div class="col-md-6">
+                            <div class="card bg-success bg-opacity-10 border-0">
                               <div class="card-body text-center">
                                 <h5 class="fw-bold text-success">₱{{ projectedIncome.toLocaleString() }}</h5>
                                 <p class="mb-0 text-muted">Projected 6-Month Income</p>
@@ -340,7 +875,7 @@
                             </div>
                           </div>
                           <div class="col-md-6">
-                            <div class="card bg-light border-0">
+                            <div class="card bg-danger bg-opacity-10 border-0">
                               <div class="card-body text-center">
                                 <h5 class="fw-bold text-danger">₱{{ projectedExpenses.toLocaleString() }}</h5>
                                 <p class="mb-0 text-muted">Projected 6-Month Expenses</p>
@@ -349,16 +884,16 @@
                           </div>
                         </div>
                         
-                        <div class="mt-4 p-3 rounded" :class="projectedNet >= 0 ? 'bg-success bg-opacity-10' : 'bg-danger bg-opacity-10'">
+                        <div class="mt-4 p-4 rounded" :class="projectedNet >= 0 ? 'bg-success bg-opacity-10' : 'bg-danger bg-opacity-10'">
                           <h6 class="fw-bold mb-2" :class="projectedNet >= 0 ? 'text-success' : 'text-danger'">
                             <i class="bi bi-graph-up me-2" v-if="projectedNet >= 0"></i>
                             <i class="bi bi-graph-down me-2" v-else></i>
-                            Projected Net: ₱{{ projectedNet.toLocaleString() }}
+                            Projected 6-Month Net: ₱{{ projectedNet.toLocaleString() }}
                           </h6>
                           <p class="mb-0 small">
                             {{ projectedNet >= 0 ? 
-                                'The church is projected to have a healthy surplus over the next 6 months.' : 
-                                'The church may face financial challenges. Consider increasing fundraising efforts or reducing expenses.' 
+                                'The church is projected to have a healthy surplus over the next 6 months based on current pledges and expense settings.' : 
+                                'The church may face financial challenges. Consider encouraging additional pledges or reviewing monthly expense settings.' 
                             }}
                           </p>
                         </div>
@@ -712,6 +1247,184 @@
         </div>
       </div>
     </div>
+
+    <!-- Edit Ministry Modal -->
+    <div v-if="showEditMinistryModal" class="modal fade show d-block" tabindex="-1" @click="closeMinistryModal">
+      <div class="modal-dialog" @click.stop>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Edit Ministry Report</h5>
+            <button type="button" class="btn-close" @click="closeMinistryModal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label class="form-label fw-bold">Ministry Name</label>
+              <input type="text" class="form-control" v-model="editingMinistry.name" readonly>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Regular Participants</label>
+              <input type="number" class="form-control" v-model.number="editingMinistry.participants" min="0">
+              <small class="text-muted">Average number of regular participants</small>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Monthly Budget (₱)</label>
+              <input type="number" class="form-control" v-model.number="editingMinistry.budget" min="0">
+              <small class="text-muted">Budget allocation for this ministry (used in expense tracking)</small>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" @click="closeMinistryModal">Cancel</button>
+            <button type="button" class="btn btn-primary" @click="saveMinistry">
+              <i class="bi bi-save me-1"></i>
+              Save Changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit Ministry Notes Modal -->
+    <div v-if="showEditNotesModal" class="modal fade show d-block" tabindex="-1" @click="closeNotesModal">
+      <div class="modal-dialog" @click.stop>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Edit Admin Notes - {{ editingMinistryForNotes?.name }}</h5>
+            <button type="button" class="btn-close" @click="closeNotesModal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label class="form-label fw-bold">Notes</label>
+              <textarea 
+                class="form-control" 
+                v-model="editingNotes" 
+                rows="6"
+                placeholder="Enter admin notes, updates, or important information about this ministry..."
+              ></textarea>
+              <small class="text-muted">These notes are visible to admin and pastors only</small>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" @click="closeNotesModal">Cancel</button>
+            <button type="button" class="btn btn-primary" @click="saveMinistryNotes">
+              <i class="bi bi-save me-1"></i>
+              Save Notes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Attendance Modal -->
+    <div v-if="showAttendanceModal" class="modal fade show d-block" tabindex="-1" @click="closeAttendanceModal">
+      <div class="modal-dialog" @click.stop>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add Attendance - {{ editingMinistryForAttendance?.name }}</h5>
+            <button type="button" class="btn-close" @click="closeAttendanceModal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label class="form-label fw-bold">Date</label>
+              <input 
+                type="date" 
+                class="form-control" 
+                v-model="newAttendance.date"
+                :max="new Date().toISOString().split('T')[0]"
+              >
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Attendance Count</label>
+              <input 
+                type="number" 
+                class="form-control" 
+                v-model.number="newAttendance.count" 
+                min="0"
+                placeholder="Number of attendees"
+              >
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Notes (Optional)</label>
+              <textarea 
+                class="form-control" 
+                v-model="newAttendance.notes" 
+                rows="3"
+                placeholder="Any special notes about this attendance..."
+              ></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" @click="closeAttendanceModal">Cancel</button>
+            <button type="button" class="btn btn-primary" @click="saveAttendance">
+              <i class="bi bi-plus-circle me-1"></i>
+              Add Attendance
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Income Category Modal -->
+    <div v-if="showAddIncomeCategoryModal" class="modal fade show d-block" tabindex="-1" @click="showAddIncomeCategoryModal = false">
+      <div class="modal-dialog" @click.stop>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add Income Category</h5>
+            <button type="button" class="btn-close" @click="showAddIncomeCategoryModal = false"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label class="form-label fw-bold">Category Name</label>
+              <input type="text" class="form-control" v-model="newIncomeCategory.category" placeholder="e.g., Special Offerings">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Default Amount (₱)</label>
+              <input type="number" class="form-control" v-model.number="newIncomeCategory.amount" min="0" placeholder="0">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" @click="showAddIncomeCategoryModal = false">Cancel</button>
+            <button type="button" class="btn btn-success" @click="addIncomeCategory">
+              <i class="bi bi-plus-circle me-1"></i>
+              Add Category
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Expense Category Modal -->
+    <div v-if="showAddExpenseCategoryModal" class="modal fade show d-block" tabindex="-1" @click="showAddExpenseCategoryModal = false">
+      <div class="modal-dialog" @click.stop>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add Expense Category</h5>
+            <button type="button" class="btn-close" @click="showAddExpenseCategoryModal = false"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label class="form-label fw-bold">Category Name</label>
+              <input type="text" class="form-control" v-model="newExpenseCategory.category" placeholder="e.g., Building Maintenance">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Default Amount (₱)</label>
+              <input type="number" class="form-control" v-model.number="newExpenseCategory.amount" min="0" placeholder="0">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" @click="showAddExpenseCategoryModal = false">Cancel</button>
+            <button type="button" class="btn btn-primary" @click="addExpenseCategory">
+              <i class="bi bi-plus-circle me-1"></i>
+              Add Category
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Backdrop -->
+    <div v-if="showEditMinistryModal || showAddExpenseCategoryModal || showAddIncomeCategoryModal || showEditNotesModal || showAttendanceModal" 
+      class="modal-backdrop fade show">
+    </div>
   </div>
 </template>
 
@@ -743,8 +1456,15 @@ const filteredPayments = computed(() => {
   return allPayments.value
 })
 
-// Mock financial data
-const currentMonth = ref('October 2024')
+// ===== FINANCIAL REPORTS DATA (Current Month Actuals) =====
+// These represent ACTUAL income and expenses for the current reporting month
+// Stored in: gcbf_income_data and gcbf_expense_data
+// Used in: Financial Reports tab (activeSection === 'finance')
+// NOTE: "Tithes & Offerings" is auto-calculated from verified payments this month
+const currentMonth = computed(() => {
+  const date = new Date()
+  return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long' })
+})
 
 const incomeData = ref([
   { category: 'Tithes & Offerings', amount: 38500 },
@@ -755,13 +1475,56 @@ const incomeData = ref([
 ])
 
 const expenseData = ref([
-  { category: 'Staff & Benefits', amount: 25200 },
-  { category: 'Facilities & Utilities', amount: 8400 },
-  { category: 'Ministries & Programs', amount: 6300 },
-  { category: 'Missions Support', amount: 4200 },
-  { category: 'Administrative', amount: 2200 },
-  { category: 'Maintenance', amount: 1800 }
+  { category: 'Staff & Benefits', amount: 0 },
+  { category: 'Facilities & Utilities', amount: 0 },
+  { category: 'Ministries & Programs', amount: 0 },
+  { category: 'Missions Support', amount: 0 },
+  { category: 'Administrative', amount: 0 },
+  { category: 'Maintenance', amount: 0 }
 ])
+
+// ===== MONTHLY BUDGET DATA (Default/Expected Amounts) =====
+// These represent EXPECTED/DEFAULT monthly amounts for budgeting and forecasting
+// Stored in: gcbf_default_income and gcbf_default_expenses
+// Used in: Monthly Budget tab (activeSection === 'expenses') and Budget Forecast tab
+const defaultMonthlyIncome = ref([
+  { category: 'Tithes & Offerings', amount: 40000 },
+  { category: 'Special Donations', amount: 5000 },
+  { category: 'Fundraising Events', amount: 2000 },
+  { category: 'Investment Returns', amount: 1000 },
+  { category: 'Other Income', amount: 500 }
+])
+
+const defaultMonthlyExpenses = ref([
+  { category: 'Staff & Benefits', amount: 0 },
+  { category: 'Facilities & Utilities', amount: 0 },
+  { category: 'Ministries & Programs', amount: 0 },
+  { category: 'Missions Support', amount: 0 },
+  { category: 'Administrative', amount: 0 },
+  { category: 'Maintenance', amount: 0 }
+])
+
+// Sunday collection breakdown (editable tithes & offerings from each Sunday)
+const sundayCollection = ref({
+  first: 0,
+  second: 0,
+  third: 0,
+  fourth: 0
+})
+
+// Modal states
+const showEditMinistryModal = ref(false)
+const showAddExpenseCategoryModal = ref(false)
+const showAddIncomeCategoryModal = ref(false)
+const showEditNotesModal = ref(false)
+const showAttendanceModal = ref(false)
+const editingMinistry = ref({ name: '', participants: 0, budget: 0 })
+const editingMinistryForNotes = ref(null)
+const editingMinistryForAttendance = ref(null)
+const editingNotes = ref('')
+const newExpenseCategory = ref({ category: '', amount: 0 })
+const newIncomeCategory = ref({ category: '', amount: 0 })
+const newAttendance = ref({ date: '', count: 0, notes: '' })
 
 const sharedPrayers = ref([
   {
@@ -805,47 +1568,35 @@ const sharedPrayers = ref([
 const ministryReports = ref([
   {
     name: 'Worship',
-    participants: 25,
-    budget: 1800,
-    spent: 1400,
-    updates: [
-      'New sound equipment installed successfully',
-      'Christmas concert rehearsals begin November 1st',
-      'Added two new worship team members'
-    ]
+    participants: 0,
+    budget: 0,
+    spent: 0,
+    notes: '',
+    attendance: []
   },
   {
     name: 'Bible Night Class',
-    participants: 85,
-    budget: 800,
-    spent: 650,
-    updates: [
-      'New Bible study series on Romans started',
-      'Wednesday night attendance up 20%',
-      'Study materials for next quarter ordered'
-    ]
+    participants: 0,
+    budget: 0,
+    spent: 0,
+    notes: '',
+    attendance: []
   },
   {
     name: 'Small Groups',
-    participants: 40,
-    budget: 1200,
-    spent: 950,
-    updates: [
-      'Started 3 new small groups this month',
-      'Leadership training scheduled for November',
-      'Small group curriculum for Q1 2026 selected'
-    ]
+    participants: 0,
+    budget: 0,
+    spent: 0,
+    notes: '',
+    attendance: []
   },
   {
     name: 'Mission',
-    participants: 30,
-    budget: 4200,
-    spent: 3900,
-    updates: [
-      'Supported 3 new missionaries this month',
-      'Guatemala mission trip raised ₱8,000',
-      'Local food bank partnership established'
-    ]
+    participants: 0,
+    budget: 0,
+    spent: 0,
+    notes: '',
+    attendance: []
   }
 ])
 
@@ -1021,15 +1772,21 @@ const deleteNewsletter = (id) => {
 
 // Computed values
 const totalIncome = computed(() => {
-  return incomeData.value.reduce((sum, item) => sum + item.amount, 0)
+  return incomeData.value.reduce((sum, item) => {
+    // Use verified payments + Sunday collection for Tithes & Offerings
+    if (item.category === 'Tithes & Offerings') {
+      return sum + Number(totalVerifiedPaymentsThisMonth.value || 0) + Number(totalSundayCollection.value || 0)
+    }
+    return sum + Number(item.amount || 0)
+  }, 0)
 })
 
 const totalExpenses = computed(() => {
-  return expenseData.value.reduce((sum, item) => sum + item.amount, 0)
+  return expenseData.value.reduce((sum, item) => sum + Number(item.amount || 0), 0)
 })
 
 const netIncome = computed(() => {
-  return totalIncome.value - totalExpenses.value
+  return Number(totalIncome.value) - Number(totalExpenses.value)
 })
 
 const memberCount = ref(247)
@@ -1038,8 +1795,108 @@ const ytdIncome = ref(510000)
 const ytdExpenses = ref(465000)
 const ytdNet = computed(() => ytdIncome.value - ytdExpenses.value)
 
-const projectedIncome = ref(285000)
-const projectedExpenses = ref(280000)
+// Calculate total verified payments for the current month
+const totalVerifiedPaymentsThisMonth = computed(() => {
+  let total = 0
+  const currentDate = new Date()
+  const currentYear = currentDate.getFullYear()
+  const currentMonthNum = currentDate.getMonth() + 1 // 1-12
+  
+  // Get all users' gifts from localStorage
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i)
+    if (key?.startsWith('gcbf_gifts_')) {
+      const userGifts = JSON.parse(localStorage.getItem(key) || '[]')
+      
+      userGifts.forEach(gift => {
+        if (gift.payments && gift.payments.length > 0) {
+          gift.payments.forEach(payment => {
+            // Only count approved/verified payments
+            if (payment.verificationStatus === 'approved' && payment.verifiedDate) {
+              const paymentDate = new Date(payment.verifiedDate)
+              const paymentYear = paymentDate.getFullYear()
+              const paymentMonth = paymentDate.getMonth() + 1
+              
+              // Check if payment was verified in the current month
+              if (paymentYear === currentYear && paymentMonth === currentMonthNum) {
+                total += payment.amount || 0
+              }
+            }
+          })
+        }
+      })
+    }
+  }
+  
+  return total
+})
+
+// Calculate total pledges from all users
+const totalPledges = computed(() => {
+  let totalPledge = 0
+  const users = JSON.parse(localStorage.getItem('gcbf_users') || '[]')
+  users.forEach(user => {
+    const gifts = JSON.parse(localStorage.getItem(`gcbf_gifts_${user.id}`) || '[]')
+    gifts.forEach(gift => {
+      if (gift.pledgeAmount) {
+        totalPledge += gift.pledgeAmount
+      }
+    })
+  })
+  return totalPledge
+})
+
+// Calculate total Sunday collection
+const totalSundayCollection = computed(() => {
+  return Number(sundayCollection.value.first || 0) + 
+         Number(sundayCollection.value.second || 0) + 
+         Number(sundayCollection.value.third || 0) + 
+         Number(sundayCollection.value.fourth || 0)
+})
+
+// Calculate total default income (excluding verified payments and Sunday collection)
+const totalDefaultIncome = computed(() => {
+  return defaultMonthlyIncome.value.reduce((sum, item) => sum + Number(item.amount || 0), 0)
+})
+
+// Calculate total default income WITH verified payments and Sunday collection
+const totalDefaultIncomeWithVerified = computed(() => {
+  return Number(totalDefaultIncome.value) + Number(totalVerifiedPaymentsThisMonth.value) + Number(totalSundayCollection.value)
+})
+
+// Calculate total default expenses (excluding Ministries & Programs)
+const totalDefaultExpenses = computed(() => {
+  return defaultMonthlyExpenses.value
+    .filter(item => item.category !== 'Ministries & Programs')
+    .reduce((sum, item) => sum + Number(item.amount || 0), 0)
+})
+
+// Calculate total default expenses WITH ministries budget
+const totalDefaultExpensesWithMinistries = computed(() => {
+  return Number(totalDefaultExpenses.value) + Number(totalMinistryBudget.value)
+})
+
+// Calculate default budget net (using total income with verified payments)
+const defaultBudgetNet = computed(() => {
+  return totalDefaultIncomeWithVerified.value - totalDefaultExpensesWithMinistries.value
+})
+
+// Calculate total ministry budget
+const totalMinistryBudget = computed(() => {
+  return ministryReports.value.reduce((sum, ministry) => sum + Number(ministry.budget || 0), 0)
+})
+
+// Calculate total ministry spent
+const totalMinistrySpent = computed(() => {
+  return ministryReports.value.reduce((sum, ministry) => sum + Number(ministry.spent || 0), 0)
+})
+
+// Projected income based on pledges (6 months)
+const projectedIncome = computed(() => totalPledges.value * 6)
+
+// Projected expenses based on default monthly expenses WITH ministries (6 months)
+const projectedExpenses = computed(() => totalDefaultExpensesWithMinistries.value * 6)
+
 const projectedNet = computed(() => projectedIncome.value - projectedExpenses.value)
 
 const getPrayerCategoryClass = (category) => {
@@ -1103,6 +1960,104 @@ const getUserName = (userId) => {
   return user?.name || 'Unknown User'
 }
 
+// Get ministry percentage of total budget
+const getMinistryPercentage = (budget) => {
+  if (totalMinistryBudget.value === 0) return 0
+  return ((budget / totalMinistryBudget.value) * 100).toFixed(1)
+}
+
+// Get progress bar class based on spending
+const getProgressBarClass = (spent, budget) => {
+  const percentage = (spent / budget) * 100
+  if (percentage > 100) return 'bg-danger'
+  if (percentage > 90) return 'bg-warning'
+  return 'bg-success'
+}
+
+// Save ministry allocations (spent amounts)
+const saveMinistryAllocations = () => {
+  localStorage.setItem('gcbf_ministry_reports', JSON.stringify(ministryReports.value))
+  alert('Ministry allocations saved successfully!')
+}
+
+// Get average attendance for a ministry
+const getAverageAttendance = (ministry) => {
+  if (!ministry.attendance || ministry.attendance.length === 0) return 0
+  const total = ministry.attendance.reduce((sum, record) => sum + record.count, 0)
+  return Math.round(total / ministry.attendance.length)
+}
+
+// Edit ministry notes
+const editMinistryNotes = (ministry) => {
+  editingMinistryForNotes.value = ministry
+  editingNotes.value = ministry.notes || ''
+  showEditNotesModal.value = true
+}
+
+// Save ministry notes
+const saveMinistryNotes = () => {
+  const index = ministryReports.value.findIndex(m => m.name === editingMinistryForNotes.value.name)
+  if (index !== -1) {
+    ministryReports.value[index].notes = editingNotes.value
+    localStorage.setItem('gcbf_ministry_reports', JSON.stringify(ministryReports.value))
+    closeNotesModal()
+    alert('Admin notes saved successfully!')
+  }
+}
+
+// Close notes modal
+const closeNotesModal = () => {
+  showEditNotesModal.value = false
+  editingMinistryForNotes.value = null
+  editingNotes.value = ''
+}
+
+// Show add attendance modal
+const showAddAttendance = (ministry) => {
+  editingMinistryForAttendance.value = ministry
+  newAttendance.value = { 
+    date: new Date().toISOString().split('T')[0], 
+    count: 0, 
+    notes: '' 
+  }
+  showAttendanceModal.value = true
+}
+
+// Save attendance
+const saveAttendance = () => {
+  if (!newAttendance.value.date || newAttendance.value.count < 0) {
+    alert('Please fill in all required fields')
+    return
+  }
+
+  const index = ministryReports.value.findIndex(m => m.name === editingMinistryForAttendance.value.name)
+  if (index !== -1) {
+    if (!ministryReports.value[index].attendance) {
+      ministryReports.value[index].attendance = []
+    }
+    
+    ministryReports.value[index].attendance.push({
+      date: newAttendance.value.date,
+      count: newAttendance.value.count,
+      notes: newAttendance.value.notes || ''
+    })
+    
+    // Sort by date descending
+    ministryReports.value[index].attendance.sort((a, b) => new Date(b.date) - new Date(a.date))
+    
+    localStorage.setItem('gcbf_ministry_reports', JSON.stringify(ministryReports.value))
+    closeAttendanceModal()
+    alert('Attendance added successfully!')
+  }
+}
+
+// Close attendance modal
+const closeAttendanceModal = () => {
+  showAttendanceModal.value = false
+  editingMinistryForAttendance.value = null
+  newAttendance.value = { date: '', count: 0, notes: '' }
+}
+
 // Verify payment (approve or reject)
 const verifyPayment = (giftId, paymentId, status) => {
   // Find the gift in localStorage
@@ -1147,6 +2102,137 @@ const getVerificationStatusText = (status) => {
   }
 }
 
+// Edit ministry
+const editMinistry = (ministry) => {
+  editingMinistry.value = { ...ministry }
+  showEditMinistryModal.value = true
+}
+
+// Save ministry
+const saveMinistry = () => {
+  const index = ministryReports.value.findIndex(m => m.name === editingMinistry.value.name)
+  if (index !== -1) {
+    ministryReports.value[index] = { ...editingMinistry.value }
+    localStorage.setItem('gcbf_ministry_reports', JSON.stringify(ministryReports.value))
+    showEditMinistryModal.value = false
+    alert('Ministry report updated successfully!')
+  }
+}
+
+// Close ministry modal
+const closeMinistryModal = () => {
+  showEditMinistryModal.value = false
+  editingMinistry.value = { name: '', participants: 0, budget: 0 }
+}
+
+// Save default income (MONTHLY BUDGET - Default/Expected Amounts)
+const saveDefaultIncome = () => {
+  localStorage.setItem('gcbf_default_income', JSON.stringify(defaultMonthlyIncome.value))
+  localStorage.setItem('gcbf_sunday_collection', JSON.stringify(sundayCollection.value))
+  
+  // Sync Monthly Budget to Financial Report
+  // Update incomeData with values from defaultMonthlyIncome and verified payments
+  const updatedIncomeData = []
+  
+  // Add Tithes & Offerings (from verified payments + Sunday collection)
+  updatedIncomeData.push({ 
+    category: 'Tithes & Offerings', 
+    amount: totalVerifiedPaymentsThisMonth.value + totalSundayCollection.value 
+  })
+  
+  // Add all other income categories from Monthly Budget
+  defaultMonthlyIncome.value.forEach(item => {
+    // Skip Tithes & Offerings since we already added it with verified + Sunday collection
+    if (item.category !== 'Tithes & Offerings') {
+      updatedIncomeData.push({ ...item })
+    }
+  })
+  
+  // Update incomeData and save to localStorage
+  incomeData.value = updatedIncomeData
+  localStorage.setItem('gcbf_income_data', JSON.stringify(incomeData.value))
+  
+  alert('Monthly budget income saved and synced to Financial Report!')
+}
+
+// Add income category (MONTHLY BUDGET)
+const addIncomeCategory = () => {
+  if (newIncomeCategory.value.category && newIncomeCategory.value.amount >= 0) {
+    defaultMonthlyIncome.value.push({ ...newIncomeCategory.value })
+    saveDefaultIncome()
+    showAddIncomeCategoryModal.value = false
+    newIncomeCategory.value = { category: '', amount: 0 }
+  }
+}
+
+// Remove income category (MONTHLY BUDGET)
+const removeIncomeCategory = (index) => {
+  if (confirm('Are you sure you want to remove this income category?')) {
+    defaultMonthlyIncome.value.splice(index, 1)
+    saveDefaultIncome()
+  }
+}
+
+// Reset expenses to default values
+const resetExpensesToDefault = () => {
+  if (confirm('Are you sure you want to reset all expenses to ₱0? This will clear all expense data.')) {
+    // Reset to zero values
+    const zeroExpenses = [
+      { category: 'Staff & Benefits', amount: 0 },
+      { category: 'Facilities & Utilities', amount: 0 },
+      { category: 'Ministries & Programs', amount: 0 },
+      { category: 'Missions Support', amount: 0 },
+      { category: 'Administrative', amount: 0 },
+      { category: 'Maintenance', amount: 0 }
+    ]
+    
+    // Update both arrays
+    defaultMonthlyExpenses.value = zeroExpenses.map(item => ({ ...item }))
+    expenseData.value = zeroExpenses.map(item => ({ ...item }))
+    
+    // Clear and reset localStorage
+    localStorage.removeItem('gcbf_default_expenses')
+    localStorage.removeItem('gcbf_expense_data')
+    localStorage.setItem('gcbf_default_expenses', JSON.stringify(defaultMonthlyExpenses.value))
+    localStorage.setItem('gcbf_expense_data', JSON.stringify(expenseData.value))
+    
+    alert('All expenses have been reset to ₱0!')
+  }
+}
+
+// Save default expenses (MONTHLY BUDGET - Default/Expected Amounts)
+const saveDefaultExpenses = () => {
+  localStorage.setItem('gcbf_default_expenses', JSON.stringify(defaultMonthlyExpenses.value))
+  
+  // Sync Monthly Budget to Financial Report
+  // Update expenseData with values from defaultMonthlyExpenses
+  const updatedExpenseData = defaultMonthlyExpenses.value.map(item => ({ ...item }))
+  
+  // Update expenseData and save to localStorage
+  expenseData.value = updatedExpenseData
+  localStorage.setItem('gcbf_expense_data', JSON.stringify(expenseData.value))
+  
+  alert('Monthly budget expenses saved and synced to Financial Report!')
+}
+
+// Add expense category (MONTHLY BUDGET)
+const addExpenseCategory = () => {
+  if (newExpenseCategory.value.category && newExpenseCategory.value.amount >= 0) {
+    defaultMonthlyExpenses.value.push({ ...newExpenseCategory.value })
+    saveDefaultExpenses()
+    showAddExpenseCategoryModal.value = false
+    newExpenseCategory.value = { category: '', amount: 0 }
+  }
+}
+
+// Remove expense category (MONTHLY BUDGET)
+const removeExpenseCategory = (index) => {
+  if (confirm('Are you sure you want to remove this expense category?')) {
+    defaultMonthlyExpenses.value.splice(index, 1)
+    saveDefaultExpenses()
+  }
+}
+
 onMounted(() => {
   // In a real app, you would initialize charts here using Chart.js or similar
   console.log('Church Portal loaded - Charts would be initialized here')
@@ -1162,6 +2248,67 @@ onMounted(() => {
     }
   } catch (error) {
     console.error('Error loading newsletters from localStorage:', error)
+  }
+
+  // Load saved financial data
+  try {
+    // Load FINANCIAL REPORTS data (actual current month income/expenses)
+    const savedIncome = localStorage.getItem('gcbf_income_data')
+    if (savedIncome) {
+      incomeData.value = JSON.parse(savedIncome).map(item => ({
+        ...item,
+        amount: Number(item.amount || 0)
+      }))
+    }
+
+    const savedExpense = localStorage.getItem('gcbf_expense_data')
+    if (savedExpense) {
+      expenseData.value = JSON.parse(savedExpense).map(item => ({
+        ...item,
+        amount: Number(item.amount || 0)
+      }))
+    }
+
+    // Load MINISTRY REPORTS data
+    const savedMinistry = localStorage.getItem('gcbf_ministry_reports')
+    if (savedMinistry) {
+      ministryReports.value = JSON.parse(savedMinistry).map(ministry => ({
+        ...ministry,
+        budget: Number(ministry.budget || 0),
+        spent: Number(ministry.spent || 0),
+        participants: Number(ministry.participants || 0)
+      }))
+    }
+
+    // Load MONTHLY BUDGET data (default/expected monthly amounts for forecasting)
+    const savedDefaultExpenses = localStorage.getItem('gcbf_default_expenses')
+    if (savedDefaultExpenses) {
+      defaultMonthlyExpenses.value = JSON.parse(savedDefaultExpenses).map(item => ({
+        ...item,
+        amount: Number(item.amount || 0)
+      }))
+    }
+
+    const savedDefaultIncome = localStorage.getItem('gcbf_default_income')
+    if (savedDefaultIncome) {
+      defaultMonthlyIncome.value = JSON.parse(savedDefaultIncome).map(item => ({
+        ...item,
+        amount: Number(item.amount || 0)
+      }))
+    }
+
+    const savedSundayCollection = localStorage.getItem('gcbf_sunday_collection')
+    if (savedSundayCollection) {
+      const parsed = JSON.parse(savedSundayCollection)
+      sundayCollection.value = {
+        first: Number(parsed.first || 0),
+        second: Number(parsed.second || 0),
+        third: Number(parsed.third || 0),
+        fourth: Number(parsed.fourth || 0)
+      }
+    }
+  } catch (error) {
+    console.error('Error loading financial data from localStorage:', error)
   }
 })
 </script>

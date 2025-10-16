@@ -96,7 +96,7 @@
                 </div>
               </div>
               
-              <div v-if="user?.userType === 'pastor'" class="mt-3">
+              <div v-if="user?.userType === 'pastor' || user?.userType === 'admin'" class="mt-3">
                 <router-link to="/church-portal" class="btn btn-primary w-100 p-3 text-start">
                   <i class="bi bi-building fs-4 d-block mb-2"></i>
                   <strong>Church Portal</strong>
