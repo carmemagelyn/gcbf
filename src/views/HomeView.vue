@@ -7,17 +7,16 @@
           <div class="col-lg-6">
             <h1 class="display-4 fw-bold mb-4">Welcome to Graced Community Bible Fellowship</h1>
             <p class="lead mb-4">
-              Join us in worship, fellowship, and growing in God's grace together. 
-              Everyone is welcome in our loving community.
+              Shaped by the Potter’s love to live out His Kingdom purpose.
             </p>
             <div class="d-flex gap-3">
-              <router-link v-if="!isAuth" to="/register" class="btn btn-light btn-lg">
+              <router-link v-if="!isAuth" to="/register" class="btn btn-primary btn-lg">
                 Join Our Community
               </router-link>
-              <router-link v-if="isAuth" to="/dashboard" class="btn btn-light btn-lg">
+              <router-link v-if="isAuth" to="/dashboard" class="btn btn-primary btn-lg">
                 Go to Dashboard
               </router-link>
-              <button class="btn btn-outline-light btn-lg" @click="scrollToServices">
+              <button class="btn btn-light btn-lg" @click="scrollToServices">
                 View Services
               </button>
             </div>

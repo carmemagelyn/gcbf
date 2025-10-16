@@ -1,15 +1,23 @@
 <template>
-  <div class="register-page min-vh-100 d-flex align-items-center bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-6">
-          <div class="card shadow border-0">
-            <div class="card-body p-5">
-              <div class="text-center mb-4">
-                <i class="bi bi-church display-4 church-purple"></i>
-                <h2 class="fw-bold mt-3">Join Our Community</h2>
-                <p class="text-muted">Create your GCBF account</p>
-              </div>
+  <div class="register-page min-vh-100 d-flex">
+    <div class="row g-0 w-100">
+      <!-- Left Side - Title Section -->
+      <div class="col-lg-6 d-flex align-items-center justify-content-center text-white" style="background-color: #9A3F3F;">
+        <div class="p-5 text-center">
+          <i class="bi bi-church display-1 mb-4"></i>
+          <h1 class="display-4 fw-bold mb-3">Join Our Community</h1>
+          <p class="lead">Become part of the GCBF family</p>
+          <p class="mt-4">Create your account and start your journey of faith, worship, and fellowship with us.</p>
+        </div>
+      </div>
+
+      <!-- Right Side - Register Form -->
+      <div class="col-lg-6 d-flex align-items-center justify-content-center bg-light">
+        <div class="w-100" style="max-width: 500px; padding: 2rem;">
+          <div class="mb-4">
+            <h2 class="fw-bold">Create Account</h2>
+            <p class="text-muted">Fill in your details to get started</p>
+          </div>
 
               <form @submit.prevent="handleRegister">
                 <div class="row">
@@ -165,18 +173,16 @@
                   </p>
                 </div>
               </form>
+
+              <div class="text-center mt-4">
+                <router-link to="/" class="text-decoration-none text-muted">
+                  <i class="bi bi-arrow-left me-2"></i>
+                  Back to Homepage
+                </router-link>
+              </div>
             </div>
           </div>
-          
-          <div class="text-center mt-4">
-            <router-link to="/" class="text-decoration-none">
-              <i class="bi bi-arrow-left me-2"></i>
-              Back to Homepage
-            </router-link>
-          </div>
         </div>
-      </div>
-    </div>
   </div>
 </template>
 

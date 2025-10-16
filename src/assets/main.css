@@ -67,29 +67,30 @@ body {
 
 /* Bootstrap Customizations */
 .btn-primary {
-  background-color: #537D5D;
-  border-color: #537D5D;
-  color: #ffffff;
+  background-color: #537D5D !important;
+  border-color: #537D5D !important;
+  color: #ffffff !important;
   font-weight: 500;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #3d5e46;
-  border-color: #3d5e46;
-  color: #ffffff;
+  background-color: #ffff !important;
+  border-color: #3d5e46 !important;
+  color: #3d5e46  !important;
 }
 
 .btn-outline-primary {
-  color: #537D5D;
-  border-color: #537D5D;
+  color: #537D5D !important;
+  border-color: #537D5D !important;
+  background-color: #ffff !important;
 }
 
 .btn-outline-primary:hover,
 .btn-outline-primary:focus {
-  background-color: #537D5D;
-  border-color: #537D5D;
-  color: #ffffff;
+  background-color: #537D5D !important;
+  border-color: #537D5D !important;
+  color: #ffffff !important;
 }
 
 .text-primary {

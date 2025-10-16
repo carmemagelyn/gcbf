@@ -177,29 +177,29 @@ const handleLogin = async () => {
 }
 
 .bg-church-purple {
-  background: linear-gradient(135deg, #9A3F3F, #C96868);
+  background: linear-gradient(135deg, #537D5D, #6b9d76);
 }
 
 .btn-church-purple {
-  background-color: #9A3F3F;
-  border-color: #9A3F3F;
+  background-color: #537D5D;
+  border-color: #537D5D;
   color: white;
 }
 
 .btn-church-purple:hover {
-  background-color: #8B3838;
-  border-color: #8B3838;
+  background-color: #3d5e46;
+  border-color: #3d5e46;
   color: white;
 }
 
 .btn-church-purple:disabled {
-  background-color: #9A3F3F;
-  border-color: #9A3F3F;
+  background-color: #537D5D;
+  border-color: #537D5D;
   opacity: 0.6;
 }
 
 .church-purple {
-  color: #9A3F3F;
+  color: #537D5D;
 }
 
 .input-group-text {
