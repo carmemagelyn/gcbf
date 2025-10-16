@@ -76,22 +76,22 @@
               <div class="row g-3">
                 <div class="col-md-4">
                   <router-link to="/giving" class="btn btn-outline-primary w-100 p-3 text-start">
-                    <i class="bi bi-cash me-3"></i>
+                    <i class="me-3">💵</i>
                     <strong>Giving</strong>
                   </router-link>
                 </div>
                 <div class="col-md-4">
                   <router-link to="/bible-reading" class="btn btn-outline-primary w-100 p-3 text-start">
-                    <i class="bi bi-book fs-4 d-block mb-2"></i>
+                    <i class="me-3">📖</i>
                     <strong>Bible Reading</strong>
-                    <small class="d-block text-muted">Track your progress</small>
+                   
                   </router-link>
                 </div>
                 <div class="col-md-4">
                   <router-link to="/prayer-list" class="btn btn-outline-primary w-100 p-3 text-start">
-                    <i class="bi bi-hands-clapping fs-4 d-block mb-2"></i>
+                    <i class="me-3">🙏</i>
                     <strong>Prayer List</strong>
-                    <small class="d-block text-muted">Share your requests</small>
+                   
                   </router-link>
                 </div>
               </div>
