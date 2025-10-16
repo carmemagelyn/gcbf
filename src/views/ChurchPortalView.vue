@@ -81,27 +81,7 @@
                 @click="activeSection = 'finance'"
               >
                 <i class="bi bi-graph-up me-2"></i>
-                Financial Reports
-              </button>
-            </li>
-            <li class="nav-item">
-              <button 
-                class="nav-link"
-                :class="{ active: activeSection === 'prayers' }"
-                @click="activeSection = 'prayers'"
-              >
-                <i class="bi bi-heart me-2"></i>
-                Shared Prayers
-              </button>
-            </li>
-            <li class="nav-item">
-              <button 
-                class="nav-link"
-                :class="{ active: activeSection === 'ministry' }"
-                @click="activeSection = 'ministry'"
-              >
-                <i class="bi bi-people me-2"></i>
-                Ministry Reports
+                Monthly Reports
               </button>
             </li>
             <li class="nav-item">
@@ -140,11 +120,34 @@
             <li class="nav-item">
               <button 
                 class="nav-link"
+                :class="{ active: activeSection === 'ministry' }"
+                @click="activeSection = 'ministry'"
+              >
+                <i class="bi bi-people me-2"></i>
+                Ministry Reports
+              </button>
+            </li>
+            <li class="nav-item">
+              <button 
+                class="nav-link"
                 :class="{ active: activeSection === 'newsletters' }"
                 @click="activeSection = 'newsletters'"
               >
                 <i class="bi bi-newspaper me-2"></i>
                 Newsletter Management
+              </button>
+            </li>
+            <li class="nav-item">
+              <button 
+                class="nav-link"
+                :class="{ active: activeSection === 'prayers' }"
+                @click="activeSection = 'prayers'"
+              >
+                <i class="bi bi-heart me-2"></i>
+                Shared Prayers
+                <span v-if="user?.userType === 'admin' && pendingPrayers.length > 0" class="badge bg-warning ms-1">
+                  {{ pendingPrayers.length }}
+                </span>
               </button>
             </li>
           </ul>
@@ -344,21 +347,72 @@
 
             <!-- Shared Prayers -->
             <div v-if="activeSection === 'prayers'" class="section-content">
+              <!-- Pending Prayers for Admin Approval -->
+              <div class="row g-4 mb-4" v-if="user?.userType === 'admin' && pendingPrayers.length > 0">
+                <div class="col-12">
+                  <div class="card border-warning border-2 shadow-sm">
+                    <div class="card-header bg-warning bg-opacity-10 border-0 d-flex justify-content-between align-items-center">
+                      <h5 class="fw-bold mb-0">
+                        <i class="bi bi-exclamation-circle me-2"></i>
+                        Prayers Pending Approval
+                      </h5>
+                      <span class="badge bg-warning">{{ pendingPrayers.length }} pending</span>
+                    </div>
+                    <div class="card-body">
+                      <div class="row g-3">
+                        <div v-for="prayer in pendingPrayers" :key="prayer.id" class="col-lg-6">
+                          <div class="prayer-card card border-warning">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge" :class="getPrayerCategoryClass(prayer.category)">
+                                  {{ prayer.category }}
+                                </span>
+                                <small class="text-muted">{{ formatDate(prayer.dateRequested) }}</small>
+                              </div>
+                              
+                              <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-person-circle me-2 church-purple"></i>
+                                <strong>{{ prayer.requestedBy }}</strong>
+                              </div>
+                              
+                              <h6 class="fw-bold mb-2">{{ prayer.title }}</h6>
+                              <p class="card-text small">{{ prayer.request }}</p>
+                              
+                              <div class="d-flex gap-2 mt-3">
+                                <button class="btn btn-sm btn-success flex-fill" @click="approvePrayer(prayer.id)">
+                                  <i class="bi bi-check-circle me-1"></i>
+                                  Approve
+                                </button>
+                                <button class="btn btn-sm btn-danger flex-fill" @click="rejectPrayer(prayer.id)">
+                                  <i class="bi bi-x-circle me-1"></i>
+                                  Reject
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Approved Community Prayer Requests -->
               <div class="row g-4">
                 <div class="col-12">
                   <div class="card border-0 shadow-sm">
                     <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
                       <h5 class="fw-bold mb-0">Community Prayer Requests</h5>
-                      <span class="badge bg-primary">{{ sharedPrayers.length }} active prayers</span>
+                      <span class="badge bg-primary">{{ approvedPrayers.length }} active prayers</span>
                     </div>
                     <div class="card-body">
-                      <div v-if="sharedPrayers.length === 0" class="text-center py-4">
+                      <div v-if="approvedPrayers.length === 0" class="text-center py-4">
                         <i class="bi bi-heart display-4 opacity-25"></i>
                         <p class="mt-3 text-muted">No shared prayer requests at this time</p>
                       </div>
 
                       <div v-else class="row g-3">
-                        <div v-for="prayer in sharedPrayers" :key="prayer.id" class="col-lg-6">
+                        <div v-for="prayer in approvedPrayers" :key="prayer.id" class="col-lg-6">
                           <div class="prayer-card card border-0 bg-light">
                             <div class="card-body">
                               <div class="d-flex justify-content-between align-items-start mb-2">
@@ -376,11 +430,18 @@
                               <h6 class="fw-bold mb-2">{{ prayer.title }}</h6>
                               <p class="card-text small">{{ truncateText(prayer.request, 120) }}</p>
                               
-                              <div v="if prayer.status === 'answered'" class="mt-2">
+                              <div v-if="prayer.status === 'answered'" class="mt-2">
                                 <div class="alert alert-success py-2 mb-0">
                                   <i class="bi bi-check-circle me-2"></i>
                                   <strong>Answered Prayer!</strong>
                                 </div>
+                              </div>
+                              
+                              <div v-if="user?.userType === 'admin'" class="mt-3">
+                                <button class="btn btn-sm btn-outline-danger" @click="removePrayer(prayer.id)">
+                                  <i class="bi bi-trash me-1"></i>
+                                  Remove
+                                </button>
                               </div>
                             </div>
                           </div>
@@ -1561,9 +1622,10 @@ const sharedPrayers = ref([
     title: 'Healing for Sarah Johnson',
     category: 'Health',
     request: 'Please pray for Sarah as she recovers from surgery. Pray for complete healing and strength during this time.',
-    requestedBy: 'Mark Johnson',
+    requestedBy: 'John Doe',
     dateRequested: '2024-10-12',
-    status: 'active'
+    status: 'active',
+    approvalStatus: 'approved'
   },
   {
     id: 2,
@@ -1572,27 +1634,59 @@ const sharedPrayers = ref([
     request: 'Our youth mission team is traveling to Guatemala next week. Please pray for their safety and for hearts to be touched.',
     requestedBy: 'Pastor John Louie Berdejo',
     dateRequested: '2024-10-10',
-    status: 'active'
+    status: 'active',
+    approvalStatus: 'approved'
   },
   {
     id: 3,
     title: 'New Job Opportunity',
     category: 'Work',
     request: 'I have an important job interview coming up. Please pray for wisdom and favor.',
-    requestedBy: 'Lisa Chen',
+    requestedBy: 'Jane Smith',
     dateRequested: '2024-10-08',
-    status: 'answered'
+    status: 'answered',
+    approvalStatus: 'approved'
   },
   {
     id: 4,
     title: 'Small Groups',
-    category: 'Discipleship',
+    category: 'Community',
     request: 'Pray for our upcoming community food drive and that we can serve those in need effectively.',
-    requestedBy: 'David Martinez',
+    requestedBy: 'John Doe',
     dateRequested: '2024-10-05',
-    status: 'active'
+    status: 'active',
+    approvalStatus: 'approved'
+  },
+  {
+    id: 5,
+    title: 'Family Reconciliation',
+    category: 'Family',
+    request: 'Please pray for restoration in my family. We are going through a difficult time and need God\'s peace and guidance.',
+    requestedBy: 'Jane Smith',
+    dateRequested: '2025-10-17',
+    status: 'active',
+    approvalStatus: 'pending'
+  },
+  {
+    id: 6,
+    title: 'Financial Breakthrough',
+    category: 'Work',
+    request: 'Seeking prayers for provision and financial stability during this challenging season.',
+    requestedBy: 'John Doe',
+    dateRequested: '2025-10-16',
+    status: 'active',
+    approvalStatus: 'pending'
   }
 ])
+
+// Computed properties for prayer filtering
+const pendingPrayers = computed(() => 
+  sharedPrayers.value.filter(p => p.approvalStatus === 'pending')
+)
+
+const approvedPrayers = computed(() => 
+  sharedPrayers.value.filter(p => p.approvalStatus === 'approved')
+)
 
 const ministryReports = ref([
   {
@@ -1949,6 +2043,38 @@ const truncateText = (text, maxLength) => {
   return text.substring(0, maxLength) + '...'
 }
 
+// Prayer approval functions
+const approvePrayer = (prayerId) => {
+  const prayer = sharedPrayers.value.find(p => p.id === prayerId)
+  if (prayer) {
+    prayer.approvalStatus = 'approved'
+    localStorage.setItem('gcbf_shared_prayers', JSON.stringify(sharedPrayers.value))
+    alert('Prayer request approved and posted to community!')
+  }
+}
+
+const rejectPrayer = (prayerId) => {
+  if (confirm('Are you sure you want to reject this prayer request? It will be permanently removed.')) {
+    const index = sharedPrayers.value.findIndex(p => p.id === prayerId)
+    if (index !== -1) {
+      sharedPrayers.value.splice(index, 1)
+      localStorage.setItem('gcbf_shared_prayers', JSON.stringify(sharedPrayers.value))
+      alert('Prayer request rejected and removed.')
+    }
+  }
+}
+
+const removePrayer = (prayerId) => {
+  if (confirm('Are you sure you want to remove this prayer request from the community?')) {
+    const index = sharedPrayers.value.findIndex(p => p.id === prayerId)
+    if (index !== -1) {
+      sharedPrayers.value.splice(index, 1)
+      localStorage.setItem('gcbf_shared_prayers', JSON.stringify(sharedPrayers.value))
+      alert('Prayer request removed.')
+    }
+  }
+}
+
 // Load all payments from localStorage for verification
 const loadAllPayments = () => {
   const allGifts = []
@@ -2077,6 +2203,14 @@ const saveAttendance = () => {
     localStorage.setItem('gcbf_ministry_reports', JSON.stringify(ministryReports.value))
     closeAttendanceModal()
     alert('Attendance added successfully!')
+    
+    // Refresh the attendance chart with updated data
+    setTimeout(() => {
+      const canvas = document.getElementById('attendanceChart')
+      if (canvas) {
+        initAttendanceChart()
+      }
+    }, 100)
   }
 }
 
@@ -2262,19 +2396,18 @@ const removeExpenseCategory = (index) => {
   }
 }
 
-onMounted(() => {
-  // Initialize 6-month trend chart
-  const initMonthlyTrendChart = () => {
-    const canvas = document.getElementById('monthlyTrendChart')
-    if (canvas) {
-      const ctx = canvas.getContext('2d')
-      
-      // Generate next 6 months starting from current month
-      const months = []
-      const currentDate = new Date()
-      for (let i = 0; i < 6; i++) {
-        const date = new Date(currentDate.getFullYear(), currentDate.getMonth() + i, 1)
-        months.push(date.toLocaleDateString('en-US', { month: 'short', year: '2-digit' }))
+// Initialize 6-month trend chart
+const initMonthlyTrendChart = () => {
+  const canvas = document.getElementById('monthlyTrendChart')
+  if (canvas) {
+    const ctx = canvas.getContext('2d')
+    
+    // Generate next 6 months starting from current month
+    const months = []
+    const currentDate = new Date()
+    for (let i = 0; i < 6; i++) {
+      const date = new Date(currentDate.getFullYear(), currentDate.getMonth() + i, 1)
+      months.push(date.toLocaleDateString('en-US', { month: 'short', year: '2-digit' }))
       }
       
       // Current month has actual data, future months show projected/budgeted amounts
@@ -2351,9 +2484,9 @@ onMounted(() => {
       drawChart()
     }
   }
-  
-  // Initialize attendance trend chart
-  const initAttendanceChart = () => {
+
+// Initialize attendance trend chart
+const initAttendanceChart = () => {
     const canvas = document.getElementById('attendanceChart')
     if (canvas) {
       const ctx = canvas.getContext('2d')
@@ -2391,19 +2524,19 @@ onMounted(() => {
         })
         
         // Aggregate by week (4 weeks per month)
+        // TOTAL all attendance for each week (not average)
+        // This allows for multiple meetings per week (e.g., Small Groups)
         const weeklyTotals = [0, 0, 0, 0]
-        const weekCounts = [0, 0, 0, 0]
         
         monthData.forEach(record => {
           const weekNum = getWeekInMonth(record.date)
           if (weekNum >= 1 && weekNum <= 4) {
             weeklyTotals[weekNum - 1] += Number(record.count || 0)
-            weekCounts[weekNum - 1]++
           }
         })
         
-        // Average attendance per week
-        return weeklyTotals.map((total, i) => weekCounts[i] > 0 ? Math.round(total / weekCounts[i]) : 0)
+        // Return total attendance per week
+        return weeklyTotals
       }
       
       // Get real attendance data from ministry reports for all 6 months
@@ -2413,10 +2546,15 @@ onMounted(() => {
       const smallGroupsData = []
       
       months.forEach(monthInfo => {
-        worshipData.push(...getMonthlyWeeklyData('Worship Service', monthInfo.month, monthInfo.year))
+        worshipData.push(...getMonthlyWeeklyData('Worship', monthInfo.month, monthInfo.year))
         bibleNightData.push(...getMonthlyWeeklyData('Bible Night Class', monthInfo.month, monthInfo.year))
         smallGroupsData.push(...getMonthlyWeeklyData('Small Groups', monthInfo.month, monthInfo.year))
       })
+      
+      // Debug: Log the attendance data being used
+      console.log('Worship Attendance Data:', worshipData)
+      console.log('Bible Night Attendance Data:', bibleNightData)
+      console.log('Small Groups Attendance Data:', smallGroupsData)
       
       // Generate week labels (4 weeks per month for 6 months = 24 weeks)
       const weeks = []
@@ -2453,6 +2591,7 @@ onMounted(() => {
           ctx.lineWidth = 3
           ctx.beginPath()
           
+          // Draw the line connecting all points
           data.forEach((value, i) => {
             const x = padding + (i * (chartWidth / (weeks.length - 1)))
             const y = height - padding - ((value / maxValue) * chartHeight)
@@ -2462,22 +2601,30 @@ onMounted(() => {
             } else {
               ctx.lineTo(x, y)
             }
+          })
+          
+          ctx.stroke()
+          
+          // Draw points (circles) on top of the line
+          data.forEach((value, i) => {
+            const x = padding + (i * (chartWidth / (weeks.length - 1)))
+            const y = height - padding - ((value / maxValue) * chartHeight)
             
-            // Draw point
             ctx.fillStyle = color
             ctx.beginPath()
             ctx.arc(x, y, 5, 0, Math.PI * 2)
             ctx.fill()
-            
-            // Draw value label above point
-            ctx.fillStyle = '#000'
-            ctx.font = 'bold 11px Arial'
-            ctx.textAlign = 'center'
-            ctx.fillText(value, x, y - 12)
-            ctx.beginPath()
           })
           
-          ctx.stroke()
+          // Draw value labels beside each point (to the right)
+          ctx.fillStyle = color
+          ctx.font = 'bold 10px Arial'
+          ctx.textAlign = 'left'
+          data.forEach((value, i) => {
+            const x = padding + (i * (chartWidth / (weeks.length - 1)))
+            const y = height - padding - ((value / maxValue) * chartHeight)
+            ctx.fillText(value, x + 10, y + 4)
+          })
         }
         
         // Draw ministry lines
@@ -2526,11 +2673,8 @@ onMounted(() => {
       drawAttendanceChart()
     }
   }
-  
-  // Initialize charts after a short delay to ensure DOM is ready
-  setTimeout(initMonthlyTrendChart, 100)
-  setTimeout(initAttendanceChart, 150)
-  
+
+onMounted(() => {
   // Load all payments for verification
   loadAllPayments()
   
@@ -2542,6 +2686,100 @@ onMounted(() => {
     }
   } catch (error) {
     console.error('Error loading newsletters from localStorage:', error)
+  }
+  
+  // Load shared prayers from localStorage
+  try {
+    const savedPrayers = localStorage.getItem('gcbf_shared_prayers')
+    if (savedPrayers) {
+      sharedPrayers.value = JSON.parse(savedPrayers)
+    }
+  } catch (error) {
+    console.error('Error loading prayers from localStorage:', error)
+  }
+  
+  // Initialize personal prayers for John Doe (user id: 1)
+  try {
+    const johnDoePrayers = localStorage.getItem('gcbf_prayers_1')
+    if (!johnDoePrayers) {
+      const johnDoeSamplePrayers = [
+        {
+          id: 1,
+          title: 'Healing for Sarah Johnson',
+          category: 'Health',
+          request: 'Please pray for Sarah as she recovers from surgery. Pray for complete healing and strength during this time.',
+          dateRequested: '2024-10-12',
+          status: 'active',
+          visibility: 'public',
+          approved: true,
+          approvedBy: 'Church Administrator',
+          approvedAt: '2024-10-12'
+        },
+        {
+          id: 4,
+          title: 'Small Groups',
+          category: 'Community',
+          request: 'Pray for our upcoming community food drive and that we can serve those in need effectively.',
+          dateRequested: '2024-10-05',
+          status: 'active',
+          visibility: 'public',
+          approved: true,
+          approvedBy: 'Church Administrator',
+          approvedAt: '2024-10-05'
+        },
+        {
+          id: 6,
+          title: 'Financial Breakthrough',
+          category: 'Work',
+          request: 'Seeking prayers for provision and financial stability during this challenging season.',
+          dateRequested: '2025-10-16',
+          status: 'active',
+          visibility: 'public',
+          approved: false,
+          approvedBy: null,
+          approvedAt: null
+        }
+      ]
+      localStorage.setItem('gcbf_prayers_1', JSON.stringify(johnDoeSamplePrayers))
+    }
+  } catch (error) {
+    console.error('Error initializing John Doe prayers:', error)
+  }
+  
+  // Initialize personal prayers for Jane Smith (user id: 2)
+  try {
+    const janeSmithPrayers = localStorage.getItem('gcbf_prayers_2')
+    if (!janeSmithPrayers) {
+      const janeSmithSamplePrayers = [
+        {
+          id: 3,
+          title: 'New Job Opportunity',
+          category: 'Work',
+          request: 'I have an important job interview coming up. Please pray for wisdom and favor.',
+          dateRequested: '2024-10-08',
+          status: 'answered',
+          visibility: 'public',
+          approved: true,
+          approvedBy: 'Church Administrator',
+          approvedAt: '2024-10-08'
+        },
+        {
+          id: 5,
+          title: 'Family Reconciliation',
+          category: 'Family',
+          request: 'Please pray for restoration in my family. We are going through a difficult time and need God\'s peace and guidance.',
+          dateRequested: '2025-10-17',
+          status: 'active',
+          visibility: 'public',
+          approved: false,
+          approvedBy: null,
+          approvedAt: null
+        }
+      ]
+      localStorage.setItem('gcbf_prayers_2', JSON.stringify(janeSmithSamplePrayers))
+    }
+  } catch (error) {
+    console.error('Error initializing Jane Smith prayers:', error)
   }
 
   // Load saved financial data
@@ -2604,6 +2842,12 @@ onMounted(() => {
   } catch (error) {
     console.error('Error loading financial data from localStorage:', error)
   }
+  
+  // Initialize charts AFTER data is loaded
+  setTimeout(() => {
+    initMonthlyTrendChart()
+    initAttendanceChart()
+  }, 200)
 })
 </script>
 

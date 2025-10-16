@@ -389,13 +389,27 @@
                       class="form-check-input" 
                       type="radio" 
                       name="prayerVisibility" 
+                      id="visibilityPersonal"
+                      value="personal" 
+                      v-model="prayerForm.visibility"
+                      required
+                    >
+                    <label class="form-check-label" for="visibilityPersonal">
+                      <strong>Personal</strong> - Only visible to you
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input 
+                      class="form-check-input" 
+                      type="radio" 
+                      name="prayerVisibility" 
                       id="visibilityPublic"
                       value="public" 
                       v-model="prayerForm.visibility"
                       required
                     >
                     <label class="form-check-label" for="visibilityPublic">
-                      <strong>Public</strong> - Visible to all church members
+                      <strong>Public</strong> - Visible to all church members (requires approval)
                     </label>
                   </div>
                   <div class="form-check">
@@ -456,7 +470,7 @@ const error = ref('')
 const prayerForm = ref({
   category: '',
   request: '',
-  visibility: ''
+  visibility: 'personal'
 })
 
 const myPrayers = computed(() => {
@@ -481,9 +495,97 @@ const pendingPrayers = computed(() => {
 })
 
 onMounted(() => {
+  // Initialize sample prayers for demo users
+  initializeSamplePrayers()
   loadPrayers()
   loadPrayingFor()
 })
+
+const initializeSamplePrayers = () => {
+  // Initialize personal prayers for John Doe (user id: 1)
+  try {
+    const johnDoePrayers = localStorage.getItem('gcbf_prayers_1')
+    if (!johnDoePrayers) {
+      const johnDoeSamplePrayers = [
+        {
+          id: 1,
+          title: 'Healing for Sarah Johnson',
+          category: 'Health',
+          request: 'Please pray for Sarah as she recovers from surgery. Pray for complete healing and strength during this time.',
+          dateRequested: '2024-10-12',
+          status: 'active',
+          visibility: 'public',
+          approved: true,
+          approvedBy: 'Church Administrator',
+          approvedAt: '2024-10-12'
+        },
+        {
+          id: 4,
+          title: 'Small Groups',
+          category: 'Community',
+          request: 'Pray for our upcoming community food drive and that we can serve those in need effectively.',
+          dateRequested: '2024-10-05',
+          status: 'active',
+          visibility: 'public',
+          approved: true,
+          approvedBy: 'Church Administrator',
+          approvedAt: '2024-10-05'
+        },
+        {
+          id: 6,
+          title: 'Financial Breakthrough',
+          category: 'Work',
+          request: 'Seeking prayers for provision and financial stability during this challenging season.',
+          dateRequested: '2025-10-16',
+          status: 'active',
+          visibility: 'public',
+          approved: false,
+          approvedBy: null,
+          approvedAt: null
+        }
+      ]
+      localStorage.setItem('gcbf_prayers_1', JSON.stringify(johnDoeSamplePrayers))
+    }
+  } catch (error) {
+    console.error('Error initializing John Doe prayers:', error)
+  }
+  
+  // Initialize personal prayers for Jane Smith (user id: 2)
+  try {
+    const janeSmithPrayers = localStorage.getItem('gcbf_prayers_2')
+    if (!janeSmithPrayers) {
+      const janeSmithSamplePrayers = [
+        {
+          id: 3,
+          title: 'New Job Opportunity',
+          category: 'Work',
+          request: 'I have an important job interview coming up. Please pray for wisdom and favor.',
+          dateRequested: '2024-10-08',
+          status: 'answered',
+          visibility: 'public',
+          approved: true,
+          approvedBy: 'Church Administrator',
+          approvedAt: '2024-10-08'
+        },
+        {
+          id: 5,
+          title: 'Family Reconciliation',
+          category: 'Family',
+          request: 'Please pray for restoration in my family. We are going through a difficult time and need God\'s peace and guidance.',
+          dateRequested: '2025-10-17',
+          status: 'active',
+          visibility: 'public',
+          approved: false,
+          approvedBy: null,
+          approvedAt: null
+        }
+      ]
+      localStorage.setItem('gcbf_prayers_2', JSON.stringify(janeSmithSamplePrayers))
+    }
+  } catch (error) {
+    console.error('Error initializing Jane Smith prayers:', error)
+  }
+}
 
 const loadPrayers = () => {
   // Load prayers from all users for community view
@@ -576,11 +678,32 @@ const savePrayer = () => {
         createdAt: new Date().toISOString()
       }
       userPrayers.push(newPrayer)
+      
+      // If prayer is set to 'public', add it to shared prayers with 'pending' status
+      if (prayerForm.value.visibility === 'public') {
+        let sharedPrayers = JSON.parse(localStorage.getItem('gcbf_shared_prayers') || '[]')
+        const sharedPrayer = {
+          id: parseInt(newPrayer.id),
+          title: `Prayer Request from ${user?.name || 'Anonymous'}`,
+          category: newPrayer.category,
+          request: newPrayer.request,
+          requestedBy: user?.name || 'Anonymous',
+          dateRequested: newPrayer.dateRequested,
+          status: 'active',
+          approvalStatus: 'pending'
+        }
+        sharedPrayers.push(sharedPrayer)
+        localStorage.setItem('gcbf_shared_prayers', JSON.stringify(sharedPrayers))
+      }
     }
 
     localStorage.setItem(`gcbf_prayers_${userId}`, JSON.stringify(userPrayers))
     loadPrayers() // Reload all prayers
     closeModal()
+    
+    if (prayerForm.value.visibility === 'public') {
+      alert('Your prayer has been submitted and is pending admin approval before being shared with the community.')
+    }
 
   } catch (err) {
     error.value = 'Failed to save prayer request. Please try again.'
@@ -693,7 +816,7 @@ const closeModal = () => {
   prayerForm.value = {
     category: '',
     request: '',
-    visibility: ''
+    visibility: 'personal'
   }
   error.value = ''
 }
@@ -715,11 +838,15 @@ const getCategoryBadgeClass = (category) => {
 }
 
 const getVisibilityBadgeClass = (visibility) => {
-  return visibility === 'public' ? 'bg-success' : 'bg-warning text-dark'
+  if (visibility === 'public') return 'bg-success'
+  if (visibility === 'personal') return 'bg-info'
+  return 'bg-warning text-dark' // pastor
 }
 
 const getVisibilityIcon = (visibility) => {
-  return visibility === 'public' ? 'bi bi-people' : 'bi bi-shield-lock'
+  if (visibility === 'public') return 'bi bi-people'
+  if (visibility === 'personal') return 'bi bi-lock'
+  return 'bi bi-shield-lock' // pastor
 }
 
 const capitalizeFirst = (str) => {
