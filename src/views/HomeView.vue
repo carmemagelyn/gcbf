@@ -9,21 +9,6 @@
             <p class="lead mb-4">
               Shaped by the Potter's love to live out His Kingdom purpose through Jesus Christ and the work of the Holy Spirit.
             </p>
-            
-            <!-- Weekly Verse -->
-            <div class="card bg-white bg-opacity-10 border-0 mb-4">
-              <div class="card-body">
-                <h6 class="text-uppercase fw-bold mb-3" style="letter-spacing: 1px;">
-                  <i class="bi bi-book me-2"></i>Verse of the Week
-                </h6>
-                <p class="fst-italic mb-3" style="font-size: 1.1rem; line-height: 1.6;">
-                  "{{ weeklyVerse.text }}"
-                </p>
-                <p class="text-end mb-0 fw-bold">
-                  — {{ weeklyVerse.reference }}
-                </p>
-              </div>
-            </div>
 
             <div class="d-flex gap-3">
               <button v-if="!isAuth" class="btn btn-primary btn-lg" @click="scrollToLocation">
@@ -37,8 +22,21 @@
               </button>
             </div>
           </div>
-          <div class="col-lg-6 text-center">
-            <i class="bi bi-church display-1 opacity-75"></i>
+          <div class="col-lg-6">
+            <!-- Weekly Verse -->
+            <div class="card bg-white bg-opacity-10 border-0">
+              <div class="card-body">
+                <h6 class="text-uppercase fw-bold mb-3 text-white" style="letter-spacing: 1px; opacity: 0.9;">
+                  <i class="bi bi-book me-2"></i>Verse of the Week
+                </h6>
+                <p class="fst-italic mb-3 text-white" style="font-size: 1.1rem; line-height: 1.6; opacity: 0.85;">
+                  "{{ weeklyVerse.text }}"
+                </p>
+                <p class="text-end mb-0 fw-bold text-white" style="opacity: 0.9;">
+                  — {{ weeklyVerse.reference }}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -282,7 +280,7 @@ const weeklyVerse = ref(getWeeklyVerse())
 const weeklyServices = ref([
   {
     id: 1,
-    name: 'Sunday Worship',
+    name: 'Worship Service',
     day: 'Sunday',
     time: '10:00 AM',
     location: 'Main Sanctuary',
@@ -291,8 +289,8 @@ const weeklyServices = ref([
   {
     id: 2,
     name: 'Bible Night Class',
-    day: 'Wednesday',
-    time: '7:00 PM',
+    day: 'Tuesday',
+    time: '6:30 PM',
     location: 'Fellowship Hall',
     icon: 'bi bi-book'
   },
@@ -300,7 +298,7 @@ const weeklyServices = ref([
     id: 6,
     name: 'Small Groups',
     day: 'Saturday',
-    time: '9:00 AM',
+    time: '3:00 PM',
     location: 'Various Locations',
     icon: 'bi bi-heart-fill'
   }

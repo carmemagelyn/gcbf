@@ -7,5 +7,9 @@ import App from './App.vue'
 import router from './router'
 
 const app = createApp(App)
+
+// Disable Vue devtools in production
+app.config.devtools = false
+
 app.use(router)
 app.mount('#app')

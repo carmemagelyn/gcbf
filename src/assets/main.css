@@ -76,8 +76,8 @@ body {
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: #ffff !important;
-  border-color: #3d5e46 !important;
-  color: #3d5e46  !important;
+  border-color: #6b9973 !important;
+  color: #6b9973  !important;
 }
 
 .btn-outline-primary {
@@ -194,6 +194,17 @@ body {
   font-weight: 500 !important;
 }
 
+/* Hide Vue DevTools button */
+#__VUE_DEVTOOLS_GLOBAL_HOOK__,
+.__vue-devtools-iframe__,
+[id^="__vue-devtools"],
+iframe[src*="devtools"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .container {
@@ -207,5 +218,240 @@ body {
   
   .display-6 {
     font-size: 1.5rem;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    padding: 3rem 0 !important;
+  }
+  
+  .hero-section h1 {
+    font-size: 1.75rem !important;
+  }
+  
+  .hero-section .lead {
+    font-size: 1rem !important;
+  }
+  
+  /* Buttons */
+  .btn-lg {
+    font-size: 1rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+  
+  /* Flex gap-3 for buttons only, not navbar */
+  .hero-section .d-flex.gap-3 {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+  }
+  
+  /* Cards */
+  .card-body {
+    padding: 1rem !important;
+  }
+  
+  .card-title {
+    font-size: 1.1rem !important;
+  }
+  
+  /* Navigation */
+  .navbar-brand {
+    font-size: 1.25rem !important;
+  }
+  
+  .navbar-logo {
+    height: 45px !important;
+  }
+  
+  .navbar-nav {
+    padding-top: 1rem;
+  }
+  
+  /* Navbar icons on mobile */
+  .navbar .bi-heart,
+  .navbar .bi-person-circle {
+    font-size: 1.5rem !important;
+  }
+  
+  /* Modal */
+  .modal-dialog {
+    margin: 0.5rem !important;
+  }
+  
+  .modal-body {
+    padding: 1rem !important;
+  }
+  
+  .modal-title {
+    font-size: 1.25rem !important;
+  }
+  
+  /* Forms */
+  .form-label {
+    font-size: 0.9rem !important;
+  }
+  
+  .input-group-text {
+    font-size: 0.875rem !important;
+  }
+  
+  /* Tables */
+  .table {
+    font-size: 0.875rem !important;
+  }
+  
+  /* Stats Cards */
+  .display-4 {
+    font-size: 2rem !important;
+  }
+  
+  h5 {
+    font-size: 1rem !important;
+  }
+  
+  small, .small {
+    font-size: 0.8rem !important;
+  }
+  
+  /* Spacing */
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  
+  .py-4 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  
+  .mb-5 {
+    margin-bottom: 2rem !important;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Grid columns */
+  .row.g-4 {
+    --bs-gutter-y: 1rem !important;
+  }
+  
+  /* Dashboard specific */
+  .dashboard {
+    padding-top: 70px !important;
+  }
+  
+  /* Quick action buttons */
+  .quick-action-btn {
+    height: auto !important;
+    padding: 1rem !important;
+  }
+  
+  /* Footer */
+  footer {
+    font-size: 0.9rem !important;
+  }
+  
+  /* Bible reading grid */
+  .bible-book-card {
+    font-size: 0.85rem !important;
+  }
+  
+  /* Prayer list */
+  .prayer-card {
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Church portal */
+  .church-portal .card-body {
+    padding: 1rem !important;
+  }
+  
+  /* Weekly verse card */
+  .card.bg-white.bg-opacity-10 {
+    margin-top: 1.5rem !important;
+  }
+  
+  /* Memory verse text sizing */
+  .card.bg-white.bg-opacity-10 h6 {
+    font-size: 0.65rem !important;
+  }
+  
+  .card.bg-white.bg-opacity-10 p {
+    font-size: 0.7rem !important;
+  }
+  
+  /* Event cards */
+  .event-date {
+    min-width: 50px !important;
+    font-size: 0.75rem !important;
+  }
+  
+  /* Activity icons */
+  .activity-icon {
+    font-size: 1rem !important;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+  .display-1 {
+    font-size: 3rem !important;
+  }
+  
+  .display-4 {
+    font-size: 1.5rem !important;
+  }
+  
+  .hero-section h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  .btn {
+    font-size: 0.875rem !important;
+  }
+  
+  .navbar-logo {
+    height: 40px !important;
+  }
+  
+  /* Extra small navbar icons */
+  .navbar .bi-heart,
+  .navbar .bi-person-circle {
+    font-size: 1.6rem !important;
+  }
+  
+  /* Memory verse even smaller on extra small devices */
+  .card.bg-white.bg-opacity-10 h6 {
+    font-size: 0.75rem !important;
+  }
+  
+  .card.bg-white.bg-opacity-10 p {
+    font-size: 0.85rem !important;
+  }
+  
+  .col-6 {
+    width: 100% !important;
+  }
+  
+  .modal-dialog-centered {
+    margin: 0 !important;
+  }
+  
+  .table-responsive {
+    font-size: 0.75rem !important;
+  }
+}
+
+/* Landscape mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-section {
+    padding: 2rem 0 !important;
+  }
+  
+  .modal-body {
+    max-height: 60vh !important;
+    overflow-y: auto !important;
   }
 }

@@ -1,16 +1,47 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-church-purple fixed-top shadow">
     <div class="container">
-      <router-link class="navbar-brand fw-bold" to="/">
-        <i class="bi bi-church me-2"></i>
-        GCBF
+      <router-link class="navbar-brand fw-bold d-flex align-items-center" to="/">
+        <img src="../assets/logo.png" alt="GCBF Logo" class="navbar-logo me-2">
       </router-link>
       
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <!-- Always visible icons for mobile -->
+      <div class="d-flex align-items-center order-lg-2 gap-3">
+        <!-- Give Icon (visible only when not logged in) -->
+        <a v-if="!user" class="nav-link text-white text-center navbar-icon-link-vertical p-0" href="#" @click.prevent="showGiveModal = true">
+          <i class="bi bi-heart d-block" style="font-size: 1.4rem;"></i>
+          <small class="d-block mt-1" style="font-size: 0.7rem; line-height: 1; white-space: nowrap;">Give</small>
+        </a>
+        
+        <!-- User Icon (visible only when not logged in) -->
+        <a v-if="!user" class="nav-link text-white text-center navbar-icon-link-vertical p-0" href="#" @click.prevent="showAuthModal = true">
+          <i class="bi bi-person-circle d-block" style="font-size: 1.4rem;"></i>
+          <small class="d-block mt-1" style="font-size: 0.7rem; line-height: 1; white-space: nowrap;">Account</small>
+        </a>
+        
+        <!-- User Dropdown (visible when logged in) -->
+        <div v-if="user" class="dropdown">
+          <a class="nav-link dropdown-toggle text-white d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
+            <i class="bi bi-person-circle me-1" style="font-size: 1.3rem;"></i>
+            <span class="d-none d-lg-inline">{{ user.name }}</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><span class="dropdown-item-text">{{ user.email }}</span></li>
+            <li><span class="dropdown-item-text small text-muted">{{ capitalizeFirst(user.userType) }}</span></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" @click.prevent="$emit('logout')">
+              <i class="bi bi-box-arrow-right me-2"></i>Logout
+            </a></li>
+          </ul>
+        </div>
+        
+        <!-- Hamburger toggler (only visible when user is logged in) -->
+        <button v-if="user" class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
       
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse order-lg-1" id="navbarNav">
         <ul class="navbar-nav me-auto">
           <li v-if="user" class="nav-item">
             <router-link class="nav-link" to="/dashboard" active-class="active">Dashboard</router-link>
@@ -27,33 +58,6 @@
           </li>
           <li v-if="user && user.userType === 'member'" class="nav-item">
             <router-link class="nav-link" to="/church-portal" active-class="active">Church Portal</router-link>
-          </li>
-          <li v-if="!user" class="nav-item">
-            <a class="nav-link" href="#" @click.prevent="showGiveModal = true">
-              <i class="bi bi-heart me-1"></i>Give
-            </a>
-          </li>
-        </ul>
-        
-        <ul class="navbar-nav">
-          <li v-if="!user" class="nav-item">
-            <a class="nav-link" href="#" @click.prevent="showAuthModal = true">
-              <i class="bi bi-person-circle" style="font-size: 1.5rem;"></i>
-            </a>
-          </li>
-          <li v-if="user" class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-              <i class="bi bi-person-circle me-1"></i>
-              {{ user.name }}
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><span class="dropdown-item-text">{{ user.email }}</span></li>
-              <li><span class="dropdown-item-text small text-muted">{{ capitalizeFirst(user.userType) }}</span></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#" @click.prevent="$emit('logout')">
-                <i class="bi bi-box-arrow-right me-2"></i>Logout
-              </a></li>
-            </ul>
           </li>
         </ul>
       </div>
@@ -400,6 +404,7 @@ const registerLoading = ref(false)
 const registerError = ref('')
 
 const capitalizeFirst = (str) => {
+  if (!str) return ''
   return str.charAt(0).toUpperCase() + str.slice(1)
 }
 
@@ -507,6 +512,26 @@ const handleRegister = async () => {
 <style scoped>
 .navbar-brand {
   font-size: 1.5rem;
+}
+
+.navbar-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar-icon-link-vertical {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 55px;
+}
+
+.navbar-icon-link-vertical:hover {
+  opacity: 0.8;
+  text-decoration: none;
 }
 
 .dropdown-item-text {
