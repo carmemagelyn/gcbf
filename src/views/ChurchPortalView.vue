@@ -307,101 +307,34 @@
                   </div>
                 </div>
 
-                <!-- Current Month Trend -->
+                <!-- Monthly Trend -->
                 <div class="col-12">
                   <div class="card border-0 shadow-sm">
                     <div class="card-header bg-white border-0">
-                      <h5 class="fw-bold mb-0">Current Month Financial Trend</h5>
-                      <p class="mb-0 text-muted small">{{ currentMonth }} income vs expenses overview</p>
+                      <h5 class="fw-bold mb-0">Monthly Financial Trend</h5>
+                      <p class="mb-0 text-muted small">6 months graph of income and expenses</p>
                     </div>
                     <div class="card-body">
-                      <div class="row g-4 mb-4">
-                        <div class="col-md-4 text-center">
-                          <div class="p-3 rounded bg-success bg-opacity-10">
-                            <h3 class="text-success fw-bold mb-1">₱{{ totalIncome.toLocaleString() }}</h3>
-                            <p class="mb-0 text-muted">Total Income</p>
-                          </div>
-                        </div>
-                        <div class="col-md-4 text-center">
-                          <div class="p-3 rounded bg-danger bg-opacity-10">
-                            <h3 class="text-danger fw-bold mb-1">₱{{ totalExpenses.toLocaleString() }}</h3>
-                            <p class="mb-0 text-muted">Total Expenses</p>
-                          </div>
-                        </div>
-                        <div class="col-md-4 text-center">
-                          <div class="p-3 rounded" :class="netIncome >= 0 ? 'bg-success bg-opacity-10' : 'bg-warning bg-opacity-10'">
-                            <h3 class="fw-bold mb-1" :class="netIncome >= 0 ? 'text-success' : 'text-warning'">
-                              ₱{{ Math.abs(netIncome).toLocaleString() }}
-                            </h3>
-                            <p class="mb-0 text-muted">{{ netIncome >= 0 ? 'Surplus' : 'Deficit' }}</p>
-                          </div>
-                        </div>
+                      <!-- 6 Month Trend Chart -->
+                      <div>
+                        <h6 class="fw-bold mb-3">6-Month Income vs Expenses Trend</h6>
+                        <canvas id="monthlyTrendChart" style="width: 100%; max-height: 400px;"></canvas>
                       </div>
+                    </div>
+                  </div>
+                </div>
 
-                      <!-- Weekly Breakdown -->
-                      <div class="mt-4">
-                        <h6 class="fw-bold mb-3">Weekly Progress</h6>
-                        <div class="row g-3">
-                          <div class="col-6 col-md-3">
-                            <div class="text-center p-3 border rounded">
-                              <div class="fw-bold text-primary mb-1">Week 1</div>
-                              <div class="small text-muted">₱{{ (totalSundayCollection > 0 ? sundayCollection.first : 0).toLocaleString() }}</div>
-                            </div>
-                          </div>
-                          <div class="col-6 col-md-3">
-                            <div class="text-center p-3 border rounded">
-                              <div class="fw-bold text-primary mb-1">Week 2</div>
-                              <div class="small text-muted">₱{{ (totalSundayCollection > 0 ? sundayCollection.second : 0).toLocaleString() }}</div>
-                            </div>
-                          </div>
-                          <div class="col-6 col-md-3">
-                            <div class="text-center p-3 border rounded">
-                              <div class="fw-bold text-primary mb-1">Week 3</div>
-                              <div class="small text-muted">₱{{ (totalSundayCollection > 0 ? sundayCollection.third : 0).toLocaleString() }}</div>
-                            </div>
-                          </div>
-                          <div class="col-6 col-md-3">
-                            <div class="text-center p-3 border rounded">
-                              <div class="fw-bold text-primary mb-1">Week 4</div>
-                              <div class="small text-muted">₱{{ (totalSundayCollection > 0 ? sundayCollection.fourth : 0).toLocaleString() }}</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Income vs Expenses Progress Bar -->
-                      <div class="mt-4">
-                        <h6 class="fw-bold mb-3">Budget Health</h6>
-                        <div class="d-flex justify-content-between mb-2">
-                          <span class="small">Income</span>
-                          <span class="small fw-bold text-success">₱{{ totalIncome.toLocaleString() }}</span>
-                        </div>
-                        <div class="progress mb-3" style="height: 25px;">
-                          <div class="progress-bar bg-success" :style="{ width: (totalIncome > 0 ? 100 : 0) + '%' }">
-                            {{ totalIncome > 0 ? '100%' : '0%' }}
-                          </div>
-                        </div>
-                        
-                        <div class="d-flex justify-content-between mb-2">
-                          <span class="small">Expenses</span>
-                          <span class="small fw-bold text-danger">₱{{ totalExpenses.toLocaleString() }}</span>
-                        </div>
-                        <div class="progress" style="height: 25px;">
-                          <div class="progress-bar bg-danger" :style="{ width: (totalIncome > 0 ? (totalExpenses / totalIncome * 100) : 0) + '%' }">
-                            {{ totalIncome > 0 ? Math.round(totalExpenses / totalIncome * 100) : 0 }}%
-                          </div>
-                        </div>
-                        <div class="text-center mt-2">
-                          <small class="text-muted">
-                            <i class="bi bi-info-circle me-1"></i>
-                            {{ totalIncome > 0 ? 
-                              (totalExpenses / totalIncome * 100 <= 100 ? 
-                                'Expenses are within budget' : 
-                                'Expenses exceed income') : 
-                              'No income recorded yet' 
-                            }}
-                          </small>
-                        </div>
+                <!-- Ministry Attendance Trend -->
+                <div class="col-12">
+                  <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-white border-0">
+                      <h5 class="fw-bold mb-0">Ministry Attendance Trend</h5>
+                      <p class="mb-0 text-muted small">6 months attendance tracking for ministries</p>
+                    </div>
+                    <div class="card-body">
+                      <div>
+                        <h6 class="fw-bold mb-3">Worship, Bible Night Class & Small Groups Attendance</h6>
+                        <canvas id="attendanceChart" style="width: 100%; max-height: 400px;"></canvas>
                       </div>
                     </div>
                   </div>
@@ -839,40 +772,31 @@
                       </div>
 
                       <!-- Total Monthly Expenses with Breakdown -->
-                      <div class="mt-4">
-                        <div class="expense-details">
-                          <div v-for="(expense, index) in defaultMonthlyExpenses" :key="expense.category" 
-                               class="expense-item border-bottom pb-3 mb-3"
-                               :class="{ 'border-0 pb-0 mb-0': index === defaultMonthlyExpenses.length - 1 }">
-                            <div class="d-flex justify-content-between align-items-start mb-2">
-                              <div class="d-flex flex-column">
-                                <span class="fw-bold">{{ expense.category }}</span>
-                                <small v-if="expense.category === 'Ministries & Programs'" class="text-muted">
-                                  <i class="bi bi-people-fill me-1"></i>
-                                  Total Ministry Spent: ₱{{ totalMinistrySpent.toLocaleString() }}
-                                </small>
-                              </div>
-                              <strong class="text-danger fs-5">
-                                ₱{{ (expense.category === 'Ministries & Programs' ? totalMinistrySpent : expense.amount).toLocaleString() }}
-                              </strong>
+                      <div class="mt-4 p-4 bg-light rounded">
+                        <div class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom">
+                          <h6 class="fw-bold mb-0">Total Monthly Expenses:</h6>
+                          <h4 class="text-success fw-bold mb-0">₱{{ totalDefaultExpensesWithMinistries.toLocaleString() }}</h4>
+                        </div>
+                        
+                        <!-- Ministries Breakdown -->
+                        <div class="mb-3">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <span>Ministries & Programs:</span>
+                            <strong class="text-end">₱{{ totalMinistrySpent.toLocaleString() }}</strong>
+                          </div>
+                          <div class="ms-4 mt-2">
+                            <div v-for="ministry in ministryReports" :key="ministry.name" class="d-flex justify-content-between align-items-center mb-1">
+                              <small class="text-muted">{{ ministry.name }}:</small>
+                              <small class="text-end">₱{{ (ministry.spent || 0).toLocaleString() }}</small>
                             </div>
-                            <div class="progress" style="height: 8px;">
-                              <div class="progress-bar bg-danger" 
-                                   :style="{ width: (((expense.category === 'Ministries & Programs' ? totalMinistrySpent : expense.amount) / totalDefaultExpensesWithMinistries) * 100) + '%' }"
-                                   :title="(((expense.category === 'Ministries & Programs' ? totalMinistrySpent : expense.amount) / totalDefaultExpensesWithMinistries) * 100).toFixed(1) + '%'">
-                              </div>
-                            </div>
-                            <small class="text-muted">
-                              {{ (((expense.category === 'Ministries & Programs' ? totalMinistrySpent : expense.amount) / totalDefaultExpensesWithMinistries) * 100).toFixed(1) }}% of total expenses
-                            </small>
                           </div>
                         </div>
                         
-                        <!-- Total at Bottom -->
-                        <div class="mt-4 pt-3 border-top">
-                          <div class="d-flex justify-content-between align-items-center">
-                            <h6 class="fw-bold mb-0">Total Monthly Expenses:</h6>
-                            <h4 class="text-danger fw-bold mb-0">₱{{ totalDefaultExpensesWithMinistries.toLocaleString() }}</h4>
+                        <!-- Other Expenses -->
+                        <div v-for="expense in defaultMonthlyExpenses" :key="expense.category">
+                          <div v-if="expense.category !== 'Ministries & Programs'" class="d-flex justify-content-between align-items-center mb-2">
+                            <span>{{ expense.category }}:</span>
+                            <strong class="text-end">₱{{ expense.amount.toLocaleString() }}</strong>
                           </div>
                         </div>
                       </div>
@@ -2339,8 +2263,273 @@ const removeExpenseCategory = (index) => {
 }
 
 onMounted(() => {
-  // In a real app, you would initialize charts here using Chart.js or similar
-  console.log('Church Portal loaded - Charts would be initialized here')
+  // Initialize 6-month trend chart
+  const initMonthlyTrendChart = () => {
+    const canvas = document.getElementById('monthlyTrendChart')
+    if (canvas) {
+      const ctx = canvas.getContext('2d')
+      
+      // Generate next 6 months starting from current month
+      const months = []
+      const currentDate = new Date()
+      for (let i = 0; i < 6; i++) {
+        const date = new Date(currentDate.getFullYear(), currentDate.getMonth() + i, 1)
+        months.push(date.toLocaleDateString('en-US', { month: 'short', year: '2-digit' }))
+      }
+      
+      // Current month has actual data, future months show projected/budgeted amounts
+      const incomeData = [totalIncome.value, 15000, 16000, 14500, 17000, 15500]
+      const expenseData = [totalExpenses.value, 12000, 13000, 12500, 14000, 13500]
+      
+      const drawChart = () => {
+        const width = canvas.width = canvas.offsetWidth
+        const height = canvas.height = 400
+        const padding = 60
+        const chartWidth = width - padding * 2
+        const chartHeight = height - padding * 2
+        
+        ctx.clearRect(0, 0, width, height)
+        
+        // Find max value for scaling
+        const maxValue = Math.max(...incomeData, ...expenseData, 20000)
+        const barWidth = chartWidth / (months.length * 2.5)
+        const gap = barWidth * 0.2  // Reduced gap between income and expense bars
+        
+        // Draw axes
+        ctx.strokeStyle = '#999'
+        ctx.lineWidth = 2
+        ctx.beginPath()
+        ctx.moveTo(padding, padding)
+        ctx.lineTo(padding, height - padding)
+        ctx.lineTo(width - padding, height - padding)
+        ctx.stroke()
+        
+        // Draw bars and labels
+        months.forEach((month, i) => {
+          const x = padding + (i * (barWidth * 2 + gap + barWidth * 0.5))  // Adjusted spacing
+          
+          // Income bar (green)
+          const incomeHeight = (incomeData[i] / maxValue) * chartHeight
+          ctx.fillStyle = '#198754'
+          ctx.fillRect(x, height - padding - incomeHeight, barWidth, incomeHeight)
+          
+          // Expense bar (red)
+          const expenseHeight = (expenseData[i] / maxValue) * chartHeight
+          ctx.fillStyle = '#dc3545'
+          ctx.fillRect(x + barWidth + gap, height - padding - expenseHeight, barWidth, expenseHeight)
+          
+          // Month label
+          ctx.fillStyle = '#000'
+          ctx.font = '11px Arial'
+          ctx.textAlign = 'center'
+          ctx.fillText(month, x + barWidth + gap / 2, height - padding + 20)
+        })
+        
+        // Legend
+        ctx.fillStyle = '#198754'
+        ctx.fillRect(width - 150, 20, 20, 15)
+        ctx.fillStyle = '#000'
+        ctx.font = '12px Arial'
+        ctx.textAlign = 'left'
+        ctx.fillText('Income', width - 125, 32)
+        
+        ctx.fillStyle = '#dc3545'
+        ctx.fillRect(width - 150, 40, 20, 15)
+        ctx.fillStyle = '#000'
+        ctx.fillText('Expenses', width - 125, 52)
+        
+        // Y-axis labels
+        ctx.textAlign = 'right'
+        ctx.font = '11px Arial'
+        for (let i = 0; i <= 4; i++) {
+          const value = (maxValue / 4) * i
+          const y = height - padding - (chartHeight / 4) * i
+          ctx.fillText('₱' + Math.round(value).toLocaleString(), padding - 10, y + 5)
+        }
+      }
+      
+      drawChart()
+    }
+  }
+  
+  // Initialize attendance trend chart
+  const initAttendanceChart = () => {
+    const canvas = document.getElementById('attendanceChart')
+    if (canvas) {
+      const ctx = canvas.getContext('2d')
+      
+      // Generate 6 months starting from current month (like the financial chart)
+      const months = []
+      const currentDate = new Date()
+      for (let i = 0; i < 6; i++) {
+        const date = new Date(currentDate.getFullYear(), currentDate.getMonth() + i, 1)
+        months.push({
+          label: date.toLocaleDateString('en-US', { month: 'short' }),
+          month: date.getMonth(),
+          year: date.getFullYear()
+        })
+      }
+      
+      // Helper function to get week number in month from date
+      const getWeekInMonth = (dateStr) => {
+        const date = new Date(dateStr)
+        const day = date.getDate()
+        return Math.ceil(day / 7)
+      }
+      
+      // Helper function to aggregate attendance by week for a specific month/year
+      const getMonthlyWeeklyData = (ministryName, month, year) => {
+        const ministry = ministryReports.value.find(m => m.name === ministryName)
+        if (!ministry || !ministry.attendance || ministry.attendance.length === 0) {
+          return [0, 0, 0, 0] // Return zeros for 4 weeks if no data
+        }
+        
+        // Filter for specific month and year
+        const monthData = ministry.attendance.filter(record => {
+          const date = new Date(record.date)
+          return date.getMonth() === month && date.getFullYear() === year
+        })
+        
+        // Aggregate by week (4 weeks per month)
+        const weeklyTotals = [0, 0, 0, 0]
+        const weekCounts = [0, 0, 0, 0]
+        
+        monthData.forEach(record => {
+          const weekNum = getWeekInMonth(record.date)
+          if (weekNum >= 1 && weekNum <= 4) {
+            weeklyTotals[weekNum - 1] += Number(record.count || 0)
+            weekCounts[weekNum - 1]++
+          }
+        })
+        
+        // Average attendance per week
+        return weeklyTotals.map((total, i) => weekCounts[i] > 0 ? Math.round(total / weekCounts[i]) : 0)
+      }
+      
+      // Get real attendance data from ministry reports for all 6 months
+      // Each month has 4 weeks, so we'll have 24 data points total
+      const worshipData = []
+      const bibleNightData = []
+      const smallGroupsData = []
+      
+      months.forEach(monthInfo => {
+        worshipData.push(...getMonthlyWeeklyData('Worship Service', monthInfo.month, monthInfo.year))
+        bibleNightData.push(...getMonthlyWeeklyData('Bible Night Class', monthInfo.month, monthInfo.year))
+        smallGroupsData.push(...getMonthlyWeeklyData('Small Groups', monthInfo.month, monthInfo.year))
+      })
+      
+      // Generate week labels (4 weeks per month for 6 months = 24 weeks)
+      const weeks = []
+      months.forEach(monthInfo => {
+        for (let w = 1; w <= 4; w++) {
+          weeks.push(`${monthInfo.label} W${w}`)
+        }
+      })
+      
+      const drawAttendanceChart = () => {
+        const width = canvas.width = canvas.offsetWidth
+        const height = canvas.height = 400
+        const padding = 60
+        const chartWidth = width - padding * 2
+        const chartHeight = height - padding * 2
+        
+        ctx.clearRect(0, 0, width, height)
+        
+        // Find max value
+        const maxValue = Math.max(...worshipData, ...bibleNightData, ...smallGroupsData, 100)
+        
+        // Draw axes
+        ctx.strokeStyle = '#999'
+        ctx.lineWidth = 2
+        ctx.beginPath()
+        ctx.moveTo(padding, padding)
+        ctx.lineTo(padding, height - padding)
+        ctx.lineTo(width - padding, height - padding)
+        ctx.stroke()
+        
+        // Draw lines for each ministry
+        const drawLine = (data, color) => {
+          ctx.strokeStyle = color
+          ctx.lineWidth = 3
+          ctx.beginPath()
+          
+          data.forEach((value, i) => {
+            const x = padding + (i * (chartWidth / (weeks.length - 1)))
+            const y = height - padding - ((value / maxValue) * chartHeight)
+            
+            if (i === 0) {
+              ctx.moveTo(x, y)
+            } else {
+              ctx.lineTo(x, y)
+            }
+            
+            // Draw point
+            ctx.fillStyle = color
+            ctx.beginPath()
+            ctx.arc(x, y, 5, 0, Math.PI * 2)
+            ctx.fill()
+            
+            // Draw value label above point
+            ctx.fillStyle = '#000'
+            ctx.font = 'bold 11px Arial'
+            ctx.textAlign = 'center'
+            ctx.fillText(value, x, y - 12)
+            ctx.beginPath()
+          })
+          
+          ctx.stroke()
+        }
+        
+        // Draw ministry lines
+        drawLine(worshipData, '#6f42c1')      // Purple for Worship
+        drawLine(bibleNightData, '#0d6efd')   // Blue for Bible Night Class
+        drawLine(smallGroupsData, '#198754')  // Green for Small Groups
+        
+        // Draw week labels
+        ctx.fillStyle = '#000'
+        ctx.font = '11px Arial'
+        ctx.textAlign = 'center'
+        weeks.forEach((week, i) => {
+          const x = padding + (i * (chartWidth / (weeks.length - 1)))
+          ctx.fillText(week, x, height - padding + 20)
+        })
+        
+        // Legend
+        ctx.font = '12px Arial'
+        ctx.textAlign = 'left'
+        
+        ctx.fillStyle = '#6f42c1'
+        ctx.fillRect(width - 180, 20, 20, 15)
+        ctx.fillStyle = '#000'
+        ctx.fillText('Worship', width - 155, 32)
+        
+        ctx.fillStyle = '#0d6efd'
+        ctx.fillRect(width - 180, 40, 20, 15)
+        ctx.fillStyle = '#000'
+        ctx.fillText('Bible Night Class', width - 155, 52)
+        
+        ctx.fillStyle = '#198754'
+        ctx.fillRect(width - 180, 60, 20, 15)
+        ctx.fillStyle = '#000'
+        ctx.fillText('Small Groups', width - 155, 72)
+        
+        // Y-axis labels
+        ctx.textAlign = 'right'
+        ctx.font = '11px Arial'
+        for (let i = 0; i <= 4; i++) {
+          const value = (maxValue / 4) * i
+          const y = height - padding - (chartHeight / 4) * i
+          ctx.fillText(Math.round(value), padding - 10, y + 5)
+        }
+      }
+      
+      drawAttendanceChart()
+    }
+  }
+  
+  // Initialize charts after a short delay to ensure DOM is ready
+  setTimeout(initMonthlyTrendChart, 100)
+  setTimeout(initAttendanceChart, 150)
   
   // Load all payments for verification
   loadAllPayments()
