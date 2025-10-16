@@ -8,7 +8,6 @@ import GivingView from '../views/GivingView.vue'
 import BibleReadingView from '../views/BibleReadingView.vue'
 import PrayerListView from '../views/PrayerListView.vue'
 import ChurchPortalView from '../views/ChurchPortalView.vue'
-import AdminLoginView from '../views/AdminLoginView.vue'
 
 const routes = [
   {
@@ -49,19 +48,6 @@ const routes = [
     name: 'ChurchPortal',
     component: ChurchPortalView,
     meta: { requiresAuth: true, requiresAdmin: true }
-  },
-  {
-    path: '/admin-login',
-    name: 'AdminLogin',
-    component: AdminLoginView,
-    beforeEnter: (to, from, next) => {
-      const user = getCurrentUser()
-      if (user && user.userType === 'admin') {
-        next('/church-portal')
-      } else {
-        next()
-      }
-    }
   }
 ]
 
@@ -74,16 +60,12 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
     if (!isAuthenticated()) {
-      // Redirect to admin login for admin routes, home for others
-      if (to.matched.some(record => record.meta.requiresAdmin)) {
-        next('/admin-login')
-      } else {
-        next('/')
-      }
+      // Redirect to home where users can login via modal
+      next('/')
     } else if (to.matched.some(record => record.meta.requiresAdmin)) {
       // Check if user is admin for admin routes
       if (!isAdmin()) {
-        next('/admin-login')
+        next('/dashboard')
       } else {
         next()
       }

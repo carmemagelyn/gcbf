@@ -11,9 +11,8 @@ const route = useRoute()
 const userRef = ref(getCurrentUser())
 const user = computed(() => userRef.value)
 
-const showNavbar = computed(() => 
-  route.name !== 'AdminLogin'
-)
+// Show navbar on all pages now that admin login is removed
+const showNavbar = computed(() => true)
 
 // Initialize demo users on mount
 onMounted(() => {

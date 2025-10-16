@@ -166,11 +166,6 @@
       <div class="container">
         <div class="text-center">
           <p>&copy; 2025 Graced Community Bible Fellowship. All rights reserved.</p>
-          <div>
-            <router-link to="/admin-login" class="text-white small text-decoration-none opacity-75">
-              
-            </router-link>
-          </div>
         </div>
       </div>
     </footer>

@@ -31,8 +31,8 @@
           <div class="card border-0 shadow-sm text-center">
             <div class="card-body">
               <i class="bi bi-cash display-4 church-purple"></i>
-              <h5 class="mt-2 mb-0">₱{{ totalGiven }}</h5>
-              <small class="text-muted">Total Given</small>
+              <h5 class="mt-2 mb-0">₱{{ pledgeAmount }}</h5>
+              <small class="text-muted">{{ pledgeFrequency }} Pledge</small>
             </div>
           </div>
         </div>
@@ -96,11 +96,11 @@
                 </div>
               </div>
               
-              <div v-if="user?.userType === 'member'" class="mt-3">
+              <div v-if="user?.userType === 'pastor'" class="mt-3">
                 <router-link to="/church-portal" class="btn btn-primary w-100 p-3 text-start">
                   <i class="bi bi-building fs-4 d-block mb-2"></i>
                   <strong>Church Portal</strong>
-                  <small class="d-block">Access member resources</small>
+                  <small class="d-block">Admin dashboard & church management</small>
                 </router-link>
               </div>
             </div>
@@ -187,7 +187,8 @@ import { getCurrentUser } from '../utils/auth'
 const user = computed(() => getCurrentUser())
 
 // Dashboard data
-const totalGiven = ref(0)
+const pledgeAmount = ref(0)
+const pledgeFrequency = ref('Monthly')
 const bibleProgress = ref(0)
 const prayerRequestsCount = ref(0)
 const attendanceStreak = ref(0)
@@ -225,16 +226,25 @@ const loadDashboardData = () => {
   if (!userId) {
     console.warn('No user ID found, using default values')
     // Set default values even if no user ID
-    totalGiven.value = 0
+    pledgeAmount.value = 0
+    pledgeFrequency.value = 'Monthly'
     bibleProgress.value = 0
     prayerRequestsCount.value = 0
     attendanceStreak.value = 0
     return
   }
 
-  // Load gifts
+  // Load gifts to get the most recent pledge amount and frequency
   const gifts = JSON.parse(localStorage.getItem(`gcbf_gifts_${userId}`) || '[]')
-  totalGiven.value = gifts.reduce((sum, gift) => sum + gift.amount, 0)
+  if (gifts.length > 0) {
+    // Get the most recent gift
+    const latestGift = gifts[gifts.length - 1]
+    pledgeAmount.value = latestGift.amount
+    pledgeFrequency.value = latestGift.frequency.charAt(0).toUpperCase() + latestGift.frequency.slice(1)
+  } else {
+    pledgeAmount.value = 0
+    pledgeFrequency.value = 'Monthly'
+  }
 
   // Load bible reading progress
   const bibleReading = JSON.parse(localStorage.getItem(`gcbf_bible_${userId}`) || '{}')
