@@ -1,0 +1,9 @@
+name = "gcbf-church-app"
+compatibility_date = "2025-10-16"
+main = "worker.js"
+
+# Assets configuration for static site deployment
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+
