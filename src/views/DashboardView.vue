@@ -208,20 +208,6 @@ const upcomingEvents = ref([
     day: '23',
     month: 'Oct',
     time: '7:00 PM'
-  },
-  {
-    id: 3,
-    title: 'Campus Ministry',
-    day: '25',
-    month: 'Oct',
-    time: '6:30 PM'
-  },
-  {
-    id: 4,
-    title: "Couple's Fellowship",
-    day: '27',
-    month: 'Oct',
-    time: '6:00 PM'
   }
 ])
 

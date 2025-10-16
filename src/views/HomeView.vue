@@ -43,7 +43,6 @@
               <div class="card-body text-center">
                 
                 <h5 class="card-title fw-bold">{{ service.name }}</h5>
-                <p class="card-text text-muted mb-3">{{ service.description }}</p>
                 <div class="service-details">
                   <p class="mb-1"><strong>{{ service.day }}</strong></p>
                   <p class="mb-1">{{ service.time }}</p>
@@ -127,7 +126,7 @@
 
 
     <!-- Contact Section -->
-    <footer class="bg-dark text-white py-5">
+    <footer class="text-white py-5" style="background-color: #537D5D;">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -189,7 +188,6 @@ const weeklyServices = ref([
   {
     id: 1,
     name: 'Sunday Worship',
-    description: 'Join us for inspiring worship, biblical teaching, and fellowship.',
     day: 'Sunday',
     time: '10:00 AM',
     location: 'Main Sanctuary',
@@ -198,34 +196,14 @@ const weeklyServices = ref([
   {
     id: 2,
     name: 'Bible Night Class',
-    description: 'Deep dive into God\'s Word with interactive discussion.',
     day: 'Wednesday',
     time: '7:00 PM',
     location: 'Fellowship Hall',
     icon: 'bi bi-book'
   },
   {
-    id: 3,
-    name: 'Campus Ministry',
-    description: 'Come together in prayer for our community and world.',
-    day: 'Friday',
-    time: '6:30 PM',
-    location: 'Prayer Room',
-    icon: 'bi bi-hands-clapping'
-  },
-  {
-    id: 4,
-    name: "Couple's Fellowship",
-    description: 'Dynamic worship and teaching designed for couples.',
-    day: 'Sunday',
-    time: '6:00 PM',
-    location: 'Youth Center',
-    icon: 'bi bi-people'
-  },
-  {
     id: 6,
     name: 'Small Groups',
-    description: 'Serving our local community with love and compassion.',
     day: 'Saturday',
     time: '9:00 AM',
     location: 'Various Locations',
@@ -384,7 +362,13 @@ const formatDate = (dateString) => {
 
 <style scoped>
 .hero-section {
-  background: linear-gradient(135deg, #9A3F3F, #FBF9D1);
+  background: linear-gradient(rgba(154, 63, 63, 0.7), rgba(154, 63, 63, 0.8)), url('/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
 }
 
 .stat-item {
