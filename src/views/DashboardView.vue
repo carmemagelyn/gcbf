@@ -218,7 +218,19 @@ onMounted(() => {
 const loadDashboardData = () => {
   // Load user-specific data from localStorage
   const userId = user.value?.id
-  if (!userId) return
+  
+  console.log('Loading dashboard for user:', user.value)
+  console.log('User ID:', userId)
+  
+  if (!userId) {
+    console.warn('No user ID found, using default values')
+    // Set default values even if no user ID
+    totalGiven.value = 0
+    bibleProgress.value = 0
+    prayerRequestsCount.value = 0
+    attendanceStreak.value = 0
+    return
+  }
 
   // Load gifts
   const gifts = JSON.parse(localStorage.getItem(`gcbf_gifts_${userId}`) || '[]')
@@ -325,6 +337,10 @@ const truncateText = (text, maxLength) => {
 </script>
 
 <style scoped>
+.dashboard {
+  padding-top: 80px;
+}
+
 .btn-outline-primary {
   border-color: #9A3F3F;
   color: #9A3F3F;

@@ -27,7 +27,7 @@
 
             <div class="d-flex gap-3">
               <button v-if="!isAuth" class="btn btn-primary btn-lg" @click="scrollToLocation">
-                Visit Us
+                Our Location
               </button>
               <router-link v-if="isAuth" to="/dashboard" class="btn btn-primary btn-lg">
                 Go to Dashboard
@@ -54,14 +54,13 @@
         
         <div class="row g-4">
           <div v-for="service in weeklyServices" :key="service.id" class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
+            <div class="card h-100 shadow-sm border-0 service-card">
               <div class="card-body text-center">
                 
                 <h5 class="card-title fw-bold">{{ service.name }}</h5>
                 <div class="service-details">
                   <p class="mb-1"><strong>{{ service.day }}</strong></p>
-                  <p class="mb-1">{{ service.time }}</p>
-                  <p class="mb-0 text-muted">{{ service.location }}</p>
+                  <p class="mb-0">{{ service.time }}</p>
                 </div>
               </div>
             </div>
@@ -197,7 +196,17 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 import { isAuthenticated } from '../utils/auth'
+
+const router = useRouter()
+
+// Redirect authenticated users to dashboard
+onMounted(() => {
+  if (isAuthenticated()) {
+    router.push('/dashboard')
+  }
+})
 
 const isAuth = computed(() => isAuthenticated())
 const selectedUpdate = ref(null)
@@ -542,10 +551,18 @@ footer a:hover {
 
 #services .card {
   background-color: #FFFFFF !important;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 4px 15px rgba(83, 125, 93, 0.3) !important;
 }
 
 #services .card:hover {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0 8px 25px rgba(83, 125, 93, 0.5) !important;
+}
+
+.service-card {
+  box-shadow: 0 4px 15px rgba(83, 125, 93, 0.3) !important;
+}
+
+.service-card:hover {
+  box-shadow: 0 8px 25px rgba(83, 125, 93, 0.5) !important;
 }
 </style>

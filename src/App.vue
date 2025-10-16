@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { isAuthenticated, getCurrentUser, logout, initializeDemoUsers } from './utils/auth'
 import Navbar from './components/Navbar.vue'
@@ -7,26 +7,31 @@ import Navbar from './components/Navbar.vue'
 const router = useRouter()
 const route = useRoute()
 
-const user = computed(() => getCurrentUser())
+// Use ref to force reactivity when user logs in/out
+const userRef = ref(getCurrentUser())
+const user = computed(() => userRef.value)
+
 const showNavbar = computed(() => 
-  route.name !== 'Login' && 
-  route.name !== 'Register' && 
   route.name !== 'AdminLogin'
 )
 
 // Initialize demo users on mount
 onMounted(() => {
   initializeDemoUsers()
+  // Update user ref on mount
+  userRef.value = getCurrentUser()
 })
 
 const handleLogout = () => {
   logout()
+  userRef.value = null
   router.push('/')
 }
 
 const handleLogin = (loggedInUser) => {
-  // The user state will automatically update via the computed property
-  // No need to do anything here as auth.js handles localStorage
+  // Update the user ref to trigger reactivity
+  userRef.value = loggedInUser
+  console.log('User logged in:', loggedInUser)
 }
 </script>
 

@@ -3,8 +3,6 @@ import { isAuthenticated, getCurrentUser, isAdmin } from '../utils/auth'
 
 // Import views
 import HomeView from '../views/HomeView.vue'
-import LoginView from '../views/LoginView.vue'
-import RegisterView from '../views/RegisterView.vue'
 import DashboardView from '../views/DashboardView.vue'
 import GivingView from '../views/GivingView.vue'
 import BibleReadingView from '../views/BibleReadingView.vue'
@@ -17,30 +15,6 @@ const routes = [
     path: '/',
     name: 'Home',
     component: HomeView
-  },
-  {
-    path: '/login',
-    name: 'Login',
-    component: LoginView,
-    beforeEnter: (to, from, next) => {
-      if (isAuthenticated()) {
-        next('/dashboard')
-      } else {
-        next()
-      }
-    }
-  },
-  {
-    path: '/register',
-    name: 'Register',
-    component: RegisterView,
-    beforeEnter: (to, from, next) => {
-      if (isAuthenticated()) {
-        next('/dashboard')
-      } else {
-        next()
-      }
-    }
   },
   {
     path: '/dashboard',
@@ -100,11 +74,11 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
     if (!isAuthenticated()) {
-      // Redirect to admin login for admin routes, regular login for others
+      // Redirect to admin login for admin routes, home for others
       if (to.matched.some(record => record.meta.requiresAdmin)) {
         next('/admin-login')
       } else {
-        next('/login')
+        next('/')
       }
     } else if (to.matched.some(record => record.meta.requiresAdmin)) {
       // Check if user is admin for admin routes
