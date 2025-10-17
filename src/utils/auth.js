@@ -27,20 +27,30 @@ export const initializeDemoUsers = () => {
   const existingUsers = localStorage.getItem(USERS_KEY)
   if (existingUsers) {
     const parsed = JSON.parse(existingUsers)
-    const allUsers = [...demoUsers]
-    parsed.forEach(user => {
-      if (!allUsers.some(u => u.email === user.email)) {
-        allUsers.push(user)
+    // Always ensure demo users exist, update them if they're already there
+    demoUsers.forEach(demoUser => {
+      const index = parsed.findIndex(u => u.email === demoUser.email)
+      if (index >= 0) {
+        // Update existing demo user
+        parsed[index] = demoUser
+      } else {
+        // Add new demo user
+        parsed.push(demoUser)
       }
     })
-    localStorage.setItem(USERS_KEY, JSON.stringify(allUsers))
+    localStorage.setItem(USERS_KEY, JSON.stringify(parsed))
+    console.log('Demo users initialized/updated:', parsed)
   } else {
     localStorage.setItem(USERS_KEY, JSON.stringify(demoUsers))
+    console.log('Demo users created:', demoUsers)
   }
 }
 
 export const login = (email, password) => {
   const users = JSON.parse(localStorage.getItem(USERS_KEY) || '[]')
+  console.log('Login attempt for:', email)
+  console.log('Available users:', users.map(u => ({ email: u.email, type: u.userType })))
+  
   const user = users.find(u => u.email === email && u.password === password)
   
   if (user) {
@@ -50,6 +60,7 @@ export const login = (email, password) => {
     return { success: true, user: userWithoutPassword }
   }
   
+  console.log('Login failed - user not found or password incorrect')
   return { success: false, message: 'Invalid email or password' }
 }
 
@@ -118,6 +129,14 @@ export const requireAdmin = () => {
   if (!isAdmin()) {
     throw new Error('Admin access required')
   }
+}
+
+// Utility function to reset localStorage (for debugging)
+export const resetAuth = () => {
+  localStorage.removeItem(AUTH_KEY)
+  localStorage.removeItem(USERS_KEY)
+  initializeDemoUsers()
+  console.log('Auth reset complete - demo users reinitialized')
 }
 
 // Initialize demo users on import

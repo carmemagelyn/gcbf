@@ -448,23 +448,23 @@ const handleLogin = async () => {
   loginLoading.value = true
 
   try {
-    const user = await login(loginForm.value.email, loginForm.value.password)
+    const result = await login(loginForm.value.email, loginForm.value.password)
     
-    if (user) {
-      emit('login', user)
+    if (result.success && result.user) {
+      emit('login', result.user)
       showLoginModal.value = false
       
       // Reset form
       loginForm.value = { email: '', password: '' }
       
       // Redirect based on user type
-      if (user.userType === 'pastor' || user.userType === 'admin') {
+      if (result.user.userType === 'pastor' || result.user.userType === 'admin') {
         router.push('/church-portal')
       } else {
         router.push('/dashboard')
       }
     } else {
-      loginError.value = 'Invalid email or password'
+      loginError.value = result.message || 'Invalid email or password'
     }
   } catch (error) {
     loginError.value = error.message || 'An error occurred during login'
@@ -491,7 +491,7 @@ const handleRegister = async () => {
   registerLoading.value = true
 
   try {
-    const user = await register({
+    const result = await register({
       name: `${registerForm.value.firstName} ${registerForm.value.lastName}`,
       email: registerForm.value.email,
       phone: registerForm.value.phone,
@@ -499,8 +499,8 @@ const handleRegister = async () => {
       userType: registerForm.value.userType
     })
 
-    if (user) {
-      emit('login', user)
+    if (result.success && result.user) {
+      emit('login', result.user)
       showRegisterModal.value = false
       
       // Reset form
@@ -515,6 +515,8 @@ const handleRegister = async () => {
       }
       
       router.push('/dashboard')
+    } else {
+      registerError.value = result.message || 'Registration failed'
     }
   } catch (error) {
     registerError.value = error.message || 'An error occurred during registration'
