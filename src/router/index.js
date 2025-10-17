@@ -65,25 +65,40 @@ router.beforeEach((to, from, next) => {
     } else if (to.matched.some(record => record.meta.requiresAdminOrPastor)) {
       // Check if user is admin or pastor for Church Portal
       if (!isAdminOrPastor()) {
-        next('/dashboard')
+        // Regular members trying to access Church Portal
+        const user = getCurrentUser()
+        if (user && user.userType === 'member') {
+          next('/dashboard')
+        } else {
+          next('/')
+        }
       } else {
         next()
       }
     } else if (to.matched.some(record => record.meta.requiresAdmin)) {
       // Check if user is admin for admin-only routes
       if (!isAdmin()) {
-        next('/dashboard')
+        const user = getCurrentUser()
+        if (user && user.userType === 'pastor') {
+          next('/church-portal')
+        } else if (user && user.userType === 'member') {
+          next('/dashboard')
+        } else {
+          next('/')
+        }
       } else {
         next()
       }
     } else if (to.matched.some(record => record.meta.requiresMember)) {
       const user = getCurrentUser()
       if (user.userType !== 'member') {
-        next('/dashboard')
+        // Admin/pastor trying to access member-only route
+        next('/church-portal')
       } else {
         next()
       }
     } else {
+      // Regular authenticated route - allow all authenticated users
       next()
     }
   } else {

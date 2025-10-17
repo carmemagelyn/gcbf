@@ -46,6 +46,7 @@ export const login = (email, password) => {
   if (user) {
     const { password, ...userWithoutPassword } = user
     localStorage.setItem(AUTH_KEY, JSON.stringify(userWithoutPassword))
+    console.log('Login successful for:', userWithoutPassword.email, 'Type:', userWithoutPassword.userType)
     return { success: true, user: userWithoutPassword }
   }
   

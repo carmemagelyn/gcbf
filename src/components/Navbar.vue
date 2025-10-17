@@ -459,7 +459,7 @@ const handleLogin = async () => {
       
       // Redirect based on user type
       if (user.userType === 'pastor' || user.userType === 'admin') {
-        router.push('/dashboard')
+        router.push('/church-portal')
       } else {
         router.push('/dashboard')
       }
