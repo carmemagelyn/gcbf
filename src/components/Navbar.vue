@@ -163,8 +163,6 @@
             <div class="mt-4 p-3 bg-light rounded">
               <h6 class="fw-bold mb-2">Demo Credentials:</h6>
               <div class="demo-creds">
-                <small class="d-block mb-1"><strong>Member:</strong> john.doe@email.com / password123</small>
-                <small class="d-block mb-1"><strong>Visitor:</strong> jane.smith@email.com / password123</small>
                 <small class="d-block mb-1"><strong>Pastor:</strong> pastor@gcbf.org / admin123</small>
                 <small class="d-block"><strong>Admin:</strong> admin@gcbf.org / admin2024</small>
               </div>
