@@ -1796,7 +1796,10 @@ const uploadNewsletter = async () => {
     // Save to localStorage
     localStorage.setItem('churchNewsletters', JSON.stringify(publishedNewsletters.value))
     
-    alert('Newsletter uploaded successfully!')
+    // Trigger homepage update by dispatching a custom event
+    window.dispatchEvent(new Event('newslettersUpdated'))
+    
+    alert('Newsletter uploaded successfully! It will appear on the homepage.')
     resetForm()
     
   } catch (error) {
@@ -1838,6 +1841,10 @@ const deleteNewsletter = (id) => {
     if (index > -1) {
       publishedNewsletters.value.splice(index, 1)
       localStorage.setItem('churchNewsletters', JSON.stringify(publishedNewsletters.value))
+      
+      // Trigger homepage update
+      window.dispatchEvent(new Event('newslettersUpdated'))
+      
       alert('Newsletter deleted successfully!')
     }
   }

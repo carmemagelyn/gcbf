@@ -197,17 +197,41 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { isAuthenticated } from '../utils/auth'
 
 const router = useRouter()
+
+// Storage event listener for real-time newsletter updates
+const handleStorageChange = (event) => {
+  if (event.key === 'churchNewsletters') {
+    console.log('Newsletters updated in Church Portal - reloading...')
+    loadNewsletters()
+  }
+}
+
+const handleNewsletterUpdate = () => {
+  console.log('Newsletters updated event received - reloading...')
+  loadNewsletters()
+}
 
 // Redirect authenticated users to dashboard
 onMounted(() => {
   if (isAuthenticated()) {
     router.push('/dashboard')
   }
+  // Load newsletters from Church Portal uploads
+  loadNewsletters()
+  
+  // Listen for newsletter updates from Church Portal
+  window.addEventListener('storage', handleStorageChange)
+  window.addEventListener('newslettersUpdated', handleNewsletterUpdate)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('storage', handleStorageChange)
+  window.removeEventListener('newslettersUpdated', handleNewsletterUpdate)
 })
 
 const isAuth = computed(() => isAuthenticated())
