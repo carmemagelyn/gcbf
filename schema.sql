@@ -183,8 +183,8 @@ CREATE INDEX IF NOT EXISTS idx_bible_reading_user ON bible_reading(userId);
 
 -- Insert demo users (passwords should be hashed in production)
 INSERT INTO users (email, password, name, userType, joinDate) VALUES
-('pastor@gcbf.org', 'admin123', 'Pastor John Louie Berdejo', 'pastor', '2020-06-01'),
-('admin@gcbf.org', 'admin2024', 'Church Administrator', 'admin', '2023-01-01');
+('pastor@gcbf.com.ph', 'admin123', 'Pastor John Louie Berdejo', 'pastor', '2020-06-01'),
+('admin@gcbf.com.ph', 'admin2024', 'Church Administrator', 'admin', '2023-01-01');
 
 -- Insert sample prayer
 INSERT INTO prayers (userId, category, title, request, visibility, status, approved, approvedBy, approvedAt, dateRequested) VALUES

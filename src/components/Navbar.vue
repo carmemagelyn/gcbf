@@ -71,8 +71,8 @@
             <router-link class="nav-link" to="/prayer-list" active-class="active">Prayer List</router-link>
           </li>
           
-          <!-- Show Church Portal for members, pastors, and admins -->
-          <li v-if="user && (user.userType === 'member' || user.userType === 'pastor' || user.userType === 'admin')" class="nav-item">
+          <!-- Show Church Portal for pastors and admins only -->
+          <li v-if="user && (user.userType === 'pastor' || user.userType === 'admin')" class="nav-item">
             <router-link class="nav-link" to="/church-portal" active-class="active">Church Portal</router-link>
           </li>
         </ul>
@@ -179,8 +179,8 @@
             <div class="mt-4 p-3 bg-light rounded">
               <h6 class="fw-bold mb-2">Demo Credentials:</h6>
               <div class="demo-creds">
-                <small class="d-block mb-1"><strong>Pastor:</strong> pastor@gcbf.org / admin123</small>
-                <small class="d-block"><strong>Admin:</strong> admin@gcbf.org / admin2024</small>
+                <small class="d-block mb-1"><strong>Pastor:</strong> pastor@gcbf.com.ph / admin123</small>
+                <small class="d-block"><strong>Admin:</strong> admin@gcbf.com.ph / admin2024</small>
               </div>
             </div>
           </div>

@@ -60,8 +60,8 @@ After publish the Pages URL will be similar to: `https://gcbf-church-portal.page
 ---
 
 ## Demo Credentials (for local/dev only)
-- Pastor: pastor@gcbf.org / admin123
-- Admin: admin@gcbf.org / admin2024
+- Pastor: pastor@gcbf.com.ph / admin123
+- Admin: admin@gcbf.com.ph / admin2024
 
 ---
 
