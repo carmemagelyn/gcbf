@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { isAuthenticated, getCurrentUser, isAdmin } from '../utils/auth'
+import { isAuthenticated, getCurrentUser, isAdmin, isAdminOrPastor } from '../utils/auth'
 
 // Import views
 import HomeView from '../views/HomeView.vue'
@@ -47,7 +47,7 @@ const routes = [
     path: '/church-portal',
     name: 'ChurchPortal',
     component: ChurchPortalView,
-    meta: { requiresAuth: true, requiresAdmin: true }
+    meta: { requiresAuth: true, requiresAdminOrPastor: true }
   }
 ]
 
@@ -62,8 +62,15 @@ router.beforeEach((to, from, next) => {
     if (!isAuthenticated()) {
       // Redirect to home where users can login via modal
       next('/')
+    } else if (to.matched.some(record => record.meta.requiresAdminOrPastor)) {
+      // Check if user is admin or pastor for Church Portal
+      if (!isAdminOrPastor()) {
+        next('/dashboard')
+      } else {
+        next()
+      }
     } else if (to.matched.some(record => record.meta.requiresAdmin)) {
-      // Check if user is admin for admin routes
+      // Check if user is admin for admin-only routes
       if (!isAdmin()) {
         next('/dashboard')
       } else {

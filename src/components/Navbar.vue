@@ -43,9 +43,12 @@
       
       <div class="collapse navbar-collapse order-lg-1" id="navbarNav">
         <ul class="navbar-nav me-auto">
+          <!-- Show Dashboard for regular members only -->
           <li v-if="user && user.userType !== 'pastor' && user.userType !== 'admin'" class="nav-item">
             <router-link class="nav-link" to="/dashboard" active-class="active">Dashboard</router-link>
           </li>
+          
+          <!-- Show My Activities dropdown for regular members only -->
           <li v-if="user && user.userType !== 'pastor' && user.userType !== 'admin'" class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
               My Activities
@@ -56,6 +59,19 @@
               <li><router-link class="dropdown-item" to="/prayer-list">Prayer List</router-link></li>
             </ul>
           </li>
+          
+          <!-- Show direct activity links for pastor/admin users -->
+          <li v-if="user && (user.userType === 'pastor' || user.userType === 'admin')" class="nav-item">
+            <router-link class="nav-link" to="/giving" active-class="active">Giving</router-link>
+          </li>
+          <li v-if="user && (user.userType === 'pastor' || user.userType === 'admin')" class="nav-item">
+            <router-link class="nav-link" to="/bible-reading" active-class="active">Bible Reading</router-link>
+          </li>
+          <li v-if="user && (user.userType === 'pastor' || user.userType === 'admin')" class="nav-item">
+            <router-link class="nav-link" to="/prayer-list" active-class="active">Prayer List</router-link>
+          </li>
+          
+          <!-- Show Church Portal for members, pastors, and admins -->
           <li v-if="user && (user.userType === 'member' || user.userType === 'pastor' || user.userType === 'admin')" class="nav-item">
             <router-link class="nav-link" to="/church-portal" active-class="active">Church Portal</router-link>
           </li>

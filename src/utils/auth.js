@@ -94,6 +94,12 @@ export const isAdmin = () => {
   return user && user.userType === 'admin'
 }
 
+// Check if user is admin or pastor (for Church Portal access)
+export const isAdminOrPastor = () => {
+  const user = getCurrentUser()
+  return user && (user.userType === 'admin' || user.userType === 'pastor')
+}
+
 export const adminLogin = (email, password) => {
   const users = JSON.parse(localStorage.getItem(USERS_KEY) || '[]')
   const user = users.find(u => u.email === email && u.password === password && u.userType === 'admin')
