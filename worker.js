@@ -1,9 +1,17 @@
-// Cloudflare Worker for GCBF Church App
-// Handles routing and serves static assets
+// Cloudflare Worker for GCBF Church App with Assets
+// Handles API routing and serves static assets from dist folder
+
+// Import API handlers from the functions directory
+import { onRequest as apiHandler } from './functions/api/[[path]].js';
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
+    
+    // Handle API requests
+    if (url.pathname.startsWith('/api/')) {
+      return apiHandler({ request, env, ctx });
+    }
     
     // Serve static assets from the dist directory
     const asset = await env.ASSETS.fetch(request);
