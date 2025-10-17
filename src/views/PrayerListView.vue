@@ -117,7 +117,14 @@
 
               <div v-else class="row g-4">
                 <div v-for="prayer in myPrayers" :key="prayer.id" class="col-lg-6">
-                  <div class="prayer-card card border-0 shadow-sm">
+                  <div class="prayer-card card border-0 shadow-sm" :class="{ 'answered-prayer-card': prayer.status === 'answered' }">
+                    <!-- Answered Prayer Banner -->
+                    <div v-if="prayer.status === 'answered'" class="answered-banner bg-success text-white px-3 py-2">
+                      <i class="bi bi-check-circle-fill me-2"></i>
+                      <strong>Prayer Answered!</strong>
+                      <small class="ms-2 opacity-75">Praise God for answered prayer!</small>
+                    </div>
+                    
                     <div class="card-body">
                       <div class="d-flex justify-content-between align-items-start mb-3">
                         <div>
@@ -132,44 +139,38 @@
                             <i class="bi bi-clock-history me-1"></i>
                             Pending Approval
                           </span>
-                          <span v-else-if="prayer.approved === true" class="badge bg-success">
+                          <span v-else-if="prayer.approved === true && prayer.status !== 'answered'" class="badge bg-success">
                             <i class="bi bi-check-circle me-1"></i>
                             Approved
                           </span>
                         </div>
-                        <div class="dropdown">
-                          <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="dropdown">
-                            <i class="bi bi-three-dots"></i>
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" @click="editPrayer(prayer)">Edit</a></li>
-                            <li><a class="dropdown-item" href="#" @click="toggleAnswered(prayer)">
-                              {{ prayer.status === 'answered' ? 'Mark as Ongoing' : 'Mark as Answered' }}
-                            </a></li>
-                            <li><a class="dropdown-item text-danger" href="#" @click="deletePrayer(prayer.id)">Delete</a></li>
-                          </ul>
+                        <div class="d-flex flex-column align-items-end">
+                          <div v-if="prayer.status === 'answered'" class="text-success small mb-2">
+                            <i class="bi bi-check-circle-fill me-1"></i>
+                            {{ formatDate(prayer.dateAnswered) }}
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="dropdown">
+                              <i class="bi bi-three-dots"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#" @click="editPrayer(prayer)">Edit</a></li>
+                              <li><a class="dropdown-item" href="#" @click="toggleAnswered(prayer)">
+                                {{ prayer.status === 'answered' ? 'Mark as Ongoing' : 'Mark as Answered' }}
+                              </a></li>
+                              <li><a class="dropdown-item text-danger" href="#" @click="deletePrayer(prayer.id)">Delete</a></li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
 
                       <p class="card-text mb-3">{{ prayer.request }}</p>
 
                       <div class="prayer-meta">
-                        <small class="text-muted d-block mb-1">
+                        <small class="text-muted d-block">
                           <i class="bi bi-calendar me-1"></i>
                           Requested: {{ formatDate(prayer.dateRequested) }}
                         </small>
-                        <small v-if="prayer.status === 'answered'" class="text-success d-block">
-                          <i class="bi bi-check-circle me-1"></i>
-                          Answered: {{ formatDate(prayer.dateAnswered) }}
-                        </small>
-                      </div>
-
-                      <div v-if="prayer.status === 'answered'" class="mt-3 p-3 bg-success bg-opacity-10 rounded">
-                        <h6 class="text-success fw-bold mb-2">
-                          <i class="bi bi-check-circle me-2"></i>
-                          Prayer Answered!
-                        </h6>
-                        <p class="mb-0 small">{{ prayer.testimony || 'Praise God for answered prayer!' }}</p>
                       </div>
                     </div>
                   </div>
@@ -187,20 +188,34 @@
 
               <div v-else class="row g-4">
                 <div v-for="prayer in communityPrayers" :key="prayer.id" class="col-lg-6">
-                  <div class="prayer-card card border-0 shadow-sm">
+                  <div class="prayer-card card border-0 shadow-sm" :class="{ 'answered-prayer-card': prayer.status === 'answered' }">
+                    <!-- Answered Prayer Banner -->
+                    <div v-if="prayer.status === 'answered'" class="answered-banner bg-success text-white px-3 py-2">
+                      <i class="bi bi-check-circle-fill me-2"></i>
+                      <strong>Prayer Answered!</strong>
+                      <small class="ms-2 opacity-75">Praise God for answered prayer!</small>
+                    </div>
+                    
                     <div class="card-body">
                       <div class="d-flex justify-content-between align-items-start mb-3">
                         <span class="badge" :class="getCategoryBadgeClass(prayer.category)">
                           {{ prayer.category }}
                         </span>
-                        <button 
-                          class="btn btn-sm btn-outline-primary"
-                          @click="togglePraying(prayer.id)"
-                          :class="{ 'btn-primary text-white': isPraying(prayer.id) }"
-                        >
-                          <i class="bi bi-heart me-1"></i>
-                          {{ isPraying(prayer.id) ? 'Praying' : 'Pray' }}
-                        </button>
+                        <div class="d-flex flex-column align-items-end">
+                          <div v-if="prayer.status === 'answered'" class="text-success small mb-2">
+                            <i class="bi bi-check-circle-fill me-1"></i>
+                            {{ formatDate(prayer.dateAnswered) }}
+                          </div>
+                          <button 
+                            class="btn btn-sm"
+                            :class="prayer.status === 'answered' ? 'btn-secondary' : 'btn-outline-primary'"
+                            @click="prayer.status !== 'answered' && togglePraying(prayer.id)"
+                            :disabled="prayer.status === 'answered'"
+                          >
+                            <i class="bi bi-heart me-1"></i>
+                            {{ isPraying(prayer.id) ? 'Prayed' : 'Pray' }}
+                          </button>
+                        </div>
                       </div>
 
                       <div class="d-flex align-items-center mb-2">
@@ -213,20 +228,12 @@
                       <div class="prayer-meta">
                         <small class="text-muted d-block mb-1">
                           <i class="bi bi-calendar me-1"></i>
-                          {{ formatDate(prayer.dateRequested) }}
+                          Requested: {{ formatDate(prayer.dateRequested) }}
                         </small>
                         <small class="text-muted d-block">
                           <i class="bi bi-heart me-1"></i>
-                          {{ getPrayingCount(prayer.id) }} people praying
+                          {{ getPrayingCount(prayer.id) }} people prayed
                         </small>
-                      </div>
-
-                      <div v-if="prayer.status === 'answered'" class="mt-3 p-3 bg-success bg-opacity-10 rounded">
-                        <h6 class="text-success fw-bold mb-2">
-                          <i class="bi bi-check-circle me-2"></i>
-                          Prayer Answered!
-                        </h6>
-                        <p class="mb-0 small">{{ prayer.testimony || 'Praise God for answered prayer!' }}</p>
                       </div>
                     </div>
                   </div>
@@ -244,13 +251,24 @@
 
               <div v-else class="row g-4">
                 <div v-for="prayer in confidentialPrayers" :key="prayer.id" class="col-lg-6">
-                  <div class="prayer-card card border-0 shadow-sm border-warning">
+                  <div class="prayer-card card border-0 shadow-sm border-warning" :class="{ 'answered-prayer-card': prayer.status === 'answered' }">
+                    <!-- Answered Prayer Banner -->
+                    <div v-if="prayer.status === 'answered'" class="answered-banner bg-success text-white px-3 py-2">
+                      <i class="bi bi-check-circle-fill me-2"></i>
+                      <strong>Prayer Answered!</strong>
+                      <small class="ms-2 opacity-75">Praise God for answered prayer!</small>
+                    </div>
+                    
                     <div class="card-body">
                       <div class="d-flex justify-content-between align-items-start mb-3">
                         <span class="badge bg-warning text-dark">
                           <i class="bi bi-shield-lock me-1"></i>
                           Confidential
                         </span>
+                        <div v-if="prayer.status === 'answered'" class="text-success small">
+                          <i class="bi bi-check-circle-fill me-1"></i>
+                          {{ formatDate(prayer.dateAnswered) }}
+                        </div>
                       </div>
 
                       <div class="d-flex align-items-center mb-2">
@@ -263,7 +281,7 @@
                       <div class="prayer-meta">
                         <small class="text-muted d-block">
                           <i class="bi bi-calendar me-1"></i>
-                          {{ formatDate(prayer.dateRequested) }}
+                          Requested: {{ formatDate(prayer.dateRequested) }}
                         </small>
                       </div>
                     </div>
@@ -474,15 +492,33 @@ const prayerForm = ref({
 })
 
 const myPrayers = computed(() => {
-  return prayers.value.filter(p => p.userId === user?.id)
+  const filtered = prayers.value.filter(p => p.userId === user?.id)
+  // Sort: active prayers first, answered prayers last
+  return filtered.sort((a, b) => {
+    if (a.status === 'answered' && b.status !== 'answered') return 1
+    if (a.status !== 'answered' && b.status === 'answered') return -1
+    return new Date(b.dateRequested) - new Date(a.dateRequested)
+  })
 })
 
 const communityPrayers = computed(() => {
-  return prayers.value.filter(p => p.visibility === 'public' && p.userId !== user?.id && p.approved === true)
+  const filtered = prayers.value.filter(p => p.visibility === 'public' && p.userId !== user?.id && p.approved === true)
+  // Sort: active prayers first, answered prayers last
+  return filtered.sort((a, b) => {
+    if (a.status === 'answered' && b.status !== 'answered') return 1
+    if (a.status !== 'answered' && b.status === 'answered') return -1
+    return new Date(b.dateRequested) - new Date(a.dateRequested)
+  })
 })
 
 const confidentialPrayers = computed(() => {
-  return prayers.value.filter(p => p.visibility === 'pastor')
+  const filtered = prayers.value.filter(p => p.visibility === 'pastor')
+  // Sort: active prayers first, answered prayers last
+  return filtered.sort((a, b) => {
+    if (a.status === 'answered' && b.status !== 'answered') return 1
+    if (a.status !== 'answered' && b.status === 'answered') return -1
+    return new Date(b.dateRequested) - new Date(a.dateRequested)
+  })
 })
 
 const answeredPrayers = computed(() => {
@@ -562,6 +598,7 @@ const initializeSamplePrayers = () => {
           request: 'I have an important job interview coming up. Please pray for wisdom and favor.',
           dateRequested: '2024-10-08',
           status: 'answered',
+          dateAnswered: '2024-10-15',
           visibility: 'public',
           approved: true,
           approvedBy: 'Church Administrator',
@@ -863,11 +900,23 @@ const formatDate = (dateString) => {
 <style scoped>
 .prayer-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
 }
 
 .prayer-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+}
+
+.answered-prayer-card {
+  border-left: 4px solid #198754 !important;
+}
+
+.answered-banner {
+  font-size: 0.9rem;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
 }
 
 .nav-tabs .nav-link {
