@@ -1618,16 +1618,6 @@ const newAttendance = ref({ date: '', count: 0, notes: '' })
 
 const sharedPrayers = ref([
   {
-    id: 1,
-    title: 'Healing for Sarah Johnson',
-    category: 'Health',
-    request: 'Please pray for Sarah as she recovers from surgery. Pray for complete healing and strength during this time.',
-    requestedBy: 'John Doe',
-    dateRequested: '2024-10-12',
-    status: 'active',
-    approvalStatus: 'approved'
-  },
-  {
     id: 2,
     title: 'Mission Trip Safety',
     category: 'Missions',
@@ -1636,46 +1626,6 @@ const sharedPrayers = ref([
     dateRequested: '2024-10-10',
     status: 'active',
     approvalStatus: 'approved'
-  },
-  {
-    id: 3,
-    title: 'New Job Opportunity',
-    category: 'Work',
-    request: 'I have an important job interview coming up. Please pray for wisdom and favor.',
-    requestedBy: 'Jane Smith',
-    dateRequested: '2024-10-08',
-    status: 'answered',
-    approvalStatus: 'approved'
-  },
-  {
-    id: 4,
-    title: 'Small Groups',
-    category: 'Community',
-    request: 'Pray for our upcoming community food drive and that we can serve those in need effectively.',
-    requestedBy: 'John Doe',
-    dateRequested: '2024-10-05',
-    status: 'active',
-    approvalStatus: 'approved'
-  },
-  {
-    id: 5,
-    title: 'Family Reconciliation',
-    category: 'Family',
-    request: 'Please pray for restoration in my family. We are going through a difficult time and need God\'s peace and guidance.',
-    requestedBy: 'Jane Smith',
-    dateRequested: '2025-10-17',
-    status: 'active',
-    approvalStatus: 'pending'
-  },
-  {
-    id: 6,
-    title: 'Financial Breakthrough',
-    category: 'Work',
-    request: 'Seeking prayers for provision and financial stability during this challenging season.',
-    requestedBy: 'John Doe',
-    dateRequested: '2025-10-16',
-    status: 'active',
-    approvalStatus: 'pending'
   }
 ])
 
@@ -2696,90 +2646,6 @@ onMounted(() => {
     }
   } catch (error) {
     console.error('Error loading prayers from localStorage:', error)
-  }
-  
-  // Initialize personal prayers for John Doe (user id: 1)
-  try {
-    const johnDoePrayers = localStorage.getItem('gcbf_prayers_1')
-    if (!johnDoePrayers) {
-      const johnDoeSamplePrayers = [
-        {
-          id: 1,
-          title: 'Healing for Sarah Johnson',
-          category: 'Health',
-          request: 'Please pray for Sarah as she recovers from surgery. Pray for complete healing and strength during this time.',
-          dateRequested: '2024-10-12',
-          status: 'active',
-          visibility: 'public',
-          approved: true,
-          approvedBy: 'Church Administrator',
-          approvedAt: '2024-10-12'
-        },
-        {
-          id: 4,
-          title: 'Small Groups',
-          category: 'Community',
-          request: 'Pray for our upcoming community food drive and that we can serve those in need effectively.',
-          dateRequested: '2024-10-05',
-          status: 'active',
-          visibility: 'public',
-          approved: true,
-          approvedBy: 'Church Administrator',
-          approvedAt: '2024-10-05'
-        },
-        {
-          id: 6,
-          title: 'Financial Breakthrough',
-          category: 'Work',
-          request: 'Seeking prayers for provision and financial stability during this challenging season.',
-          dateRequested: '2025-10-16',
-          status: 'active',
-          visibility: 'public',
-          approved: false,
-          approvedBy: null,
-          approvedAt: null
-        }
-      ]
-      localStorage.setItem('gcbf_prayers_1', JSON.stringify(johnDoeSamplePrayers))
-    }
-  } catch (error) {
-    console.error('Error initializing John Doe prayers:', error)
-  }
-  
-  // Initialize personal prayers for Jane Smith (user id: 2)
-  try {
-    const janeSmithPrayers = localStorage.getItem('gcbf_prayers_2')
-    if (!janeSmithPrayers) {
-      const janeSmithSamplePrayers = [
-        {
-          id: 3,
-          title: 'New Job Opportunity',
-          category: 'Work',
-          request: 'I have an important job interview coming up. Please pray for wisdom and favor.',
-          dateRequested: '2024-10-08',
-          status: 'answered',
-          visibility: 'public',
-          approved: true,
-          approvedBy: 'Church Administrator',
-          approvedAt: '2024-10-08'
-        },
-        {
-          id: 5,
-          title: 'Family Reconciliation',
-          category: 'Family',
-          request: 'Please pray for restoration in my family. We are going through a difficult time and need God\'s peace and guidance.',
-          dateRequested: '2025-10-17',
-          status: 'active',
-          visibility: 'public',
-          approved: false,
-          approvedBy: null,
-          approvedAt: null
-        }
-      ]
-      localStorage.setItem('gcbf_prayers_2', JSON.stringify(janeSmithSamplePrayers))
-    }
-  } catch (error) {
-    console.error('Error initializing Jane Smith prayers:', error)
   }
 
   // Load saved financial data

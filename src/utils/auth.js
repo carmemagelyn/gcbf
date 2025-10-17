@@ -5,7 +5,6 @@ export const USERS_KEY = 'gcbf_users'
 
 // Initialize demo users if not exists
 export const initializeDemoUsers = () => {
-  // Force reset to remove old Member and Visitor accounts
   const demoUsers = [
     {
       id: '3',
@@ -25,17 +24,11 @@ export const initializeDemoUsers = () => {
     }
   ]
   
-  // Get existing users and filter out john.doe and jane.smith
   const existingUsers = localStorage.getItem(USERS_KEY)
   if (existingUsers) {
     const parsed = JSON.parse(existingUsers)
-    const filteredUsers = parsed.filter(u => 
-      u.email !== 'john.doe@email.com' && 
-      u.email !== 'jane.smith@email.com'
-    )
-    // Merge with demo users (avoid duplicates)
     const allUsers = [...demoUsers]
-    filteredUsers.forEach(user => {
+    parsed.forEach(user => {
       if (!allUsers.some(u => u.email === user.email)) {
         allUsers.push(user)
       }
@@ -47,11 +40,6 @@ export const initializeDemoUsers = () => {
 }
 
 export const login = (email, password) => {
-  // Block removed accounts
-  if (email === 'john.doe@email.com' || email === 'jane.smith@email.com') {
-    return { success: false, message: 'Invalid email or password' }
-  }
-  
   const users = JSON.parse(localStorage.getItem(USERS_KEY) || '[]')
   const user = users.find(u => u.email === email && u.password === password)
   

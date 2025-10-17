@@ -708,7 +708,7 @@ const loadGifts = () => {
             receiptUrl: '',
             referenceNumber: 'CASH-REF-001234',
             verificationStatus: 'approved',
-            verifiedBy: 'Jane Smith',
+            verifiedBy: 'Church Administrator',
             verifiedDate: '2024-10-15',
             notes: 'Paid during special offering'
           }
