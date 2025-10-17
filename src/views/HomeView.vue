@@ -314,45 +314,7 @@ const weeklyServices = ref([
 ])
 
 // Monthly newsletters uploaded by admin
-const monthlyNewsletters = ref([
-  {
-    id: 1,
-    title: 'October 2025 — Issue 1 | Vol. 1',
-    date: '2025-10-01',
-    excerpt: 'Celebrating God\'s abundant harvest with thanksgiving, community service, and special events throughout October.',
-    issueNumber: 1,
-    volume: 1,
-    pageCount: 12,
-    publishedBy: 'Pastor John Louie Berdejo',
-    coverImage: '/newsletter/cover-GCBF OCT 2025 — ISSUE 1 | VOL. 1.jpg', // Newsletter cover from public folder
-    downloadUrl: '/newsletter/GCBF OCT 2025 — ISSUE 1 | VOL. 1.pdf', // PDF file in public folder
-    highlights: [
-      'Harvest Thanksgiving Service - October 27th',
-      'Community Food Drive - Goal: 1,500 items',
-      'New Member Classes starting November',
-      'Youth Fall Retreat - October 15th',
-      'Trunk or Treat Event - October 31st'
-    ],
-    content: `
-      <h5>Harvest Thanksgiving Service</h5>
-      <p>This October, we're celebrating God's abundant blessings with a special Harvest Thanksgiving service on October 27th. Join us as we give thanks for His provision and celebrate the harvest season.</p>
-      
-      <h5>Community Food Drive</h5>
-      <p>We're organizing a community food drive throughout October to help local families in need. Please bring non-perishable items to any of our services. Our goal is to collect 1,000 items this month!</p>
-      
-      <h5>New Member Classes</h5>
-      <p>Starting in November, we'll be offering new member orientation classes. If you're interested in officially joining our church family, please speak with Pastor John Louie Berdejo or register through our church portal.</p>
-      
-      <h5>Upcoming Events</h5>
-      <ul>
-        <li>October 15: Youth Fall Retreat</li>
-        <li>October 22: Community Service Day</li>
-        <li>October 27: Harvest Thanksgiving Service</li>
-        <li>October 31: Trunk or Treat Event</li>
-      </ul>
-    `
-  }
-])
+const monthlyNewsletters = ref([])
 
 // Load newsletters from admin uploads
 const loadNewsletters = () => {
