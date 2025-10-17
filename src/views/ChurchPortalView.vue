@@ -1677,56 +1677,21 @@ const ministryReports = ref([
 const publishedNewsletters = ref([
   {
     id: 1,
-    title: 'October 2025 - Harvest Blessings',
+    title: 'GCBF OCT 2025 — ISSUE 1 | VOL. 1',
     date: '2025-10-01',
-    excerpt: 'Celebrating God\'s abundant harvest with thanksgiving, community service, and special events throughout October.',
-    issueNumber: 22,
+    excerpt: 'Our inaugural newsletter featuring church updates, ministry highlights, and upcoming events.',
+    issueNumber: 1,
+    volume: 1,
     pageCount: 12,
     publishedBy: 'Pastor John Louie Berdejo',
-    coverImage: '/newsletter-covers/october-2025.jpg',
-    downloadUrl: '/newsletters/october-2025.pdf',
+    coverImage: '/newsletter/cover-gcbf-oct-2025-issue-1-vol-1.jpg',
+    downloadUrl: '/newsletter/gcbf-oct-2025-issue-1-vol-1.pdf',
     highlights: [
-      'Harvest Thanksgiving Service - October 27th',
-      'Community Food Drive - Goal: 1,500 items',
-      'New Member Classes starting November',
-      'Youth Fall Retreat - October 15th',
-      'Trunk or Treat Event - October 31st'
-    ]
-  },
-  {
-    id: 2,
-    title: 'September 2025 - Back to School',
-    date: '2025-09-01',
-    excerpt: 'Starting the new season with renewed faith, education ministry updates, and preparing for fall activities.',
-    issueNumber: 21,
-    pageCount: 10,
-    publishedBy: 'Pastor John Louie Berdejo',
-    coverImage: '/newsletter-covers/september-2025.jpg',
-    downloadUrl: '/newsletters/september-2025.pdf',
-    highlights: [
-      'Back to School Blessing Service',
-      'Sunday School Teacher Training',
-      'Fall Ministry Launch',
-      'Youth Group Kickoff',
-      'Small Groups Registration'
-    ]
-  },
-  {
-    id: 3,
-    title: 'August 2025 - Summer Reflections',
-    date: '2025-08-01',
-    excerpt: 'Reflecting on a wonderful summer of ministry, missions, and memorable moments in our church family.',
-    issueNumber: 20,
-    pageCount: 14,
-    publishedBy: 'Pastor John Louie Berdejo',
-    coverImage: '/newsletter-covers/august-2025.jpg',
-    downloadUrl: '/newsletters/august-2025.pdf',
-    highlights: [
-      'Summer Mission Trip Testimonies',
-      'VBS 2024 Success Stories',
-      'Church Picnic Highlights',
-      'Baptism Celebrations',
-      'Facility Improvement Updates'
+      'Welcome Message from Pastor',
+      'Ministry Updates and Reports',
+      'Upcoming Events and Activities',
+      'Community Outreach Programs',
+      'Prayer Requests and Testimonies'
     ]
   }
 ])
@@ -1787,8 +1752,8 @@ const uploadNewsletter = async () => {
       issueNumber: newIssueNumber,
       pageCount: null, // Would be extracted from PDF
       publishedBy: user?.name || 'Admin',
-      coverImage: newNewsletter.value.coverFile ? `/newsletter-covers/${Date.now()}.jpg` : null,
-      downloadUrl: `/newsletters/${Date.now()}.pdf`
+      coverImage: newNewsletter.value.coverFile ? `/newsletter/covers/${Date.now()}.jpg` : null,
+      downloadUrl: `/newsletter/${Date.now()}.pdf`
     }
     
     publishedNewsletters.value.unshift(newsletter)
