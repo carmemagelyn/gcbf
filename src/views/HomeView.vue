@@ -136,21 +136,28 @@
 
       <!-- Location Section (within newsletter background) -->
       <div id="location" class="container-fluid mt-5 pt-5 px-0 pb-0 mb-0">
-        <div class="container">
-          <div class="text-center mb-5">
-            <h2 class="display-6 fw-bold church-purple">Our Location</h2>
-            <p class="lead text-muted">
-              <a href="https://maps.app.goo.gl/Tq12fUBbX1Le4uiF8" target="_blank" class="text-decoration-none text-muted">
-                <i class="bi bi-geo-alt-fill me-2"></i>
-                AMK Bldg. General Luna St, Iloilo City Proper, Iloilo City, Iloilo
+        <div class="container mb-4">
+          <div class="text-center mb-4">
+            <h2 class="display-6 fw-bold church-purple">
+              <i class="bi bi-geo-alt-fill me-2"></i>Find Us
+            </h2>
+            <p class="lead text-muted mb-3">Visit us at our church location</p>
+            <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+              <a href="https://maps.app.goo.gl/Tq12fUBbX1Le4uiF8" target="_blank" class="btn btn-outline-primary">
+                <i class="bi bi-map me-2"></i>
+                Open in Google Maps
               </a>
-            </p>
+              <p class="mb-0 text-muted">
+                <i class="bi bi-building me-2"></i>
+                AMK Bldg. General Luna St, Iloilo City Proper, Iloilo City, Iloilo
+              </p>
+            </div>
           </div>
         </div>
-        <div class="ratio ratio-21x5 mb-0">
+        <div class="map-container shadow-lg">
           <iframe 
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Twinbee+Print+Ads+Corp,General+Luna+St,Iloilo+City&zoom=15" 
-            style="border:0;" 
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Twinbee+Print+Ads+Corp,General+Luna+St,Iloilo+City&zoom=16" 
+            style="border:0; width: 100%; height: 450px;" 
             allowfullscreen="" 
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade">
@@ -557,5 +564,15 @@ footer a:hover {
 
 .service-card:hover {
   box-shadow: 0 8px 25px rgba(83, 125, 93, 0.5) !important;
+}
+
+.map-container {
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.map-container iframe {
+  display: block;
 }
 </style>
