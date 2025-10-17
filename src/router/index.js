@@ -58,50 +58,63 @@ const router = createRouter({
 
 // Navigation guard
 router.beforeEach((to, from, next) => {
+  console.log('Navigation to:', to.path, 'from:', from.path)
+  
+  // Check if route requires authentication
   if (to.matched.some(record => record.meta.requiresAuth)) {
     if (!isAuthenticated()) {
-      // Redirect to home where users can login via modal
+      // Not logged in - redirect to home
+      console.log('Not authenticated - redirecting to home')
       next('/')
-    } else if (to.matched.some(record => record.meta.requiresAdminOrPastor)) {
-      // Check if user is admin or pastor for Church Portal
-      if (!isAdminOrPastor()) {
-        // Regular members trying to access Church Portal
-        const user = getCurrentUser()
-        if (user && user.userType === 'member') {
-          next('/dashboard')
-        } else {
-          next('/')
-        }
-      } else {
-        next()
-      }
-    } else if (to.matched.some(record => record.meta.requiresAdmin)) {
-      // Check if user is admin for admin-only routes
-      if (!isAdmin()) {
-        const user = getCurrentUser()
-        if (user && user.userType === 'pastor') {
-          next('/church-portal')
-        } else if (user && user.userType === 'member') {
-          next('/dashboard')
-        } else {
-          next('/')
-        }
-      } else {
-        next()
-      }
-    } else if (to.matched.some(record => record.meta.requiresMember)) {
-      const user = getCurrentUser()
-      if (user.userType !== 'member') {
-        // Admin/pastor trying to access member-only route
-        next('/church-portal')
-      } else {
-        next()
-      }
-    } else {
-      // Regular authenticated route - allow all authenticated users
-      next()
+      return
     }
+    
+    // User is authenticated - now check specific permissions
+    const user = getCurrentUser()
+    console.log('User authenticated:', user?.email, 'Type:', user?.userType)
+    
+    // Check if route requires admin or pastor access
+    if (to.matched.some(record => record.meta.requiresAdminOrPastor)) {
+      if (!isAdminOrPastor()) {
+        // Not admin/pastor - redirect based on user type
+        console.log('Route requires admin/pastor - user is not authorized')
+        next(user.userType === 'member' ? '/dashboard' : '/')
+        return
+      }
+    }
+    
+    // Check if route requires admin-only access
+    if (to.matched.some(record => record.meta.requiresAdmin)) {
+      if (!isAdmin()) {
+        // Not admin - redirect based on user type
+        console.log('Route requires admin - user is not authorized')
+        if (user.userType === 'pastor') {
+          next('/church-portal')
+        } else if (user.userType === 'member') {
+          next('/dashboard')
+        } else {
+          next('/')
+        }
+        return
+      }
+    }
+    
+    // Check if route requires member-only access
+    if (to.matched.some(record => record.meta.requiresMember)) {
+      if (user.userType !== 'member') {
+        // Not a member - redirect admin/pastor to church portal
+        console.log('Route requires member - redirecting admin/pastor to church portal')
+        next('/church-portal')
+        return
+      }
+    }
+    
+    // All checks passed - allow navigation
+    console.log('All checks passed - allowing navigation')
+    next()
   } else {
+    // Route doesn't require auth - allow navigation
+    console.log('Route does not require auth - allowing navigation')
     next()
   }
 })
