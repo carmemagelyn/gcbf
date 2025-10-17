@@ -516,7 +516,7 @@ const handleRegister = async () => {
 }
 
 .navbar-logo {
-  height: 50px;
+  height: 70px;
   width: auto;
   object-fit: contain;
 }
