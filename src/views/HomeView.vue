@@ -1,15 +1,23 @@
 <template>
   <div class="home">
     <!-- Hero Section -->
-    <section class="hero-section bg-church-purple text-white py-5">
+    <section class="hero-section text-white py-5" style="
+    
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/hero.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    ">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <h1 class="display-4 fw-bold mb-4">Welcome to Graced Community Bible Fellowship</h1>
+         
+            <h1 class="display-4 fw-bold mb-5">Welcome to Graced Community Bible Fellowship</h1>
+         
             <p class="lead mb-4">
               Shaped by the Potter’s love to live out His Kingdom purpose through Jesus Christ by the work of the Holy Spirit.
             </p>
-
+       
             <div class="d-flex gap-3">
               <button v-if="!isAuth" class="btn btn-primary btn-lg" @click="scrollToLocation">
                 Our Location
@@ -21,6 +29,7 @@
                 View Services
               </button>
             </div>
+        
           </div>
           <div class="col-lg-6">
             <!-- Weekly Verse -->
@@ -104,8 +113,7 @@
                 
                 <!-- Newsletter Title Overlay -->
                 <div class="position-absolute bottom-0 start-0 w-100 p-3 text-white">
-                  <h5 class="fw-bold mb-1">{{ newsletter.title }}</h5>
-                  <p class="mb-0 small opacity-75">{{ formatDate(newsletter.date) }}</p>
+                  <h5 class="fw-bold mb-0">{{ newsletter.title }}</h5>
                 </div>
                 
                 <!-- Issue Badge -->
@@ -141,16 +149,9 @@
             <h2 class="display-6 fw-bold church-purple">
               <i class="bi bi-geo-alt-fill me-2"></i>Find Us
             </h2>
-            <p class="lead text-muted mb-3">Visit us at our church location</p>
+            <p class="lead text-muted mb-3">AMK Bldg. General Luna St, Iloilo City Proper, Iloilo City, Iloilo</p>
             <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
-              <a href="https://maps.app.goo.gl/Tq12fUBbX1Le4uiF8" target="_blank" class="btn btn-outline-primary">
-                <i class="bi bi-map me-2"></i>
-                Open in Google Maps
-              </a>
-              <p class="mb-0 text-muted">
-                <i class="bi bi-building me-2"></i>
-                AMK Bldg. General Luna St, Iloilo City Proper, Iloilo City, Iloilo
-              </p>
+          
             </div>
           </div>
         </div>
@@ -315,14 +316,15 @@ const weeklyServices = ref([
 const monthlyNewsletters = ref([
   {
     id: 1,
-    title: 'October 2025 - Harvest Blessings',
+    title: 'October 2025 — Issue 1 | Vol. 1',
     date: '2025-10-01',
     excerpt: 'Celebrating God\'s abundant harvest with thanksgiving, community service, and special events throughout October.',
-    issueNumber: 22,
+    issueNumber: 1,
+    volume: 1,
     pageCount: 12,
     publishedBy: 'Pastor John Louie Berdejo',
-    coverImage: '/newsletter-covers/october-2025.jpg', // Would be uploaded by admin
-    downloadUrl: '/newsletters/october-2025.pdf', // PDF file uploaded by admin
+    coverImage: '/hero.jpg', // Using hero.jpg from public folder
+    downloadUrl: '/newsletter/GCBF OCT 2025 — ISSUE 1 | VOL. 1.pdf', // PDF file in public folder
     highlights: [
       'Harvest Thanksgiving Service - October 27th',
       'Community Food Drive - Goal: 1,500 items',
@@ -347,56 +349,6 @@ const monthlyNewsletters = ref([
         <li>October 27: Harvest Thanksgiving Service</li>
         <li>October 31: Trunk or Treat Event</li>
       </ul>
-    `
-  },
-  {
-    id: 2,
-    title: 'September 2025 - Back to School',
-    date: '2025-09-01',
-    excerpt: 'Starting the new season with renewed faith, education ministry updates, and preparing for fall activities.',
-    issueNumber: 21,
-    pageCount: 10,
-    publishedBy: 'Pastor John Louie Berdejo',
-    coverImage: '/newsletter-covers/september-2025.jpg',
-    downloadUrl: '/newsletters/september-2025.pdf',
-    highlights: [
-      'Back to School Blessing Service',
-      'Sunday School Teacher Training',
-      'Fall Ministry Launch',
-      'Youth Group Kickoff',
-      'Small Groups Registration'
-    ],
-    content: `
-      <h5>Back to School Blessing</h5>
-      <p>We blessed our students, teachers, and families as they return to school this fall.</p>
-      
-      <h5>Ministry Updates</h5>
-      <p>All our fall ministries are launching with exciting new programs and opportunities.</p>
-    `
-  },
-  {
-    id: 3,
-    title: 'August 2025 - Summer Reflections',
-    date: '2025-08-01',
-    excerpt: 'Reflecting on a wonderful summer of ministry, missions, and memorable moments in our church family.',
-    issueNumber: 20,
-    pageCount: 14,
-    publishedBy: 'Pastor John Louie Berdejo',
-    coverImage: '/newsletter-covers/august-2025.jpg',
-    downloadUrl: '/newsletters/august-2025.pdf',
-    highlights: [
-      'Summer Mission Trip Testimonies',
-      'VBS 2024 Success Stories',
-      'Church Picnic Highlights',
-      'Baptism Celebrations',
-      'Facility Improvement Updates'
-    ],
-    content: `
-      <h5>Summer Ministry Recap</h5>
-      <p>What an amazing summer we've had together as a church family!</p>
-      
-      <h5>Mission Trip Success</h5>
-      <p>Our youth mission trip was a tremendous blessing to both those we served and our young people.</p>
     `
   }
 ])
