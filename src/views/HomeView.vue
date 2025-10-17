@@ -528,4 +528,20 @@ footer a:hover {
 .map-container iframe {
   display: block;
 }
+
+.map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(85, 44, 44, 0.7);
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+.map-container:hover .map-overlay {
+  opacity: 0;
+}
 </style>
