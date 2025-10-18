@@ -307,20 +307,6 @@
                 </div>
               </div>
 
-              <div class="mb-3">
-                <label for="userType" class="form-label">I am a</label>
-                <select
-                  class="form-select"
-                  id="userType"
-                  v-model="registerForm.userType"
-                  required
-                >
-                  <option value="">Choose...</option>
-                  <option value="member">Member</option>
-                  <option value="visitor">First-time Visitor</option>
-                </select>
-              </div>
-
               <div v-if="registerError" class="alert alert-danger" role="alert">
                 <i class="bi bi-exclamation-triangle me-2"></i>
                 {{ registerError }}
@@ -410,8 +396,7 @@ const registerForm = ref({
   email: '',
   phone: '',
   password: '',
-  confirmPassword: '',
-  userType: ''
+  confirmPassword: ''
 })
 const showRegisterPassword = ref(false)
 const showConfirmPassword = ref(false)
@@ -496,7 +481,7 @@ const handleRegister = async () => {
       email: registerForm.value.email,
       phone: registerForm.value.phone,
       password: registerForm.value.password,
-      userType: registerForm.value.userType
+      userType: 'member' // All new registrations are members
     })
 
     if (result.success && result.user) {
@@ -510,8 +495,7 @@ const handleRegister = async () => {
         email: '',
         phone: '',
         password: '',
-        confirmPassword: '',
-        userType: ''
+        confirmPassword: ''
       }
       
       router.push('/dashboard')

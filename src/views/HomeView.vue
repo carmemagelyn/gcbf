@@ -15,7 +15,7 @@
             <h1 class="display-4 fw-bold mb-5">Welcome to Graced Community Bible Fellowship</h1>
          
             <p class="lead mb-4">
-              Shaped by the Potter’s love to live out His Kingdom purpose through Jesus Christ by the work of the Holy Spirit.
+              Shaped by the Potter’s love to live out His purpose through Jesus Christ by the work of the Holy Spirit.
             </p>
        
             <div class="d-flex gap-3">

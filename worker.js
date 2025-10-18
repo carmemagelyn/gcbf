@@ -38,24 +38,46 @@ export default {
       
       // For Workers with Assets, ASSETS is automatically provided
       // Serve static assets from the configured assets directory
-      try {
-        const asset = await env.ASSETS.fetch(request);
-        
-        // If asset found, return it
-        if (asset && asset.status !== 404) {
-          return asset;
+      
+      // Check if the request is for a static file (has file extension)
+      const hasFileExtension = /\.[a-zA-Z0-9]+$/.test(url.pathname);
+      
+      if (hasFileExtension) {
+        // Try to serve the static asset
+        try {
+          const asset = await env.ASSETS.fetch(request);
+          if (asset && asset.status !== 404) {
+            return asset;
+          }
+        } catch (assetError) {
+          console.error('Asset fetch error:', assetError);
         }
-      } catch (assetError) {
-        console.error('Asset fetch error:', assetError);
-        // Continue to fallback if asset fetch fails
+        
+        // If static file not found, return 404
+        return new Response('File not found', { 
+          status: 404,
+          headers: { 'Content-Type': 'text/plain' }
+        });
       }
       
-      // For 404s or errors, serve index.html for SPA routing
+      // For HTML routes (no file extension), always serve index.html for SPA routing
       // This allows Vue Router to handle client-side routing
       try {
-        const indexUrl = new URL('/', url.origin);
-        const indexRequest = new Request(indexUrl, request);
-        return await env.ASSETS.fetch(indexRequest);
+        const indexUrl = new URL('/index.html', url.origin);
+        const indexRequest = new Request(indexUrl, {
+          method: request.method,
+          headers: request.headers
+        });
+        const indexResponse = await env.ASSETS.fetch(indexRequest);
+        
+        // Return index.html with proper HTML content type
+        return new Response(indexResponse.body, {
+          status: 200,
+          headers: {
+            'Content-Type': 'text/html; charset=utf-8',
+            'Cache-Control': 'no-cache'
+          }
+        });
       } catch (indexError) {
         console.error('Index fetch error:', indexError);
         return new Response('Not Found', { 
