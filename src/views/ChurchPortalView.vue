@@ -1738,22 +1738,92 @@ const uploadNewsletter = async () => {
   isUploading.value = true
   
   try {
-    // NOTE: File upload requires R2 storage to be enabled in Cloudflare
-    // For now, files must be manually added to the public/newsletter folder
+    // Validate required fields
+    if (!newNewsletter.value.title || !newNewsletter.value.date || !newNewsletter.value.excerpt) {
+      alert('Please fill in all required fields (Title, Date, Excerpt)')
+      isUploading.value = false
+      return
+    }
     
-    alert('⚠️ Newsletter Upload Not Yet Configured\n\n' +
-          'To add newsletters:\n' +
-          '1. Place PDF and cover image in public/newsletter/ folder\n' +
-          '2. Use URL-safe filenames (no spaces or special characters)\n' +
-          '3. Update the newsletter list in this code\n' +
-          '4. Rebuild and redeploy\n\n' +
-          'R2 Storage needs to be enabled for automatic uploads.')
+    if (!newNewsletter.value.pdfFile) {
+      alert('Please select a PDF file to upload')
+      isUploading.value = false
+      return
+    }
+    
+    // Create a URL-safe filename from the title
+    const safeTitle = newNewsletter.value.title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '')
+    
+    const pdfFileName = `${safeTitle}.pdf`
+    const coverFileName = newNewsletter.value.coverFile ? `cover-${safeTitle}.jpg` : null
+    
+    // Upload files to R2 via API
+    const formData = new FormData()
+    formData.append('pdf', newNewsletter.value.pdfFile, pdfFileName)
+    if (newNewsletter.value.coverFile) {
+      formData.append('cover', newNewsletter.value.coverFile, coverFileName)
+    }
+    formData.append('pdfFileName', pdfFileName)
+    if (coverFileName) {
+      formData.append('coverFileName', coverFileName)
+    }
+    
+    // Upload files
+    const uploadResponse = await fetch('/api/newsletters/upload', {
+      method: 'POST',
+      body: formData
+    })
+    
+    if (!uploadResponse.ok) {
+      throw new Error('Failed to upload files')
+    }
+    
+    const uploadResult = await uploadResponse.json()
+    
+    // Create newsletter metadata
+    const newIssueNumber = publishedNewsletters.value.length > 0 
+      ? Math.max(...publishedNewsletters.value.map(n => n.issueNumber)) + 1 
+      : 1
+    
+    const newsletter = {
+      id: Date.now(),
+      title: newNewsletter.value.title,
+      date: newNewsletter.value.date,
+      excerpt: newNewsletter.value.excerpt,
+      highlights: [...newNewsletter.value.highlights],
+      issueNumber: newIssueNumber,
+      volume: 1,
+      pageCount: null,
+      publishedBy: user?.name || 'Admin',
+      coverImage: uploadResult.coverUrl || null,
+      downloadUrl: uploadResult.pdfUrl
+    }
+    
+    publishedNewsletters.value.unshift(newsletter)
+    
+    // Save to localStorage
+    localStorage.setItem('churchNewsletters', JSON.stringify(publishedNewsletters.value))
+    
+    // Trigger homepage update
+    window.dispatchEvent(new Event('newslettersUpdated'))
+    
+    alert('✅ Newsletter uploaded successfully!\n\n' +
+          'Your newsletter has been uploaded to R2 storage and is now live on the homepage!')
     
     resetForm()
     
   } catch (error) {
     console.error('Error uploading newsletter:', error)
-    alert('Error uploading newsletter. Please try again.')
+    alert('❌ Error uploading newsletter!\n\n' + 
+          'Error: ' + error.message + '\n\n' +
+          'Please check:\n' +
+          '• PDF file is valid and not corrupted\n' +
+          '• File size is reasonable (< 50MB)\n' +
+          '• Your internet connection is stable\n\n' +
+          'Try again or contact support if the issue persists.')
   } finally {
     isUploading.value = false
   }
@@ -2584,18 +2654,26 @@ onMounted(() => {
   // Load all payments for verification
   loadAllPayments()
   
-  // Initialize newsletters: only use the predefined valid newsletter
-  // Clear any fake newsletters that were uploaded without actual files
-  const validNewsletters = publishedNewsletters.value.filter(n => 
-    n.downloadUrl && n.downloadUrl.startsWith('/newsletter/gcbf-')
-  )
-  publishedNewsletters.value = validNewsletters
-  
-  // Save the cleaned list
-  localStorage.setItem('churchNewsletters', JSON.stringify(validNewsletters))
-  
-  // Trigger homepage update
-  window.dispatchEvent(new Event('newslettersUpdated'))
+  // Load existing newsletters from localStorage
+  try {
+    const savedNewsletters = localStorage.getItem('churchNewsletters')
+    if (savedNewsletters) {
+      const parsed = JSON.parse(savedNewsletters)
+      // Only filter out newsletters with timestamp-based fake filenames (e.g., 1760749774682.pdf)
+      const validNewsletters = parsed.filter(n => 
+        n.downloadUrl && !n.downloadUrl.match(/\/newsletter\/\d+\.pdf$/)
+      )
+      publishedNewsletters.value = validNewsletters
+      
+      // Save cleaned list back
+      localStorage.setItem('churchNewsletters', JSON.stringify(validNewsletters))
+      
+      // Trigger homepage update
+      window.dispatchEvent(new Event('newslettersUpdated'))
+    }
+  } catch (error) {
+    console.error('Error loading newsletters:', error)
+  }
   
   // Load shared prayers from localStorage
   try {

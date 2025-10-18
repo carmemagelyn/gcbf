@@ -14,6 +14,28 @@ export default {
         return await apiHandler({ request, env, ctx });
       }
       
+      // Handle R2 file requests
+      if (url.pathname.startsWith('/r2/')) {
+        try {
+          const key = url.pathname.replace('/r2/', '');
+          const object = await env.STORAGE.get(key);
+          
+          if (object === null) {
+            return new Response('File not found', { status: 404 });
+          }
+          
+          const headers = new Headers();
+          object.writeHttpMetadata(headers);
+          headers.set('etag', object.httpEtag);
+          headers.set('cache-control', 'public, max-age=31536000');
+          
+          return new Response(object.body, { headers });
+        } catch (r2Error) {
+          console.error('R2 fetch error:', r2Error);
+          return new Response('File not found', { status: 404 });
+        }
+      }
+      
       // For Workers with Assets, ASSETS is automatically provided
       // Serve static assets from the configured assets directory
       try {

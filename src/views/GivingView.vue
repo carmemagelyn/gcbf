@@ -519,7 +519,7 @@ const makePayment = (giftId, paymentId) => {
 }
 
 // Submit payment for a specific payment entry
-const submitPayment = () => {
+const submitPayment = async () => {
   if (!currentPayment.value || !currentGift.value) return
   
   // Validation for payment method
@@ -538,25 +538,62 @@ const submitPayment = () => {
     return
   }
 
-  // Update the payment entry
-  currentPayment.value.paymentDate = new Date().toISOString().split('T')[0]
-  currentPayment.value.paymentMethod = paymentForm.value.paymentMethod
-  currentPayment.value.receiptFile = paymentForm.value.receiptFile
-  currentPayment.value.receiptFileName = paymentForm.value.receiptFileName
-  currentPayment.value.receiptUrl = paymentForm.value.receiptPreview
-  currentPayment.value.referenceNumber = paymentForm.value.referenceNumber
-  currentPayment.value.verificationStatus = 'pending'
-  currentPayment.value.notes = paymentForm.value.notes
+  try {
+    let receiptUrl = null
+    
+    // Upload receipt to R2 if online payment
+    if (paymentForm.value.paymentMethod === 'online' && paymentForm.value.receiptFile) {
+      const formData = new FormData()
+      
+      // Create a safe filename
+      const timestamp = Date.now()
+      const userId = user?.id || 'unknown'
+      const fileExtension = paymentForm.value.receiptFile.name.split('.').pop()
+      const safeFileName = `receipt-${userId}-${timestamp}.${fileExtension}`
+      
+      formData.append('receipt', paymentForm.value.receiptFile, safeFileName)
+      formData.append('fileName', safeFileName)
+      formData.append('userId', userId)
+      formData.append('giftId', currentGift.value.id)
+      formData.append('paymentId', currentPayment.value.id)
+      
+      // Upload to R2
+      const uploadResponse = await fetch('/api/receipts/upload', {
+        method: 'POST',
+        body: formData
+      })
+      
+      if (!uploadResponse.ok) {
+        throw new Error('Failed to upload receipt')
+      }
+      
+      const uploadResult = await uploadResponse.json()
+      receiptUrl = uploadResult.receiptUrl
+    }
+    
+    // Update the payment entry
+    currentPayment.value.paymentDate = new Date().toISOString().split('T')[0]
+    currentPayment.value.paymentMethod = paymentForm.value.paymentMethod
+    currentPayment.value.receiptFile = paymentForm.value.receiptFile
+    currentPayment.value.receiptFileName = paymentForm.value.receiptFileName
+    currentPayment.value.receiptUrl = receiptUrl || paymentForm.value.receiptPreview
+    currentPayment.value.referenceNumber = paymentForm.value.referenceNumber
+    currentPayment.value.verificationStatus = 'pending'
+    currentPayment.value.notes = paymentForm.value.notes
 
-  saveGifts()
-  
-  success.value = 'Payment submitted successfully! Awaiting admin verification.'
-  showPaymentModal.value = false
-  resetPaymentForm()
-  
-  setTimeout(() => {
-    success.value = ''
-  }, 5000)
+    saveGifts()
+    
+    success.value = 'Payment submitted successfully! Receipt uploaded. Awaiting admin verification.'
+    showPaymentModal.value = false
+    resetPaymentForm()
+    
+    setTimeout(() => {
+      success.value = ''
+    }, 5000)
+  } catch (err) {
+    console.error('Payment submission error:', err)
+    error.value = 'Failed to submit payment. Please try again.'
+  }
 }
 
 // Reset payment form

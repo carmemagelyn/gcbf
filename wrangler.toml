@@ -13,8 +13,7 @@ database_name = "gcbf_church_db"
 database_id = "ee5ba803-39cf-40a4-80f6-b369a2d6a9da"
 
 # R2 Storage for newsletters, PDFs, and images
-# Uncomment after enabling R2 in Cloudflare dashboard
-# [[r2_buckets]]
-# binding = "STORAGE"
-# bucket_name = "gcbf-files"
+[[r2_buckets]]
+binding = "STORAGE"
+bucket_name = "gcbf-files"
 

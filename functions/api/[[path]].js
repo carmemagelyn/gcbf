@@ -28,6 +28,9 @@ export async function onRequest(context) {
     if (path.startsWith('newsletters')) {
       return handleNewsletters(request, env, path)
     }
+    if (path.startsWith('receipts')) {
+      return handleReceipts(request, env, path)
+    }
     if (path.startsWith('ministries')) {
       return handleMinistries(request, env, path)
     }
@@ -195,7 +198,51 @@ async function handlePrayers(request, env, path) {
 
 // Newsletter handlers
 async function handleNewsletters(request, env, path) {
-  const { DB } = env
+  const { DB, STORAGE } = env
+
+  // Handle file upload to R2
+  if (path === 'newsletters/upload' && request.method === 'POST') {
+    try {
+      const formData = await request.formData()
+      const pdfFile = formData.get('pdf')
+      const coverFile = formData.get('cover')
+      const pdfFileName = formData.get('pdfFileName')
+      const coverFileName = formData.get('coverFileName')
+
+      if (!pdfFile || !pdfFileName) {
+        return jsonResponse({ error: 'PDF file and filename required' }, 400)
+      }
+
+      // Upload PDF to R2
+      const pdfBuffer = await pdfFile.arrayBuffer()
+      await STORAGE.put(`newsletters/${pdfFileName}`, pdfBuffer, {
+        httpMetadata: {
+          contentType: 'application/pdf'
+        }
+      })
+
+      let coverUrl = null
+      // Upload cover if provided
+      if (coverFile && coverFileName) {
+        const coverBuffer = await coverFile.arrayBuffer()
+        await STORAGE.put(`newsletters/${coverFileName}`, coverBuffer, {
+          httpMetadata: {
+            contentType: 'image/jpeg'
+          }
+        })
+        coverUrl = `/r2/newsletters/${coverFileName}`
+      }
+
+      return jsonResponse({
+        success: true,
+        pdfUrl: `/r2/newsletters/${pdfFileName}`,
+        coverUrl
+      })
+    } catch (error) {
+      console.error('Upload error:', error)
+      return jsonResponse({ error: 'Upload failed: ' + error.message }, 500)
+    }
+  }
 
   if (request.method === 'GET') {
     const { results } = await DB.prepare(`
@@ -234,8 +281,89 @@ async function handleNewsletters(request, env, path) {
 
   if (request.method === 'DELETE') {
     const newsletterId = path.split('/')[1]
+    
+    // Get newsletter info to delete files from R2
+    const newsletter = await DB.prepare(`
+      SELECT downloadUrl, coverImage FROM newsletters WHERE id = ?
+    `).bind(newsletterId).first()
+    
+    if (newsletter && STORAGE) {
+      // Delete files from R2
+      if (newsletter.downloadUrl && newsletter.downloadUrl.startsWith('/r2/')) {
+        const pdfKey = newsletter.downloadUrl.replace('/r2/', '')
+        try {
+          await STORAGE.delete(pdfKey)
+        } catch (error) {
+          console.error('Error deleting PDF from R2:', error)
+        }
+      }
+      
+      if (newsletter.coverImage && newsletter.coverImage.startsWith('/r2/')) {
+        const coverKey = newsletter.coverImage.replace('/r2/', '')
+        try {
+          await STORAGE.delete(coverKey)
+        } catch (error) {
+          console.error('Error deleting cover from R2:', error)
+        }
+      }
+    }
+    
     await DB.prepare(`DELETE FROM newsletters WHERE id = ?`).bind(newsletterId).run()
     return jsonResponse({ success: true })
+  }
+
+  return jsonResponse({ error: 'Method not allowed' }, 405)
+}
+
+// Receipt upload handler
+async function handleReceipts(request, env, path) {
+  const { STORAGE } = env
+
+  // Handle receipt upload to R2
+  if (path === 'receipts/upload' && request.method === 'POST') {
+    try {
+      const formData = await request.formData()
+      const receiptFile = formData.get('receipt')
+      const fileName = formData.get('fileName')
+      const userId = formData.get('userId')
+      const giftId = formData.get('giftId')
+      const paymentId = formData.get('paymentId')
+
+      if (!receiptFile || !fileName) {
+        return jsonResponse({ error: 'Receipt file and filename required' }, 400)
+      }
+
+      // Upload receipt to R2
+      const receiptBuffer = await receiptFile.arrayBuffer()
+      const receiptKey = `receipts/${fileName}`
+      
+      await STORAGE.put(receiptKey, receiptBuffer, {
+        httpMetadata: {
+          contentType: receiptFile.type || 'application/octet-stream'
+        },
+        customMetadata: {
+          userId: userId || 'unknown',
+          giftId: giftId || '',
+          paymentId: paymentId || '',
+          uploadDate: new Date().toISOString()
+        }
+      })
+
+      return jsonResponse({
+        success: true,
+        receiptUrl: `/r2/${receiptKey}`,
+        fileName: fileName
+      })
+    } catch (error) {
+      console.error('Receipt upload error:', error)
+      return jsonResponse({ error: 'Upload failed: ' + error.message }, 500)
+    }
+  }
+
+  // Get receipt (redirect to R2 URL)
+  if (request.method === 'GET' && path.startsWith('receipts/')) {
+    const fileName = path.replace('receipts/', '')
+    return jsonResponse({ receiptUrl: `/r2/receipts/${fileName}` })
   }
 
   return jsonResponse({ error: 'Method not allowed' }, 405)
