@@ -1578,11 +1578,10 @@ const expenseData = ref([
 // Stored in: gcbf_default_income and gcbf_default_expenses
 // Used in: Monthly Budget tab (activeSection === 'expenses') and Budget Forecast tab
 const defaultMonthlyIncome = ref([
-  { category: 'Tithes & Offerings', amount: 40000 },
-  { category: 'Special Donations', amount: 5000 },
-  { category: 'Fundraising Events', amount: 2000 },
-  { category: 'Investment Returns', amount: 1000 },
-  { category: 'Other Income', amount: 500 }
+  { category: 'Special Donations', amount: 0 },
+  { category: 'Fundraising Events', amount: 0 },
+  { category: 'Investment Returns', amount: 0 },
+  { category: 'Other Income', amount: 0 }
 ])
 
 const defaultMonthlyExpenses = ref([
