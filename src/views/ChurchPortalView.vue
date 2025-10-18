@@ -1738,33 +1738,17 @@ const uploadNewsletter = async () => {
   isUploading.value = true
   
   try {
-    // In a real app, this would upload files to server
-    // For demo, we'll simulate the upload and add to local data
+    // NOTE: File upload requires R2 storage to be enabled in Cloudflare
+    // For now, files must be manually added to the public/newsletter folder
     
-    const newIssueNumber = Math.max(...publishedNewsletters.value.map(n => n.issueNumber)) + 1
+    alert('⚠️ Newsletter Upload Not Yet Configured\n\n' +
+          'To add newsletters:\n' +
+          '1. Place PDF and cover image in public/newsletter/ folder\n' +
+          '2. Use URL-safe filenames (no spaces or special characters)\n' +
+          '3. Update the newsletter list in this code\n' +
+          '4. Rebuild and redeploy\n\n' +
+          'R2 Storage needs to be enabled for automatic uploads.')
     
-    const newsletter = {
-      id: Date.now(),
-      title: newNewsletter.value.title,
-      date: newNewsletter.value.date,
-      excerpt: newNewsletter.value.excerpt,
-      highlights: [...newNewsletter.value.highlights],
-      issueNumber: newIssueNumber,
-      pageCount: null, // Would be extracted from PDF
-      publishedBy: user?.name || 'Admin',
-      coverImage: newNewsletter.value.coverFile ? `/newsletter/covers/${Date.now()}.jpg` : null,
-      downloadUrl: `/newsletter/${Date.now()}.pdf`
-    }
-    
-    publishedNewsletters.value.unshift(newsletter)
-    
-    // Save to localStorage
-    localStorage.setItem('churchNewsletters', JSON.stringify(publishedNewsletters.value))
-    
-    // Trigger homepage update by dispatching a custom event
-    window.dispatchEvent(new Event('newslettersUpdated'))
-    
-    alert('Newsletter uploaded successfully! It will appear on the homepage.')
     resetForm()
     
   } catch (error) {
@@ -2600,15 +2584,18 @@ onMounted(() => {
   // Load all payments for verification
   loadAllPayments()
   
-  // Load existing newsletters from localStorage
-  try {
-    const savedNewsletters = localStorage.getItem('churchNewsletters')
-    if (savedNewsletters) {
-      publishedNewsletters.value = JSON.parse(savedNewsletters)
-    }
-  } catch (error) {
-    console.error('Error loading newsletters from localStorage:', error)
-  }
+  // Initialize newsletters: only use the predefined valid newsletter
+  // Clear any fake newsletters that were uploaded without actual files
+  const validNewsletters = publishedNewsletters.value.filter(n => 
+    n.downloadUrl && n.downloadUrl.startsWith('/newsletter/gcbf-')
+  )
+  publishedNewsletters.value = validNewsletters
+  
+  // Save the cleaned list
+  localStorage.setItem('churchNewsletters', JSON.stringify(validNewsletters))
+  
+  // Trigger homepage update
+  window.dispatchEvent(new Event('newslettersUpdated'))
   
   // Load shared prayers from localStorage
   try {
