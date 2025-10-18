@@ -63,7 +63,7 @@
           <div class="card border-0 shadow-sm text-center">
             <div class="card-body">
               <i class="bi bi-people-fill display-4 text-info"></i>
-              <h5 class="mt-2 mb-0">{{ memberCount }}</h5>
+              <h5 class="mt-2 mb-0">{{ allUsers.length }}</h5>
               <small class="text-muted">Active Members</small>
             </div>
           </div>
@@ -2130,8 +2130,6 @@ const totalExpenses = computed(() => {
 const netIncome = computed(() => {
   return Number(totalIncome.value) - Number(totalExpenses.value)
 })
-
-const memberCount = ref(247)
 
 const ytdIncome = ref(510000)
 const ytdExpenses = ref(465000)
