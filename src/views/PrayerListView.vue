@@ -421,20 +421,6 @@
                       class="form-check-input" 
                       type="radio" 
                       name="prayerVisibility" 
-                      id="visibilityPublic"
-                      value="public" 
-                      v-model="prayerForm.visibility"
-                      required
-                    >
-                    <label class="form-check-label" for="visibilityPublic">
-                      <strong>Public</strong> - Visible to all church members (requires approval)
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input 
-                      class="form-check-input" 
-                      type="radio" 
-                      name="prayerVisibility" 
                       id="visibilityPastor"
                       value="pastor" 
                       v-model="prayerForm.visibility"
@@ -443,6 +429,10 @@
                     <label class="form-check-label" for="visibilityPastor">
                       <strong>Pastor Only</strong> - Confidential, only pastor can see
                     </label>
+                  </div>
+                  <div class="alert alert-info mt-3 mb-0">
+                    <i class="bi bi-info-circle me-2"></i>
+                    <small>Community prayers are managed by church administrators only.</small>
                   </div>
                 </div>
               </div>
@@ -633,31 +623,13 @@ const savePrayer = () => {
       }
       userPrayers.push(newPrayer)
       
-      // If prayer is set to 'public', add it to shared prayers with 'pending' status
-      if (prayerForm.value.visibility === 'public') {
-        let sharedPrayers = JSON.parse(localStorage.getItem('gcbf_shared_prayers') || '[]')
-        const sharedPrayer = {
-          id: parseInt(newPrayer.id),
-          title: `Prayer Request from ${user?.name || 'Anonymous'}`,
-          category: newPrayer.category,
-          request: newPrayer.request,
-          requestedBy: user?.name || 'Anonymous',
-          dateRequested: newPrayer.dateRequested,
-          status: 'active',
-          approvalStatus: 'pending'
-        }
-        sharedPrayers.push(sharedPrayer)
-        localStorage.setItem('gcbf_shared_prayers', JSON.stringify(sharedPrayers))
-      }
+      // Note: Community prayers are now managed by admins only
+      // Users can only create personal or pastor-only prayers
     }
 
     localStorage.setItem(`gcbf_prayers_${userId}`, JSON.stringify(userPrayers))
     loadPrayers() // Reload all prayers
     closeModal()
-    
-    if (prayerForm.value.visibility === 'public') {
-      alert('Your prayer has been submitted and is pending admin approval before being shared with the community.')
-    }
 
   } catch (err) {
     error.value = 'Failed to save prayer request. Please try again.'

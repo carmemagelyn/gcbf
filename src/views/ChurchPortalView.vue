@@ -403,7 +403,13 @@
                   <div class="card border-0 shadow-sm">
                     <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
                       <h5 class="fw-bold mb-0">Community Prayer Requests</h5>
-                      <span class="badge bg-primary">{{ approvedPrayers.length }} active prayers</span>
+                      <div class="d-flex gap-2 align-items-center">
+                        <span class="badge bg-primary">{{ approvedPrayers.length }} active prayers</span>
+                        <button v-if="user?.userType === 'admin'" class="btn btn-sm btn-primary" @click="showAddCommunityPrayerModal = true">
+                          <i class="bi bi-plus-circle me-1"></i>
+                          Add Prayer
+                        </button>
+                      </div>
                     </div>
                     <div class="card-body">
                       <div v-if="approvedPrayers.length === 0" class="text-center py-4">
@@ -1511,8 +1517,54 @@
       </div>
     </div>
 
+    <!-- Add Community Prayer Modal -->
+    <div v-if="showAddCommunityPrayerModal" class="modal fade show d-block" tabindex="-1" @click="showAddCommunityPrayerModal = false">
+      <div class="modal-dialog" @click.stop>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add Community Prayer</h5>
+            <button type="button" class="btn-close" @click="showAddCommunityPrayerModal = false"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label class="form-label fw-bold">Prayer Title</label>
+              <input type="text" class="form-control" v-model="newCommunityPrayer.title" placeholder="e.g., Prayer for Healing">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Category</label>
+              <select class="form-select" v-model="newCommunityPrayer.category">
+                <option value="">Select category</option>
+                <option value="Health">Health</option>
+                <option value="Family">Family</option>
+                <option value="Work">Work</option>
+                <option value="Missions">Missions</option>
+                <option value="Community">Community</option>
+                <option value="Spiritual">Spiritual</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Prayer Request</label>
+              <textarea class="form-control" v-model="newCommunityPrayer.request" rows="4" placeholder="Enter prayer request details..."></textarea>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Requested By (Optional)</label>
+              <input type="text" class="form-control" v-model="newCommunityPrayer.requestedBy" placeholder="e.g., John Doe or leave blank for admin">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" @click="showAddCommunityPrayerModal = false">Cancel</button>
+            <button type="button" class="btn btn-primary" @click="addCommunityPrayer">
+              <i class="bi bi-plus-circle me-1"></i>
+              Add Prayer
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Modal Backdrop -->
-    <div v-if="showEditMinistryModal || showAddExpenseCategoryModal || showAddIncomeCategoryModal || showEditNotesModal || showAttendanceModal" 
+    <div v-if="showEditMinistryModal || showAddExpenseCategoryModal || showAddIncomeCategoryModal || showEditNotesModal || showAttendanceModal || showAddCommunityPrayerModal" 
       class="modal-backdrop fade show">
     </div>
   </div>
@@ -1607,6 +1659,7 @@ const showAddExpenseCategoryModal = ref(false)
 const showAddIncomeCategoryModal = ref(false)
 const showEditNotesModal = ref(false)
 const showAttendanceModal = ref(false)
+const showAddCommunityPrayerModal = ref(false)
 const editingMinistry = ref({ name: '', participants: 0, budget: 0 })
 const editingMinistryForNotes = ref(null)
 const editingMinistryForAttendance = ref(null)
@@ -1614,6 +1667,7 @@ const editingNotes = ref('')
 const newExpenseCategory = ref({ category: '', amount: 0 })
 const newIncomeCategory = ref({ category: '', amount: 0 })
 const newAttendance = ref({ date: '', count: 0, notes: '' })
+const newCommunityPrayer = ref({ title: '', category: '', request: '', requestedBy: '' })
 
 const sharedPrayers = ref([
   {
@@ -2048,6 +2102,34 @@ const removePrayer = (prayerId) => {
       alert('Prayer request removed.')
     }
   }
+}
+
+// Add community prayer (admin only)
+const addCommunityPrayer = () => {
+  if (!newCommunityPrayer.value.title || !newCommunityPrayer.value.category || !newCommunityPrayer.value.request) {
+    alert('Please fill in all required fields')
+    return
+  }
+
+  const prayer = {
+    id: Date.now(),
+    title: newCommunityPrayer.value.title,
+    category: newCommunityPrayer.value.category,
+    request: newCommunityPrayer.value.request,
+    requestedBy: newCommunityPrayer.value.requestedBy || user?.name || 'Church Administrator',
+    dateRequested: new Date().toISOString().split('T')[0],
+    status: 'active',
+    approvalStatus: 'approved' // Admin-created prayers are automatically approved
+  }
+
+  sharedPrayers.value.unshift(prayer)
+  localStorage.setItem('gcbf_shared_prayers', JSON.stringify(sharedPrayers.value))
+  
+  // Reset form
+  newCommunityPrayer.value = { title: '', category: '', request: '', requestedBy: '' }
+  showAddCommunityPrayerModal.value = false
+  
+  alert('Community prayer added successfully!')
 }
 
 // Load all payments from localStorage for verification
