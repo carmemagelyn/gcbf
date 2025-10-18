@@ -150,6 +150,17 @@
                 </span>
               </button>
             </li>
+            <li v-if="user?.userType === 'admin'" class="nav-item">
+              <button 
+                class="nav-link"
+                :class="{ active: activeSection === 'accounts' }"
+                @click="activeSection = 'accounts'"
+              >
+                <i class="bi bi-people-fill me-2"></i>
+                Manage Accounts
+                <span class="badge bg-info ms-1">{{ allUsers.length }}</span>
+              </button>
+            </li>
           </ul>
 
           <!-- Section Content -->
@@ -1339,6 +1350,126 @@
               </div>
             </div>
 
+            <!-- Accounts Management Section -->
+            <div v-if="activeSection === 'accounts'" class="section-content">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-white border-0">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="fw-bold mb-0">User Accounts</h5>
+                        <div class="d-flex gap-2 align-items-center">
+                          <span class="badge bg-info">{{ allUsers.length }} total users</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <!-- Filter by user type -->
+                      <div class="mb-3">
+                        <div class="btn-group" role="group">
+                          <button 
+                            type="button" 
+                            class="btn btn-sm"
+                            :class="accountFilter === 'all' ? 'btn-primary' : 'btn-outline-primary'"
+                            @click="accountFilter = 'all'"
+                          >
+                            All ({{ allUsers.length }})
+                          </button>
+                          <button 
+                            type="button" 
+                            class="btn btn-sm"
+                            :class="accountFilter === 'member' ? 'btn-primary' : 'btn-outline-primary'"
+                            @click="accountFilter = 'member'"
+                          >
+                            Members ({{ allUsers.filter(u => u.userType === 'member').length }})
+                          </button>
+                          <button 
+                            type="button" 
+                            class="btn btn-sm"
+                            :class="accountFilter === 'pastor' ? 'btn-primary' : 'btn-outline-primary'"
+                            @click="accountFilter = 'pastor'"
+                          >
+                            Pastors ({{ allUsers.filter(u => u.userType === 'pastor').length }})
+                          </button>
+                          <button 
+                            type="button" 
+                            class="btn btn-sm"
+                            :class="accountFilter === 'admin' ? 'btn-primary' : 'btn-outline-primary'"
+                            @click="accountFilter = 'admin'"
+                          >
+                            Admins ({{ allUsers.filter(u => u.userType === 'admin').length }})
+                          </button>
+                        </div>
+                      </div>
+
+                      <!-- Users Table -->
+                      <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                          <thead class="table-light">
+                            <tr>
+                              <th>Name</th>
+                              <th>Email</th>
+                              <th>Phone</th>
+                              <th>User Type</th>
+                              <th>Joined</th>
+                              <th class="text-end">Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr v-for="account in filteredAccounts" :key="account.id">
+                              <td>
+                                <div class="d-flex align-items-center">
+                                  <i class="bi bi-person-circle fs-4 me-2 text-primary"></i>
+                                  <strong>{{ account.name }}</strong>
+                                </div>
+                              </td>
+                              <td>{{ account.email }}</td>
+                              <td>{{ account.phone || 'N/A' }}</td>
+                              <td>
+                                <span 
+                                  class="badge"
+                                  :class="{
+                                    'bg-success': account.userType === 'member',
+                                    'bg-primary': account.userType === 'pastor',
+                                    'bg-danger': account.userType === 'admin'
+                                  }"
+                                >
+                                  {{ capitalizeFirst(account.userType) }}
+                                </span>
+                              </td>
+                              <td>{{ formatDate(account.joinDate) }}</td>
+                              <td class="text-end">
+                                <button 
+                                  class="btn btn-sm btn-outline-primary me-2"
+                                  @click="editAccount(account)"
+                                  title="Edit Account"
+                                >
+                                  <i class="bi bi-pencil"></i>
+                                </button>
+                                <button 
+                                  class="btn btn-sm btn-outline-danger"
+                                  @click="deleteAccount(account.id)"
+                                  :disabled="account.id === user?.id"
+                                  title="Delete Account"
+                                >
+                                  <i class="bi bi-trash"></i>
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div v-if="filteredAccounts.length === 0" class="text-center py-4 text-muted">
+                        <i class="bi bi-person-x display-4 opacity-25"></i>
+                        <p class="mt-2 mb-0">No users found</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -1563,8 +1694,54 @@
       </div>
     </div>
 
+    <!-- Edit Account Modal -->
+    <div v-if="showEditAccountModal" class="modal fade show d-block" tabindex="-1" @click="closeAccountModal">
+      <div class="modal-dialog" @click.stop>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Edit Account</h5>
+            <button type="button" class="btn-close" @click="closeAccountModal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label class="form-label fw-bold">Full Name</label>
+              <input type="text" class="form-control" v-model="editingAccount.name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Email</label>
+              <input type="email" class="form-control" v-model="editingAccount.email" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Phone</label>
+              <input type="tel" class="form-control" v-model="editingAccount.phone">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">User Type</label>
+              <select class="form-select" v-model="editingAccount.userType" required>
+                <option value="member">Member</option>
+                <option value="pastor">Pastor</option>
+                <option value="admin">Admin</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Password (leave blank to keep current)</label>
+              <input type="password" class="form-control" v-model="editingAccount.newPassword" placeholder="Enter new password or leave blank">
+              <small class="text-muted">Only fill this if you want to change the password</small>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" @click="closeAccountModal">Cancel</button>
+            <button type="button" class="btn btn-primary" @click="saveAccount">
+              <i class="bi bi-save me-1"></i>
+              Save Changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Modal Backdrop -->
-    <div v-if="showEditMinistryModal || showAddExpenseCategoryModal || showAddIncomeCategoryModal || showEditNotesModal || showAttendanceModal || showAddCommunityPrayerModal" 
+    <div v-if="showEditMinistryModal || showAddExpenseCategoryModal || showAddIncomeCategoryModal || showEditNotesModal || showAttendanceModal || showAddCommunityPrayerModal || showEditAccountModal" 
       class="modal-backdrop fade show">
     </div>
   </div>
@@ -1579,6 +1756,19 @@ const router = useRouter()
 
 const activeSection = ref('finance')
 const user = getCurrentUser()
+
+// Account management variables
+const accountFilter = ref('all')
+const allUsers = ref([])
+const showEditAccountModal = ref(false)
+const editingAccount = ref({ id: '', name: '', email: '', phone: '', userType: '', newPassword: '' })
+
+const filteredAccounts = computed(() => {
+  if (accountFilter.value === 'all') {
+    return allUsers.value
+  }
+  return allUsers.value.filter(u => u.userType === accountFilter.value)
+})
 
 // Payment verification variables
 const paymentFilter = ref('pending')
@@ -2130,6 +2320,104 @@ const addCommunityPrayer = () => {
   showAddCommunityPrayerModal.value = false
   
   alert('Community prayer added successfully!')
+}
+
+// Account management functions
+const loadAllUsers = () => {
+  const users = JSON.parse(localStorage.getItem('gcbf_users') || '[]')
+  allUsers.value = users.sort((a, b) => {
+    // Sort by userType first (admin, pastor, member), then by name
+    const typeOrder = { admin: 1, pastor: 2, member: 3 }
+    if (typeOrder[a.userType] !== typeOrder[b.userType]) {
+      return typeOrder[a.userType] - typeOrder[b.userType]
+    }
+    return a.name.localeCompare(b.name)
+  })
+}
+
+const editAccount = (account) => {
+  editingAccount.value = {
+    id: account.id,
+    name: account.name,
+    email: account.email,
+    phone: account.phone || '',
+    userType: account.userType,
+    newPassword: '',
+    originalPassword: account.password
+  }
+  showEditAccountModal.value = true
+}
+
+const closeAccountModal = () => {
+  showEditAccountModal.value = false
+  editingAccount.value = { id: '', name: '', email: '', phone: '', userType: '', newPassword: '' }
+}
+
+const saveAccount = () => {
+  if (!editingAccount.value.name || !editingAccount.value.email || !editingAccount.value.userType) {
+    alert('Please fill in all required fields')
+    return
+  }
+
+  const users = JSON.parse(localStorage.getItem('gcbf_users') || '[]')
+  const index = users.findIndex(u => u.id === editingAccount.value.id)
+  
+  if (index !== -1) {
+    // Update user data
+    users[index] = {
+      ...users[index],
+      name: editingAccount.value.name,
+      email: editingAccount.value.email,
+      phone: editingAccount.value.phone,
+      userType: editingAccount.value.userType,
+      // Only update password if a new one was provided
+      password: editingAccount.value.newPassword || editingAccount.value.originalPassword
+    }
+    
+    localStorage.setItem('gcbf_users', JSON.stringify(users))
+    
+    // If editing current user, update the session
+    if (editingAccount.value.id === user?.id) {
+      const { password, ...userWithoutPassword } = users[index]
+      localStorage.setItem('gcbf_auth', JSON.stringify(userWithoutPassword))
+    }
+    
+    loadAllUsers()
+    closeAccountModal()
+    alert('Account updated successfully!')
+  }
+}
+
+const deleteAccount = (accountId) => {
+  if (accountId === user?.id) {
+    alert('You cannot delete your own account!')
+    return
+  }
+
+  if (!confirm('Are you sure you want to delete this account? This action cannot be undone.')) {
+    return
+  }
+
+  const users = JSON.parse(localStorage.getItem('gcbf_users') || '[]')
+  const index = users.findIndex(u => u.id === accountId)
+  
+  if (index !== -1) {
+    const deletedUser = users[index]
+    users.splice(index, 1)
+    localStorage.setItem('gcbf_users', JSON.stringify(users))
+    
+    // Clean up user data
+    localStorage.removeItem(`gcbf_prayers_${accountId}`)
+    localStorage.removeItem(`gcbf_gifts_${accountId}`)
+    
+    loadAllUsers()
+    alert(`Account for ${deletedUser.name} has been deleted.`)
+  }
+}
+
+const capitalizeFirst = (str) => {
+  if (!str) return ''
+  return str.charAt(0).toUpperCase() + str.slice(1)
 }
 
 // Load all payments from localStorage for verification
@@ -2734,6 +3022,9 @@ const initAttendanceChart = () => {
 onMounted(() => {
   // Load all payments for verification
   loadAllPayments()
+  
+  // Load all users for account management
+  loadAllUsers()
   
   // Load existing newsletters from localStorage
   try {
