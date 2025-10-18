@@ -1,4 +1,4 @@
-name = "gcbf-church-portal"
+name = "gcbf"
 main = "worker.js"
 compatibility_date = "2024-09-02"
 
