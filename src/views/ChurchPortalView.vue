@@ -1135,18 +1135,100 @@
                                     <i class="bi bi-eye me-1"></i>
                                     View Receipt
                                   </button>
+                                  <div class="btn-group w-100 mt-2" role="group">
+                                    <button 
+                                      class="btn btn-sm btn-outline-secondary"
+                                      @click="editPayment(payment)"
+                                      title="Edit Payment"
+                                    >
+                                      <i class="bi bi-pencil"></i>
+                                    </button>
+                                    <button 
+                                      class="btn btn-sm btn-outline-danger"
+                                      @click="deletePayment(payment.giftId, payment.id)"
+                                      title="Delete Payment"
+                                    >
+                                      <i class="bi bi-trash"></i>
+                                    </button>
+                                  </div>
                                 </div>
                                 
-                                <div v-else-if="payment.verificationStatus === 'approved'" class="small text-success">
-                                  <i class="bi bi-check-circle me-1"></i>
-                                  Approved by {{ payment.verifiedBy }}<br>
-                                  <span class="text-muted">{{ formatDate(payment.verifiedDate) }}</span>
+                                <div v-else-if="payment.verificationStatus === 'approved'" class="d-flex flex-column gap-2">
+                                  <div class="small text-success mb-2">
+                                    <i class="bi bi-check-circle me-1"></i>
+                                    Approved by {{ payment.verifiedBy }}<br>
+                                    <span class="text-muted">{{ formatDate(payment.verifiedDate) }}</span>
+                                  </div>
+                                  <button 
+                                    v-if="payment.receiptFileName" 
+                                    class="btn btn-sm btn-outline-primary"
+                                    @click="viewReceipt(payment)"
+                                  >
+                                    <i class="bi bi-eye me-1"></i>
+                                    View Receipt
+                                  </button>
+                                  <div class="btn-group w-100" role="group">
+                                    <button 
+                                      class="btn btn-sm btn-outline-secondary"
+                                      @click="editPayment(payment)"
+                                      title="Edit Payment"
+                                    >
+                                      <i class="bi bi-pencil"></i>
+                                    </button>
+                                    <button 
+                                      class="btn btn-sm btn-outline-warning"
+                                      @click="verifyPayment(payment.giftId, payment.id, 'pending')"
+                                      title="Reset to Pending"
+                                    >
+                                      <i class="bi bi-arrow-clockwise"></i>
+                                    </button>
+                                    <button 
+                                      class="btn btn-sm btn-outline-danger"
+                                      @click="deletePayment(payment.giftId, payment.id)"
+                                      title="Delete Payment"
+                                    >
+                                      <i class="bi bi-trash"></i>
+                                    </button>
+                                  </div>
                                 </div>
                                 
-                                <div v-else-if="payment.verificationStatus === 'rejected'" class="small text-danger">
-                                  <i class="bi bi-x-circle me-1"></i>
-                                  Rejected by {{ payment.verifiedBy }}<br>
-                                  <span class="text-muted">{{ formatDate(payment.verifiedDate) }}</span>
+                                <div v-else-if="payment.verificationStatus === 'rejected'" class="d-flex flex-column gap-2">
+                                  <div class="small text-danger mb-2">
+                                    <i class="bi bi-x-circle me-1"></i>
+                                    Rejected by {{ payment.verifiedBy }}<br>
+                                    <span class="text-muted">{{ formatDate(payment.verifiedDate) }}</span>
+                                  </div>
+                                  <button 
+                                    v-if="payment.receiptFileName" 
+                                    class="btn btn-sm btn-outline-primary"
+                                    @click="viewReceipt(payment)"
+                                  >
+                                    <i class="bi bi-eye me-1"></i>
+                                    View Receipt
+                                  </button>
+                                  <div class="btn-group w-100" role="group">
+                                    <button 
+                                      class="btn btn-sm btn-outline-secondary"
+                                      @click="editPayment(payment)"
+                                      title="Edit Payment"
+                                    >
+                                      <i class="bi bi-pencil"></i>
+                                    </button>
+                                    <button 
+                                      class="btn btn-sm btn-outline-warning"
+                                      @click="verifyPayment(payment.giftId, payment.id, 'pending')"
+                                      title="Reset to Pending"
+                                    >
+                                      <i class="bi bi-arrow-clockwise"></i>
+                                    </button>
+                                    <button 
+                                      class="btn btn-sm btn-outline-danger"
+                                      @click="deletePayment(payment.giftId, payment.id)"
+                                      title="Delete Payment"
+                                    >
+                                      <i class="bi bi-trash"></i>
+                                    </button>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1740,8 +1822,139 @@
       </div>
     </div>
 
+    <!-- Edit Payment Modal -->
+    <div v-if="showEditPaymentModal" class="modal fade show d-block" tabindex="-1" @click="closePaymentModal">
+      <div class="modal-dialog" @click.stop>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Edit Payment</h5>
+            <button type="button" class="btn-close" @click="closePaymentModal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label class="form-label fw-bold">Member Name</label>
+              <input type="text" class="form-control" v-model="editingPayment.memberName" readonly>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Amount (₱)</label>
+              <input type="number" class="form-control" v-model.number="editingPayment.amount" min="0" step="0.01" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Due Date</label>
+              <input type="date" class="form-control" v-model="editingPayment.dueDate" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Payment Date</label>
+              <input type="date" class="form-control" v-model="editingPayment.paymentDate">
+              <small class="text-muted">Leave blank if not yet paid</small>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Payment Method</label>
+              <select class="form-select" v-model="editingPayment.paymentMethod">
+                <option value="online">Online Payment</option>
+                <option value="cash">Cash</option>
+              </select>
+            </div>
+            <div v-if="editingPayment.paymentMethod === 'cash'" class="mb-3">
+              <label class="form-label fw-bold">Reference Number</label>
+              <input type="text" class="form-control" v-model="editingPayment.referenceNumber">
+            </div>
+            <div v-if="editingPayment.paymentMethod === 'online'" class="mb-3">
+              <label class="form-label fw-bold">Receipt File Name</label>
+              <input type="text" class="form-control" v-model="editingPayment.receiptFileName" readonly>
+              <small class="text-muted">Receipt uploads are managed by the member</small>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Verification Status</label>
+              <select class="form-select" v-model="editingPayment.verificationStatus">
+                <option value="pending_payment">Payment Due</option>
+                <option value="pending">Pending Review</option>
+                <option value="approved">Approved</option>
+                <option value="rejected">Rejected</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Notes</label>
+              <textarea class="form-control" v-model="editingPayment.notes" rows="3" placeholder="Add notes about this payment..."></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" @click="closePaymentModal">Cancel</button>
+            <button type="button" class="btn btn-primary" @click="savePayment">
+              <i class="bi bi-save me-1"></i>
+              Save Changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- View Receipt Modal -->
+    <div v-if="showReceiptModal" class="modal fade show d-block" tabindex="-1" @click="closeReceiptModal">
+      <div class="modal-dialog modal-lg" @click.stop>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Payment Receipt</h5>
+            <button type="button" class="btn-close" @click="closeReceiptModal"></button>
+          </div>
+          <div class="modal-body">
+            <div v-if="viewingReceipt" class="receipt-details">
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <p class="mb-1"><strong>Member:</strong> {{ viewingReceipt.memberName }}</p>
+                  <p class="mb-1"><strong>Amount:</strong> ₱{{ viewingReceipt.amount.toFixed(2) }}</p>
+                  <p class="mb-1"><strong>Payment Date:</strong> {{ formatDate(viewingReceipt.paymentDate) }}</p>
+                </div>
+                <div class="col-md-6">
+                  <p class="mb-1"><strong>Payment Method:</strong> {{ viewingReceipt.paymentMethod }}</p>
+                  <p class="mb-1"><strong>Status:</strong> 
+                    <span 
+                      class="badge"
+                      :class="{
+                        'bg-warning': viewingReceipt.verificationStatus === 'pending',
+                        'bg-success': viewingReceipt.verificationStatus === 'approved',
+                        'bg-danger': viewingReceipt.verificationStatus === 'rejected'
+                      }"
+                    >
+                      {{ getVerificationStatusText(viewingReceipt.verificationStatus) }}
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div v-if="viewingReceipt.receiptFileName" class="mt-3">
+                <p class="mb-2"><strong>Receipt File:</strong></p>
+                <div class="alert alert-info">
+                  <i class="bi bi-file-earmark-text me-2"></i>
+                  {{ viewingReceipt.receiptFileName }}
+                </div>
+                <p class="text-muted small">
+                  <i class="bi bi-info-circle me-1"></i>
+                  Receipt preview functionality would display the uploaded image/PDF here.
+                </p>
+              </div>
+              <div v-if="viewingReceipt.referenceNumber" class="mt-3">
+                <p class="mb-1"><strong>Reference Number:</strong></p>
+                <div class="alert alert-info">
+                  {{ viewingReceipt.referenceNumber }}
+                </div>
+              </div>
+              <div v-if="viewingReceipt.notes" class="mt-3">
+                <p class="mb-1"><strong>Notes:</strong></p>
+                <div class="alert alert-secondary">
+                  {{ viewingReceipt.notes }}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" @click="closeReceiptModal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Modal Backdrop -->
-    <div v-if="showEditMinistryModal || showAddExpenseCategoryModal || showAddIncomeCategoryModal || showEditNotesModal || showAttendanceModal || showAddCommunityPrayerModal || showEditAccountModal" 
+    <div v-if="showEditMinistryModal || showAddExpenseCategoryModal || showAddIncomeCategoryModal || showEditNotesModal || showAttendanceModal || showAddCommunityPrayerModal || showEditAccountModal || showEditPaymentModal || showReceiptModal" 
       class="modal-backdrop fade show">
     </div>
   </div>
@@ -1773,6 +1986,23 @@ const filteredAccounts = computed(() => {
 // Payment verification variables
 const paymentFilter = ref('pending')
 const allPayments = ref([])
+const showEditPaymentModal = ref(false)
+const showReceiptModal = ref(false)
+const editingPayment = ref({
+  giftId: '',
+  id: '',
+  memberName: '',
+  amount: 0,
+  dueDate: '',
+  paymentDate: '',
+  paymentMethod: 'online',
+  referenceNumber: '',
+  receiptFileName: '',
+  verificationStatus: 'pending',
+  notes: ''
+})
+const viewingReceipt = ref(null)
+
 const pendingPayments = computed(() => 
   allPayments.value.filter(p => p.verificationStatus === 'pending')
 )
@@ -2592,9 +2822,121 @@ const verifyPayment = (giftId, paymentId, status) => {
   loadAllPayments()
 }
 
-// View receipt (placeholder function)
+// View receipt in modal
 const viewReceipt = (payment) => {
-  alert(`Receipt: ${payment.receiptFileName}\n\nThis would open the receipt in a modal or new window.`)
+  viewingReceipt.value = payment
+  showReceiptModal.value = true
+}
+
+// Close receipt modal
+const closeReceiptModal = () => {
+  showReceiptModal.value = false
+  viewingReceipt.value = null
+}
+
+// Edit payment
+const editPayment = (payment) => {
+  editingPayment.value = {
+    giftId: payment.giftId,
+    id: payment.id,
+    memberName: payment.memberName,
+    amount: payment.amount,
+    dueDate: payment.dueDate,
+    paymentDate: payment.paymentDate || '',
+    paymentMethod: payment.paymentMethod,
+    referenceNumber: payment.referenceNumber || '',
+    receiptFileName: payment.receiptFileName || '',
+    verificationStatus: payment.verificationStatus,
+    notes: payment.notes || '',
+    userId: payment.userId
+  }
+  showEditPaymentModal.value = true
+}
+
+// Save payment changes
+const savePayment = () => {
+  if (!editingPayment.value.amount || editingPayment.value.amount <= 0) {
+    alert('Please enter a valid amount')
+    return
+  }
+
+  // Find and update the payment in localStorage
+  const key = `gcbf_gifts_${editingPayment.value.userId}`
+  const userGifts = JSON.parse(localStorage.getItem(key) || '[]')
+  const gift = userGifts.find(g => g.id === editingPayment.value.giftId)
+  
+  if (gift) {
+    const payment = gift.payments.find(p => p.id === editingPayment.value.id)
+    if (payment) {
+      payment.amount = editingPayment.value.amount
+      payment.dueDate = editingPayment.value.dueDate
+      payment.paymentDate = editingPayment.value.paymentDate
+      payment.paymentMethod = editingPayment.value.paymentMethod
+      payment.referenceNumber = editingPayment.value.referenceNumber
+      payment.receiptFileName = editingPayment.value.receiptFileName
+      payment.verificationStatus = editingPayment.value.verificationStatus
+      payment.notes = editingPayment.value.notes
+      
+      // If status changed to approved/rejected, update verification info
+      if (['approved', 'rejected'].includes(editingPayment.value.verificationStatus)) {
+        payment.verifiedBy = user?.name || 'Admin'
+        payment.verifiedDate = new Date().toISOString().split('T')[0]
+      }
+      
+      // Save back to localStorage
+      localStorage.setItem(key, JSON.stringify(userGifts))
+      closePaymentModal()
+      loadAllPayments()
+      alert('Payment updated successfully!')
+    }
+  }
+}
+
+// Close payment modal
+const closePaymentModal = () => {
+  showEditPaymentModal.value = false
+  editingPayment.value = {
+    giftId: '',
+    id: '',
+    memberName: '',
+    amount: 0,
+    dueDate: '',
+    paymentDate: '',
+    paymentMethod: 'online',
+    referenceNumber: '',
+    receiptFileName: '',
+    verificationStatus: 'pending',
+    notes: ''
+  }
+}
+
+// Delete payment
+const deletePayment = (giftId, paymentId) => {
+  if (!confirm('Are you sure you want to delete this payment? This action cannot be undone.')) {
+    return
+  }
+
+  // Find and remove the payment from localStorage
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i)
+    if (key?.startsWith('gcbf_gifts_')) {
+      const userGifts = JSON.parse(localStorage.getItem(key) || '[]')
+      const gift = userGifts.find(g => g.id === giftId)
+      
+      if (gift) {
+        const paymentIndex = gift.payments.findIndex(p => p.id === paymentId)
+        if (paymentIndex !== -1) {
+          gift.payments.splice(paymentIndex, 1)
+          
+          // Save back to localStorage
+          localStorage.setItem(key, JSON.stringify(userGifts))
+          loadAllPayments()
+          alert('Payment deleted successfully!')
+          break
+        }
+      }
+    }
+  }
 }
 
 // Get verification status text
