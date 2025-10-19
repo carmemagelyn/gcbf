@@ -137,7 +137,7 @@
                 Newsletter Management
               </button>
             </li>
-            <li class="nav-item">
+            <li v-if="user?.userType === 'admin'" class="nav-item">
               <button 
                 class="nav-link"
                 :class="{ active: activeSection === 'prayers' }"
@@ -145,7 +145,7 @@
               >
                 <i class="bi bi-heart me-2"></i>
                 Shared Prayers
-                <span v-if="user?.userType === 'admin' && pendingPrayers.length > 0" class="badge bg-warning ms-1">
+                <span v-if="pendingPrayers.length > 0" class="badge bg-warning ms-1">
                   {{ pendingPrayers.length }}
                 </span>
               </button>
