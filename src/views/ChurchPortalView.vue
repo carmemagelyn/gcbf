@@ -1063,7 +1063,8 @@
                             :class="{
                               'border-warning bg-warning bg-opacity-10': payment.verificationStatus === 'pending',
                               'border-success bg-success bg-opacity-10': payment.verificationStatus === 'approved',
-                              'border-danger bg-danger bg-opacity-10': payment.verificationStatus === 'rejected'
+                              'border-danger bg-danger bg-opacity-10': payment.verificationStatus === 'rejected',
+                              'border-secondary bg-secondary bg-opacity-10': payment.verificationStatus === 'pending_payment'
                             }"
                           >
                             <div class="row">
@@ -1077,7 +1078,8 @@
                                     :class="{
                                       'bg-warning': payment.verificationStatus === 'pending',
                                       'bg-success': payment.verificationStatus === 'approved',
-                                      'bg-danger': payment.verificationStatus === 'rejected'
+                                      'bg-danger': payment.verificationStatus === 'rejected',
+                                      'bg-secondary': payment.verificationStatus === 'pending_payment'
                                     }"
                                   >
                                     {{ getVerificationStatusText(payment.verificationStatus) }}
@@ -1220,6 +1222,30 @@
                                       title="Reset to Pending"
                                     >
                                       <i class="bi bi-arrow-clockwise"></i>
+                                    </button>
+                                    <button 
+                                      class="btn btn-sm btn-outline-danger"
+                                      @click="deletePayment(payment.giftId, payment.id)"
+                                      title="Delete Payment"
+                                    >
+                                      <i class="bi bi-trash"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                                
+                                <!-- Pending Payment (Not Yet Made) -->
+                                <div v-else class="d-flex flex-column gap-2">
+                                  <div class="small text-muted mb-2">
+                                    <i class="bi bi-clock me-1"></i>
+                                    Payment Not Yet Made
+                                  </div>
+                                  <div class="btn-group w-100" role="group">
+                                    <button 
+                                      class="btn btn-sm btn-outline-secondary"
+                                      @click="editPayment(payment)"
+                                      title="Edit Payment"
+                                    >
+                                      <i class="bi bi-pencil"></i>
                                     </button>
                                     <button 
                                       class="btn btn-sm btn-outline-danger"
