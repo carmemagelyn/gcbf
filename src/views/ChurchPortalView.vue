@@ -1139,18 +1139,12 @@
                                   </button>
                                   <div class="btn-group w-100 mt-2" role="group">
                                     <button 
-                                      class="btn btn-sm btn-outline-secondary"
+                                      class="btn btn-sm btn-outline-secondary w-100"
                                       @click="editPayment(payment)"
                                       title="Edit Payment"
                                     >
-                                      <i class="bi bi-pencil"></i>
-                                    </button>
-                                    <button 
-                                      class="btn btn-sm btn-outline-danger"
-                                      @click="deletePayment(payment.giftId, payment.id)"
-                                      title="Delete Payment"
-                                    >
-                                      <i class="bi bi-trash"></i>
+                                      <i class="bi bi-pencil me-1"></i>
+                                      Edit Payment
                                     </button>
                                   </div>
                                 </div>
@@ -1175,21 +1169,16 @@
                                       @click="editPayment(payment)"
                                       title="Edit Payment"
                                     >
-                                      <i class="bi bi-pencil"></i>
+                                      <i class="bi bi-pencil me-1"></i>
+                                      Edit
                                     </button>
                                     <button 
                                       class="btn btn-sm btn-outline-warning"
                                       @click="verifyPayment(payment.giftId, payment.id, 'pending')"
                                       title="Reset to Pending"
                                     >
-                                      <i class="bi bi-arrow-clockwise"></i>
-                                    </button>
-                                    <button 
-                                      class="btn btn-sm btn-outline-danger"
-                                      @click="deletePayment(payment.giftId, payment.id)"
-                                      title="Delete Payment"
-                                    >
-                                      <i class="bi bi-trash"></i>
+                                      <i class="bi bi-arrow-clockwise me-1"></i>
+                                      Reset
                                     </button>
                                   </div>
                                 </div>
@@ -1214,21 +1203,16 @@
                                       @click="editPayment(payment)"
                                       title="Edit Payment"
                                     >
-                                      <i class="bi bi-pencil"></i>
+                                      <i class="bi bi-pencil me-1"></i>
+                                      Edit
                                     </button>
                                     <button 
                                       class="btn btn-sm btn-outline-warning"
                                       @click="verifyPayment(payment.giftId, payment.id, 'pending')"
                                       title="Reset to Pending"
                                     >
-                                      <i class="bi bi-arrow-clockwise"></i>
-                                    </button>
-                                    <button 
-                                      class="btn btn-sm btn-outline-danger"
-                                      @click="deletePayment(payment.giftId, payment.id)"
-                                      title="Delete Payment"
-                                    >
-                                      <i class="bi bi-trash"></i>
+                                      <i class="bi bi-arrow-clockwise me-1"></i>
+                                      Reset
                                     </button>
                                   </div>
                                 </div>
@@ -1239,22 +1223,14 @@
                                     <i class="bi bi-clock me-1"></i>
                                     Payment Not Yet Made
                                   </div>
-                                  <div class="btn-group w-100" role="group">
-                                    <button 
-                                      class="btn btn-sm btn-outline-secondary"
-                                      @click="editPayment(payment)"
-                                      title="Edit Payment"
-                                    >
-                                      <i class="bi bi-pencil"></i>
-                                    </button>
-                                    <button 
-                                      class="btn btn-sm btn-outline-danger"
-                                      @click="deletePayment(payment.giftId, payment.id)"
-                                      title="Delete Payment"
-                                    >
-                                      <i class="bi bi-trash"></i>
-                                    </button>
-                                  </div>
+                                  <button 
+                                    class="btn btn-sm btn-outline-secondary w-100"
+                                    @click="editPayment(payment)"
+                                    title="Edit Payment"
+                                  >
+                                    <i class="bi bi-pencil me-1"></i>
+                                    Edit Payment
+                                  </button>
                                 </div>
                               </div>
                             </div>
