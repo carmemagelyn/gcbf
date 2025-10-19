@@ -139,51 +139,161 @@
           </div>
         </div>
 
-        <!-- How Your Giving Helps -->
+        <!-- Gift History -->
         <div class="col-lg-6">
           <div class="card border-0 shadow-sm">
-            <div class="card-header bg-white border-0">
-              <h5 class="fw-bold mb-0">
-                <i class="bi bi-info-circle me-2"></i>
-                How Your Giving is Processed
-              </h5>
+            <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
+              <h5 class="fw-bold mb-0">My Gift History</h5>
+              <span class="badge bg-primary">{{ gifts.length }} gifts</span>
             </div>
             <div class="card-body">
-              <div class="mb-4">
-                <h6 class="fw-bold mb-2">Upload Your Receipt</h6>
-                <p class="small text-muted mb-0">
-                  After making a payment or donation, upload your receipt using the form on the left. 
-                  Your payment will be submitted for verification by church administrators.
-                </p>
+              <div v-if="gifts.length === 0" class="text-center text-muted py-4">
+                <i class="bi bi-currency-dollar display-4 opacity-25"></i>
+                <p class="mt-2 mb-0">No gifts yet</p>
+                <small>Make your first gift to get started</small>
               </div>
 
-              <div class="mb-4">
-                <h6 class="fw-bold mb-2">Admin Verification</h6>
-                <p class="small text-muted mb-0">
-                  Church administrators will review and verify your payment. Once approved, 
-                  it will be included in the monthly income reports and budget tracking.
-                </p>
-              </div>
+              <div v-else>
+                <!-- Summary Stats -->
+                <div class="row g-3 mb-4">
+                  <div class="col-6">
+                    <div class="text-center p-3 bg-light rounded">
+                      <h5 class="fw-bold mb-0 church-purple">₱{{ totalGiven.toFixed(2) }}</h5>
+                      <small class="text-muted">Total Given</small>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="text-center p-3 bg-light rounded">
+                      <h5 class="fw-bold mb-0 church-purple">{{ activeGifts }}</h5>
+                      <small class="text-muted">Active Gifts</small>
+                    </div>
+                  </div>
+                </div>
 
-              <div class="mb-4">
-                <h6 class="fw-bold mb-2">Budget Impact</h6>
-                <p class="small text-muted mb-0">
-                  Only verified payments are counted toward the church's monthly income. 
-                  Your contributions help support ministries, programs, and the church's mission.
-                </p>
-              </div>
+                <!-- Gift List -->
+                <div class="gift-list" style="max-height: 400px; overflow-y: auto;">
+                  <div 
+                    v-for="gift in sortedGifts" 
+                    :key="gift.id" 
+                    class="gift-item border rounded p-3 mb-3"
+                    :class="{ 'border-success bg-success bg-opacity-10': gift.status === 'active' }"
+                  >
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                      <h6 class="fw-bold mb-0">Gift</h6>
+                      <span 
+                        class="badge"
+                        :class="gift.status === 'active' ? 'bg-success' : 'bg-secondary'"
+                      >
+                        {{ capitalizeFirst(gift.status) }}
+                      </span>
+                    </div>
+                    
+                    <div class="gift-details">
+                      <p class="mb-2">
+                        <strong>₱{{ gift.amount.toFixed(2) }}</strong>
+                        <span class="text-muted"> • {{ gift.frequency }}</span>
+                        <span v-if="gift.frequency !== 'one-time'" class="badge bg-primary ms-2">
+                          {{ gift.payments?.length || 0 }} payments
+                        </span>
+                      </p>
+                      
+                      <p v-if="gift.frequency !== 'one-time'" class="mb-2 small text-muted">
+                        <i class="bi bi-calendar me-1"></i>
+                        Started: {{ formatDate(gift.startDate) }}
+                        <span v-if="gift.duration && gift.duration > 0">
+                          • {{ gift.duration }} months
+                        </span>
+                      </p>
+                      
+                      <p v-if="gift.notes" class="mb-2 small">
+                        <i class="bi bi-chat-text me-1"></i>
+                        {{ gift.notes }}
+                      </p>
 
-              <div class="alert alert-info mb-0">
-                <h6 class="fw-bold mb-2">
-                  <i class="bi bi-shield-check me-2"></i>
-                  Verification Process
-                </h6>
-                <ul class="small mb-0 ps-3">
-                  <li>Upload your receipt after payment</li>
-                  <li>Admin reviews and verifies the payment</li>
-                  <li>Verified payments appear in monthly income</li>
-                  <li>You can check verification status in the Church Portal</li>
-                </ul>
+                      <!-- Individual Payments Section -->
+                      <div v-if="gift.payments && gift.payments.length > 0" class="payments-section mt-2">
+                        <h6 class="fw-bold mb-2 small">Payment History:</h6>
+                        <div 
+                          v-for="payment in gift.payments" 
+                          :key="payment.id"
+                          class="payment-item p-2 mb-2 border rounded"
+                          :class="{
+                            'border-success bg-success bg-opacity-10': payment.verificationStatus === 'approved',
+                            'border-warning bg-warning bg-opacity-10': payment.verificationStatus === 'pending',
+                            'border-danger bg-danger bg-opacity-10': payment.verificationStatus === 'rejected',
+                            'border-secondary bg-light': payment.verificationStatus === 'pending_payment'
+                          }"
+                        >
+                          <div class="d-flex justify-content-between align-items-start mb-1">
+                            <span class="fw-bold small">₱{{ payment.amount.toFixed(2) }}</span>
+                            <span 
+                              class="badge"
+                              :class="{
+                                'bg-success': payment.verificationStatus === 'approved',
+                                'bg-warning': payment.verificationStatus === 'pending',
+                                'bg-danger': payment.verificationStatus === 'rejected',
+                                'bg-secondary': payment.verificationStatus === 'pending_payment'
+                              }"
+                            >
+                              {{ getVerificationStatusText(payment.verificationStatus) }}
+                            </span>
+                          </div>
+                          
+                          <div class="small text-muted mb-1">
+                            <i class="bi bi-calendar me-1"></i>
+                            Due: {{ formatDate(payment.dueDate) }}
+                            <span v-if="payment.paymentDate">
+                              • Paid: {{ formatDate(payment.paymentDate) }}
+                            </span>
+                          </div>
+                          
+                          <div v-if="payment.paymentMethod" class="small mb-1">
+                            <i class="bi bi-credit-card me-1" v-if="payment.paymentMethod === 'online'"></i>
+                            <i class="bi bi-cash me-1" v-if="payment.paymentMethod === 'cash'"></i>
+                            <span class="text-capitalize">{{ payment.paymentMethod }}</span>
+                            
+                            <span v-if="payment.paymentMethod === 'cash' && payment.referenceNumber" class="text-muted">
+                              • Ref: {{ payment.referenceNumber }}
+                            </span>
+                            <span v-if="payment.paymentMethod === 'online' && payment.receiptFileName" class="text-muted">
+                              • Receipt: {{ payment.receiptFileName }}
+                            </span>
+                          </div>
+                          
+                          <div v-if="payment.verificationStatus === 'approved' && payment.verifiedBy" class="small text-success">
+                            <i class="bi bi-check-circle me-1"></i>
+                            Verified by {{ payment.verifiedBy }} on {{ formatDate(payment.verifiedDate) }}
+                          </div>
+                          
+                          <!-- Make Payment Button for Pending Payments -->
+                          <div v-if="payment.verificationStatus === 'pending_payment'" class="mt-1">
+                            <button 
+                              class="btn btn-sm btn-primary"
+                              @click="makePayment(gift.id, payment.id)"
+                            >
+                              <i class="bi bi-credit-card me-1"></i>
+                              Make Payment
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <p class="mb-0 small text-muted mt-2">
+                        Gift Created: {{ formatDateTime(gift.createdAt) }}
+                      </p>
+                    </div>
+
+                    <div v-if="gift.status === 'active'" class="mt-2">
+                      <button 
+                        class="btn btn-sm btn-outline-danger"
+                        @click="cancelGift(gift.id)"
+                      >
+                        <i class="bi bi-x-circle me-1"></i>
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
