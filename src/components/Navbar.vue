@@ -179,8 +179,8 @@
             <div class="mt-4 p-3 bg-light rounded">
               <h6 class="fw-bold mb-2">Demo Credentials:</h6>
               <div class="demo-creds">
-                <small class="d-block mb-1"><strong>Pastor:</strong> pastor@gcbf.com.ph / admin123</small>
-                <small class="d-block"><strong>Admin:</strong> admin@gcbf.com.ph / admin2024</small>
+              <!--   <small class="d-block mb-1"><strong>Pastor:</strong> pastor@gcbf.com.ph / admin123</small>
+                <small class="d-block"><strong>Admin:</strong> admin@gcbf.com.ph / admin2024</small> -->
               </div>
             </div>
           </div>
