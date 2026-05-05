@@ -10,7 +10,7 @@
         <!-- Give Icon (visible only when not logged in) -->
         <a v-if="!user" class="nav-link text-white text-center navbar-icon-link-vertical p-0" href="#" @click.prevent="showGiveModal = true">
           <i class="bi bi-heart d-block" style="font-size: 1.4rem;"></i>
-          <small class="d-block mt-1" style="font-size: 0.7rem; line-height: 1; white-space: nowrap;">Give</small>
+          <small class="d-block mt-1" style="font-size: 0.7rem; line-height: 1; white-space: nowrap;">Donate</small>
         </a>
         
         <!-- User Icon (visible only when not logged in) -->
