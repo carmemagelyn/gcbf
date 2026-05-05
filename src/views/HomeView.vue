@@ -158,10 +158,9 @@
         <div class="map-container shadow-lg position-relative">
           <div class="map-overlay"></div>
           <iframe 
-            src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Graced+Community+Bible+Fellowship,Iloilo,Philippines&zoom=16" 
-            style="border:0; width: 100%; height: 450px;" 
-            allowfullscreen="" 
-            loading="lazy" 
+            src="https://www.google.com/maps?q=Graced+Community+Bible+Fellowship,Iloilo,Philippines&output=embed"
+            style="border:0; width: 100%; height: 450px;"
+            loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
