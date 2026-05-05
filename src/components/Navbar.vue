@@ -7,18 +7,18 @@
       
       <!-- Always visible icons for mobile -->
       <div class="d-flex align-items-center order-lg-2 gap-3">
-        <!-- Give Icon (visible only when not logged in) -->
+        <!-- Give Icon (visible only when not logged in) 
         <a v-if="!user" class="nav-link text-white text-center navbar-icon-link-vertical p-0" href="#" @click.prevent="showGiveModal = true">
           <i class="bi bi-heart d-block" style="font-size: 1.4rem;"></i>
           <small class="d-block mt-1" style="font-size: 0.7rem; line-height: 1; white-space: nowrap;">Donate</small>
         </a>
-        
-        <!-- User Icon (visible only when not logged in) -->
+        -->
+        <!-- User Icon (visible only when not logged in) 
         <a v-if="!user" class="nav-link text-white text-center navbar-icon-link-vertical p-0" href="#" @click.prevent="showAuthModal = true">
           <i class="bi bi-person-circle d-block" style="font-size: 1.4rem;"></i>
           <small class="d-block mt-1" style="font-size: 0.7rem; line-height: 1; white-space: nowrap;">Account</small>
         </a>
-        
+        -->
         <!-- User Dropdown (visible when logged in) -->
         <div v-if="user" class="dropdown">
           <a class="nav-link dropdown-toggle text-white d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
