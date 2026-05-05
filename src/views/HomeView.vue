@@ -158,7 +158,7 @@
         <div class="map-container shadow-lg position-relative">
           <div class="map-overlay"></div>
           <iframe 
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Twinbee+Print+Ads+Corp,General+Luna+St,Iloilo+City&zoom=16" 
+            src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Graced+Community+Bible+Fellowship,Iloilo,Philippines&zoom=16" 
             style="border:0; width: 100%; height: 450px;" 
             allowfullscreen="" 
             loading="lazy" 
