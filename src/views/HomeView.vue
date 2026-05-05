@@ -12,7 +12,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
          
-            <h1 class="display-4 fw-bold mb-5">Welcome to Graced Community Bible Fellowship</h1>
+            <h1 class="display-4 fw-bold mb-5">Graced Community Bible Fellowship</h1>
          
             <p class="lead mb-4">
               Shaped by the Potter’s love to live out His purpose through Jesus Christ by the work of the Holy Spirit.
