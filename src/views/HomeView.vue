@@ -338,7 +338,7 @@ const weeklyServices = ref([
     id: 6,
     name: 'Small Groups',
     day: 'Saturday',
-    time: '3:00 PM',
+    time: '3:00 - 7:00 PM',
     location: 'Various Locations',
     icon: 'bi bi-heart-fill'
   }
