@@ -149,7 +149,8 @@
             <h2 class="display-6 fw-bold church-purple">
               <i class="bi bi-geo-alt-fill me-2"></i>Find Us
             </h2>
-            <p class="lead text-muted mb-3">Graced Community Bible Fellowship, AMK Bldg. General Luna St, Iloilo City Proper, Iloilo City, Iloilo</p>
+            <p class="lead text-muted mb-3">Graced Community Bible Fellowship
+              <br>AMK Bldg. General Luna St, Iloilo City Proper, Iloilo City, Iloilo</p>
             <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
           
             </div>
