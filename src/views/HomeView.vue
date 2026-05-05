@@ -5,20 +5,16 @@
     
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/hero.jpg');
       background-size: cover;
-      background-position: center 45%;
+      background-position: center 42%;
       background-repeat: no-repeat;
     ">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8">
-             <p class="lead mb-1">
-              Welcome to
-            </p>
-            <h1 class="display-6 fw-bold mb-5">Graced Community Bible Fellowship</h1>
+        
+            <h1 class="display-6 fw-bold mb-5">Building grace-filled community, 
+              <br> fulfilling Christ’s mission.</h1>
          
-            <p class="lead mb-5">
-              Building grace-filled community, fulfilling Christ’s mission.
-            </p>
        
             <div class="d-flex gap-3">
               <button v-if="!isAuth" class="btn btn-primary btn-lg" @click="scrollToLocation">
@@ -150,8 +146,7 @@
             <h2 class="display-6 fw-bold church-purple">
               <i class="bi bi-geo-alt-fill me-2"></i>Find Us
             </h2>
-            <p class="lead text-muted mb-3">Graced Community Bible Fellowship
-              <br>AMK Bldg. General Luna St, Iloilo City Proper, Iloilo City, Iloilo</p>
+            <p class="lead fw-bold mb-3">AMK Bldg. General Luna St, Iloilo City Proper, Iloilo City, Iloilo</p>
             <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
           
             </div>
@@ -336,14 +331,6 @@ const weeklyServices = ref([
     location: 'Fellowship Hall',
     icon: 'bi bi-book'
   },
-  {
-    id: 6,
-    name: 'Small Groups',
-    day: 'Saturday',
-    time: '3:00 - 7:00 PM',
-    location: 'Various Locations',
-    icon: 'bi bi-heart-fill'
-  }
 ])
 
 // Monthly newsletters uploaded by admin
