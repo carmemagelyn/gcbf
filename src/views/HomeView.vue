@@ -5,17 +5,19 @@
     
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/hero.jpg');
       background-size: cover;
-      background-position: center;
+      background-position: center 45%;
       background-repeat: no-repeat;
     ">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6">
+          <div class="col-lg-8">
+             <p class="lead mb-1">
+              Welcome to
+            </p>
+            <h1 class="display-6 fw-bold mb-5">Graced Community Bible Fellowship</h1>
          
-            <h1 class="display-4 fw-bold mb-5">Graced Community Bible Fellowship</h1>
-         
-            <p class="lead mb-4">
-              Shaped by the Potter’s love to live out His purpose through Jesus Christ by the work of the Holy Spirit.
+            <p class="lead mb-5">
+              Building grace-filled community, fulfilling Christ’s mission.
             </p>
        
             <div class="d-flex gap-3">
@@ -29,9 +31,8 @@
                 View Services
               </button>
             </div>
-        
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-4">
             <!-- Weekly Verse -->
             <div class="card bg-white bg-opacity-10 border-0">
               <div class="card-body">
