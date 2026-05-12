@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!-- Hero Section -->
-    <section class="hero-section text-white py-5" style="
+    <section class="hero-section text-white" style="
     
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/hero.jpg');
       background-size: cover;
@@ -11,22 +11,32 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8">
-        
-            <h1 class="display-6 fw-bold mb-5">Building grace-filled community, 
-              <br> fulfilling Christ’s mission.</h1>
-         
-       
+            <h1 class="display-6 fw-bold mb-5">Building grace-filled community, fulfilling Christ’s mission.</h1>
+              <div>
+              <p class="text-uppercase fw-bold mb-3 text-white" style="font-size: .9rem; letter-spacing: .5px; opacity: 0.9;">
+                  <i class="bi bi-clock me-1"></i>SERVICES SCHEDULE:
+               
+                <br><b  class="text-end mb-0 fw-bold text-white" style="font-size: .8rem; opacity: 0.9;">WORSHIP SERVICE:</b><span class="mb-3 text-white" style="font-size: .8rem; line-height: .7; opacity: 0.85;"> Sunday, 10:00AM - 12:00NN</span>
+                <br><b class="text-end mb-0 fw-bold text-white" style="font-size: .8rem; opacity: 0.9;">NIGHT CLASS:</b><span class="mb-3 text-white" style="font-size: .9rem; line-height: 1; opacity: 0.85;"> Tuesday, 6:30PM - 8:00PM</span>
+                <br><b class="text-end mb-0 fw-bold text-white" style="font-size: .8rem; opacity: 0.9;">YOUTH COMMunity:</b><span class="mb-3 text-white" style="font-size: .9rem; line-height: 1; opacity: 0.85;"> Thursday, 6:30PM - 8:00PM</span>
+               
+              </p>
+              </div>
+            <br>
             <div class="d-flex gap-3">
               <button v-if="!isAuth" class="btn btn-primary btn-lg" @click="scrollToLocation">
                 Our Location
               </button>
+            </div>
+            <!--
               <router-link v-if="isAuth" to="/dashboard" class="btn btn-primary btn-lg">
                 Go to Dashboard
               </router-link>
               <button class="btn btn-outline-primary btn-lg" @click="scrollToServices">
                 View Services
               </button>
-            </div>
+            
+            -->
           </div>
           <div class="col-lg-4">
             <!-- Weekly Verse -->
@@ -52,36 +62,368 @@
     <section id="services" class="py-5">
       <div class="container">
         <div class="text-center mb-5">
-          <h2 class="display-6 fw-bold church-purple">Weekly Services</h2>
-          <p class="lead text-muted">Join us for worship and fellowship</p>
+          <h2 class="display-6 fw-bold church-purple">Messages</h2>
+          <p class="lead text-muted">Watch latest sermons</p>
+
+     </div>
+     <div class="row g-4">
+
+      <!-- Message Card -->
+      <div class="col-md-4">
+        <div class="message-card p-3 h-100">
+
+          <!-- YouTube Video -->
+          <div class="ratio ratio-16x9 mb-3">
+            <iframe
+              src="https://www.youtube.com/embed/2xqXLvXZj_8?si=kBpSWHn3w_9iPGwp"
+              title="Church Message"
+              allowfullscreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+          </div>
+
+          <!-- Title -->
+          <h6 class="mb-1">Sunday Message Title</h6>
+
+          <!-- Date -->
+          <small class="text-muted d-block mb-2" style="font-size: .75rem;">
+            May 12, 2026
+          </small>
+
+          <!-- Description -->
+          <p class="text-muted mb-0" style="font-size: .8rem;">
+            Short sermon description or key takeaway goes here.
+          </p>
+
+          <!-- Speaker -->
+          <div class="d-flex align-items-center mt-auto pt-4">
+
+            <img
+              src="/newsletter/summeryc2026.jpg"
+              alt="Speaker Image"
+              class="author-img me-2"
+            />
+
+            <small class="text-muted" style="font-size: .75rem;">
+              Pastor John Louie Berdejo
+            </small>
+
+          </div>
+
         </div>
-        
+      </div>
+
+       <div class="col-md-4">
+        <div class="message-card p-3 h-100">
+
+          <!-- YouTube Video -->
+          <div class="ratio ratio-16x9 mb-3">
+            <iframe
+              src="https://www.youtube.com/embed/2xqXLvXZj_8?si=kBpSWHn3w_9iPGwp"
+              title="Church Message"
+              allowfullscreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+          </div>
+
+          <!-- Title -->
+          <h6 class="mb-1">Sunday Message Title</h6>
+
+          <!-- Date -->
+          <small class="text-muted d-block mb-2" style="font-size: .75rem;">
+            May 12, 2026
+          </small>
+
+          <!-- Description -->
+          <p class="text-muted mb-0" style="font-size: .8rem;">
+            Short sermon description or key takeaway goes here.
+          </p>
+
+          <!-- Speaker -->
+          <div class="d-flex align-items-center mt-auto pt-4">
+
+            <img
+              src="/newsletter/summeryc2026.jpg"
+              alt="Speaker Image"
+              class="author-img me-2"
+            />
+
+            <small class="text-muted" style="font-size: .75rem;">
+              Pastor John Louie Berdejo
+            </small>
+
+          </div>
+
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="message-card p-3 h-100">
+
+          <!-- YouTube Video -->
+          <div class="ratio ratio-16x9 mb-3">
+            <iframe
+              src="https://www.youtube.com/embed/2xqXLvXZj_8?si=kBpSWHn3w_9iPGwp"
+              title="Church Message"
+              allowfullscreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+          </div>
+
+          <!-- Title -->
+          <h6 class="mb-1">Sunday Message Title</h6>
+
+          <!-- Date -->
+          <small class="text-muted d-block mb-2" style="font-size: .75rem;">
+            May 12, 2026
+          </small>
+
+          <!-- Description -->
+          <p class="text-muted mb-0" style="font-size: .8rem;">
+            Short sermon description or key takeaway goes here.
+          </p>
+
+          <!-- Speaker -->
+          <div class="d-flex align-items-center mt-auto pt-4">
+
+            <img
+              src="/newsletter/summeryc2026.jpg"
+              alt="Speaker Image"
+              class="author-img me-2"
+            />
+
+            <small class="text-muted" style="font-size: .75rem;">
+              Pastor John Louie Berdejo
+            </small>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>    
+
+      </div>
+    </section>
+    <section id="services" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-6 fw-bold church-purple">Articles</h2>
+          <p class="lead text-muted">Read our latest articles</p>
+        </div>
+        <div class="row g-4">
+
+      <!-- Article 1 -->
+       <div class="col-md-4">
+        <div class="article-card p-3 h-100">
+          <img src="/newsletter/summeryc2026.jpg" class="img-fluid rounded mb-3" alt="Article 2">
+          <h6 class="mb-1">Article Title 2</h6>
+           <small class="text-muted d-block mb-2" style="font-size: .75rem;">
+            May 12, 2026
+          </small>
+          <p class="text-muted mb-0" style="font-size: .8rem;">
+            Short subtitle or description goes here.
+          </p>
+          <div class="newsletter-author d-flex align-items-center mt-auto pt-4">
+
+          <img
+            :src="'/newsletter/summeryc2026.jpg'"
+            alt="Author Image"
+            class="author-img me-2"
+          />
+
+          <small class="text-muted mb-0" style="font-size: .75rem;">
+            Christina D.
+          </small>
+        </div>
+        </div>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="col-md-4">
+        <div class="article-card p-3 h-100">
+          <img src="/newsletter/summeryc2026.jpg" class="img-fluid rounded mb-3" alt="Article 2">
+          <h6 class="mb-1">Article Title 2</h6>
+           <small class="text-muted d-block mb-2" style="font-size: .75rem;">
+            May 12, 2026
+          </small>
+          <p class="text-muted mb-0" style="font-size: .8rem;">
+            Short subtitle or description goes here.
+          </p>
+          <div class="newsletter-author d-flex align-items-center mt-auto pt-4">
+
+          <img
+            :src="'/newsletter/summeryc2026.jpg'"
+            alt="Author Image"
+            class="author-img me-2"
+          />
+
+          <small class="text-muted mb-0" style="font-size: .75rem;">
+            Christina D.
+          </small>
+        </div>
+        </div>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="col-md-4">
+        <div class="article-card p-3 h-100">
+          <img src="/newsletter/summeryc2026.jpg" class="img-fluid rounded mb-3" alt="Article 2">
+          <h6 class="mb-1">Article Title 2</h6>
+           <small class="text-muted d-block mb-2" style="font-size: .75rem;">
+            May 12, 2026
+          </small>
+          <p class="text-muted mb-0" style="font-size: .8rem;">
+            Short subtitle or description goes here.
+          </p>
+          <div class="newsletter-author d-flex align-items-center mt-auto pt-4">
+
+          <img
+            :src="'/newsletter/summeryc2026.jpg'"
+            alt="Author Image"
+            class="author-img me-2"
+          />
+
+          <small class="text-muted mb-0" style="font-size: .75rem;">
+            Christina D.
+          </small>
+        </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="py-5">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="text-center mb-3">
+      <h2 class="display-6 fw-bold church-purple">Newsletter</h2>
+      <p class="lead text-muted">Stay connected with our church updates</p>
+    </div>
+
+
+    <!-- Newsletter Item -->
+    <div class="newsletter-item d-flex align-items-center">
+
+      <!-- Left: Image -->
+      <div class="newsletter-image me-3">
+        <img 
+          src="/newsletter/summeryc2026.jpg" 
+          alt="Newsletter Image" 
+          class="img-fluid rounded" 
+        />
+      </div>
+
+      <div class="d-flex flex-column w-100">
+
+        <div class="newsletter-content">
+          <h6 class="mb-1">Newsletter Title</h6>
+
+          <small class="text-muted d-block mb-2" style="font-size: .75rem;">
+            May 12, 2026
+          </small>
+
+          <p class="text-muted mb-0" style="font-size: .8rem;">
+            Short subtitle or description goes here.
+          </p>
+        </div>
+
+        <!-- Author -->
+        <div class="newsletter-author d-flex align-items-center mt-auto pt-5">
+
+          <img
+            :src="'/newsletter/summeryc2026.jpg'"
+            alt="Author Image"
+            class="author-img me-2"
+          />
+
+          <small class="text-muted mb-0" style="font-size: .75rem;">
+            Christina D.
+          </small>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
+    <section class="py-2">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="text-muted">Would you like to support our ministry?</h2>
+          
+
+    <h7 class="text-muted" style="font-size: .9rem;">
+      You may also scan our Bank Qr code for a simple and secure way to give.
+    </h7>
+    <br>
+    <a 
+      v-if="!user" 
+      class="btn btn-primary btn-sm"
+      href="#"
+      @click.prevent="showGiveModal = true"
+    >
+      Please click here
+    </a> 
+
+    
+        </div>
+      </div>
+    </section>
+    <!-- Give Modal -->
+    <div v-if="showGiveModal" class="modal d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);" @click.self="showGiveModal = false">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="btn-close" @click="showGiveModal = false"></button>
+          </div>
+          <div class="modal-body text-center py-4">
+            <div class="d-flex justify-content-center">
+              <img src="/giveqr.jpeg" alt="Give QR Code" class="img-fluid" style="max-width: 400px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            </div>
+            <div class="mt-4">
+              <a href="/giveqr.jpeg" download="GCBF-Give-QR.jpeg" class="btn btn-primary">
+                <i class="bi bi-download me-2"></i>
+                Download QR Code
+              </a>
+            </div>
+            <p class="text-muted mt-4 mb-0">
+              <i class="bi bi-heart-fill me-2 text-danger"></i>
+              We sincerely appreciate your generous donation and partnership in God’s work. 
+              <br>Thank you for blessing our ministry with your generosity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+ <!--       
         <div class="row g-4">
           <div v-for="service in weeklyServices" :key="service.id" class="col-md-6 col-lg-4">
             <div class="card h-100 shadow-sm border-0 service-card">
               <div class="card-body text-center">
-                
+             
                 <h5 class="card-title fw-bold">{{ service.name }}</h5>
                 <div class="service-details">
                   <p class="mb-1"><strong>{{ service.day }}</strong></p>
                   <p class="mb-0">{{ service.time }}</p>
                 </div>
+              
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Monthly Newsletter Carousel Section -->
+      </div>
+
+    </section>
+    -->
+    <!-- 
     <section class="bg-light pt-5 pb-0">
       <div class="container">
         <div class="text-center mb-5">
-          <h2 class="display-6 fw-bold church-purple">Monthly Newsletter</h2>
+          <h2 class="display-6 fw-bold church-purple">Newsletter</h2>
           <p class="lead text-muted">Stay connected with our church updates</p>
         </div>
         
-        <!-- Newsletter Cards -->
+
         <div v-if="monthlyNewsletters && monthlyNewsletters.length > 0" class="row g-4">
           <div 
             v-for="newsletter in monthlyNewsletters" 
@@ -94,7 +436,7 @@
               @contextmenu.prevent="downloadNewsletter(newsletter)"
               :title="`Click to open ${newsletter.title} | Right-click to download`"
             >
-              <!-- Newsletter Cover Image or Icon -->
+
               <div class="card-img-top position-relative overflow-hidden" style="height: 200px;">
                 <div v-if="newsletter.coverImage" class="w-100 h-100">
                   <img 
@@ -108,17 +450,16 @@
                   <i class="bi bi-file-earmark-pdf display-1 text-white opacity-75"></i>
                 </div>
                 
-                <!-- Newsletter Title Overlay -->
+
                 <div class="position-absolute bottom-0 start-0 w-100 p-3 text-white">
                   <h5 class="fw-bold mb-0">{{ newsletter.title }}</h5>
                 </div>
                 
-                <!-- Issue Badge -->
+
                 <div class="position-absolute top-0 end-0 m-3">
                   <span class="badge bg-light text-dark">Issue #{{ newsletter.issueNumber }}</span>
                 </div>
 
-                <!-- Hover Overlay with Instructions -->
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center newsletter-hover-overlay">
                   <div class="text-center text-white">
                     <i class="bi bi-eye-fill display-4 mb-2"></i>
@@ -131,15 +472,15 @@
           </div>
         </div>
 
-        <!-- Empty State -->
+
         <div v-else class="text-center py-5">
           <i class="bi bi-newspaper display-1 text-muted opacity-50"></i>
           <h4 class="text-muted mt-3">No newsletters available</h4>
           <p class="text-muted">Check back soon for the latest church updates</p>
         </div>
       </div>
-
-      <!-- Location Section (within newsletter background) -->
+    -->
+  <section class="bg-light pt-2 pb-0">
       <div id="location" class="container-fluid mt-5 pt-5 px-0 pb-0 mb-0">
         <div class="container mb-4">
           <div class="text-center mb-4">
@@ -147,11 +488,10 @@
               <i class="bi bi-geo-alt-fill me-2"></i>Find Us
             </h2>
             <p class="lead fw-bold mb-3">AMK Bldg. General Luna St, Iloilo City Proper, Iloilo City, Iloilo</p>
-            <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
-          
-            </div>
           </div>
-        </div>
+
+          </div>
+      
         <div class="map-container shadow-lg position-relative">
          
           <iframe 
@@ -165,12 +505,18 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-white py-4" style="background-color: #537D5D; margin-top: 0;">
-      <div class="container">
-        <div class="text-center">
-          <p>&copy; 2025 Graced Community Bible Fellowship. All rights reserved.</p>
-        </div>
+    <footer class="text-white py-3" style="background-color: #537D5D; margin-top: 0;">
+  
+      <div class="text-center">
+        <p>
+          &copy; 2026 Graced Community Bible Fellowship. All rights reserved.
+        </p>
+
+        <a href="https://www.facebook.com/gracedcommunitybiblefellowship" target="_blank" class="footer-facebook">
+          <i class="bi bi-facebook"></i> Follow us on Facebook
+        </a>
       </div>
+    
     </footer>
 
     <!-- Update Details Modal -->
@@ -198,6 +544,7 @@ import { useRouter } from 'vue-router'
 import { isAuthenticated } from '../utils/auth'
 
 const router = useRouter()
+const showGiveModal = ref(false)
 
 // Storage event listener for real-time newsletter updates
 const handleStorageChange = (event) => {
@@ -509,6 +856,86 @@ footer a:hover {
 
 .map-container iframe {
   display: block;
+}
+
+.newsletter-item {
+  display: flex;
+  padding: 16px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background: #fff;
+  transition: 0.2s ease;
+}
+
+.newsletter-item:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+/* Image */
+.newsletter-image img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Author image */
+.author-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Ensures author stays at bottom */
+.newsletter-content {
+  flex-grow: 1;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .newsletter-item {
+    flex-direction: column;
+  }
+
+  .newsletter-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .newsletter-author {
+    margin-bottom: 0;
+  }
+}
+
+.article-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  transition: 0.2s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.message-card {
+ border: 1px solid #eee;
+  border-radius: 12px;
+  transition: 0.2s ease;
+}
+
+.message-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.author-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 </style>
