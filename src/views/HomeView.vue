@@ -68,11 +68,11 @@
      </div>
      <div class="row g-4">
 
-      <!-- Message Card -->
+      <!--
       <div class="col-md-4">
         <div class="message-card p-3 h-100">
 
-          <!-- YouTube Video -->
+         
           <div class="ratio ratio-16x9 mb-3">
             <iframe
               src="https://www.youtube.com/embed/2xqXLvXZj_8?si=kBpSWHn3w_9iPGwp"
@@ -82,20 +82,20 @@
             ></iframe>
           </div>
 
-          <!-- Title -->
+       
           <h6 class="mb-1">Sunday Message Title</h6>
 
-          <!-- Date -->
+        
           <small class="text-muted d-block mb-2" style="font-size: .75rem;">
             May 12, 2026
           </small>
 
-          <!-- Description -->
+       
           <p class="text-muted mb-0" style="font-size: .8rem;">
             Short sermon description or key takeaway goes here.
           </p>
 
-          <!-- Speaker -->
+         
           <div class="d-flex align-items-center mt-auto pt-4">
 
             <img
@@ -107,7 +107,7 @@
             <small class="text-muted" style="font-size: .75rem;">
               Pastor John Louie Berdejo
             </small>
-
+         
           </div>
 
         </div>
@@ -116,7 +116,7 @@
        <div class="col-md-4">
         <div class="message-card p-3 h-100">
 
-          <!-- YouTube Video -->
+  
           <div class="ratio ratio-16x9 mb-3">
             <iframe
               src="https://www.youtube.com/embed/2xqXLvXZj_8?si=kBpSWHn3w_9iPGwp"
@@ -126,20 +126,20 @@
             ></iframe>
           </div>
 
-          <!-- Title -->
+          
           <h6 class="mb-1">Sunday Message Title</h6>
 
-          <!-- Date -->
+         
           <small class="text-muted d-block mb-2" style="font-size: .75rem;">
             May 12, 2026
           </small>
 
-          <!-- Description -->
+       
           <p class="text-muted mb-0" style="font-size: .8rem;">
             Short sermon description or key takeaway goes here.
           </p>
 
-          <!-- Speaker -->
+       
           <div class="d-flex align-items-center mt-auto pt-4">
 
             <img
@@ -156,10 +156,11 @@
 
         </div>
       </div>
+             
+      
        <div class="col-md-4">
         <div class="message-card p-3 h-100">
 
-          <!-- YouTube Video -->
           <div class="ratio ratio-16x9 mb-3">
             <iframe
               src="https://www.youtube.com/embed/2xqXLvXZj_8?si=kBpSWHn3w_9iPGwp"
@@ -169,20 +170,20 @@
             ></iframe>
           </div>
 
-          <!-- Title -->
+         
           <h6 class="mb-1">Sunday Message Title</h6>
 
-          <!-- Date -->
+  
           <small class="text-muted d-block mb-2" style="font-size: .75rem;">
             May 12, 2026
           </small>
 
-          <!-- Description -->
+       
           <p class="text-muted mb-0" style="font-size: .8rem;">
             Short sermon description or key takeaway goes here.
           </p>
 
-          <!-- Speaker -->
+        
           <div class="d-flex align-items-center mt-auto pt-4">
 
             <img
@@ -196,23 +197,27 @@
             </small>
 
           </div>
-
+   
         </div>
+     
       </div>
-
+  --> 
     </div>    
-
+ 
       </div>
+      
     </section>
+   
     <section id="services" class="py-5">
       <div class="container">
         <div class="text-center mb-5">
           <h2 class="display-6 fw-bold church-purple">Articles</h2>
           <p class="lead text-muted">Read our latest articles</p>
         </div>
+<!-- 
         <div class="row g-4">
-
-      <!-- Article 1 -->
+       
+      
        <div class="col-md-4">
         <div class="article-card p-3 h-100">
           <img src="/newsletter/summeryc2026.jpg" class="img-fluid rounded mb-3" alt="Article 2">
@@ -237,8 +242,8 @@
         </div>
         </div>
       </div>
-
-      <!-- Article 2 -->
+-->
+      <!-- 
       <div class="col-md-4">
         <div class="article-card p-3 h-100">
           <img src="/newsletter/summeryc2026.jpg" class="img-fluid rounded mb-3" alt="Article 2">
@@ -263,8 +268,8 @@
         </div>
         </div>
       </div>
-
-      <!-- Article 3 -->
+    -->
+      <!-- 
       <div class="col-md-4">
         <div class="article-card p-3 h-100">
           <img src="/newsletter/summeryc2026.jpg" class="img-fluid rounded mb-3" alt="Article 2">
@@ -289,12 +294,15 @@
         </div>
         </div>
       </div>
+      
         </div>
+        -->
       </div>
+       
     </section>
     <section id="services" class="py-5">
   <div class="container">
-
+ 
     <!-- Header -->
     <div class="text-center mb-3">
       <h2 class="display-6 fw-bold church-purple">Newsletter</h2>
@@ -302,10 +310,10 @@
     </div>
 
 
-    <!-- Newsletter Item -->
+    <!-- 
     <div class="newsletter-item d-flex align-items-center">
 
-      <!-- Left: Image -->
+   
       <div class="newsletter-image me-3">
         <img 
           src="/newsletter/summeryc2026.jpg" 
@@ -328,7 +336,7 @@
           </p>
         </div>
 
-        <!-- Author -->
+     
         <div class="newsletter-author d-flex align-items-center mt-auto pt-5">
 
           <img
@@ -341,11 +349,14 @@
             Christina D.
           </small>
         </div>
+       
       </div>
+   
     </div>
+      -->
     </div>
 </section>
-    <section class="py-2">
+    <section class="py-5">
       <div class="container">
         <div class="text-center">
           <h2 class="text-muted">Would you like to support our ministry?</h2>
