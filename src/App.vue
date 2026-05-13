@@ -61,7 +61,8 @@ body {
 }
 
 main {
-  padding-top: 80px; /* Account for fixed navbar */
+  padding-top: 50px; /* Account for fixed navbar */
+  margin-top: 0;
 }
 
 .btn-primary {
