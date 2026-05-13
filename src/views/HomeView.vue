@@ -498,8 +498,9 @@
             <h2 class="display-6 fw-bold church-purple">
               <i class="bi bi-geo-alt-fill me-2"></i>Find Us
             </h2>
-            <p class="lead fw-bold mb-3">AMK Bldg. General Luna St, Iloilo City Proper, Iloilo City, Iloilo</p>
+            <p class="lead text-muted">AMK Bldg. General Luna St, Iloilo City Proper, Iloilo City, Iloilo</p>
           </div>
+       
 
           </div>
       
