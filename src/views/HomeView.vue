@@ -17,8 +17,8 @@
                   <i class="bi bi-clock me-1"></i>SERVICES SCHEDULE:
                
                 <br><b  class="text-end mb-0 fw-bold text-white" style="font-size: .8rem; opacity: 0.9;">WORSHIP SERVICE:</b><span class="mb-3 text-white" style="font-size: .8rem; line-height: .7; opacity: 0.85;"> Sunday, 10:00AM - 12:00NN</span>
-                <br><b class="text-end mb-0 fw-bold text-white" style="font-size: .8rem; opacity: 0.9;">NIGHT CLASS:</b><span class="mb-3 text-white" style="font-size: .9rem; line-height: 1; opacity: 0.85;"> Tuesday, 6:30PM - 8:00PM</span>
-                <br><b class="text-end mb-0 fw-bold text-white" style="font-size: .8rem; opacity: 0.9;">YOUTH COMMunity:</b><span class="mb-3 text-white" style="font-size: .9rem; line-height: 1; opacity: 0.85;"> Thursday, 6:30PM - 8:00PM</span>
+                <br><b class="text-end mb-0 fw-bold text-white" style="font-size: .8rem; opacity: 0.9;">NIGHT CLASS:</b><span class="mb-3 text-white" style="font-size: .8rem; line-height: .7; opacity: 0.85;"> Tuesday, 6:30PM - 8:00PM</span>
+                <br><b class="text-end mb-0 fw-bold text-white" style="font-size: .8rem; opacity: 0.9;">YOUTH COMMunity:</b><span class="mb-3 text-white" style="font-size: .8rem; line-height: .7; opacity: 0.85;"> Thursday, 6:30PM - 8:00PM</span>
                
               </p>
               </div>
