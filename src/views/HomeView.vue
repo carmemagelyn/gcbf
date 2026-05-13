@@ -517,15 +517,22 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-white py-3" style="background-color: #537D5D; margin-top: 0;">
+    <footer class="text-white py-4 pb-4" style="background-color: #537D5D; margin-top: 0;">
   
       <div class="text-center">
         <p>
           &copy; 2026 Graced Community Bible Fellowship. All rights reserved.
         </p>
-
-        <a href="https://www.facebook.com/gracedcommunitybiblefellowship" target="_blank" class="footer-facebook">
-          <i class="bi bi-facebook"></i> Follow us on Facebook
+        <span class="text-white" style="font-size: .7rem; opacity: 0.85;">WAYS TO FOLLOW</span>
+        <br>
+        <a href="https://www.facebook.com/gracedcommunitybiblefellowship" target="_blank" class="footer">
+          <i class="bi bi-facebook">&nbsp;&nbsp;</i> 
+        </a> 
+        <a href="https://www.youtube.com/@GracedCommunityBibleFellowship" target="_blank" class="footer">
+          <i class="bi bi-youtube">&nbsp;&nbsp;</i> 
+        </a>
+        <a href="https://www.instagram.com/gracedcommunitybiblefellowship/" target="_blank" class="footer">
+          <i class="bi bi-instagram">&nbsp;&nbsp;</i> 
         </a>
       </div>
     
@@ -839,8 +846,9 @@ footer a {
 }
 
 footer a:hover {
-  color: #FFFFFF !important;
-  text-decoration: underline;
+  color: #9A3F3F !important;
+  
+  
 }
 
 #services .card {
@@ -949,5 +957,7 @@ footer a:hover {
   border-radius: 50%;
   object-fit: cover;
 }
+
+
 
 </style>
