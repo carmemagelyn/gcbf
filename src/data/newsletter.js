@@ -9,6 +9,7 @@ export const newsletter = [
     image: '/newsletter/reset-37th-annual-summer-youth-camp-2026.jpg',
 
     content: `
+    
 <article class="newsletter-article">
 
     <p class="subtitle"><strong>RESET: 37th Annual Summer Youth Camp</strong></p>
@@ -129,7 +130,8 @@ export const newsletter = [
       Above all, we give all glory and thanks to God for His guidance, protection, and presence throughout the entire camp.
     </p>
   </section>
-<br>
+  <br>
+
   <section>
     <h3>Carrying the RESET Forward</h3>
 

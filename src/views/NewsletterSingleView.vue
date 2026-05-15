@@ -158,5 +158,27 @@ const post = computed(() => {
     font-size: 1rem;
     line-height: 1.85;
   }
+
+  .newsletter-content .article-image {
+  width: 100%;
+  border-radius: 18px;
+  margin: 2rem 0 1rem;
+
+  object-fit: cover;
+
+  box-shadow:
+    0 12px 35px rgba(0,0,0,0.10);
+}
+
+.newsletter-content figure {
+  margin: 2.5rem 0;
+}
+
+.newsletter-content figcaption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 0.4rem;
+}
 }
 </style>
