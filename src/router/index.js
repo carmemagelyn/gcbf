@@ -8,12 +8,27 @@ import GivingView from '../views/GivingView.vue'
 import BibleReadingView from '../views/BibleReadingView.vue'
 import PrayerListView from '../views/PrayerListView.vue'
 import ChurchPortalView from '../views/ChurchPortalView.vue'
+import NewsletterView from '../views/NewsletterView.vue'
+
+import NewsletterSingleView from '../views/NewsletterSingleView.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: HomeView
+  },
+  {
+    path: '/newsletter',
+    name: 'Newsletter',
+    component: NewsletterView,
+    
+  },
+    {
+    path: '/newsletter/:slug',
+    name: 'NewsletterSingle',
+    component: NewsletterSingleView,
+    
   },
   {
     path: '/dashboard',

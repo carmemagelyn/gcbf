@@ -41,6 +41,27 @@ const handleLogin = (loggedInUser) => {
       <router-view />
     </main>
   </div>
+
+   <footer class="text-white py-4 pb-4" style="background-color: #537D5D; margin-top: 0;">
+  
+      <div class="text-center">
+        <p>
+          &copy; 2026 Graced Community Bible Fellowship. All rights reserved.
+        </p>
+        <span class="text-white" style="font-size: .7rem; opacity: 0.85;">WAYS TO FOLLOW</span>
+        <br>
+        <a href="https://www.facebook.com/gracedcommunitybiblefellowship" target="_blank" class="footer">
+          <i class="bi bi-facebook">&nbsp;&nbsp;</i> 
+        </a> 
+        <a href="https://www.youtube.com/@GracedCommunityBibleFellowship" target="_blank" class="footer">
+          <i class="bi bi-youtube">&nbsp;&nbsp;</i> 
+        </a>
+        <a href="https://www.instagram.com/gracedcommunitybiblefellowship/" target="_blank" class="footer">
+          <i class="bi bi-instagram">&nbsp;&nbsp;</i> 
+        </a>
+      </div>
+    
+    </footer>
 </template>
 
 <style>
@@ -86,5 +107,16 @@ main {
 
 .navbar-toggler:focus {
   background-color: #9A3F3F;
+}
+
+footer a {
+  color: #FBF9D1 !important;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #9A3F3F !important;
+  
+  
 }
 </style>
