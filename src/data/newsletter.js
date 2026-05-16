@@ -32,7 +32,7 @@ export const newsletter = [
   </section>
 <br>
   <section>
-    <h3>Activities and Fellowship</h3>
+    <h4>Activities and Fellowship</h4>
 
     <p>
       Beyond the preaching and worship sessions, the camp was also filled with exciting activities that strengthened unity, teamwork, and friendship among the youth. Participants enjoyed basketball and volleyball games, storytelling enactments, Amazing Race challenges, indigenous choir presentations, cheers and yells, intermission numbers, and various energizer activities throughout the event.
@@ -49,7 +49,7 @@ export const newsletter = [
   </section>
 <br>
   <section>
-    <h3>Messages That Renewed the Heart</h3>
+    <h4>Messages That Renewed the Heart</h4>
 
     <p>
       The preaching sessions throughout the camp became one of the most meaningful parts of the experience for many of the youth. Through the messages shared by Pastor Ivan Nofuente, Pastor Winston White, Pastor Joseph Tabuena, and Ma’am Quenie Cabaya, attendees were encouraged to reflect on their spiritual lives and strengthen their relationship with God.
@@ -65,7 +65,7 @@ export const newsletter = [
   </section>
 <br>
   <section>
-    <h3>In God’s Presence</h3>
+    <h4>In God’s Presence</h4>
 
     <p>
       One of the most powerful moments of the camp was the altar call, where many stepped forward in humility and surrender before God. Kneeling at the altar, attendees spent time in prayer, worship, and repentance as they responded to God’s Word. Tears, silence, and heartfelt prayers reflected the sincerity of many lives being renewed in His presence.
@@ -85,7 +85,7 @@ export const newsletter = [
   </section>
 <br>
   <section>
-    <h3>Testimonies from the Youth</h3>
+    <h4>Testimonies from the Youth</h4>
     <p><i>
       “One of my favorite parts of the youth camp was the sessions because I learned so much. Not only about God, but also about my daily life. I was reminded about the importance of managing my screen time and using my time wisely in a way that honors Him.”
     </i></p>
@@ -104,7 +104,7 @@ export const newsletter = [
     <article class="newsletter-article">
 
   <section>
-    <h3>A Message from the Youth Leader</h3>
+    <h4>A Message from the Youth Leader</h4>
 
     <p><i>
       “My favorite moment during our youth camp was praying with Pastor White alongside all the souls who found their identity in Christ. In that moment, I felt God's presence so closely-an overwhelming certainty that He heard every solemn whisper of praise, repentance, petition, and yielding my broken heart and contrite spirit according to His will, I was overjoyed of being reminded that He saved me by grace through faith, all because of the love expressed in death, burial and resurrection of Jesus Christ.”
@@ -124,7 +124,7 @@ export const newsletter = [
   </section>
 <br>
   <section>
-    <h3>Acknowledgements</h3>
+    <h4>Acknowledgements</h4>
 
     <p>
       The GCBF Publication Team would like to express heartfelt gratitude to Lighthouse Baptist Church for hosting the 37th Annual Summer Youth Camp and for their hospitality and effort in making the event possible.
@@ -147,7 +147,7 @@ export const newsletter = [
 
 
   <section>
-    <h3>Carrying the RESET Forward</h3>
+    <h4>Carrying the RESET Forward</h4>
 
     <p>
       As the 37th Annual Summer Youth Camp came to a close, the experiences shared during those two days left a lasting impact on all who attended. It was more than just a gathering or a series of activities. It was a time of spiritual renewal, reflection, and reconnection with God.
