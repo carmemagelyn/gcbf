@@ -4,7 +4,7 @@ export const newsletter = [
     slug: 'reset-37th-annual-summer-youth-camp-2026',
     title: 'Finding Balance in this Digital World',
     date: 'May 12, 2026',
-    excerpt: 'RESET: 37th Annual Summer Youth Camp Highlights:Finding Balance in this Digital World',
+    excerpt: 'RESET: 37th Annual Summer Youth Camp Highlights',
     author: 'Christina Angela Devata',
     image: '/newsletter/reset-37th-annual-summer-youth-camp-2026.jpg',
 

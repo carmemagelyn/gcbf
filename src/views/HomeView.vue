@@ -85,20 +85,20 @@
 
         </div>
 
-        <h5 class="mb-1 text-dark fw-bold">
+        <h6 class="mb-1 text-dark fw-bold">
           {{ post.title }}
-        </h5>
+        </h6>
 
         <small
           class="text-muted d-block mb-2"
-          style="font-size: .75rem;"
+          style="font-size: .7rem; text-transform: uppercase; letter-spacing: 1px;"
         >
           {{ post.date }}
         </small>
 
         <p
           class="text-muted mb-0"
-          style="font-size: .85rem;"
+          style="font-size: .75rem;"
         >
           {{ post.excerpt }}
         </p>
@@ -436,7 +436,7 @@ footer a:hover {
 .newsletter-item {
   display: flex;
   padding: 16px;
-  border: 1px solid #eee;
+  border: 2px solid #eee;
   border-radius: 10px;
   background: #fff;
   transition: 0.2s ease;
@@ -485,7 +485,7 @@ footer a:hover {
 }
 
 .article-card {
-  border: 1px solid #eee;
+  border: 1px solid #dbdbdb;
   border-radius: 12px;
   transition: 0.2s ease;
 }

@@ -72,7 +72,7 @@ const closeNavbar = () => {
 }
 
 .navbar-logo {
-  height: 70px;
+  height: 40px;
   width: auto;
   object-fit: contain;
 }
@@ -116,9 +116,7 @@ const closeNavbar = () => {
     margin-top: 1rem;
   }
 
-  .navbar-logo {
-    height: 56px;
-  }
+ 
 
   .nav-link {
     font-size: 1rem;
