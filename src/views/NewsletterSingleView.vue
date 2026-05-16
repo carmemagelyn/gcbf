@@ -82,11 +82,11 @@ function updateMetaTag(property, content) {
 </div>
 
       <div>
-        <small class="text-muted d-block author-label">
+        <small class="text-muted d-block author-label" style="font-size: .7rem; opacity: 0.85;">
           Written by
         </small>
 
-        <small class="text-muted d-block mb-0" style="font-size: .75rem;">
+        <small class="fw-semibold d-block mb-0" style="font-size: .75rem;opacity: 0.65">
           {{ post.author }}
         </small>
       </div>
