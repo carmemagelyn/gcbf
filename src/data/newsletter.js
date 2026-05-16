@@ -102,7 +102,7 @@ export const newsletter = [
 `,
    content2: `
     <article class="newsletter-article">
-
+<br>
   <section>
     <h4>A Message from the Youth Leader</h4>
 
@@ -145,7 +145,7 @@ export const newsletter = [
   <article class="newsletter-article">
   
 
-
+<br>
   <section>
     <h4>Carrying the RESET Forward</h4>
 
