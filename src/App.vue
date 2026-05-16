@@ -48,7 +48,7 @@ const handleLogin = (loggedInUser) => {
         <p>
           &copy; 2026 Graced Community Bible Fellowship. All rights reserved.
         </p>
-        <span class="text-white" style="font-size: .7rem; opacity: 0.85;">WAYS TO FOLLOW</span>
+        <span class="text-white" style="font-size: 1rem; opacity: 0.85;">WAYS TO FOLLOW</span>
         <br>
         <a href="https://www.facebook.com/gracedcommunitybiblefellowship" target="_blank" class="footer">
           <i class="bi bi-facebook">&nbsp;&nbsp;</i> 
@@ -112,6 +112,8 @@ main {
 footer a {
   color: #FBF9D1 !important;
   text-decoration: none;
+  font-size: 20px;
+  padding: 0.3rem;
 }
 
 footer a:hover {
