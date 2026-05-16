@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { newsletter } from '../data/newsletter'
 
 const posts = computed(() => newsletter)
+
 </script>
 
 <template>
