@@ -7,6 +7,8 @@ import HomeView from '../views/HomeView.vue'
 import NewsletterView from '../views/NewsletterView.vue'
 import NewsletterSingleView from '../views/NewsletterSingleView.vue'
 
+
+
 const routes = [
   {
     path: '/',
@@ -36,3 +38,6 @@ const router = createRouter({
 
 
 export default router
+
+
+
