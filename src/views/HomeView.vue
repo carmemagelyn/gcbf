@@ -77,7 +77,7 @@
           </div>
 
           <img
-            :src="post.image"
+            :src="post.coverphoto"
             class="img-fluid rounded w-100"
             :alt="post.title"
             style="height: 220px; object-fit: cover;"

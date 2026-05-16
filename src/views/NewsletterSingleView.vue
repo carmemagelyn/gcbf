@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { newsletter } from '../data/newsletter'
 
+
 const route = useRoute()
 
 const post = computed(() => {
@@ -18,7 +19,7 @@ const post = computed(() => {
   <div class="newsletter-wrapper">
 
     <!-- Meta -->
-    <small class="text-muted d-block mb-2 text-center meta-date">
+    <small class="text-muted d-block mb-2 text-center meta-date text-uppercase letter-spacing-1">
       {{ post.date }}
     </small>
 
@@ -29,10 +30,15 @@ const post = computed(() => {
 
     <!-- Featured Image -->
     <img
-      :src="post.image"
+      :src="post.coverphoto"
       class="newsletter-image"
       :alt="post.title"
     >
+ 
+        <p small class="text-muted d-block text-left mt-0" style="font-size: .75rem; opacity: 0.85;">
+            {{ post.caption }}
+        </p>
+
 
     <!-- Author -->
     <div class="newsletter-author">
@@ -56,9 +62,26 @@ const post = computed(() => {
     <!-- Content -->
     <div
       class="newsletter-content"
-      v-html="post.content"
+      v-html="post.content1"
     ></div>
-
+  <img
+      :src="post.image2"
+      class="newsletter-image"
+      :alt="post.title"
+    >
+        <div
+      class="newsletter-content"
+      v-html="post.content2"
+    ></div>
+ <img
+      :src="post.image1"
+      class="newsletter-image"
+      :alt="post.title"
+    >
+        <div
+      class="newsletter-content"
+      v-html="post.content3"
+    ></div>
   </div>
 
 </div>
@@ -99,8 +122,8 @@ const post = computed(() => {
   width: 100%;
   max-height: 460px;
   object-fit: cover;
-  border-radius: 18px;
-  margin-bottom: 2rem;
+  border-radius: 5px;
+  margin-bottom: 0rem;
   box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
 }
 
@@ -151,7 +174,7 @@ const post = computed(() => {
   }
 
   .newsletter-image {
-    border-radius: 14px;
+    border-radius: 5px;
   }
 
   .newsletter-content {
@@ -159,26 +182,8 @@ const post = computed(() => {
     line-height: 1.85;
   }
 
-  .newsletter-content .article-image {
-  width: 100%;
-  border-radius: 18px;
-  margin: 2rem 0 1rem;
 
-  object-fit: cover;
 
-  box-shadow:
-    0 12px 35px rgba(0,0,0,0.10);
-}
 
-.newsletter-content figure {
-  margin: 2.5rem 0;
-}
-
-.newsletter-content figcaption {
-  text-align: center;
-  font-size: 0.85rem;
-  color: #777;
-  margin-top: 0.4rem;
-}
 }
 </style>
