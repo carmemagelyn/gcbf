@@ -117,7 +117,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #fff53f !important;
+  color: #fff988 !important;
   
   
 }
