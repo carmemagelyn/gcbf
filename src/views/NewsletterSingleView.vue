@@ -43,9 +43,13 @@ const post = computed(() => {
     <!-- Author -->
     <div class="newsletter-author">
 
-      <div class="author-img d-flex align-items-center justify-content-center bg-secondary text-white">
-        {{ post.author.charAt(0) }}
-      </div>
+<div class="author-img">
+  <img
+    :src="post.authorImage"
+    :alt="post.author"
+    class="author-photo"
+  >
+</div>
 
       <div>
         <small class="text-muted d-block author-label">
@@ -174,6 +178,7 @@ const post = computed(() => {
   box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
 }
 
+
 /* AUTHOR */
 .newsletter-author {
   display: flex;
@@ -183,11 +188,20 @@ const post = computed(() => {
 }
 
 .author-img {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  font-weight: 700;
-  font-size: 1rem;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.author-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .author-label {
@@ -234,9 +248,6 @@ const post = computed(() => {
   transition: transform 0.25s ease;
 }
 
-.newsletter-gallery img:hover {
-  transform: scale(1.02);
-}
 
 /* mobile */
 @media (max-width: 768px) {

@@ -106,13 +106,16 @@
         <div
           class="newsletter-author d-flex align-items-center mt-auto pt-4"
         >
-
-        <div class="author-img me-2 d-flex align-items-center justify-content-center bg-secondary text-white">
-  {{ post.author.charAt(0) }}
+<div class="author-img">
+  <img
+    :src="post.authorImage"
+    :alt="post.author"
+    class="author-photo"
+  >
 </div>
 
           <small
-            class="text-muted mb-0"
+            class="text-muted mb-0 ps-2"
             style="font-size: .75rem;"
           >
             {{ post.author }}
@@ -459,10 +462,20 @@ footer a:hover {
 
 /* Author image */
 .author-img {
-  width: 28px;
-  height: 28px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.author-photo {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 /* Ensures author stays at bottom */

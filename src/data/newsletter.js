@@ -7,11 +7,12 @@ export const newsletter = [
     date: 'May 12, 2026',
     excerpt: 'RESET: 37th Annual Summer Youth Camp Highlights',
     author: 'Christina Angela Devata',
+    authorImage: '/newsletter/author/christina-devata.jpg',
     coverphoto: '/newsletter/01_reset/reset-37th-annual-summer-youth-camp-2026.jpg',
     caption:'Photo courtesy of Lighthouse Baptist Church — Talacu-an, Leon, Iloilo',
     image1: '/newsletter/01_reset/intro.jpg',
     image2: '/newsletter/01_reset/altar.jpg',
-      image3: '/newsletter/01_reset/pastors.jpg',
+    image3: '/newsletter/01_reset/pastors.jpg',
     image4: '/newsletter/01_reset/ga1.jpg',
     image5: '/newsletter/01_reset/ga2.jpg',
     image6: '/newsletter/01_reset/ga3.jpg',
@@ -84,7 +85,7 @@ export const newsletter = [
             </p>
         </section>
             </article>
-
+<br>
         <section>
             <h4>In God’s Presence</h4>
 
