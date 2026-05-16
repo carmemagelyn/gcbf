@@ -1,7 +1,9 @@
 <script setup>
-import { computed } from 'vue'
+
 import { useRoute } from 'vue-router'
 import { newsletter } from '../data/newsletter'
+import { computed, watchEffect } from 'vue'
+
 
 
 const route = useRoute()
@@ -11,6 +13,34 @@ const post = computed(() => {
     item => item.slug === route.params.slug
   )
 })
+
+watchEffect(() => {
+  if (post.value) {
+    document.title = post.value.title
+
+    updateMetaTag('og:title', post.value.title)
+    updateMetaTag('og:description', post.value.excerpt)
+    updateMetaTag('og:image', `https://gcbf.com.ph${post.value.coverphoto}`)
+    updateMetaTag('og:url', window.location.href)
+
+    updateMetaTag('twitter:title', post.value.title)
+    updateMetaTag('twitter:description', post.value.excerpt)
+    updateMetaTag('twitter:image', `https://gcbf.com.ph${post.value.coverphoto}`)
+  }
+})
+
+function updateMetaTag(property, content) {
+  let element = document.querySelector(`meta[property="${property}"]`)
+  
+  if (!element) {
+    element = document.createElement('meta')
+    element.setAttribute('property', property)
+    document.head.appendChild(element)
+  }
+
+  element.setAttribute('content', content)
+}
+
 </script>
 
 <template>
