@@ -18,14 +18,24 @@ watchEffect(() => {
   if (post.value) {
     document.title = post.value.title
 
-    updateMetaTag('og:title', post.value.title)
-    updateMetaTag('og:description', post.value.excerpt)
-    updateMetaTag('og:image', `https://gcbf.com.ph${post.value.coverphoto}`)
-    updateMetaTag('og:url', window.location.href)
+    const setMeta = (property, content) => {
+      let element = document.querySelector(`meta[property="${property}"]`)
 
-    updateMetaTag('twitter:title', post.value.title)
-    updateMetaTag('twitter:description', post.value.excerpt)
-    updateMetaTag('twitter:image', `https://gcbf.com.ph${post.value.coverphoto}`)
+      if (!element) {
+        element = document.createElement('meta')
+        element.setAttribute('property', property)
+        document.head.appendChild(element)
+      }
+
+      element.setAttribute('content', content)
+    }
+
+    setMeta('og:title', post.value.title)
+    setMeta('og:description', post.value.excerpt)
+    setMeta(
+      'og:image',
+      `https://gcbf.com.ph${post.value.coverphoto}`
+    )
   }
 })
 
