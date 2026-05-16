@@ -238,7 +238,7 @@ watchEffect(() => {
 
   font-size: 1.08rem;
   line-height: 1.75;
-  color: #696969;
+  color: #595959;
   
 
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
