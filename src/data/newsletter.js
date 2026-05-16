@@ -1,3 +1,4 @@
+
 export const newsletter = [
   {
     id: 1,
@@ -164,5 +165,8 @@ export const newsletter = [
 
 </article>
 `
+
   }
+  
+  
 ]
