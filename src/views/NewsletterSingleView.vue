@@ -1,6 +1,7 @@
 <script setup>
-import { computed, watchEffect } from 'vue'
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
+import { useHead } from '@vueuse/head'
 import { newsletter } from '../data/newsletter'
 
 const route = useRoute()
@@ -11,29 +12,24 @@ const post = computed(() => {
   )
 })
 
-watchEffect(() => {
-  if (!post.value) return
-
-  document.title = post.value.seo.title
-
-  const setMeta = (property, content) => {
-    let element = document.querySelector(
-      `meta[property="${property}"]`
-    )
-
-    if (!element) {
-      element = document.createElement('meta')
-      element.setAttribute('property', property)
-      document.head.appendChild(element)
+useHead({
+  title: post.value?.title,
+  meta: [
+    {
+      property: 'og:title',
+      content: post.value?.title
+    },
+    {
+      property: 'og:description',
+      content: post.value?.excerpt
+    },
+    {
+      property: 'og:image',
+      content: `https://gcbf.com.ph${post.value?.coverphoto}`
     }
-
-    element.setAttribute('content', content)
-  }
-
-  setMeta('og:title', post.value.seo.title)
-  setMeta('og:description', post.value.seo.description)
-  setMeta('og:image', post.value.seo.image)
+  ]
 })
+
 </script>
 
 <template>
