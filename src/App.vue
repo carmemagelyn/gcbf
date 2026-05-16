@@ -110,14 +110,14 @@ main {
 }
 
 footer a {
-  color: #FBF9D1 !important;
+  color: #Ffff !important;
   text-decoration: none;
   font-size: 20px;
   padding: 0.3rem;
 }
 
 footer a:hover {
-  color: #9A3F3F !important;
+  color: #fff53f !important;
   
   
 }
