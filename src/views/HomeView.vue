@@ -120,7 +120,6 @@
           >
             {{ post.author }}
           </small>
-find
         </div>
 
       </div>
