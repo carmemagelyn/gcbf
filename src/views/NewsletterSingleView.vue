@@ -60,22 +60,25 @@ const post = computed(() => {
     </div>
 
     <!-- Content -->
+
     <div
       class="newsletter-content"
       v-html="post.content1"
     ></div>
-    <div class="newsletter-gallery">
-
-  <figure>
-    <img
-      :src="post.image3"
+     <img
+      :src="post.image1"
       class="newsletter-image"
       :alt="post.title"
     >
-  </figure>
+    
+ <div
+      class="newsletter-content"
+      v-html="post.content2"
+    ></div>
+ <div class="newsletter-gallery">
 
   <figure>
-     <img
+    <img
       :src="post.image4"
       class="newsletter-image"
       :alt="post.title"
@@ -83,8 +86,16 @@ const post = computed(() => {
   </figure>
 
   <figure>
-    <img
+     <img
       :src="post.image5"
+      class="newsletter-image"
+      :alt="post.title"
+    >
+  </figure>
+
+  <figure>
+    <img
+      :src="post.image6"
       class="newsletter-image"
       :alt="post.title"
     >
@@ -93,25 +104,30 @@ const post = computed(() => {
 </div>
  <div
       class="newsletter-content"
-      v-html="post.content2"
-    ></div>
-  <img
-      :src="post.image2"
-      class="newsletter-image"
-      :alt="post.title"
-    >
-        <div
-      class="newsletter-content"
       v-html="post.content3"
     ></div>
- <img
-      :src="post.image1"
+  <img
+      :src="post.image3"
       class="newsletter-image"
       :alt="post.title"
     >
         <div
       class="newsletter-content"
       v-html="post.content4"
+    ></div>
+ <img
+      :src="post.image2"
+      class="newsletter-image"
+      :alt="post.title"
+    >
+        <div
+      class="newsletter-content"
+      v-html="post.content5"
+    ></div>
+    
+        <div
+      class="newsletter-content"
+      v-html="post.content6"
     ></div>
   </div>
 
