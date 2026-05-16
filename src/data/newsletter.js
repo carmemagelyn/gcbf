@@ -11,6 +11,9 @@ export const newsletter = [
     caption:'Photo courtesy of LIGHTHOUSE BAPTIST CHURCH — Talacu-an, Leon, Iloilo',
     image1: '/newsletter/01_reset/campers.jpg',
     image2: '/newsletter/01_reset/altar.jpg',
+    image3: '/newsletter/01_reset/ga1.jpg',
+    image4: '/newsletter/01_reset/ga2.jpg',
+    image5: '/newsletter/01_reset/ga3.jpg',
 
     content1: `
     
@@ -30,7 +33,11 @@ export const newsletter = [
       Throughout the camp, the young people enjoyed a time of fellowship through games, activities, worship services, and preaching sessions. Beyond the laughter and excitement were moments of conviction, prayer, and personal reflection as God spoke to hearts through His Word. Anchored on Colossians 3:2, “Set your affection on things above, not on things on the earth,” the camp encouraged everyone to seek Christ above all else and pursue a life centered on Him.
     </p>
   </section>
-<br>
+    </article>
+`,
+   content2: `
+    <article class="newsletter-article">
+
   <section>
     <h4>Activities and Fellowship</h4>
 
@@ -100,7 +107,7 @@ export const newsletter = [
   </section>
   </article>
 `,
-   content2: `
+   content3: `
     <article class="newsletter-article">
 <br>
   <section>
@@ -141,7 +148,7 @@ export const newsletter = [
 
 </article>
 `,
-   content3: `
+   content4: `
   <article class="newsletter-article">
   
 
