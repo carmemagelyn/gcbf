@@ -126,7 +126,7 @@ export const newsletter = [
             <p><i>
             “One of the most meaningful moments for me was during Pastor White’s preaching when he invited us to come forward. At first, I hesitated because I was shy and didn’t want attention. But after holding back several times, I felt God speaking to my heart and reminding me to let go of the things of the world and return to Him. When I finally stepped forward, it felt as though God welcomed me back with open arms. Even though I had turned away before, I still felt His love, grace, and acceptance.”
             </i></p>
-            <h5>—Joshua Rosado</h5>
+            <h5>— Joshua Rosado</h5>
             <br>
         </section>
 
