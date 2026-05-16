@@ -176,10 +176,12 @@
       <div id="location" class="container-fluid mt-5 pt-5 px-0 pb-0 mb-0">
         <div class="container mb-4">
           <div class="text-center mb-4">
-            <h2 class="display-6 fw-bold church-purple">
+            <h2 class="display-6 fw-bold church-purple" style="font-size: 2rem;">
               <i class="bi bi-geo-alt-fill me-2"></i>Find Us
             </h2>
-            <p class="lead text-muted">AMK Bldg. General Luna St, Iloilo City Proper, Iloilo City, Iloilo</p>
+            <p class="lead text-muted" style="font-size: 1rem;">
+              AMK Bldg. General Luna St, Iloilo City Proper, Iloilo City, Iloilo
+            </p>
           </div>
        
 
