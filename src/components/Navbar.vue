@@ -72,7 +72,7 @@ const closeNavbar = () => {
 }
 
 .navbar-logo {
-  height: 40px;
+  height: 50px;
   width: auto;
   object-fit: contain;
 }
@@ -115,7 +115,11 @@ const closeNavbar = () => {
     border-radius: 14px;
     margin-top: 1rem;
   }
-
+.navbar-logo {
+  height: 40px;
+  width: 250px;
+  object-fit: contain;
+}
  
 
   .nav-link {
