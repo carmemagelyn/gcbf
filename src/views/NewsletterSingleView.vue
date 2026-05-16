@@ -14,7 +14,7 @@ const post = computed(() => {
 </script>
 
 <template>
-  <div v-if="post" class="container py-5 mt-5">
+  <div v-if="post" class="container py-5 mt-4">
 
   <div class="newsletter-wrapper">
 
