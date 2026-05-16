@@ -86,7 +86,7 @@ function updateMetaTag(property, content) {
           Written by
         </small>
 
-        <small class="fw-semibold">
+        <small class="text-muted d-block mb-0" style="font-size: .75rem;">
           {{ post.author }}
         </small>
       </div>
@@ -244,8 +244,9 @@ function updateMetaTag(property, content) {
   margin: 0 auto;
 
   font-size: 1.08rem;
-  line-height: 1.95;
-  color: #2b2b2b;
+  line-height: 1.75;
+  color: #696969;
+  
 
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Arial, sans-serif;
