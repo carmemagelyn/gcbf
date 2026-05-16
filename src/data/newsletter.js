@@ -1,14 +1,27 @@
 
 export const newsletter = [
   {
-    id: 1,
+     id: 1,
     slug: 'reset-37th-annual-summer-youth-camp-2026',
+
     title: 'Finding Balance in this Digital World',
-    date: 'May 12, 2026',
+
     excerpt: 'RESET: 37th Annual Summer Youth Camp Highlights',
+
+    date: 'May 12, 2026',
+
     author: 'Christina Angela Devata',
+
     authorImage: '/newsletter/author/christina-devata.jpg',
+
     coverphoto: '/newsletter/01_reset/reset-37th-annual-summer-youth-camp-2026.jpg',
+
+    seo: {
+      title: 'Finding Balance in this Digital World',
+      description: 'RESET: 37th Annual Summer Youth Camp Highlights',
+      image:
+        'https://gcbf.com.ph/newsletter/01_reset/reset-37th-annual-summer-youth-camp-2026.jpg',
+    },
     caption:'Photo courtesy of Lighthouse Baptist Church — Talacu-an, Leon, Iloilo',
     image1: '/newsletter/01_reset/intro.jpg',
     image2: '/newsletter/01_reset/altar.jpg',

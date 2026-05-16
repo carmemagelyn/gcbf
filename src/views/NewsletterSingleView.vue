@@ -1,10 +1,7 @@
 <script setup>
-
+import { computed, watchEffect } from 'vue'
 import { useRoute } from 'vue-router'
 import { newsletter } from '../data/newsletter'
-import { computed, watchEffect } from 'vue'
-
-
 
 const route = useRoute()
 
@@ -15,42 +12,28 @@ const post = computed(() => {
 })
 
 watchEffect(() => {
-  if (post.value) {
-    document.title = post.value.title
+  if (!post.value) return
 
-    const setMeta = (property, content) => {
-      let element = document.querySelector(`meta[property="${property}"]`)
+  document.title = post.value.seo.title
 
-      if (!element) {
-        element = document.createElement('meta')
-        element.setAttribute('property', property)
-        document.head.appendChild(element)
-      }
+  const setMeta = (property, content) => {
+    let element = document.querySelector(
+      `meta[property="${property}"]`
+    )
 
-      element.setAttribute('content', content)
+    if (!element) {
+      element = document.createElement('meta')
+      element.setAttribute('property', property)
+      document.head.appendChild(element)
     }
 
-    setMeta('og:title', post.value.title)
-    setMeta('og:description', post.value.excerpt)
-    setMeta(
-      'og:image',
-      `https://gcbf.com.ph${post.value.coverphoto}`
-    )
+    element.setAttribute('content', content)
   }
+
+  setMeta('og:title', post.value.seo.title)
+  setMeta('og:description', post.value.seo.description)
+  setMeta('og:image', post.value.seo.image)
 })
-
-function updateMetaTag(property, content) {
-  let element = document.querySelector(`meta[property="${property}"]`)
-  
-  if (!element) {
-    element = document.createElement('meta')
-    element.setAttribute('property', property)
-    document.head.appendChild(element)
-  }
-
-  element.setAttribute('content', content)
-}
-
 </script>
 
 <template>
