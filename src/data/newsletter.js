@@ -30,11 +30,7 @@ export const newsletter = [
     image5: '/newsletter/01_reset/ga2.jpg',
     image6: '/newsletter/01_reset/ga3.jpg',
 
-    content1: `
-    
-        <article class="newsletter-article">
-            </article>
-        `,
+
         content1: `
             <article class="newsletter-article">
 
