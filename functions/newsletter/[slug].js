@@ -1,21 +1,11 @@
-// Import your newsletter data directly into the function
-// Note: You'll need to copy the data here or fetch it from an API
-const newsletters = [
-  {
-    slug: 'reset-37th-annual-summer-youth-camp-2026',
-    title: 'Finding Balance in this Digital World',
-    excerpt: 'RESET: 37th Annual Summer Youth Camp Highlights',
-    coverphoto: '/newsletter/01_reset/reset-37th-annual-summer-youth-camp-2026.jpg'
-  }
-  // Add other newsletters here
-];
+import { newsletter } from '../../src/data/newsletter.js';
 
 export async function onRequest(context) {
   const { request, env, params } = context;
   const slug = params.slug;
   
   // Find the newsletter data
-  const post = newsletters.find(item => item.slug === slug);
+  const post = newsletter.find(item => item.slug === slug);
   
   // Fetch the original index.html
   const url = new URL(request.url);
