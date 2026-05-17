@@ -7,10 +7,10 @@ import { newsletter } from '../data/newsletter'
 const route = useRoute()
 
 const post = computed(() => {
-  return newsletter.find(
-    item => item.slug === route.params.slug
-  )
+  if (!newsletter || !route.params.slug) return null;
+  return newsletter.find(item => item.slug === route.params.slug) || null;
 })
+
 
 useHead({
   title: post.value?.title,
@@ -159,9 +159,10 @@ useHead({
 
 
   <!-- Fallback if not found -->
-  <div v-else class="container py-5 mt-5 text-center">
-    <h4 class="text-muted">Newsletter not found</h4>
-  </div>
+
+<div v-else class="container py-5 mt-5 text-center">
+  <h4 class="text-muted">Newsletter not found</h4>
+</div>
 </template>
 <style scoped>
 /* MAIN CENTER WRAPPER */
