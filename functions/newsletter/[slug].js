@@ -10,7 +10,7 @@ export async function onRequest(context) {
   // Fetch the original index.html
   const url = new URL(request.url);
   const indexUrl = new URL('/index.html', url.origin);
-  const response = await env.ASSETS.fetch(new Request(indexUrl));
+  const response = await env.page_assets.fetch(new Request(indexUrl));
   
   if (!post) {
     return response; // Return normal page if not found
