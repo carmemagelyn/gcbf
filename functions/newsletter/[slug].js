@@ -26,7 +26,12 @@ export async function onRequest(context) {
     <meta property="og:image" content="https://gcbf.com.ph${post.coverphoto}" />
     <meta property="og:url" content="${request.url}" />
     <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="${post.date}" />
+    <meta property="article:author" content="${post.author}" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${post.title}" />
+    <meta name="twitter:description" content="${post.excerpt}" />
+    <meta name="twitter:image" content="https://gcbf.com.ph${post.coverphoto}" />
   `;
   
   // Insert meta tags before the closing </head> tag
