@@ -79,13 +79,13 @@ function injectMetaTags(html, newsletter, origin) {
   const metaTags = `
     <meta property="og:title" content="${escapeHtml(newsletter.title)}" />
     <meta property="og:description" content="${escapeHtml(newsletter.excerpt)}" />
-    <meta property="og:image" content="${imageUrl}" />
-    <meta property="og:type" content="article" />
+    <meta property="og:image" content="${newsletter.coverphoto}" />
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="${origin}/newsletter/${newsletter.slug}" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(newsletter.title)}" />
     <meta name="twitter:description" content="${escapeHtml(newsletter.excerpt)}" />
-    <meta name="twitter:image" content="${imageUrl}" />
+    <meta name="twitter:image" content="${newsletter.coverphoto}" />
     <meta name="description" content="${escapeHtml(newsletter.excerpt)}" />
   `;
   
