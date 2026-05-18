@@ -1,30 +1,50 @@
-import { getAssetFromKV, mapRequestToAsset } from '@cloudflare/kv-asset-handler';
+import fs from 'fs';
+import path from 'path';
+
+const distDir = './dist';
 
 export default {
   async fetch(request, env, ctx) {
+    const url = new URL(request.url);
+    let pathname = url.pathname;
+
+    // Try to serve the requested file
+    let filePath = path.join(distDir, pathname);
+    
     try {
-      // Serve static assets
-      return await getAssetFromKV(
-        {
-          request,
-          waitUntil: ctx.waitUntil.bind(ctx),
-        },
-        {
-          ASSET_NAMESPACE: env.ASSETS,
-          ASSET_MANIFEST: import.meta.json,
-          mapRequestToAsset: (req) => {
-            // For SPA routing: if it's not a file, serve index.html
-            let url = new URL(req.url);
-            if (!url.pathname.match(/\.[a-zA-Z0-9]+$/)) {
-              url.pathname = '/index.html';
-            }
-            return mapRequestToAsset(new Request(url, req));
-          },
-        }
-      );
+      if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
+        const content = fs.readFileSync(filePath);
+        return new Response(content, {
+          headers: { 'Content-Type': getContentType(filePath) }
+        });
+      }
     } catch (e) {
-      console.error('Worker error:', e);
-      return new Response('Error loading page', { status: 500 });
+      console.error('File error:', e);
+    }
+
+    // For SPA routing, serve index.html
+    try {
+      const indexPath = path.join(distDir, 'index.html');
+      const content = fs.readFileSync(indexPath);
+      return new Response(content, {
+        headers: { 'Content-Type': 'text/html' }
+      });
+    } catch (e) {
+      return new Response('Error', { status: 500 });
     }
   }
 };
+
+function getContentType(filePath) {
+  const ext = path.extname(filePath).toLowerCase();
+  const types = {
+    '.html': 'text/html',
+    '.css': 'text/css',
+    '.js': 'application/javascript',
+    '.json': 'application/json',
+    '.png': 'image/png',
+    '.jpg': 'image/jpeg',
+    '.ico': 'image/x-icon',
+  };
+  return types[ext] || 'application/octet-stream';
+}

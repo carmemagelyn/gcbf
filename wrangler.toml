@@ -1,6 +1,7 @@
 name = "gcbf-church-portal"
 main = "worker.js"
-compatibility_date = "2024-09-02"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
 
 [[d1_databases]]
 binding = "DB"
@@ -14,7 +15,3 @@ bucket_name = "gcbf-files"
 [build]
 command = "npm run build"
 cwd = "./"
-
-[[assets]]
-binding = "ASSETS"
-directory = "dist"
