@@ -20,7 +20,7 @@ export const newsletter = [
       title: 'Finding Balance in this Digital World',
       description: 'RESET: 37th Annual Summer Youth Camp Highlights',
       image:
-        'https://gcbf.com.ph/newsletter/01_reset/reset-37th-annual-summer-youth-camp-2026.jpg',
+        '/newsletter/01_reset/reset-37th-annual-summer-youth-camp-2026.jpg',
     },
     caption:'Photo courtesy of Lighthouse Baptist Church — Talacu-an, Leon, Iloilo',
     image1: '/newsletter/01_reset/intro.jpg',
