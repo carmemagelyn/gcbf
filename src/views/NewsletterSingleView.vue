@@ -13,8 +13,20 @@ const post = computed(() => {
 
 
 useHead({
-  title: post.value?.title,
+  title: `${post.value?.title} - GCBF Newsletter`,
   meta: [
+    {
+      name: 'description',
+      content: post.value?.excerpt
+    },
+    {
+      property: 'og:url',
+      content: `https://gcbf.com.ph/newsletter/${route.params.slug}`
+    },
+    {
+      property: 'og:type',
+      content: 'article'
+    },
     {
       property: 'og:title',
       content: post.value?.title
@@ -25,6 +37,42 @@ useHead({
     },
     {
       property: 'og:image',
+      content: `https://gcbf.com.ph${post.value?.coverphoto}`
+    },
+    {
+      property: 'og:image:width',
+      content: '1200'
+    },
+    {
+      property: 'og:image:height',
+      content: '630'
+    },
+    {
+      property: 'og:image:type',
+      content: 'image/jpeg'
+    },
+    {
+      property: 'article:published_time',
+      content: post.value?.date
+    },
+    {
+      property: 'article:author',
+      content: post.value?.author
+    },
+    {
+      name: 'twitter:card',
+      content: 'summary_large_image'
+    },
+    {
+      name: 'twitter:title',
+      content: post.value?.title
+    },
+    {
+      name: 'twitter:description',
+      content: post.value?.excerpt
+    },
+    {
+      name: 'twitter:image',
       content: `https://gcbf.com.ph${post.value?.coverphoto}`
     }
   ]
