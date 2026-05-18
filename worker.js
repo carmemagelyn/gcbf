@@ -1,50 +1,23 @@
-import fs from 'fs';
-import path from 'path';
-
-const distDir = './dist';
-
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
-    let pathname = url.pathname;
+    const pathname = url.pathname;
 
-    // Try to serve the requested file
-    let filePath = path.join(distDir, pathname);
-    
-    try {
-      if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
-        const content = fs.readFileSync(filePath);
-        return new Response(content, {
-          headers: { 'Content-Type': getContentType(filePath) }
-        });
+    // Check if it's a static file (has extension)
+    if (/\.[a-zA-Z0-9]+$/.test(pathname)) {
+      try {
+        return await env.ASSETS.fetch(request);
+      } catch (e) {
+        return new Response('Not found', { status: 404 });
       }
-    } catch (e) {
-      console.error('File error:', e);
     }
 
     // For SPA routing, serve index.html
     try {
-      const indexPath = path.join(distDir, 'index.html');
-      const content = fs.readFileSync(indexPath);
-      return new Response(content, {
-        headers: { 'Content-Type': 'text/html' }
-      });
+      const indexRequest = new Request(new URL('/index.html', url.origin));
+      return await env.ASSETS.fetch(indexRequest);
     } catch (e) {
-      return new Response('Error', { status: 500 });
+      return new Response('Error loading page', { status: 500 });
     }
   }
 };
-
-function getContentType(filePath) {
-  const ext = path.extname(filePath).toLowerCase();
-  const types = {
-    '.html': 'text/html',
-    '.css': 'text/css',
-    '.js': 'application/javascript',
-    '.json': 'application/json',
-    '.png': 'image/png',
-    '.jpg': 'image/jpeg',
-    '.ico': 'image/x-icon',
-  };
-  return types[ext] || 'application/octet-stream';
-}
