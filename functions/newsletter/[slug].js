@@ -55,8 +55,15 @@ export async function onRequest(context) {
 }
 
 function cleanHeadMeta(html) {
-  return html
+  let cleaned = html
     .replace(/<title>[\s\S]*?<\/title>/gi, '')
-    .replace(/<meta\s+(?:property|name)="(?:og:[^"']*|twitter:[^"']*|description)"[^>]*>\s*/gi, '')
-    .replace(/<link rel="canonical"[^>]*>\s*/gi, '');
+    .replace(/<link rel="canonical"[^>]*>/gi, '');
+  
+  // Remove ALL meta tags with property="og:*" or name="og:*" or name="twitter:*" or name="description"
+  cleaned = cleaned.replace(/<meta\s+[^>]*(property|name)=["'](?:og:|twitter:|description)([^"']*?)["'][^>]*>/gi, '');
+  
+  // Also catch any remaining og: or twitter: meta tags with reversed attribute order
+  cleaned = cleaned.replace(/<meta\s+(?:property|name)=["'](?:og:|twitter:|description)[^"']*["'][^>]*>/gi, '');
+  
+  return cleaned;
 }

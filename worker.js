@@ -76,22 +76,42 @@ function injectMetaTags(html, newsletter, origin) {
     imageUrl = `${origin}${imageUrl}`;
   }
 
+  // Clean homepage meta tags first
+  let cleaned = html
+    .replace(/<title>[\s\S]*?<\/title>/gi, '')
+    .replace(/<link rel="canonical"[^>]*>/gi, '');
+  
+  // Remove ALL meta tags with property="og:*" or name="og:*" or name="twitter:*" or name="description"
+  cleaned = cleaned.replace(/<meta\s+[^>]*(property|name)=["'](?:og:|twitter:|description)([^"']*?)["'][^>]*>/gi, '');
+  cleaned = cleaned.replace(/<meta\s+(?:property|name)=["'](?:og:|twitter:|description)[^"']*["'][^>]*>/gi, '');
+
   const metaTags = `
+    <title>${newsletter.title} | GCBF</title>
+    <meta name="description" content="${escapeHtml(newsletter.excerpt)}" />
+    <link rel="canonical" href="${origin}/newsletter/${newsletter.slug}" />
+    <meta property="og:url" content="${origin}/newsletter/${newsletter.slug}" />
+    <meta property="og:type" content="article" />
     <meta property="og:title" content="${escapeHtml(newsletter.title)}" />
     <meta property="og:description" content="${escapeHtml(newsletter.excerpt)}" />
     <meta property="og:image" content="${imageUrl}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="${origin}/newsletter/${newsletter.slug}" />
+    <meta property="og:image:secure_url" content="${imageUrl}" />
+    <meta property="og:image:alt" content="${escapeHtml(newsletter.title)}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="article:published_time" content="${newsletter.date}" />
+    <meta property="article:author" content="${escapeHtml(newsletter.author)}" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(newsletter.title)}" />
     <meta name="twitter:description" content="${escapeHtml(newsletter.excerpt)}" />
     <meta name="twitter:image" content="${imageUrl}" />
-    <meta name="description" content="${escapeHtml(newsletter.excerpt)}" />
+    <meta name="twitter:image:src" content="${imageUrl}" />
+    <meta name="twitter:image:alt" content="${escapeHtml(newsletter.title)}" />
   `;
   
   console.log('Meta tags to inject:', metaTags);
   
-  const result = html.replace('</head>', metaTags + '</head>');
+  const result = cleaned.replace('</head>', metaTags + '</head>');
   console.log('Replacement successful:', result.includes(newsletter.title));
   
   return result;
