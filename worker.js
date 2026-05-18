@@ -1,29 +1,29 @@
+import { getAssetFromKV, mapRequestToAsset } from '@cloudflare/kv-asset-handler';
+
 export default {
   async fetch(request, env, ctx) {
-    const url = new URL(request.url);
-    const pathname = url.pathname;
-    
-    console.log('Request path:', pathname);
-    
-    // Check if it's a static file
-    if (/\.[a-zA-Z0-9]+$/.test(pathname)) {
-      console.log('Serving as static file');
-      try {
-        return await env.ASSETS.fetch(request);
-      } catch (e) {
-        console.error('ASSETS fetch error:', e);
-        return new Response('Not found', { status: 404 });
-      }
-    }
-    
-    // For all other routes, serve index.html
-    console.log('Serving index.html for SPA routing');
-    
     try {
-      const indexRequest = new Request(new URL('/index.html', url.origin));
-      return await env.ASSETS.fetch(indexRequest);
+      // Serve static assets
+      return await getAssetFromKV(
+        {
+          request,
+          waitUntil: ctx.waitUntil.bind(ctx),
+        },
+        {
+          ASSET_NAMESPACE: env.ASSETS,
+          ASSET_MANIFEST: import.meta.json,
+          mapRequestToAsset: (req) => {
+            // For SPA routing: if it's not a file, serve index.html
+            let url = new URL(req.url);
+            if (!url.pathname.match(/\.[a-zA-Z0-9]+$/)) {
+              url.pathname = '/index.html';
+            }
+            return mapRequestToAsset(new Request(url, req));
+          },
+        }
+      );
     } catch (e) {
-      console.error('Index fetch error:', e);
+      console.error('Worker error:', e);
       return new Response('Error loading page', { status: 500 });
     }
   }
