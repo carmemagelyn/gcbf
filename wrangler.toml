@@ -1,6 +1,6 @@
 name = "gcbf-church-portal"
+main = "worker.js"
 compatibility_date = "2024-09-02"
-pages_build_output_dir = "dist"
 
 [[d1_databases]]
 binding = "DB"
@@ -10,3 +10,10 @@ database_id = "ee5ba803-39cf-40a4-80f6-b369a2d6a9da"
 [[r2_buckets]]
 binding = "STORAGE"
 bucket_name = "gcbf-files"
+
+[build]
+command = "npm run build"
+cwd = "./"
+
+[build.upload]
+format = "service-worker"
