@@ -2,7 +2,7 @@
 // Handles all communication with Cloudflare backend
 
 const API_URL = import.meta.env.PROD 
-  ? 'https://gcbf-church-portal.pages.dev/api' 
+  ? 'https://gcbf-church-db.pages.dev/api' 
   : '/api' // Local development will proxy to Cloudflare
 
 class ApiService {

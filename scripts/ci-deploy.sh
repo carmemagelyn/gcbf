@@ -4,7 +4,7 @@ set -euo pipefail
 
 if [ -z "${1-}" ]; then
   echo "Usage: $0 <CF_PAGES_PROJECT> [DATABASE_ID]"
-  echo "Example: $0 gcbf-church-portal <DATABASE_ID>"
+  echo "Example: $0 gcbf-church-db <DATABASE_ID>"
   exit 2
 fi
 
