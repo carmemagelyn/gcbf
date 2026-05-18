@@ -18,35 +18,45 @@ export async function onRequest(context) {
   
   // Inject Open Graph meta tags into the HTML
   const html = await response.text();
-  
+  const cleanedHtml = cleanHeadMeta(html);
+  const imageUrl = post.coverphoto.startsWith('/') ? `https://gcbf.com.ph${post.coverphoto}` : post.coverphoto;
   const metaTags = `
     <title>${post.title} | GCBF</title>
-    <meta property="og:title" content="${post.title}" />
-    <meta property="og:description" content="${post.excerpt}" />
-    <meta property="og:image" content="https://gcbf.com.ph${post.coverphoto}" />
-    <meta property="og:image:secure_url" content="https://gcbf.com.ph${post.coverphoto}" />
-    <meta property="og:image:alt" content="${post.title}" />
+    <meta name="description" content="${post.excerpt}" />
+    <link rel="canonical" href="${request.url}" />
     <meta property="og:url" content="${request.url}" />
     <meta property="og:type" content="article" />
+    <meta property="og:title" content="${post.title}" />
+    <meta property="og:description" content="${post.excerpt}" />
+    <meta property="og:image" content="${imageUrl}" />
+    <meta property="og:image:secure_url" content="${imageUrl}" />
+    <meta property="og:image:alt" content="${post.title}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="article:published_time" content="${post.date}" />
     <meta property="article:author" content="${post.author}" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${post.title}" />
     <meta name="twitter:description" content="${post.excerpt}" />
-    <meta name="twitter:image" content="https://gcbf.com.ph${post.coverphoto}" />
-    <meta name="twitter:image:src" content="https://gcbf.com.ph${post.coverphoto}" />
+    <meta name="twitter:image" content="${imageUrl}" />
+    <meta name="twitter:image:src" content="${imageUrl}" />
     <meta name="twitter:image:alt" content="${post.title}" />
-    <meta name="twitter:title" content="${post.title}" />
-    <meta name="twitter:description" content="${post.excerpt}" />
-    <meta name="twitter:image" content="https://gcbf.com.ph${post.coverphoto}" />
   `;
   
   // Insert meta tags before the closing </head> tag
-  const modifiedHtml = html.replace('</head>', `${metaTags}</head>` );
+  const modifiedHtml = cleanedHtml.replace('</head>', `${metaTags}</head>` );
   
   return new Response(modifiedHtml, {
     headers: {
       'Content-Type': 'text/html;charset=UTF-8',
     },
   });
+}
+
+function cleanHeadMeta(html) {
+  return html
+    .replace(/<title>[\s\S]*?<\/title>/gi, '')
+    .replace(/<meta\s+(?:property|name)="(?:og:[^"']*|twitter:[^"']*|description)"[^>]*>\s*/gi, '')
+    .replace(/<link rel="canonical"[^>]*>\s*/gi, '');
 }
