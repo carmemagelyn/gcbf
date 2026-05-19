@@ -86,7 +86,7 @@ useHead({
   <div class="newsletter-wrapper">
 
     <!-- Meta -->
-    <small class="text-muted d-block mb-2 text-center meta-date text-uppercase letter-spacing-1">
+    <small class="text-muted d-block mb-4 text-center meta-date text-uppercase letter-spacing-1">
       {{ post.date }}
     </small>
 
@@ -94,6 +94,10 @@ useHead({
     <h1 class="newsletter-title text-center">
       {{ post.title }}
     </h1>
+
+    <h5 class="text-center mb-5" style="font-size: 1.25rem; font-weight: 500;">
+      {{ post.excerpt }}
+    </h5>
 
     <!-- Featured Image -->
     <img
@@ -230,7 +234,7 @@ useHead({
   font-size: 2.4rem;
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 2rem;
+  margin-bottom: .5rem;
   color: #1a1a1a;
   letter-spacing: -1px;
   

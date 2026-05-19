@@ -34,8 +34,6 @@ export const newsletter = [
         content1: `
             <article class="newsletter-article">
 
-            <p class="subtitle"><strong>RESET: 37th Annual Summer Youth Camp</strong></p>
-
         <section>
             <p>
             Last April 30 to May 01, 2026, youths from different churches gathered at Barangay Talacuan, Leon, Iloilo City for the 37th Annual Summer Youth Camp hosted by Lighthouse Baptist Church. Carrying the theme, RESET: Finding Balance in this Digital World. The camp served as a meaningful opportunity for the youth to step away from the distractions of everyday life and refocus their hearts on God.

@@ -58,6 +58,13 @@ const closeNavbar = () => {
               Newsletters
             </router-link>
           </li>
+          <li class="nav-item">
+            
+             <a class="nav-link" href="https://gcbf-night-class.app.clientclub.net/" target="_blank" rel="noopener noreferrer">
+                Night Class
+              </a>
+            
+          </li>
 
         </ul>
       </div>
@@ -125,6 +132,9 @@ const closeNavbar = () => {
   .nav-link {
     font-size: 1rem;
     padding: 0.85rem 1rem;
+  }
+  .nav-link a{
+  color: #FBF9D1;
   }
 }
 </style>
