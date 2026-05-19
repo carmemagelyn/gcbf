@@ -58,6 +58,7 @@ const closeNavbar = () => {
               Newsletters
             </router-link>
           </li>
+          <!--
           <li class="nav-item">
             
              <a class="nav-link" href="https://gcbf-night-class.app.clientclub.net/" target="_blank" rel="noopener noreferrer">
@@ -65,7 +66,7 @@ const closeNavbar = () => {
               </a>
             
           </li>
-
+-->
         </ul>
       </div>
 
