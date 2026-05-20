@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 // Import views
 import HomeView from '../views/HomeView.vue'
-import NewsletterView from '../views/NewsletterView.vue'
-import NewsletterSingleView from '../views/NewsletterSingleView.vue'
+import CategoryView from '../views/CategoryView.vue'
+import CategorySingleView from '../views/CategorySingleView.vue'
 
 const routes = [
   {
@@ -14,12 +14,26 @@ const routes = [
   {
     path: '/newsletter',
     name: 'Newsletter',
-    component: NewsletterView,
+    component: CategoryView,
+    meta: { contentType: 'newsletter' }
   },
   {
     path: '/newsletter/:slug',
     name: 'NewsletterSingle',
-    component: NewsletterSingleView,
+    component: CategorySingleView,
+    meta: { contentType: 'newsletter' }
+  },
+  {
+    path: '/articles',
+    name: 'Articles',
+    component: CategoryView,
+    meta: { contentType: 'article' }
+  },
+  {
+    path: '/articles/:slug',
+    name: 'ArticleSingle',
+    component: CategorySingleView,
+    meta: { contentType: 'article' }
   },
 ]
 

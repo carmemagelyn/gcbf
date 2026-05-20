@@ -1,4 +1,4 @@
-import { newsletter } from '../../src/data/newsletter.js';
+import { newsletter } from '../../src/data/category.js';
 
 export async function onRequest(context) {
   const { request, env, params } = context;
@@ -10,8 +10,20 @@ export async function onRequest(context) {
   // Fetch the original index.html
   const url = new URL(request.url);
   const indexUrl = new URL('/index.html', url.origin);
-  const response = await env.page_assets.fetch(new Request(indexUrl));
-  
+  let response;
+  try {
+    response = await fetchFromAssets(env, new Request(indexUrl));
+  } catch (e) {
+    console.error('Error fetching index.html from assets:', e);
+    // Fallback: try global fetch to the index URL
+    try {
+      response = await fetch(indexUrl);
+    } catch (err) {
+      console.error('Global fetch fallback failed for', indexUrl, err);
+      return new Response('Error loading page', { status: 500 });
+    }
+  }
+
   if (!post) {
     return response; // Return normal page if not found
   }
@@ -52,6 +64,26 @@ export async function onRequest(context) {
       'Content-Type': 'text/html;charset=UTF-8',
     },
   });
+}
+
+// Safe asset fetch helper for Pages Functions
+async function fetchFromAssets(env, request) {
+  try {
+    if (env) {
+      if (env.page_assets && typeof env.page_assets.fetch === 'function') {
+        return await env.page_assets.fetch(request);
+      }
+      if (env.ASSETS && typeof env.ASSETS.fetch === 'function') {
+        return await env.ASSETS.fetch(request);
+      }
+    }
+
+    console.warn('No assets binding available on env; falling back to global fetch for', request.url);
+    return await fetch(request);
+  } catch (e) {
+    console.error('fetchFromAssets error for', request.url, e);
+    throw e;
+  }
 }
 
 function cleanHeadMeta(html) {

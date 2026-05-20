@@ -1,15 +1,31 @@
 <script setup>
 import { computed } from 'vue'
-import { newsletter } from '../data/newsletter'
+import { useRoute } from 'vue-router'
+import { newsletter } from '../data/category'
 
-const posts = computed(() => newsletter)
+const route = useRoute()
+
+const contentType = computed(() => route.meta.contentType || 'newsletter')
+
+const posts = computed(() =>
+  newsletter.filter(item => item.type === contentType.value)
+)
+
+const titleLabel = computed(() =>
+  contentType.value === 'article' ? 'Articles' : 'Newsletters'
+)
 
 </script>
 
 <template>
   <div class="container py-5 mt-5">
+    <h2 class="mb-4 fw-bold">{{ titleLabel }}</h2>
 
-    <div class="row g-4">
+    <div v-if="posts.length === 0" class="text-center py-5">
+      <p class="text-muted">No {{ titleLabel.toLowerCase() }} available yet.</p>
+    </div>
+
+    <div v-else class="row g-4">
 
       <div
         v-for="post in posts"
@@ -18,7 +34,7 @@ const posts = computed(() => newsletter)
       >
 
         <router-link
-      :to="`/newsletter/${post.slug}`"
+      :to="`${post.type === 'article' ? '/articles' : '/newsletter'}/${post.slug}`"
       class="text-decoration-none"
     >
 
@@ -27,7 +43,7 @@ const posts = computed(() => newsletter)
         <div class="position-relative mb-3">
 
           <div class="newsletter-badge">
-            Newsletter
+            {{ post.type === 'article' ? 'Article' : 'Newsletter' }}
           </div>
 
           <img

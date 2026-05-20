@@ -1,4 +1,4 @@
-import { newsletter } from './src/data/newsletter.js';
+import { newsletter } from './src/data/category.js';
 
 export default {
   async fetch(request, env, ctx) {
@@ -11,7 +11,7 @@ export default {
     if (/\.[a-zA-Z0-9]+$/.test(pathname)) {
       console.log('Serving static file');
       try {
-        return await env.ASSETS.fetch(request);
+        return await fetchFromAssets(env, request);
       } catch (e) {
         return new Response('Not found', { status: 404 });
       }
@@ -31,7 +31,7 @@ export default {
           console.log('Injecting meta tags for:', newsletterItem.title);
           
           // Get base HTML
-          const baseHtml = await getIndexHtml(env);
+          const baseHtml = await getIndexHtml(env, url.origin);
           console.log('Base HTML length:', baseHtml.length);
           
           // Inject Open Graph meta tags
@@ -51,7 +51,7 @@ export default {
     console.log('Serving index.html');
     try {
       const indexRequest = new Request(new URL('/index.html', url.origin));
-      return await env.ASSETS.fetch(indexRequest);
+      return await fetchFromAssets(env, indexRequest);
     } catch (e) {
       console.error('Index fetch error:', e);
       return new Response('Error loading page', { status: 500 });
@@ -61,11 +61,29 @@ export default {
 
 async function getIndexHtml(env) {
   try {
-    const response = await env.ASSETS.fetch(new Request(new URL('/index.html', 'https://example.com' )));
+    // Use the provided origin to build an absolute URL when falling back to fetch
+    const origin = arguments.length > 1 ? arguments[1] : 'https://example.com';
+    const response = await fetchFromAssets(env, new Request(new URL('/index.html', origin)));
     return await response.text();
   } catch (e) {
     console.error('getIndexHtml error:', e);
     return '';
+  }
+}
+
+// Safe asset fetch helper: prefer env.ASSETS.fetch, fall back to global fetch
+async function fetchFromAssets(env, request) {
+  try {
+    if (env && env.ASSETS && typeof env.ASSETS.fetch === 'function') {
+      return await env.ASSETS.fetch(request);
+    }
+
+    // Fallback: try to fetch the resource from the network
+    console.warn('env.ASSETS not available — falling back to global fetch for', request.url);
+    return await fetch(request);
+  } catch (e) {
+    console.error('fetchFromAssets error for', request.url, e);
+    throw e;
   }
 }
 

@@ -60,6 +60,65 @@ npm run deploy
 
 ---
 
+## Adding a newsletter item or route
+
+### Add a newsletter item
+1. Open `src/data/category.js` and add a new object with:
+   - `slug`
+   - `title`
+   - `excerpt`
+   - `date`
+   - `author`
+   - `coverphoto`
+   - `body`
+2. Store any related images or PDFs in `public/newsletter/` or another publicly available path.
+3. Use absolute URLs in `coverphoto` when needed, or keep relative paths and convert them in the Pages Function.
+4. Preview locally with:
+
+```bash
+npm run dev
+```
+
+Visit `/#/newsletter/<slug>` in the browser.
+
+### Add a route or view
+1. Edit `src/router/index.js` and add a route entry for the new path.
+2. Create or update `src/views/CategorySingleView.vue` (or the matching view component) to load the newsletter data and render the page.
+3. Ensure the route uses the same `slug` format as the newsletter data.
+
+### Ensure server-side metadata works
+
+For Open Graph and `<head>` tags on newsletter pages, keep `functions/newsletter/[slug].js`:
+- It reads `params.slug`
+- Fetches `index.html` from Pages assets
+- Injects OG/meta tags for the newsletter item
+
+Your function should safely fetch assets via `env.page_assets` or `env.ASSETS` and fallback to `fetch()` if needed.
+
+### What to deploy
+
+1. `src/data/category.js` changes
+2. Any new static assets under `public/newsletter/`
+3. Route/view changes in `src/router/index.js` and `src/views/`
+4. Updated server-side metadata function in `functions/newsletter/[slug].js`
+5. `wrangler.toml` and any Pages configuration updates if the project name or build settings change
+
+### Deploy steps
+
+```bash
+npm ci
+npm run build
+npx wrangler pages deploy dist --project-name=gcbf-church-portal --branch main
+```
+
+If you are using the npm alias:
+
+```bash
+npm run deploy
+```
+
+---
+
 ## Alternative hosts (brief)
 
 - Netlify: set build command `npm run build`, publish directory `dist`
@@ -93,8 +152,8 @@ npm run build
 ---
 
 ## Quick references
-
-- Deploy command: `npx wrangler pages deploy dist --project-name=gcbf-church-portal --branch main`
+npx wrangler pages deploy dist --project-name=gcbf-church-portal --branch main
+- Deploy command: ``
 - npm alias: `npm run deploy` (calls the command above)
 - Configuration: `wrangler.toml` should contain `name = "gcbf-church-portal"` and `pages_build_output_dir = "dist"`
 

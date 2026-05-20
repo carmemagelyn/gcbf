@@ -64,7 +64,7 @@
   >
 
     <router-link
-      :to="`/newsletter/${post.slug}`"
+      :to="`${post.type === 'article' ? '/articles' : '/newsletter'}/${post.slug}`"
       class="text-decoration-none"
     >
 
@@ -73,7 +73,7 @@
         <div class="position-relative mb-3">
 
           <div class="newsletter-badge">
-            Newsletter
+            {{ post.type === 'article' ? 'Article' : 'Newsletter' }}
           </div>
 
           <img
@@ -226,7 +226,7 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { isAuthenticated } from '../utils/auth'
-import { newsletter } from '@/data/newsletter'
+import { newsletter } from '@/data/category'
 
 
 
