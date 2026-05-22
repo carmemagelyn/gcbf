@@ -1,6 +1,6 @@
 
 export const newsletter = [
-  
+  /*
         {
        id: 1,
     slug: 'from-unprofitabel-to-profitable',
@@ -232,7 +232,7 @@ export const newsletter = [
         `
 
         },
-       /*
+       
         {
      id: 2,
     slug: 'let-go-and-let-god',
