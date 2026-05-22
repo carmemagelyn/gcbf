@@ -3,7 +3,7 @@ export const newsletter = [
   
         {
        id: 1,
-    slug: 'from-unprofitabel-to-profitable',
+    slug: 'from-unprofitable-to-profitable',
 
     title: 'From Unprofitable to Profitable',
 
