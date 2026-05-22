@@ -15,7 +15,7 @@ export const newsletter = [
 
     authorImage: '/newsletter/author/john-louie-berdejo.jpg',
 
-    coverphoto: '/newsletter/message/GCBF banner.jpg',
+    coverphoto: '/newsletter/message/01_profitable.jpg',
     
     video:'https://www.youtube.com/embed/-OTfGBWoxuA?si=K0DZ8mUA3iumJneb',
 
@@ -27,12 +27,9 @@ export const newsletter = [
       title: 'From Unprofitable to Profitable',
       description: 'The Life of Onesimus',
       image:
-        '/newsletter/message/GCBF banner.jpg',
+        '/newsletter/message/01_profitable.jpg',
     },
   
-
-
-
         content1: `
        <article>
 
@@ -41,7 +38,7 @@ export const newsletter = [
     </i></p>
 
     <p><i>
-    Text: Philemon 1:10–14
+    Text: Philemon 1:10-14
     <br>10 I beseech thee for my son Onesimus, whom I have begotten in my bonds:
     <br>11 Which in time past was to thee unprofitable, but now profitable to thee and to me:
     <br>12 Whom I have sent again: thou therefore receive him, that is, mine own bowels:
@@ -75,7 +72,7 @@ export const newsletter = [
     <h4>I. Change in Life’s Habit</h4>
 
     <p><i>
-    Philemon 1:10–11
+    Philemon 1:10-11
     <br>“Which in time past was to thee unprofitable, but now profitable to thee and to me.”
     </i></p>
 
@@ -93,9 +90,9 @@ export const newsletter = [
 
     <p>
     What a remarkable change:
-    <br>From unprofitable → profitable
-    <br>From runaway slave → faithful brother
-    <br>From burden → blessing
+    <br>From unprofitable to profitable
+    <br>From runaway slave to faithful brother
+    <br>From burden to blessing
     </p>
 
     <p>
@@ -350,7 +347,7 @@ export const newsletter = [
       image:
         '/newsletter/01_reset/reset-37th-annual-summer-youth-camp-2026.jpg',
     },
-    caption:'Photo courtesy of Lighthouse Baptist Church — Talacu-an, Leon, Iloilo',
+    caption:'Photo courtesy of Lighthouse Baptist Church - Talacu-an, Leon, Iloilo',
     image1: '/newsletter/01_reset/intro.jpg',
     image2: '/newsletter/01_reset/altar.jpg',
     image3: '/newsletter/01_reset/pastors.jpg',
@@ -395,7 +392,7 @@ export const newsletter = [
 
             <span style="color:#9A3F3F;"><i>
             "As an introvert... basi hindi ko introvert? HAHAHA pag cheers and yells, puro lang ko bi yells HAHAHA worth it ang paos kay ka-sadya gid! Bitin-bitin, next time ulit please!"
-            <br>— Anonymous GCBF Youth Member
+            <br>- Anonymous GCBF Youth Member
             </i></span>
         </section>
             </article>
@@ -455,14 +452,14 @@ export const newsletter = [
             <p><i>
             “One of my favorite parts of the youth camp was the sessions because I learned so much. Not only about God, but also about my daily life. I was reminded about the importance of managing my screen time and using my time wisely in a way that honors Him.”
             </i></p>
-            <p><strong>— Bea Clacio</strong></p>
+            <p><strong>- Bea Clacio</strong></p>
         <br>
         
             <p><i>
             “One of the most meaningful moments for me was during Pastor White’s preaching when he invited us to come forward. At first, I hesitated because I was shy and didn’t want attention. But after holding back several times, I felt God speaking to my heart and reminding me to let go of the things of the world and return to Him. 
             <p>When I finally stepped forward, it felt as though God welcomed me back with open arms. Even though I had turned away before, I still felt His love, grace, and acceptance.”
             </i></p>
-            <p><strong>— Joshua Rosado</strong></p>
+            <p><strong>- Joshua Rosado</strong></p>
             <br>
         </section>
 
@@ -473,7 +470,7 @@ export const newsletter = [
             “My favorite moment during our youth camp was praying with Pastor White alongside all the souls who found their identity in Christ. In that moment, I felt God's presence so closely-an overwhelming certainty that He heard every solemn whisper of praise, repentance, petition, and yielding my broken heart and contrite spirit according to His will, I was overjoyed of being reminded that He saved me by grace through faith, all because of the love expressed in death, burial and resurrection of Jesus Christ.”
             </i></p>
 
-            <p><strong>— Kian Ray Legarda</strong></p>
+            <p><strong>- Kian Ray Legarda</strong></p>
         </section>
         <br>
         <section>
@@ -483,7 +480,7 @@ export const newsletter = [
             “My hope is that first, for those who have not trusted Jesus as their Lord and Savior is for them to make a decision to trust Him. Next, make Him the Lord of your life. The world has distracted us with things that perish but God wants us to live for Him, Love Him, and serve Him for the rest of our lives. I hope that the camp has ignited our hearts to let Him be the Lord of our life.”
             </i></p>
 
-            <p><strong>— Pastor John Louie Berdejo</strong></p>
+            <p><strong>- Pastor John Louie Berdejo</strong></p>
         </section>
         <br>
         <section>
