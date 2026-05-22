@@ -20,6 +20,10 @@ const coverImageUrl = computed(() => {
   return post.value?.coverphoto ? `https://gcbf.com.ph${post.value.coverphoto}` : null
 })
 
+const isMessage = computed(() =>
+  post.value?.type?.toLowerCase().trim() === 'message'
+)
+
 const metaTags = computed(() => {
   const tags = [
     {
@@ -100,12 +104,34 @@ useHead({
 </script>
 
 <template>
-  <div v-if="post" class="container py-5 mt-4">
+  <div v-if="post" class="container">
 
   <div class="newsletter-wrapper">
 
+        <!-- Video (ONLY message) -->
+  <div
+    v-if="post.video && post.type === 'message'"
+    class="newsletter-video"
+  >
+    <iframe
+      :src="post.video"
+      class="newsletter-video-frame"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+
+    <!-- OPTIONAL: caption also for video -->
+    <p
+      v-if="captionText"
+      class="text-muted d-block text-left mt-2"
+      style="font-size: .75rem; opacity: 0.85;"
+    >
+      {{ captionText }}
+    </p>
+  </div>
+
     <!-- Meta -->
-    <small class="text-muted d-block mb-4 text-center meta-date text-uppercase letter-spacing-1">
+    <small class="text-muted d-block mb-4 mt-4 text-center meta-date text-uppercase letter-spacing-1">
       {{ post.date }}
     </small>
 
@@ -116,17 +142,31 @@ useHead({
 
     
 
-    <!-- Featured Image -->
-    <div v-if="post.coverphoto" class="newsletter-featured-image">
-      <img
-        :src="post.coverphoto"
-        class="newsletter-image"
-        :alt="post.title"
-      >
-      <p v-if="captionText" class="text-muted d-block text-left mt-0" style="font-size: .75rem; opacity: 0.85;">
-        {{ captionText }}
-      </p>
-    </div>
+<!-- MEDIA SECTION -->
+<div>
+
+  <!-- Featured Image (ONLY non-message) -->
+  <div
+    v-if="post.coverphoto && post.type !== 'message'"
+    class="newsletter-featured-image "
+  >
+    <img
+      :src="post.coverphoto"
+      class="newsletter-image"
+      :alt="post.title"
+    >
+
+    <p
+      v-if="captionText"
+      class="text-muted d-block text-left mt-0"
+      style="font-size: .75rem; opacity: 0.85;"
+    >
+      {{ captionText }}
+    </p>
+  </div>
+
+
+</div>
 
     <!-- Author -->
     <div class="newsletter-author">
@@ -140,9 +180,9 @@ useHead({
 </div>
 
       <div>
-        <small class="text-muted d-block author-label" style="font-size: .7rem; opacity: 0.85;">
-          Written by
-        </small>
+ <small class="text-muted d-block author-label" style="font-size: .7rem; opacity: 0.85;">
+  {{ isMessage ? 'Message by' : 'Written by' }}
+</small>
 
         <small class="fw-semibold d-block mb-0" style="font-size: .75rem;opacity: 0.65">
           {{ post.author }}
@@ -243,7 +283,7 @@ useHead({
 .newsletter-wrapper {
   max-width: 860px;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 1rem;
 }
 
 /* DATE */
@@ -354,6 +394,34 @@ useHead({
   transition: transform 0.25s ease;
 }
 
+.newsletter-video {
+  background: #000;
+  
+  /* full-width black background */
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.newsletter-video iframe {
+  width: 100%;
+  max-width: 900px;
+
+  aspect-ratio: 16 / 9;
+  height: auto;
+
+  border: none;
+  display: block;
+}
+
+
 
 /* mobile */
 @media (max-width: 768px) {
@@ -369,7 +437,7 @@ useHead({
 /* MOBILE */
 @media (max-width: 768px) {
   .newsletter-wrapper {
-    padding: 0 0.75rem;
+    padding:  0rem;
   }
 
   .newsletter-title {

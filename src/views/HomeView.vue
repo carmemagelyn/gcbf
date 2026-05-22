@@ -64,7 +64,7 @@
   >
 
     <router-link
-      :to="`${post.type === 'article' ? '/articles' : '/newsletter'}/${post.slug}`"
+      :to="`${post.type === 'article' ? '/articles' : post.type === 'message' ? '/messages' : '/newsletter'}/${post.slug}`"
       class="text-decoration-none"
     >
 
@@ -72,8 +72,8 @@
 
         <div class="position-relative mb-3">
 
-          <div class="newsletter-badge">
-            {{ post.type === 'article' ? 'Article' : 'Newsletter' }}
+          <div :class="post.type === 'message' ? 'message-badge' : 'newsletter-badge'">
+            {{ post.type === 'article' ? 'Article' : post.type === 'message' ? 'Message' : 'Newsletter' }}
           </div>
 
           <img
@@ -532,6 +532,20 @@ footer a:hover {
   top: 12px;
   left: 12px;
   background: #537D5D;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.message-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #9A3F3F;
   color: white;
   font-size: 0.7rem;
   font-weight: 600;

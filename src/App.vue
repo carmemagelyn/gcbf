@@ -82,7 +82,7 @@ body {
 }
 
 main {
-  padding-top: 50px; /* Account for fixed navbar */
+  padding-top: 60px; /* Account for fixed navbar */
   margin-top: 0;
 }
 

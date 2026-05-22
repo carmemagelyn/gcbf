@@ -47,17 +47,6 @@ const closeNavbar = () => {
         id="navbarNav"
       >
         <ul class="navbar-nav ms-auto">
-
-          <li class="nav-item">
-            <router-link
-              class="nav-link"
-              to="/newsletter"
-              active-class="active"
-              @click="closeNavbar"
-            >
-              Newsletters
-            </router-link>
-          </li>
           <!--
           <li class="nav-item">
             <router-link
@@ -69,7 +58,32 @@ const closeNavbar = () => {
               Articles
             </router-link>
           </li>
-        -->
+          -->
+          <li class="nav-item">
+            <router-link
+              class="nav-link"
+              to="/newsletter"
+              active-class="active"
+              @click="closeNavbar"
+            >
+              Newsletters
+            </router-link>
+          </li>
+         
+          <li class="nav-item">
+            <router-link
+              class="nav-link"
+              to="/messages"
+              active-class="active"
+              @click="closeNavbar"
+            >
+              Messages
+            </router-link>
+          </li>
+   
+   
+          
+   
           <!--
           <li class="nav-item">
             
@@ -104,15 +118,16 @@ const closeNavbar = () => {
   font-size: 0.96rem;
   letter-spacing: 0.3px;
   transition: all 0.25s ease;
-  padding: 8px 14px;
+  padding: 5px;
   border-radius: 8px;
   text-decoration: none;
+  margin: 5px;
 }
 
 /* Hover */
 .nav-link:hover {
+  text-decoration: underline rgba(255, 255, 255, 0.88) 2px;
   color: #FBF9D1;
-  background-color: rgba(255, 255, 255, 0.08);
 }
 
 /* Active */
@@ -137,14 +152,15 @@ const closeNavbar = () => {
   }
 .navbar-logo {
   height: 40px;
-  width: 250px;
+  width: 300px;
   object-fit: contain;
 }
  
 
   .nav-link {
     font-size: 1rem;
-    padding: 0.85rem 1rem;
+    padding: 5px;
+
   }
   .nav-link a{
   color: #FBF9D1;

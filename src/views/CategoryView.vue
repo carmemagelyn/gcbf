@@ -11,9 +11,17 @@ const posts = computed(() =>
   newsletter.filter(item => item.type === contentType.value)
 )
 
-const titleLabel = computed(() =>
-  contentType.value === 'article' ? 'Articles' : 'Newsletters'
-)
+const titleLabel = computed(() => {
+  if (contentType.value === 'article') return 'Articles'
+  if (contentType.value === 'message') return 'Messages'
+  return 'Newsletters'
+})
+
+const routeBase = computed(() => {
+  if (contentType.value === 'article') return '/articles'
+  if (contentType.value === 'message') return '/messages'
+  return '/newsletter'
+})
 
 </script>
 
@@ -34,7 +42,7 @@ const titleLabel = computed(() =>
       >
 
         <router-link
-      :to="`${post.type === 'article' ? '/articles' : '/newsletter'}/${post.slug}`"
+      :to="`${routeBase}/${post.slug}`"
       class="text-decoration-none"
     >
 
@@ -42,8 +50,8 @@ const titleLabel = computed(() =>
 
         <div class="position-relative mb-3">
 
-          <div class="newsletter-badge">
-            {{ post.type === 'article' ? 'Article' : 'Newsletter' }}
+          <div :class="post.type === 'message' ? 'message-badge' : 'newsletter-badge'">
+            {{ post.type === 'article' ? 'Article' : post.type === 'message' ? 'Message' : 'Newsletter' }}
           </div>
 
           <img
@@ -112,6 +120,20 @@ const titleLabel = computed(() =>
   top: 12px;
   left: 12px;
   background: #537D5D;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.message-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #9A3F3F;
   color: white;
   font-size: 0.7rem;
   font-weight: 600;

@@ -35,6 +35,18 @@ const routes = [
     component: CategorySingleView,
     meta: { contentType: 'article' }
   },
+  {
+    path: '/messages',
+    name: 'Messages',
+    component: CategoryView,
+    meta: { contentType: 'message' }
+  },
+  {
+    path: '/messages/:slug',
+    name: 'MessageSingle',
+    component: CategorySingleView,
+    meta: { contentType: 'message' }
+  },
 ]
 
 const router = createRouter({

@@ -1,7 +1,333 @@
 
 export const newsletter = [
-  {
-     id: 1,
+  
+        {
+       id: 1,
+    slug: 'from-unprofitabel-to-profitable',
+
+    title: 'From Unprofitable to Profitable',
+
+    excerpt: 'The Life of Onesimus',
+
+    date: 'May 22, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/GCBF banner.jpg',
+    
+    video:'https://www.youtube.com/embed/-OTfGBWoxuA?si=K0DZ8mUA3iumJneb',
+
+    caption:'Youth Community | May 21, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'From Unprofitable to Profitable',
+      description: 'The Life of Onesimus',
+      image:
+        '/newsletter/message/GCBF banner.jpg',
+    },
+  
+
+
+
+        content1: `
+       <article>
+
+    <p style="color:#9A3F3F;"><i>
+    Theme Verse: "If a man therefore purge himself from these, he shall be a vessel unto honour, sanctified, and meet for the master's use, and prepared unto every good work." - 2 Timothy 2:21
+    </i></p>
+
+    <p><i>
+    Text: Philemon 1:10–14
+    <br>10 I beseech thee for my son Onesimus, whom I have begotten in my bonds:
+    <br>11 Which in time past was to thee unprofitable, but now profitable to thee and to me:
+    <br>12 Whom I have sent again: thou therefore receive him, that is, mine own bowels:
+    <br>13 Whom I would have retained with me, that in thy stead he might have ministered unto me in the bonds of the gospel:
+    <br>14 But without thy mind would I do nothing; that thy benefit should not be as it were of necessity, but willingly.
+    </i></p>
+
+    <h3 style="color:#9A3F3F;">From Unprofitable to Profitable</h3>
+    <br>
+    <h4>Introduction</h4>
+
+    <p>
+    The message centers on the life of Onesimus, a man who may not be widely known in the Bible, yet whose life is a powerful testimony of God’s transforming grace. The story is found in Philemon 1:10–14, where the Apostle Paul writes a personal letter to Philemon concerning Onesimus, a runaway slave.
+    </p>
+
+    <p>
+    During that time, slavery was socially acceptable, and slaves were considered property. Onesimus had run away from his master, Philemon, possibly after causing trouble or committing an offence against him. Instead of being useful, he had become “unprofitable.” Yet God had another plan for his life.
+    </p>
+
+    <p>
+    When Onesimus encountered the Apostle Paul in Rome and heard the gospel, his life was radically changed. Through Christ, the man who was once useless became useful again.
+    </p>
+
+    <p>
+    This message emphasizes the transforming power of the gospel in three areas:
+    <br>1. Change in Life’s Habit
+    <br>2. Change in Life’s Agenda
+    <br>3. Change in Confidence
+    </p>
+    <br>
+    <h4>I. Change in Life’s Habit</h4>
+
+    <p><i>
+    Philemon 1:10–11
+    <br>“Which in time past was to thee unprofitable, but now profitable to thee and to me.”
+    </i></p>
+
+    <p>
+    The first evidence of the gospel’s power is a changed life. Onesimus used to be unprofitable. Instead of helping Philemon, he became a burden and eventually ran away. But after meeting Christ through the ministry of Paul, his life changed completely.
+    </p>
+
+    <p>
+    Paul personally witnessed this transformation. In fact, in Colossians 4:9, Paul described Onesimus as:
+    </p>
+
+    <p style="color:#9A3F3F;"><strong>
+    “A faithful and beloved brother.”
+    </strong></p>
+
+    <p>
+    What a remarkable change:
+    <br>From unprofitable → profitable
+    <br>From runaway slave → faithful brother
+    <br>From burden → blessing
+    </p>
+
+    <p>
+    The gospel changed his habits, conduct, and testimony. Many people today feel hopeless because of their past sins, failures, or mistakes. But the life of Onesimus reminds us that God can transform anyone through Jesus Christ.
+    </p>
+
+    <p>
+    Sometimes we may not preach loudly with our words, but our changed life becomes a testimony to others. The people around Onesimus saw the evidence of God’s work in him. The gospel truly changes lives.
+    </p>
+    <br>
+    <h4>II. Change in Life’s Agenda</h4>
+
+    <p><i>
+    Philemon 1:10
+    <br>“I beseech thee for my son Onesimus, whom I have begotten in my bonds.”
+    </i></p>
+
+    <p>
+    Before meeting Christ, Onesimus lived according to his own desires. He ran away from his responsibilities and sought freedom on his own terms. But after salvation, his direction changed.
+    </p>
+
+    <p>
+    Instead of continuing to run away, Onesimus became willing to return to Philemon and reconcile with him. Even though returning as a servant would have been difficult and humiliating, he chose to obey God’s will.
+    </p>
+
+    <p><i>
+    Ephesians 6:5
+    <br>“Servants, be obedient to them that are your masters according to the flesh, with fear and trembling, in singleness of your heart, as unto Christ;”
+    </i></p>
+
+    <p>
+    God’s agenda for Onesimus was not escape, but obedience. As Christians, we are not saved merely to fulfil our personal ambitions. We are saved to live according to God’s purpose.
+    </p>
+
+    <p>
+    The question is:
+    <br>Whose agenda are we living for?
+    <br>Our own desires?
+    <br>Or God’s will?
+    </p>
+
+    <p>
+    The Apostle Paul experienced this same transformation on the road to Damascus.
+    </p>
+
+    <p><i>
+    Acts 22:7–8
+    <br>“And I fell unto the ground, and heard a voice saying unto me, Saul, Saul, why persecutest thou me?
+    <br>And I answered, Who art thou, Lord? And he said unto me, I am Jesus of Nazareth, whom thou persecutest.”
+    </i></p>
+
+    <p>
+    Paul encountered Jesus personally, and from that moment onward, his life was no longer about himself but about Christ.
+    </p>
+
+    <p><i>
+    Philippians 1:21
+    <br>“For to me to live is Christ, and to die is gain.”
+    </i></p>
+
+    <p>
+    This should also be our desire:
+    <br>To live for Christ
+    <br>To serve Him
+    <br>To glorify Him above our own ambitions
+    </p>
+
+    <p>
+    The gospel not only changes our behavior, it changes our direction in life.
+    </p>
+    <br>
+    <h4>III. Change in Confidence</h4>
+
+    <p>
+    True transformation begins with a personal relationship with Jesus Christ. Everything discussed:changed habits, changed priorities, changed living is meaningless without genuine faith in Christ.
+    </p>
+
+    <p>
+    The confidence of Onesimus was no longer in himself, but in the Saviour who transformed him. The Apostle Paul himself experienced this truth when he encountered Jesus on the road to Damascus. His life changed because he personally met Christ.
+    </p>
+
+    <p>
+    Likewise, every believer must personally trust Jesus Christ as Lord and Saviour.
+    </p>
+
+    <p><i>
+    2 Corinthians 6:2
+    <br>“Behold, now is the accepted time; behold, now is the day of salvation.”
+    </i></p>
+
+    <p>
+    Growing up in a Christian environment does not automatically make someone a Christian. Salvation comes only when a person personally trusts Christ and surrenders their life to Him.
+    </p>
+
+    <p>
+    The gospel has the power to transform lives completely. The speaker shared the testimony of a pastor’s child who once considered himself the “black sheep” of the family. Though he grew up in church, his life did not reflect Christ. Yet when he finally surrendered his life to Jesus, there was a complete transformation, and eventually he entered ministry.
+    </p>
+
+    <p style="color:#9A3F3F;">
+    <strong>This is the power of the gospel.</strong>
+    </p>
+    <br>
+    <h4>Conclusion</h4>
+
+    <p>
+    The life of Onesimus is a testimony that no life is beyond God’s grace.
+    </p>
+
+    <p>
+    He went:
+    <br>From unprofitable to profitable
+    <br>From rebellious to faithful
+    <br>From runaway slave to servant of Christ
+    </p>
+
+    <p>
+    The gospel changes:
+    <br>Our habits
+    <br>Our agenda
+    <br>Our confidence
+    </p>
+
+    <p>
+    As believers, we must remain grounded in the Word of God and not be distracted by the world. The Bible serves as our guide for living a life that honours Christ.
+    </p>
+<br>
+<border style="border-top: 4px solid #9A3F3F; padding-left: 200px; margin-left: 0;">
+    <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+    <p style="color:#9A3F3F;"><i>
+    How has knowing Jesus Christ as your Lord and Personal Saviour change your Habit and Life’s agenda? 
+    </i></p>
+
+<br>
+
+    </article>
+        `
+
+        },
+       /*
+        {
+     id: 2,
+    slug: 'let-go-and-let-god',
+
+    title: 'Let Go and Let God',
+
+    excerpt: '“Be still, and know that I am God.” - Psalm 46:10',
+
+    date: 'May 28, 2026',
+
+    author: 'Christina Angela Devata',
+
+    authorImage: '/newsletter/author/christina-devata.jpg',
+
+    coverphoto: '/newsletter/02_letgo/letgo.jpg',
+
+   
+
+    type: 'article',
+
+    seo: {
+      title: 'Let Go and Let God',
+      description: '“Be still, and know that I am God.” - Psalm 46:10',
+      image:
+        '/newsletter/02_letgo/letgo.jpg',
+    },
+    caption: '',
+
+
+
+        content1: `
+            <article>
+
+            <p>
+            This has been my favorite verse for months now. As someone who overthinks a lot, this verse changed so much of my mindset.</p>
+          
+<br>
+            <p>
+            People always tell me to calm down because I rush everything. I used to think they just had no sense of urgency. But lately, I started asking myself, <span style="color:#9A3F3F;">urgent for what?</span> Why am I panicking so much when God is already here?</p>
+       
+        <br>
+
+            <p>
+            Whenever something happens, I instantly try to fix everything on my own. I create human solutions before I even pray about it. I move before I ask God what He wants me to do. I realized I am a lot like Sarah, Abraham’s wife. She tried to fulfill God’s promise through human effort because waiting felt too hard. And I honestly do the same thing. 
+            </p>
+            <br>
+            <p>But <span style="color: #9A3F3F;"><i><strong>being still does not mean doing nothing.</i></strong></span> It means trusting God enough to stop acting like everything depends only on you.</p>
+
+        <br>
+           <p>
+            To be still is to trust that God is working even when you cannot see it yet. It is believing that His timing is not late. It is knowing that He will provide what you need and shape your life the way it is meant to be shaped. </p>
+    
+        <br>
+            <p>
+            Sometimes we want control because we are scared things will fall apart if we let go. <span style="color: #9A3F3F;"> But God does not need our panic to do His work.</span>  </p>
+<br>
+            <p>
+            There are moments when I want revenge. Moments when I want to defend myself immediately, explain myself, or hurt people back because they hurt me first. But God reminds me that vengeance belongs to Him. His justice is better than anything I could ever create out of anger. His ways are higher, wiser, and without mistake. </p>
+       
+<br>
+    
+            <p>
+            “Be still” is not God telling us to be weak. It is Him telling us to trust Him more than our emotions. So when people insult you, you don’t have to insult them back. When life gets heavy, breathe first then <span style="color: #9A3F3F;">pray before you react</span>. This does not mean becoming a doormat or pretending pain does not exist. You still have responsibilities. You still have to move, work, heal, and grow. But do it with God instead of without Him.</p>
+
+
+        <br>
+            <p>
+            Because sometimes being still looks like crying while praying, obeying even when you’re confused, staying kind when bitterness would be easier. That’s how you can be still.</p>
+
+            <p>
+            I think about Joseph and Job a lot. Both of them suffered deeply yet God never left them. Their stories remind me that silence from God does not mean absence. Delays are not abandonment, and pain is not proof that God stopped caring. </p>
+ <br>
+            <p>
+           
+            So be still.</p>
+       
+        <br>
+
+            <p>
+            Pray even when you are tired. Trust even when it hurts. Keep loving people even after disappointment. Keep following God even when His plans do not make sense yet.</p>
+<br>
+            <p>
+            Because there is a God who sees every hidden tear, every silent prayer, every anxious thought, and every battle nobody else knows about. <span style="color: #9A3F3F;">And in His perfect timing, He will make everything beautiful the way only He can.</span></p>
+
+
+        </article>
+        `
+
+        },
+        */
+{
+     id: 3,
     slug: 'reset-37th-annual-summer-youth-camp-2026',
 
     title: 'RESET: 37th Annual Summer Youth Camp Highlights',
@@ -10,7 +336,7 @@ export const newsletter = [
 
     type: 'newsletter',
 
-    date: 'May 12, 2026',
+    date: 'May 20, 2026',
 
     author: 'Christina Angela Devata',
 
@@ -144,7 +470,7 @@ export const newsletter = [
             <h4>A Message from the Youth Leader</h4>
 
             <p><i>
-            “My favorite moment during our youth camp was praying with Pastor White alongside all the souls who found their identity in Christ. In that moment, I felt God's presence so closely-an overwhelming certainty that He heard every solemn whisper of praise, repentance, petition, and yielding my broken heart and contrite spirit according to His will, I was overjoyed of being reminded that He saved me by grace through faith, all because of the love expressed in death, burial and resurrection of Jesus Christ)”
+            “My favorite moment during our youth camp was praying with Pastor White alongside all the souls who found their identity in Christ. In that moment, I felt God's presence so closely-an overwhelming certainty that He heard every solemn whisper of praise, repentance, petition, and yielding my broken heart and contrite spirit according to His will, I was overjoyed of being reminded that He saved me by grace through faith, all because of the love expressed in death, burial and resurrection of Jesus Christ.”
             </i></p>
 
             <p><strong>— Kian Ray Legarda</strong></p>
@@ -198,93 +524,5 @@ export const newsletter = [
         `
 
         },
-        ]
-        /*
-        {
-     id: 2,
-    slug: 'let-go-and-let-god',
 
-    title: 'Let Go and Let God',
-
-    excerpt: '“Be still, and know that I am God.” - Psalm 46:10',
-
-    date: 'May 28, 2026',
-
-    author: 'Christina Angela Devata',
-
-    authorImage: '/newsletter/author/christina-devata.jpg',
-
-    coverphoto: '/newsletter/02_letgo/letgo.jpg',
-
-    type: 'article',
-
-    seo: {
-      title: 'Let Go and Let God',
-      description: '“Be still, and know that I am God.” - Psalm 46:10',
-      image:
-        '/newsletter/02_letgo/letgo.jpg',
-    },
-    caption: '',
-
-
-
-        content1: `
-            <article>
-
-            <p>
-            This has been my favorite verse for months now. As someone who overthinks a lot, this verse changed so much of my mindset.</p>
-          
-<br>
-            <p>
-            People always tell me to calm down because I rush everything. I used to think they just had no sense of urgency. But lately, I started asking myself, <span style="color:#9A3F3F;">urgent for what?</span> Why am I panicking so much when God is already here?</p>
-       
-        <br>
-
-            <p>
-            Whenever something happens, I instantly try to fix everything on my own. I create human solutions before I even pray about it. I move before I ask God what He wants me to do. I realized I am a lot like Sarah, Abraham’s wife. She tried to fulfill God’s promise through human effort because waiting felt too hard. And I honestly do the same thing. 
-            </p>
-            <br>
-            <p>But <span style="color: #9A3F3F;"><i><strong>being still does not mean doing nothing.</i></strong></span> It means trusting God enough to stop acting like everything depends only on you.</p>
-
-        <br>
-           <p>
-            To be still is to trust that God is working even when you cannot see it yet. It is believing that His timing is not late. It is knowing that He will provide what you need and shape your life the way it is meant to be shaped. </p>
-    
-        <br>
-            <p>
-            Sometimes we want control because we are scared things will fall apart if we let go. <span style="color: #9A3F3F;"> But God does not need our panic to do His work.</span>  </p>
-<br>
-            <p>
-            There are moments when I want revenge. Moments when I want to defend myself immediately, explain myself, or hurt people back because they hurt me first. But God reminds me that vengeance belongs to Him. His justice is better than anything I could ever create out of anger. His ways are higher, wiser, and without mistake. </p>
-       
-<br>
-    
-            <p>
-            “Be still” is not God telling us to be weak. It is Him telling us to trust Him more than our emotions. So when people insult you, you don’t have to insult them back. When life gets heavy, breathe first then <span style="color: #9A3F3F;">pray before you react</span>. This does not mean becoming a doormat or pretending pain does not exist. You still have responsibilities. You still have to move, work, heal, and grow. But do it with God instead of without Him.</p>
-
-
-        <br>
-            <p>
-            Because sometimes being still looks like crying while praying, obeying even when you’re confused, staying kind when bitterness would be easier. That’s how you can be still.</p>
-
-            <p>
-            I think about Joseph and Job a lot. Both of them suffered deeply yet God never left them. Their stories remind me that silence from God does not mean absence. Delays are not abandonment, and pain is not proof that God stopped caring. </p>
- <br>
-            <p>
-           
-            So be still.</p>
-       
-        <br>
-
-            <p>
-            Pray even when you are tired. Trust even when it hurts. Keep loving people even after disappointment. Keep following God even when His plans do not make sense yet.</p>
-<br>
-            <p>
-            Because there is a God who sees every hidden tear, every silent prayer, every anxious thought, and every battle nobody else knows about. <span style="color: #9A3F3F;">And in His perfect timing, He will make everything beautiful the way only He can.</span></p>
-
-
-        </article>
-        `
-
-        },
-        */
+       ]
