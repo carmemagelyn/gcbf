@@ -121,13 +121,7 @@ useHead({
     ></iframe>
 
     <!-- OPTIONAL: caption also for video -->
-    <p
-      v-if="captionText"
-      class="text-muted d-block text-left mt-2"
-      style="font-size: .75rem; opacity: 0.85;"
-    >
-      {{ captionText }}
-    </p>
+ 
   </div>
 
     <!-- Meta -->

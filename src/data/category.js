@@ -1,6 +1,6 @@
 
 export const newsletter = [
-  /*
+  
         {
        id: 1,
     slug: 'from-unprofitabel-to-profitable',
@@ -45,8 +45,6 @@ export const newsletter = [
     <br>13 Whom I would have retained with me, that in thy stead he might have ministered unto me in the bonds of the gospel:
     <br>14 But without thy mind would I do nothing; that thy benefit should not be as it were of necessity, but willingly.
     </i></p>
-
-    <h3 style="color:#9A3F3F;">From Unprofitable to Profitable</h3>
     <br>
     <h4>Introduction</h4>
 
@@ -232,7 +230,7 @@ export const newsletter = [
         `
 
         },
-       
+       /*
         {
      id: 2,
     slug: 'let-go-and-let-god',
