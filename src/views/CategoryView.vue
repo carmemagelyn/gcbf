@@ -3,9 +3,10 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { newsletter } from '../data/category'
 
+
 const route = useRoute()
 
-const contentType = computed(() => route.meta.contentType || 'newsletter')
+const contentType = computed(() => route.meta.contentType || 'newsletter' )
 
 const posts = computed(() =>
   newsletter.filter(item => item.type === contentType.value)
@@ -22,6 +23,7 @@ const routeBase = computed(() => {
   if (contentType.value === 'message') return '/messages'
   return '/newsletter'
 })
+
 
 </script>
 

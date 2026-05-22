@@ -97,7 +97,7 @@ const metaTags = computed(() => {
 })
 
 useHead({
-  title: `${post.value?.title} - GCBF ${post.value?.type === 'article' ? 'Article' : 'Newsletter'}`,
+  title: `${post.value?.title} - ${post.value?.type === 'article' ? 'Article' : post.value?.type === 'newsletter' ? 'Newsletter' : post.value?.type === 'message' ? 'Message' : 'Content'}`,
   meta: metaTags
 })
 

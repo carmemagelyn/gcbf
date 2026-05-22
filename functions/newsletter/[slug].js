@@ -33,7 +33,7 @@ export async function onRequest(context) {
   const cleanedHtml = cleanHeadMeta(html);
   const imageUrl = post.coverphoto.startsWith('/') ? `https://gcbf.com.ph${post.coverphoto}` : post.coverphoto;
   const metaTags = `
-    <title>${post.title} | GCBF</title>
+    <title>${post.title}</title>
     <meta name="description" content="${post.excerpt}" />
     <link rel="canonical" href="${request.url}" />
     <meta property="og:url" content="${request.url}" />

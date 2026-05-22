@@ -104,7 +104,7 @@ function injectMetaTags(html, newsletter, origin) {
   cleaned = cleaned.replace(/<meta\s+(?:property|name)=["'](?:og:|twitter:|description)[^"']*["'][^>]*>/gi, '');
 
   const metaTags = `
-    <title>${newsletter.title} | GCBF</title>
+    <title>${newsletter.title}</title>}
     <meta name="description" content="${escapeHtml(newsletter.excerpt)}" />
     <link rel="canonical" href="${origin}/newsletter/${newsletter.slug}" />
     <meta property="og:url" content="${origin}/newsletter/${newsletter.slug}" />
