@@ -40,6 +40,10 @@ const isNewsletter = computed(() =>
 const coverImageUrl = computed(() => {
   if (!post.value?.coverphoto) return null
 
+  if (post.value.coverphoto.startsWith('http')) {
+    return post.value.coverphoto
+  }
+
   return `https://gcbf.com.ph${post.value.coverphoto}`
 })
 
@@ -215,19 +219,33 @@ useHead({
   <div v-if="post" class="container">
 
     <div class="newsletter-wrapper">
+<!-- MESSAGE COVER PHOTO -->
 
-      <!-- VIDEO (MESSAGE ONLY) -->
-      <div
-        v-if="post.video && isMessage"
-        class="newsletter-video"
-      >
-        <iframe
-          :src="post.video"
-          class="newsletter-video-frame"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-      </div>
+
+      <!-- VIDEO -->
+<div
+  v-if="post.video && isMessage"
+  class="newsletter-video"
+>
+  <div class="video-wrapper">
+
+    <iframe
+      :src="post.video"
+      class="newsletter-video-frame"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+
+    <!-- CAPTION -->
+    <p
+      v-if="captionText"
+      class="video-caption"
+    >
+      {{ captionText }}
+    </p>
+
+  </div>
+</div>
 
       <!-- DATE -->
       <small
@@ -560,16 +578,29 @@ useHead({
   box-sizing: border-box;
 }
 
-.newsletter-video iframe {
+.video-wrapper {
   width: 100%;
   max-width: 900px;
+}
 
+.newsletter-video-frame {
+  width: 100%;
   aspect-ratio: 16 / 9;
 
-  height: auto;
-
-  display: block;
   border: none;
+  display: block;
+}
+
+/* VIDEO CAPTION */
+.video-caption {
+  margin-top: 12px;
+
+  font-size: 0.8rem;
+  line-height: 1.5;
+
+  color: rgba(255,255,255,0.75);
+
+  text-align: left;
 }
 
 /* TABLET + MOBILE */
