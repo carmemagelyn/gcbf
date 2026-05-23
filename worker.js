@@ -18,13 +18,24 @@ export default {
     }
 
     // For newsletter pages, inject meta tags
-    if (pathname.startsWith('/newsletter/')) {
+   const isContentRoute =
+  pathname.startsWith('/newsletter/') ||
+  pathname.startsWith('/article/') ||
+  pathname.startsWith('/message/')
+
+if (isContentRoute) {
       console.log('Newsletter page detected');
       try {
-        const slug = pathname.split('/')[2];
+        const parts = pathname.split('/')
+const category = parts[1]
+const slug = parts[2]
         console.log('Looking for slug:', slug);
         
-        const newsletterItem = newsletter.find(n => n.slug === slug);
+        const newsletterItem = newsletter.find(
+  n =>
+    n.slug === slug &&
+    n.type?.toLowerCase() === category
+)
         console.log('Newsletter found:', !!newsletterItem);
         
         if (newsletterItem) {
