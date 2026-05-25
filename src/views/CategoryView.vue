@@ -52,9 +52,23 @@ const routeBase = computed(() => {
 
         <div class="position-relative mb-3">
 
-          <div :class="post.type === 'message' ? 'message-badge' : 'newsletter-badge'">
-            {{ post.type === 'article' ? 'Article' : post.type === 'message' ? 'Message' : 'Newsletter' }}
-          </div>
+<div
+  :class="
+    post.type === 'message'
+      ? 'message-badge'
+      : post.type === 'article'
+        ? 'article-badge'
+        : 'newsletter-badge'
+  "
+>
+  {{
+    post.type === 'message'
+      ? 'Message'
+      : post.type === 'article'
+        ? 'Article'
+        : 'Newsletter'
+  }}
+</div>
 
           <img
             :src="post.coverphoto"
@@ -121,7 +135,7 @@ const routeBase = computed(() => {
   position: absolute;
   top: 12px;
   left: 12px;
-  background: #537D5D;
+  background: rgba(83, 125, 93, 0.8);
   color: white;
   font-size: 0.7rem;
   font-weight: 600;
@@ -135,7 +149,7 @@ const routeBase = computed(() => {
   position: absolute;
   top: 12px;
   left: 12px;
-  background: #9A3F3F;
+  background: rgba(138, 53, 53, 0.8);
   color: white;
   font-size: 0.7rem;
   font-weight: 600;
@@ -144,7 +158,19 @@ const routeBase = computed(() => {
   z-index: 2;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
-
+.article-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgb(156, 154, 154,.8);
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
 .article-card {
   border: 1px solid #dbdbdb;
   border-radius: 12px;

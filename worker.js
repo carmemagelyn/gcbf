@@ -3,151 +3,248 @@ import { newsletter } from './src/data/category.js';
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
-    const pathname = url.pathname;
+    const pathname = url.pathname.replace(/\/$/, '');
 
     console.log('Request pathname:', pathname);
 
-    // Check if it's a static file (has extension)
-    if (/\.[a-zA-Z0-9]+$/.test(pathname)) {
-      console.log('Serving static file');
-      try {
+    try {
+      // =========================
+      // STATIC FILES
+      // =========================
+      if (/\.[a-zA-Z0-9]+$/.test(pathname)) {
+        console.log('Serving static asset');
         return await fetchFromAssets(env, request);
-      } catch (e) {
-        return new Response('Not found', { status: 404 });
       }
-    }
 
-    // For newsletter pages, inject meta tags
-   const isContentRoute =
-  pathname.startsWith('/newsletter/') ||
-  pathname.startsWith('/article/') ||
-  pathname.startsWith('/message/')
+      // =========================
+      // CONTENT ROUTES
+      // =========================
+      const isContentRoute =
+        pathname.startsWith('/newsletter/') ||
+        pathname.startsWith('/article/') ||
+        pathname.startsWith('/message/');
 
-if (isContentRoute) {
-      console.log('Newsletter page detected');
-      try {
-        const parts = pathname.split('/')
-const category = parts[1]
-const slug = parts[2]
-        console.log('Looking for slug:', slug);
-        
-        const newsletterItem = newsletter.find(
-  n =>
-    n.slug === slug &&
-    n.type?.toLowerCase() === category
-)
-        console.log('Newsletter found:', !!newsletterItem);
-        
-        if (newsletterItem) {
-          console.log('Injecting meta tags for:', newsletterItem.title);
-          
-          // Get base HTML
+      if (isContentRoute) {
+        console.log('Content route detected');
+
+        const parts = pathname.split('/');
+        const category = parts[1];
+        const slug = parts[2];
+
+        console.log('Category:', category);
+        console.log('Slug:', slug);
+
+        const contentItem = newsletter.find(
+          item =>
+            item.slug === slug &&
+            item.type?.toLowerCase() === category
+        );
+
+        console.log('Content found:', !!contentItem);
+
+        if (contentItem) {
           const baseHtml = await getIndexHtml(env, url.origin);
-          console.log('Base HTML length:', baseHtml.length);
-          
-          // Inject Open Graph meta tags
-          const htmlWithMeta = injectMetaTags(baseHtml, newsletterItem, url.origin);
-          console.log('HTML with meta length:', htmlWithMeta.length);
-          
+
+          const htmlWithMeta = injectMetaTags(
+            baseHtml,
+            contentItem,
+            url.origin,
+            category
+          );
+
           return new Response(htmlWithMeta, {
-            headers: { 'Content-Type': 'text/html; charset=utf-8' }
+            headers: {
+              'Content-Type': 'text/html; charset=utf-8',
+              'Cache-Control': 'public, max-age=300'
+            }
           });
         }
-      } catch (e) {
-        console.error('Newsletter fetch error:', e);
       }
-    }
 
-    // For all other routes, serve index.html
-    console.log('Serving index.html');
-    try {
-      const indexRequest = new Request(new URL('/index.html', url.origin));
+      // =========================
+      // SPA FALLBACK
+      // =========================
+      console.log('Serving SPA index.html');
+
+      const indexRequest = new Request(
+        new URL('/index.html', url.origin)
+      );
+
       return await fetchFromAssets(env, indexRequest);
-    } catch (e) {
-      console.error('Index fetch error:', e);
-      return new Response('Error loading page', { status: 500 });
+
+    } catch (error) {
+      console.error('Worker error:', error);
+
+      return new Response('Internal Server Error', {
+        status: 500
+      });
     }
   }
 };
 
-async function getIndexHtml(env) {
+// ======================================
+// GET INDEX HTML
+// ======================================
+
+async function getIndexHtml(env, origin) {
   try {
-    // Use the provided origin to build an absolute URL when falling back to fetch
-    const origin = arguments.length > 1 ? arguments[1] : 'https://example.com';
-    const response = await fetchFromAssets(env, new Request(new URL('/index.html', origin)));
+    const response = await fetchFromAssets(
+      env,
+      new Request(new URL('/index.html', origin))
+    );
+
     return await response.text();
-  } catch (e) {
-    console.error('getIndexHtml error:', e);
+
+  } catch (error) {
+    console.error('getIndexHtml error:', error);
     return '';
   }
 }
 
-// Safe asset fetch helper: prefer env.ASSETS.fetch, fall back to global fetch
+// ======================================
+// ASSET FETCHER
+// ======================================
+
 async function fetchFromAssets(env, request) {
   try {
-    if (env && env.ASSETS && typeof env.ASSETS.fetch === 'function') {
+    // Cloudflare Pages Assets
+    if (env?.ASSETS?.fetch) {
       return await env.ASSETS.fetch(request);
     }
 
-    // Fallback: try to fetch the resource from the network
-    console.warn('env.ASSETS not available — falling back to global fetch for', request.url);
+    // Fallback
+    console.warn(
+      'env.ASSETS unavailable, using fetch fallback:',
+      request.url
+    );
+
     return await fetch(request);
-  } catch (e) {
-    console.error('fetchFromAssets error for', request.url, e);
-    throw e;
+
+  } catch (error) {
+    console.error('fetchFromAssets error:', error);
+    throw error;
   }
 }
+function injectMetaTags(html, content, origin, category) {
 
-function injectMetaTags(html, newsletter, origin) {
-  // Use coverphoto, but convert relative path to full URL if needed
-  let imageUrl = newsletter.coverphoto;
+  // =========================
+  // IMAGE
+  // =========================
+
+  let imageUrl = content.coverphoto || '/default-og.jpg';
+
+  // Convert relative path to absolute URL
   if (imageUrl.startsWith('/')) {
     imageUrl = `${origin}${imageUrl}`;
   }
 
-  // Clean homepage meta tags first
-  let cleaned = html
-    .replace(/<title>[\s\S]*?<\/title>/gi, '')
-    .replace(/<link rel="canonical"[^>]*>/gi, '');
-  
-  // Remove ALL meta tags with property="og:*" or name="og:*" or name="twitter:*" or name="description"
-  cleaned = cleaned.replace(/<meta\s+[^>]*(property|name)=["'](?:og:|twitter:|description)([^"']*?)["'][^>]*>/gi, '');
-  cleaned = cleaned.replace(/<meta\s+(?:property|name)=["'](?:og:|twitter:|description)[^"']*["'][^>]*>/gi, '');
+  // =========================
+  // PAGE URL
+  // =========================
+
+  const pageUrl =
+    `${origin}/${category}/${content.slug}`;
+
+  // =========================
+  // REMOVE EXISTING TAGS
+  // =========================
+
+  let cleaned = html;
+
+  // Remove title
+  cleaned = cleaned.replace(
+    /<title>[\s\S]*?<\/title>/gi,
+    ''
+  );
+
+  // Remove canonical
+  cleaned = cleaned.replace(
+    /<link[^>]*rel=["']canonical["'][^>]*>/gi,
+    ''
+  );
+
+  // Remove ALL OG tags
+  cleaned = cleaned.replace(
+    /<meta[^>]*(property|name)=["']og:[^"']*["'][^>]*>/gi,
+    ''
+  );
+
+  // Remove ALL Twitter tags
+  cleaned = cleaned.replace(
+    /<meta[^>]*(property|name)=["']twitter:[^"']*["'][^>]*>/gi,
+    ''
+  );
+
+  // Remove description tags
+  cleaned = cleaned.replace(
+    /<meta[^>]*name=["']description["'][^>]*>/gi,
+    ''
+  );
+
+  // =========================
+  // NEW META TAGS
+  // =========================
 
   const metaTags = `
-    <title>${newsletter.title}</title>}
-    <meta name="description" content="${escapeHtml(newsletter.excerpt)}" />
-    <link rel="canonical" href="${origin}/newsletter/${newsletter.slug}" />
-    <meta property="og:url" content="${origin}/newsletter/${newsletter.slug}" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="${escapeHtml(newsletter.title)}" />
-    <meta property="og:description" content="${escapeHtml(newsletter.excerpt)}" />
-    <meta property="og:image" content="${imageUrl}" />
-    <meta property="og:image:secure_url" content="${imageUrl}" />
-    <meta property="og:image:alt" content="${escapeHtml(newsletter.title)}" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="article:published_time" content="${newsletter.date}" />
-    <meta property="article:author" content="${escapeHtml(newsletter.author)}" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="${escapeHtml(newsletter.title)}" />
-    <meta name="twitter:description" content="${escapeHtml(newsletter.excerpt)}" />
-    <meta name="twitter:image" content="${imageUrl}" />
-    <meta name="twitter:image:src" content="${imageUrl}" />
-    <meta name="twitter:image:alt" content="${escapeHtml(newsletter.title)}" />
+    <title>${escapeHtml(content.title)}</title>
+
+    <meta name="description"
+      content="${escapeHtml(content.excerpt)}" />
+
+    <link rel="canonical"
+      href="${pageUrl}" />
+
+    <!-- Open Graph -->
+    <meta property="og:type"
+      content="article" />
+
+    <meta property="og:url"
+      content="${pageUrl}" />
+
+    <meta property="og:title"
+      content="${escapeHtml(content.title)}" />
+
+    <meta property="og:description"
+      content="${escapeHtml(content.excerpt)}" />
+
+    <meta property="og:image"
+      content="${imageUrl}" />
+
+    <meta property="og:image:secure_url"
+      content="${imageUrl}" />
+
+    <meta property="og:image:alt"
+      content="${escapeHtml(content.title)}" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card"
+      content="summary_large_image" />
+
+    <meta name="twitter:title"
+      content="${escapeHtml(content.title)}" />
+
+    <meta name="twitter:description"
+      content="${escapeHtml(content.excerpt)}" />
+
+    <meta name="twitter:image"
+      content="${imageUrl}" />
   `;
-  
-  console.log('Meta tags to inject:', metaTags);
-  
-  const result = cleaned.replace('</head>', metaTags + '</head>');
-  console.log('Replacement successful:', result.includes(newsletter.title));
-  
-  return result;
+
+  // =========================
+  // INSERT INTO HEAD
+  // =========================
+
+  return cleaned.replace(
+    '</head>',
+    `${metaTags}\n</head>`
+  );
 }
 
+// ======================================
+// HELPERS
+// ======================================
 
-function escapeHtml(text) {
+function escapeHtml(text = '') {
   const map = {
     '&': '&amp;',
     '<': '&lt;',
@@ -155,5 +252,17 @@ function escapeHtml(text) {
     '"': '&quot;',
     "'": '&#039;'
   };
-  return text.replace(/[&<>"']/g, m => map[m]);
+
+  return String(text).replace(
+    /[&<>"']/g,
+    m => map[m]
+  );
+}
+
+function formatDate(dateString) {
+  try {
+    return new Date(dateString).toISOString();
+  } catch {
+    return new Date().toISOString();
+  }
 }

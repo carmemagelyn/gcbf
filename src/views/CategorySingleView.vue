@@ -216,7 +216,7 @@ useHead({
 </script>
 
 <template>
-  <div v-if="post" class="container">
+  <div v-if="post" class="container mt-5 mb-5">
 
     <div class="newsletter-wrapper">
 <!-- MESSAGE COVER PHOTO -->
@@ -567,7 +567,7 @@ useHead({
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 
-  padding: 40px 20px;
+  padding: 40px 20px 20px 20px;
 
   background: #000;
 

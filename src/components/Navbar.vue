@@ -47,7 +47,7 @@ const closeNavbar = () => {
         id="navbarNav"
       >
         <ul class="navbar-nav ms-auto">
-          <!--
+      
           <li class="nav-item">
             <router-link
               class="nav-link"
@@ -58,7 +58,7 @@ const closeNavbar = () => {
               Articles
             </router-link>
           </li>
-          -->
+   
           <li class="nav-item">
             <router-link
               class="nav-link"

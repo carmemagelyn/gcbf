@@ -1,8 +1,442 @@
 
 export const newsletter = [
+/*
+    {
+     id: 5,
+    slug: 'everything-changed-for-the-better',
+
+    title: 'Everything Changed for the Better',
+
+    excerpt: 'A Testimony of Faith',
+
+    date: 'May 26, 2026',
+
+    author: 'Julianna Ysabel Duya',
+
+    authorImage: '/newsletter/author/julianna-duya.jpg',
+
+    coverphoto: '/newsletter/02_letgo/better.jpg',
+
+   
+
+    type: 'article',
+
+    seo: {
+      title: 'Everything Changed for the Better',
+      description: 'A Testimony of Faith',
+      image:
+        '/newsletter/02_letgo/better.jpg',
+    },
+    caption: '',
+
+
+
+        content1: `
+            <article>
+
+            <p>
+            Before I met God, I had a lot of bad habits
+and actions like lusting, envy, and pride, and
+my life was so messed up. I was depressed
+due to academic problems and my
+insecurities, and I almost took my own life
+one time. I felt like nobody cared for me. I
+didn’t have someone to open up to, and the
+words that echoed through my head made it
+even worse.</p>
+          
+
+            <p>
+            When I first came to the church, I felt like
+the burdens on my shoulders got lifted. I felt
+like all my sorrows went away. I felt so
+relieved and comforted when I was able to
+open up without anyone judging me there.
+And I realized a lot of things, especially
+when I came to the youth camp, especially
+when I heard Pastor White’s preaching. I
+realized that all this time, I’ve been so
+ungrateful, and I kept complaining because I
+thought nobody cared for me when Christ is
+literally by my side despite all my bad habits
+and despite all the times that I broke my
+promise and turned my back against Him.</p>
+       
+
+
+            <p>
+            And now, look at me. I no longer judge
+other people. I no longer think negatively. I
+no longer get affected by what people say
+about me. I don’t feel envy toward other people’s success. I stopped lusting, and most
+importantly, I was renewed, and I
+acknowledged God’s presence. I accepted
+Him as my Lord and Savior, not because I
+have to, but because I wanted to.
+            </p>
+
+
+        </article>
+        `
+
+        },
+     */
+        
+        {
+       id: 4,
+    slug: 'god-ultimate-plan-for-the-church',
+
+    title: 'God’s Ultimate Plan',
+
+    excerpt: 'For The Church',
+
+    date: 'May 24, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/02_church.jpg',
+    
+    video:'https://www.youtube.com/embed/SadvPpMhAMc?si=iptRIbxU2NdIC9Dn',
+
+    caption:'Worship Service | May 24, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'God’s Ultimate Plan',
+      description: 'For The Church',
+      image:
+        '/newsletter/message/02_church.jpg',
+    },
+  
+        content1: `
+      <article>
+
+        <p style="color:#9A3F3F;"><i>
+        Text: Ephesians 4:10-13
+        <br>10 He that descended is the same also that ascended up far above all heavens, that he might fill all things.)
+        <br>11 And he gave some, apostles; and some, prophets; and some, evangelists; and some, pastors and teachers;
+        <br>12 For the perfecting of the saints, for the work of the ministry, for the edifying of the body of Christ:
+        <br>13 Till we all come in the unity of the faith, and of the knowledge of the Son of God, unto a perfect man, unto the measure of the stature of the fulness of Christ:
+        </i></p>
+
+        <br>
+
+        <h4>Introduction</h4>
+
+        <p>
+        A few Sundays ago, we talked about giving, but this morning, from the book of Ephesians, we are going to talk about the church and its importance in the life of every believer.
+        </p>
+
+        <p>
+        A lot of times, when people hear the word “church,” they immediately think about a building. However, according to the Bible, the church is not the building. The church is the people who trusted Jesus Christ as their personal Savior.
+        </p>
+
+        <p>
+        The Bible teaches that God gave apostles, prophets, evangelists, pastors, and teachers for the perfecting of the saints, for the work of the ministry, and for the edifying of the body of Christ.
+        </p>
+
+        <p>
+        God has an ultimate plan for every believer, and He uses the church to accomplish His purpose in our lives.
+        </p>
+
+        <p>
+        The question this morning is this:
+        <br>How does God use the church to accomplish His purpose in every believer?
+        </p>
+
+        <p><i>
+        1 Corinthians 1:2
+        <br>“Unto the church of God which is at Corinth, to them that are sanctified in Christ Jesus, called to be saints.”
+        </i></p>
+
+        <p>
+        The church refers to believers, those who are sanctified in Christ Jesus.
+        </p>
+
+        <p>
+        The saints in the Bible are not religious statues or figures. Saints are people who placed their faith in Jesus Christ for salvation.
+        </p>
+
+        <p style="color:#9A3F3F;"><strong>
+        “The church is not the building. The church is the people.”
+        </strong></p>
+
+        <p>
+        God’s desire for every believer is:
+        <br>To know Him more
+        <br>To grow spiritually
+        <br>To walk pleasing before Him
+        </p>
+
+        <p>
+        God uses the church to help believers grow in their relationship with Christ.
+        </p>
+
+        <br>
+
+        <h4>I. The Church Exists for Sanctification or Edification</h4>
+
+        <p><i>
+        Ephesians 4:12
+        <br>“For the perfecting of the saints, for the work of the ministry, for the edifying of the body of Christ.”
+        </i></p>
+
+        <p>
+        One of God’s purposes for the church is edification, building believers up spiritually.
+        </p>
+
+        <p>
+        God gave pastors, teachers, and spiritual leaders to guide believers toward spiritual maturity.
+        </p>
+
+        <p>
+        The church should not tear people down. Instead, it should encourage, strengthen, and comfort believers.
+        </p>
+
+        <p><i>
+        1 Thessalonians 5:11
+        <br>“Wherefore comfort yourselves together, and edify one another.”
+        </i></p>
+
+        <p>
+        This is why fellowship and small groups are important. Through fellowship, believers encourage one another and remain faithful in their walk with God.
+        </p>
+
+        <p style="color:#9A3F3F;"><strong>
+        “The whole point of the church is to build us up spiritually.”
+        </strong></p>
+
+        <br>
+
+        <h4>II. The Church Exists for Equipping</h4>
+
+        <p><i>
+        Ephesians 4:2
+        <br>“With all lowliness and meekness, with longsuffering, forbearing one another in love.”
+        </i></p>
+
+        <p>
+        As the church grows, challenges and misunderstandings may come. However, God commands believers to be patient and loving toward one another.
+        </p>
+
+        <p>
+        Sometimes God uses difficult people in our lives to teach us patience, humility, and love.
+        </p>
+
+        <p><i>
+        1 John 4:20
+        <br>“If a man say, I love God, and hateth his brother, he is a liar.”
+        </i></p>
+
+        <p>
+        The church should reflect the love of Christ. People often see Christ through the way believers treat one another.
+        </p>
+
+        <p>
+        Christians are called to:
+        <br>Encourage one another
+        <br>Comfort one another
+        <br>Build one another up spiritually
+        </p>
+
+        <br>
+
+        <h4>III. The Church Exists for Extending</h4>
+
+        <p><i>
+        Ephesians 4:13
+        <br>“Till we all come in the unity of the faith, and of the knowledge of the Son of God, unto a perfect man, unto the measure of the stature of the fulness of Christ.”
+        </i></p>
+
+        <p>
+        One of the goals of Christianity is for believers to become more like Jesus Christ.
+        </p>
+
+        <p>
+        Spiritual growth does not happen in isolation. There is no self-made Christian.
+        </p>
+
+        <p>
+        God uses the church to equip believers for the ministry and calling He has prepared for them.
+        </p>
+
+        <p><i>
+        2 Timothy 3:16-17
+        <br>“All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness:
+        <br>That the man of God may be perfect, throughly furnished unto all good works.”
+        </i></p>
+
+        <p>
+        Through the preaching and teaching of God’s Word, believers are strengthened, equipped, and prepared spiritually.
+        </p>
+
+        <p style="color:#9A3F3F;"><strong>
+        “There is no self-made Christian.”
+        </strong></p>
+
+
+        <p><i>
+        Ephesians 4:14
+        <br>“That we henceforth be no more children, tossed to and fro, and carried about with every wind of doctrine.”
+        </i></p>
+
+        <p>
+        Today, believers are exposed to many teachings and influences through the internet and the world.
+        </p>
+
+        <p>
+        However, just because a speaker is charismatic or popular does not mean that he teaches the truth.
+        </p>
+
+        <p>
+        The church helps believers remain grounded in the Word of God and gives discernment against false teachings.
+        </p>
+
+        <p>
+        Accountability is also important in the Christian life. Many believers fall into temptation because they isolate themselves and neglect prayer, fellowship, and accountability.
+        </p>
+
+        <p>
+        This is why small groups and accountability relationships are important within the church.
+        </p>
+
+        <p style="color:#9A3F3F;"><strong>
+        “The church helps believers remain faithful and spiritually grounded.”
+        </strong></p>
+
+        <br>
+
+        <h4>Conclusion</h4>
+
+        <p>
+        God established the church for the spiritual growth of believers.
+        </p>
+
+        <p>
+        Through the church, God:
+        <br>Edifies believers
+        <br>Equips believers
+        <br>Strengthens believers in truth
+        </p>
+
+        <p>
+        The church is not simply a building, it is God’s people growing together in Christ.
+        </p>
+
+        <p>
+        As believers, we are encouraged to remain faithful in church involvement, fellowship, and accountability so that we may continue growing spiritually and becoming more like Jesus Christ.
+        </p>
+
+        <br>
+
+<border style="border-top: 4px solid #9A3F3F; padding-left: 200px; margin-left: 0;">
+    <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+        <p style="color:#9A3F3F;"><i>
+        As we know the role of church in our spiritual life, how are we going to respond to its significance in our Christian life?
+        </i></p>
+
+
+        <br>
+
+        </article>
+        `
+
+        },
+        {
+     id: 3,
+    slug: 'let-go-and-let-god',
+
+    title: 'Let Go and Let God',
+
+    excerpt: '“Be still, and know that I am God.” - Psalm 46:10',
+
+    date: 'May 24, 2026',
+
+    author: 'Christina Angela Devata',
+
+    authorImage: '/newsletter/author/christina-devata.jpg',
+
+    coverphoto: '/newsletter/02_letgo/letgo.jpg',
+
+   
+
+    type: 'article',
+
+    seo: {
+      title: 'Let Go and Let God',
+      description: '“Be still, and know that I am God.” - Psalm 46:10',
+      image:
+        '/newsletter/02_letgo/letgo.jpg',
+    },
+    caption: '',
+
+
+
+        content1: `
+            <article>
+
+            <p>
+            This has been my favorite verse for months now. As someone who overthinks a lot, this verse changed so much of my mindset.</p>
+          
+
+            <p>
+            People always tell me to calm down because I rush everything. I used to think they just had no sense of urgency. But lately, I started asking myself, <span style="color:#9A3F3F;"><strong>urgent for what?</strong></span> Why am I panicking so much when God is already here?</p>
+       
+
+
+            <p>
+            Whenever something happens, I instantly try to fix everything on my own. I create human solutions before I even pray about it. I move before I ask God what He wants me to do. I realized I am a lot like Sarah, Abraham’s wife. She tried to fulfill God’s promise through human effort because waiting felt too hard. And I honestly do the same thing. 
+            </p>
+
+            <p>But <span style="color: #9A3F3F;"><i><strong>being still does not mean doing nothing.</i></strong></span> It means trusting God enough to stop acting like everything depends only on you.</p>
+
+
+           <p>
+            To be still is to trust that God is working even when you cannot see it yet. It is believing that His timing is not late. It is knowing that He will provide what you need and shape your life the way it is meant to be shaped. </p>
+    
+
+            <p>
+            Sometimes we want control because we are scared things will fall apart if we let go. <span style="color: #9A3F3F;"> <strong>But God does not need our panic to do His work.</strong></span>  </p>
+
+            <p>
+            There are moments when I want revenge. Moments when I want to defend myself immediately, explain myself, or hurt people back because they hurt me first. But God reminds me that vengeance belongs to Him. His justice is better than anything I could ever create out of anger. His ways are higher, wiser, and without mistake. </p>
+       
+
+    
+            <p>
+            “Be still” is not God telling us to be weak. It is Him telling us to trust Him more than our emotions. So when people insult you, you don’t have to insult them back. When life gets heavy, breathe first then <span style="color: #9A3F3F;"><strong>pray before you react</strong></span>. This does not mean becoming a doormat or pretending pain does not exist. You still have responsibilities. You still have to move, work, heal, and grow. But do it with God instead of without Him.</p>
+
+
+            <p>
+            Because sometimes being still looks like crying while praying, obeying even when you’re confused, staying kind when bitterness would be easier. That’s how you can be still.</p>
+
+            <p>
+            I think about Joseph and Job a lot. Both of them suffered deeply yet God never left them. Their stories remind me that silence from God does not mean absence. Delays are not abandonment, and pain is not proof that God stopped caring. </p>
+
+            <p>
+           
+            So be still.</p>
+       
+
+
+            <p>
+            Pray even when you are tired. Trust even when it hurts. Keep loving people even after disappointment. Keep following God even when His plans do not make sense yet.</p>
+
+            <p>
+            Because there is a God who sees every hidden tear, every silent prayer, every anxious thought, and every battle nobody else knows about. <span style="color: #9A3F3F;"><strong>And in His perfect timing, He will make everything beautiful the way only He can.</strong></span></p>
+
+
+        </article>
+        `
+
+        },
   
         {
-       id: 1,
+       id: 2,
     slug: 'from-unprofitable-to-profitable',
 
     title: 'From Unprofitable to Profitable',
@@ -230,99 +664,11 @@ export const newsletter = [
         `
 
         },
-       /*
-        {
-     id: 2,
-    slug: 'let-go-and-let-god',
-
-    title: 'Let Go and Let God',
-
-    excerpt: '“Be still, and know that I am God.” - Psalm 46:10',
-
-    date: 'May 28, 2026',
-
-    author: 'Christina Angela Devata',
-
-    authorImage: '/newsletter/author/christina-devata.jpg',
-
-    coverphoto: '/newsletter/02_letgo/letgo.jpg',
-
-   
-
-    type: 'article',
-
-    seo: {
-      title: 'Let Go and Let God',
-      description: '“Be still, and know that I am God.” - Psalm 46:10',
-      image:
-        '/newsletter/02_letgo/letgo.jpg',
-    },
-    caption: '',
-
-
-
-        content1: `
-            <article>
-
-            <p>
-            This has been my favorite verse for months now. As someone who overthinks a lot, this verse changed so much of my mindset.</p>
-          
-<br>
-            <p>
-            People always tell me to calm down because I rush everything. I used to think they just had no sense of urgency. But lately, I started asking myself, <span style="color:#9A3F3F;">urgent for what?</span> Why am I panicking so much when God is already here?</p>
-       
-        <br>
-
-            <p>
-            Whenever something happens, I instantly try to fix everything on my own. I create human solutions before I even pray about it. I move before I ask God what He wants me to do. I realized I am a lot like Sarah, Abraham’s wife. She tried to fulfill God’s promise through human effort because waiting felt too hard. And I honestly do the same thing. 
-            </p>
-            <br>
-            <p>But <span style="color: #9A3F3F;"><i><strong>being still does not mean doing nothing.</i></strong></span> It means trusting God enough to stop acting like everything depends only on you.</p>
-
-        <br>
-           <p>
-            To be still is to trust that God is working even when you cannot see it yet. It is believing that His timing is not late. It is knowing that He will provide what you need and shape your life the way it is meant to be shaped. </p>
-    
-        <br>
-            <p>
-            Sometimes we want control because we are scared things will fall apart if we let go. <span style="color: #9A3F3F;"> But God does not need our panic to do His work.</span>  </p>
-<br>
-            <p>
-            There are moments when I want revenge. Moments when I want to defend myself immediately, explain myself, or hurt people back because they hurt me first. But God reminds me that vengeance belongs to Him. His justice is better than anything I could ever create out of anger. His ways are higher, wiser, and without mistake. </p>
-       
-<br>
-    
-            <p>
-            “Be still” is not God telling us to be weak. It is Him telling us to trust Him more than our emotions. So when people insult you, you don’t have to insult them back. When life gets heavy, breathe first then <span style="color: #9A3F3F;">pray before you react</span>. This does not mean becoming a doormat or pretending pain does not exist. You still have responsibilities. You still have to move, work, heal, and grow. But do it with God instead of without Him.</p>
-
-
-        <br>
-            <p>
-            Because sometimes being still looks like crying while praying, obeying even when you’re confused, staying kind when bitterness would be easier. That’s how you can be still.</p>
-
-            <p>
-            I think about Joseph and Job a lot. Both of them suffered deeply yet God never left them. Their stories remind me that silence from God does not mean absence. Delays are not abandonment, and pain is not proof that God stopped caring. </p>
- <br>
-            <p>
-           
-            So be still.</p>
-       
-        <br>
-
-            <p>
-            Pray even when you are tired. Trust even when it hurts. Keep loving people even after disappointment. Keep following God even when His plans do not make sense yet.</p>
-<br>
-            <p>
-            Because there is a God who sees every hidden tear, every silent prayer, every anxious thought, and every battle nobody else knows about. <span style="color: #9A3F3F;">And in His perfect timing, He will make everything beautiful the way only He can.</span></p>
-
-
-        </article>
-        `
-
-        },
-        */
+      
+        
+      
 {
-     id: 3,
+     id: 1,
     slug: 'reset-37th-annual-summer-youth-camp-2026',
 
     title: 'RESET: 37th Annual Summer Youth Camp Highlights',
