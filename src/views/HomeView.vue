@@ -52,88 +52,111 @@
 
   
     <section id="services" class="py-5">
-      <div class="container">
-  
-      <div class="row g-4">
+  <div class="container">
+
+    <!-- FEATURED POST -->
+    <!-- FEATURED POST -->
+<div class="row g-4 mb-5">
 
   <div
-   v-for="post in latestNews"
-
+    v-for="post in latestNews.slice(0, 1)"
     :key="post.slug"
-    class="col-12 col-sm-6 col-md-3"
+    class="col-12"
   >
 
     <router-link
-      :to="`${post.type === 'article' ? '/articles' : post.type === 'message' ? '/messages' : '/newsletter'}/${post.slug}`"
+      :to="`${post.type === 'article'
+        ? '/articles'
+        : post.type === 'message'
+          ? '/messages'
+          : '/newsletter'
+      }/${post.slug}`"
       class="text-decoration-none"
     >
 
-      <div class="article-card p-3 h-100 d-flex flex-column">
+      <div class="article-card featured-card p-3 overflow-hidden">
 
-        <div class="position-relative mb-3">
+        <div class="row align-items-center g-4">
 
-<div
-  :class="
-    post.type === 'message'
-      ? 'message-badge'
-      : post.type === 'article'
-        ? 'article-badge'
-        : 'newsletter-badge'
-  "
->
-  {{
-    post.type === 'message'
-      ? 'Message'
-      : post.type === 'article'
-        ? 'Article'
-        : 'Newsletter'
-  }}
-</div>
+          <!-- IMAGE -->
+          <div class="col-lg-7">
 
-          <img
-            :src="post.coverphoto"
-            class="img-fluid rounded w-100"
-            :alt="post.title"
-            style="height: 220px; object-fit: cover;"
-          >
+            <div class="position-relative">
 
-        </div>
+              <div
+                :class="
+                  post.type === 'message'
+                    ? 'message-badge'
+                    : post.type === 'article'
+                      ? 'article-badge'
+                      : 'newsletter-badge'
+                "
+                style="font-size: .95rem; padding: 10px 20px;"
+              >
+                {{
+                  post.type === 'message'
+                    ? 'Message'
+                    : post.type === 'article'
+                      ? 'Article'
+                      : 'Newsletter'
+                }}
+              </div>
 
-        <h6 class="mb-1 text-dark fw-bold">
-          {{ post.title }}
-        </h6>
+              <img
+                :src="post.coverphoto"
+                class="img-fluid rounded w-100 featured-image"
+                :alt="post.title"
+              >
 
-        <small
-          class="text-muted d-block mb-2"
-          style="font-size: .7rem; text-transform: uppercase; letter-spacing: 1px;"
-        >
-          {{ post.date }}
-        </small>
+            </div>
 
-        <p
-          class="text-muted mb-0"
-          style="font-size: .75rem;"
-        >
-          {{ post.excerpt }}
-        </p>
+          </div>
 
-        <div
-          class="newsletter-author d-flex align-items-center mt-auto pt-4"
-        >
-<div class="author-img">
-  <img
-    :src="post.authorImage"
-    :alt="post.author"
-    class="author-photo"
-  >
-</div>
+          <!-- CONTENT -->
+          <div class="col-lg-5">
 
-          <small
-            class="text-muted mb-0 ps-2"
-            style="font-size: .75rem;"
-          >
-            {{ post.author }}
-          </small>
+            <small
+              class="text-muted d-block mb-3"
+              style="font-size: .75rem; text-transform: uppercase; letter-spacing: 1px;"
+            >
+              {{ post.date }}
+            </small>
+
+            <h2
+              class="text-dark fw-bold mb-3"
+              style="line-height: 1.2;"
+            >
+              {{ post.title }}
+            </h2>
+
+            <p
+              class="text-muted mb-4"
+              style="font-size: .95rem; line-height: 1.8;"
+            >
+              {{ post.excerpt }}
+            </p>
+
+            <div class="newsletter-author d-flex align-items-center">
+
+              <div class="author-img">
+                <img
+                  :src="post.authorImage"
+                  :alt="post.author"
+                  class="author-photo"
+                >
+              </div>
+
+              <small
+                class="text-muted mb-0 ps-2"
+                style="font-size: .85rem;"
+              >
+                {{ post.author }}
+              </small>
+
+            </div>
+
+          </div>
+
         </div>
 
       </div>
@@ -144,10 +167,198 @@
 
 </div>
 
-      
+    <!-- SECOND ROW -->
+    <div class="row g-4 mb-4">
+
+      <div
+        v-for="post in latestNews.slice(1, 3)"
+        :key="post.slug"
+        class="col-12 col-md-6"
+      >
+
+        <router-link
+          :to="`${post.type === 'article'
+            ? '/articles'
+            : post.type === 'message'
+              ? '/messages'
+              : '/newsletter'
+          }/${post.slug}`"
+          class="text-decoration-none"
+        >
+
+          <div class="article-card p-3 h-100 d-flex flex-column">
+
+            <div class="position-relative mb-3">
+
+              <div
+                :class="
+                  post.type === 'message'
+                    ? 'message-badge'
+                    : post.type === 'article'
+                      ? 'article-badge'
+                      : 'newsletter-badge'
+                "
+              >
+                {{
+                  post.type === 'message'
+                    ? 'Message'
+                    : post.type === 'article'
+                      ? 'Article'
+                      : 'Newsletter'
+                }}
+              </div>
+
+              <img
+                :src="post.coverphoto"
+                class="img-fluid rounded w-100"
+                :alt="post.title"
+                style="height: 300px; object-fit: cover;"
+              >
+
+            </div>
+
+            <small
+              class="text-muted d-block mb-2"
+              style="font-size: .7rem; text-transform: uppercase; letter-spacing: 1px;"
+            >
+              {{ post.date }}
+            </small>
+
+            <h5 class="mb-2 text-dark fw-bold">
+              {{ post.title }}
+            </h5>
+
+            <p
+              class="text-muted mb-0"
+              style="font-size: .8rem;"
+            >
+              {{ post.excerpt }}
+            </p>
+
+            <div
+              class="newsletter-author d-flex align-items-center mt-auto pt-4"
+            >
+              <div class="author-img">
+                <img
+                  :src="post.authorImage"
+                  :alt="post.author"
+                  class="author-photo"
+                >
+              </div>
+
+              <small
+                class="text-muted mb-0 ps-2"
+                style="font-size: .8rem;"
+              >
+                {{ post.author }}
+              </small>
+            </div>
+
+          </div>
+
+        </router-link>
 
       </div>
-    </section>
+
+    </div>
+
+    <!-- THIRD ROW -->
+    <div class="row g-4">
+
+      <div
+        v-for="post in latestNews.slice(3, 7)"
+        :key="post.slug"
+        class="col-12 col-sm-6 col-md-3"
+      >
+
+        <router-link
+          :to="`${post.type === 'article'
+            ? '/articles'
+            : post.type === 'message'
+              ? '/messages'
+              : '/newsletter'
+          }/${post.slug}`"
+          class="text-decoration-none"
+        >
+
+          <div class="article-card p-3 h-100 d-flex flex-column">
+
+            <div class="position-relative mb-3">
+
+              <div
+                :class="
+                  post.type === 'message'
+                    ? 'message-badge'
+                    : post.type === 'article'
+                      ? 'article-badge'
+                      : 'newsletter-badge'
+                "
+              >
+                {{
+                  post.type === 'message'
+                    ? 'Message'
+                    : post.type === 'article'
+                      ? 'Article'
+                      : 'Newsletter'
+                }}
+              </div>
+
+              <img
+                :src="post.coverphoto"
+                class="img-fluid rounded w-100"
+                :alt="post.title"
+                style="height: 220px; object-fit: cover;"
+              >
+
+            </div>
+
+            <small
+              class="text-muted d-block mb-2"
+              style="font-size: .7rem; text-transform: uppercase; letter-spacing: 1px;"
+            >
+              {{ post.date }}
+            </small>
+
+            <h6 class="mb-2 text-dark fw-bold">
+              {{ post.title }}
+            </h6>
+
+            <p
+              class="text-muted mb-0"
+              style="font-size: .75rem;"
+            >
+              {{ post.excerpt }}
+            </p>
+
+            <div
+              class="newsletter-author d-flex align-items-center mt-auto pt-4"
+            >
+              <div class="author-img">
+                <img
+                  :src="post.authorImage"
+                  :alt="post.author"
+                  class="author-photo"
+                >
+              </div>
+
+              <small
+                class="text-muted mb-0 ps-2"
+                style="font-size: .75rem;"
+              >
+                {{ post.author }}
+              </small>
+            </div>
+
+          </div>
+
+        </router-link>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
     <!--
     <section>
     <div class="container text-center py-5">
@@ -581,5 +792,27 @@ footer a:hover {
   z-index: 2;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
+.featured-image {
+  height: 500px;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
 
+.featured-card:hover .featured-image {
+  transform: scale(1.02);
+}
+
+.featured-card h2 {
+  font-size: 2.2rem;
+}
+
+@media (max-width: 992px) {
+  .featured-image {
+    height: 320px;
+  }
+
+  .featured-card h2 {
+    font-size: 1.5rem;
+  }
+}
 </style>

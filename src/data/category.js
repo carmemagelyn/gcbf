@@ -1,6 +1,344 @@
 
 export const newsletter = [
-/*
+{
+     id: 7,
+    slug: 'why-does-god-allow-evil-to-exist',
+
+    title: 'Why Does God Allow Evil to Exist',
+
+    excerpt: 'An Explanation Through the Parable of the Tares (Matthew 13:24–30)',
+
+    date: 'May 29, 2026',
+
+    author: 'Christina Angela Devata',
+
+    authorImage: '/newsletter/author/christina-devata.jpg',
+
+    coverphoto: '/newsletter/02_letgo/evilexist.jpg',
+
+   
+
+    type: 'article',
+
+    seo: {
+      title: 'Why Does God Allow Evil to Exist',
+      description: 'An Explanation Through the Parable of the Tares (Matthew 13:24–30)',
+      image:
+        '/newsletter/02_letgo/evilexist.jpg',
+    },
+    caption: '',
+
+
+
+        content1: `
+            <article>
+
+            <p><i>
+            “Is God willing to prevent evil, but not able?
+Then He is not omnipotent. Is He able, but
+not willing? Then He is malevolent. Is He
+both able and willing? Then whence cometh
+evil? Is He neither able nor willing? Then
+why call Him God?”<br><span style="text-align:right;display:block;"> — Epicurus, Greek
+Philosopher</span></i></p>
+
+            <p>
+            This is one of the most famous arguments
+ever made against the existence of God.
+Many atheists, skeptics, and even doubting
+Christians have wrestled with this same
+question: if God is truly good, loving, and
+all-powerful, then why does evil still exist?
+Why does He allow suffering, injustice,
+corruption, death, persecution, and
+wickedness to continue in the world?</p>
+
+            <p>
+            At first glance, the argument seems
+reasonable. For if God can stop evil, then
+why does He not destroy it immediately?
+However, Jesus Himself answers this
+question in the <i>parable of the tares.</i>
+            </p>
+
+            <p>
+            This is not merely a human opinion or
+philosophical theory. In <span style="color:#9A3F3F;">Matthew 13:36–43</span>,
+Jesus directly explains the meaning of the parable Himself. Therefore, the
+interpretation is not left to speculation.
+Christ reveals the meaning clearly with His
+own words.</p>
+<p><b>Whoever has ears, let them hear.</b></p>
+            <p>Jesus begins the parable by saying:
+            <br>
+            <span style="color:#9A3F3F;">“The kingdom of heaven is likened
+unto a man which sowed good seed
+in his field:” — Matthew 13:24</span>
+</p>
+<p>Later, Jesus explains the symbolism:
+<br>
+<span style="color:#9A3F3F;">“He that soweth the good seed is the
+Son of man; the field is the world;
+the good seed are the children of the
+kingdom; but the tares are the
+children of the wicked one;”— Matthew 13:37-38</span></p>
+<p>The good seed represents those who belong
+to God, and the field represents the world
+itself. God created the world with goodness
+and purpose. Evil was not part of His
+original design. However, the parable
+continues:
+<br>
+<span style="color:#9A3F3F;">“but while men slept, his enemy
+came and sowed tares among the
+wheat, and went his way.” — Matthew 13:25</span></p>
+<p>Jesus later explains:
+<br>
+<span style="color:#9A3F3F;">“the tares are the children of the
+wicked one; the enemy that sowed
+them is the devil;” — Matthew
+13:38-39</span></p>
+<p>This directly answers the question, “Where
+does evil come from?”</p>
+<p>Evil did not originate from God. Evil
+entered through the enemy. Humanity’s fall
+into sin opened the door for corruption,
+rebellion, suffering, and separation from
+God. The presence of evil in the world is not
+evidence that God created evil as good, but
+evidence that humanity lives in a fallen
+world corrupted by sin.</p>
+<p>But this still leaves the main question
+unanswered. If God sees evil, then why does
+He allow it to remain?</p>
+<p>The servants in the parable ask the same
+thing:
+<br>
+<span style="color:#9A3F3F;">“So the servants of the householder
+came and said unto him, Sir, didst
+not thou sow good seed in thy field?
+from whence then hath it tares?” —
+Matthew 13:27</span></p>
+<p>After the owner explains that an enemy
+caused it, the servants immediately ask:
+<br>
+<span style="color:#9A3F3F;">“Wilt thou then that we go and
+gather them up?” — Matthew 13:28</p>
+<p>In other words, they are asking the same
+thing humanity still asks today: <i>“Why not
+destroy evil right now?”</i></p>
+<p>But the owner responds:
+<br>
+<span style="color:#9A3F3F;">“Nay; lest while ye gather up the
+tares, ye root up also the wheat with
+them. Let both grow together until
+the harvest.” — Matthew 13:29-30</p>
+<p>This is the heart of the parable.</p>
+<p>God delays judgment not because He is
+powerless, and definitely not because He approves of evil, but because His mercy is
+still giving humanity time. The immediate
+destruction of evil would also mean the
+immediate judgment of humanity itself
+because all people have sinned. Humanity
+asks why God does not immediately destroy
+evil, yet forgets that apart from His grace,
+we too stand guilty before a holy God.</p>
+<p>The existence of evil is not proof that God is
+absent. Right now, wheat and tares grow
+together in the same field. Good and evil
+coexist in the same world for a <i>temporary</i>
+period of time.</p>
+<p>Jesus says there will be a harvest.
+<br>
+<span style="color:#9A3F3F;">“The harvest is the end of the world;
+and the reapers are the angels.” —
+Matthew 13:39</span></p>
+<p>This means history is moving toward a final
+judgment. Evil is not being ignored forever.
+God sees every act of wickedness, injustice,
+hidden sin, corruption, and evil done in
+darkness. Nothing escapes His sight. And at
+the appointed time, judgment will come.</p>
+<p>Jesus says:
+<br>
+<span style="color:#9A3F3F;">“The Son of man shall send forth his
+angels, and they shall gather out of
+his kingdom all things that offend,
+and them which do iniquity;” —
+Matthew 13:41</span></p>
+<p>This directly answers Epicurus’ argument.</p>
+<p>Is God able to stop evil? <b>Yes</b>. Christ says
+evil will ultimately be removed completely.</p>
+<p>Is God willing to stop evil? <b>Yes</b>. Christ
+promises a final judgment against all
+wickedness.</p>
+<p>Then why does evil still exist? Because <b>we
+are not yet at the harvest</b>. God is allowing
+time for repentance, salvation, and
+transformation before the final separation
+takes place.</p>
+<p>Many people see God’s patience as
+weakness. But Scripture reveals that His
+patience is <i>mercy</i>. Every moment before the
+harvest is another opportunity for people to
+turn back to Him.</p>
+<p>But the parable also carries a warning.
+Mercy will not continue forever. Jesus says
+that at the end of the age, the tares will be
+gathered and burned, while the righteous
+will shine in the kingdom of their Father.
+This means evil has an expiration date.</p>
+<p>Judgment is coming.</p>
+<p>Whoever has ears, let them hear.</p>
+        </article>
+        `
+
+        },
+        {
+       id: 6,
+    slug: 'purposed driven vessel',
+
+    title: 'Purposed Driven Vessel',
+
+    excerpt: 'Sanctified. Meet. Prepared.',
+
+    date: 'May 29, 2026',
+
+    author: 'Pastor Joseph Tabuena of Faith Baptist Church Cadinglian-Batuan',
+
+    authorImage: '/newsletter/author/joseph-tabuena.jpg',
+
+    coverphoto: '/newsletter/message/yc_vessel.jpg',
+    
+    video:'https://www.youtube.com/embed/FaTVEOeUOvs?si=3nbzD5mVz2aoLGla',
+
+    caption:'Youth Community | May 28, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'Purposed Driven Vessel',
+      description: 'Sanctified. Meet. Prepared.',
+      image:
+        '/newsletter/message/yc_vessel.jpg',
+    },
+  
+        content1: `
+      <article>
+
+      <p style="color:#9A3F3F;"><i>
+    Theme Verse: "If a man therefore purge himself from these, he shall be a vessel unto honour, sanctified, and meet for the master's use, and prepared unto every good work." - 2 Timothy 2:21
+    </i></p>
+
+
+        <p>
+        When we talk about being purpose-driven, we are talking about living intentionally. A purpose-driven life is a way of living where our actions, decisions, and choices are guided by a clear purpose rather than simply chasing momentary happiness or external success. For example, why do people go to college? Most would say it is to get a degree, find a job, or build a career. While those are good goals, some believers pursue education with a greater purpose in mind. There are Christians who become nurses, teachers, engineers, and professionals so they can enter places where missionaries are not allowed. They go there as workers, but their greater purpose is to serve Christ. Their profession becomes a platform for ministry. That is what it means to live purposefully, intentionally aligning our lives, passions, and values with something greater than ourselves. As we look at our text, we find three characteristics of a purpose-driven vessel.
+        </p>
+
+
+        <br>
+
+        <h4>I. Purposed To Be Sanctified</h4>
+
+        <p>
+        The first characteristic is found in the word sanctified. Sanctification means being set apart for God's use. God does not automatically use every vessel; a vessel must first be sanctified. Why must we be sanctified? The answer is found in 1 Thessalonians 4:7:
+       <br><span style="color:#9A3F3F;">“For God hath not called us unto uncleanness, but unto holiness.”</span>
+       
+        <p>
+        This is God's direct call for every believer. We live in a fallen world, not the perfect world God originally created. Sin has corrupted every part of life, making holiness difficult. The Bible even tells us that those who live godly in Christ Jesus shall suffer persecution. Yet despite the pressures around us, God's calling remains unchanged: He has called us to holiness.
+        </p>
+
+        <p>
+        David is a powerful example of what happens when we stop guarding our hearts. Although he was a man after God's own heart, he fell into sin with Bathsheba. The Bible tells us that when kings were supposed to be at battle, David remained in Jerusalem. He was not where he was supposed to be. Often, temptation enters when we neglect our responsibilities. What began as a glance eventually became desire, and desire led to sin. Yet the deeper issue was not merely David's actions, it was his search for satisfaction in the wrong place. Later, in Psalm 51, David cried out,
+        <br><span style="color:#9A3F3F;">“Create in me a clean heart, O God; and renew a right spirit within me.”</span>
+        <p>
+        He realized that his greatest need was not simply forgiveness but a renewed heart.
+        </p>
+
+        <p>
+        The same struggle exists today. We often look for joy in the wrong places. That is why 1 John 2:15–17 warns us,
+        <br><span style="color:#9A3F3F;">“Love not the world, neither the things that are in the world. If any man love the world, the love of the Father is not in him.”</span>
+        <p>
+        The lust of the flesh, the lust of the eyes, and the pride of life all promise satisfaction, but they are temporary. The world offers pleasure, possessions, entertainment, achievements, and recognition, yet all of these eventually pass away. God's purpose, however, remains. A purpose-driven vessel seeks joy in God rather than in the temporary pleasures of this world.
+        </p>
+
+        
+
+        <br>
+
+        <h4>II. Purposed To Be Meet for the Master's Use</h4>
+
+       
+        <p>
+        The second characteristic is that the vessel must be meet for the Master's use. The word meet means fit, suitable, useful, or available. God is not merely looking for talented people; He is looking for people who are available and willing to be used. Moses provides a wonderful example of this truth. Hebrews 11:25 tells us,
+        <br><span style="color:#9A3F3F;">“Choosing rather to suffer affliction with the people of God, than to enjoy the pleasures of sin for a season.”</span>
+        <p>
+        Moses understood that the pleasures of sin are temporary. He could have remained in Egypt and enjoyed comfort, privilege, and power, but he chose God's purpose instead.
+
+        </p>
+
+        <p>
+        In a sense, Moses was saying, "I would rather suffer now and enjoy God's reward forever than enjoy sin now and suffer loss later." The world says, "Enjoy now and suffer later." God says, "Suffer now if necessary and enjoy forevermore." Psalm 16:11 reminds us,
+        <br><span style="color:#9A3F3F;">“Thou wilt shew me the path of life: in thy presence is fulness of joy; at thy right hand there are pleasures for evermore.”</span>
+        <p>
+        A vessel that is fit for the Master's use understands this difference and chooses God's way over temporary satisfaction.
+        </p>
+
+
+        <p>
+        As believers, we are ambassadors for Christ. God has placed us in our homes, schools, workplaces, and communities to represent Him. Sometimes we may be the only Bible that people around us ever read. Our lives communicate a message every day. The question is whether we are representing Christ well. A vessel that is meet for the Master's use intentionally lives for God's glory and makes himself available for God's service.
+        </p>
+
+
+        <br>
+
+        <h4>III. Purposed To Be Prepared</h4>
+
+
+        <p>
+        The third characteristic is that the vessel must be prepared. To be prepared means to be ready: ready to serve, ready to obey, and ready to be used by God. How does God prepare us? Through His Word. Second Timothy 3:16–17 teaches,
+        <br><span style="color:#9A3F3F;">“All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness: That the man of God may be perfect, throughly furnished unto all good works.”</span>
+        <p>
+        that all Scripture is given by inspiration of God and is profitable for doctrine, reproof, correction, and instruction in righteousness so that the man of God may be thoroughly furnished unto all good works. God uses His Word to teach us, correct us, and equip us. We are purified for good works, furnished for good works, and prepared for good works.
+        </p>
+
+        <p>
+        Preparation is not merely about gaining knowledge; it is about being ready when God opens a door for service. The testimony shared about a young lady who came to church because someone simply invited her illustrates this truth. It seemed like a small act, just an invitation but someone obeyed the prompting of the Holy Spirit. That invitation led her to hear the gospel, trust Christ, and become a testimony of God's grace. The person who invited her probably never imagined the impact that one act of obedience would have.
+        </p>
+
+        <p>
+        That is why we should never ignore the leading of the Holy Spirit. Sometimes God prompts us to invite someone to church, share the gospel, or encourage a struggling believer. We may never know how God will use our obedience. One invitation can change a life. One conversation can change a family. One testimony can influence generations. A prepared vessel is a vessel that says, "Lord, whenever You want to use me, I am ready."
+
+        </p>
+
+        
+
+        <br>
+
+        <h4>Conclusion</h4>
+
+        <p>
+        According to 2 Timothy 2:21, a purpose-driven vessel possesses three qualities: it is sanctified, set apart for God; meet for the Master's use: fit, available, and useful; and prepared, equipped and ready for every good work. May God help us become vessels unto honor, sanctified, meet for the Master's use, and prepared unto every good work.
+        </p>
+
+        
+
+        <br>
+
+<border style="border-top: 4px solid #9A3F3F; padding-left: 200px; margin-left: 0;">
+    <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+        <p style="color:#9A3F3F;"><i>
+        Knowing that God has purposed us to be sanctified, fit for the Master's use, and prepared for every good work, how should we respond to His calling so that our lives can truly become purpose-driven vessels for His glory?
+        </i></p>
+
+
+        <br>
+
+        </article>
+        `
+
+        },
     {
      id: 5,
     slug: 'everything-changed-for-the-better',
@@ -74,13 +412,14 @@ acknowledged God’s presence. I accepted
 Him as my Lord and Savior, not because I
 have to, but because I wanted to.
             </p>
+            
 
 
         </article>
         `
 
         },
-     */
+    
         
         {
        id: 4,

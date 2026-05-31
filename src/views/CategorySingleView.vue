@@ -216,7 +216,7 @@ useHead({
 </script>
 
 <template>
-  <div v-if="post" class="container mt-5 mb-5">
+  <div v-if="post" class="container mb-5">
 
     <div class="newsletter-wrapper">
 <!-- MESSAGE COVER PHOTO -->
