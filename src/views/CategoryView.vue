@@ -172,7 +172,7 @@ const routeBase = computed(() => {
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 .article-card {
-  border: 1px solid #dbdbdb;
+  border: 0px solid #dbdbdb;
   border-radius: 12px;
   transition: 0.2s ease;
 }

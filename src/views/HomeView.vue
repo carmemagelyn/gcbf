@@ -741,7 +741,7 @@ footer a:hover {
 }
 
 .article-card {
-  border: 1px solid #dbdbdb;
+  border: 0px solid #dbdbdb;
   border-radius: 12px;
   transition: 0.2s ease;
 }
