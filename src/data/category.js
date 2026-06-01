@@ -196,7 +196,7 @@ This means evil has an expiration date.</p>
         },
         {
        id: 6,
-    slug: 'purposed driven vessel',
+    slug: 'purposed-driven-vessel',
 
     title: 'Purposed Driven Vessel',
 
