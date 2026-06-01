@@ -1,5 +1,307 @@
 
 export const newsletter = [
+    {
+       id: 8,
+    slug: 'god-ultimate-plan-gospel-filled-life',
+
+    title: 'God’s Ultimate Plan',
+
+    excerpt: 'Gospel-Filled Life',
+
+    date: 'May 24, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/02_church.jpg',
+    
+    video:'https://www.youtube.com/embed/sZhQ-iaryb0?si=LDlo39DSXpQqTCzH',
+
+    caption:'Worship Service | May 31, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'God’s Ultimate Plan',
+      description: 'Gospel-Filled Life',
+      image:
+        '/newsletter/message/02_church.jpg',
+    },
+  
+        content1: `
+      <article>
+
+        <p style="color:#9A3F3F;"><i>
+        Text:
+        <br>Ephesians 5:1
+        <br>Be ye therefore followers of God, as dear children;
+        <br>
+        <br>Ephesians 5:18
+        <br>And be not drunk with wine, wherein is excess; but be filled with the Spirit;
+        <br>
+        <br>Ephesians 5:21
+        <br>Submitting yourselves one to another in the fear of God.
+        <br>
+        </i></p>
+
+        <br>
+
+        <h4>Introduction</h4>
+
+        <p>
+        What is God's ultimate plan for His church?</p>
+
+        <p>
+        When we hear the word "church," many people immediately think of a building. However, according to Scripture, the church is not a building but a people, a redeemed people whom Christ saved through His sacrifice on the cross.
+</p>
+
+        <p>
+        As believers, we must ask ourselves: <b>What kind of life does God desire His people to live? </b></p>
+
+        <p>
+        In Ephesians 5, Paul gives us a picture of what a Gospel-filled life looks like. A life transformed by the Gospel will be marked by three things:
+        <br>
+        1. Followers of God
+        <br>2. Filled with the Spirit
+        <br>3. Living in the Fear of God
+        </p>
+    
+
+        <br>
+
+        <h4>I. Be ye therefore FOLLOWERS of God</h4>
+
+        <p style="color:#9A3F3F;">
+        Ephesians 5:1-2
+        <br>"Be ye therefore followers of God, as dear children;
+        <br>And walk in love, as Christ also hath loved us, and hath given himself for us an offering and a sacrifice to God for a sweetsmelling savour."
+        </p>
+
+        <p>
+        The word "therefore" connects this command to the previous chapter. Paul has already spoken about kindness, tenderness, and forgiveness. Because God has forgiven us, we are now called to imitate Him.
+</p>
+
+        <p>
+        The Christian life is not merely about believing certain truths; it is about following God's example.
+</p>
+
+        <p>
+        Paul continues in verse 2 by saying, <span style="color:#9A3F3F;">"And walk in love, as Christ also hath loved us."</span>To follow God means to walk in love. The greatest demonstration of love was seen in Jesus Christ, who willingly offered Himself as a sacrifice for our sins. Christ did not love us because we deserved it. He loved us while we were yet sinners.</p>
+
+      
+        <p>
+        If we claim to follow God, we must learn to love others as Christ loved us. One of the clearest expressions of love is forgiveness.</p>
+
+      <p style="color:#9A3F3F;">
+        Ephesians 4:32
+        <br>"And be ye kind one to another, tenderhearted, forgiving one another, even as God for Christ's sake hath forgiven you."</p>
+
+    
+        <p>
+        The speaker emphasized that it is ironic for Christians to preach forgiveness while refusing to forgive others. Every believer has experienced God's forgiveness. We were guilty before God, yet Christ paid the penalty for our sins. If God has forgiven us such a great debt, how can we refuse to forgive those who have wronged us?
+        </p>
+
+        <p>
+        Humanly speaking, forgiveness is difficult. Sometimes it feels impossible. Yet God never commands us to do something without giving us the grace to obey.
+        </p>
+
+        <p><b>Illustration: Elizabeth Elliot</b></p>
+        <p>
+        Elizabeth Elliot's husband, Jim Elliot, was one of the missionaries who sought to bring the Gospel to the Auca Indians in Ecuador. Instead of receiving the Gospel, the missionaries were killed.
+        </p>
+
+        <p>
+        As a wife, Elizabeth had every reason to become bitter and angry. She could have sought revenge or abandoned the mission field altogether. Instead, she returned to the very people who killed her husband and shared the Gospel with them.
+        </p>
+
+        <p>
+        This was possible because she chose to have the mind of Christ.
+        </p>
+
+          <p style="color:#9A3F3F;">
+        Philippians 2:5
+        <br>"Let this mind be in you, which was also in Christ Jesus:"
+        </p>
+
+
+    <p>
+    The mind of Christ is a forgiving mind. It chooses grace over revenge and obedience over bitterness.
+    </p>
+
+    <p>
+    Many believers carry wounds, hurts, and disappointments. Perhaps there is someone you struggle to forgive.
+    </p>
+
+    <p>
+    God's call today is clear:<b>Walk in love and forgive as Christ forgave you.</b>
+    </p>
+    <br>
+
+    <h4>III. Be Filled with the Spirit</h4>
+
+    <p style="color:#9A3F3F;">
+        Ephesians 5:18
+        <br>"And be not drunk with wine, wherein is excess; but be filled with the Spirit;"
+        </p>
+
+        <p>Paul contrasts two controlling influences. A person under the influence of alcohol loses control and becomes governed by something external. In contrast, the believer is commanded to be under the influence and control of the Holy Spirit.
+        </p>
+
+        <p>The speaker made an important distinction between the indwelling of the Holy Spirit and the filling of the Holy Spirit.
+        </p>
+
+        <p>When a person trusts Christ as Saviour, the Holy Spirit permanently dwells within that believer. This is the indwelling ministry of the Spirit.
+        </p>
+
+        <p>However, being filled with the Spirit refers to allowing the Holy Spirit to control, empower, and direct our lives on a daily basis.
+        </p>
+
+        <p>The Christian life cannot be lived through human effort alone. Many Christians struggle with temptation, lust, pride, anger, and worldly desires. Often we try to fight spiritual battles with our own strength, but God never intended us to live the Christian life independently of Him.
+        </p>
+
+         <p style="color:#9A3F3F;">
+        Ephesians 5:9
+        <br>"For the fruit of the Spirit is in all goodness and righteousness and truth;"
+        </p>
+
+        <p>Only the Holy Spirit can produce genuine righteousness in our lives. Only the Holy Spirit can empower us to obey God and overcome the desires of the flesh.
+        </p>
+
+        <p>The speaker emphasized that the filling of the Spirit is not a one-time experience. It is a daily dependence on God's power. We must continually surrender to the Spirit's control and allow Him to work in us.
+        </p>
+
+       <p style="color:#9A3F3F;">
+        Ephesians 5:19-20
+        <br>"Speaking to yourselves in psalms and hymns and spiritual songs, singing and making melody in your heart to the Lord;
+        <br>Giving thanks always for all things unto God and the Father in the name of our Lord Jesus Christ;"
+        </p>
+
+        <p style="color:#9A3F3F;">
+        Colossians 3:16
+        <br>"Let the word of Christ dwell in you richly in all wisdom; teaching and admonishing one another in psalms and hymns and spiritual songs, singing with grace in your hearts to the Lord."
+        </p>
+
+        <p>Both passages emphasize worship and the Word of God. A believer who is filled with Scripture is more likely to be filled with the Spirit.
+        </p>
+
+        <p>The question is not merely whether we attend church but what we consume every day. The speaker challenged the congregation to consider their influences.
+        </p>
+
+        <p>The music we listen to affects us.</p>
+        <p>The content we consume affects us.</p>
+        <p>The conversations we entertain affect us.</p>
+
+        <p>The world is constantly trying to shape our thinking. If we desire to walk in the Spirit, we must intentionally fill our minds with God's truth.
+        </p>
+
+        <p>A neglected Bible often leads to a weakened spiritual life. A believer who wants to be filled with the Spirit must be devoted to God's Word.
+        </p>
+    <br>
+        <h4>III. Walk in the Fear of God</h4>
+
+       <p style="color:#9A3F3F;">
+        Ephesians 5:21
+        <br>"Submitting yourselves one to another in the fear of God."
+        </p>
+
+        <p>
+        The fear of God does not mean living in terror of God. Rather, it means reverence, respect, and submission to His authority. It means living with the awareness that God sees our actions, knows our motives, and deserves our obedience.
+        </p>
+        <p>
+        Paul applies this principle to every area of life.
+        </p>
+
+        <p style="color:#9A3F3F;">
+        Ephesians 5:22
+        <br>"Wives, submit yourselves unto your own husbands, as unto the Lord."
+        </p>
+
+        <p style="color:#9A3F3F;">
+        Ephesians 5:25
+        <br>"Husbands, love your wives, even as Christ also loved the church, and gave himself for it;"
+        </p>
+
+        <p style="color:#9A3F3F;">
+        Ephesians 6:1
+        <br>"Children, obey your parents in the Lord: for this is right."
+        </p>
+
+        <p style="color:#9A3F3F;">
+        Ephesians 6:5
+        <br>"Servants, be obedient to them that are your masters according to the flesh, with fear and trembling, in singleness of your heart, as unto Christ;"
+        </p>
+
+        <p>
+        The speaker emphasized that our obedience is not primarily for people. We obey because we fear God. We submit because we reverence God. We serve because we desire to honor God.
+        </p>
+
+        <p style="color:#9A3F3F;">
+        Ephesians 6:6
+        <br>"Not with eyeservice, as menpleasers; but as the servants of Christ, doing the will of God from the heart;"
+        </p>
+
+        <p>
+        Many people work only when someone is watching or perform well only when recognition is available. The Christian serves differently because he understands that every task is ultimately done for Christ.</p>
+
+        <p><b>Illustration: Joseph</b></p>
+       <p>
+       Joseph was sold into slavery and brought into Egypt. Humanly speaking, he had every reason to complain. He was far from home, separated from his family, and treated unfairly. Yet Joseph remained faithful.
+         </p>
+
+        <p style="color:#9A3F3F;">
+        Genesis 39:2-3
+        <br>"And the LORD was with Joseph, and he was a prosperous man; and he was in the house of his master the Egyptian.
+        <br>And his master saw that the LORD was with him, and that the LORD made all that he did to prosper in his hand.</b>"
+        </p>
+
+        <p>
+        Joseph served faithfully in the season where God had placed him. Before God promoted Joseph, He taught him faithfulness.</p>
+
+        <p>
+        The speaker pointed out that one of the ways we cultivate a Spirit-filled life is by allowing God's Word to fill our hearts.
+        </p>
+
+        <br>
+
+        <h4>Conclusion</h4>
+
+        <p>
+        The world is increasingly moving away from God. Many people no longer value biblical truth, yet God's plan for His church remains unchanged.
+        </p>
+        <p>
+        God desires a Gospel-filled people:
+        <br>A people who <b>follow Him</b> by walking in love and forgiveness.
+        <br>A people who are <b>filled with the Spirit</b> through dependence upon God's power and God's Word.
+        <br>A people who <b>fear God</b> by living lives of reverence, obedience, and faithful service.
+
+        <p>
+        The church gathers on Sundays and Thursdays, but most of our lives are lived outside the church walls—in our homes, schools, workplaces, and communities.
+        </p>
+
+        <p>
+        Those places are our mission fields. That is where God wants His light to shine through us.
+        </p>
+
+        <p>
+        May God help us live according to His ultimate plan: <b>A GOSPEL-FILLED LIFE</b></p>
+
+        <br>
+
+<border style="border-top: 4px solid #9A3F3F; padding-left: 200px; margin-left: 0;">
+    <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+        <p style="color:#9A3F3F;"><i>
+        As God's redeemed people, how can we demonstrate a Gospel-filled life by following God, being filled with the Spirit, and living in the fear of God in our daily lives?
+        </i></p>
+
+
+        <br>
+
+        </article>
+        `
+
+        },
 {
      id: 7,
     slug: 'why-does-god-allow-evil-to-exist',

@@ -28,7 +28,7 @@ const routeBase = computed(() => {
 </script>
 
 <template>
-  <div class="container py-3 mt-5">
+  <div class="container py-3 mt-5 mb-5">
     <h2 class="mb-4 fw-bold">{{ titleLabel }}</h2>
 
     <div v-if="posts.length === 0" class="text-center py-5">
