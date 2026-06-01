@@ -359,48 +359,14 @@
 
   </div>
 </section>
-    <!--
-    <section>
-    <div class="container text-center py-5">
-      <h2>Would you like to support our ministry?</h2>
-      <h7>You may also scan our Bank Qr code for a simple and secure way to give.</h7>
-      <p>
-      <button class="btn btn-primary" @click="showGiveModal = true">
-        Please click here
-      </button>
-      </p>
-    </div>
-    </section>
-  -->
-    <div v-if="showGiveModal" class="modal d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);" @click.self="showGiveModal = false">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-header border-0">
-            <button type="button" class="btn-close" @click="showGiveModal = false"></button>
-          </div>
-          <div class="modal-body text-center py-4">
-            <div class="d-flex justify-content-center">
-              <img src="/giveqr.jpeg" alt="Give QR Code" class="img-fluid" style="max-width: 400px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-            </div>
-            <div class="mt-4">
-              <a href="/giveqr.jpeg" download="GCBF-Give-QR.jpeg" class="btn btn-primary">
-                <i class="bi bi-download me-2"></i>
-                Download QR Code
-              </a>
-            </div>
-            <p class="text-muted mt-4 mb-0">
-              <i class="bi bi-heart-fill me-2 text-danger"></i>
-              We sincerely appreciate your generous donation and partnership in God’s work. 
-              <br>Thank you for blessing our ministry with your generosity.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    
+    
+ 
+    
 
    
-  <section class="bg-light pt-2 pb-0">
-      <div id="location" class="container-fluid mt-5 pt-5 px-0 pb-0 mb-0">
+  <section class="bg-light pb-0">
+      <div id="location" class="container-fluid pt-5 px-0 pb-0 mb-0">
         <div class="container mb-4">
           <div class="text-center mb-4">
             <h2 class="display-6 fw-bold church-purple" style="font-size: 2rem;">
@@ -424,10 +390,61 @@
           </iframe>
         </div>
       </div>
+      
+    </section>
+    <section >
+    <div class="container text-center pt-5 pb-5">
+      <h2>Would you like to support the ministry through your giving?</h2>
+      <p class="lead text-muted" style="font-size: 1rem;">Your generosity helps us continue sharing God's Word, supporting church ministries, discipleship programs, outreach efforts, and community services.</p>
+      <p>
+      <button class="btn btn-outline-secondary" @click="showGiveModal = true">
+        View BPI Account      
+      </button>
+      <!--
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span>
+        <button class="btn btn-third" @click="showGiveModal = true">
+        View GCash Details
+      </button>
+      </span>
+    -->
+      </p>
+    </div>
     </section>
 
 
-
+<div v-if="showGiveModal" class="modal d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);" @click.self="showGiveModal = false">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="btn-close" @click="showGiveModal = false"></button>
+          </div>
+          <div class="modal-body text-center py-4">
+            <div class="d-flex justify-content-center">
+              <img src="/giveqr.jpeg" alt="Give QR Code" class="img-fluid" style="max-width: 400px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            </div>
+            <div class="mt-4">
+              <a href="/giveqr.jpeg" download="GCBF-Give-QR.jpeg" class="btn btn-primary">
+                <i class="bi bi-download me-2"></i>
+                Download QR Code
+              </a>
+            </div>
+            <p class="lead text-muted mt-4 mb-0" style="font-size: 0.875rem;">
+              For donation receipts or inquiries, please contact us at
+      <a href="mailto:gracedcommunitybiblefellowship@gmail.com">
+        gracedcommunitybiblefellowship@gmail.com
+      </a>
+      </p>
+      <p class="lead text-muted mt-2 mb-0" style="font-size: 0.875rem;">
+              <i class="bi bi-heart-fill me-2 text-danger"></i>
+              Thank you for partnering with us in advancing God's work. 
+              <br>May the Lord bless you abundantly for your faithfulness and generosity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <!-- Update Details Modal -->
     <div v-if="selectedUpdate" class="modal fade show d-block" tabindex="-1" @click="closeModal">
       <div class="modal-dialog modal-lg" @click.stop>

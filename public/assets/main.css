@@ -80,6 +80,27 @@ body {
   color: #6b9973  !important;
 }
 
+.btn-secondary {
+  background-color: #9A3F3F !important;
+  border-color: #9A3F3F !important;
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #ffff !important;
+  border-color: #9A3F3F !important;
+  color: #9A3F3F  !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #ffff !important;
+  border-color: #6b9973 !important;
+  color: #6b9973  !important;
+}
+
 .btn-outline-primary {
   color: #537D5D !important;
   border-color: #537D5D !important;

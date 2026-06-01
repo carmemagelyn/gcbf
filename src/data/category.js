@@ -1,5 +1,277 @@
 
 export const newsletter = [
+    /*
+    {
+     id: 10,
+    slug: 'saved-by-grace',
+
+    title: 'Saved by Grace',
+
+    excerpt: 'A Testimony of Salvation',
+
+    date: 'June 5, 2026',
+
+    author: 'Sharmaine Joy Dela Vida',
+
+    authorImage: '/newsletter/author/sharmaine-delavida.jpg',
+
+    coverphoto: '/newsletter/02_letgo/savedby.jpg',
+
+   
+
+    type: 'article',
+
+    seo: {
+      title: 'Saved by Grace',
+      description: 'A Testimony of Salvation',
+      image:
+        '/newsletter/02_letgo/savedby.jpg',
+    },
+    caption: '',
+
+
+
+        content1: `
+            <article>
+
+            <p>
+            I am a sinner saved by grace.</p>
+
+            <p>
+            I was a Catholic. I knew Jesus, and I knew
+that there was a Creator. I knew Jesus
+because He was always introduced to me as
+the Lord and as my personal Savior. I
+attended church, but not every Sunday. I
+entered the church, but I always left without
+understanding anything. All those years, I
+thought that if I became more religious, I
+would be saved. I thought that if I followed
+Catholic traditions, attended church every
+Sunday, and did good deeds, I would go to
+heaven. But I'm really thankful to God
+because now I know the only way I can be
+saved.</p>
+
+            <p>
+            I prayed but not consistently, just only when
+I remembered to. Basically, I did not have a
+personal and intimate relationship with God.
+At a young age, I already understood that I
+was a sinner but I had no conviction. I never
+truly repented. I had no one to run to
+because I grew up thinking that sinning was
+normal and unavoidable. I always prayed
+before, asking God to forgive my sins, but I
+never asked Him to change me. That was
+because somehow, I loved my sins. I loved
+doing them, and it hurt to think about letting
+them go.</i>
+            </p>
+
+            <p>
+            Lying, lusting, stealing, judging, gossiping,
+idolizing, and many more sins. I did all of
+those before without conviction. What was
+normal for the world became normal for me
+too. What the world said was right, I also
+believed was right. I followed what the
+world and social media told me. When I
+woke up, social media was the first thing I
+looked at. Before I slept, social media was
+the last thing I saw. I lived a life that
+idolized social media. Eventually, the things
+I constantly saw online corrupted me. Pride
+and ego began to build up inside me. I
+leaned on my own understanding and based
+my life on what social media taught me. At
+some point, I felt happiness in the things I
+was doing, but I could still feel the
+emptiness in my heart. I did not know that
+only Jesus could fill that emptiness.
+</p>
+<p>During the pandemic, I tried to find
+something or someone that could fill the
+emptiness in my heart and make me feel
+whole and happy. I idolized many people I
+did not even know personally. I idolized
+them to the point that when I woke up, they
+were the first people I searched for on social
+media. My life revolved around celebrities.
+At that time, I even declared that they had
+“saved” me because I felt empty, anxious,
+stressed, and alone. So when my life
+revolved around them, I thought I was saved
+simply because I felt happy. Clearly, I was
+wrong.</p>
+
+<p>I tried to find love in other people. I tried to
+find something that could satisfy me.
+Something that could save me from my
+anxiety. But that kind of love only gave me
+more anxiety, stress, pain, and chaos. Still, I am grateful because that “love” eventually
+led me to my true love, Jesus Christ.</p>
+
+<p>When I found Christ, the emptiness in my
+heart disappeared. There was only
+satisfaction, joy, and a fire burning in my
+heart. I became eager to know God more, to
+love Him deeply, and to follow Jesus.</p>
+<p>All my sins were paid for by Him on the
+cross. And I am so thankful that every time I
+fall short or sin again, there is conviction.
+That is how I know the Holy Spirit dwells in
+me. I no longer love my sins. I hate them
+and how they affect my heart, mind, and
+decisions. I love knowing that I have
+Someone I can trust and hold on to. I
+surrendered all my worries, burdens,
+anxiety, stress, and every chaos happening in
+my life to Him, and He gave me peace.</p>
+
+<p>All this time, my heart was longing for
+peace and joy, and only God could truly give
+me those things.</p>
+<p>The moment I accepted Him as my Lord and
+personal Savior, I understood that He had
+already paid for my sins. Living as a
+Christian is not easy. Christianity comes
+with challenges, heartbreaks, and
+persecution, but it also comes with love,
+patience, transformation, wisdom, and the
+gift of salvation that He has given us.</p>
+
+<p>
+At first, I could not believe that God could
+transform someone like me. A sinner like
+me. But because He loves us, He died on the
+cross to save us from judgment and give us
+eternal life. He gives life to dead souls, light
+to darkness, peace in chaos, and love even
+during the moments when we do not love
+ourselves.</p>
+<p>
+I was a lost soul, but He found me.</p>
+<p>
+I have always trusted His plans for me, and
+He transformed me into a woman that the
+16-year-old version of me would never
+recognize or understand.
+</p>
+<p><i>“Therefore if any man be in Christ, he is a
+new creature: old things are passed away;
+behold, all things are become new.” — 2
+Corinthians 5:17</i></p>
+
+
+        </article>
+        `
+
+        },
+    {
+     id: 9,
+    slug: 'called-back-to-him',
+
+    title: 'Called Back to Him',
+
+    excerpt: 'A Testimony of Surrender',
+
+    date: 'June 2, 2026',
+
+    author: 'Joshua Andrei Rosado',
+
+    authorImage: '/newsletter/author/joshua-rosado.jpg',
+
+    coverphoto: '/newsletter/02_letgo/calledback.jpg',
+
+   
+
+    type: 'article',
+
+    seo: {
+      title: 'Called Back to Him',
+      description: 'A Testimony of Surrender',
+      image:
+        '/newsletter/02_letgo/calledback.jpg',
+    },
+    caption: '',
+
+
+
+        content1: `
+            <article>
+
+            <p>
+            Back then, before Christ truly found me, I
+thought I already knew God.</p>
+
+            <p>
+            I went to church, prayed, worshipped
+sometimes, and thought that was enough.
+But if I am being real, most of the time I
+only came to Him when life was falling
+apart or when I needed something. I only ran
+to Him when I was hurting, scared, lost, or
+what. I wanted His blessings, but I did not
+want to surrender myself.</p>
+
+            <p>
+            I tried to seek Him through my own works. I
+thought if I did enough, attended enough,
+defended Him enough, then maybe I was
+already okay. But when it was finally time to
+truly live for Him, I was nowhere to be
+found.</i>
+            </p>
+
+            <p>
+            I was quick to defend God in conversations,
+but deep inside, I knew I was a hypocrite.
+My faith had no life in it. My heart was far
+from Him. I was consumed by the world,
+constantly chasing temporary things that
+could never truly satisfy me.</p>
+            <p>All along, while I was running after the
+world, God was chasing me. And even
+worse, I was filled with pride. I refused to be
+taught because I thought where I was was already enough. I thought I was fine. But the
+truth was, I was lost.
+</p>
+<p><i>Still, God wanted me.</i></p>
+
+<p>Even after all my pride and hypocrisy, God
+still had plans for me. And when I finally
+tried to break the cycle, I realized it was
+never by my own strength. It was Him
+changing me.</p>
+<p>There were moments when God called me
+and I still looked back at the world. But
+Jesus kept pulling me back anyway. And one
+day, I finally answered. After so many times
+of Him knocking at the door of my heart, I
+finally opened it. That moment changed
+everything.</p>
+<p>For the first time, I felt truly free. The things
+of the world that once consumed me
+suddenly felt empty compared to Him. I no
+longer wanted a life centered on myself. I
+wanted Him.</p>
+<p>Now I understand that I do not serve God to
+earn salvation. I serve Him because He
+already saved me. My work is no longer
+done to prove myself. They are done to
+glorify the One who rescued me.</p>
+<p>I was once somewhere people placed me,
+somewhere routine kept me, somewhere
+religion trapped me. But now, I am finally
+where God wanted me to be.</p>
+<p><i>With Him.</i></p>
+
+        </article>
+        `
+
+        },
+        */
     {
        id: 8,
     slug: 'god-ultimate-plan-gospel-filled-life',
