@@ -425,6 +425,8 @@
             </div>
             <p class="lead text-muted mb-0" style="font-size: 0.5rem;">
               This BPI Checking Account is exclusively for Grace Community Bible Fellowship church finances.
+             <br>Please add note: <b>GCBF GIVE (your name)</b> when sending your donation to help us identify and allocate your contribution properly.
+            
             </p>
             <div class="mt-4">
               <a href="/bpi.jpeg" download="GCBF-BPI-QR.jpeg" class="btn btn-primary">
@@ -432,13 +434,13 @@
                 Download QR Code
               </a>
             </div>
-            <p class="lead text-muted mt-4 mb-0" style="font-size: 0.7rem;">
+            <p class="lead text-muted mt-4 mb-0" style="font-size: 0.6rem;">
               For donation receipts or inquiries, please contact us at
       <a href="mailto:gracedcommunitybiblefellowship@gmail.com">
         gracedcommunitybiblefellowship@gmail.com
       </a>
       </p>
-      <p class="lead text-muted mt-2 mb-0" style="font-size: 0.7rem;">
+      <p class="lead text-muted mt-2 mb-0" style="font-size: 0.6rem;">
               <i class="bi bi-heart-fill me-2 text-danger"></i>
               Thank you for partnering with us in advancing God's work. 
               <br>May the Lord bless you abundantly for your faithfulness and generosity.
@@ -458,20 +460,23 @@
             <div class="d-flex justify-content-center">
               <img src="/gcash.png" alt="Give QR Code" class="img-fluid" style="max-width: 400px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
             </div>
-            
+            <p class="lead text-muted mb-0" style="font-size: 0.5rem;">
+              This is another option for those who prefer using GCash for their donations to Grace Community Bible Fellowship.
+              <br>Please add message: <b>GCBF GIVE (your name)</b> when sending your donation to help us identify and allocate your contribution properly.
+            </p>
             <div class="mt-4">
               <a href="/gcash.png" download="GCBF-GCash-QR.jpeg" class="btn btn-primary">
                 <i class="bi bi-download me-2"></i>
                 Download QR Code
               </a>
             </div>
-            <p class="lead text-muted mt-4 mb-0" style="font-size: 0.7rem;">
+            <p class="lead text-muted mt-4 mb-0" style="font-size: 0.6rem;">
               For donation receipts or inquiries, please contact us at
       <a href="mailto:gracedcommunitybiblefellowship@gmail.com">
         gracedcommunitybiblefellowship@gmail.com
       </a>
       </p>
-      <p class="lead text-muted mt-2 mb-0" style="font-size: 0.7rem;">
+      <p class="lead text-muted mt-2 mb-0" style="font-size: 0.6rem;">
               <i class="bi bi-heart-fill me-2 text-danger"></i>
               Thank you for partnering with us in advancing God's work. 
               <br>May the Lord bless you abundantly for your faithfulness and generosity.
