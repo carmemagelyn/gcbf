@@ -167,7 +167,7 @@ Corinthians 5:17</i></p>
         </article>
         `
 
-        },
+        }, */
     {
      id: 9,
     slug: 'called-back-to-him',
@@ -271,7 +271,7 @@ where God wanted me to be.</p>
         `
 
         },
-        */
+       
     {
        id: 8,
     slug: 'god-ultimate-plan-gospel-filled-life',
