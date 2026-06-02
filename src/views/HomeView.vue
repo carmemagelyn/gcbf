@@ -397,37 +397,70 @@
       <h2>Would you like to support the ministry through your giving?</h2>
       <p class="lead text-muted" style="font-size: 1rem;">Your generosity helps us continue sharing God's Word, supporting church ministries, discipleship programs, outreach efforts, and community services.</p>
       <p>
-      <button class="btn btn-outline-secondary" @click="showGiveModal = true">
+      <button class="btn btn-outline-secondary" @click="showBPIModal = true">
         View BPI Account      
       </button>
-      <!--
+      
       &nbsp;&nbsp;&nbsp;&nbsp;
       <span>
-        <button class="btn btn-third" @click="showGiveModal = true">
+        <button class="btn btn-outline-third" @click="showGCashModal = true">
         View GCash Details
       </button>
       </span>
-    -->
+   
       </p>
     </div>
     </section>
 
 
-<div v-if="showGiveModal" class="modal d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);" @click.self="showGiveModal = false">
+<div v-if="showBPIModal" class="modal d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);" @click.self="showBPIModal = false">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header border-0">
-            <button type="button" class="btn-close" @click="showGiveModal = false"></button>
+            <button type="button" class="btn-close" @click="showBPIModal = false"></button>
           </div>
           <div class="modal-body text-center py-4">
             <div class="d-flex justify-content-center">
-              <img src="/giveqr.jpeg" alt="Give QR Code" class="img-fluid" style="max-width: 400px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+              <img src="/bpi.jpeg" alt="Give QR Code" class="img-fluid" style="max-width: 400px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
             </div>
             <p class="lead text-muted mb-0" style="font-size: 0.5rem;">
               This BPI Checking Account is exclusively for Grace Community Bible Fellowship church finances.
             </p>
             <div class="mt-4">
-              <a href="/giveqr.jpeg" download="GCBF-Give-QR.jpeg" class="btn btn-primary">
+              <a href="/bpi.jpeg" download="GCBF-BPI-QR.jpeg" class="btn btn-primary">
+                <i class="bi bi-download me-2"></i>
+                Download QR Code
+              </a>
+            </div>
+            <p class="lead text-muted mt-4 mb-0" style="font-size: 0.7rem;">
+              For donation receipts or inquiries, please contact us at
+      <a href="mailto:gracedcommunitybiblefellowship@gmail.com">
+        gracedcommunitybiblefellowship@gmail.com
+      </a>
+      </p>
+      <p class="lead text-muted mt-2 mb-0" style="font-size: 0.7rem;">
+              <i class="bi bi-heart-fill me-2 text-danger"></i>
+              Thank you for partnering with us in advancing God's work. 
+              <br>May the Lord bless you abundantly for your faithfulness and generosity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div v-if="showGCashModal" class="modal d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);" @click.self="showGCashModal = false">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="btn-close" @click="showGCashModal = false"></button>
+          </div>
+          <div class="modal-body text-center py-4">
+            <div class="d-flex justify-content-center">
+              <img src="/gcash.png" alt="Give QR Code" class="img-fluid" style="max-width: 400px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            </div>
+            
+            <div class="mt-4">
+              <a href="/gcash.png" download="GCBF-GCash-QR.jpeg" class="btn btn-primary">
                 <i class="bi bi-download me-2"></i>
                 Download QR Code
               </a>
@@ -476,7 +509,8 @@ import { newsletter } from '@/data/category'
 
 
 const router = useRouter()
-const showGiveModal = ref(false)
+const showBPIModal = ref(false)
+const showGCashModal = ref(false)
 
 
 const isAuth = computed(() => isAuthenticated())

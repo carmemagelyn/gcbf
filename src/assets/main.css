@@ -121,6 +121,19 @@ body {
   color: #0165FC  !important;
 }
 
+.btn-outline-third {
+  color: #0165FC !important;
+  border-color: #0165FC !important;
+  background-color: #ffff !important;
+}
+
+.btn-outline-third:hover,
+.btn-outline-third:focus {
+  background-color: #0165FC !important;
+  border-color: #0165FC !important;
+  color: #ffffff !important;
+}
+
 
 .btn-outline-primary {
   color: #537D5D !important;
