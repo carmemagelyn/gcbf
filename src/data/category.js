@@ -1011,7 +1011,7 @@ have to, but because I wanted to.
 
     coverphoto: '/newsletter/message/02_church.jpg',
     
-    video:'https://www.youtube.com/embed/SadvPpMhAMc?si=iptRIbxU2NdIC9Dn',
+    video:'https://www.youtube.com/embed/SadvPpMhAMc?si=ohOiWt-iGsTH8GDk',
 
     caption:'Worship Service | May 24, 2026',
 
@@ -1364,7 +1364,7 @@ have to, but because I wanted to.
 
     coverphoto: '/newsletter/message/01_profitable.jpg',
     
-    video:'https://www.youtube.com/embed/4FNB5GQdcB0?si=J3rGxH8WhTt_TlHG',
+    video:'https://www.youtube.com/embed/-OTfGBWoxuA?si=h6Z1OtqdPpuvyovT',
 
     caption:'Youth Community | May 21, 2026',
 
