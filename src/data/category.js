@@ -1364,7 +1364,7 @@ have to, but because I wanted to.
 
     coverphoto: '/newsletter/message/01_profitable.jpg',
     
-    video:'https://www.youtube.com/embed/-OTfGBWoxuA?si=K0DZ8mUA3iumJneb',
+    video:'https://www.youtube.com/embed/4FNB5GQdcB0?si=J3rGxH8WhTt_TlHG',
 
     caption:'Youth Community | May 21, 2026',
 
