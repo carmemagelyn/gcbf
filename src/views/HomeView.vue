@@ -14,7 +14,7 @@
             <h1 class="display-6 fw-bold mb-5">Building grace-filled community, fulfilling Christ’s mission.</h1>
               <div>
               <p class="text-uppercase fw-bold mb-3 text-white" style="font-size: .9rem; letter-spacing: .5px; opacity: 0.9;">
-                  <i class="bi bi-clock me-1"></i>SERVICES SCHEDULE:
+                  <i class="bi bi-clock me-1"></i>SERVICE SCHEDULE:
                
                 <br><b  class="text-end mb-0 fw-bold text-white" style="font-size: .8rem; opacity: 0.9;">WORSHIP SERVICE:</b><span class="mb-3 text-white" style="font-size: .8rem; line-height: .7; opacity: 0.85;"> Sunday, 10:00AM - 12:00NN</span>
                 <br><b class="text-end mb-0 fw-bold text-white" style="font-size: .8rem; opacity: 0.9;">NIGHT CLASS:</b><span class="mb-3 text-white" style="font-size: .8rem; line-height: .7; opacity: 0.85;"> Tuesday, 6:30PM - 8:00PM</span>
@@ -436,9 +436,9 @@
             </div>
             <p class="lead text-muted mt-4 mb-0" style="font-size: 0.6rem;">
               For donation receipts or inquiries, please contact us at
-      <a href="mailto:gracedcommunitybiblefellowship@gmail.com">
-        gracedcommunitybiblefellowship@gmail.com
-      </a>
+      <a href="https://www.facebook.com/gracedcommunitybiblefellowship">
+        GCBF Facebook
+      </a>page
       </p>
       <p class="lead text-muted mt-2 mb-0" style="font-size: 0.6rem;">
               <i class="bi bi-heart-fill me-2 text-danger"></i>
@@ -462,7 +462,7 @@
             </div>
             <p class="lead text-muted mb-0" style="font-size: 0.5rem;">
               This is another option for those who prefer using GCash for their donations to Grace Community Bible Fellowship.
-              <br>Please add message: <b>GCBF GIVE (your name)</b> when sending your donation to help us identify and allocate your contribution properly.
+              <br>Please add note: <b>GCBF GIVE (your name)</b> when sending your donation to help us identify and allocate your contribution properly.
             </p>
             <div class="mt-4">
               <a href="/gcash.png" download="GCBF-GCash-QR.jpeg" class="btn btn-primary">
@@ -472,9 +472,9 @@
             </div>
             <p class="lead text-muted mt-4 mb-0" style="font-size: 0.6rem;">
               For donation receipts or inquiries, please contact us at
-      <a href="mailto:gracedcommunitybiblefellowship@gmail.com">
-        gracedcommunitybiblefellowship@gmail.com
-      </a>
+      <a href="https://www.facebook.com/gracedcommunitybiblefellowship">
+        GCBF Facebook
+      </a>page
       </p>
       <p class="lead text-muted mt-2 mb-0" style="font-size: 0.6rem;">
               <i class="bi bi-heart-fill me-2 text-danger"></i>
