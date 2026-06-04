@@ -60,7 +60,7 @@ const handleLogin = (loggedInUser) => {
           <i class="bi bi-instagram">&nbsp;&nbsp;</i> 
         </a>
       </div>
-    
+     
     </footer>
 </template>
 
