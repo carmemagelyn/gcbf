@@ -168,6 +168,174 @@ Corinthians 5:17</i></p>
         `
 
         }, */
+        {
+       id: 10,
+    slug: 'be-ye-transformed-by-the-renewing-of-your-mind',
+
+    title: 'Be Ye Transformed by the Renewing of Your Mind',
+
+    excerpt: 'By The Mercies of God',
+
+    date: 'June 5, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/yc_mind.jpg',
+    
+    video:'https://www.youtube.com/embed/MZxd3jKdes0?si=EnLPHQD8DDBUsT04',
+
+    caption:'Youth Community | June 4, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'Be Ye Transformed by the Renewing of Your Mind',
+      description: 'By The Mercies of God',
+      image:
+        '/newsletter/message/yc_mind.jpg',
+    },
+  
+        content1: `
+
+<article>
+
+      <p style="color:#9A3F3F;"><i>
+      Theme Verse: "And be not conformed to this world: but be ye transformed by the renewing of your mind, that ye may prove what is that good, and acceptable, and perfect, will of God." - Romans 12:2
+      </i></p>
+
+      <p>
+      A lot of us here have been Christians for only a few months. Probably it was only until last year when you made Christ as your personal Saviour. Some of us have been Christians for so many years, especially if you grew up in a Christian family. Sometimes we have this feeling that we are unmotivated to follow God. Every day seems to be so dragging, and sometimes we cannot even find a reason to continue. We ask, “Lord, what is it in me that I should follow You?” or “Why should I go there?” Sometimes we conclude that Christianity is something that is being forced on us, especially if you grew up in a Christian family. It feels boring. We think, “I'm just reading the Bible, and that's it.” There seems to be no motivation. That is why the Bible says in Romans 12:1–2, “Be ye transformed by the renewing of your mind.” There are only three things that I want to mention this evening, and they are found in the verses that we have read.
+      </p>
+
+      <br>
+
+      <h4>I. By the Mercies of God</h4>
+
+      <p>
+      The Bible says, “I beseech you therefore, brethren, by the mercies of God.” I want you to look at this phrase, “by the mercies of God.” The moment we trusted Jesus Christ as our Lord and Saviour, it did not end there. It is only the start of our journey. The relevance of the gospel in our lives does not end the moment we trusted Christ for our salvation. For a lot of Christians, it is easy to think, “I'm good. I don't want to go there. I don't want to deal with these people.” But that is not Christianity. That is not what God wants from us. The Bible says, “As we have received mercy.” If we have truly understood the mercies of God, shouldn't there be a response? Unless we have not really understood what it means to experience the mercies of God.
+      </p>
+
+      <p>
+      Can you imagine that the God of heaven, who is so great, loved you, a hell-bound sinner? Then how should we respond? Should our response simply be, “I'm okay”? Is that how we should respond to the gospel? There are people whose entire lives revolve around what they believe. Yet here we are, not because anyone is forcing Christianity upon us, but because if we have understood the truth in Christ, there should be more than enough reason for us to respond by following Him and living for Him.
+      </p>
+
+      <p>
+      The Apostle Paul said in Philippians 1:20,
+      <br><span style="color:#9A3F3F;">“According to my earnest expectation and my hope, that in nothing I shall be ashamed, but that with all boldness, as always, so now also Christ shall be magnified in my body, whether it be by life, or by death.”</span>
+      </p>
+
+      <p>
+      Regardless of how ridiculous it may look in the eyes of men, Paul's desire was that Christ would be magnified in his body, whether by life or by death. If you look at the life of Paul, he used to persecute Christians and even consented to their deaths. Yet when he met the Lord, his entire life changed. The question is, how is our response to the gospel? Is the gospel merely something we acknowledge and then move on from, or does it move us to live for Christ?
+      </p>
+
+      <br>
+
+      <h4>II. Present Your Bodies</h4>
+
+      <p>
+      Romans 12:1 continues,
+      <br><span style="color:#9A3F3F;">“that ye present your bodies a living sacrifice, holy, acceptable unto God, which is your reasonable service.”</span>
+      </p>
+
+      <p>
+      The Bible tells us to present our bodies as a living sacrifice. Romans 6:19 says,
+      <br><span style="color:#9A3F3F;">“Even so now yield your members servants to righteousness unto holiness.”</span>
+      </p>
+
+      <p>
+      The Lord saved us, but He did not save us so that we could simply do whatever we want. He called us unto righteousness.
+      </p>
+
+      <p>
+      One of the problems in Christianity today is that many Christians are content to live a normal life. We all struggle to live holy lives, and sometimes we measure spirituality by church attendance. But it does not end there. Most of the time it is you and your family. Most of the time it is who you are when no one else is looking. Presenting our bodies as a living sacrifice is not just serving in front, sharing the gospel, or attending church every Sunday. Most of the time it is about living righteously before God.
+      </p>
+
+      <p>
+      We all struggle with sin. I understand that. But presenting our bodies as a living sacrifice means choosing to live for God rather than for sin. Jesus condemned the hypocrisy of the Pharisees because outwardly they looked clean, but inwardly they were full of corruption. We do not want to live that kind of life.
+      </p>
+
+      <p>
+      Remember the woman caught in adultery. According to the law, she deserved condemnation. Yet Jesus said,
+      <br><span style="color:#9A3F3F;">“Neither do I condemn thee: go, and sin no more.”</span>
+      </p>
+
+      <p>
+      The Lord did not tolerate her sin, but He extended grace and then told her to leave her sinful life behind. The Christian life is not about sinless perfection. We all struggle. But it is always fighting against sin. It is not sinless perfection; it is sincere progression.
+      </p>
+
+      <p>
+      Again, Paul said, “Christ shall be magnified in my body.” Whether by life or by death, his desire was that Christ would be glorified. That should be our desire as well. In every area of life, Christ should be magnified.
+      </p>
+
+      <br>
+
+      <h4>III. Be Not Conformed</h4>
+
+      <p>
+      Romans 12:2 says,
+      <br><span style="color:#9A3F3F;">“And be not conformed to this world: but be ye transformed by the renewing of your mind.”</span>
+      </p>
+
+      <p>
+      The Bible is clear that Christians should not conform to the standards of this world because the standards of this world are corrupted. God wants us to have transformed minds and renewed minds so that we may know what is that good, acceptable, and perfect will of God.
+      </p>
+
+      <p>
+      The Bible says in Romans 13:14,
+      <br><span style="color:#9A3F3F;">“Put ye on the Lord Jesus Christ, and make not provision for the flesh.”</span>
+      </p>
+
+      <p>
+      First Thessalonians 4:3 says,
+      <br><span style="color:#9A3F3F;">“For this is the will of God, even your sanctification, that ye should abstain from fornication.”</span>
+      </p>
+
+      <p>
+      The world is very loud about these things. Social media constantly pushes ideas that are contrary to Scripture. Yet the Bible is clear. God's will is clear.
+      </p>
+
+      <p>
+      Think about the Samaritan woman at the well. She moved from one relationship to another relationship, and yet she remained empty. She kept searching for something more but never found satisfaction. That is what the world does. It causes people to crave for more and more, yet never truly satisfies.
+      </p>
+
+      <p>
+      Jesus said in John 4:13–14,
+      <br><span style="color:#9A3F3F;">“Whosoever drinketh of this water shall thirst again: But whosoever drinketh of the water that I shall give him shall never thirst.”</span>
+      </p>
+
+      <p>
+      The things of this world teach us to crave for more, but Jesus offers Himself. He alone should be our satisfaction. He is the ultimate satisfier.
+      </p>
+
+      <br>
+
+      <h4>Conclusion</h4>
+
+      <p>
+      Romans 12:1–2 teaches us three simple truths: by the mercies of God, present your bodies, and be not conformed to this world. God does not want us to conform to the standards of this world because nothing good comes from a life patterned after the world. God wants us to be transformed by the renewing of our minds. His will is good, acceptable, and perfect.
+      </p>
+
+      <p>
+      If you feel bored, forced, or unmotivated in your Christian life, then look to Christ. See His beauty, His greatness, and His glory. We are not offering religion here. What we preach is Christ. What we want people to know is Jesus Christ Himself. If we keep our eyes on Christ, we will find renewed motivation to follow Him. Let us live for Christ and be transformed by the renewing of our minds.
+      </p>
+
+      <br>
+
+<border style="border-top: 4px solid #9A3F3F; padding-left: 200px; margin-left: 0;">
+    <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+      <p style="color:#9A3F3F;"><i>
+      If Christ has shown you such great mercy, how are you responding by presenting your body as a living sacrifice and allowing Him to transform your life?
+      </i></p>
+
+      <br>
+
+</article>
+        `
+
+        },
     {
      id: 9,
     slug: 'called-back-to-him',
@@ -1362,7 +1530,7 @@ have to, but because I wanted to.
 
     authorImage: '/newsletter/author/john-louie-berdejo.jpg',
 
-    coverphoto: '/newsletter/message/01_profitable.jpg',
+    coverphoto: '/newsletter/message/yc_vessel.jpg',
     
     video:'https://www.youtube.com/embed/-OTfGBWoxuA?si=h6Z1OtqdPpuvyovT',
 
@@ -1374,7 +1542,7 @@ have to, but because I wanted to.
       title: 'From Unprofitable to Profitable',
       description: 'The Life of Onesimus',
       image:
-        '/newsletter/message/01_profitable.jpg',
+        '/newsletter/message/yc_vessel.jpg',
     },
   
         content1: `
