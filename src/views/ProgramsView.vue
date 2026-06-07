@@ -17,10 +17,10 @@ onMounted(() => {
       <div class="hero-overlay"></div>
       <div class="hero-content-wrapper container text-white py-5">
         <div class="hero-content">
-          <span class="hero-eyebrow">Study Sound Doctrinal Teachings at Your Own Pace</span>
+          <span class="hero-eyebrow">Study God's Word at Your Own Pace</span>
           <h1 class="hero-title">Bible Correspondence Program</h1>
           <p class="hero-description">
-            Build a strong biblical foundation through the <b>Diploma in Bible Program</b> offered by Grace Community Bible Fellowship in cooperation with <b>Open Bible College International</b> and with the permission of <i>Dr. Dave Reese.</i>
+            Grow in your knowledge of God's Word through the <b>Diploma in Bible Program</b> offered by Grace Community Bible Fellowship in partnership with <b>Open Bible College International.</b> Grace Community Bible Fellowship is an independent ministry that administers this correspondence program using OBCI course materials with permission from <i>Dr. Dave Reese.</i>
 
           </p>
           <p class="hero-description">
@@ -73,7 +73,7 @@ onMounted(() => {
         <section class="meet-the-team mt-5 mb-5">
           <h2>Meet the Team</h2>
 
-          <div class="team-grid mt-3">
+          <div class="team-grid mt-2">
             <div class="team-member">
               <img class="team-avatar" src="/newsletter/author/sammy-tabuena.jpg" alt="Sammy Tabuena" />
               <h4>Sammy Tabuena</h4>
@@ -82,11 +82,7 @@ onMounted(() => {
               <p>Pastor, New Testament Baptist Church - Trapiche, Oton</p>
             </div>
             
-            <div class="team-member">
-              <img class="team-avatar" src="/newsletter/author/dave-reese.jpg" alt="Dr. Dave Reese" />
-              <h4>Dr. Dave Reese</h4>
-              <p>Founder and Director, Open Bible College International</p>
-            </div>
+          
             <div class="team-member">
               <img class="team-avatar" src="/newsletter/author/john-louie.jpg" alt="Pastor John Louie Berdejo" />
               <h4>John Louie Berdejo</h4>
