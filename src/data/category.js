@@ -448,7 +448,7 @@ where God wanted me to be.</p>
 
     excerpt: 'Gospel-Filled Life',
 
-    date: 'May 24, 2026',
+    date: 'June 1, 2026',
 
     author: 'Pastor John Louie Berdejo',
 

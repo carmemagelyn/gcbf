@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import CategoryView from '../views/CategoryView.vue'
 import CategorySingleView from '../views/CategorySingleView.vue'
+import ProgramsView from '../views/ProgramsView.vue'
 
 const routes = [
   {
@@ -46,6 +47,11 @@ const routes = [
     name: 'MessageSingle',
     component: CategorySingleView,
     meta: { contentType: 'message' }
+  },
+  {
+    path: '/programs',
+    name: 'Programs',
+    component: ProgramsView
   },
 ]
 

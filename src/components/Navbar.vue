@@ -80,11 +80,21 @@ const closeNavbar = () => {
               Messages
             </router-link>
           </li>
-   
-   
-          
-   
           <!--
+          <li class="nav-item">
+            <router-link
+              class="nav-link"
+              to="/programs"
+              active-class="active"
+              @click="closeNavbar"
+            >
+              Programs
+            </router-link>
+          </li>
+   
+   -->
+          
+             <!--
           <li class="nav-item">
             
              <a class="nav-link" href="https://gcbf-night-class.app.clientclub.net/" target="_blank" rel="noopener noreferrer">
