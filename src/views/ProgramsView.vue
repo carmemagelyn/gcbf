@@ -76,18 +76,18 @@ onMounted(() => {
           <div class="team-grid mt-2">
             <div class="team-member">
               <img class="team-avatar" src="/newsletter/author/sammy-tabuena.jpg" alt="Sammy Tabuena" />
-              <h4>Sammy Tabuena</h4>
-              <p>Transcription and Editorial Preparation</p>
-              <p>Senior Instructor</p>
-              <p>Pastor, New Testament Baptist Church - Trapiche, Oton</p>
+              <h4>Sammy G. Tabuena</h4>
+              <p style="font-style: italic; font-size: 0.9rem;">Transcription and Editorial Preparation
+              <br>Senior Instructor
+              <br>Pastor, New Testament Baptist Church - Trapiche, Oton, Iloilo</p>
             </div>
             
           
             <div class="team-member">
               <img class="team-avatar" src="/newsletter/author/john-louie.jpg" alt="Pastor John Louie Berdejo" />
               <h4>John Louie Berdejo</h4>
-              <p>Instructor</p>
-              <p>Pastor, Graced Community Bible Fellowship - Iloilo City</p>
+              <p style="font-style: italic; font-size: 0.9rem;">Instructor
+              <br>Pastor, Graced Community Bible Fellowship - Iloilo City</p>
             </div>
 
 
