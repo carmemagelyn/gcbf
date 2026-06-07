@@ -169,6 +169,216 @@ Corinthians 5:17</i></p>
 
         }, */
         {
+       id: 11,
+    slug: 'god-ultimate-plan-gospel-filled-life',
+
+    title: 'God’s Ultimate Plan for the Church',
+
+    excerpt: 'Christlikeness',
+
+    date: 'June 7, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/02_church.jpg',
+    
+    video:'https://www.youtube.com/embed/E5mImbYNjIc?si=UzmumvQfg34LStnh',
+
+    caption:'Worship Service | June 7, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'God’s Ultimate Plan for the Church',
+      description: 'Christlikeness',
+      image:
+        '/newsletter/message/02_church.jpg',
+    },
+  
+        content1: `
+<article>
+
+    <p style="color:#9A3F3F;"><i>
+    Text:Romans 12:9-12
+
+    <br>"Let love be without dissimulation. Abhor that which is evil; cleave to that which is good. Be kindly affectioned one to another with brotherly love; in honour preferring one another; Not slothful in business; fervent in spirit; serving the Lord; Rejoicing in hope; patient in tribulation; continuing instant in prayer; Distributing to the necessity of saints; given to hospitality."
+    </i></p>
+
+    <br>
+
+    <h4>Introduction</h4>
+
+    <p>
+    What is God's ultimate plan for His church?
+    </p>
+
+    <p>
+    When many people think of the church, they think of a building, an organization, or a weekly gathering. However, according to the Bible, the church is God's redeemed people—those who have trusted Jesus Christ as their Lord and Saviour.
+    </p>
+
+    <p>
+    As believers, we must ask ourselves:
+    <b>What does God desire His people to become?</b>
+    </p>
+
+    <p>
+    The answer is found throughout Scripture. God's desire for every believer is not merely church attendance, religious activity, or outward conformity. His desire is that we become like Christ.
+    </p>
+
+    <p style="color:#9A3F3F;">
+    Romans 12:2
+    <br>"And be not conformed to this world: but be ye transformed by the renewing of your mind..."
+    </p>
+
+    <p>
+    The Christian life is a lifelong process of being transformed into the image of Christ. In Romans 12:9-12, Paul describes several characteristics of a Christlike believer. Three of them stand out:
+    <br>1. Love / Charity
+    <br>2. Live Righteously
+    <br>3. Live in Hope
+    </p>
+
+    <br>
+
+    <h4>I. Love / Charity</h4>
+
+    <p style="color:#9A3F3F;">
+    Romans 12:9-10
+    <br>"Let love be without dissimulation. Abhor that which is evil; cleave to that which is good.
+    <br>Be kindly affectioned one to another with brotherly love; in honour preferring one another;"
+    </p>
+
+    <p>
+    The first mark of Christlikeness is genuine love.
+    </p>
+
+    <p>
+    Paul says, "Let love be without dissimulation." The word "dissimulation" means hypocrisy or pretense. In other words, our love for fellow believers must be sincere and genuine.
+    </p>
+
+    <p>
+    Biblical charity is more than kind words or outward friendliness. It is a love that comes from a pure heart.
+    </p>
+
+    <p style="color:#9A3F3F;">
+    1 Timothy 1:5
+    <br>"Now the end of the commandment is charity out of a pure heart, and of a good conscience, and of faith unfeigned:"
+    </p>
+
+    <p>
+    True Christian love seeks the spiritual good of others. It rejoices when fellow believers grow in Christ and is willing to encourage, correct, and help them when needed.
+    </p>
+
+    <p>
+    Paul also says, "in honour preferring one another." A Christlike believer does not constantly ask, "What can others do for me?" Instead, he asks, "How can I serve others?"
+    </p>
+
+    <p>
+    God's plan for His church is a people marked by genuine charity.
+    </p>
+
+    <br>
+
+    <h4>II. Live Righteously</h4>
+
+    <p style="color:#9A3F3F;">
+    Romans 12:9
+    <br>"Abhor that which is evil; cleave to that which is good."
+    </p>
+
+    <p>
+    Christlikeness is not only demonstrated through love but also through holy living.
+    </p>
+
+    <p>
+    Paul commands believers to abhor evil. This means more than avoiding sin—it means hating it and refusing to embrace it.
+    </p>
+
+    <p style="color:#9A3F3F;">
+    Psalm 34:14
+    <br>"Depart from evil, and do good; seek peace, and pursue it."
+    </p>
+
+    <p>
+    A believer cannot grow in Christ while continually embracing the very things Christ died to save him from.
+    </p>
+
+    <p>
+    The Christian life is not about sinless perfection but sincere progression. As believers, we should continually pursue righteousness and seek to honor God in our daily lives.
+    </p>
+
+    <br>
+
+    <h4>III. Live in Hope</h4>
+
+    <p style="color:#9A3F3F;">
+    Romans 12:12
+    <br>"Rejoicing in hope; patient in tribulation; continuing instant in prayer;"
+    </p>
+
+    <p>
+    The third mark of Christlikeness is living in hope.
+    </p>
+
+    <p>
+    The Christian life is not free from trials and difficulties. However, our hope is not found in circumstances but in Christ.
+    </p>
+
+    <p>
+    Because our hope is anchored in Him, we can rejoice even in difficult seasons. We can be patient in tribulation and faithful in prayer.
+    </p>
+
+    <p style="color:#9A3F3F;">
+    Romans 15:13
+    <br>"Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost."
+    </p>
+
+    <p>
+    God's plan for His church is a people whose confidence remains in Christ regardless of life's circumstances.
+    </p>
+
+    <br>
+
+    <h4>Conclusion</h4>
+
+    <p>
+    God's ultimate plan for His church is Christlikeness.
+    </p>
+
+    <p>
+    He desires a people who:
+    <br>• Love one another with genuine charity.
+    <br>• Live righteously before God.
+    <br>• Remain steadfast in hope through every trial.
+    </p>
+
+    <p>
+    As we yield ourselves to God and His Word, He continues His work of transforming us into the image of His Son.
+    </p>
+
+    <p>
+    May God help us live according to His ultimate plan:
+    <b>CHRISTLIKENESS.</b>
+    </p>
+
+    <br>
+
+    <border style="border-top: 4px solid #9A3F3F; padding-left: 200px; margin-left: 0;">
+        <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+        <p style="color:#9A3F3F;"><i>
+        In what practical ways can you demonstrate Christlikeness through love, righteous living, and hope in Christ this week?
+        </i></p>
+
+    <br>
+
+</article>
+
+        `
+
+        },
+        {
        id: 10,
     slug: 'be-ye-transformed-by-the-renewing-of-your-mind',
 
@@ -444,7 +654,7 @@ where God wanted me to be.</p>
        id: 8,
     slug: 'god-ultimate-plan-gospel-filled-life',
 
-    title: 'God’s Ultimate Plan',
+    title: 'God’s Ultimate Plan for the Church',
 
     excerpt: 'Gospel-Filled Life',
 
