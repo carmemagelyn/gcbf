@@ -1,8 +1,8 @@
 
 export const newsletter = [
-    /*
+
     {
-     id: 10,
+     id: 12,
     slug: 'saved-by-grace',
 
     title: 'Saved by Grace',
@@ -167,7 +167,7 @@ Corinthians 5:17</i></p>
         </article>
         `
 
-        }, */
+        }, 
         {
        id: 11,
     slug: 'god-ultimate-plan-gospel-filled-life',
