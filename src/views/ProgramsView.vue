@@ -20,7 +20,8 @@ onMounted(() => {
           <span class="hero-eyebrow">Study God's Word at Your Own Pace</span>
           <h1 class="hero-title">Bible Correspondence Program</h1>
           <p class="hero-description">
-            Grow in your knowledge of God's Word through the <b>Diploma in Bible Program</b> offered by Graced Community Bible Fellowship in partnership with <b>Open Bible College International.</b> Grace Community Bible Fellowship is an independent ministry that administers this correspondence program using OBCI course materials with permission from <i>Dr. Dave Reese.</i>
+            Grow in your knowledge of God's Word through the <b>Diploma in Bible Program</b> offered by Graced Community Bible Fellowship in partnership with <b>Open Bible College International.</b> 
+            <br />Graced Community Bible Fellowship is an independent ministry that administers this correspondence program using OBCI course materials with permission from <i>Dr. Dave Reese.</i>
 
           </p>
           <p class="hero-description">
