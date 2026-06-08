@@ -79,7 +79,7 @@ onMounted(() => {
               <h4>Sammy G. Tabuena</h4>
               <p style="font-style: italic; font-size: 0.9rem;">Transcription and Editorial Preparation
               <br>Senior Instructor
-              <br>Pastor, New Testament Baptist Church - Trapiche, Oton, Iloilo</p>
+              <br>Senior Pastor, New Testament Baptist Church - Trapiche, Oton, Iloilo</p>
             </div>
             
           
