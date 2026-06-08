@@ -20,7 +20,7 @@ onMounted(() => {
           <span class="hero-eyebrow">Study God's Word at Your Own Pace</span>
           <h1 class="hero-title">Bible Correspondence Program</h1>
           <p class="hero-description">
-            Grow in your knowledge of God's Word through the <b>Diploma in Bible Program</b> offered by Grace Community Bible Fellowship in partnership with <b>Open Bible College International.</b> Grace Community Bible Fellowship is an independent ministry that administers this correspondence program using OBCI course materials with permission from <i>Dr. Dave Reese.</i>
+            Grow in your knowledge of God's Word through the <b>Diploma in Bible Program</b> offered by Graced Community Bible Fellowship in partnership with <b>Open Bible College International.</b> Grace Community Bible Fellowship is an independent ministry that administers this correspondence program using OBCI course materials with permission from <i>Dr. Dave Reese.</i>
 
           </p>
           <p class="hero-description">
@@ -63,7 +63,7 @@ onMounted(() => {
           <p style="line-height: 1.5;color: #9A3F3F;">
             <strong>Every Tuesday</strong><br />
             <strong>6:30 PM – 8:00 PM</strong><br />
-            <strong>Grace Community Bible Fellowship</strong>
+            <strong>Graced Community Bible Fellowship</strong>
           </p>
           All coursework is completed through the LMS. Attendance is optional.
         </section>
