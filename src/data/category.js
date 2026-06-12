@@ -1,6 +1,405 @@
 
 export const newsletter = [
+ {
+       id: 13,
+    slug: 'transformed-from-eternity-to-eternity',
 
+    title: 'Transformed: From Eternity to Eternity',
+
+    excerpt: "Man's Physical and Spiritual Transformation",
+
+    date: 'June 12, 2026',
+
+    author: 'Pastor Sammy Tabuena',
+
+    authorImage: '/newsletter/author/sammy.jpg',
+
+    coverphoto: '/newsletter/message/yc_mind.jpg',
+    
+    video:'https://www.youtube.com/embed/BBzb_8mS3kg?si=5_qXWqzvvzzwpFXU',
+
+    caption:'Youth Community | June 11, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'Transformed: From Eternity to Eternity',
+      description: "Man's Physical and Spiritual Transformation",
+      image:
+        '/newsletter/message/yc_mind.jpg',
+    },
+  
+        content1: `
+
+
+<article>
+
+
+
+  <p style="color:#9A3F3F;"><i>
+
+    Theme Verse: "And be not conformed to this world: but be ye transformed by the renewing of your mind,
+
+    that ye may prove what is that good, and acceptable, and perfect, will of God." – Romans 12:2
+
+  </i></p>
+
+
+
+  <p>
+
+    Every person is somewhere in a three-part story: created perfect, corrupted by sin, and conformed to Christ.
+
+    The Bible is not merely a religious book but a historical book that reveals God's plan for mankind. From
+
+    Genesis to Revelation, Scripture answers one great question: How does God restore what sin has ruined? The
+
+    answer is found in Jesus Christ. Romans 12:2 reminds us that God does not simply call us to avoid the
+
+    world's influence but to experience transformation through the renewing of our minds so that we may prove
+
+    what is that good, and acceptable, and perfect will of God.
+
+  </p>
+
+
+
+  <br>
+
+
+  <h4>I. Created Perfect</h4>
+
+
+
+  <p>
+
+    God's original design for mankind was perfect. Genesis records that God created man in His own image and
+
+    after His likeness. Man was not the product of chance or accident but the direct creation of an all-wise
+
+    Creator.
+
+  </p>
+
+
+
+  <p>
+
+    Genesis 1:26 says,
+
+    <br><span style="color:#9A3F3F;">
+
+      “And God said, Let us make man in our image, after our likeness: and let them have dominion over the fish
+
+      of the sea, and over the fowl of the air, and over the cattle, and over all the earth, and over every
+
+      creeping thing that creepeth upon the earth.”
+
+    </span>
+
+  </p>
+
+
+
+  <p>
+
+    Genesis 1:27 continues,
+
+    <br><span style="color:#9A3F3F;">
+
+      “So God created man in his own image, in the image of God created he him; male and female created he
+
+      them.”
+
+    </span>
+
+  </p>
+
+
+
+  <p>
+
+    God also formed man from the dust of the ground and breathed into his nostrils the breath of life.
+
+    Genesis 2:7 declares,
+
+    <br><span style="color:#9A3F3F;">
+
+      “And the LORD God formed man of the dust of the ground, and breathed into his nostrils the breath of
+
+      life; and man became a living soul.”
+
+    </span>
+
+  </p>
+
+
+
+  <p>
+
+    Man was created with body, soul, and spirit according to God's perfect design. Before sin entered the
+
+    world, there was no guilt, no corruption, and no separation from God. His creation was good, and His will
+
+    for mankind was good, acceptable, and perfect.
+
+  </p>
+
+
+
+  <br>
+
+
+
+  <h4>II. Corrupted by Sin</h4>
+
+
+
+  <p>
+
+    The perfection of creation did not remain. God warned Adam concerning the tree of the knowledge of good
+
+    and evil:
+
+  </p>
+
+
+
+  <p>
+
+    <span style="color:#9A3F3F;">
+
+      “But of the tree of the knowledge of good and evil, thou shalt not eat of it: for in the day that thou
+
+      eatest thereof thou shalt surely die.”
+
+    </span>
+
+    <br>– Genesis 2:17
+
+  </p>
+
+
+
+  <p>
+
+    Satan's first attack was against the Word of God. Genesis 3:1 records his question:
+
+    <br><span style="color:#9A3F3F;">
+
+      “Yea, hath God said, Ye shall not eat of every tree of the garden?”
+
+    </span>
+
+  </p>
+
+
+
+  <p>
+
+    Doubting God's truth led to disobedience, and sin entered the world. What was once perfect became
+
+    corrupted. Death passed upon all men because all have sinned. Every person inherits a sinful nature and is
+
+    separated from God. The world continues to reject its Creator and follows its own wisdom, yet no philosophy,
+
+    education, or human effort can undo the consequences of sin. The greatest problem of mankind is not
+
+    ignorance or poverty but sin itself.
+
+  </p>
+
+
+
+  <p>
+
+    Although sin brought corruption, God provided redemption through Jesus Christ. Salvation is not earned by
+
+    good works or personal righteousness but by God's mercy alone.
+
+  </p>
+
+
+
+  <p>
+
+    Titus 3:5 declares,
+
+    <br><span style="color:#9A3F3F;">
+
+      “Not by works of righteousness which we have done, but according to his mercy he saved us, by the washing
+
+      of regeneration, and renewing of the Holy Ghost.”
+
+    </span>
+
+  </p>
+
+
+
+  <p>
+
+    Christ died for our sins so that sinners might receive forgiveness through faith in Him. Through the
+
+    washing of regeneration and renewing of the Holy Ghost, God gives new life to those who trust Christ.
+
+    Salvation is not the finish line of the Christian life but its beginning. It is the starting point of a
+
+    transformed life that continues to grow in grace.
+
+  </p>
+
+
+
+  <br>
+
+
+
+  <h4>III. Conformed to Christ</h4>
+
+
+
+  <p>
+
+    God's purpose does not end with saving sinners. He desires to conform believers to the image of His Son.
+
+    Romans 8:29 says,
+
+    <br><span style="color:#9A3F3F;">
+
+      “For whom he did foreknow, he also did predestinate to be conformed to the image of his Son, that he
+
+      might be the firstborn among many brethren.”
+
+    </span>
+
+  </p>
+
+
+
+  <p>
+
+    Transformation begins with the renewing of the mind. Romans 12:2 commands believers not to be conformed
+
+    to this world but to be transformed. As God's Word changes our thinking, our lives begin to reflect His
+
+    character rather than the values of the world.
+
+  </p>
+
+
+
+  <p>
+
+    Every believer is called to be Christ's ambassador wherever God has placed him. Our schools, workplaces,
+
+    businesses, and professions become mission fields where transformed lives point others to Christ. God
+
+    desires transformed people to influence an untransformed world.
+
+  </p>
+
+  <p>
+
+    The work that God begins in salvation will one day be completed. Our minds are being renewed today, our
+
+    lives are being transformed today, and one day our bodies will also be changed to be like Christ's glorious
+
+    body. The process that began with regeneration will end in complete glorification when we see Him face to
+
+    face.
+
+  </p>
+
+
+
+  <p>
+
+    Until then, believers are called to continue growing in Christ, allowing Him to shape every area of life
+
+    through His Word and through the power of the Holy Spirit.
+
+  </p>
+
+
+
+  <br>
+
+
+
+  <h4>Conclusion</h4>
+
+
+
+  <p>
+
+    The story of humanity can be summarized in four simple truths:
+
+  </p>
+
+
+
+  <ul>
+
+    <li>Creation gave man perfection.</li>
+
+    <li>Sin brought corruption.</li>
+
+    <li>Christ brings regeneration and conformity.</li>
+
+    <li>Resurrection brings glorification.</li>
+
+  </ul>
+
+
+
+  <p>
+
+    God's purpose is not merely to change where we spend eternity but to transform who we are for eternity.
+
+    Through the renewing of our minds, He molds us into the image of Christ and teaches us to discern His
+
+    good, acceptable, and perfect will. As we yield ourselves to Him each day, we become living testimonies of
+
+    His saving grace and transforming power.
+
+  </p>
+
+
+
+  <br>
+
+
+
+  <border style="border-top: 4px solid #9A3F3F; padding-left: 200px; margin-left: 0;">
+
+
+
+    <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+
+
+    <p style="color:#9A3F3F;"><i>
+
+      If God created you for His perfect purpose, redeemed you by His mercy, and is now conforming you to the
+
+      image of Christ, are you allowing Him to renew your mind each day, or are you still being conformed to
+
+      the pattern of this world?
+
+    </i></p>
+
+
+
+    <br>
+
+
+
+</article>
+
+        `
+
+        },
     {
      id: 12,
     slug: 'saved-by-grace',
