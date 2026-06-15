@@ -1,5 +1,198 @@
 
 export const newsletter = [
+  {
+       id: 14,
+    slug: 'god-ultimate-plan-gospel-filled-life',
+
+    title: 'God’s Desire for the Church',
+
+    excerpt: 'Towards Other People',
+
+    date: 'June 14, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/02_church.jpg',
+    
+    video:'https://www.youtube.com/embed/nAU7qgjQIXg?si=iL65-euRPGQgA_q9',
+
+    caption:'Worship Service | June 14, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'God’s Desire for the Church',
+      description: 'Towards Other People',
+      image:
+        '/newsletter/message/02_church.jpg',
+    },
+  
+        content1: `
+
+<article>
+
+    <p style="color:#9A3F3F;"><i>
+    Text: Romans 12:17–21
+
+    <br>"Recompense to no man evil for evil. Provide things honest in the sight of all men. If it be possible, as much as lieth in you, live peaceably with all men. Dearly beloved, avenge not yourselves, but rather give place unto wrath: for it is written, Vengeance is mine; I will repay, saith the Lord. Therefore if thine enemy hunger, feed him; if he thirst, give him drink: for in so doing thou shalt heap coals of fire on his head. Be not overcome of evil, but overcome evil with good."
+    </i></p>
+
+    <br>
+
+    <h4>Introduction</h4>
+
+    <p>
+    Over the past weeks, we have learned that God's goal for every believer is Christlikeness. Since we have been redeemed by the grace of God through faith in Jesus Christ, our lives should reflect that transformation in the way we treat other people.
+    </p>
+
+    <p>
+    Romans 12 moves from doctrine to practical Christian living. After teaching believers to present themselves as living sacrifices, Paul explains how that transformed life should be seen in everyday relationships.
+    </p>
+
+    <p>
+    God's desire is not merely that His people gather together in worship, but that they become a testimony of His grace to the world around them.
+    </p>
+
+    <p>
+    In Romans 12:17–21, God's desire for His church toward other people can be summarized in three truths:
+    <br>1. A Forgiving Heart
+    <br>2. An Honest Life
+    <br>3. Follow Peace
+    </p>
+
+    <br>
+
+    <h4>I. A Forgiving Heart</h4>
+
+    <p style="color:#9A3F3F;">
+    Romans 12:19-20
+    <br>"Dearly beloved, avenge not yourselves, but rather give place unto wrath: for it is written, Vengeance is mine; I will repay, saith the Lord.
+    <br>Therefore if thine enemy hunger, feed him; if he thirst, give him drink: for in so doing thou shalt heap coals of fire on his head."
+    </p>
+
+    <p>
+    One of God's desires for His church is that believers possess a forgiving heart. Human nature naturally seeks revenge whenever we are hurt or offended. We often want others to experience the same pain they have caused us.
+    </p>
+
+    <p>
+    Yet Scripture commands believers not to avenge themselves. Vengeance belongs to God alone, and He alone judges righteously. When we choose to leave judgment in His hands, we acknowledge His sovereignty and trust His justice.
+    </p>
+
+    <p>
+    Paul goes even further by commanding believers to show kindness to their enemies. If they hunger, we are to feed them; if they thirst, we are to give them drink. Such actions reveal that the gospel has transformed our hearts.
+    </p>
+
+    <p>
+    Forgiveness pictures what Christ has done for us. Though we were sinners who deserved judgment, Christ became our substitute and died in our place. Because we have received forgiveness, we are called to extend forgiveness to others.
+    </p>
+
+    <p>
+    A church that practices forgiveness becomes a living testimony of God's grace to the world.
+    </p>
+
+    <br>
+
+    <h4>II. An Honest Life</h4>
+
+    <p style="color:#9A3F3F;">
+    Romans 12:17
+    <br>"Recompense to no man evil for evil. Provide things honest in the sight of all men."
+    </p>
+
+    <p>
+    God also desires His people to live honest and upright lives before everyone. Integrity means that our public testimony matches our private conduct.
+    </p>
+
+    <p>
+    The phrase "in the sight of all men" reminds us that our lives are constantly being observed by family members, coworkers, classmates, neighbors, and friends. People often judge the message of Christ by the way Christians live.
+    </p>
+
+    <p>
+    An honest life is more than avoiding lies. It is a life of consistency, faithfulness, and godly character. Our testimony should remain the same wherever God places us.
+    </p>
+
+    <p style="color:#9A3F3F;">
+    2 Corinthians 8:21
+    <br>"Providing for honest things, not only in the sight of the Lord, but also in the sight of men."
+    </p>
+
+    <p>
+    As believers, our lives should become a gospel in human form. While people may forget our words, they will remember the way we live before them.
+    </p>
+
+    <br>
+
+    <h4>III. Follow Peace</h4>
+
+    <p style="color:#9A3F3F;">
+    Romans 12:18
+    <br>"If it be possible, as much as lieth in you, live peaceably with all men."
+    </p>
+
+    <p>
+    God's desire is that His church pursue peace with those around them. While peace cannot always be achieved because it depends on others, believers are responsible for doing everything within their power to live peaceably.
+    </p>
+
+    <p>
+    Following peace does not mean compromising biblical convictions. Rather, it means refusing to create unnecessary conflict and seeking to build relationships through humility and grace.
+    </p>
+
+    <p>
+    God places people in our lives for a purpose. The difficult coworker, neighbor, classmate, or family member may become the very person through whom God opens a door for the gospel.
+    </p>
+
+    <p style="color:#9A3F3F;">
+    Hebrews 12:14
+    <br>"Follow peace with all men, and holiness, without which no man shall see the Lord."
+    </p>
+
+    <p>
+    Instead of burning bridges, believers should seek to build them so that others may come to know Christ through our testimony and witness.
+    </p>
+
+    <br>
+
+    <h4>Conclusion</h4>
+
+    <p>
+    Romans 12:17–21 reveals God's desire for His church toward other people.
+    </p>
+
+    <p>
+    He desires believers who:
+    <br>• Have a forgiving heart that reflects the grace of Christ.
+    <br>• Live an honest life marked by integrity before all people.
+    <br>• Follow peace and seek to build relationships for the sake of the gospel.
+    </p>
+
+    <p>
+    When these three qualities are evident in our lives, we become living testimonies of God's transforming grace. Our words proclaim Christ, but our actions confirm the message we preach.
+    </p>
+
+    <p>
+    May God help us, through the power of the Holy Spirit, to live each day with a forgiving heart, an honest life, and a commitment to follow peace so that others may see Christ in us.
+    </p>
+
+    <br>
+
+    <border style="border-top: 4px solid #9A3F3F; padding-left: 200px; margin-left: 0;">
+        <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+        <p style="color:#9A3F3F;"><i>
+        What practical changes can you make this week to demonstrate a forgiving heart, live an honest life, and follow peace in a way that points others to Jesus Christ?
+        </i></p>
+
+    <br>
+
+</article>
+
+
+
+        `
+
+        },
  {
        id: 13,
     slug: 'transformed-from-eternity-to-eternity',
