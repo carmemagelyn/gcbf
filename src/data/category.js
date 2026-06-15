@@ -2,7 +2,7 @@
 export const newsletter = [
   {
        id: 14,
-    slug: 'god-ultimate-plan-gospel-filled-life',
+    slug: 'god-desire-for-the-church',
 
     title: 'God’s Desire for the Church',
 
