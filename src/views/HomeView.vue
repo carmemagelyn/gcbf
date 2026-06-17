@@ -50,6 +50,49 @@
       </div>
     </section>
 
+    <section class="booklet-section py-5 bg-white">
+      <div class="container-fluid d-flex flex-column align-items-center">
+        <div class="booklet-title text-center mb-4">
+          <h2 class="fw-bold mb-1">Jesus Christ Alone</h2>
+          <p class="lead text-dark mb-1" style="font-size: .8rem;">CAN SAVE AND SATISFY YOUR SOUL</p>
+          <p class="text-secondary mb-0" style="font-size: .8rem;">Discover seven biblical truths about salvation and eternal life.</p>
+        </div>
+
+        <p class="text-muted mb-0" style="font-size: 0.85rem;">Click the button here to read.</p>
+        <button class="btn btn-link booklet-expand-btn p-0" @click="showBookletContent = !showBookletContent" style="text-decoration: none; color: inherit; font-size: 1.5rem;">
+          ▼
+        </button>
+
+        <div class="card booklet-card border-0 p-4" style="max-width: 90%; width: 100%; border: none !important;" v-if="showBookletContent">
+          <div class="booklet-content" :key="currentBookletPage">
+            <div v-if="bookletPages[currentBookletPage].title" class="booklet-page-header d-flex flex-column flex-md-row align-items-start gap-4 mb-4">
+              <div class="booklet-page-number display-1 fw-bold text-dark">{{ bookletPages[currentBookletPage].pageNumber }}</div>
+              <div>
+                <h3 class="booklet-page-title text-uppercase fw-bold mb-2">{{ bookletPages[currentBookletPage].title }}</h3>
+                <p class="booklet-page-subtitle text-secondary mb-0">{{ bookletPages[currentBookletPage].subtitle }}</p>
+              </div>
+            </div>
+
+            <div v-for="(paragraph, index) in bookletPages[currentBookletPage].paragraphs" :key="index" class="mb-3 text-muted booklet-paragraph" v-html="paragraph"></div>
+          </div>
+
+          <div class="d-flex flex-column align-items-center pt-3 mt-3 gap-3">
+            <div class="text-muted">
+              Page {{ currentBookletPage + 1 }} of {{ bookletPages.length }}
+            </div>
+            <div class="d-flex gap-3">
+              <button class="btn btn-outline-secondary booklet-nav-btn" @click="showPreviousBookletPage">
+                &lt;
+              </button>
+              <button class="btn btn-primary booklet-nav-btn" @click="showNextBookletPage">
+                &gt;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   
     <section id="services" class="py-5">
   <div class="container">
@@ -593,6 +636,146 @@ const getWeeklyVerse = () => {
 }
 
 const weeklyVerse = ref(getWeeklyVerse())
+
+const bookletPages = [
+  {
+    pageNumber: 1,
+    title: 'THE PERFECT GOD',
+    subtitle: 'God is perfect, thus, He is worthy to be loved and obeyed above all',
+    paragraphs: [
+      '<strong>God is Perfect in All that He is</strong>',
+      'And one cried unto another, and said, “Holy, holy, holy, is the Lord of hosts: the whole earth is full of his glory.” (Isaiah 6:3).',
+      '<strong>God is Perfect in All that He Does</strong>',
+      '“In the beginning God created the heaven and the earth” (Genesis 1:1).',
+      '“And God saw everything that he had made, and, behold, it was very good. And the evening and the morning were the sixth day.” (Genesis 1:31).',
+      '<strong>There is Only One Perfect God</strong>',
+      '“I am the Lord, and there is none else, there is no God beside me: I girded thee, though thou hast not known me:” (Isaiah 45:5).',
+      'Do you agree that God alone is worthy of worship?',
+      ],
+  },
+  {
+    pageNumber: 2,
+    title: 'THE PURPOSE',
+    subtitle: 'Man’s purpose is to love and obey God above all',
+    paragraphs: [
+      '<strong>Man is Created to Love God Above All</strong>',
+      '“And thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind, and with all thy strength: this is the first commandment.” (Mark 12:30).',
+      'To love God is to worship God. It involves knowing, desiring, enjoying, fearing, trusting, and valuing God above anyone and anything else (Psalms 73:25-26; Luke 14:26).',
+      '<strong>Man is Created to Obey God Above All</strong>',
+      '“Let us hear the conclusion of the whole matter: Fear God, and keep his commandments: for this is the whole duty of man.” (Ecclesiastes 12:13).',
+      '<strong>Man is Required to Love and Obey God Perfectly</strong>',
+      '“Be ye therefore perfect, even as your Father which is in heaven is perfect.” (Matthew 5:48).',
+      'Is there anyone who perfectly loves and obeys God?',
+    ],
+  },
+  {
+    pageNumber: 3,
+    title: 'THE PROBLEM',
+    subtitle: 'All men have sinned by not loving and obeying God above all',
+    paragraphs: [
+      '<strong>Man Sinned By Not Loving God</strong>',
+      '“And this is the condemnation, that light is come into the world, and men loved darkness rather than light, because their deeds were evil.” (John 3:19).',
+      'Man is sinful by nature. He loves darkness rather than the light who is Jesus Christ (John 8:12). Darkness or sin is anything that is morally evil like cheating, lying, lustful thought. However, it is also anything that is morally good like money, education, work, friends, and family that you value more than God.',
+      '<strong>Man Sinned By Not Obeying God</strong>',
+      '“For all have sinned, and come short of the glory of God;” (Romans 3:23). “For whosoever shall keep the whole law, and yet offend in one point, he is guilty of all.” (James 2:10).',
+      'If loving God is the greatest commandment, what is the greatest sin? Are you also guilty of committing the greatest sin? If all men are guilty, what does all men deserve then, reward or penalty?',
+    ],
+  },
+  {
+    pageNumber: 4,
+    title: 'THE PENALTY',
+    subtitle: "Eternal death in hell is the penalty for man's sin",
+    paragraphs: [
+      'Because God is holy and just, He demands punishment for sin. If God does not punish sin, it means He is not a good and righteous judge.',
+      '<strong>The Penalty for Sin is Death</strong>',
+      '“For the wages of sin is death...” (Romans 6:23).',
+      '<strong>The Final Penalty for Sin is Eternal Suffering in Hell</strong>',
+      '“If any man love not the Lord Jesus Christ, let him be Anathema Maranatha [be condemned in hell]” (1 Corinthians 16:22).',
+      '“And fear not them which kill the body, but are not able to kill the soul: but rather fear him which is able to destroy both soul and body in hell.” (Matthew 10:28).',
+      '“Where their worm dieth not, and the fire is not quenched.” (Mark 9:44).',
+      'Because God is perfect, only perfect people can go to heaven and thus, escape Hell (Galatians 3:10; James 2:10; Revelation 21:27). Is this good news or bad news? Why? The fifth truth presents the good news.',
+    ],
+  },
+  {
+    pageNumber: 5,
+    title: 'THE PROVISION',
+    subtitle: 'Jesus Christ came to earth for man’s salvation',
+    paragraphs: [
+      'Jesus Christ alone can represent God to man and man to God for He alone is both God and man (1 Timothy 2:5; 1 John 5:20). Christ Himself said “I am the way, the truth, and the life: no man cometh unto the Father, but by me.” (John 14:6).',
+      'There are three things that Jesus Christ did to provide salvation for man:',
+      '<strong>Jesus Lived a Perfect Life for Man’s Perfection</strong>',
+      '“For as by one man’s disobedience many were made sinners, so by the obedience of one shall many be made righteous.” (Romans 5:19).',
+      '<strong>Jesus Died a Painful Death for Man’s Punishment</strong>',
+      '“But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us.” (Romans 5:8).',
+      '<strong>Jesus Resurrected from the Dead for Man’s Salvation</strong>',
+      '“Who was delivered for our offences, and was raised again for our justification. (Being perfect in the eyes of God)” (Romans 4:25).',
+      '<div class="booklet-question-box mb-3"><p class="fw-bold mb-2">HOW DO YOU THINK MAN CAN BE SAVED FROM HELL<br>AND BE ACCEPTED BY GOD IN HEAVEN?</p><p class="mb-0">a. By doing good works&nbsp;&nbsp;c. By baptism<br>b. By church/religion&nbsp;&nbsp;d. By faith in Christ plus good works<br>e. _________</p></div>',
+      'The only right answer to the question above is: By faith in Christ alone. It is so because Christ is the only Savior (Acts 4:12). Adding your good works to Christ means you do not fully trust Christ, especially on the sufficiency of His finished work of salvation. Christ’s coming down from heaven to earth would be useless if it is possible to gain salvation by doing good works. The Bible says “we are all like an unclean thing, and all our righteousness [good works] are as filthy rags” (Isaiah 64:6). Thus, obtaining salvation is only by faith in Christ alone.',
+      '“For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: Not of works, lest any man should boast.” (Ephesians 2:8-9).',
+      'The next truth will further explain how a sinful man can be perfect in the eyes of God and receive the gifts of eternal salvation. Do you want to know how?',
+    ],
+  },
+  {
+    pageNumber: 6,
+    title: 'THE PERSONAL RESPONSE',
+    subtitle: 'You must repent and believe in Christ to be eternally saved',
+    paragraphs: [
+      '<strong>You Must Repent from Your Sins</strong>',
+      '“Repent ye therefore, and be converted, that your sins may be blotted out, when the times of refreshing shall come from the presence of the Lord.” (Acts 3:19).',
+      'True repentance is a change of mind and heart and a genuine decision to turn away from sin towards God (Acts 20:21). It is realizing that sin dishonors God, does not give lasting satisfaction, and its end is eternal separation from God in hell. It also involves forsaking anything you have added to Christ for your salvation, like good works.',
+      '<strong>You Must Believe in Christ Alone</strong>',
+      '“And they said, Believe on the Lord Jesus Christ, and thou shalt be saved, and thy house.” (Acts 16:31).',
+      'True faith is trusting Christ alone, especially His finished work of salvation through His perfect life, sacrificial death and resurrection. True faith is also receiving Christ for who He is — God, Savior, Lord and Master. The primary goal of saving faith is reconciliation with God and intimacy with Him through love and obedience for life and eternity. Escaping hell and going to heaven are only secondary.',
+    ],
+  },
+  {
+    pageNumber: 7,
+    title: 'PRIVILEGES FOR HAVING CHRIST’S PRESENCE AND PERFECTION',
+    subtitle: 'God declares sinful man perfect and eternally saves him',
+    paragraphs: [
+      'Man Can be Perfect in the Eyes of God by Grace through Faith',
+      'At the very moment a person repents and trusts in Christ alone for salvation he becomes instantly and permanently perfect in God’s eyes. This is on the basis of Christ’s perfection counted as his. The Bible says, “But to him that worketh not, but believeth on him that justifieth the ungodly, his faith is counted for righteousness.” (Romans 4:5).',
+      'A Thief who Became Perfect in the Eyes of God',
+      'During the crucifixion of Jesus Christ, one of the thieves was saved. He repented from his sin and believed on Christ. Right there and then, Jesus granted forgiveness and eternal life to the thief. Christ said to him, “To day shalt thou be with me in paradise” (Luke 23:43). The thief was accepted by the Holy God in heaven. Why? It is so because at that very moment the thief genuinely repented and fully trusted Christ to save him, he then became perfect in the eyes of God. How? The death of Christ erased all his sins, and the perfection of Christ was counted as his.',
+      'Do you understand how the thief became perfect in the eyes of God? How?',
+      'Having the presence and the perfection of Jesus Christ does not only make a sinful man perfect in the eyes of God, but it also results in many other wonderful eternal privileges such as:',
+      '<strong>1. Forgiveness of all sins — past, present and future</strong> (Romans 4:5-8; Col 2:13).',
+      '<strong>2. Eternal reconciliation with God</strong> (Romans 5:9-11).',
+      '<strong>3. Being a child of God for life and eternity</strong> (John 1:12; Romans 8:16-17).',
+      '<strong>4. Sure salvation from the punishment of sin in hell</strong> (Romans 5:9; 8:1; John 5:24).',
+      '<strong>5. Having eternal life now and forever</strong> (1 John 5:11-13; John 3:16, 36; 10:28-29).',
+      '<strong>6. Having the permanent presence of Jesus Christ in one’s life</strong> (Hebrews 13:5).',
+      '<strong>7. Having real satisfaction through glorifying God by loving and obeying Him above all</strong> (Psalm 16:11; John 6:35; Romans 5:11; Mark 12:30).',
+      'Christian life is not easy. It involves sacrifices. However, it is worth it for there is nothing in this world more wonderful and satisfying than having Christ and loving Him above all. This is why Christ said, “I am come that they might have life, and that they might have it more abundantly” (John 10:10).',
+      'In God’s presence is fullness of joy and pleasures forevermore (Psalm 16:11).',
+      'Do you understand how the thief became perfect in the eyes of God? How?',
+    ],
+  },
+  {
+    pageNumber: 10,
+    paragraphs: [
+      'Answer the following questions in your mind: Have you already experienced the wonderful privileges of salvation? Are you sure you are going to heaven and not to hell? Do you already have the presence and perfection of Christ? Have you genuinely repented from your sin and put your trust on Christ alone for your salvation?',
+      'If you are already saved, praise the Lord! Keep valuing and following Him until the end. However, if the Holy Spirit is convicting your heart right now that you are not yet saved, repent and believe in Him, for behold now is the day of salvation (2 Corinthians 6:2). Admit you are a sinner, deserving of eternal death in hell. Admit you are helpless to save yourself. Then, humbly come to Christ. Ask Him to forgive you and reconcile you to God. Also ask Him to rule your life to make you a person who loves and obeys the Lord Jesus Christ. Then claim God’s promise that “For whosoever calls upon the name of the Lord shall be saved” (Romans 10:13). Talk to God in prayer right now in response to the truths He has revealed to you through this booklet.',
+      '<div class="booklet-footer-box"><p class="mb-3">Thank you for your time in hearing the Good News of salvation through this booklet. May you continue to give importance to the Word of God as Christ Himself said, “Man shall not live by bread alone, but by every word that proceeds from the mouth of God.”</p><p class="mb-0">We offer more lessons from the Bible to help you know and love God more. Would you like to meet again for follow up bible study?</p></div>',
+      'You can contact us at our Facebook page: <a href="https://www.facebook.com/gracedcommunitybiblefellowship" target="_blank" rel="noopener noreferrer">facebook.com/gracedcommunitybiblefellowship</a>.'
+    ],
+  },
+]
+const currentBookletPage = ref(0)
+const bookletDirection = ref('next')
+const showBookletContent = ref(false)
+const pageTurnClass = computed(() => `page-turn-${bookletDirection.value}`)
+
+const showNextBookletPage = () => {
+  bookletDirection.value = 'next'
+  currentBookletPage.value = (currentBookletPage.value + 1) % bookletPages.length
+}
+
+const showPreviousBookletPage = () => {
+  bookletDirection.value = 'prev'
+  currentBookletPage.value = (currentBookletPage.value - 1 + bookletPages.length) % bookletPages.length
+}
+
 const latestNews = computed(() => newsletter.slice(0, 12))
 
 
@@ -733,6 +916,156 @@ footer a:hover {
 .newsletter-item:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transform: translateY(-2px);
+}
+
+.booklet-card {
+  background: #ffffff;
+  border-radius: 18px;
+  min-height: 360px;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.booklet-title h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.35rem;
+}
+
+.booklet-expand-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booklet-expand-btn:hover {
+  color: #28a745 !important;
+}
+
+.booklet-page-header {
+  padding-bottom: 0.75rem;
+}
+
+.booklet-page-number {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.booklet-page-title {
+  font-size: 1.55rem;
+}
+
+.booklet-page-subtitle {
+  font-size: 0.92rem;
+}
+
+.booklet-paragraph {
+  color: #4b4b4b;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 0.9rem;
+}
+
+.booklet-paragraph strong {
+  display: block;
+  font-weight: 700;
+  color: #202020;
+  margin-bottom: 0.25rem;
+}
+
+.booklet-question-box {
+  border: 2px solid #202020;
+  padding: 1rem 1.1rem;
+  background: #f8f7f2;
+  color: #202020;
+  border-radius: 0.75rem;
+}
+
+.booklet-question-box p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.booklet-question-box .fw-bold {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.booklet-footer-box {
+  margin-top: 1.5rem;
+  border: 1px solid #202020;
+  padding: 1rem 1.1rem;
+  
+  border-radius: 0.75rem;
+}
+
+.booklet-footer-box p {
+  margin-bottom: 0.75rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.booklet-nav-btn {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  font-size: 1.75rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.booklet-section .badge {
+  background: #9a3f3f;
+}
+
+.page-turn-next-enter-active,
+.page-turn-prev-enter-active,
+.page-turn-next-leave-active,
+.page-turn-prev-leave-active {
+  transition: transform 0.45s ease, opacity 0.45s ease;
+}
+
+.page-turn-next-enter-from {
+  opacity: 0;
+  transform: perspective(1000px) rotateY(25deg) translateX(20px);
+}
+
+.page-turn-next-enter-to {
+  opacity: 1;
+  transform: perspective(1000px) rotateY(0deg) translateX(0);
+}
+
+.page-turn-next-leave-from {
+  opacity: 1;
+  transform: perspective(1000px) rotateY(0deg) translateX(0);
+}
+
+.page-turn-next-leave-to {
+  opacity: 0;
+  transform: perspective(1000px) rotateY(-25deg) translateX(-20px);
+}
+
+.page-turn-prev-enter-from {
+  opacity: 0;
+  transform: perspective(1000px) rotateY(-25deg) translateX(-20px);
+}
+
+.page-turn-prev-enter-to {
+  opacity: 1;
+  transform: perspective(1000px) rotateY(0deg) translateX(0);
+}
+
+.page-turn-prev-leave-from {
+  opacity: 1;
+  transform: perspective(1000px) rotateY(0deg) translateX(0);
+}
+
+.page-turn-prev-leave-to {
+  opacity: 0;
+  transform: perspective(1000px) rotateY(25deg) translateX(20px);
 }
 
 /* Image */
