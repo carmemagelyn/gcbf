@@ -58,12 +58,13 @@
           <p class="text-secondary mb-0" style="font-size: .8rem;">Discover seven biblical truths about salvation and eternal life.</p>
         </div>
 
-        <p class="text-muted mb-0" style="font-size: 0.85rem;">Click the button here to read.</p>
-        <button class="btn btn-link booklet-expand-btn p-0" @click="showBookletContent = !showBookletContent" style="text-decoration: none; color: inherit; font-size: 1.5rem;">
-          ▼
+        
+        <button class="btn btn-outline-primary btn-lg mb-0" @click="showBookletContent = !showBookletContent" style="text-decoration: none; color: inherit; font-size: .8rem;">
+          Click here to read.
         </button>
 
-        <div class="card booklet-card border-0 p-4" style="max-width: 90%; width: 100%; border: none !important;" v-if="showBookletContent">
+        <div class="card booklet-card border-0 p-4 mt-5" style="max-width: 90%; width: 100%; border: none !important;" v-if="showBookletContent">
+         
           <div class="booklet-content" :key="currentBookletPage">
             <div v-if="bookletPages[currentBookletPage].title" class="booklet-page-header d-flex flex-column flex-md-row align-items-start gap-4 mb-4">
               <div class="booklet-page-number display-1 fw-bold text-dark">{{ bookletPages[currentBookletPage].pageNumber }}</div>
@@ -82,10 +83,10 @@
             </div>
             <div class="d-flex gap-3">
               <button class="btn btn-outline-secondary booklet-nav-btn" @click="showPreviousBookletPage">
-                &lt;
+                ◀
               </button>
-              <button class="btn btn-primary booklet-nav-btn" @click="showNextBookletPage">
-                &gt;
+              <button class="btn btn-outline-primary booklet-nav-btn" @click="showNextBookletPage">
+                ▶
               </button>
             </div>
           </div>
@@ -1006,10 +1007,10 @@ footer a:hover {
 }
 
 .booklet-nav-btn {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   padding: 0;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: bold;
   display: flex;
   align-items: center;
