@@ -83,10 +83,10 @@
             </div>
             <div class="d-flex gap-3">
               <button class="btn btn-outline-secondary booklet-nav-btn" @click="showPreviousBookletPage">
-                ◀
+                ←
               </button>
               <button class="btn btn-outline-primary booklet-nav-btn" @click="showNextBookletPage">
-                ▶
+                →
               </button>
             </div>
           </div>
