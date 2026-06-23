@@ -2,7 +2,7 @@
 export const newsletter = [
   {
        id: 16,
-    slug: 'the-truth-about-a-believer-who repents-but-sins-again',
+    slug: 'the-truth-about-a-believer-who-repents-but-sins-again',
 
     title: 'The Truth about a Believer Who Repents but Sins Again',
 
