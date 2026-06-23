@@ -1,6 +1,373 @@
 
 export const newsletter = [
   {
+       id: 16,
+    slug: 'the-truth-about-a-believer-who repents-but-sins-again',
+
+    title: 'The Truth about a Believer Who Repents but Sins Again',
+
+    excerpt: 'What happens if you repent but sin again?',
+
+    date: 'June 22, 2026',
+
+    author: 'Pastor Kian Ray Legarda',
+
+    authorImage: '/newsletter/author/kian-legarda.jpg',
+
+    coverphoto: '/newsletter/message/02_repent.jpg',
+    
+    video:'https://www.youtube.com/embed/u491FdDwFj0?si=oRoXLzRFduVU2LnK',
+
+    caption:'Worship Service | June 21, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'The Truth about a Believer Who Repents but Sins Again',
+      description: 'What happens if you repent but sin again?',
+      image:
+        '/newsletter/message/02_church.jpg',
+    },
+  
+        content1: `
+<article>
+
+    <p style="color:#9A3F3F;"><i>
+    Text: <br>
+    Colossians 1:17-23; 
+    <br>And he is before all things, and by him all things consist.
+    <br>And he is the head of the body, the church: who is the beginning, the firstborn from the dead; that in all things he might have the preeminence.
+    <br>For it pleased the Father that in him should all fulness dwell;
+    <br> And, having made peace through the blood of his cross, by him to reconcile all things unto himself; by him, I say, whether they be things in earth, or things in heaven.
+    <br>And you, that were sometime alienated and enemies in your mind by wicked works, yet now hath he reconciled
+    <br>In the body of his flesh through death, to present you holy and unblameable and unreproveable in his sight: 
+    <br>If ye continue in the faith grounded and settled, and be not moved away from the hope of the gospel, which ye have heard, and which was preached to every creature which is under heaven; whereof I Paul am made a minister;
+   <br><br>
+    Hebrews 12:1-2
+    <br>Wherefore seeing we also are compassed about with so great a cloud of witnesses, let us lay aside every weight, and the sin which doth so easily beset us, and let us run with patience the race that is set before us,
+    <br>Looking unto Jesus the author and finisher of our faith...
+    </i></p>
+
+    <br>
+
+    <h4>Introduction</h4>
+
+    <p>
+    This message is not intended for hypocrites. It is not for those who have no desire to change and no concern about being right before God. It is not for those who simply want to continue living according to their own desires.
+    </p>
+
+    <p>
+    This message is for believers who genuinely love the Lord, who do not want to sin, yet find themselves struggling in a cycle of sin, repentance, and failure.
+    </p>
+
+    <p>
+    Many believers ask:
+    <br>• Why do I keep struggling?
+    <br>• Why do I keep falling into the same sin?
+    <br>• Can I still continue serving God after failing again?
+    <br>• What is the truth about a believer who repents but sins again?
+    </p>
+
+    <p>
+    To answer these questions, we must first understand the price that Jesus Christ paid for our salvation.
+    </p>
+
+    <p>
+    This message focuses on six important truths:
+    <br>1. Consider the Price Christ Paid on the Cross
+    <br>2. Remember What Christ Accomplished Through His Death
+    <br>3. Continue Running the Race
+    <br>4. Look Unto Jesus
+    <br>5. The Goodness of God Leads Us to Repentance
+    <br>6. Justice, Mercy, and Grace
+    </p>
+
+    <br>
+
+    <h4>I. Consider the Price Christ Paid on the Cross</h4>
+
+    <p>
+    Before Jesus was crucified, He endured tremendous emotional, physical, and spiritual suffering.
+    </p>
+
+    <p>
+    In the Garden of Gethsemane, He experienced such intense agony that He sweat great drops of blood. His closest disciples, those whom He considered His friends, could not even stay awake to pray with Him.
+    </p>
+
+    <p>
+    He was betrayed, mocked, beaten, scourged, and humiliated.
+    </p>
+
+    <p>
+    His beard was plucked.
+    <br>His flesh was torn by Roman scourging.
+    <br>The crown of thorns pierced His head.
+    <br>Nails were driven through His hands and feet.
+    <br>Every breath on the cross became an agonizing struggle.
+    </p>
+
+    <p style="color:#9A3F3F;">
+    Matthew 27:46
+    <br>"My God, my God, why hast thou forsaken me?"
+    </p>
+
+    <p>
+    Yet the greatest suffering was not physical. At that moment, Christ bore the sins of the world.
+    </p>
+
+    <p>
+    Because God is holy and cannot look upon sin, Christ experienced the separation and judgment that we deserved.
+    </p>
+
+    <p>
+    The suffering of Christ reminds us of the tremendous price paid for our redemption.
+    </p>
+
+    <br>
+
+    <h4>II. Remember What Christ Accomplished Through His Death</h4>
+
+    <p style="color:#9A3F3F;">
+    Colossians 1:17
+    <br>"And he is before all things, and by him all things consist."
+    </p>
+
+    <p>
+    Christ is the One who holds all things together.
+    </p>
+
+    <p>
+    He holds creation together.
+    <br>He holds our lives together.
+    <br>He holds our salvation together.
+    </p>
+
+    <p>
+    Our security is not found in our own strength but in Him.
+    </p>
+
+    <p style="color:#9A3F3F;">
+    Colossians 1:20
+    <br>"And, having made peace through the blood of his cross, by him to reconcile all things unto himself."
+    </p>
+
+    <p>
+    Jesus Christ made peace between sinful man and a holy God.
+    </p>
+
+    <p>
+    Through His death:
+    <br>• We have been reconciled.
+    <br>• We have been forgiven.
+    <br>• We have been accepted.
+    <br>• We have peace with God.
+    </p>
+
+    <p style="color:#9A3F3F;">
+    Colossians 1:22
+    <br>"To present you holy and unblameable and unreproveable in his sight."
+    </p>
+
+    <p>
+    Even when believers struggle and fail, Christ remains the One who reconciles and preserves them.
+    </p>
+
+    <p>
+    The reason we continue is not because we are strong enough. The reason we continue is because Christ is sufficient.
+    </p>
+
+    <br>
+
+    <h4>III. Continue Running the Race</h4>
+
+    <p style="color:#9A3F3F;">
+    Hebrews 12:1
+    <br>"Let us lay aside every weight, and the sin which doth so easily beset us, and let us run with patience the race that is set before us."
+    </p>
+
+    <p>
+    The Christian life is a journey.
+    </p>
+
+    <p>
+    It is not a one-time event.
+    </p>
+
+    <p>
+    Along the way there are failures, temptations, weaknesses, and struggles.
+    </p>
+
+    <p>
+    Many voices in this world will say:
+    <br>• You're hopeless.
+    <br>• You'll never change.
+    <br>• You've failed too many times.
+    </p>
+
+    <p>
+    Yet Scripture says, "Let us run with patience the race that is set before us."
+    </p>
+
+    <p>
+    Believers are not commanded to quit. They are commanded to continue.
+    </p>
+
+    <p>
+    We must lay aside the sins and burdens that hinder us and keep running the race God has set before us.
+    </p>
+
+    <br>
+
+    <h4>IV. Look Unto Jesus</h4>
+
+    <p style="color:#9A3F3F;">
+    Hebrews 12:2
+    <br>"Looking unto Jesus the author and finisher of our faith;"
+    </p>
+
+    <p>
+    The answer to repeated failure is not found in self-confidence.
+    </p>
+
+    <p>
+    The answer is found in Christ.
+    </p>
+
+    <p>
+    Like Barabbas, we deserved judgment.
+    <br>Like Barabbas, we deserved punishment.
+    <br>Yet Christ took our place.
+    </p>
+
+    <p>
+    He suffered for us.
+    <br>He died for us.
+    <br>He was forsaken so that we might be accepted.
+    <br>He was wounded so that we might be healed.
+    </p>
+
+    <p>
+    Because of Christ:
+    <br>• We have life.
+    <br>• We have hope.
+    <br>• We have forgiveness.
+    <br>• We have reconciliation with God.
+    </p>
+
+    <p>
+    We live because He died.
+    </p>
+
+    <br>
+
+    <h4>V. The Goodness of God Leads Us to Repentance</h4>
+
+    <p style="color:#9A3F3F;">
+    Romans 2:4
+    <br>"The goodness of God leadeth thee to repentance."
+    </p>
+
+    <p>
+    True repentance is not merely the result of suffering consequences.
+    </p>
+
+    <p>
+    True repentance comes from seeing the goodness of God.
+    </p>
+
+    <p>
+    When we remember His mercy, His grace, His patience, His forgiveness, and His sacrifice, our hearts are drawn back to Him.
+    </p>
+
+    <p>
+    God's goodness continually calls us to return to Him.
+    </p>
+
+    <br>
+
+    <h4>VI. Justice, Mercy, and Grace</h4>
+
+    <p>
+    One of the closing emphases of the message was understanding God's dealings with us.
+    </p>
+
+    <p>
+    <b>Justice</b> is receiving what we deserve.
+    </p>
+
+    <p>
+    Because of our sin, we deserve eternal separation from God.
+    </p>
+
+    <p>
+    <b>Mercy</b> is not receiving the punishment we deserve.
+    </p>
+
+    <p>
+    Because Christ took our place, believers are spared from the judgment that should have fallen upon them.
+    </p>
+
+    <p>
+    <b>Grace</b> is receiving blessings we do not deserve.
+    </p>
+
+    <p>
+    Through Christ we receive forgiveness, reconciliation, eternal life, and the privilege of being called children of God.
+    </p>
+
+    <p style="color:#9A3F3F;">
+    Psalm 103:12
+    <br>"As far as the east is from the west, so far hath he removed our transgressions from us."
+    </p>
+
+    <br>
+
+    <h4>Conclusion</h4>
+
+    <p>
+    The truth about a believer who repents but sins again is not that he is hopeless.
+    </p>
+
+    <p>
+    Christ paid a tremendous price for his salvation.
+    </p>
+
+    <p>
+    Christ reconciled him through His blood.
+    <br>Christ holds his life together.
+    <br>Christ calls him to continue running the race.
+    <br>Christ invites him to keep looking unto Him.
+    </p>
+
+    <p>
+    It is the goodness of God that continually leads believers back to repentance.
+    </p>
+
+    <p>
+    Therefore, do not quit.
+    <br>Do not give up.
+    <br>Continue looking unto Jesus.
+    <br>Continue trusting His grace.
+    <br>Continue running the race that He has set before you.
+    </p>
+
+    <br>
+
+    <border style="border-top: 4px solid #9A3F3F; padding-left: 200px; margin-left: 0;">
+        <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+        <p style="color:#9A3F3F;"><i>
+        When you remember the price Christ paid for your salvation and the goodness He continues to show you each day, how does that motivate you to keep following Him despite your struggles and failures?
+        </i></p>
+
+    <br>
+
+</article>
+
+        `
+
+        },
+  {
        id: 15,
     slug: 'by-the-renewing-of-your-mind',
 
@@ -1450,8 +1817,7 @@ where God wanted me to be.</p>
         </article>
         `
 
-        },
-       
+        }, 
     {
        id: 8,
     slug: 'god-ultimate-plan-gospel-filled-life',
@@ -2173,8 +2539,6 @@ have to, but because I wanted to.
         `
 
         },
-    
-        
         {
        id: 4,
     slug: 'god-ultimate-plan-for-the-church',
@@ -2527,7 +2891,6 @@ have to, but because I wanted to.
         `
 
         },
-  
         {
        id: 2,
     slug: 'from-unprofitable-to-profitable',
@@ -2756,10 +3119,7 @@ have to, but because I wanted to.
     </article>
         `
 
-        },
-      
-        
-      
+        },   
 {
      id: 1,
     slug: 'reset-37th-annual-summer-youth-camp-2026',
