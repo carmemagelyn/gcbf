@@ -1,6 +1,216 @@
 
 export const newsletter = [
   {
+       id: 15,
+    slug: 'by-the-renewing-of-your-mind',
+
+    title: 'By The Renewing of Your Mind',
+
+    excerpt: "The renewing of your mind happens when we...",
+
+    date: 'June 19, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/yc_mind.jpg',
+    
+    video:'https://www.youtube.com/embed/YlXpmVNeaJ4?si=mBRfjIIFZYJyZZlD',
+
+    caption:'Youth Community | June 18, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'By The Renewing of Your Mind',
+      description: "The renewing of your mind happens when we...",
+      image:
+        '/newsletter/message/yc_mind.jpg',
+    },
+  
+        content1: `
+<article>
+
+    <p style="color:#9A3F3F;"><i>
+    Text: Romans 12:2
+
+    <br>"And be not conformed to this world: but be ye transformed by the renewing of your mind, that ye may prove what is that good, and acceptable, and perfect, will of God."
+    </i></p>
+
+    <br>
+
+    <h4>Introduction</h4>
+
+    <p>
+    In our previous lessons, we learned that God does not want believers to be conformed to the standards of this world. The world's values, culture, and beliefs often stand in opposition to God's truth.
+    </p>
+
+    <p>
+    In Romans 12:2, Paul gives believers a clear command: "Be not conformed to this world." But he also explains how transformation takes place. Before a person can be transformed, something must happen first.
+    </p>
+
+    <p>
+    The Bible says, "be ye transformed by the renewing of your mind." Transformation begins with renewal. Before a person's life can change, his mind must first be renewed by God's truth.
+    </p>
+
+    <p>
+    The renewing of the mind happens when we:
+    <br>1. Understand and Believe the Gospel
+    <br>2. Surrender Our Life to the One Who Died for Us
+    </p>
+
+    <br>
+
+    <h4>I. Understand and Believe the Gospel</h4>
+
+    <p style="color:#9A3F3F;">
+    Titus 3:5
+    <br>"Not by works of righteousness which we have done, but according to his mercy he saved us, by the washing of regeneration, and renewing of the Holy Ghost;"
+    </p>
+
+    <p>
+    The renewing of the mind begins when a person truly understands the gospel. Many people believe that salvation can be earned through religion, good works, baptism, church membership, or personal effort.
+    </p>
+
+    <p>
+    Yet the Bible clearly teaches that salvation is not based on our works. Paul says, "Not by works of righteousness which we have done." No amount of good deeds can remove our sin or make us acceptable before a holy God.
+    </p>
+
+    <p>
+    Instead, salvation is possible only because of God's mercy. We deserve judgment because of our sin, but God demonstrated His love by sending His Son, Jesus Christ, to die in our place.
+    </p>
+
+    <p>
+    A renewed mind understands that:
+    <br>• We are sinners before God.
+    <br>• The penalty of sin is death.
+    <br>• Jesus Christ died for our sins and rose again.
+    <br>• Salvation is received by faith in Christ alone.
+    </p>
+
+    <p>
+    However, understanding the gospel is not enough. The gospel must be personally believed.
+    </p>
+
+    <p style="color:#9A3F3F;">
+    Acts 26:28
+    <br>"Then Agrippa said unto Paul, Almost thou persuadest me to be a Christian."
+    </p>
+
+    <p>
+    King Agrippa heard Paul's testimony and understood the message. Yet he remained only "almost persuaded." The tragedy of Agrippa's response reminds us that almost believing is not enough.
+    </p>
+
+    <p>
+    There is a great difference between knowing the gospel and trusting the gospel. A person may understand the facts about Jesus Christ and still never place his faith in Him.
+    </p>
+
+    <p>
+    The renewing of the mind begins when the gospel moves from the head to the heart. We must personally trust Jesus Christ as Lord and Saviour.
+    </p>
+
+    <p>
+    Salvation is a personal decision. No one is saved because of family background, church attendance, or religious activity. Each person must personally believe that Christ died for his sins and trust Him alone for salvation.
+    </p>
+
+    <br>
+
+    <h4>II. Surrender Our Life to the One Who Died for Us</h4>
+
+    <p style="color:#9A3F3F;">
+    1 Corinthians 6:19-20
+    <br>"What? know ye not that your body is the temple of the Holy Ghost which is in you, which ye have of God, and ye are not your own?
+    <br>For ye are bought with a price: therefore glorify God in your body, and in your spirit, which are God's."
+    </p>
+
+    <p>
+    The second aspect of renewing the mind is surrender. Once a person is saved, the Holy Spirit dwells within him and seals him unto the day of redemption.
+    </p>
+
+    <p style="color:#9A3F3F;">
+    Ephesians 1:13
+    <br>"In whom ye also trusted, after that ye heard the word of truth, the gospel of your salvation: in whom also after that ye believed, ye were sealed with that holy Spirit of promise,"
+    </p>
+
+    <p>
+    Because believers belong to Christ, they no longer belong to themselves. The Bible says, "ye are not your own." We have been purchased by the precious blood of Jesus Christ.
+    </p>
+
+    <p>
+    Many of our struggles arise when we try to take ownership of a life that no longer belongs to us. We want to control our future, direct our own path, and pursue our own desires.
+    </p>
+
+    <p>
+    Yet Scripture reminds us that we have been bought with a price. Therefore, our lives should be surrendered to the One who purchased us.
+    </p>
+
+    <p>
+    The Christian life is not about asserting our will over God's will. It is about yielding ourselves completely to Him.
+    </p>
+
+    <p>
+    Jacob's experience illustrates this truth. When Jacob wrestled with God, he could not ultimately prevail. In the same way, whenever believers wrestle against God's will, God remains the rightful owner of their lives.
+    </p>
+
+    <p>
+    Many times, we struggle because we refuse to surrender. We want God's blessings while still maintaining control. Yet genuine renewal happens when we stop resisting and place our lives completely in His hands.
+    </p>
+
+    <p style="color:#9A3F3F;">
+    Galatians 2:20
+    <br>"I am crucified with Christ: nevertheless I live; yet not I, but Christ liveth in me: and the life which I now live in the flesh I live by the faith of the Son of God, who loved me, and gave himself for me."
+    </p>
+
+    <p>
+    A surrendered life acknowledges that everything belongs to Christ. Our future, plans, ambitions, and desires should all be yielded to Him.
+    </p>
+
+    <p>
+    The more we surrender to Christ, the more our minds are renewed and the more our lives are transformed.
+    </p>
+
+    <br>
+
+    <h4>Conclusion</h4>
+
+    <p>
+    Romans 12:2 teaches that transformation begins with the renewing of the mind.
+    </p>
+
+    <p>
+    Before a believer can experience genuine transformation, his mind must first be renewed by God's truth.
+    </p>
+
+    <p>
+    The renewing of the mind happens when we:
+    <br>• Understand and believe the gospel.
+    <br>• Surrender our life to the One who died for us.
+    </p>
+
+    <p>
+    A renewed mind recognizes that salvation is by God's mercy alone through faith in Jesus Christ. A renewed mind also understands that because Christ purchased us with His blood, our lives belong to Him.
+    </p>
+
+    <p>
+    When we believe the gospel and surrender ourselves completely to Christ, God begins His transforming work within us. As our minds are renewed, our lives increasingly reflect His good, acceptable, and perfect will.
+    </p>
+
+    <br>
+
+    <border style="border-top: 4px solid #9A3F3F; padding-left: 200px; margin-left: 0;">
+        <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+        <p style="color:#9A3F3F;"><i>
+        In what specific area of your life is God calling you to trust the gospel more fully and surrender yourself completely to His ownership and will?
+        </i></p>
+
+    <br>
+
+</article>
+        `
+        },
+  {
        id: 14,
     slug: 'god-desire-for-the-church',
 
