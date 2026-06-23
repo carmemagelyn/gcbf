@@ -1,6 +1,333 @@
 
 export const newsletter = [
   {
+     id: 17,
+    slug: 'the-love-i-was-looking-for',
+
+    title: 'The Love I Was Looking For',
+
+    excerpt: 'A Testimony of God’s Redeeming Love',
+
+    date: 'June 23, 2026',
+
+    author: 'Armil Jay Clacio',
+
+    authorImage: '/newsletter/author/armil-jay-clacio.jpg',
+
+    coverphoto: '/newsletter/02_letgo/love-look.jpg',
+
+   
+
+    type: 'article',
+
+    seo: {
+      title: 'The Love I Was Looking For',
+      description: "A Testimony of God’s Redeeming Love",
+      image:
+        '/newsletter/02_letgo/love-look.jpg',
+    },
+    caption: '',
+
+
+
+        content1: `
+<article>
+
+    <p>
+    I grew up in a family where my parents
+fought often, to the point that I, as a child,
+grew lost and broken. I experienced burdens
+from my family caused by the separation of
+my parents because of a third party. At that
+time, I never experienced my childhood at
+its best.</p>
+
+    <p>
+    Their marriage was my burden at that time
+because some of the consequences of it were
+carried by me. I took good care of my
+siblings while my mom was away for work.
+The time that should have been spent on my
+homework was spent solving the problems
+in our house. Instead of my parents spending
+their time nurturing us, they often fought
+because of the problems in their marriage,
+specifically involving a third party.</p>
+
+    <p>
+    My whole childhood was crushed because
+the love I wanted was never experienced,
+even when I was still a lone child. I did want
+to make friends, a lot of friends, just to feel
+loved by someone. But whenever I did, we
+migrated somewhere else because of the
+problems we had. It felt lonely and lost.</p>
+
+    <p>
+    Fast forward to my high school days. I grew
+up independent, caring only for myself. I always disobeyed my mom just to spend my
+time doing what made me happy: playing
+video games and basketball.</p>
+
+    <p>
+    In school, I did make friends, and I felt
+loved because I expressed the childhood I
+never experienced before. We always did the
+things we loved: singing, dancing, joking
+around, playing basketball, video games,
+etc. When I came back home, I also had
+friends to spend time with, but most of it I
+spent in computer shops.</p>
+
+    <p>
+    I fell in love with all of these because they
+were an escape from reality, not knowing
+that they shaped me into someone more
+broken and more vulnerable.</p>
+
+    <p>
+    Then the pandemic struck. This was when
+everything I had was destroyed like my
+friends and my hobbies. I mean, I still
+played video games with them, but only
+online. It felt broken and empty because I
+felt alone. After games, after online classes,
+it felt like I was alone.</p>
+
+    <p>
+    Just to feel alive, I often chatted with them
+on Messenger, sharing my silly pictures and
+experiences. I always did everything I had in
+mind just to distract myself from what I felt
+inside.</p>
+
+    <p>
+    This was where I started online dating. A lot
+of girls I met online became my chatmates.
+Some of them even became my
+situationships, my girlfriend, and my best
+friends. I spent a lot of my time on other
+people just to feel loved.</p>
+
+    <p>
+   But guess what? It never satisfied me.</p>
+
+    <p>
+    I craved more and more. More girls, more
+fun, more distractions. The more I distracted
+myself from reality, the more I wanted. I
+also became addicted to pornography
+because of it and it became a habit.
+However, after all of that, none of it filled
+my void and emptiness.</p>
+
+    <p>
+    I developed things that were not good
+because of these distractions: hatred, anger,
+lust, gluttony, pride, apathy, addictions,
+greed, self-pity, and self-centeredness, some
+of which became my worst enemies.</p>
+
+    <p>
+    It fed my flesh. It felt normal, and it gave me
+pleasure. I betrayed people. I destroyed
+relationships. Some of my friends were
+affected because of it, all just to feed my
+pleasures.
+    </p>
+
+    <p>
+    I even cheated on my girlfriend online just
+to feel good because the relationship we had
+never satisfied me. It broke me more and
+more, and I wanted to commit suicide
+because I felt that none of these things were
+real happiness. After I did things to distract
+myself, I always found myself wanting to
+commit suicide. </p>
+
+    <p>
+    Senior high school, those attitudes became
+more ferocious. I met my friends and spent
+time with them. It felt good at the moment,
+but when I went back home, I still felt
+empty. I craved even more and tried to find
+the love I wanted.</p>
+
+    <p>
+    I tried online dating again, but none of it felt
+real. I tried it in person and I met a girl who
+became my girlfriend. We did things
+together. I experienced things I had never
+experienced before. For the first time, I felt
+loved by someone. I left everything behind for the girl because I thought it was the love
+I wanted to satisfy me, to satisfy my
+emptiness. But I felt that none of it filled
+me. </p>
+
+    <p>
+    Not knowing that it only distracted me from
+my real problem, which was my emptiness
+and brokenness. It was like a wolf waiting to
+devour me.</p>
+
+    <p>
+    When things got rough, it consumed me. I
+felt lost, angry, and full of hatred. I wanted
+to hurt myself because I always blamed
+myself for the bad things that happened to
+me. I often wanted to commit suicide
+whenever I faced difficulties.</p>
+
+    <p>
+    When I went to school, I had many enemies.
+At some point, I felt alone, knowing that no
+one was on my side. I presented myself as
+stoic, but when I was at home, I knew I was
+very broken. I often found myself mentally
+breaking down and going wild in my anger.</p>
+
+    <p>
+    I always felt like everyone hated me. It
+broke my perspective on other people. I felt
+anger and hatred. I wanted revenge and
+wanted to see them dead. I always imagined
+them getting murdered by me many times in
+my head just to feel good. I became worse
+and worse because of how the world had
+broken me.</p>
+
+    <p>
+    Until, at the lowest point of my life, Jesus
+Christ showed me His glory.</p>
+
+    <p>
+    One of my teachers appointed me to report
+on how the freedom of Christianity differs
+from Judaism. It got me thinking deeper
+because, while I was reporting, I realized
+that I did not know what the true freedom of
+Christianity was. The answer in my head was always “free will.” It made me search
+deeper on social media about what the true
+freedom of Christianity really is. I still did
+not have my answer, but because of it, I
+often saw content about Jesus Christ on my
+TikTok feed because I searched about
+Christianity there.</p>
+
+    <p>
+    Fast forward. In the middle of the lowest
+point of my life, I began seeing Bible verses
+about what I was currently experiencing. I
+scrolled and scrolled until I broke down in
+tears.</p>
+
+<p>As it is said in Psalm 34:18, <i>“The Lord is nigh unto them that are of a broken heart; and saveth such as be of a contrite spirit.”</i></p>
+
+<p>Jesus Christ is close to the brokenhearted,
+and that meant He was close to me. I cried
+until my last tear, telling Him all my
+problems, my brokenness, my flaws, my
+hatred, and my anger, things I had never
+opened my heart about before.</p>
+
+<p>God heard me, and He listened to me. God
+showed me His grace, and it felt genuinely
+good for the first time. It felt like healing in
+my heart. He slowly sewed my heart back
+together, little by little. I felt peace for the
+first time in my life.</p>
+
+<p>He began healing my heart and all of my
+brokenness. He destroyed everything that
+made me broken. He filled my void and
+emptiness with His love when no one else
+could. I felt love that I had never
+experienced before. Truly, a real love.</p>
+
+<p>He understood my pain, my sins, and my
+flaws in a way that no one else did before.
+What a loving God He is.</p>
+
+<p>Fast forward to college. After what He did
+for me, He began to show me His Gospel:
+that Jesus Christ died on the cross for my
+sins. I never truly understood what it meant
+before. I had heard it and believed it, but
+because of Him, He helped me truly
+understand what it is.</p>
+
+<p>He led me to seek Him more and more until
+I understood that He freed us from sin. And
+it was the answer I had been looking for
+since senior high school:</p>
+
+<p>“What is the freedom in Christianity?”</p>
+
+<p>I began to realize that God works in
+mysterious ways. From that encounter,
+which I thought was small, something began
+to grow and shape me for God’s redemption
+in my life.</p>
+
+<p>I also realized that it is truly freeing to know
+that He gave His life for us, to free us from
+sin, because it is the very thing that made us
+broken. I remembered all of my sins and the
+desires of my heart. I realized why I
+tolerated those things in my life.</p>
+
+<p>But after all the wrong things I had done in
+my life, He still showed me His goodness,
+which led me to repentance, to accept Him
+as my Lord and personal Savior, to turn
+away from sin, to turn away from my own
+self-righteousness, self-centeredness,
+self-acknowledgment, and prideful heart,
+and to follow Him and love Him with all my
+heart.</p>
+
+<p>He healed my heart, opened my heart, and
+made me a loving man that I could never
+have imagined before. A peacemaker instead
+of a chaotic person. A God-pleaser instead of a people-pleaser. Kind instead of ruthless.
+Joyful instead of miserable and troubled.</p>
+
+<p>All these things Jesus Christ changed in my
+heart. He is truly a Surgeon of hearts.</p>
+
+<p>He gave me purpose and a new desire in my
+heart that will never let me be destroyed. He
+filled me with satisfaction. He saved me
+from my own sins and my own brokenness.</p>
+
+<p>He saved me from this world.</p>
+
+<p>The world comes to steal, kill, and destroy,
+and it offers distractions. But the Lord Jesus
+Christ comes to love, restore, and redeem,
+and He offers what is eternal: Eternal life.</p>
+
+<p>In a world full of distractions and confusion,
+the Lord Jesus Christ is the love, the true
+love, I had been looking for all this time.</p>
+
+<p>He is the One who never forsook me since I
+was a child.</p>
+
+<p>He is the true love I was searching for. But I
+found Him when I stopped searching. He
+was always there with me and always had
+been. It was just that my heart was closed to
+Him while He was knocking.</p>
+
+   <p>Truly, truly, Jesus Christ loves and saves.</p>
+
+</article>
+        `
+
+        }, 
+  {
        id: 16,
     slug: 'the-truth-about-a-believer-who-repents-but-sins-again',
 
