@@ -107,6 +107,7 @@ export const newsletter = [
     <p>
     Every believer is moving in one of these two directions. We are either slowly becoming more like the world, or we are continually being transformed into the likeness of Jesus Christ through the renewing of our minds.
     </p>
+    <br>
 
 <h4>I. THE CONFORMING CHRISTIAN FOLLOWS THE WORLD; THE TRANSFORMING CHRISTIAN FOLLOWS CHRIST</h4>
 
