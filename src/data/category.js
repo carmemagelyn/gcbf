@@ -2,7 +2,7 @@
 export const newsletter = [
     {
        id: 18,
-    slug: 'by-the-renewing-of-your-mind',
+    slug: 'a-transforming-christian',
 
     title: 'A Transforming Christian',
 
