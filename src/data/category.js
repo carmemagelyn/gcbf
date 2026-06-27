@@ -1,5 +1,386 @@
 
 export const newsletter = [
+    {
+       id: 18,
+    slug: 'by-the-renewing-of-your-mind',
+
+    title: 'A Transforming Christian',
+
+    excerpt: "From Conforming to the World to Being Transformed by the Renewing of the Mind",
+
+    date: 'June 27, 2026',
+
+    author: 'Pastor Lee Ferdinand Caiban',
+
+    authorImage: '/newsletter/author/lee-caiban.jpg',
+
+    coverphoto: '/newsletter/message/yc_mind.jpg',
+    
+    video:'https://www.youtube.com/embed/yExmbKrVHo8?si=uI7KVbB6ZskoYkVZ',
+
+    caption:'Youth Community | June 25, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'A Transforming Christian',
+      description: "From Conforming to the World to Being Transformed by the Renewing of the Mind",
+      image:
+        '/newsletter/message/yc_mind.jpg',
+    },
+  
+        content1: `
+<article>
+
+    <p style="color:#9A3F3F;"><i>
+    Text: Romans 12:1–2
+    <br>
+    "I beseech you therefore, brethren, by the mercies of God, that ye present your bodies a living sacrifice, holy, acceptable unto God, which is your reasonable service.
+    And be not conformed to this world: but be ye transformed by the renewing of your mind, that ye may prove what is that good, and acceptable, and perfect, will of God."
+    </i></p>
+
+    <br>
+
+    <h4>Introduction</h4>
+
+    <p>
+    Every generation faces the same decision: Will we follow the world, or will we follow God? There is no middle ground. Romans 12:1–2 reminds us that every believer must choose whether to be conformed to the world or transformed by the power of God.
+    </p>
+
+    <p>
+    We are living in a generation where worldly influences are stronger than ever. Everywhere we go—our schools, workplaces, social media, and even among friends—we are constantly surrounded by ideas and values that oppose the Word of God. The challenge is not simply avoiding the world but remaining faithful to Christ while living in it.
+    </p>
+
+    <p>
+    Many young people make life-changing decisions because they have never been grounded in the Scriptures. If they had been taught God's Word and learned to walk with Christ, many of their painful choices could have been avoided. The greatest need of every believer is not merely education, success, or entertainment—it is the nourishment that comes from the Word of God.
+    </p>
+
+    <p>
+    It has often been said, "It takes a village to raise a child." Our parents, church, friends, teachers, and community all influence who we become. But above all these influences, every Christian must allow God's Word to shape his life.
+    </p>
+
+    <p>
+    Notice how Paul begins this chapter: "I beseech you therefore, brethren..." This is not merely a command. It is the heartfelt plea of a spiritual father who deeply loves God's people. Paul saw how worldly influences were entering the church in Rome, and with great concern he urged believers to remain faithful.
+    </p>
+
+    <p>
+    If the church during Paul's time struggled against worldly influence, how much more do we today? We live in a generation where temptation is only one click away. Every day we are exposed to ideas that contradict God's truth. When we leave church and enter our schools, workplaces, and communities, we encounter people with different beliefs and standards. The question is, How do we remain faithful to the biblical standards we have learned?
+    </p>
+
+    <p>
+    Romans 12 gives the answer. Paul urges believers to present their bodies as living sacrifices because they belong to Christ. Jesus did not merely purchase our souls; He purchased our entire lives. As Scripture reminds us, "Ye are bought with a price: therefore glorify God in your body, and in your spirit, which are God's."
+    </p>
+
+    <p>
+    Throughout this message we will focus on the contrast found in Romans 12:2:
+    </p>
+
+    <table style="width:100%; border-collapse:collapse; text-align:left;" border="1" cellpadding="8">
+        <tr style="background:#9A3F3F; color:white;">
+            <th>A CONFORMING CHRISTIAN</th>
+            <th>A TRANSFORMING CHRISTIAN</th>
+        </tr>
+        <tr>
+            <td>Desires worldly pleasure</td>
+            <td>Follows Christ</td>
+        </tr>
+        <tr>
+            <td>Seeks popularity</td>
+            <td>Seeks holiness</td>
+        </tr>
+        <tr>
+            <td>Controlled from the outside</td>
+            <td>Changed from the inside</td>
+        </tr>
+        <tr>
+            <td>Led by feelings</td>
+            <td>Led by truth</td>
+        </tr>
+        <tr>
+            <td>Lives for the present</td>
+            <td>Lives for eternity</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <p>
+    Every believer is moving in one of these two directions. We are either slowly becoming more like the world, or we are continually being transformed into the likeness of Jesus Christ through the renewing of our minds.
+    </p>
+
+<h4>I. THE CONFORMING CHRISTIAN FOLLOWS THE WORLD; THE TRANSFORMING CHRISTIAN FOLLOWS CHRIST</h4>
+
+<p style="color:#9A3F3F;"><i>
+Romans 12:2
+<br>
+"And be not conformed to this world: but be ye transformed by the renewing of your mind..."
+</i></p>
+
+<p>
+The Christian life offers only two directions. There is no middle ground. We are either conforming to the pattern of this world or being transformed into the image of Jesus Christ. We cannot serve both God and the world. Every day we must choose which path we will follow.
+</p>
+
+<p>
+A conforming Christian allows the world to shape his thinking, values, and lifestyle. He gradually compromises his testimony and begins living according to the standards of society instead of the standards of Scripture. The question we should ask ourselves is, <i>"Is what I am doing feeding my soul or simply satisfying my flesh?"</i>
+</p>
+
+<p>
+The world offers temporary pleasure, but it can never satisfy the deepest need of the human heart. It may satisfy the flesh for a moment, yet the soul remains empty and hungry. Many people pursue entertainment, worldly music, sinful relationships, and fleshly desires, believing these things will bring happiness, only to discover that they leave them spiritually empty.
+</p>
+
+<p>
+The transforming Christian, however, follows Christ rather than the world. Following Christ means walking as He walked. It means allowing His life to become the pattern for our own.
+</p>
+
+<p>
+Consider the earthly life of the Lord Jesus Christ. His ministry was not marked by comfort, popularity, or earthly success. Instead, it was marked by sacrifice, suffering, humility, and complete obedience to the Father's will. He had no permanent earthly home. He traveled from place to place preaching the gospel, serving others, and ultimately giving His life for the salvation of mankind.
+</p>
+
+<p>
+Many today measure God's blessing by wealth, possessions, or material success. But the Bible gives a different definition of a blessed life.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Psalm 1:1–2
+<br>
+"Blessed is the man that walketh not in the counsel of the ungodly... But his delight is in the law of the LORD; and in his law doth he meditate day and night."
+</i></p>
+
+<p>
+According to Scripture, the blessed man is not the one who possesses the most, but the one who delights in the Word of God and walks in obedience to Him. God's definition of blessing is very different from the world's definition.
+</p>
+
+<p>
+Following Christ will often require sacrifice. There will be times when obedience costs us comfort, convenience, popularity, or even opportunities. Yet no sacrifice made for Christ is ever wasted. Every act of faithfulness has eternal value.
+</p>
+
+<p>
+The question each believer must ask is not, "Am I following the crowd?" but rather, "Am I following Christ?" The direction of our life reveals whether we are being conformed to the world or transformed into His likeness.
+</p>
+
+<br>
+
+<h4>II. THE CONFORMING CHRISTIAN SEEKS POPULARITY; THE TRANSFORMING CHRISTIAN SEEKS HOLINESS</h4>
+
+<p style="color:#9A3F3F;"><i>
+1 Peter 1:15–16
+<br>
+"But as he which hath called you is holy, so be ye holy in all manner of conversation;
+Because it is written, Be ye holy; for I am holy."
+</i></p>
+
+<p>
+The world teaches us to seek recognition, acceptance, and popularity. It encourages us to gain the approval of others, to become well-known, and to build a good reputation in the eyes of people. We naturally desire to be noticed, appreciated, and praised.
+</p>
+
+<p>
+Today, social media has made this desire even stronger. We often become concerned about how many people notice us, approve of us, or admire what we post. It is easy to become more concerned about our public image than our spiritual condition.
+</p>
+
+<p>
+The transforming Christian has a different pursuit. Instead of seeking popularity, he seeks holiness. His greatest desire is not to impress people but to please God.
+</p>
+
+<p>
+Holiness begins in the heart. What we allow through our eyes and ears eventually influences our thoughts, our desires, and our actions. Every day we must guard what we watch, what we listen to, what we read, and the influences we allow into our lives.
+</p>
+
+<p>
+Sadly, our generation has changed the definition of holiness. Society now teaches that as long as no one appears to be hurt, almost anything is acceptable. Sin has become normal, and God's standards are often rejected because they are unpopular.
+</p>
+
+<p>
+But God's standard never changes. If God calls something sin, then it remains sin regardless of culture, public opinion, or personal preference. Truth does not change simply because society changes.
+</p>
+
+<p>
+Many Christians wonder why they hear the Word of God week after week yet experience little spiritual growth. The problem is often not the preaching but the condition of the heart. If we refuse to allow God's Word to convict us deeply, we will never experience genuine transformation.
+</p>
+
+<p>
+The Word of God does not merely polish the surface of our lives. It reaches into the deepest part of our hearts. It exposes our motives, convicts us of sin, and changes us from the inside out. Real holiness is never superficial; it is the work of God within the heart of a surrendered believer.
+</p>
+
+<p>
+Therefore, let us not seek the applause of people. Let us seek the approval of God. Popularity fades, but holiness has eternal value. A transforming Christian desires to become more like Christ every day.
+</p>
+
+<br>
+
+<h4>III. THE CONFORMING CHRISTIAN IS CONTROLLED FROM THE OUTSIDE; THE TRANSFORMING CHRISTIAN IS CHANGED FROM THE INSIDE</h4>
+
+<p style="color:#9A3F3F;"><i>
+Romans 12:2
+<br>
+"And be not conformed to this world: but be ye transformed by the renewing of your mind..."
+</i></p>
+
+<p>
+A conforming Christian is primarily concerned with outward appearance. He focuses on how others see him rather than on who he truly is before God. He may appear spiritual on the outside, yet inwardly his heart is far from the Lord.
+</p>
+
+<p>
+There are times when we try to convince people that everything is fine, while deep inside we know that our spiritual life is not right. We can put on a good appearance, attend church faithfully, and say the right things, but God is not looking merely at the outward man. He looks upon the heart.
+</p>
+
+<p>
+The world constantly pressures us to conform to its standards. It tells us to value appearance, reputation, success, and acceptance. A conforming Christian allows these outside influences to shape his decisions and his way of life.
+</p>
+
+<p>
+A transforming Christian, however, experiences something much deeper. God does not simply improve our outward behavior; He changes our inner person. His desire is to transform our hearts, renew our minds, and make us more like Jesus Christ.
+</p>
+
+<p>
+The Word of God is not meant to produce superficial change. It is not merely a temporary adjustment of behavior or a moment of emotion. God's Word penetrates to the very core of our being. It convicts, corrects, and transforms the inner man, producing genuine change that eventually becomes visible on the outside.
+</p>
+
+<p>
+Many believers remain spiritually stagnant because they allow God's Word to touch only the surface of their lives. They hear sermons, attend Bible studies, and participate in church activities, yet never fully surrender their hearts to God. Without inward conviction, there can be no lasting transformation.
+</p>
+
+<p>
+True Christianity begins on the inside. When God changes the heart, He changes the thoughts. When He changes the thoughts, He changes the attitudes. When He changes the attitudes, He changes the actions. Outward obedience is simply the evidence of an inward transformation.
+</p>
+
+<p>
+Instead of trying to appear spiritual before others, let us allow God to search our hearts. Let His Word penetrate every area of our lives so that our transformation will be genuine, producing a life that truly reflects the character of Christ.
+</p>
+
+<br>
+
+<h4>IV. THE CONFORMING CHRISTIAN IS LED BY FEELINGS; THE TRANSFORMING CHRISTIAN IS LED BY TRUTH</h4>
+
+<p style="color:#9A3F3F;"><i>
+John 14:6
+<br>
+"Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me."
+</i></p>
+
+<p>
+One of the greatest dangers for Christians today is allowing feelings to become the guide for life's decisions. Many people say, "I feel like doing this," or "I feel that this is right." They make important choices based on emotions instead of the truth of God's Word.
+</p>
+
+<p>
+The problem with feelings is that they constantly change. Today we may feel excited, tomorrow discouraged, and the next day uncertain. If our decisions are based only on our emotions, our direction in life will continually change with them.
+</p>
+
+<p>
+For this reason, we must be careful not to make important decisions while our emotions are controlling us. Feelings are real, but they are not always reliable. They can easily deceive us and lead us away from God's will.
+</p>
+
+<p>
+The transforming Christian does not allow feelings to rule his life. Instead, he submits his emotions to the truth of God's Word. God's truth remains constant even when our emotions fluctuate.
+</p>
+
+<p>
+Our generation has rejected the idea of absolute truth. Many believe that truth depends upon personal opinion, culture, or circumstances. People say, "That may be true for you, but it is not true for me." However, God's truth never changes.
+</p>
+
+<p>
+When the Bible calls something sin, it remains sin regardless of public opinion or personal preference. Right does not become wrong because society changes, and wrong does not become right because it becomes popular. God's standards are eternal.
+</p>
+
+<p>
+Jesus did not merely teach truth; He declared, "I am the truth." Truth is found in the Person of Jesus Christ and in His unchanging Word. Therefore, every decision we make should be measured by Scripture rather than by our emotions.
+</p>
+
+<p>
+Instead of asking, "How do I feel?" we should ask, "What does God say?" A Christian who is led by truth will remain steadfast even when emotions change, because his life is anchored upon the unchanging Word of God.
+</p>
+
+<br>
+
+<h4>V. THE CONFORMING CHRISTIAN LIVES FOR THE PRESENT; THE TRANSFORMING CHRISTIAN LIVES FOR ETERNITY</h4>
+
+<p style="color:#9A3F3F;"><i>
+Colossians 3:2
+<br>
+"Set your affection on things above, not on things on the earth."
+</i></p>
+
+<p>
+The world teaches us to live only for the present. Its philosophy says, "Enjoy life now," "You only live once," or "Do whatever makes you happy." Many people pursue temporary pleasures without considering the long-term consequences of their choices.
+</p>
+
+<p>
+Some of the decisions made in our youth can leave scars that remain for many years. What seems enjoyable today may bring regret tomorrow. A conforming Christian thinks only about the present moment and rarely considers how today's decisions will affect his future, his family, or his walk with God.
+</p>
+
+<p>
+The transforming Christian sees life from an eternal perspective. He understands that this world is not his permanent home. As believers, we are only pilgrims and strangers passing through this earth. Our true citizenship is in heaven.
+</p>
+
+<p>
+Think about the difference between a tourist and a citizen. A tourist does not make permanent investments because he knows he will soon leave. A citizen, however, invests in the place where he belongs. In the same way, Christians should not devote their lives merely to earthly possessions and temporary success, because our eternal home is with the Lord.
+</p>
+
+<p>
+This does not mean we neglect our responsibilities on earth. Rather, it means that our greatest investments are spiritual. Every act of obedience, every sacrifice for Christ, every soul reached with the gospel, and every faithful service offered to God has eternal value.
+</p>
+
+<p>
+Many people spend their entire lives pursuing wealth, recognition, and earthly accomplishments. While these things may have temporary value, they cannot compare with the eternal rewards that God has prepared for those who faithfully serve Him.
+</p>
+
+<p>
+The Apostle Paul understood this when he declared, "For to me to live is Christ, and to die is gain." His life was centered not on earthly comfort but on eternal purpose. He recognized that living for Christ would produce rewards that would last forever.
+</p>
+
+<p>
+As believers, let us not invest our hearts only in what will one day pass away. Let us set our affection on things above, remembering that we are citizens of heaven and that everything done for Christ will never be in vain.
+</p>
+
+<br>
+
+<h4>Conclusion</h4>
+
+<p>
+Romans 12:2 presents every believer with a daily decision: Will we be conformed to this world, or will we be transformed by the renewing of our minds? There is no middle ground. Every day we are moving in one of these two directions.
+</p>
+
+<p>
+Transformation is not an instant event but a lifelong process. No matter how long we have been Christians, we should never think that we have already arrived. Whether we have been saved for five years or fifty years, God is still at work, shaping us into the image of His Son.
+</p>
+
+<p>
+True transformation begins with the renewing of the mind. As we continually read the Word of God, spend time in prayer, obey the leading of the Holy Spirit, and submit ourselves to God's will, He changes the way we think. When our minds are renewed, our desires change. When our desires change, our actions begin to change as well.
+</p>
+
+<p>
+The world constantly tries to shape our thinking, but God's Word calls us to think differently. Instead of adopting the world's values, we must allow the Scriptures to become the compass that guides every decision we make. Just as a traveler depends on a compass or a map to avoid getting lost, we must depend upon the Word of God to direct our lives.
+</p>
+
+<p>
+Remember that this world is not our home. We are citizens of heaven, living as pilgrims on this earth. Therefore, let us not live merely for temporary pleasures or earthly success. Let us invest our lives in things that have eternal value and seek to honor Christ in everything we do.
+</p>
+
+<p>
+May we choose each day to follow Christ rather than the world, to seek holiness rather than popularity, to pursue inward transformation rather than outward appearance, to be led by truth rather than feelings, and to live for eternity rather than for the present.
+</p>
+
+<p>
+As we continue to surrender ourselves to God, may we prove in our own lives "what is that good, and acceptable, and perfect, will of God."
+</p>
+
+<br>
+
+<border style="border-top:4px solid #9A3F3F; padding-left:200px; margin-left:0;">
+
+    <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+    <p style="color:#9A3F3F;"><i>
+    Looking at your life today, are you becoming more conformed to the world or more transformed into the image of Christ? What area of your life needs to be surrendered to God so that your mind may be renewed according to His Word?
+    </i></p>
+
+</border>
+
+
+
+</article>
+
+        `
+        },
   {
      id: 17,
     slug: 'the-love-i-was-looking-for',
