@@ -1,6 +1,457 @@
 
 export const newsletter = [
     {
+       id: 19,
+    slug: 'god-desire-for-the-church',
+
+    title: 'Living By Faith',
+
+    excerpt: 'The Bible teaches us how we ought to live in this world through the truth, "The just shall live by faith."',
+
+    date: 'June 28, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/03_faith.jpg',
+    
+    video:'https://www.youtube.com/embed/jwiAg_gwwlE?si=iaPxVxwYkzZAGbil',
+
+    caption:'Worship Service | June 28, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'Living By Faith',
+      description: 'The Bible teaches us how we ought to live in this world through the truth, "The just shall live by faith."',
+      image:
+        '/newsletter/message/03_faith.jpg',
+    },
+  
+        content1: `
+
+<article>
+
+    <p style="color:#9A3F3F;"><i>
+    Text: Romans 1:17
+
+    <br>"For therein is the righteousness of God revealed from faith to faith: as it is written, The just shall live by faith."
+    </i></p>
+
+    <br>
+
+    <h4>Introduction</h4>
+
+
+    <p>
+        We will be starting another series of lessons from the Book of Romans. We are beginning in Romans chapter 1. Now, of course, if you read the Book of Romans, it is an amazing book. It is full of doctrine, and it is a book that will surely bless us. But I also want us to study it in the context of what is happening around us today.
+    </p>
+
+    <p>
+        I want you to please look at these pictures. Some people say that we are living in a world that God has forsaken. They would say, "The Lord has forsaken us already." It seems that we live in a godless world because, after all, God has abandoned us. But here's the thing: I believe that God did not forsake us.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>Hebrews 13:5</strong><br>
+        "<em>...for he hath said, I will never leave thee, nor forsake thee.</em>"
+    </p>
+
+    <p>
+        If you look at the Bible, the Bible says that the Lord will never leave us nor forsake us. He has always been with us, and He has always been for us. The problem is not that God has forsaken us; the problem is that we are the ones who have forsaken Him.
+    </p>
+
+    <p>
+        If you check your heart today, I believe all of us would agree that God is not the number one person in our lives. If we are honest, we would admit that He is not our highest priority. He has not been the most important person in our lives. Sadly, that is our condition. It is very easy for us to say that God has forsaken us, but in reality, we are the ones who have forsaken Him. If we are simply honest before the Lord, we would have to admit that.
+    </p>
+
+    <p>
+        One of the problems that we see in many churches and religions today is the problem of legalism. Legalism means trying to please God based on what we do. It is trying to earn God's favor through our good works. It is trying to make ourselves acceptable before God because of our own efforts. But we know that this is not what the Bible teaches.
+    </p>
+
+    <p>
+        I want you to look at Romans chapter 2, verses 17 and 18.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>Romans 2:17–18</strong><br>
+        <em>
+        "Behold, thou art called a Jew, and restest in the law, and makest thy boast of God; And knowest his will, and approvest the things that are more excellent, being instructed out of the law."
+        </em>
+    </p>
+
+    <p>
+        This was the problem of the Jews. They trusted in the Law. They believed that by obeying the commandments they could make themselves righteous before God. They thought that through the Law they could become acceptable before Him. That is exactly what the Apostle Paul is addressing here. They were boasting in the Law, believing that if they simply obeyed the commandments, then they would be right with God. But that is not what the Scriptures teach.
+    </p>
+
+    <p>
+        Now look at Romans chapter 1 and verse 17.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>Romans 1:17</strong><br>
+        <em>
+        "For therein is the righteousness of God revealed from faith to faith: as it is written, The just shall live by faith."
+        </em>
+    </p>
+
+    <p>
+        In the world that we live in today, the biblical way to live is to live by faith. The world teaches us to take pride in ourselves. It teaches us to trust human wisdom. It teaches us to build our lives upon its philosophies and standards. But that is not how God wants us to live. God wants us to live by faith—not by religion, not by human pride, and not by worldly wisdom, but by faith.
+    </p>
+
+    <p>
+        What does the Bible mean when it says, "<em>The just shall live by faith</em>"? That is the title of our message this morning, <strong>Living by Faith</strong>. It is taken from Romans chapter 1, verse 17, where the Bible teaches us how we ought to live in this world.
+    </p>
+
+    <p>
+        There are three things that we are going to learn this morning. First, we are going to talk about <strong>the Person of Jesus Christ</strong>—who He is in our lives and who Christ should be in our lives. Second, we are going to talk about <strong>our Purpose to Live</strong>. Finally, we are going to talk about <strong>the Power of the Gospel</strong>. These three truths teach us what it truly means to live by faith.
+    </p>
+
+
+
+
+    <h3>I. The Person of Jesus Christ</h3>
+
+    <p>
+        Now let us go to Romans chapter 1, verses 3 and 4.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>Romans 1:3–4</strong><br>
+        <em>
+        "Concerning his Son Jesus Christ our Lord, which was made of the seed of David according to the flesh; And declared to be the Son of God with power, according to the spirit of holiness, by the resurrection from the dead."
+        </em>
+    </p>
+
+    <p>
+        I want you to notice those words, <strong>"Jesus Christ our Lord."</strong> The Apostle Paul was acknowledging the Lordship of Jesus Christ—not only in his own life but in the lives of every believer. Living by faith always begins with the right understanding of who Jesus Christ is.
+    </p>
+
+    <p>
+        Living by faith starts by having a personal encounter with Jesus Christ. It begins by knowing God through His Son, Jesus Christ. Why? Because Jesus Christ is the Son of God. And because He is the Son of God, He is God. There are many people today who disagree with this truth. They would say that being the Son of God does not mean that He is God. But we know from the Scriptures that being God is not simply an office; it is His very nature. God the Father is God by nature, and in the same way, Jesus Christ, being the Son of God, possesses that same divine nature. Therefore, He is truly God.
+    </p>
+
+    <p>
+        Paul first acknowledged the Lordship of Jesus Christ. He acknowledged that Jesus Christ is the One who created the universe, the One who came into this world, and the only One who could die for the sins of mankind. But notice that the passage does not stop at His death.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>Romans 1:4</strong><br>
+        <em>
+        "And declared to be the Son of God with power, according to the spirit of holiness, by the resurrection from the dead."
+        </em>
+    </p>
+
+    <p>
+        Jesus Christ did not simply die for our sins. He was buried, and three days later He rose again from the dead. His resurrection declares His power and proves who He truly is. He is not dead. He is alive.
+    </p>
+
+    <p>
+        Why is the resurrection so important to our faith? Why should every Christian know about it?
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>1 Corinthians 15:3–4</strong><br>
+        <em>
+        "For I delivered unto you first of all that which I also received, how that Christ died for our sins according to the scriptures; And that he was buried, and that he rose again the third day according to the scriptures."
+        </em>
+    </p>
+
+    <p>
+        The resurrection is not a minor doctrine. It is the very foundation of Christianity.
+    </p>
+
+    <p>
+        There was once an atheist named Frank Morrison who set out to destroy Christianity through historical investigation. He wanted to prove that Christianity was false. As he began his research, he was advised that if he wanted to disprove Christianity, he needed to begin with the resurrection of Jesus Christ. If he could prove that the resurrection never happened, then Christianity would collapse. But after carefully examining the historical evidence, he came to the exact opposite conclusion. Instead of destroying Christianity, he became convinced that Jesus Christ truly died, was buried, and rose again from the dead. The evidence led him to faith rather than unbelief.
+    </p>
+
+    <p>
+        The Apostle Paul explains why this matters in 1 Corinthians chapter 15.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>1 Corinthians 15:13–15</strong><br>
+        <em>
+        "But if there be no resurrection of the dead, then is Christ not risen: And if Christ be not risen, then is our preaching vain, and your faith is also vain. Yea, and we are found false witnesses of God..."
+        </em>
+    </p>
+
+    <p>
+        Everything we are doing today would be meaningless if Christ did not rise from the dead. Why are we gathering every Sunday if Christ remained in the grave? Paul even says that we would be false witnesses because we testify that Christ rose again. Without the resurrection, Christians would be the most miserable people in the world. But praise God, Christ did rise from the dead. The resurrection is a historical fact, and it is the foundation of our faith.
+    </p>
+
+    <p>
+        We also see this truth in the life of Thomas. In John chapter 20, after Jesus had risen from the dead, Thomas refused to believe the testimony of the other disciples.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>John 20:25</strong><br>
+        <em>
+        "Except I shall see in his hands the print of the nails, and put my finger into the print of the nails, and thrust my hand into his side, I will not believe."
+        </em>
+    </p>
+
+    <p>
+        Eight days later, Jesus appeared to the disciples again, and Thomas was with them. Jesus invited him to see His hands and touch His side. Then He said:
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>John 20:27</strong><br>
+        <em>
+        "Be not faithless, but believing."
+        </em>
+    </p>
+
+    <p>
+        After seeing the risen Christ, Thomas answered and said unto Him:
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>John 20:28</strong><br>
+        <em>
+        "My Lord and my God."
+        </em>
+    </p>
+
+    <p>
+        That confession is significant. Thomas acknowledged not only that Jesus was alive but that He was both his Lord and his God. He recognized Christ's Lordship and His deity. Jesus Christ was no longer simply a teacher or a miracle worker. He was his Master, the One whom he would serve for the rest of his life.
+    </p>
+
+    <p>
+        That is exactly what Paul is teaching in Romans chapter 1. Living by faith begins with the Person of Jesus Christ. We acknowledge that He is the Son of God, that He is God in the flesh, that He died for our sins, that He rose again from the dead, and that He alone is Lord. The foundation of our faith is not religion, traditions, or human effort. The foundation of our faith is the Person of Jesus Christ. Before we can truly live by faith, we must first know Him personally and acknowledge Him as our Lord and our God.
+    </p>
+
+
+    <h3>II. The Purpose to Live</h3>
+
+    <p>
+        Living by faith does not only begin with knowing the Person of Jesus Christ; it also means understanding why God has called us to live.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>Romans 1:5–7</strong><br>
+        <em>
+        "By whom we have received grace and apostleship, for obedience to the faith among all nations, for his name: Among whom are ye also the called of Jesus Christ: To all that be in Rome, beloved of God, called to be saints: Grace to you and peace from God our Father, and the Lord Jesus Christ."
+        </em>
+    </p>
+
+    <p>
+        Notice the words, <strong>"the called of Jesus Christ"</strong> and <strong>"called to be saints."</strong> Our purpose and our calling as Christians are not based on our own ambitions, our passions, or our personal goals. Our calling is rooted in our relationship with Jesus Christ. God Himself has called us, and because He has called us, we belong to Him.
+    </p>
+
+    <p>
+        The Bible says that we are <strong>called to be saints.</strong> Now, when we hear the word <em>saint</em>, many people immediately think of what the Roman Catholic Church teaches—that a person becomes a saint only after a long process of canonization. But that is not what the Bible teaches. According to the Scriptures, saints are those who have trusted Jesus Christ as their Lord and personal Savior. Every believer is called a saint because he has been sanctified in Christ Jesus.
+    </p>
+
+    <p>
+        To be sanctified means to be set apart. God has set us apart for His purpose, for His glory, and for Himself. We have been separated from the world so that we might pursue Christlikeness. That is part of our purpose as believers—not merely to attend church, not merely to perform religious duties, but to become more like Jesus Christ.
+    </p>
+
+    <p>
+        This is exactly what Paul teaches in Philippians chapter 2.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>Philippians 2:5</strong><br>
+        <em>
+        "Let this mind be in you, which was also in Christ Jesus."
+        </em>
+    </p>
+
+    <p>
+        When we think about the life we are to imitate, there is only one perfect example, and that is Jesus Christ. We are not called to imitate the world. We are not called to pattern our lives after successful people. We are called to follow Christ.
+    </p>
+
+    <p>
+        As we study Philippians chapter 2, we see two qualities that stand out in the life of Christ. First is His humility. Though He is God, He humbled Himself and took upon Himself the form of a servant. He willingly came into this world to die for sinners like us. Second is His forgiveness. Although we deserved God's judgment because of our sins, Christ willingly gave Himself for us so that we could receive forgiveness.
+    </p>
+
+    <p>
+        This is the kind of life God desires for every believer. Since Christ came not to be served but to serve, our purpose is also to serve Him. Our lives are not meant to revolve around ourselves. They are meant to glorify the One who saved us.
+    </p>
+
+    <p>
+        As I think about serving God, I believe that the greatest purpose of every Christian is to exalt Christ and to become more like Him.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>Psalm 118:28</strong><br>
+        <em>
+        "Thou art my God, and I will praise thee: thou art my God, I will exalt thee."
+        </em>
+    </p>
+
+    <p>
+        Isn't that the purpose of our lives—to exalt Christ?
+    </p>
+
+    <p>
+        Think about John the Baptist. When people began following Jesus instead of him, John did not become jealous. He did not try to promote himself. He understood his calling. He knew that his purpose was to prepare the way for the earthly ministry of Jesus Christ.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>John 3:30</strong><br>
+        <em>
+        "He must increase, but I must decrease."
+        </em>
+    </p>
+
+    <p>
+        That should also be the attitude of every Christian. When we serve God, it should never be about ourselves. It is not about our recognition, our convenience, or our reputation. It is all about Christ. He deserves the glory, not us.
+    </p>
+
+    <p>
+        Philippians chapter 2 reminds us of this truth once again.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>Philippians 2:9–11</strong><br>
+        <em>
+        "Wherefore God also hath highly exalted him, and given him a name which is above every name: That at the name of Jesus every knee should bow, of things in heaven, and things in earth, and things under the earth; And that every tongue should confess that Jesus Christ is Lord, to the glory of God the Father."
+        </em>
+    </p>
+
+    <p>
+        Everything ultimately points to Jesus Christ. Every knee will bow before Him, and every tongue will confess that He alone is Lord.
+    </p>
+
+    <p>
+        Living by faith means recognizing that we have a higher calling. Our purpose is founded upon our relationship with Jesus Christ. We have been called to serve Him, to honor Him, to become more like Him, and to exalt Him in every area of our lives.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>Philippians 3:14</strong><br>
+        <em>
+        "I press toward the mark for the prize of the high calling of God in Christ Jesus."
+        </em>
+    </p>
+
+    <p>
+        Church, this is our calling. We have a higher calling than anything this world can offer. Our identity is found in Christ, and our purpose is to live for Him. That is what it means to live by faith.
+    </p>
+
+
+    <h3>III. The Power of the Gospel</h3>
+
+    <p>
+        The last truth that we learn about living by faith is the power of the gospel. For many people, the Bible is nothing more than a source of information. They think that the gospel is simply a message to be heard or a story to be known. But the Bible teaches something far greater than that.
+    </p>
+
+    <p>
+        Let us read Romans chapter 1, verse 16.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>Romans 1:16</strong><br>
+        <em>
+        "For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation to every one that believeth; to the Jew first, and also to the Greek."
+        </em>
+    </p>
+
+    <p>
+        Paul was not ashamed of the gospel because it was the very message that saved him and completely changed his life. He understood that the gospel is not merely information to be shared. It is <strong>the power of God unto salvation.</strong> It has the power to save sinners from their sins, and it has the power to transform the lives of those who believe in Jesus Christ.
+    </p>
+
+    <p>
+        Verse 17 continues with this wonderful truth.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>Romans 1:17</strong><br>
+        <em>
+        "For therein is the righteousness of God revealed from faith to faith: as it is written, The just shall live by faith."
+        </em>
+    </p>
+
+    <p>
+        Notice that salvation is available to everyone, but it is received only by those who believe. God has made salvation available to all people, but only those who place their faith in Jesus Christ will experience His saving power.
+    </p>
+
+    <p>
+        I remember the time when I was in Indonesia. Many people there would tell us that they were Christians. They would say that they went to church every Sunday. But when we asked them if they had a personal relationship with Jesus Christ, many of them could not answer. When we asked them if they were sure they were going to heaven when they died, they did not know. For many of them, Christianity was simply a tradition. They had religion, but they had never truly believed the gospel.
+    </p>
+
+    <p>
+        That is why there was no real transformation in their lives. They did not understand that salvation comes only through Jesus Christ. They had heard the message, but they had never placed their faith in the Savior. The gospel had become information instead of transformation.
+    </p>
+
+    <p>
+        The Apostle Paul is a perfect example of what the power of the gospel can do.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>Galatians 1:13</strong><br>
+        <em>
+        "For ye have heard of my conversation in time past in the Jews' religion, how that beyond measure I persecuted the church of God, and wasted it."
+        </em>
+    </p>
+
+    <p>
+        When the Bible uses the word <strong>conversation</strong>, it refers to one's manner of life. Paul was describing the kind of person he used to be before he met Christ. He was a persecutor of the church. He arrested Christians. He opposed the gospel. He even approved of the persecution and death of believers. But everything changed when he encountered Jesus Christ. The same gospel that was preached to Paul became the very message that transformed his life.
+    </p>
+
+    <p>
+        That same gospel continues to change lives today. It is the power of God for everyone who believes. It is not simply a collection of facts. It is God's power to save sinners and to transform them from the inside out. That is why God wants us to live by faith.
+    </p>
+
+    <p>
+        Let us read Romans chapter 1, verses 16 and 17 once again.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>Romans 1:16–17</strong><br>
+        <em>
+        "For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation to every one that believeth; to the Jew first, and also to the Greek. For therein is the righteousness of God revealed from faith to faith: as it is written, The just shall live by faith."
+        </em>
+    </p>
+
+    <p>
+        Notice that Paul speaks about <strong>the righteousness of God.</strong> This righteousness cannot be earned through good works. It cannot be obtained by keeping the Law. It cannot be achieved through religion. The righteousness of God is given to those who put their faith in Jesus Christ. It is imputed to those who believe.
+    </p>
+
+    <p>
+        As we bring this message to a close, let us remember what it means to live by faith.
+    </p>
+
+    <p>
+        First, we look to the <strong>Person of Jesus Christ.</strong> Living by faith begins by acknowledging His deity and His Lordship. He alone is the Lord of our lives. We are not the masters of our own lives. Even though we honor and submit to those whom God has placed in authority over us, ultimately it is Christ who is our Lord.
+    </p>
+
+    <p>
+        Second, we understand <strong>our Purpose to Live.</strong> Our calling and our identity are found in Jesus Christ. God has called us to serve Him, to become more like Him, and to live for His glory. Our purpose is not to conform to the standards of this world but to pursue a deeper relationship with Christ and to reflect His character every day.
+    </p>
+
+    <p>
+        Finally, we recognize <strong>the Power of the Gospel.</strong> The gospel is not merely information for people to know. It is the power of God unto salvation. It saves sinners, transforms lives, and gives the righteousness of God to everyone who believes.
+    </p>
+
+    <p>
+        The world tells us to live according to its standards. Religion tells us to trust in our own works. But God calls us to something entirely different. He calls us to <strong>live by faith</strong>—by acknowledging the Lordship of Jesus Christ, by embracing His purpose for our lives, and by trusting in the power of the gospel.
+    </p>
+
+    <p style="color:#9A3F3F;">
+        <strong>Romans 1:17</strong><br>
+        <em>
+        "The just shall live by faith."
+        </em>
+    </p>
+
+    <border style="border-top:4px solid #9A3F3F; padding-left:200px; margin-left:0;">
+
+    <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+    <p style="color:#9A3F3F;"><i>
+    How can you demonstrate this week that you are living by faith in the power of the gospel rather than relying on your own efforts or religious practices?
+    </i></p>
+
+</border>
+
+
+</article>
+
+        `
+        },
+    {
        id: 18,
     slug: 'a-transforming-christian',
 
