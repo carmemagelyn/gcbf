@@ -2,7 +2,7 @@
 export const newsletter = [
     {
        id: 19,
-    slug: 'god-desire-for-the-church',
+    slug: 'living-by-faith',
 
     title: 'Living By Faith',
 
