@@ -29,7 +29,8 @@ onMounted(() => {
           </p>
           <div class="hero-buttons mt-5">
             <button class="btn btn-primary me-3" @click="showForm = true">Register Now</button>
-            <a class="btn btn-outline-light" href="https://bible-correspondence.gcbf.com.ph/home" target="_blank" rel="noopener noreferrer">Student Login</a>
+         
+            <span><a class="btn btn-outline-light" href="https://bible-correspondence.gcbf.com.ph/home" target="_blank" rel="noopener noreferrer">Student Login</a></span>
           </div>
         </div>
         <div class="hero-logo">
@@ -53,6 +54,26 @@ onMounted(() => {
         </section>
 
         <hr />
+        <section class="program-intro mt-4 mb-4">
+          <h2>Curriculum</h2>
+          
+          <ul>
+            <li>Theology</li>
+            <li>Christology</li>
+            <li>Pneumatology</li>
+            <li>Bibliology</li>
+            <li>Anthropology</li>
+            <li>Soteriology</li>
+            <li>Ecclesiology</li>
+            <li>Eschatology</li>
+            <li>King James Bible</li>
+            <li>Bible Interpretation</li>
+            <li>Other Course Subjects*</li>
+
+          </ul>
+        </section>
+
+        <hr />
 
         <section class="face-to-face mt-4 mb-4">
           <h2>Additional Face-to-Face Learning Sessions</h2>
@@ -67,6 +88,19 @@ onMounted(() => {
             <strong>Graced Community Bible Fellowship</strong>
           </p>
           All coursework is completed through the LMS. Attendance is optional.
+        </section>
+
+        <hr />
+         <section class="program-intro mt-4 mb-4">
+          <h2>For Inquiries</h2>
+          <p>
+            Please message us through our Facebook page:  <a href="https://www.facebook.com/gracedcommunitybiblefellowship" target="_blank" class="footer">
+          <i class="bi bi-facebook"> Graced Community Bible Fellowship</i> 
+        </a> 
+          </p>
+           
+
+         
         </section>
 
         <hr />
@@ -198,6 +232,7 @@ onMounted(() => {
 
 .hero-buttons .btn {
   min-width: 160px;
+  margin-bottom: 1rem;
 }
 
 .hero-buttons .btn-outline-light {
