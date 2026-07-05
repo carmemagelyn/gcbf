@@ -1,35 +1,26 @@
+var __defProp = Object.defineProperty;
+var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
 
-export const newsletter = [
-    {
-       id: 6,
-    slug: 'keep-your-heart',
-
-    title: 'Keep Your Heart',
-
+// ../src/data/category.js
+var newsletter = [
+  {
+    id: 6,
+    slug: "keep-your-heart",
+    title: "Keep Your Heart",
     excerpt: "With All diligence and With God's Design",
-
-    date: 'July 2, 2026',
-
-    author: 'Pastor Joseph Tabuena of Faith Baptist Church Cadinglian-Batuan',
-
-    authorImage: '/newsletter/author/joseph-tabuena.jpg',
-
-    coverphoto: '/newsletter/message/03_keep.jpg',
-    
-    video:'https://www.youtube.com/embed/Ye5bZ6-YRYI?si=FDmOyC5sdBE6SlSs',
-
-    caption:'Youth Community | July 2, 2026',
-
-    type: 'message',
-
+    date: "July 2, 2026",
+    author: "Pastor Joseph Tabuena of Faith Baptist Church Cadinglian-Batuan",
+    authorImage: "/newsletter/author/joseph-tabuena.jpg",
+    coverphoto: "/newsletter/message/03_keep.jpg",
+    video: "https://www.youtube.com/embed/Ye5bZ6-YRYI?si=FDmOyC5sdBE6SlSs",
+    caption: "Youth Community | July 2, 2026",
+    type: "message",
     seo: {
-      title: 'Keep Your Heart',
+      title: "Keep Your Heart",
       description: "With All diligence and With God's Design",
-      image:
-        '/newsletter/message/03_keep.jpg',
+      image: "/newsletter/message/03_keep.jpg"
     },
-  
-        content1: `
+    content1: `
       <article>
 <p style="color:#9A3F3F;"><i>
 Text: Proverbs 4:23
@@ -76,7 +67,7 @@ Proverbs 4:23
 <p>When we talk about compatibility, this may be a sensitive subject. Many people define compatibility by personality, interests, hobbies, or chemistry. While those things may have their place, the Bible teaches us to begin with God's design.</p>
 
 <p style="color:#9A3F3F;">
-Matthew 19:4–6
+Matthew 19:4\u20136
 <br>
 "And he answered and said unto them, Have ye not read, that he which made them at the beginning made them male and female, And said, For this cause shall a man leave father and mother, and shall cleave to his wife: and they twain shall be one flesh? Wherefore they are no more twain, but one flesh. What therefore God hath joined together, let not man put asunder."
 </p>
@@ -98,7 +89,7 @@ Matthew 19:4–6
 <p>Eventually Samson cried unto the Lord.</p>
 
 <p style="color:#9A3F3F;">
-Judges 16:28–30
+Judges 16:28\u201330
 <br>
 "And Samson called unto the LORD, and said, O Lord GOD, remember me, I pray thee, and strengthen me, I pray thee, only this once, O God..."
 </p>
@@ -163,7 +154,7 @@ Proverbs 24:27
 <p>Sometimes what seems harmless can gradually lead us into temptation. Sin rarely begins with a major decision. It often begins with small compromises that slowly weaken our convictions. Therefore, we must be careful not to place ourselves in situations that encourage temptation.</p>
 
 <p style="color:#9A3F3F;">
-1 Corinthians 6:15–16
+1 Corinthians 6:15\u201316
 <br>
 "Know ye not that your bodies are the members of Christ? shall I then take the members of Christ, and make them the members of an harlot? God forbid. What? know ye not that he which is joined to an harlot is one body? for two, saith he, shall be one flesh."
 </p>
@@ -173,7 +164,7 @@ Proverbs 24:27
 <p>Scripture gives us a very simple command. It does not tell us to argue with temptation or to see how strong we are. Instead, it tells us to run from it.</p>
 
 <p style="color:#9A3F3F;">
-1 Corinthians 6:18–20
+1 Corinthians 6:18\u201320
 <br>
 "Flee fornication. Every sin that a man doeth is without the body; but he that committeth fornication sinneth against his own body. What? know ye not that your body is the temple of the Holy Ghost which is in you, which ye have of God, and ye are not your own? For ye are bought with a price: therefore glorify God in your body, and in your spirit, which are God's."
 </p>
@@ -232,38 +223,25 @@ Proverbs 4:23
 
 </article>
         `
-
-        },
-    {
-       id: 19,
-    slug: 'living-by-faith',
-
-    title: 'Living By Faith',
-
+  },
+  {
+    id: 19,
+    slug: "living-by-faith",
+    title: "Living By Faith",
     excerpt: 'The Bible teaches us how we ought to live in this world through the truth, "The just shall live by faith."',
-
-    date: 'June 28, 2026',
-
-    author: 'Pastor John Louie Berdejo',
-
-    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
-
-    coverphoto: '/newsletter/message/03_faith.jpg',
-    
-    video:'https://www.youtube.com/embed/jwiAg_gwwlE?si=iaPxVxwYkzZAGbil',
-
-    caption:'Worship Service | June 28, 2026',
-
-    type: 'message',
-
+    date: "June 28, 2026",
+    author: "Pastor John Louie Berdejo",
+    authorImage: "/newsletter/author/john-louie-berdejo.jpg",
+    coverphoto: "/newsletter/message/03_faith.jpg",
+    video: "https://www.youtube.com/embed/jwiAg_gwwlE?si=iaPxVxwYkzZAGbil",
+    caption: "Worship Service | June 28, 2026",
+    type: "message",
     seo: {
-      title: 'Living By Faith',
+      title: "Living By Faith",
       description: 'The Bible teaches us how we ought to live in this world through the truth, "The just shall live by faith."',
-      image:
-        '/newsletter/message/03_faith.jpg',
+      image: "/newsletter/message/03_faith.jpg"
     },
-  
-        content1: `
+    content1: `
 
 <article>
 
@@ -308,7 +286,7 @@ Proverbs 4:23
     </p>
 
     <p style="color:#9A3F3F;">
-        <strong>Romans 2:17–18</strong><br>
+        <strong>Romans 2:17\u201318</strong><br>
         <em>
         "Behold, thou art called a Jew, and restest in the law, and makest thy boast of God; And knowest his will, and approvest the things that are more excellent, being instructed out of the law."
         </em>
@@ -330,7 +308,7 @@ Proverbs 4:23
     </p>
 
     <p>
-        In the world that we live in today, the biblical way to live is to live by faith. The world teaches us to take pride in ourselves. It teaches us to trust human wisdom. It teaches us to build our lives upon its philosophies and standards. But that is not how God wants us to live. God wants us to live by faith—not by religion, not by human pride, and not by worldly wisdom, but by faith.
+        In the world that we live in today, the biblical way to live is to live by faith. The world teaches us to take pride in ourselves. It teaches us to trust human wisdom. It teaches us to build our lives upon its philosophies and standards. But that is not how God wants us to live. God wants us to live by faith\u2014not by religion, not by human pride, and not by worldly wisdom, but by faith.
     </p>
 
     <p>
@@ -338,7 +316,7 @@ Proverbs 4:23
     </p>
 
     <p>
-        There are three things that we are going to learn this morning. First, we are going to talk about <strong>the Person of Jesus Christ</strong>—who He is in our lives and who Christ should be in our lives. Second, we are going to talk about <strong>our Purpose to Live</strong>. Finally, we are going to talk about <strong>the Power of the Gospel</strong>. These three truths teach us what it truly means to live by faith.
+        There are three things that we are going to learn this morning. First, we are going to talk about <strong>the Person of Jesus Christ</strong>\u2014who He is in our lives and who Christ should be in our lives. Second, we are going to talk about <strong>our Purpose to Live</strong>. Finally, we are going to talk about <strong>the Power of the Gospel</strong>. These three truths teach us what it truly means to live by faith.
     </p>
 
 
@@ -351,14 +329,14 @@ Proverbs 4:23
     </p>
 
     <p style="color:#9A3F3F;">
-        <strong>Romans 1:3–4</strong><br>
+        <strong>Romans 1:3\u20134</strong><br>
         <em>
         "Concerning his Son Jesus Christ our Lord, which was made of the seed of David according to the flesh; And declared to be the Son of God with power, according to the spirit of holiness, by the resurrection from the dead."
         </em>
     </p>
 
     <p>
-        I want you to notice those words, <strong>"Jesus Christ our Lord."</strong> The Apostle Paul was acknowledging the Lordship of Jesus Christ—not only in his own life but in the lives of every believer. Living by faith always begins with the right understanding of who Jesus Christ is.
+        I want you to notice those words, <strong>"Jesus Christ our Lord."</strong> The Apostle Paul was acknowledging the Lordship of Jesus Christ\u2014not only in his own life but in the lives of every believer. Living by faith always begins with the right understanding of who Jesus Christ is.
     </p>
 
     <p>
@@ -385,7 +363,7 @@ Proverbs 4:23
     </p>
 
     <p style="color:#9A3F3F;">
-        <strong>1 Corinthians 15:3–4</strong><br>
+        <strong>1 Corinthians 15:3\u20134</strong><br>
         <em>
         "For I delivered unto you first of all that which I also received, how that Christ died for our sins according to the scriptures; And that he was buried, and that he rose again the third day according to the scriptures."
         </em>
@@ -404,7 +382,7 @@ Proverbs 4:23
     </p>
 
     <p style="color:#9A3F3F;">
-        <strong>1 Corinthians 15:13–15</strong><br>
+        <strong>1 Corinthians 15:13\u201315</strong><br>
         <em>
         "But if there be no resurrection of the dead, then is Christ not risen: And if Christ be not risen, then is our preaching vain, and your faith is also vain. Yea, and we are found false witnesses of God..."
         </em>
@@ -463,7 +441,7 @@ Proverbs 4:23
     </p>
 
     <p style="color:#9A3F3F;">
-        <strong>Romans 1:5–7</strong><br>
+        <strong>Romans 1:5\u20137</strong><br>
         <em>
         "By whom we have received grace and apostleship, for obedience to the faith among all nations, for his name: Among whom are ye also the called of Jesus Christ: To all that be in Rome, beloved of God, called to be saints: Grace to you and peace from God our Father, and the Lord Jesus Christ."
         </em>
@@ -474,11 +452,11 @@ Proverbs 4:23
     </p>
 
     <p>
-        The Bible says that we are <strong>called to be saints.</strong> Now, when we hear the word <em>saint</em>, many people immediately think of what the Roman Catholic Church teaches—that a person becomes a saint only after a long process of canonization. But that is not what the Bible teaches. According to the Scriptures, saints are those who have trusted Jesus Christ as their Lord and personal Savior. Every believer is called a saint because he has been sanctified in Christ Jesus.
+        The Bible says that we are <strong>called to be saints.</strong> Now, when we hear the word <em>saint</em>, many people immediately think of what the Roman Catholic Church teaches\u2014that a person becomes a saint only after a long process of canonization. But that is not what the Bible teaches. According to the Scriptures, saints are those who have trusted Jesus Christ as their Lord and personal Savior. Every believer is called a saint because he has been sanctified in Christ Jesus.
     </p>
 
     <p>
-        To be sanctified means to be set apart. God has set us apart for His purpose, for His glory, and for Himself. We have been separated from the world so that we might pursue Christlikeness. That is part of our purpose as believers—not merely to attend church, not merely to perform religious duties, but to become more like Jesus Christ.
+        To be sanctified means to be set apart. God has set us apart for His purpose, for His glory, and for Himself. We have been separated from the world so that we might pursue Christlikeness. That is part of our purpose as believers\u2014not merely to attend church, not merely to perform religious duties, but to become more like Jesus Christ.
     </p>
 
     <p>
@@ -516,7 +494,7 @@ Proverbs 4:23
     </p>
 
     <p>
-        Isn't that the purpose of our lives—to exalt Christ?
+        Isn't that the purpose of our lives\u2014to exalt Christ?
     </p>
 
     <p>
@@ -539,7 +517,7 @@ Proverbs 4:23
     </p>
 
     <p style="color:#9A3F3F;">
-        <strong>Philippians 2:9–11</strong><br>
+        <strong>Philippians 2:9\u201311</strong><br>
         <em>
         "Wherefore God also hath highly exalted him, and given him a name which is above every name: That at the name of Jesus every knee should bow, of things in heaven, and things in earth, and things under the earth; And that every tongue should confess that Jesus Christ is Lord, to the glory of God the Father."
         </em>
@@ -633,7 +611,7 @@ Proverbs 4:23
     </p>
 
     <p style="color:#9A3F3F;">
-        <strong>Romans 1:16–17</strong><br>
+        <strong>Romans 1:16\u201317</strong><br>
         <em>
         "For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation to every one that believeth; to the Jew first, and also to the Greek. For therein is the righteousness of God revealed from faith to faith: as it is written, The just shall live by faith."
         </em>
@@ -660,7 +638,7 @@ Proverbs 4:23
     </p>
 
     <p>
-        The world tells us to live according to its standards. Religion tells us to trust in our own works. But God calls us to something entirely different. He calls us to <strong>live by faith</strong>—by acknowledging the Lordship of Jesus Christ, by embracing His purpose for our lives, and by trusting in the power of the gospel.
+        The world tells us to live according to its standards. Religion tells us to trust in our own works. But God calls us to something entirely different. He calls us to <strong>live by faith</strong>\u2014by acknowledging the Lordship of Jesus Christ, by embracing His purpose for our lives, and by trusting in the power of the gospel.
     </p>
 
     <p style="color:#9A3F3F;">
@@ -684,41 +662,29 @@ Proverbs 4:23
 </article>
 
         `
-        },
-    {
-       id: 18,
-    slug: 'a-transforming-christian',
-
-    title: 'A Transforming Christian',
-
+  },
+  {
+    id: 18,
+    slug: "a-transforming-christian",
+    title: "A Transforming Christian",
     excerpt: "From Conforming to the World to Being Transformed by the Renewing of the Mind",
-
-    date: 'June 27, 2026',
-
-    author: 'Pastor Lee Ferdinand Caiban',
-
-    authorImage: '/newsletter/author/lee-caiban.jpg',
-
-    coverphoto: '/newsletter/message/yc_mind.jpg',
-    
-    video:'https://www.youtube.com/embed/yExmbKrVHo8?si=uI7KVbB6ZskoYkVZ',
-
-    caption:'Youth Community | June 25, 2026',
-
-    type: 'message',
-
+    date: "June 27, 2026",
+    author: "Pastor Lee Ferdinand Caiban",
+    authorImage: "/newsletter/author/lee-caiban.jpg",
+    coverphoto: "/newsletter/message/yc_mind.jpg",
+    video: "https://www.youtube.com/embed/yExmbKrVHo8?si=uI7KVbB6ZskoYkVZ",
+    caption: "Youth Community | June 25, 2026",
+    type: "message",
     seo: {
-      title: 'A Transforming Christian',
+      title: "A Transforming Christian",
       description: "From Conforming to the World to Being Transformed by the Renewing of the Mind",
-      image:
-        '/newsletter/message/yc_mind.jpg',
+      image: "/newsletter/message/yc_mind.jpg"
     },
-  
-        content1: `
+    content1: `
 <article>
 
     <p style="color:#9A3F3F;"><i>
-    Text: Romans 12:1–2
+    Text: Romans 12:1\u20132
     <br>
     "I beseech you therefore, brethren, by the mercies of God, that ye present your bodies a living sacrifice, holy, acceptable unto God, which is your reasonable service.
     And be not conformed to this world: but be ye transformed by the renewing of your mind, that ye may prove what is that good, and acceptable, and perfect, will of God."
@@ -729,15 +695,15 @@ Proverbs 4:23
     <h4>Introduction</h4>
 
     <p>
-    Every generation faces the same decision: Will we follow the world, or will we follow God? There is no middle ground. Romans 12:1–2 reminds us that every believer must choose whether to be conformed to the world or transformed by the power of God.
+    Every generation faces the same decision: Will we follow the world, or will we follow God? There is no middle ground. Romans 12:1\u20132 reminds us that every believer must choose whether to be conformed to the world or transformed by the power of God.
     </p>
 
     <p>
-    We are living in a generation where worldly influences are stronger than ever. Everywhere we go—our schools, workplaces, social media, and even among friends—we are constantly surrounded by ideas and values that oppose the Word of God. The challenge is not simply avoiding the world but remaining faithful to Christ while living in it.
+    We are living in a generation where worldly influences are stronger than ever. Everywhere we go\u2014our schools, workplaces, social media, and even among friends\u2014we are constantly surrounded by ideas and values that oppose the Word of God. The challenge is not simply avoiding the world but remaining faithful to Christ while living in it.
     </p>
 
     <p>
-    Many young people make life-changing decisions because they have never been grounded in the Scriptures. If they had been taught God's Word and learned to walk with Christ, many of their painful choices could have been avoided. The greatest need of every believer is not merely education, success, or entertainment—it is the nourishment that comes from the Word of God.
+    Many young people make life-changing decisions because they have never been grounded in the Scriptures. If they had been taught God's Word and learned to walk with Christ, many of their painful choices could have been avoided. The greatest need of every believer is not merely education, success, or entertainment\u2014it is the nourishment that comes from the Word of God.
     </p>
 
     <p>
@@ -827,7 +793,7 @@ Many today measure God's blessing by wealth, possessions, or material success. B
 </p>
 
 <p style="color:#9A3F3F;"><i>
-Psalm 1:1–2
+Psalm 1:1\u20132
 <br>
 "Blessed is the man that walketh not in the counsel of the ungodly... But his delight is in the law of the LORD; and in his law doth he meditate day and night."
 </i></p>
@@ -849,7 +815,7 @@ The question each believer must ask is not, "Am I following the crowd?" but rath
 <h4>II. THE CONFORMING CHRISTIAN SEEKS POPULARITY; THE TRANSFORMING CHRISTIAN SEEKS HOLINESS</h4>
 
 <p style="color:#9A3F3F;"><i>
-1 Peter 1:15–16
+1 Peter 1:15\u201316
 <br>
 "But as he which hath called you is holy, so be ye holy in all manner of conversation;
 Because it is written, Be ye holy; for I am holy."
@@ -1066,38 +1032,24 @@ As we continue to surrender ourselves to God, may we prove in our own lives "wha
 </article>
 
         `
-        },
+  },
   {
-     id: 17,
-    slug: 'the-love-i-was-looking-for',
-
-    title: 'The Love I Was Looking For',
-
-    excerpt: 'A Testimony of God’s Redeeming Love',
-
-    date: 'June 23, 2026',
-
-    author: 'Armil Jay Clacio',
-
-    authorImage: '/newsletter/author/armil-jay-clacio.jpg',
-
-    coverphoto: '/newsletter/02_letgo/love-look.jpg',
-
-   
-
-    type: 'article',
-
+    id: 17,
+    slug: "the-love-i-was-looking-for",
+    title: "The Love I Was Looking For",
+    excerpt: "A Testimony of God\u2019s Redeeming Love",
+    date: "June 23, 2026",
+    author: "Armil Jay Clacio",
+    authorImage: "/newsletter/author/armil-jay-clacio.jpg",
+    coverphoto: "/newsletter/02_letgo/love-look.jpg",
+    type: "article",
     seo: {
-      title: 'The Love I Was Looking For',
-      description: "A Testimony of God’s Redeeming Love",
-      image:
-        '/newsletter/02_letgo/love-look.jpg',
+      title: "The Love I Was Looking For",
+      description: "A Testimony of God\u2019s Redeeming Love",
+      image: "/newsletter/02_letgo/love-look.jpg"
     },
-    caption: '',
-
-
-
-        content1: `
+    caption: "",
+    content1: `
 <article>
 
     <p>
@@ -1274,7 +1226,7 @@ on how the freedom of Christianity differs
 from Judaism. It got me thinking deeper
 because, while I was reporting, I realized
 that I did not know what the true freedom of
-Christianity was. The answer in my head was always “free will.” It made me search
+Christianity was. The answer in my head was always \u201Cfree will.\u201D It made me search
 deeper on social media about what the true
 freedom of Christianity really is. I still did
 not have my answer, but because of it, I
@@ -1289,7 +1241,7 @@ about what I was currently experiencing. I
 scrolled and scrolled until I broke down in
 tears.</p>
 
-<p>As it is said in Psalm 34:18, <i>“The Lord is nigh unto them that are of a broken heart; and saveth such as be of a contrite spirit.”</i></p>
+<p>As it is said in Psalm 34:18, <i>\u201CThe Lord is nigh unto them that are of a broken heart; and saveth such as be of a contrite spirit.\u201D</i></p>
 
 <p>Jesus Christ is close to the brokenhearted,
 and that meant He was close to me. I cried
@@ -1329,12 +1281,12 @@ I understood that He freed us from sin. And
 it was the answer I had been looking for
 since senior high school:</p>
 
-<p>“What is the freedom in Christianity?”</p>
+<p>\u201CWhat is the freedom in Christianity?\u201D</p>
 
 <p>I began to realize that God works in
 mysterious ways. From that encounter,
 which I thought was small, something began
-to grow and shape me for God’s redemption
+to grow and shape me for God\u2019s redemption
 in my life.</p>
 
 <p>I also realized that it is truly freeing to know
@@ -1392,38 +1344,25 @@ Him while He was knocking.</p>
 
 </article>
         `
-
-        }, 
+  },
   {
-       id: 16,
-    slug: 'the-truth-about-a-believer-who-repents-but-sins-again',
-
-    title: 'The Truth about a Believer Who Repents but Sins Again',
-
-    excerpt: 'What happens if you repent but sin again?',
-
-    date: 'June 22, 2026',
-
-    author: 'Pastor Kian Ray Legarda',
-
-    authorImage: '/newsletter/author/kian-legarda.jpg',
-
-    coverphoto: '/newsletter/message/02_repent.jpg',
-    
-    video:'https://www.youtube.com/embed/u491FdDwFj0?si=oRoXLzRFduVU2LnK',
-
-    caption:'Worship Service | June 21, 2026',
-
-    type: 'message',
-
+    id: 16,
+    slug: "the-truth-about-a-believer-who-repents-but-sins-again",
+    title: "The Truth about a Believer Who Repents but Sins Again",
+    excerpt: "What happens if you repent but sin again?",
+    date: "June 22, 2026",
+    author: "Pastor Kian Ray Legarda",
+    authorImage: "/newsletter/author/kian-legarda.jpg",
+    coverphoto: "/newsletter/message/02_repent.jpg",
+    video: "https://www.youtube.com/embed/u491FdDwFj0?si=oRoXLzRFduVU2LnK",
+    caption: "Worship Service | June 21, 2026",
+    type: "message",
     seo: {
-      title: 'The Truth about a Believer Who Repents but Sins Again',
-      description: 'What happens if you repent but sin again?',
-      image:
-        '/newsletter/message/02_church.jpg',
+      title: "The Truth about a Believer Who Repents but Sins Again",
+      description: "What happens if you repent but sin again?",
+      image: "/newsletter/message/02_church.jpg"
     },
-  
-        content1: `
+    content1: `
 <article>
 
     <p style="color:#9A3F3F;"><i>
@@ -1456,10 +1395,10 @@ Him while He was knocking.</p>
 
     <p>
     Many believers ask:
-    <br>• Why do I keep struggling?
-    <br>• Why do I keep falling into the same sin?
-    <br>• Can I still continue serving God after failing again?
-    <br>• What is the truth about a believer who repents but sins again?
+    <br>\u2022 Why do I keep struggling?
+    <br>\u2022 Why do I keep falling into the same sin?
+    <br>\u2022 Can I still continue serving God after failing again?
+    <br>\u2022 What is the truth about a believer who repents but sins again?
     </p>
 
     <p>
@@ -1551,10 +1490,10 @@ Him while He was knocking.</p>
 
     <p>
     Through His death:
-    <br>• We have been reconciled.
-    <br>• We have been forgiven.
-    <br>• We have been accepted.
-    <br>• We have peace with God.
+    <br>\u2022 We have been reconciled.
+    <br>\u2022 We have been forgiven.
+    <br>\u2022 We have been accepted.
+    <br>\u2022 We have peace with God.
     </p>
 
     <p style="color:#9A3F3F;">
@@ -1593,9 +1532,9 @@ Him while He was knocking.</p>
 
     <p>
     Many voices in this world will say:
-    <br>• You're hopeless.
-    <br>• You'll never change.
-    <br>• You've failed too many times.
+    <br>\u2022 You're hopeless.
+    <br>\u2022 You'll never change.
+    <br>\u2022 You've failed too many times.
     </p>
 
     <p>
@@ -1642,10 +1581,10 @@ Him while He was knocking.</p>
 
     <p>
     Because of Christ:
-    <br>• We have life.
-    <br>• We have hope.
-    <br>• We have forgiveness.
-    <br>• We have reconciliation with God.
+    <br>\u2022 We have life.
+    <br>\u2022 We have hope.
+    <br>\u2022 We have forgiveness.
+    <br>\u2022 We have reconciliation with God.
     </p>
 
     <p>
@@ -1759,38 +1698,25 @@ Him while He was knocking.</p>
 </article>
 
         `
-
-        },
+  },
   {
-       id: 15,
-    slug: 'by-the-renewing-of-your-mind',
-
-    title: 'By The Renewing of Your Mind',
-
+    id: 15,
+    slug: "by-the-renewing-of-your-mind",
+    title: "By The Renewing of Your Mind",
     excerpt: "The renewing of your mind happens when we...",
-
-    date: 'June 19, 2026',
-
-    author: 'Pastor John Louie Berdejo',
-
-    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
-
-    coverphoto: '/newsletter/message/yc_mind.jpg',
-    
-    video:'https://www.youtube.com/embed/YlXpmVNeaJ4?si=mBRfjIIFZYJyZZlD',
-
-    caption:'Youth Community | June 18, 2026',
-
-    type: 'message',
-
+    date: "June 19, 2026",
+    author: "Pastor John Louie Berdejo",
+    authorImage: "/newsletter/author/john-louie-berdejo.jpg",
+    coverphoto: "/newsletter/message/yc_mind.jpg",
+    video: "https://www.youtube.com/embed/YlXpmVNeaJ4?si=mBRfjIIFZYJyZZlD",
+    caption: "Youth Community | June 18, 2026",
+    type: "message",
     seo: {
-      title: 'By The Renewing of Your Mind',
+      title: "By The Renewing of Your Mind",
       description: "The renewing of your mind happens when we...",
-      image:
-        '/newsletter/message/yc_mind.jpg',
+      image: "/newsletter/message/yc_mind.jpg"
     },
-  
-        content1: `
+    content1: `
 <article>
 
     <p style="color:#9A3F3F;"><i>
@@ -1844,10 +1770,10 @@ Him while He was knocking.</p>
 
     <p>
     A renewed mind understands that:
-    <br>• We are sinners before God.
-    <br>• The penalty of sin is death.
-    <br>• Jesus Christ died for our sins and rose again.
-    <br>• Salvation is received by faith in Christ alone.
+    <br>\u2022 We are sinners before God.
+    <br>\u2022 The penalty of sin is death.
+    <br>\u2022 Jesus Christ died for our sins and rose again.
+    <br>\u2022 Salvation is received by faith in Christ alone.
     </p>
 
     <p>
@@ -1945,8 +1871,8 @@ Him while He was knocking.</p>
 
     <p>
     The renewing of the mind happens when we:
-    <br>• Understand and believe the gospel.
-    <br>• Surrender our life to the One who died for us.
+    <br>\u2022 Understand and believe the gospel.
+    <br>\u2022 Surrender our life to the One who died for us.
     </p>
 
     <p>
@@ -1970,42 +1896,30 @@ Him while He was knocking.</p>
 
 </article>
         `
-        },
+  },
   {
-       id: 14,
-    slug: 'god-desire-for-the-church',
-
-    title: 'God’s Desire for the Church',
-
-    excerpt: 'Towards Other People',
-
-    date: 'June 14, 2026',
-
-    author: 'Pastor John Louie Berdejo',
-
-    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
-
-    coverphoto: '/newsletter/message/02_church.jpg',
-    
-    video:'https://www.youtube.com/embed/nAU7qgjQIXg?si=iL65-euRPGQgA_q9',
-
-    caption:'Worship Service | June 14, 2026',
-
-    type: 'message',
-
+    id: 14,
+    slug: "god-desire-for-the-church",
+    title: "God\u2019s Desire for the Church",
+    excerpt: "Towards Other People",
+    date: "June 14, 2026",
+    author: "Pastor John Louie Berdejo",
+    authorImage: "/newsletter/author/john-louie-berdejo.jpg",
+    coverphoto: "/newsletter/message/02_church.jpg",
+    video: "https://www.youtube.com/embed/nAU7qgjQIXg?si=iL65-euRPGQgA_q9",
+    caption: "Worship Service | June 14, 2026",
+    type: "message",
     seo: {
-      title: 'God’s Desire for the Church',
-      description: 'Towards Other People',
-      image:
-        '/newsletter/message/02_church.jpg',
+      title: "God\u2019s Desire for the Church",
+      description: "Towards Other People",
+      image: "/newsletter/message/02_church.jpg"
     },
-  
-        content1: `
+    content1: `
 
 <article>
 
     <p style="color:#9A3F3F;"><i>
-    Text: Romans 12:17–21
+    Text: Romans 12:17\u201321
 
     <br>"Recompense to no man evil for evil. Provide things honest in the sight of all men. If it be possible, as much as lieth in you, live peaceably with all men. Dearly beloved, avenge not yourselves, but rather give place unto wrath: for it is written, Vengeance is mine; I will repay, saith the Lord. Therefore if thine enemy hunger, feed him; if he thirst, give him drink: for in so doing thou shalt heap coals of fire on his head. Be not overcome of evil, but overcome evil with good."
     </i></p>
@@ -2027,7 +1941,7 @@ Him while He was knocking.</p>
     </p>
 
     <p>
-    In Romans 12:17–21, God's desire for His church toward other people can be summarized in three truths:
+    In Romans 12:17\u201321, God's desire for His church toward other people can be summarized in three truths:
     <br>1. A Forgiving Heart
     <br>2. An Honest Life
     <br>3. Follow Peace
@@ -2128,14 +2042,14 @@ Him while He was knocking.</p>
     <h4>Conclusion</h4>
 
     <p>
-    Romans 12:17–21 reveals God's desire for His church toward other people.
+    Romans 12:17\u201321 reveals God's desire for His church toward other people.
     </p>
 
     <p>
     He desires believers who:
-    <br>• Have a forgiving heart that reflects the grace of Christ.
-    <br>• Live an honest life marked by integrity before all people.
-    <br>• Follow peace and seek to build relationships for the sake of the gospel.
+    <br>\u2022 Have a forgiving heart that reflects the grace of Christ.
+    <br>\u2022 Live an honest life marked by integrity before all people.
+    <br>\u2022 Follow peace and seek to build relationships for the sake of the gospel.
     </p>
 
     <p>
@@ -2162,38 +2076,25 @@ Him while He was knocking.</p>
 
 
         `
-
-        },
- {
-       id: 13,
-    slug: 'transformed-from-eternity-to-eternity',
-
-    title: 'Transformed: From Eternity to Eternity',
-
+  },
+  {
+    id: 13,
+    slug: "transformed-from-eternity-to-eternity",
+    title: "Transformed: From Eternity to Eternity",
     excerpt: "Man's Physical and Spiritual Transformation",
-
-    date: 'June 12, 2026',
-
-    author: 'Pastor Sammy Tabuena',
-
-    authorImage: '/newsletter/author/sammy.jpg',
-
-    coverphoto: '/newsletter/message/yc_mind.jpg',
-    
-    video:'https://www.youtube.com/embed/BBzb_8mS3kg?si=5_qXWqzvvzzwpFXU',
-
-    caption:'Youth Community | June 11, 2026',
-
-    type: 'message',
-
+    date: "June 12, 2026",
+    author: "Pastor Sammy Tabuena",
+    authorImage: "/newsletter/author/sammy.jpg",
+    coverphoto: "/newsletter/message/yc_mind.jpg",
+    video: "https://www.youtube.com/embed/BBzb_8mS3kg?si=5_qXWqzvvzzwpFXU",
+    caption: "Youth Community | June 11, 2026",
+    type: "message",
     seo: {
-      title: 'Transformed: From Eternity to Eternity',
+      title: "Transformed: From Eternity to Eternity",
       description: "Man's Physical and Spiritual Transformation",
-      image:
-        '/newsletter/message/yc_mind.jpg',
+      image: "/newsletter/message/yc_mind.jpg"
     },
-  
-        content1: `
+    content1: `
 
 
 <article>
@@ -2204,7 +2105,7 @@ Him while He was knocking.</p>
 
     Theme Verse: "And be not conformed to this world: but be ye transformed by the renewing of your mind,
 
-    that ye may prove what is that good, and acceptable, and perfect, will of God." – Romans 12:2
+    that ye may prove what is that good, and acceptable, and perfect, will of God." \u2013 Romans 12:2
 
   </i></p>
 
@@ -2253,11 +2154,11 @@ Him while He was knocking.</p>
 
     <br><span style="color:#9A3F3F;">
 
-      “And God said, Let us make man in our image, after our likeness: and let them have dominion over the fish
+      \u201CAnd God said, Let us make man in our image, after our likeness: and let them have dominion over the fish
 
       of the sea, and over the fowl of the air, and over the cattle, and over all the earth, and over every
 
-      creeping thing that creepeth upon the earth.”
+      creeping thing that creepeth upon the earth.\u201D
 
     </span>
 
@@ -2271,9 +2172,9 @@ Him while He was knocking.</p>
 
     <br><span style="color:#9A3F3F;">
 
-      “So God created man in his own image, in the image of God created he him; male and female created he
+      \u201CSo God created man in his own image, in the image of God created he him; male and female created he
 
-      them.”
+      them.\u201D
 
     </span>
 
@@ -2289,9 +2190,9 @@ Him while He was knocking.</p>
 
     <br><span style="color:#9A3F3F;">
 
-      “And the LORD God formed man of the dust of the ground, and breathed into his nostrils the breath of
+      \u201CAnd the LORD God formed man of the dust of the ground, and breathed into his nostrils the breath of
 
-      life; and man became a living soul.”
+      life; and man became a living soul.\u201D
 
     </span>
 
@@ -2333,13 +2234,13 @@ Him while He was knocking.</p>
 
     <span style="color:#9A3F3F;">
 
-      “But of the tree of the knowledge of good and evil, thou shalt not eat of it: for in the day that thou
+      \u201CBut of the tree of the knowledge of good and evil, thou shalt not eat of it: for in the day that thou
 
-      eatest thereof thou shalt surely die.”
+      eatest thereof thou shalt surely die.\u201D
 
     </span>
 
-    <br>– Genesis 2:17
+    <br>\u2013 Genesis 2:17
 
   </p>
 
@@ -2351,7 +2252,7 @@ Him while He was knocking.</p>
 
     <br><span style="color:#9A3F3F;">
 
-      “Yea, hath God said, Ye shall not eat of every tree of the garden?”
+      \u201CYea, hath God said, Ye shall not eat of every tree of the garden?\u201D
 
     </span>
 
@@ -2391,9 +2292,9 @@ Him while He was knocking.</p>
 
     <br><span style="color:#9A3F3F;">
 
-      “Not by works of righteousness which we have done, but according to his mercy he saved us, by the washing
+      \u201CNot by works of righteousness which we have done, but according to his mercy he saved us, by the washing
 
-      of regeneration, and renewing of the Holy Ghost.”
+      of regeneration, and renewing of the Holy Ghost.\u201D
 
     </span>
 
@@ -2431,9 +2332,9 @@ Him while He was knocking.</p>
 
     <br><span style="color:#9A3F3F;">
 
-      “For whom he did foreknow, he also did predestinate to be conformed to the image of his Son, that he
+      \u201CFor whom he did foreknow, he also did predestinate to be conformed to the image of his Son, that he
 
-      might be the firstborn among many brethren.”
+      might be the firstborn among many brethren.\u201D
 
     </span>
 
@@ -2562,39 +2463,24 @@ Him while He was knocking.</p>
 </article>
 
         `
-
-        },
-    {
-     id: 12,
-    slug: 'saved-by-grace',
-
-    title: 'Saved by Grace',
-
-    excerpt: 'A Testimony of Salvation',
-
-    date: 'June 5, 2026',
-
-    author: 'Sharmaine Joy Dela Vida',
-
-    authorImage: '/newsletter/author/sharmaine-delavida.jpg',
-
-    coverphoto: '/newsletter/02_letgo/savedby.jpg',
-
-   
-
-    type: 'article',
-
+  },
+  {
+    id: 12,
+    slug: "saved-by-grace",
+    title: "Saved by Grace",
+    excerpt: "A Testimony of Salvation",
+    date: "June 5, 2026",
+    author: "Sharmaine Joy Dela Vida",
+    authorImage: "/newsletter/author/sharmaine-delavida.jpg",
+    coverphoto: "/newsletter/02_letgo/savedby.jpg",
+    type: "article",
     seo: {
-      title: 'Saved by Grace',
-      description: 'A Testimony of Salvation',
-      image:
-        '/newsletter/02_letgo/savedby.jpg',
+      title: "Saved by Grace",
+      description: "A Testimony of Salvation",
+      image: "/newsletter/02_letgo/savedby.jpg"
     },
-    caption: '',
-
-
-
-        content1: `
+    caption: "",
+    content1: `
             <article>
 
             <p>
@@ -2662,7 +2548,7 @@ them to the point that when I woke up, they
 were the first people I searched for on social
 media. My life revolved around celebrities.
 At that time, I even declared that they had
-“saved” me because I felt empty, anxious,
+\u201Csaved\u201D me because I felt empty, anxious,
 stressed, and alone. So when my life
 revolved around them, I thought I was saved
 simply because I felt happy. Clearly, I was
@@ -2672,7 +2558,7 @@ wrong.</p>
 find something that could satisfy me.
 Something that could save me from my
 anxiety. But that kind of love only gave me
-more anxiety, stress, pain, and chaos. Still, I am grateful because that “love” eventually
+more anxiety, stress, pain, and chaos. Still, I am grateful because that \u201Clove\u201D eventually
 led me to my true love, Jesus Christ.</p>
 
 <p>When I found Christ, the emptiness in my
@@ -2721,46 +2607,33 @@ He transformed me into a woman that the
 16-year-old version of me would never
 recognize or understand.
 </p>
-<p><i>“Therefore if any man be in Christ, he is a
+<p><i>\u201CTherefore if any man be in Christ, he is a
 new creature: old things are passed away;
-behold, all things are become new.” — 2
+behold, all things are become new.\u201D \u2014 2
 Corinthians 5:17</i></p>
 
 
         </article>
         `
-
-        }, 
-        {
-       id: 11,
-    slug: 'god-ultimate-plan-gospel-filled-life',
-
-    title: 'God’s Ultimate Plan for the Church',
-
-    excerpt: 'Christlikeness',
-
-    date: 'June 7, 2026',
-
-    author: 'Pastor John Louie Berdejo',
-
-    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
-
-    coverphoto: '/newsletter/message/02_church.jpg',
-    
-    video:'https://www.youtube.com/embed/E5mImbYNjIc?si=UzmumvQfg34LStnh',
-
-    caption:'Worship Service | June 7, 2026',
-
-    type: 'message',
-
+  },
+  {
+    id: 11,
+    slug: "god-ultimate-plan-gospel-filled-life",
+    title: "God\u2019s Ultimate Plan for the Church",
+    excerpt: "Christlikeness",
+    date: "June 7, 2026",
+    author: "Pastor John Louie Berdejo",
+    authorImage: "/newsletter/author/john-louie-berdejo.jpg",
+    coverphoto: "/newsletter/message/02_church.jpg",
+    video: "https://www.youtube.com/embed/E5mImbYNjIc?si=UzmumvQfg34LStnh",
+    caption: "Worship Service | June 7, 2026",
+    type: "message",
     seo: {
-      title: 'God’s Ultimate Plan for the Church',
-      description: 'Christlikeness',
-      image:
-        '/newsletter/message/02_church.jpg',
+      title: "God\u2019s Ultimate Plan for the Church",
+      description: "Christlikeness",
+      image: "/newsletter/message/02_church.jpg"
     },
-  
-        content1: `
+    content1: `
 <article>
 
     <p style="color:#9A3F3F;"><i>
@@ -2778,7 +2651,7 @@ Corinthians 5:17</i></p>
     </p>
 
     <p>
-    When many people think of the church, they think of a building, an organization, or a weekly gathering. However, according to the Bible, the church is God's redeemed people—those who have trusted Jesus Christ as their Lord and Saviour.
+    When many people think of the church, they think of a building, an organization, or a weekly gathering. However, according to the Bible, the church is God's redeemed people\u2014those who have trusted Jesus Christ as their Lord and Saviour.
     </p>
 
     <p>
@@ -2855,7 +2728,7 @@ Corinthians 5:17</i></p>
     </p>
 
     <p>
-    Paul commands believers to abhor evil. This means more than avoiding sin—it means hating it and refusing to embrace it.
+    Paul commands believers to abhor evil. This means more than avoiding sin\u2014it means hating it and refusing to embrace it.
     </p>
 
     <p style="color:#9A3F3F;">
@@ -2911,9 +2784,9 @@ Corinthians 5:17</i></p>
 
     <p>
     He desires a people who:
-    <br>• Love one another with genuine charity.
-    <br>• Live righteously before God.
-    <br>• Remain steadfast in hope through every trial.
+    <br>\u2022 Love one another with genuine charity.
+    <br>\u2022 Live righteously before God.
+    <br>\u2022 Remain steadfast in hope through every trial.
     </p>
 
     <p>
@@ -2939,38 +2812,25 @@ Corinthians 5:17</i></p>
 </article>
 
         `
-
-        },
-        {
-       id: 10,
-    slug: 'be-ye-transformed-by-the-renewing-of-your-mind',
-
-    title: 'Be Ye Transformed by the Renewing of Your Mind',
-
-    excerpt: 'By The Mercies of God',
-
-    date: 'June 5, 2026',
-
-    author: 'Pastor John Louie Berdejo',
-
-    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
-
-    coverphoto: '/newsletter/message/yc_mind.jpg',
-    
-    video:'https://www.youtube.com/embed/MZxd3jKdes0?si=EnLPHQD8DDBUsT04',
-
-    caption:'Youth Community | June 4, 2026',
-
-    type: 'message',
-
+  },
+  {
+    id: 10,
+    slug: "be-ye-transformed-by-the-renewing-of-your-mind",
+    title: "Be Ye Transformed by the Renewing of Your Mind",
+    excerpt: "By The Mercies of God",
+    date: "June 5, 2026",
+    author: "Pastor John Louie Berdejo",
+    authorImage: "/newsletter/author/john-louie-berdejo.jpg",
+    coverphoto: "/newsletter/message/yc_mind.jpg",
+    video: "https://www.youtube.com/embed/MZxd3jKdes0?si=EnLPHQD8DDBUsT04",
+    caption: "Youth Community | June 4, 2026",
+    type: "message",
     seo: {
-      title: 'Be Ye Transformed by the Renewing of Your Mind',
-      description: 'By The Mercies of God',
-      image:
-        '/newsletter/message/yc_mind.jpg',
+      title: "Be Ye Transformed by the Renewing of Your Mind",
+      description: "By The Mercies of God",
+      image: "/newsletter/message/yc_mind.jpg"
     },
-  
-        content1: `
+    content1: `
 
 <article>
 
@@ -2979,7 +2839,7 @@ Corinthians 5:17</i></p>
       </i></p>
 
       <p>
-      A lot of us here have been Christians for only a few months. Probably it was only until last year when you made Christ as your personal Saviour. Some of us have been Christians for so many years, especially if you grew up in a Christian family. Sometimes we have this feeling that we are unmotivated to follow God. Every day seems to be so dragging, and sometimes we cannot even find a reason to continue. We ask, “Lord, what is it in me that I should follow You?” or “Why should I go there?” Sometimes we conclude that Christianity is something that is being forced on us, especially if you grew up in a Christian family. It feels boring. We think, “I'm just reading the Bible, and that's it.” There seems to be no motivation. That is why the Bible says in Romans 12:1–2, “Be ye transformed by the renewing of your mind.” There are only three things that I want to mention this evening, and they are found in the verses that we have read.
+      A lot of us here have been Christians for only a few months. Probably it was only until last year when you made Christ as your personal Saviour. Some of us have been Christians for so many years, especially if you grew up in a Christian family. Sometimes we have this feeling that we are unmotivated to follow God. Every day seems to be so dragging, and sometimes we cannot even find a reason to continue. We ask, \u201CLord, what is it in me that I should follow You?\u201D or \u201CWhy should I go there?\u201D Sometimes we conclude that Christianity is something that is being forced on us, especially if you grew up in a Christian family. It feels boring. We think, \u201CI'm just reading the Bible, and that's it.\u201D There seems to be no motivation. That is why the Bible says in Romans 12:1\u20132, \u201CBe ye transformed by the renewing of your mind.\u201D There are only three things that I want to mention this evening, and they are found in the verses that we have read.
       </p>
 
       <br>
@@ -2987,16 +2847,16 @@ Corinthians 5:17</i></p>
       <h4>I. By the Mercies of God</h4>
 
       <p>
-      The Bible says, “I beseech you therefore, brethren, by the mercies of God.” I want you to look at this phrase, “by the mercies of God.” The moment we trusted Jesus Christ as our Lord and Saviour, it did not end there. It is only the start of our journey. The relevance of the gospel in our lives does not end the moment we trusted Christ for our salvation. For a lot of Christians, it is easy to think, “I'm good. I don't want to go there. I don't want to deal with these people.” But that is not Christianity. That is not what God wants from us. The Bible says, “As we have received mercy.” If we have truly understood the mercies of God, shouldn't there be a response? Unless we have not really understood what it means to experience the mercies of God.
+      The Bible says, \u201CI beseech you therefore, brethren, by the mercies of God.\u201D I want you to look at this phrase, \u201Cby the mercies of God.\u201D The moment we trusted Jesus Christ as our Lord and Saviour, it did not end there. It is only the start of our journey. The relevance of the gospel in our lives does not end the moment we trusted Christ for our salvation. For a lot of Christians, it is easy to think, \u201CI'm good. I don't want to go there. I don't want to deal with these people.\u201D But that is not Christianity. That is not what God wants from us. The Bible says, \u201CAs we have received mercy.\u201D If we have truly understood the mercies of God, shouldn't there be a response? Unless we have not really understood what it means to experience the mercies of God.
       </p>
 
       <p>
-      Can you imagine that the God of heaven, who is so great, loved you, a hell-bound sinner? Then how should we respond? Should our response simply be, “I'm okay”? Is that how we should respond to the gospel? There are people whose entire lives revolve around what they believe. Yet here we are, not because anyone is forcing Christianity upon us, but because if we have understood the truth in Christ, there should be more than enough reason for us to respond by following Him and living for Him.
+      Can you imagine that the God of heaven, who is so great, loved you, a hell-bound sinner? Then how should we respond? Should our response simply be, \u201CI'm okay\u201D? Is that how we should respond to the gospel? There are people whose entire lives revolve around what they believe. Yet here we are, not because anyone is forcing Christianity upon us, but because if we have understood the truth in Christ, there should be more than enough reason for us to respond by following Him and living for Him.
       </p>
 
       <p>
       The Apostle Paul said in Philippians 1:20,
-      <br><span style="color:#9A3F3F;">“According to my earnest expectation and my hope, that in nothing I shall be ashamed, but that with all boldness, as always, so now also Christ shall be magnified in my body, whether it be by life, or by death.”</span>
+      <br><span style="color:#9A3F3F;">\u201CAccording to my earnest expectation and my hope, that in nothing I shall be ashamed, but that with all boldness, as always, so now also Christ shall be magnified in my body, whether it be by life, or by death.\u201D</span>
       </p>
 
       <p>
@@ -3009,12 +2869,12 @@ Corinthians 5:17</i></p>
 
       <p>
       Romans 12:1 continues,
-      <br><span style="color:#9A3F3F;">“that ye present your bodies a living sacrifice, holy, acceptable unto God, which is your reasonable service.”</span>
+      <br><span style="color:#9A3F3F;">\u201Cthat ye present your bodies a living sacrifice, holy, acceptable unto God, which is your reasonable service.\u201D</span>
       </p>
 
       <p>
       The Bible tells us to present our bodies as a living sacrifice. Romans 6:19 says,
-      <br><span style="color:#9A3F3F;">“Even so now yield your members servants to righteousness unto holiness.”</span>
+      <br><span style="color:#9A3F3F;">\u201CEven so now yield your members servants to righteousness unto holiness.\u201D</span>
       </p>
 
       <p>
@@ -3031,7 +2891,7 @@ Corinthians 5:17</i></p>
 
       <p>
       Remember the woman caught in adultery. According to the law, she deserved condemnation. Yet Jesus said,
-      <br><span style="color:#9A3F3F;">“Neither do I condemn thee: go, and sin no more.”</span>
+      <br><span style="color:#9A3F3F;">\u201CNeither do I condemn thee: go, and sin no more.\u201D</span>
       </p>
 
       <p>
@@ -3039,7 +2899,7 @@ Corinthians 5:17</i></p>
       </p>
 
       <p>
-      Again, Paul said, “Christ shall be magnified in my body.” Whether by life or by death, his desire was that Christ would be glorified. That should be our desire as well. In every area of life, Christ should be magnified.
+      Again, Paul said, \u201CChrist shall be magnified in my body.\u201D Whether by life or by death, his desire was that Christ would be glorified. That should be our desire as well. In every area of life, Christ should be magnified.
       </p>
 
       <br>
@@ -3048,7 +2908,7 @@ Corinthians 5:17</i></p>
 
       <p>
       Romans 12:2 says,
-      <br><span style="color:#9A3F3F;">“And be not conformed to this world: but be ye transformed by the renewing of your mind.”</span>
+      <br><span style="color:#9A3F3F;">\u201CAnd be not conformed to this world: but be ye transformed by the renewing of your mind.\u201D</span>
       </p>
 
       <p>
@@ -3057,12 +2917,12 @@ Corinthians 5:17</i></p>
 
       <p>
       The Bible says in Romans 13:14,
-      <br><span style="color:#9A3F3F;">“Put ye on the Lord Jesus Christ, and make not provision for the flesh.”</span>
+      <br><span style="color:#9A3F3F;">\u201CPut ye on the Lord Jesus Christ, and make not provision for the flesh.\u201D</span>
       </p>
 
       <p>
       First Thessalonians 4:3 says,
-      <br><span style="color:#9A3F3F;">“For this is the will of God, even your sanctification, that ye should abstain from fornication.”</span>
+      <br><span style="color:#9A3F3F;">\u201CFor this is the will of God, even your sanctification, that ye should abstain from fornication.\u201D</span>
       </p>
 
       <p>
@@ -3074,8 +2934,8 @@ Corinthians 5:17</i></p>
       </p>
 
       <p>
-      Jesus said in John 4:13–14,
-      <br><span style="color:#9A3F3F;">“Whosoever drinketh of this water shall thirst again: But whosoever drinketh of the water that I shall give him shall never thirst.”</span>
+      Jesus said in John 4:13\u201314,
+      <br><span style="color:#9A3F3F;">\u201CWhosoever drinketh of this water shall thirst again: But whosoever drinketh of the water that I shall give him shall never thirst.\u201D</span>
       </p>
 
       <p>
@@ -3087,7 +2947,7 @@ Corinthians 5:17</i></p>
       <h4>Conclusion</h4>
 
       <p>
-      Romans 12:1–2 teaches us three simple truths: by the mercies of God, present your bodies, and be not conformed to this world. God does not want us to conform to the standards of this world because nothing good comes from a life patterned after the world. God wants us to be transformed by the renewing of our minds. His will is good, acceptable, and perfect.
+      Romans 12:1\u20132 teaches us three simple truths: by the mercies of God, present your bodies, and be not conformed to this world. God does not want us to conform to the standards of this world because nothing good comes from a life patterned after the world. God wants us to be transformed by the renewing of our minds. His will is good, acceptable, and perfect.
       </p>
 
       <p>
@@ -3107,39 +2967,24 @@ Corinthians 5:17</i></p>
 
 </article>
         `
-
-        },
-    {
-     id: 9,
-    slug: 'called-back-to-him',
-
-    title: 'Called Back to Him',
-
-    excerpt: 'A Testimony of Surrender',
-
-    date: 'June 2, 2026',
-
-    author: 'Joshua Andrei Rosado',
-
-    authorImage: '/newsletter/author/joshua-rosado.jpg',
-
-    coverphoto: '/newsletter/02_letgo/calledback.jpg',
-
-   
-
-    type: 'article',
-
+  },
+  {
+    id: 9,
+    slug: "called-back-to-him",
+    title: "Called Back to Him",
+    excerpt: "A Testimony of Surrender",
+    date: "June 2, 2026",
+    author: "Joshua Andrei Rosado",
+    authorImage: "/newsletter/author/joshua-rosado.jpg",
+    coverphoto: "/newsletter/02_letgo/calledback.jpg",
+    type: "article",
     seo: {
-      title: 'Called Back to Him',
-      description: 'A Testimony of Surrender',
-      image:
-        '/newsletter/02_letgo/calledback.jpg',
+      title: "Called Back to Him",
+      description: "A Testimony of Surrender",
+      image: "/newsletter/02_letgo/calledback.jpg"
     },
-    caption: '',
-
-
-
-        content1: `
+    caption: "",
+    content1: `
             <article>
 
             <p>
@@ -3210,38 +3055,25 @@ where God wanted me to be.</p>
 
         </article>
         `
-
-        }, 
-    {
-       id: 8,
-    slug: 'god-ultimate-plan-gospel-filled-life',
-
-    title: 'God’s Ultimate Plan for the Church',
-
-    excerpt: 'Gospel-Filled Life',
-
-    date: 'June 1, 2026',
-
-    author: 'Pastor John Louie Berdejo',
-
-    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
-
-    coverphoto: '/newsletter/message/02_church.jpg',
-    
-    video:'https://www.youtube.com/embed/sZhQ-iaryb0?si=LDlo39DSXpQqTCzH',
-
-    caption:'Worship Service | May 31, 2026',
-
-    type: 'message',
-
+  },
+  {
+    id: 8,
+    slug: "god-ultimate-plan-gospel-filled-life",
+    title: "God\u2019s Ultimate Plan for the Church",
+    excerpt: "Gospel-Filled Life",
+    date: "June 1, 2026",
+    author: "Pastor John Louie Berdejo",
+    authorImage: "/newsletter/author/john-louie-berdejo.jpg",
+    coverphoto: "/newsletter/message/02_church.jpg",
+    video: "https://www.youtube.com/embed/sZhQ-iaryb0?si=LDlo39DSXpQqTCzH",
+    caption: "Worship Service | May 31, 2026",
+    type: "message",
     seo: {
-      title: 'God’s Ultimate Plan',
-      description: 'Gospel-Filled Life',
-      image:
-        '/newsletter/message/02_church.jpg',
+      title: "God\u2019s Ultimate Plan",
+      description: "Gospel-Filled Life",
+      image: "/newsletter/message/02_church.jpg"
     },
-  
-        content1: `
+    content1: `
       <article>
 
         <p style="color:#9A3F3F;"><i>
@@ -3488,7 +3320,7 @@ where God wanted me to be.</p>
         <br>A people who <b>fear God</b> by living lives of reverence, obedience, and faithful service.
 
         <p>
-        The church gathers on Sundays and Thursdays, but most of our lives are lived outside the church walls—in our homes, schools, workplaces, and communities.
+        The church gathers on Sundays and Thursdays, but most of our lives are lived outside the church walls\u2014in our homes, schools, workplaces, and communities.
         </p>
 
         <p>
@@ -3512,48 +3344,33 @@ where God wanted me to be.</p>
 
         </article>
         `
-
-        },
-{
-     id: 7,
-    slug: 'why-does-god-allow-evil-to-exist',
-
-    title: 'Why Does God Allow Evil to Exist',
-
-    excerpt: 'An Explanation Through the Parable of the Tares (Matthew 13:24–30)',
-
-    date: 'May 29, 2026',
-
-    author: 'Christina Angela Devata',
-
-    authorImage: '/newsletter/author/christina-devata.jpg',
-
-    coverphoto: '/newsletter/02_letgo/evilexist.jpg',
-
-   
-
-    type: 'article',
-
+  },
+  {
+    id: 7,
+    slug: "why-does-god-allow-evil-to-exist",
+    title: "Why Does God Allow Evil to Exist",
+    excerpt: "An Explanation Through the Parable of the Tares (Matthew 13:24\u201330)",
+    date: "May 29, 2026",
+    author: "Christina Angela Devata",
+    authorImage: "/newsletter/author/christina-devata.jpg",
+    coverphoto: "/newsletter/02_letgo/evilexist.jpg",
+    type: "article",
     seo: {
-      title: 'Why Does God Allow Evil to Exist',
-      description: 'An Explanation Through the Parable of the Tares (Matthew 13:24–30)',
-      image:
-        '/newsletter/02_letgo/evilexist.jpg',
+      title: "Why Does God Allow Evil to Exist",
+      description: "An Explanation Through the Parable of the Tares (Matthew 13:24\u201330)",
+      image: "/newsletter/02_letgo/evilexist.jpg"
     },
-    caption: '',
-
-
-
-        content1: `
+    caption: "",
+    content1: `
             <article>
 
             <p><i>
-            “Is God willing to prevent evil, but not able?
+            \u201CIs God willing to prevent evil, but not able?
 Then He is not omnipotent. Is He able, but
 not willing? Then He is malevolent. Is He
 both able and willing? Then whence cometh
 evil? Is He neither able nor willing? Then
-why call Him God?”<br><span style="text-align:right;display:block;"> — Epicurus, Greek
+why call Him God?\u201D<br><span style="text-align:right;display:block;"> \u2014 Epicurus, Greek
 Philosopher</span></i></p>
 
             <p>
@@ -3577,7 +3394,7 @@ question in the <i>parable of the tares.</i>
 
             <p>
             This is not merely a human opinion or
-philosophical theory. In <span style="color:#9A3F3F;">Matthew 13:36–43</span>,
+philosophical theory. In <span style="color:#9A3F3F;">Matthew 13:36\u201343</span>,
 Jesus directly explains the meaning of the parable Himself. Therefore, the
 interpretation is not left to speculation.
 Christ reveals the meaning clearly with His
@@ -3585,17 +3402,17 @@ own words.</p>
 <p><b>Whoever has ears, let them hear.</b></p>
             <p>Jesus begins the parable by saying:
             <br>
-            <span style="color:#9A3F3F;">“The kingdom of heaven is likened
+            <span style="color:#9A3F3F;">\u201CThe kingdom of heaven is likened
 unto a man which sowed good seed
-in his field:” — Matthew 13:24</span>
+in his field:\u201D \u2014 Matthew 13:24</span>
 </p>
 <p>Later, Jesus explains the symbolism:
 <br>
-<span style="color:#9A3F3F;">“He that soweth the good seed is the
+<span style="color:#9A3F3F;">\u201CHe that soweth the good seed is the
 Son of man; the field is the world;
 the good seed are the children of the
 kingdom; but the tares are the
-children of the wicked one;”— Matthew 13:37-38</span></p>
+children of the wicked one;\u201D\u2014 Matthew 13:37-38</span></p>
 <p>The good seed represents those who belong
 to God, and the field represents the world
 itself. God created the world with goodness
@@ -3603,19 +3420,19 @@ and purpose. Evil was not part of His
 original design. However, the parable
 continues:
 <br>
-<span style="color:#9A3F3F;">“but while men slept, his enemy
+<span style="color:#9A3F3F;">\u201Cbut while men slept, his enemy
 came and sowed tares among the
-wheat, and went his way.” — Matthew 13:25</span></p>
+wheat, and went his way.\u201D \u2014 Matthew 13:25</span></p>
 <p>Jesus later explains:
 <br>
-<span style="color:#9A3F3F;">“the tares are the children of the
+<span style="color:#9A3F3F;">\u201Cthe tares are the children of the
 wicked one; the enemy that sowed
-them is the devil;” — Matthew
+them is the devil;\u201D \u2014 Matthew
 13:38-39</span></p>
-<p>This directly answers the question, “Where
-does evil come from?”</p>
+<p>This directly answers the question, \u201CWhere
+does evil come from?\u201D</p>
 <p>Evil did not originate from God. Evil
-entered through the enemy. Humanity’s fall
+entered through the enemy. Humanity\u2019s fall
 into sin opened the door for corruption,
 rebellion, suffering, and separation from
 God. The presence of evil in the world is not
@@ -3628,25 +3445,25 @@ He allow it to remain?</p>
 <p>The servants in the parable ask the same
 thing:
 <br>
-<span style="color:#9A3F3F;">“So the servants of the householder
+<span style="color:#9A3F3F;">\u201CSo the servants of the householder
 came and said unto him, Sir, didst
 not thou sow good seed in thy field?
-from whence then hath it tares?” —
+from whence then hath it tares?\u201D \u2014
 Matthew 13:27</span></p>
 <p>After the owner explains that an enemy
 caused it, the servants immediately ask:
 <br>
-<span style="color:#9A3F3F;">“Wilt thou then that we go and
-gather them up?” — Matthew 13:28</p>
+<span style="color:#9A3F3F;">\u201CWilt thou then that we go and
+gather them up?\u201D \u2014 Matthew 13:28</p>
 <p>In other words, they are asking the same
-thing humanity still asks today: <i>“Why not
-destroy evil right now?”</i></p>
+thing humanity still asks today: <i>\u201CWhy not
+destroy evil right now?\u201D</i></p>
 <p>But the owner responds:
 <br>
-<span style="color:#9A3F3F;">“Nay; lest while ye gather up the
+<span style="color:#9A3F3F;">\u201CNay; lest while ye gather up the
 tares, ye root up also the wheat with
 them. Let both grow together until
-the harvest.” — Matthew 13:29-30</p>
+the harvest.\u201D \u2014 Matthew 13:29-30</p>
 <p>This is the heart of the parable.</p>
 <p>God delays judgment not because He is
 powerless, and definitely not because He approves of evil, but because His mercy is
@@ -3664,8 +3481,8 @@ coexist in the same world for a <i>temporary</i>
 period of time.</p>
 <p>Jesus says there will be a harvest.
 <br>
-<span style="color:#9A3F3F;">“The harvest is the end of the world;
-and the reapers are the angels.” —
+<span style="color:#9A3F3F;">\u201CThe harvest is the end of the world;
+and the reapers are the angels.\u201D \u2014
 Matthew 13:39</span></p>
 <p>This means history is moving toward a final
 judgment. Evil is not being ignored forever.
@@ -3675,12 +3492,12 @@ darkness. Nothing escapes His sight. And at
 the appointed time, judgment will come.</p>
 <p>Jesus says:
 <br>
-<span style="color:#9A3F3F;">“The Son of man shall send forth his
+<span style="color:#9A3F3F;">\u201CThe Son of man shall send forth his
 angels, and they shall gather out of
 his kingdom all things that offend,
-and them which do iniquity;” —
+and them which do iniquity;\u201D \u2014
 Matthew 13:41</span></p>
-<p>This directly answers Epicurus’ argument.</p>
+<p>This directly answers Epicurus\u2019 argument.</p>
 <p>Is God able to stop evil? <b>Yes</b>. Christ says
 evil will ultimately be removed completely.</p>
 <p>Is God willing to stop evil? <b>Yes</b>. Christ
@@ -3691,7 +3508,7 @@ are not yet at the harvest</b>. God is allowing
 time for repentance, salvation, and
 transformation before the final separation
 takes place.</p>
-<p>Many people see God’s patience as
+<p>Many people see God\u2019s patience as
 weakness. But Scripture reveals that His
 patience is <i>mercy</i>. Every moment before the
 harvest is another opportunity for people to
@@ -3706,38 +3523,25 @@ This means evil has an expiration date.</p>
 <p>Whoever has ears, let them hear.</p>
         </article>
         `
-
-        },
-        {
-       id: 6,
-    slug: 'purposed-driven-vessel',
-
-    title: 'Purposed Driven Vessel',
-
-    excerpt: 'Sanctified. Meet. Prepared.',
-
-    date: 'May 29, 2026',
-
-    author: 'Pastor Joseph Tabuena of Faith Baptist Church Cadinglian-Batuan',
-
-    authorImage: '/newsletter/author/joseph-tabuena.jpg',
-
-    coverphoto: '/newsletter/message/yc_vessel.jpg',
-    
-    video:'https://www.youtube.com/embed/FaTVEOeUOvs?si=3nbzD5mVz2aoLGla',
-
-    caption:'Youth Community | May 28, 2026',
-
-    type: 'message',
-
+  },
+  {
+    id: 6,
+    slug: "purposed-driven-vessel",
+    title: "Purposed Driven Vessel",
+    excerpt: "Sanctified. Meet. Prepared.",
+    date: "May 29, 2026",
+    author: "Pastor Joseph Tabuena of Faith Baptist Church Cadinglian-Batuan",
+    authorImage: "/newsletter/author/joseph-tabuena.jpg",
+    coverphoto: "/newsletter/message/yc_vessel.jpg",
+    video: "https://www.youtube.com/embed/FaTVEOeUOvs?si=3nbzD5mVz2aoLGla",
+    caption: "Youth Community | May 28, 2026",
+    type: "message",
     seo: {
-      title: 'Purposed Driven Vessel',
-      description: 'Sanctified. Meet. Prepared.',
-      image:
-        '/newsletter/message/yc_vessel.jpg',
+      title: "Purposed Driven Vessel",
+      description: "Sanctified. Meet. Prepared.",
+      image: "/newsletter/message/yc_vessel.jpg"
     },
-  
-        content1: `
+    content1: `
       <article>
 
       <p style="color:#9A3F3F;"><i>
@@ -3756,7 +3560,7 @@ This means evil has an expiration date.</p>
 
         <p>
         The first characteristic is found in the word sanctified. Sanctification means being set apart for God's use. God does not automatically use every vessel; a vessel must first be sanctified. Why must we be sanctified? The answer is found in 1 Thessalonians 4:7:
-       <br><span style="color:#9A3F3F;">“For God hath not called us unto uncleanness, but unto holiness.”</span>
+       <br><span style="color:#9A3F3F;">\u201CFor God hath not called us unto uncleanness, but unto holiness.\u201D</span>
        
         <p>
         This is God's direct call for every believer. We live in a fallen world, not the perfect world God originally created. Sin has corrupted every part of life, making holiness difficult. The Bible even tells us that those who live godly in Christ Jesus shall suffer persecution. Yet despite the pressures around us, God's calling remains unchanged: He has called us to holiness.
@@ -3764,14 +3568,14 @@ This means evil has an expiration date.</p>
 
         <p>
         David is a powerful example of what happens when we stop guarding our hearts. Although he was a man after God's own heart, he fell into sin with Bathsheba. The Bible tells us that when kings were supposed to be at battle, David remained in Jerusalem. He was not where he was supposed to be. Often, temptation enters when we neglect our responsibilities. What began as a glance eventually became desire, and desire led to sin. Yet the deeper issue was not merely David's actions, it was his search for satisfaction in the wrong place. Later, in Psalm 51, David cried out,
-        <br><span style="color:#9A3F3F;">“Create in me a clean heart, O God; and renew a right spirit within me.”</span>
+        <br><span style="color:#9A3F3F;">\u201CCreate in me a clean heart, O God; and renew a right spirit within me.\u201D</span>
         <p>
         He realized that his greatest need was not simply forgiveness but a renewed heart.
         </p>
 
         <p>
-        The same struggle exists today. We often look for joy in the wrong places. That is why 1 John 2:15–17 warns us,
-        <br><span style="color:#9A3F3F;">“Love not the world, neither the things that are in the world. If any man love the world, the love of the Father is not in him.”</span>
+        The same struggle exists today. We often look for joy in the wrong places. That is why 1 John 2:15\u201317 warns us,
+        <br><span style="color:#9A3F3F;">\u201CLove not the world, neither the things that are in the world. If any man love the world, the love of the Father is not in him.\u201D</span>
         <p>
         The lust of the flesh, the lust of the eyes, and the pride of life all promise satisfaction, but they are temporary. The world offers pleasure, possessions, entertainment, achievements, and recognition, yet all of these eventually pass away. God's purpose, however, remains. A purpose-driven vessel seeks joy in God rather than in the temporary pleasures of this world.
         </p>
@@ -3785,7 +3589,7 @@ This means evil has an expiration date.</p>
        
         <p>
         The second characteristic is that the vessel must be meet for the Master's use. The word meet means fit, suitable, useful, or available. God is not merely looking for talented people; He is looking for people who are available and willing to be used. Moses provides a wonderful example of this truth. Hebrews 11:25 tells us,
-        <br><span style="color:#9A3F3F;">“Choosing rather to suffer affliction with the people of God, than to enjoy the pleasures of sin for a season.”</span>
+        <br><span style="color:#9A3F3F;">\u201CChoosing rather to suffer affliction with the people of God, than to enjoy the pleasures of sin for a season.\u201D</span>
         <p>
         Moses understood that the pleasures of sin are temporary. He could have remained in Egypt and enjoyed comfort, privilege, and power, but he chose God's purpose instead.
 
@@ -3793,7 +3597,7 @@ This means evil has an expiration date.</p>
 
         <p>
         In a sense, Moses was saying, "I would rather suffer now and enjoy God's reward forever than enjoy sin now and suffer loss later." The world says, "Enjoy now and suffer later." God says, "Suffer now if necessary and enjoy forevermore." Psalm 16:11 reminds us,
-        <br><span style="color:#9A3F3F;">“Thou wilt shew me the path of life: in thy presence is fulness of joy; at thy right hand there are pleasures for evermore.”</span>
+        <br><span style="color:#9A3F3F;">\u201CThou wilt shew me the path of life: in thy presence is fulness of joy; at thy right hand there are pleasures for evermore.\u201D</span>
         <p>
         A vessel that is fit for the Master's use understands this difference and chooses God's way over temporary satisfaction.
         </p>
@@ -3810,8 +3614,8 @@ This means evil has an expiration date.</p>
 
 
         <p>
-        The third characteristic is that the vessel must be prepared. To be prepared means to be ready: ready to serve, ready to obey, and ready to be used by God. How does God prepare us? Through His Word. Second Timothy 3:16–17 teaches,
-        <br><span style="color:#9A3F3F;">“All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness: That the man of God may be perfect, throughly furnished unto all good works.”</span>
+        The third characteristic is that the vessel must be prepared. To be prepared means to be ready: ready to serve, ready to obey, and ready to be used by God. How does God prepare us? Through His Word. Second Timothy 3:16\u201317 teaches,
+        <br><span style="color:#9A3F3F;">\u201CAll scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness: That the man of God may be perfect, throughly furnished unto all good works.\u201D</span>
         <p>
         that all Scripture is given by inspiration of God and is profitable for doctrine, reproof, correction, and instruction in righteousness so that the man of God may be thoroughly furnished unto all good works. God uses His Word to teach us, correct us, and equip us. We are purified for good works, furnished for good works, and prepared for good works.
         </p>
@@ -3851,39 +3655,24 @@ This means evil has an expiration date.</p>
 
         </article>
         `
-
-        },
-    {
-     id: 5,
-    slug: 'everything-changed-for-the-better',
-
-    title: 'Everything Changed for the Better',
-
-    excerpt: 'A Testimony of Faith',
-
-    date: 'May 26, 2026',
-
-    author: 'Julianna Ysabel Duya',
-
-    authorImage: '/newsletter/author/julianna-duya.jpg',
-
-    coverphoto: '/newsletter/02_letgo/better.jpg',
-
-   
-
-    type: 'article',
-
+  },
+  {
+    id: 5,
+    slug: "everything-changed-for-the-better",
+    title: "Everything Changed for the Better",
+    excerpt: "A Testimony of Faith",
+    date: "May 26, 2026",
+    author: "Julianna Ysabel Duya",
+    authorImage: "/newsletter/author/julianna-duya.jpg",
+    coverphoto: "/newsletter/02_letgo/better.jpg",
+    type: "article",
     seo: {
-      title: 'Everything Changed for the Better',
-      description: 'A Testimony of Faith',
-      image:
-        '/newsletter/02_letgo/better.jpg',
+      title: "Everything Changed for the Better",
+      description: "A Testimony of Faith",
+      image: "/newsletter/02_letgo/better.jpg"
     },
-    caption: '',
-
-
-
-        content1: `
+    caption: "",
+    content1: `
             <article>
 
             <p>
@@ -3893,7 +3682,7 @@ my life was so messed up. I was depressed
 due to academic problems and my
 insecurities, and I almost took my own life
 one time. I felt like nobody cared for me. I
-didn’t have someone to open up to, and the
+didn\u2019t have someone to open up to, and the
 words that echoed through my head made it
 even worse.</p>
           
@@ -3906,8 +3695,8 @@ relieved and comforted when I was able to
 open up without anyone judging me there.
 And I realized a lot of things, especially
 when I came to the youth camp, especially
-when I heard Pastor White’s preaching. I
-realized that all this time, I’ve been so
+when I heard Pastor White\u2019s preaching. I
+realized that all this time, I\u2019ve been so
 ungrateful, and I kept complaining because I
 thought nobody cared for me when Christ is
 literally by my side despite all my bad habits
@@ -3920,9 +3709,9 @@ promise and turned my back against Him.</p>
             And now, look at me. I no longer judge
 other people. I no longer think negatively. I
 no longer get affected by what people say
-about me. I don’t feel envy toward other people’s success. I stopped lusting, and most
+about me. I don\u2019t feel envy toward other people\u2019s success. I stopped lusting, and most
 importantly, I was renewed, and I
-acknowledged God’s presence. I accepted
+acknowledged God\u2019s presence. I accepted
 Him as my Lord and Savior, not because I
 have to, but because I wanted to.
             </p>
@@ -3931,38 +3720,25 @@ have to, but because I wanted to.
 
         </article>
         `
-
-        },
-        {
-       id: 4,
-    slug: 'god-ultimate-plan-for-the-church',
-
-    title: 'God’s Ultimate Plan',
-
-    excerpt: 'For The Church',
-
-    date: 'May 24, 2026',
-
-    author: 'Pastor John Louie Berdejo',
-
-    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
-
-    coverphoto: '/newsletter/message/02_church.jpg',
-    
-    video:'https://www.youtube.com/embed/SadvPpMhAMc?si=ohOiWt-iGsTH8GDk',
-
-    caption:'Worship Service | May 24, 2026',
-
-    type: 'message',
-
+  },
+  {
+    id: 4,
+    slug: "god-ultimate-plan-for-the-church",
+    title: "God\u2019s Ultimate Plan",
+    excerpt: "For The Church",
+    date: "May 24, 2026",
+    author: "Pastor John Louie Berdejo",
+    authorImage: "/newsletter/author/john-louie-berdejo.jpg",
+    coverphoto: "/newsletter/message/02_church.jpg",
+    video: "https://www.youtube.com/embed/SadvPpMhAMc?si=ohOiWt-iGsTH8GDk",
+    caption: "Worship Service | May 24, 2026",
+    type: "message",
     seo: {
-      title: 'God’s Ultimate Plan',
-      description: 'For The Church',
-      image:
-        '/newsletter/message/02_church.jpg',
+      title: "God\u2019s Ultimate Plan",
+      description: "For The Church",
+      image: "/newsletter/message/02_church.jpg"
     },
-  
-        content1: `
+    content1: `
       <article>
 
         <p style="color:#9A3F3F;"><i>
@@ -3982,7 +3758,7 @@ have to, but because I wanted to.
         </p>
 
         <p>
-        A lot of times, when people hear the word “church,” they immediately think about a building. However, according to the Bible, the church is not the building. The church is the people who trusted Jesus Christ as their personal Savior.
+        A lot of times, when people hear the word \u201Cchurch,\u201D they immediately think about a building. However, according to the Bible, the church is not the building. The church is the people who trusted Jesus Christ as their personal Savior.
         </p>
 
         <p>
@@ -4000,7 +3776,7 @@ have to, but because I wanted to.
 
         <p><i>
         1 Corinthians 1:2
-        <br>“Unto the church of God which is at Corinth, to them that are sanctified in Christ Jesus, called to be saints.”
+        <br>\u201CUnto the church of God which is at Corinth, to them that are sanctified in Christ Jesus, called to be saints.\u201D
         </i></p>
 
         <p>
@@ -4012,11 +3788,11 @@ have to, but because I wanted to.
         </p>
 
         <p style="color:#9A3F3F;"><strong>
-        “The church is not the building. The church is the people.”
+        \u201CThe church is not the building. The church is the people.\u201D
         </strong></p>
 
         <p>
-        God’s desire for every believer is:
+        God\u2019s desire for every believer is:
         <br>To know Him more
         <br>To grow spiritually
         <br>To walk pleasing before Him
@@ -4032,11 +3808,11 @@ have to, but because I wanted to.
 
         <p><i>
         Ephesians 4:12
-        <br>“For the perfecting of the saints, for the work of the ministry, for the edifying of the body of Christ.”
+        <br>\u201CFor the perfecting of the saints, for the work of the ministry, for the edifying of the body of Christ.\u201D
         </i></p>
 
         <p>
-        One of God’s purposes for the church is edification, building believers up spiritually.
+        One of God\u2019s purposes for the church is edification, building believers up spiritually.
         </p>
 
         <p>
@@ -4049,7 +3825,7 @@ have to, but because I wanted to.
 
         <p><i>
         1 Thessalonians 5:11
-        <br>“Wherefore comfort yourselves together, and edify one another.”
+        <br>\u201CWherefore comfort yourselves together, and edify one another.\u201D
         </i></p>
 
         <p>
@@ -4057,7 +3833,7 @@ have to, but because I wanted to.
         </p>
 
         <p style="color:#9A3F3F;"><strong>
-        “The whole point of the church is to build us up spiritually.”
+        \u201CThe whole point of the church is to build us up spiritually.\u201D
         </strong></p>
 
         <br>
@@ -4066,7 +3842,7 @@ have to, but because I wanted to.
 
         <p><i>
         Ephesians 4:2
-        <br>“With all lowliness and meekness, with longsuffering, forbearing one another in love.”
+        <br>\u201CWith all lowliness and meekness, with longsuffering, forbearing one another in love.\u201D
         </i></p>
 
         <p>
@@ -4079,7 +3855,7 @@ have to, but because I wanted to.
 
         <p><i>
         1 John 4:20
-        <br>“If a man say, I love God, and hateth his brother, he is a liar.”
+        <br>\u201CIf a man say, I love God, and hateth his brother, he is a liar.\u201D
         </i></p>
 
         <p>
@@ -4099,7 +3875,7 @@ have to, but because I wanted to.
 
         <p><i>
         Ephesians 4:13
-        <br>“Till we all come in the unity of the faith, and of the knowledge of the Son of God, unto a perfect man, unto the measure of the stature of the fulness of Christ.”
+        <br>\u201CTill we all come in the unity of the faith, and of the knowledge of the Son of God, unto a perfect man, unto the measure of the stature of the fulness of Christ.\u201D
         </i></p>
 
         <p>
@@ -4116,22 +3892,22 @@ have to, but because I wanted to.
 
         <p><i>
         2 Timothy 3:16-17
-        <br>“All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness:
-        <br>That the man of God may be perfect, throughly furnished unto all good works.”
+        <br>\u201CAll scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness:
+        <br>That the man of God may be perfect, throughly furnished unto all good works.\u201D
         </i></p>
 
         <p>
-        Through the preaching and teaching of God’s Word, believers are strengthened, equipped, and prepared spiritually.
+        Through the preaching and teaching of God\u2019s Word, believers are strengthened, equipped, and prepared spiritually.
         </p>
 
         <p style="color:#9A3F3F;"><strong>
-        “There is no self-made Christian.”
+        \u201CThere is no self-made Christian.\u201D
         </strong></p>
 
 
         <p><i>
         Ephesians 4:14
-        <br>“That we henceforth be no more children, tossed to and fro, and carried about with every wind of doctrine.”
+        <br>\u201CThat we henceforth be no more children, tossed to and fro, and carried about with every wind of doctrine.\u201D
         </i></p>
 
         <p>
@@ -4155,7 +3931,7 @@ have to, but because I wanted to.
         </p>
 
         <p style="color:#9A3F3F;"><strong>
-        “The church helps believers remain faithful and spiritually grounded.”
+        \u201CThe church helps believers remain faithful and spiritually grounded.\u201D
         </strong></p>
 
         <br>
@@ -4174,7 +3950,7 @@ have to, but because I wanted to.
         </p>
 
         <p>
-        The church is not simply a building, it is God’s people growing together in Christ.
+        The church is not simply a building, it is God\u2019s people growing together in Christ.
         </p>
 
         <p>
@@ -4195,39 +3971,24 @@ have to, but because I wanted to.
 
         </article>
         `
-
-        },
-        {
-     id: 3,
-    slug: 'let-go-and-let-god',
-
-    title: 'Let Go and Let God',
-
-    excerpt: '“Be still, and know that I am God.” - Psalm 46:10',
-
-    date: 'May 24, 2026',
-
-    author: 'Christina Angela Devata',
-
-    authorImage: '/newsletter/author/christina-devata.jpg',
-
-    coverphoto: '/newsletter/02_letgo/letgo.jpg',
-
-   
-
-    type: 'article',
-
+  },
+  {
+    id: 3,
+    slug: "let-go-and-let-god",
+    title: "Let Go and Let God",
+    excerpt: "\u201CBe still, and know that I am God.\u201D - Psalm 46:10",
+    date: "May 24, 2026",
+    author: "Christina Angela Devata",
+    authorImage: "/newsletter/author/christina-devata.jpg",
+    coverphoto: "/newsletter/02_letgo/letgo.jpg",
+    type: "article",
     seo: {
-      title: 'Let Go and Let God',
-      description: '“Be still, and know that I am God.” - Psalm 46:10',
-      image:
-        '/newsletter/02_letgo/letgo.jpg',
+      title: "Let Go and Let God",
+      description: "\u201CBe still, and know that I am God.\u201D - Psalm 46:10",
+      image: "/newsletter/02_letgo/letgo.jpg"
     },
-    caption: '',
-
-
-
-        content1: `
+    caption: "",
+    content1: `
             <article>
 
             <p>
@@ -4240,7 +4001,7 @@ have to, but because I wanted to.
 
 
             <p>
-            Whenever something happens, I instantly try to fix everything on my own. I create human solutions before I even pray about it. I move before I ask God what He wants me to do. I realized I am a lot like Sarah, Abraham’s wife. She tried to fulfill God’s promise through human effort because waiting felt too hard. And I honestly do the same thing. 
+            Whenever something happens, I instantly try to fix everything on my own. I create human solutions before I even pray about it. I move before I ask God what He wants me to do. I realized I am a lot like Sarah, Abraham\u2019s wife. She tried to fulfill God\u2019s promise through human effort because waiting felt too hard. And I honestly do the same thing. 
             </p>
 
             <p>But <span style="color: #9A3F3F;"><i><strong>being still does not mean doing nothing.</i></strong></span> It means trusting God enough to stop acting like everything depends only on you.</p>
@@ -4259,11 +4020,11 @@ have to, but because I wanted to.
 
     
             <p>
-            “Be still” is not God telling us to be weak. It is Him telling us to trust Him more than our emotions. So when people insult you, you don’t have to insult them back. When life gets heavy, breathe first then <span style="color: #9A3F3F;"><strong>pray before you react</strong></span>. This does not mean becoming a doormat or pretending pain does not exist. You still have responsibilities. You still have to move, work, heal, and grow. But do it with God instead of without Him.</p>
+            \u201CBe still\u201D is not God telling us to be weak. It is Him telling us to trust Him more than our emotions. So when people insult you, you don\u2019t have to insult them back. When life gets heavy, breathe first then <span style="color: #9A3F3F;"><strong>pray before you react</strong></span>. This does not mean becoming a doormat or pretending pain does not exist. You still have responsibilities. You still have to move, work, heal, and grow. But do it with God instead of without Him.</p>
 
 
             <p>
-            Because sometimes being still looks like crying while praying, obeying even when you’re confused, staying kind when bitterness would be easier. That’s how you can be still.</p>
+            Because sometimes being still looks like crying while praying, obeying even when you\u2019re confused, staying kind when bitterness would be easier. That\u2019s how you can be still.</p>
 
             <p>
             I think about Joseph and Job a lot. Both of them suffered deeply yet God never left them. Their stories remind me that silence from God does not mean absence. Delays are not abandonment, and pain is not proof that God stopped caring. </p>
@@ -4283,38 +4044,25 @@ have to, but because I wanted to.
 
         </article>
         `
-
-        },
-        {
-       id: 2,
-    slug: 'from-unprofitable-to-profitable',
-
-    title: 'From Unprofitable to Profitable',
-
-    excerpt: 'The Life of Onesimus',
-
-    date: 'May 22, 2026',
-
-    author: 'Pastor John Louie Berdejo',
-
-    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
-
-    coverphoto: '/newsletter/message/yc_vessel.jpg',
-    
-    video:'https://www.youtube.com/embed/-OTfGBWoxuA?si=h6Z1OtqdPpuvyovT',
-
-    caption:'Youth Community | May 21, 2026',
-
-    type: 'message',
-
+  },
+  {
+    id: 2,
+    slug: "from-unprofitable-to-profitable",
+    title: "From Unprofitable to Profitable",
+    excerpt: "The Life of Onesimus",
+    date: "May 22, 2026",
+    author: "Pastor John Louie Berdejo",
+    authorImage: "/newsletter/author/john-louie-berdejo.jpg",
+    coverphoto: "/newsletter/message/yc_vessel.jpg",
+    video: "https://www.youtube.com/embed/-OTfGBWoxuA?si=h6Z1OtqdPpuvyovT",
+    caption: "Youth Community | May 21, 2026",
+    type: "message",
     seo: {
-      title: 'From Unprofitable to Profitable',
-      description: 'The Life of Onesimus',
-      image:
-        '/newsletter/message/yc_vessel.jpg',
+      title: "From Unprofitable to Profitable",
+      description: "The Life of Onesimus",
+      image: "/newsletter/message/yc_vessel.jpg"
     },
-  
-        content1: `
+    content1: `
        <article>
 
     <p style="color:#9A3F3F;"><i>
@@ -4333,11 +4081,11 @@ have to, but because I wanted to.
     <h4>Introduction</h4>
 
     <p>
-    The message centers on the life of Onesimus, a man who may not be widely known in the Bible, yet whose life is a powerful testimony of God’s transforming grace. The story is found in Philemon 1:10–14, where the Apostle Paul writes a personal letter to Philemon concerning Onesimus, a runaway slave.
+    The message centers on the life of Onesimus, a man who may not be widely known in the Bible, yet whose life is a powerful testimony of God\u2019s transforming grace. The story is found in Philemon 1:10\u201314, where the Apostle Paul writes a personal letter to Philemon concerning Onesimus, a runaway slave.
     </p>
 
     <p>
-    During that time, slavery was socially acceptable, and slaves were considered property. Onesimus had run away from his master, Philemon, possibly after causing trouble or committing an offence against him. Instead of being useful, he had become “unprofitable.” Yet God had another plan for his life.
+    During that time, slavery was socially acceptable, and slaves were considered property. Onesimus had run away from his master, Philemon, possibly after causing trouble or committing an offence against him. Instead of being useful, he had become \u201Cunprofitable.\u201D Yet God had another plan for his life.
     </p>
 
     <p>
@@ -4346,20 +4094,20 @@ have to, but because I wanted to.
 
     <p>
     This message emphasizes the transforming power of the gospel in three areas:
-    <br>1. Change in Life’s Habit
-    <br>2. Change in Life’s Agenda
+    <br>1. Change in Life\u2019s Habit
+    <br>2. Change in Life\u2019s Agenda
     <br>3. Change in Confidence
     </p>
     <br>
-    <h4>I. Change in Life’s Habit</h4>
+    <h4>I. Change in Life\u2019s Habit</h4>
 
     <p><i>
     Philemon 1:10-11
-    <br>“Which in time past was to thee unprofitable, but now profitable to thee and to me.”
+    <br>\u201CWhich in time past was to thee unprofitable, but now profitable to thee and to me.\u201D
     </i></p>
 
     <p>
-    The first evidence of the gospel’s power is a changed life. Onesimus used to be unprofitable. Instead of helping Philemon, he became a burden and eventually ran away. But after meeting Christ through the ministry of Paul, his life changed completely.
+    The first evidence of the gospel\u2019s power is a changed life. Onesimus used to be unprofitable. Instead of helping Philemon, he became a burden and eventually ran away. But after meeting Christ through the ministry of Paul, his life changed completely.
     </p>
 
     <p>
@@ -4367,7 +4115,7 @@ have to, but because I wanted to.
     </p>
 
     <p style="color:#9A3F3F;"><strong>
-    “A faithful and beloved brother.”
+    \u201CA faithful and beloved brother.\u201D
     </strong></p>
 
     <p>
@@ -4382,14 +4130,14 @@ have to, but because I wanted to.
     </p>
 
     <p>
-    Sometimes we may not preach loudly with our words, but our changed life becomes a testimony to others. The people around Onesimus saw the evidence of God’s work in him. The gospel truly changes lives.
+    Sometimes we may not preach loudly with our words, but our changed life becomes a testimony to others. The people around Onesimus saw the evidence of God\u2019s work in him. The gospel truly changes lives.
     </p>
     <br>
-    <h4>II. Change in Life’s Agenda</h4>
+    <h4>II. Change in Life\u2019s Agenda</h4>
 
     <p><i>
     Philemon 1:10
-    <br>“I beseech thee for my son Onesimus, whom I have begotten in my bonds.”
+    <br>\u201CI beseech thee for my son Onesimus, whom I have begotten in my bonds.\u201D
     </i></p>
 
     <p>
@@ -4397,23 +4145,23 @@ have to, but because I wanted to.
     </p>
 
     <p>
-    Instead of continuing to run away, Onesimus became willing to return to Philemon and reconcile with him. Even though returning as a servant would have been difficult and humiliating, he chose to obey God’s will.
+    Instead of continuing to run away, Onesimus became willing to return to Philemon and reconcile with him. Even though returning as a servant would have been difficult and humiliating, he chose to obey God\u2019s will.
     </p>
 
     <p><i>
     Ephesians 6:5
-    <br>“Servants, be obedient to them that are your masters according to the flesh, with fear and trembling, in singleness of your heart, as unto Christ;”
+    <br>\u201CServants, be obedient to them that are your masters according to the flesh, with fear and trembling, in singleness of your heart, as unto Christ;\u201D
     </i></p>
 
     <p>
-    God’s agenda for Onesimus was not escape, but obedience. As Christians, we are not saved merely to fulfil our personal ambitions. We are saved to live according to God’s purpose.
+    God\u2019s agenda for Onesimus was not escape, but obedience. As Christians, we are not saved merely to fulfil our personal ambitions. We are saved to live according to God\u2019s purpose.
     </p>
 
     <p>
     The question is:
     <br>Whose agenda are we living for?
     <br>Our own desires?
-    <br>Or God’s will?
+    <br>Or God\u2019s will?
     </p>
 
     <p>
@@ -4421,9 +4169,9 @@ have to, but because I wanted to.
     </p>
 
     <p><i>
-    Acts 22:7–8
-    <br>“And I fell unto the ground, and heard a voice saying unto me, Saul, Saul, why persecutest thou me?
-    <br>And I answered, Who art thou, Lord? And he said unto me, I am Jesus of Nazareth, whom thou persecutest.”
+    Acts 22:7\u20138
+    <br>\u201CAnd I fell unto the ground, and heard a voice saying unto me, Saul, Saul, why persecutest thou me?
+    <br>And I answered, Who art thou, Lord? And he said unto me, I am Jesus of Nazareth, whom thou persecutest.\u201D
     </i></p>
 
     <p>
@@ -4432,7 +4180,7 @@ have to, but because I wanted to.
 
     <p><i>
     Philippians 1:21
-    <br>“For to me to live is Christ, and to die is gain.”
+    <br>\u201CFor to me to live is Christ, and to die is gain.\u201D
     </i></p>
 
     <p>
@@ -4462,7 +4210,7 @@ have to, but because I wanted to.
 
     <p><i>
     2 Corinthians 6:2
-    <br>“Behold, now is the accepted time; behold, now is the day of salvation.”
+    <br>\u201CBehold, now is the accepted time; behold, now is the day of salvation.\u201D
     </i></p>
 
     <p>
@@ -4470,7 +4218,7 @@ have to, but because I wanted to.
     </p>
 
     <p>
-    The gospel has the power to transform lives completely. The speaker shared the testimony of a pastor’s child who once considered himself the “black sheep” of the family. Though he grew up in church, his life did not reflect Christ. Yet when he finally surrendered his life to Jesus, there was a complete transformation, and eventually he entered ministry.
+    The gospel has the power to transform lives completely. The speaker shared the testimony of a pastor\u2019s child who once considered himself the \u201Cblack sheep\u201D of the family. Though he grew up in church, his life did not reflect Christ. Yet when he finally surrendered his life to Jesus, there was a complete transformation, and eventually he entered ministry.
     </p>
 
     <p style="color:#9A3F3F;">
@@ -4480,7 +4228,7 @@ have to, but because I wanted to.
     <h4>Conclusion</h4>
 
     <p>
-    The life of Onesimus is a testimony that no life is beyond God’s grace.
+    The life of Onesimus is a testimony that no life is beyond God\u2019s grace.
     </p>
 
     <p>
@@ -4505,49 +4253,37 @@ have to, but because I wanted to.
     <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
 
     <p style="color:#9A3F3F;"><i>
-    How has knowing Jesus Christ as your Lord and Personal Saviour change your Habit and Life’s agenda? 
+    How has knowing Jesus Christ as your Lord and Personal Saviour change your Habit and Life\u2019s agenda? 
     </i></p>
 
 <br>
 
     </article>
         `
-
-        },   
-{
-     id: 1,
-    slug: 'reset-37th-annual-summer-youth-camp-2026',
-
-    title: 'RESET: 37th Annual Summer Youth Camp Highlights',
-
-    excerpt: 'Finding Balance in this Digital World',
-
-    type: 'newsletter',
-
-    date: 'May 20, 2026',
-
-    author: 'Christina Angela Devata',
-
-    authorImage: '/newsletter/author/christina-devata.jpg',
-
-    coverphoto: '/newsletter/01_reset/reset-37th-annual-summer-youth-camp-2026.jpg',
-
+  },
+  {
+    id: 1,
+    slug: "reset-37th-annual-summer-youth-camp-2026",
+    title: "RESET: 37th Annual Summer Youth Camp Highlights",
+    excerpt: "Finding Balance in this Digital World",
+    type: "newsletter",
+    date: "May 20, 2026",
+    author: "Christina Angela Devata",
+    authorImage: "/newsletter/author/christina-devata.jpg",
+    coverphoto: "/newsletter/01_reset/reset-37th-annual-summer-youth-camp-2026.jpg",
     seo: {
-      title: 'RESET: 37th Annual Summer Youth Camp Highlights',
-      description: 'Finding Balance in this Digital World',
-      image:
-        '/newsletter/01_reset/reset-37th-annual-summer-youth-camp-2026.jpg',
+      title: "RESET: 37th Annual Summer Youth Camp Highlights",
+      description: "Finding Balance in this Digital World",
+      image: "/newsletter/01_reset/reset-37th-annual-summer-youth-camp-2026.jpg"
     },
-    caption:'Photo courtesy of Lighthouse Baptist Church - Talacu-an, Leon, Iloilo',
-    image1: '/newsletter/01_reset/intro.jpg',
-    image2: '/newsletter/01_reset/altar.jpg',
-    image3: '/newsletter/01_reset/pastors.jpg',
-    image4: '/newsletter/01_reset/ga1.jpg',
-    image5: '/newsletter/01_reset/ga2.jpg',
-    image6: '/newsletter/01_reset/ga3.jpg',
-
-
-        content1: `
+    caption: "Photo courtesy of Lighthouse Baptist Church - Talacu-an, Leon, Iloilo",
+    image1: "/newsletter/01_reset/intro.jpg",
+    image2: "/newsletter/01_reset/altar.jpg",
+    image3: "/newsletter/01_reset/pastors.jpg",
+    image4: "/newsletter/01_reset/ga1.jpg",
+    image5: "/newsletter/01_reset/ga2.jpg",
+    image6: "/newsletter/01_reset/ga3.jpg",
+    content1: `
             <article class="newsletter-article">
 
         <section>
@@ -4556,11 +4292,11 @@ have to, but because I wanted to.
             </p>
             </article>
         `,
-        content2: `
+    content2: `
             <article class="newsletter-article">
 <br>
             <p>
-            Throughout the camp, the young people enjoyed a time of fellowship through games, activities, worship services, and preaching sessions. Beyond the laughter and excitement were moments of conviction, prayer, and personal reflection as God spoke to hearts through His Word. Anchored on <span style="color:#9A3F3F;"><strong><i>Colossians 3:2, “Set your affection on things above, not on things on the earth,”</i></strong></span> the camp encouraged everyone to seek Christ above all else and pursue a life centered on Him.
+            Throughout the camp, the young people enjoyed a time of fellowship through games, activities, worship services, and preaching sessions. Beyond the laughter and excitement were moments of conviction, prayer, and personal reflection as God spoke to hearts through His Word. Anchored on <span style="color:#9A3F3F;"><strong><i>Colossians 3:2, \u201CSet your affection on things above, not on things on the earth,\u201D</i></strong></span> the camp encouraged everyone to seek Christ above all else and pursue a life centered on Him.
             </p>
         </section>
        
@@ -4574,7 +4310,7 @@ have to, but because I wanted to.
             Beyond the preaching and worship sessions, the camp was also filled with exciting activities that strengthened unity, teamwork, and friendship among the youth. Participants enjoyed basketball and volleyball games, storytelling enactments, Amazing Race challenges, indigenous choir presentations, cheers and yells, intermission numbers, and various energizer activities throughout the event.
             </p>
         `,
-        content3: `
+    content3: `
             <article class="newsletter-article">
 
             <p>
@@ -4593,14 +4329,14 @@ have to, but because I wanted to.
             <h4>Messages That Renewed the Heart</h4>
 
             <p>
-            The preaching sessions throughout the camp became one of the most meaningful parts of the experience for many of the youth. Through the messages shared by <span style="color:#9A3F3F;"><i>Pastor Ivan Nofuente, Pastor Winston White, Pastor Joseph Tabuena, and Ma’am Quenie Cabaya,</i></span> attendees were encouraged to reflect on their spiritual lives and strengthen their relationship with God.
+            The preaching sessions throughout the camp became one of the most meaningful parts of the experience for many of the youth. Through the messages shared by <span style="color:#9A3F3F;"><i>Pastor Ivan Nofuente, Pastor Winston White, Pastor Joseph Tabuena, and Ma\u2019am Quenie Cabaya,</i></span> attendees were encouraged to reflect on their spiritual lives and strengthen their relationship with God.
             </p>
         `,
-        content4: `
+    content4: `
             <article class="newsletter-article">
         <br>
             <p>
-            While each speaker delivered different lessons and perspectives, every message pointed back to the importance of keeping <span style="color:#9A3F3F;"><i>Christ at the center of one’s life</i></span>. Several sessions emphasized how easily people can become distracted by worldly influences, especially through social media, entertainment, and unhealthy habits that gradually consume time and attention.
+            While each speaker delivered different lessons and perspectives, every message pointed back to the importance of keeping <span style="color:#9A3F3F;"><i>Christ at the center of one\u2019s life</i></span>. Several sessions emphasized how easily people can become distracted by worldly influences, especially through social media, entertainment, and unhealthy habits that gradually consume time and attention.
             </p>
 
             <p>
@@ -4610,13 +4346,13 @@ have to, but because I wanted to.
             </article>
 <br>
         <section>
-            <h4>In God’s Presence</h4>
+            <h4>In God\u2019s Presence</h4>
 
             <p>
-            One of the most powerful moments of the camp was the <span style="color:#9A3F3F;"><i>altar call,</i></span> where many stepped forward in humility and surrender before God. Kneeling at the altar, attendees spent time in prayer, worship, and repentance as they responded to God’s Word. Tears, silence, and heartfelt prayers reflected the sincerity of many lives being renewed in His presence.
+            One of the most powerful moments of the camp was the <span style="color:#9A3F3F;"><i>altar call,</i></span> where many stepped forward in humility and surrender before God. Kneeling at the altar, attendees spent time in prayer, worship, and repentance as they responded to God\u2019s Word. Tears, silence, and heartfelt prayers reflected the sincerity of many lives being renewed in His presence.
             </p>
         `,
-        content5: `
+    content5: `
             <article class="newsletter-article">
 
         <br>
@@ -4625,7 +4361,7 @@ have to, but because I wanted to.
             </p>
 
             <p>
-            Beyond the main sessions, the camp was also filled with meaningful moments of reflection, encouragement, and personal connection. Whether through conversations, prayer, or moments of quiet rest, many were reminded of God’s constant presence throughout the experience. These simple yet meaningful moments added depth to the camp and left a lasting impact on many of the youth.
+            Beyond the main sessions, the camp was also filled with meaningful moments of reflection, encouragement, and personal connection. Whether through conversations, prayer, or moments of quiet rest, many were reminded of God\u2019s constant presence throughout the experience. These simple yet meaningful moments added depth to the camp and left a lasting impact on many of the youth.
             </p>
 
             <p>
@@ -4634,21 +4370,21 @@ have to, but because I wanted to.
         </section>
             </article>
         `,
-        content6: `
+    content6: `
             <article class="newsletter-article">
         <br>
 
         <section>
             <h4>Testimonies from the Youth</h4>
             <p><i>
-            “One of my favorite parts of the youth camp was the sessions because I learned so much. Not only about God, but also about my daily life. I was reminded about the importance of managing my screen time and using my time wisely in a way that honors Him.”
+            \u201COne of my favorite parts of the youth camp was the sessions because I learned so much. Not only about God, but also about my daily life. I was reminded about the importance of managing my screen time and using my time wisely in a way that honors Him.\u201D
             </i></p>
             <p><strong>- Bea Clacio</strong></p>
         <br>
         
             <p><i>
-            “One of the most meaningful moments for me was during Pastor White’s preaching when he invited us to come forward. At first, I hesitated because I was shy and didn’t want attention. But after holding back several times, I felt God speaking to my heart and reminding me to let go of the things of the world and return to Him. 
-            <p>When I finally stepped forward, it felt as though God welcomed me back with open arms. Even though I had turned away before, I still felt His love, grace, and acceptance.”
+            \u201COne of the most meaningful moments for me was during Pastor White\u2019s preaching when he invited us to come forward. At first, I hesitated because I was shy and didn\u2019t want attention. But after holding back several times, I felt God speaking to my heart and reminding me to let go of the things of the world and return to Him. 
+            <p>When I finally stepped forward, it felt as though God welcomed me back with open arms. Even though I had turned away before, I still felt His love, grace, and acceptance.\u201D
             </i></p>
             <p><strong>- Joshua Rosado</strong></p>
             <br>
@@ -4658,7 +4394,7 @@ have to, but because I wanted to.
             <h4>A Message from the Youth Leader</h4>
 
             <p><i>
-            “My favorite moment during our youth camp was praying with Pastor White alongside all the souls who found their identity in Christ. In that moment, I felt God's presence so closely-an overwhelming certainty that He heard every solemn whisper of praise, repentance, petition, and yielding my broken heart and contrite spirit according to His will, I was overjoyed of being reminded that He saved me by grace through faith, all because of the love expressed in death, burial and resurrection of Jesus Christ.”
+            \u201CMy favorite moment during our youth camp was praying with Pastor White alongside all the souls who found their identity in Christ. In that moment, I felt God's presence so closely-an overwhelming certainty that He heard every solemn whisper of praise, repentance, petition, and yielding my broken heart and contrite spirit according to His will, I was overjoyed of being reminded that He saved me by grace through faith, all because of the love expressed in death, burial and resurrection of Jesus Christ.\u201D
             </i></p>
 
             <p><strong>- Kian Ray Legarda</strong></p>
@@ -4668,7 +4404,7 @@ have to, but because I wanted to.
             <h3>A Word from Our Pastor</h3>
 
             <p><i>
-            “My hope is that first, for those who have not trusted Jesus as their Lord and Savior is for them to make a decision to trust Him. Next, make Him the Lord of your life. The world has distracted us with things that perish but God wants us to live for Him, Love Him, and serve Him for the rest of our lives. I hope that the camp has ignited our hearts to let Him be the Lord of our life.”
+            \u201CMy hope is that first, for those who have not trusted Jesus as their Lord and Savior is for them to make a decision to trust Him. Next, make Him the Lord of your life. The world has distracted us with things that perish but God wants us to live for Him, Love Him, and serve Him for the rest of our lives. I hope that the camp has ignited our hearts to let Him be the Lord of our life.\u201D
             </i></p>
 
             <p><strong>- Pastor John Louie Berdejo</strong></p>
@@ -4710,7 +4446,1030 @@ have to, but because I wanted to.
 
         </article>
         `
+  }
+];
 
+// newsletter/[slug].js
+async function onRequest(context) {
+  const { request, env, params } = context;
+  const slug = params.slug;
+  const post = newsletter.find((item) => item.slug === slug);
+  const url = new URL(request.url);
+  const indexUrl = new URL("/index.html", url.origin);
+  let response;
+  try {
+    response = await fetchFromAssets(env, new Request(indexUrl));
+  } catch (e) {
+    console.error("Error fetching index.html from assets:", e);
+    try {
+      response = await fetch(indexUrl);
+    } catch (err) {
+      console.error("Global fetch fallback failed for", indexUrl, err);
+      return new Response("Error loading page", { status: 500 });
+    }
+  }
+  if (!post) {
+    return response;
+  }
+  const html = await response.text();
+  const cleanedHtml = cleanHeadMeta(html);
+  const imageUrl = post.coverphoto.startsWith("/") ? `https://gcbf.com.ph${post.coverphoto}` : post.coverphoto;
+  const metaTags = `
+    <title>${post.title}</title>
+    <meta name="description" content="${post.excerpt}" />
+    <link rel="canonical" href="${request.url}" />
+    <meta property="og:url" content="${request.url}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="${post.title}" />
+    <meta property="og:description" content="${post.excerpt}" />
+    <meta property="og:image" content="${imageUrl}" />
+    <meta property="og:image:secure_url" content="${imageUrl}" />
+    <meta property="og:image:alt" content="${post.title}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="article:published_time" content="${post.date}" />
+    <meta property="article:author" content="${post.author}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${post.title}" />
+    <meta name="twitter:description" content="${post.excerpt}" />
+    <meta name="twitter:image" content="${imageUrl}" />
+    <meta name="twitter:image:src" content="${imageUrl}" />
+    <meta name="twitter:image:alt" content="${post.title}" />
+  `;
+  const modifiedHtml = cleanedHtml.replace("</head>", `${metaTags}</head>`);
+  return new Response(modifiedHtml, {
+    headers: {
+      "Content-Type": "text/html;charset=UTF-8"
+    }
+  });
+}
+__name(onRequest, "onRequest");
+async function fetchFromAssets(env, request) {
+  try {
+    if (env) {
+      if (env.page_assets && typeof env.page_assets.fetch === "function") {
+        return await env.page_assets.fetch(request);
+      }
+      if (env.ASSETS && typeof env.ASSETS.fetch === "function") {
+        return await env.ASSETS.fetch(request);
+      }
+    }
+    console.warn("No assets binding available on env; falling back to global fetch for", request.url);
+    return await fetch(request);
+  } catch (e) {
+    console.error("fetchFromAssets error for", request.url, e);
+    throw e;
+  }
+}
+__name(fetchFromAssets, "fetchFromAssets");
+function cleanHeadMeta(html) {
+  let cleaned = html.replace(/<title>[\s\S]*?<\/title>/gi, "").replace(/<link rel="canonical"[^>]*>/gi, "");
+  cleaned = cleaned.replace(/<meta\s+[^>]*(property|name)=["'](?:og:|twitter:|description)([^"']*?)["'][^>]*>/gi, "");
+  cleaned = cleaned.replace(/<meta\s+(?:property|name)=["'](?:og:|twitter:|description)[^"']*["'][^>]*>/gi, "");
+  return cleaned;
+}
+__name(cleanHeadMeta, "cleanHeadMeta");
+
+// api/[[path]].js
+var corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type, Authorization"
+};
+async function onRequest2(context) {
+  const { request, env } = context;
+  const url = new URL(request.url);
+  const path = url.pathname.replace("/api/", "");
+  if (request.method === "OPTIONS") {
+    return new Response(null, { headers: corsHeaders });
+  }
+  try {
+    if (path.startsWith("auth/")) {
+      return handleAuth(request, env, path);
+    }
+    if (path.startsWith("prayers")) {
+      return handlePrayers(request, env, path);
+    }
+    if (path.startsWith("newsletters")) {
+      return handleNewsletters(request, env, path);
+    }
+    if (path.startsWith("receipts")) {
+      return handleReceipts(request, env, path);
+    }
+    if (path.startsWith("ministries")) {
+      return handleMinistries(request, env, path);
+    }
+    if (path.startsWith("finances")) {
+      return handleFinances(request, env, path);
+    }
+    if (path.startsWith("pledges")) {
+      return handlePledges(request, env, path);
+    }
+    if (path.startsWith("bible-reading")) {
+      return handleBibleReading(request, env, path);
+    }
+    return jsonResponse({ error: "Not Found" }, 404);
+  } catch (error) {
+    console.error("API Error:", error);
+    return jsonResponse({ error: error.message }, 500);
+  }
+}
+__name(onRequest2, "onRequest");
+function jsonResponse(data, status = 200) {
+  return new Response(JSON.stringify(data), {
+    status,
+    headers: {
+      ...corsHeaders,
+      "Content-Type": "application/json"
+    }
+  });
+}
+__name(jsonResponse, "jsonResponse");
+async function handleAuth(request, env, path) {
+  const { DB } = env;
+  if (path === "auth/login") {
+    const { email, password } = await request.json();
+    const user = await DB.prepare(`
+      SELECT id, email, name, userType, joinDate 
+      FROM users 
+      WHERE email = ? AND password = ?
+    `).bind(email, password).first();
+    if (user) {
+      return jsonResponse({ success: true, user });
+    }
+    return jsonResponse({ success: false, message: "Invalid credentials" }, 401);
+  }
+  if (path === "auth/register" && request.method === "POST") {
+    const userData = await request.json();
+    try {
+      const result = await DB.prepare(`
+        INSERT INTO users (email, password, name, userType, phone, joinDate)
+        VALUES (?, ?, ?, ?, ?, ?)
+      `).bind(
+        userData.email,
+        userData.password,
+        userData.name,
+        userData.userType || "member",
+        userData.phone || null,
+        (/* @__PURE__ */ new Date()).toISOString().split("T")[0]
+      ).run();
+      const user = await DB.prepare(`
+        SELECT id, email, name, userType, joinDate FROM users WHERE id = ?
+      `).bind(result.meta.last_row_id).first();
+      return jsonResponse({ success: true, user });
+    } catch (error) {
+      return jsonResponse({ success: false, message: "Email already exists" }, 400);
+    }
+  }
+  return jsonResponse({ error: "Invalid auth endpoint" }, 404);
+}
+__name(handleAuth, "handleAuth");
+async function handlePrayers(request, env, path) {
+  const { DB } = env;
+  if (request.method === "GET") {
+    const url = new URL(request.url);
+    const userId = url.searchParams.get("userId");
+    const visibility = url.searchParams.get("visibility");
+    let query = `
+      SELECT p.*, u.name as requestedBy
+      FROM prayers p
+      JOIN users u ON p.userId = u.id
+      WHERE 1=1
+    `;
+    const bindings = [];
+    if (userId) {
+      query += ` AND p.userId = ?`;
+      bindings.push(userId);
+    }
+    if (visibility) {
+      query += ` AND p.visibility = ?`;
+      bindings.push(visibility);
+    } else {
+      query += ` AND p.visibility IN ('public', 'pastor')`;
+    }
+    query += ` ORDER BY p.createdAt DESC`;
+    const { results } = await DB.prepare(query).bind(...bindings).all();
+    return jsonResponse(results);
+  }
+  if (request.method === "POST") {
+    const data = await request.json();
+    const result = await DB.prepare(`
+      INSERT INTO prayers (userId, category, title, request, visibility, dateRequested, approved, approvedBy, approvedAt)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `).bind(
+      data.userId,
+      data.category,
+      data.title,
+      data.request,
+      data.visibility,
+      data.dateRequested,
+      data.approved ? 1 : 0,
+      data.approvedBy || null,
+      data.approvedAt || null
+    ).run();
+    return jsonResponse({ id: result.meta.last_row_id, success: true });
+  }
+  if (request.method === "PUT") {
+    const data = await request.json();
+    const prayerId = path.split("/")[1];
+    await DB.prepare(`
+      UPDATE prayers 
+      SET status = ?, dateAnswered = ?, prayerCount = ?, approved = ?, approvedBy = ?, approvedAt = ?
+      WHERE id = ?
+    `).bind(
+      data.status,
+      data.dateAnswered || null,
+      data.prayerCount || 0,
+      data.approved ? 1 : 0,
+      data.approvedBy || null,
+      data.approvedAt || null,
+      prayerId
+    ).run();
+    return jsonResponse({ success: true });
+  }
+  if (request.method === "DELETE") {
+    const prayerId = path.split("/")[1];
+    await DB.prepare(`DELETE FROM prayers WHERE id = ?`).bind(prayerId).run();
+    return jsonResponse({ success: true });
+  }
+  return jsonResponse({ error: "Method not allowed" }, 405);
+}
+__name(handlePrayers, "handlePrayers");
+async function handleNewsletters(request, env, path) {
+  const { DB, STORAGE } = env;
+  if (path === "newsletters/upload" && request.method === "POST") {
+    try {
+      const formData = await request.formData();
+      const pdfFile = formData.get("pdf");
+      const coverFile = formData.get("cover");
+      const pdfFileName = formData.get("pdfFileName");
+      const coverFileName = formData.get("coverFileName");
+      if (!pdfFile || !pdfFileName) {
+        return jsonResponse({ error: "PDF file and filename required" }, 400);
+      }
+      const pdfBuffer = await pdfFile.arrayBuffer();
+      await STORAGE.put(`newsletters/${pdfFileName}`, pdfBuffer, {
+        httpMetadata: {
+          contentType: "application/pdf"
+        }
+      });
+      let coverUrl = null;
+      if (coverFile && coverFileName) {
+        const coverBuffer = await coverFile.arrayBuffer();
+        await STORAGE.put(`newsletters/${coverFileName}`, coverBuffer, {
+          httpMetadata: {
+            contentType: "image/jpeg"
+          }
+        });
+        coverUrl = `/r2/newsletters/${coverFileName}`;
+      }
+      return jsonResponse({
+        success: true,
+        pdfUrl: `/r2/newsletters/${pdfFileName}`,
+        coverUrl
+      });
+    } catch (error) {
+      console.error("Upload error:", error);
+      return jsonResponse({ error: "Upload failed: " + error.message }, 500);
+    }
+  }
+  if (request.method === "GET") {
+    const { results } = await DB.prepare(`
+      SELECT * FROM newsletters ORDER BY date DESC LIMIT 10
+    `).all();
+    const newsletters = results.map((n) => ({
+      ...n,
+      highlights: n.highlights ? JSON.parse(n.highlights) : []
+    }));
+    return jsonResponse(newsletters);
+  }
+  if (request.method === "POST") {
+    const data = await request.json();
+    const result = await DB.prepare(`
+      INSERT INTO newsletters (title, date, excerpt, issueNumber, volume, publishedBy, coverImage, downloadUrl, highlights)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `).bind(
+      data.title,
+      data.date,
+      data.excerpt,
+      data.issueNumber,
+      data.volume || 1,
+      data.publishedBy,
+      data.coverImage || null,
+      data.downloadUrl,
+      JSON.stringify(data.highlights || [])
+    ).run();
+    return jsonResponse({ id: result.meta.last_row_id, success: true });
+  }
+  if (request.method === "DELETE") {
+    const newsletterId = path.split("/")[1];
+    const newsletter2 = await DB.prepare(`
+      SELECT downloadUrl, coverImage FROM newsletters WHERE id = ?
+    `).bind(newsletterId).first();
+    if (newsletter2 && STORAGE) {
+      if (newsletter2.downloadUrl && newsletter2.downloadUrl.startsWith("/r2/")) {
+        const pdfKey = newsletter2.downloadUrl.replace("/r2/", "");
+        try {
+          await STORAGE.delete(pdfKey);
+        } catch (error) {
+          console.error("Error deleting PDF from R2:", error);
+        }
+      }
+      if (newsletter2.coverImage && newsletter2.coverImage.startsWith("/r2/")) {
+        const coverKey = newsletter2.coverImage.replace("/r2/", "");
+        try {
+          await STORAGE.delete(coverKey);
+        } catch (error) {
+          console.error("Error deleting cover from R2:", error);
+        }
+      }
+    }
+    await DB.prepare(`DELETE FROM newsletters WHERE id = ?`).bind(newsletterId).run();
+    return jsonResponse({ success: true });
+  }
+  return jsonResponse({ error: "Method not allowed" }, 405);
+}
+__name(handleNewsletters, "handleNewsletters");
+async function handleReceipts(request, env, path) {
+  const { STORAGE } = env;
+  if (path === "receipts/upload" && request.method === "POST") {
+    try {
+      const formData = await request.formData();
+      const receiptFile = formData.get("receipt");
+      const fileName = formData.get("fileName");
+      const userId = formData.get("userId");
+      const giftId = formData.get("giftId");
+      const paymentId = formData.get("paymentId");
+      if (!receiptFile || !fileName) {
+        return jsonResponse({ error: "Receipt file and filename required" }, 400);
+      }
+      const receiptBuffer = await receiptFile.arrayBuffer();
+      const receiptKey = `receipts/${fileName}`;
+      await STORAGE.put(receiptKey, receiptBuffer, {
+        httpMetadata: {
+          contentType: receiptFile.type || "application/octet-stream"
         },
+        customMetadata: {
+          userId: userId || "unknown",
+          giftId: giftId || "",
+          paymentId: paymentId || "",
+          uploadDate: (/* @__PURE__ */ new Date()).toISOString()
+        }
+      });
+      return jsonResponse({
+        success: true,
+        receiptUrl: `/r2/${receiptKey}`,
+        fileName
+      });
+    } catch (error) {
+      console.error("Receipt upload error:", error);
+      return jsonResponse({ error: "Upload failed: " + error.message }, 500);
+    }
+  }
+  if (request.method === "GET" && path.startsWith("receipts/")) {
+    const fileName = path.replace("receipts/", "");
+    return jsonResponse({ receiptUrl: `/r2/receipts/${fileName}` });
+  }
+  return jsonResponse({ error: "Method not allowed" }, 405);
+}
+__name(handleReceipts, "handleReceipts");
+async function handleMinistries(request, env, path) {
+  const { DB } = env;
+  if (request.method === "GET") {
+    const { results } = await DB.prepare(`
+      SELECT m.*, 
+        (SELECT COUNT(*) FROM attendance a WHERE a.ministryId = m.id) as attendanceCount
+      FROM ministry_reports m
+      WHERE m.active = 1
+      ORDER BY m.name
+    `).all();
+    return jsonResponse(results);
+  }
+  if (request.method === "POST" && path === "ministries") {
+    const data = await request.json();
+    const result = await DB.prepare(`
+      INSERT INTO ministry_reports (name, leader, budget, spent, participants, description, notes)
+      VALUES (?, ?, ?, ?, ?, ?, ?)
+    `).bind(
+      data.name,
+      data.leader || null,
+      data.budget || 0,
+      data.spent || 0,
+      data.participants || 0,
+      data.description || null,
+      data.notes || null
+    ).run();
+    return jsonResponse({ id: result.meta.last_row_id, success: true });
+  }
+  if (path.startsWith("ministries/") && path.includes("/attendance")) {
+    if (request.method === "POST") {
+      const data = await request.json();
+      const ministryId = path.split("/")[1];
+      const result = await DB.prepare(`
+        INSERT INTO attendance (ministryId, date, count, notes, recordedBy)
+        VALUES (?, ?, ?, ?, ?)
+      `).bind(
+        ministryId,
+        data.date,
+        data.count,
+        data.notes || null,
+        data.recordedBy
+      ).run();
+      return jsonResponse({ id: result.meta.last_row_id, success: true });
+    }
+    if (request.method === "GET") {
+      const ministryId = path.split("/")[1];
+      const { results } = await DB.prepare(`
+        SELECT * FROM attendance WHERE ministryId = ? ORDER BY date DESC
+      `).bind(ministryId).all();
+      return jsonResponse(results);
+    }
+  }
+  return jsonResponse({ error: "Method not allowed" }, 405);
+}
+__name(handleMinistries, "handleMinistries");
+async function handleFinances(request, env, path) {
+  const { DB } = env;
+  if (path === "finances/income") {
+    if (request.method === "GET") {
+      const { results } = await DB.prepare(`
+        SELECT * FROM income ORDER BY date DESC
+      `).all();
+      return jsonResponse(results);
+    }
+    if (request.method === "POST") {
+      const data = await request.json();
+      const result = await DB.prepare(`
+        INSERT INTO income (date, category, amount, source, description, notes, recordedBy)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+      `).bind(
+        data.date,
+        data.category,
+        data.amount,
+        data.source || null,
+        data.description || null,
+        data.notes || null,
+        data.recordedBy
+      ).run();
+      return jsonResponse({ id: result.meta.last_row_id, success: true });
+    }
+  }
+  if (path === "finances/expenses") {
+    if (request.method === "GET") {
+      const { results } = await DB.prepare(`
+        SELECT * FROM expenses ORDER BY date DESC
+      `).all();
+      return jsonResponse(results);
+    }
+    if (request.method === "POST") {
+      const data = await request.json();
+      const result = await DB.prepare(`
+        INSERT INTO expenses (date, category, amount, description, notes, recordedBy, approved, approvedBy)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+      `).bind(
+        data.date,
+        data.category,
+        data.amount,
+        data.description || null,
+        data.notes || null,
+        data.recordedBy,
+        data.approved ? 1 : 0,
+        data.approvedBy || null
+      ).run();
+      return jsonResponse({ id: result.meta.last_row_id, success: true });
+    }
+  }
+  return jsonResponse({ error: "Invalid finance endpoint" }, 404);
+}
+__name(handleFinances, "handleFinances");
+async function handlePledges(request, env, path) {
+  const { DB } = env;
+  if (request.method === "GET") {
+    const url = new URL(request.url);
+    const userId = url.searchParams.get("userId");
+    const { results } = await DB.prepare(`
+      SELECT p.*, u.name as userName
+      FROM pledges p
+      JOIN users u ON p.userId = u.id
+      ${userId ? "WHERE p.userId = ?" : ""}
+      ORDER BY p.createdAt DESC
+    `).bind(userId ? userId : void 0).all();
+    return jsonResponse(results);
+  }
+  if (request.method === "POST") {
+    const data = await request.json();
+    const result = await DB.prepare(`
+      INSERT INTO pledges (userId, amount, frequency, startDate, endDate, status, notes)
+      VALUES (?, ?, ?, ?, ?, ?, ?)
+    `).bind(
+      data.userId,
+      data.amount,
+      data.frequency,
+      data.startDate,
+      data.endDate || null,
+      data.status || "active",
+      data.notes || null
+    ).run();
+    return jsonResponse({ id: result.meta.last_row_id, success: true });
+  }
+  return jsonResponse({ error: "Method not allowed" }, 405);
+}
+__name(handlePledges, "handlePledges");
+async function handleBibleReading(request, env, path) {
+  const { DB } = env;
+  if (request.method === "GET") {
+    const url = new URL(request.url);
+    const userId = url.searchParams.get("userId");
+    const { results } = await DB.prepare(`
+      SELECT * FROM bible_reading 
+      WHERE userId = ? 
+      ORDER BY date DESC
+    `).bind(userId).all();
+    return jsonResponse(results);
+  }
+  if (request.method === "POST") {
+    const data = await request.json();
+    const result = await DB.prepare(`
+      INSERT INTO bible_reading (userId, date, book, chapter, notes, completed)
+      VALUES (?, ?, ?, ?, ?, ?)
+    `).bind(
+      data.userId,
+      data.date,
+      data.book,
+      data.chapter,
+      data.notes || null,
+      data.completed ? 1 : 0
+    ).run();
+    return jsonResponse({ id: result.meta.last_row_id, success: true });
+  }
+  return jsonResponse({ error: "Method not allowed" }, 405);
+}
+__name(handleBibleReading, "handleBibleReading");
 
-       ]
+// ../.wrangler/tmp/pages-WINNPB/functionsRoutes-0.4329234342023651.mjs
+var routes = [
+  {
+    routePath: "/newsletter/:slug",
+    mountPath: "/newsletter",
+    method: "",
+    middlewares: [],
+    modules: [onRequest]
+  },
+  {
+    routePath: "/api/:path*",
+    mountPath: "/api",
+    method: "",
+    middlewares: [],
+    modules: [onRequest2]
+  }
+];
+
+// ../node_modules/path-to-regexp/dist.es2015/index.js
+function lexer(str) {
+  var tokens = [];
+  var i = 0;
+  while (i < str.length) {
+    var char = str[i];
+    if (char === "*" || char === "+" || char === "?") {
+      tokens.push({ type: "MODIFIER", index: i, value: str[i++] });
+      continue;
+    }
+    if (char === "\\") {
+      tokens.push({ type: "ESCAPED_CHAR", index: i++, value: str[i++] });
+      continue;
+    }
+    if (char === "{") {
+      tokens.push({ type: "OPEN", index: i, value: str[i++] });
+      continue;
+    }
+    if (char === "}") {
+      tokens.push({ type: "CLOSE", index: i, value: str[i++] });
+      continue;
+    }
+    if (char === ":") {
+      var name = "";
+      var j = i + 1;
+      while (j < str.length) {
+        var code = str.charCodeAt(j);
+        if (
+          // `0-9`
+          code >= 48 && code <= 57 || // `A-Z`
+          code >= 65 && code <= 90 || // `a-z`
+          code >= 97 && code <= 122 || // `_`
+          code === 95
+        ) {
+          name += str[j++];
+          continue;
+        }
+        break;
+      }
+      if (!name)
+        throw new TypeError("Missing parameter name at ".concat(i));
+      tokens.push({ type: "NAME", index: i, value: name });
+      i = j;
+      continue;
+    }
+    if (char === "(") {
+      var count = 1;
+      var pattern = "";
+      var j = i + 1;
+      if (str[j] === "?") {
+        throw new TypeError('Pattern cannot start with "?" at '.concat(j));
+      }
+      while (j < str.length) {
+        if (str[j] === "\\") {
+          pattern += str[j++] + str[j++];
+          continue;
+        }
+        if (str[j] === ")") {
+          count--;
+          if (count === 0) {
+            j++;
+            break;
+          }
+        } else if (str[j] === "(") {
+          count++;
+          if (str[j + 1] !== "?") {
+            throw new TypeError("Capturing groups are not allowed at ".concat(j));
+          }
+        }
+        pattern += str[j++];
+      }
+      if (count)
+        throw new TypeError("Unbalanced pattern at ".concat(i));
+      if (!pattern)
+        throw new TypeError("Missing pattern at ".concat(i));
+      tokens.push({ type: "PATTERN", index: i, value: pattern });
+      i = j;
+      continue;
+    }
+    tokens.push({ type: "CHAR", index: i, value: str[i++] });
+  }
+  tokens.push({ type: "END", index: i, value: "" });
+  return tokens;
+}
+__name(lexer, "lexer");
+function parse(str, options) {
+  if (options === void 0) {
+    options = {};
+  }
+  var tokens = lexer(str);
+  var _a = options.prefixes, prefixes = _a === void 0 ? "./" : _a, _b = options.delimiter, delimiter = _b === void 0 ? "/#?" : _b;
+  var result = [];
+  var key = 0;
+  var i = 0;
+  var path = "";
+  var tryConsume = /* @__PURE__ */ __name(function(type) {
+    if (i < tokens.length && tokens[i].type === type)
+      return tokens[i++].value;
+  }, "tryConsume");
+  var mustConsume = /* @__PURE__ */ __name(function(type) {
+    var value2 = tryConsume(type);
+    if (value2 !== void 0)
+      return value2;
+    var _a2 = tokens[i], nextType = _a2.type, index = _a2.index;
+    throw new TypeError("Unexpected ".concat(nextType, " at ").concat(index, ", expected ").concat(type));
+  }, "mustConsume");
+  var consumeText = /* @__PURE__ */ __name(function() {
+    var result2 = "";
+    var value2;
+    while (value2 = tryConsume("CHAR") || tryConsume("ESCAPED_CHAR")) {
+      result2 += value2;
+    }
+    return result2;
+  }, "consumeText");
+  var isSafe = /* @__PURE__ */ __name(function(value2) {
+    for (var _i = 0, delimiter_1 = delimiter; _i < delimiter_1.length; _i++) {
+      var char2 = delimiter_1[_i];
+      if (value2.indexOf(char2) > -1)
+        return true;
+    }
+    return false;
+  }, "isSafe");
+  var safePattern = /* @__PURE__ */ __name(function(prefix2) {
+    var prev = result[result.length - 1];
+    var prevText = prefix2 || (prev && typeof prev === "string" ? prev : "");
+    if (prev && !prevText) {
+      throw new TypeError('Must have text between two parameters, missing text after "'.concat(prev.name, '"'));
+    }
+    if (!prevText || isSafe(prevText))
+      return "[^".concat(escapeString(delimiter), "]+?");
+    return "(?:(?!".concat(escapeString(prevText), ")[^").concat(escapeString(delimiter), "])+?");
+  }, "safePattern");
+  while (i < tokens.length) {
+    var char = tryConsume("CHAR");
+    var name = tryConsume("NAME");
+    var pattern = tryConsume("PATTERN");
+    if (name || pattern) {
+      var prefix = char || "";
+      if (prefixes.indexOf(prefix) === -1) {
+        path += prefix;
+        prefix = "";
+      }
+      if (path) {
+        result.push(path);
+        path = "";
+      }
+      result.push({
+        name: name || key++,
+        prefix,
+        suffix: "",
+        pattern: pattern || safePattern(prefix),
+        modifier: tryConsume("MODIFIER") || ""
+      });
+      continue;
+    }
+    var value = char || tryConsume("ESCAPED_CHAR");
+    if (value) {
+      path += value;
+      continue;
+    }
+    if (path) {
+      result.push(path);
+      path = "";
+    }
+    var open = tryConsume("OPEN");
+    if (open) {
+      var prefix = consumeText();
+      var name_1 = tryConsume("NAME") || "";
+      var pattern_1 = tryConsume("PATTERN") || "";
+      var suffix = consumeText();
+      mustConsume("CLOSE");
+      result.push({
+        name: name_1 || (pattern_1 ? key++ : ""),
+        pattern: name_1 && !pattern_1 ? safePattern(prefix) : pattern_1,
+        prefix,
+        suffix,
+        modifier: tryConsume("MODIFIER") || ""
+      });
+      continue;
+    }
+    mustConsume("END");
+  }
+  return result;
+}
+__name(parse, "parse");
+function match(str, options) {
+  var keys = [];
+  var re = pathToRegexp(str, keys, options);
+  return regexpToFunction(re, keys, options);
+}
+__name(match, "match");
+function regexpToFunction(re, keys, options) {
+  if (options === void 0) {
+    options = {};
+  }
+  var _a = options.decode, decode = _a === void 0 ? function(x) {
+    return x;
+  } : _a;
+  return function(pathname) {
+    var m = re.exec(pathname);
+    if (!m)
+      return false;
+    var path = m[0], index = m.index;
+    var params = /* @__PURE__ */ Object.create(null);
+    var _loop_1 = /* @__PURE__ */ __name(function(i2) {
+      if (m[i2] === void 0)
+        return "continue";
+      var key = keys[i2 - 1];
+      if (key.modifier === "*" || key.modifier === "+") {
+        params[key.name] = m[i2].split(key.prefix + key.suffix).map(function(value) {
+          return decode(value, key);
+        });
+      } else {
+        params[key.name] = decode(m[i2], key);
+      }
+    }, "_loop_1");
+    for (var i = 1; i < m.length; i++) {
+      _loop_1(i);
+    }
+    return { path, index, params };
+  };
+}
+__name(regexpToFunction, "regexpToFunction");
+function escapeString(str) {
+  return str.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1");
+}
+__name(escapeString, "escapeString");
+function flags(options) {
+  return options && options.sensitive ? "" : "i";
+}
+__name(flags, "flags");
+function regexpToRegexp(path, keys) {
+  if (!keys)
+    return path;
+  var groupsRegex = /\((?:\?<(.*?)>)?(?!\?)/g;
+  var index = 0;
+  var execResult = groupsRegex.exec(path.source);
+  while (execResult) {
+    keys.push({
+      // Use parenthesized substring match if available, index otherwise
+      name: execResult[1] || index++,
+      prefix: "",
+      suffix: "",
+      modifier: "",
+      pattern: ""
+    });
+    execResult = groupsRegex.exec(path.source);
+  }
+  return path;
+}
+__name(regexpToRegexp, "regexpToRegexp");
+function arrayToRegexp(paths, keys, options) {
+  var parts = paths.map(function(path) {
+    return pathToRegexp(path, keys, options).source;
+  });
+  return new RegExp("(?:".concat(parts.join("|"), ")"), flags(options));
+}
+__name(arrayToRegexp, "arrayToRegexp");
+function stringToRegexp(path, keys, options) {
+  return tokensToRegexp(parse(path, options), keys, options);
+}
+__name(stringToRegexp, "stringToRegexp");
+function tokensToRegexp(tokens, keys, options) {
+  if (options === void 0) {
+    options = {};
+  }
+  var _a = options.strict, strict = _a === void 0 ? false : _a, _b = options.start, start = _b === void 0 ? true : _b, _c = options.end, end = _c === void 0 ? true : _c, _d = options.encode, encode = _d === void 0 ? function(x) {
+    return x;
+  } : _d, _e = options.delimiter, delimiter = _e === void 0 ? "/#?" : _e, _f = options.endsWith, endsWith = _f === void 0 ? "" : _f;
+  var endsWithRe = "[".concat(escapeString(endsWith), "]|$");
+  var delimiterRe = "[".concat(escapeString(delimiter), "]");
+  var route = start ? "^" : "";
+  for (var _i = 0, tokens_1 = tokens; _i < tokens_1.length; _i++) {
+    var token = tokens_1[_i];
+    if (typeof token === "string") {
+      route += escapeString(encode(token));
+    } else {
+      var prefix = escapeString(encode(token.prefix));
+      var suffix = escapeString(encode(token.suffix));
+      if (token.pattern) {
+        if (keys)
+          keys.push(token);
+        if (prefix || suffix) {
+          if (token.modifier === "+" || token.modifier === "*") {
+            var mod = token.modifier === "*" ? "?" : "";
+            route += "(?:".concat(prefix, "((?:").concat(token.pattern, ")(?:").concat(suffix).concat(prefix, "(?:").concat(token.pattern, "))*)").concat(suffix, ")").concat(mod);
+          } else {
+            route += "(?:".concat(prefix, "(").concat(token.pattern, ")").concat(suffix, ")").concat(token.modifier);
+          }
+        } else {
+          if (token.modifier === "+" || token.modifier === "*") {
+            throw new TypeError('Can not repeat "'.concat(token.name, '" without a prefix and suffix'));
+          }
+          route += "(".concat(token.pattern, ")").concat(token.modifier);
+        }
+      } else {
+        route += "(?:".concat(prefix).concat(suffix, ")").concat(token.modifier);
+      }
+    }
+  }
+  if (end) {
+    if (!strict)
+      route += "".concat(delimiterRe, "?");
+    route += !options.endsWith ? "$" : "(?=".concat(endsWithRe, ")");
+  } else {
+    var endToken = tokens[tokens.length - 1];
+    var isEndDelimited = typeof endToken === "string" ? delimiterRe.indexOf(endToken[endToken.length - 1]) > -1 : endToken === void 0;
+    if (!strict) {
+      route += "(?:".concat(delimiterRe, "(?=").concat(endsWithRe, "))?");
+    }
+    if (!isEndDelimited) {
+      route += "(?=".concat(delimiterRe, "|").concat(endsWithRe, ")");
+    }
+  }
+  return new RegExp(route, flags(options));
+}
+__name(tokensToRegexp, "tokensToRegexp");
+function pathToRegexp(path, keys, options) {
+  if (path instanceof RegExp)
+    return regexpToRegexp(path, keys);
+  if (Array.isArray(path))
+    return arrayToRegexp(path, keys, options);
+  return stringToRegexp(path, keys, options);
+}
+__name(pathToRegexp, "pathToRegexp");
+
+// ../node_modules/wrangler/templates/pages-template-worker.ts
+var escapeRegex = /[.+?^${}()|[\]\\]/g;
+function* executeRequest(request) {
+  const requestPath = new URL(request.url).pathname;
+  for (const route of [...routes].reverse()) {
+    if (route.method && route.method !== request.method) {
+      continue;
+    }
+    const routeMatcher = match(route.routePath.replace(escapeRegex, "\\$&"), {
+      end: false
+    });
+    const mountMatcher = match(route.mountPath.replace(escapeRegex, "\\$&"), {
+      end: false
+    });
+    const matchResult = routeMatcher(requestPath);
+    const mountMatchResult = mountMatcher(requestPath);
+    if (matchResult && mountMatchResult) {
+      for (const handler of route.middlewares.flat()) {
+        yield {
+          handler,
+          params: matchResult.params,
+          path: mountMatchResult.path
+        };
+      }
+    }
+  }
+  for (const route of routes) {
+    if (route.method && route.method !== request.method) {
+      continue;
+    }
+    const routeMatcher = match(route.routePath.replace(escapeRegex, "\\$&"), {
+      end: true
+    });
+    const mountMatcher = match(route.mountPath.replace(escapeRegex, "\\$&"), {
+      end: false
+    });
+    const matchResult = routeMatcher(requestPath);
+    const mountMatchResult = mountMatcher(requestPath);
+    if (matchResult && mountMatchResult && route.modules.length) {
+      for (const handler of route.modules.flat()) {
+        yield {
+          handler,
+          params: matchResult.params,
+          path: matchResult.path
+        };
+      }
+      break;
+    }
+  }
+}
+__name(executeRequest, "executeRequest");
+var pages_template_worker_default = {
+  async fetch(originalRequest, env, workerContext) {
+    let request = originalRequest;
+    const handlerIterator = executeRequest(request);
+    let data = {};
+    let isFailOpen = false;
+    const next = /* @__PURE__ */ __name(async (input, init) => {
+      if (input !== void 0) {
+        let url = input;
+        if (typeof input === "string") {
+          url = new URL(input, request.url).toString();
+        }
+        request = new Request(url, init);
+      }
+      const result = handlerIterator.next();
+      if (result.done === false) {
+        const { handler, params, path } = result.value;
+        const context = {
+          request: new Request(request.clone()),
+          functionPath: path,
+          next,
+          params,
+          get data() {
+            return data;
+          },
+          set data(value) {
+            if (typeof value !== "object" || value === null) {
+              throw new Error("context.data must be an object");
+            }
+            data = value;
+          },
+          env,
+          waitUntil: workerContext.waitUntil.bind(workerContext),
+          passThroughOnException: /* @__PURE__ */ __name(() => {
+            isFailOpen = true;
+          }, "passThroughOnException")
+        };
+        const response = await handler(context);
+        if (!(response instanceof Response)) {
+          throw new Error("Your Pages function should return a Response");
+        }
+        return cloneResponse(response);
+      } else if ("ASSETS") {
+        const response = await env["ASSETS"].fetch(request);
+        return cloneResponse(response);
+      } else {
+        const response = await fetch(request);
+        return cloneResponse(response);
+      }
+    }, "next");
+    try {
+      return await next();
+    } catch (error) {
+      if (isFailOpen) {
+        const response = await env["ASSETS"].fetch(request);
+        return cloneResponse(response);
+      }
+      throw error;
+    }
+  }
+};
+var cloneResponse = /* @__PURE__ */ __name((response) => (
+  // https://fetch.spec.whatwg.org/#null-body-status
+  new Response(
+    [101, 204, 205, 304].includes(response.status) ? null : response.body,
+    response
+  )
+), "cloneResponse");
+export {
+  pages_template_worker_default as default
+};
