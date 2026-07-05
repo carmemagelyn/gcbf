@@ -1,6 +1,167 @@
 
 export const newsletter = [
     {
+       id: 19,
+    slug: 'the-holy-god',
+
+    title: 'The Holy God',
+
+    excerpt: "God's Righteousness Leads to Reconciliation and Repentance",
+
+    date: 'July 5, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/03_faith.jpg',
+    
+    video:'https://www.youtube.com/embed/yTJCHBUoz3E?si=nBJyQ0x48xyDxOzM',
+
+    caption:'Worship Service | July 5, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'The Holy God',
+      description: "God's Righteousness Leads to Reconciliation and Repentance",
+      image:
+        '/newsletter/message/03_faith.jpg',
+    },
+  
+        content1: `
+<article>
+
+<p style="color:#9A3F3F;"><i>
+Text: Romans 2:1–4
+<br>
+"Therefore thou art inexcusable, O man, whosoever thou art that judgest: for wherein thou judgest another, thou condemnest thyself; for thou that judgest doest the same things. But we are sure that the judgment of God is according to truth against them which commit such things. And thinkest thou this, O man, that judgest them which do such things, and doest the same, that thou shalt escape the judgment of God? Or despisest thou the riches of his goodness and forbearance and longsuffering; not knowing that the goodness of God leadeth thee to repentance?"
+</i></p>
+
+<h4>Introduction</h4>
+
+<p>One of the greatest mistakes people make is comparing themselves with other people instead of comparing themselves with God. As long as we compare ourselves with those who appear to be worse than we are, we will always find a reason to think we are good enough. We may say, "At least I am not a criminal. At least I am not immoral. At least I go to church." Yet God's standard is not another sinner. God's standard is His own perfect holiness.</p>
+
+<p>In Romans chapter 1, Paul exposed the sinful condition of the Gentile world. Many of the Jews would have readily agreed that the Gentiles deserved God's judgment. However, as Paul begins chapter 2, he turns his attention to those who considered themselves morally and religiously superior. His message is clear: no one is exempt from God's righteous judgment. Whether openly sinful or outwardly religious, every person stands guilty before a holy God apart from His grace.</p>
+
+<p>This passage teaches us three important truths: man's righteousness is insufficient, God's judgment is perfectly righteous, and God's goodness is intended to bring sinners to repentance.</p>
+
+<h4>I. Man's Righteousness</h4>
+
+<p>Man naturally believes that he can establish his own righteousness. Many people think that if they perform enough good works, attend church regularly, give to charity, or live a respectable life, God will accept them. But the Bible consistently teaches that human righteousness can never satisfy the holiness of God.</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 2:1
+<br>
+"Therefore thou art inexcusable, O man, whosoever thou art that judgest: for wherein thou judgest another, thou condemnest thyself; for thou that judgest doest the same things."
+</i></p>
+
+<p><b>Religiosity</b></p>
+
+<p>Religion, by itself, does not make a person righteous before God. The Jews possessed the Law, practiced religious ceremonies, and considered themselves God's chosen people. Yet many trusted in their religious privileges rather than in God Himself. It is possible to attend church every week, know Bible stories, participate in ministry, and still have a heart that has never truly submitted to the Lord.</p>
+
+<p>God is not impressed by outward religion without inward transformation. He looks beyond our appearance and examines our hearts. True righteousness is not found in religious activities but in a right relationship with God.</p>
+
+<p><b>Immorality</b></p>
+
+<p>Others live openly sinful lives. They reject God's commands and pursue the desires of the flesh without restraint. Romans chapter 1 vividly describes this condition. Immorality is evidence of man's rebellion against God. Sin promises freedom, but it always produces bondage. It promises satisfaction, yet it ultimately leads to emptiness and judgment.</p>
+
+<p>Whether sins are committed publicly or privately, God sees them all. Nothing is hidden from His eyes. Every act of immorality reveals mankind's need for the saving grace of God.</p>
+
+<p><b>Hypocrisy</b></p>
+
+<p>Paul particularly addresses those who judge others while committing similar sins themselves. It is easy to point out another person's faults while ignoring our own. We often condemn sins that are visible while excusing the sins hidden within our own hearts.</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 2:1
+<br>
+"Therefore thou art inexcusable, O man, whosoever thou art that judgest: for wherein thou judgest another, thou condemnest thyself; for thou that judgest doest the same things."
+</i></p>
+
+<p>This verse reminds us that when we judge others while practicing the same things, we condemn ourselves. This does not mean we should never identify sin. Rather, it warns against self-righteous hypocrisy. Before we examine the lives of others, we must first allow God's Word to examine our own hearts.</p>
+
+<p>The problem with hypocrisy is that it creates the illusion of righteousness without genuine repentance. A person may appear spiritual before others while remaining guilty before a holy God. God cannot be deceived by appearances. He judges according to truth.</p>
+
+
+
+
+<h4>II. God's Righteous Judgment</h4>
+
+<p>Many people believe they can escape God's judgment because they compare themselves with others. They assume that because they are more religious, more moral, or less sinful than someone else, God will overlook their sins. But God's judgment is never based on comparison. It is based upon His perfect holiness and absolute truth.</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 2:2
+<br>
+"But we are sure that the judgment of God is according to truth against them which commit such things."
+</i></p>
+
+<p>Paul reminds us that God's judgment is according to truth. Human judgment is often influenced by outward appearances, emotions, personal opinions, or incomplete knowledge. We may misjudge people because we cannot see their hearts. God, however, knows every thought, every motive, every word, and every action. Nothing is hidden from Him.</p>
+
+<p>Because God is holy, His judgment is always righteous. He never makes mistakes, shows favoritism, or overlooks sin. Every verdict He renders is perfectly just because He sees the whole truth.</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 2:3
+<br>
+"And thinkest thou this, O man, that judgest them which do such things, and doest the same, that thou shalt escape the judgment of God?"
+</i></p>
+
+<p>Paul asks a penetrating question: "Do you think you will escape the judgment of God?" The obvious answer is no. Those who condemn the sins of others while practicing the same sins themselves are equally accountable before God.</p>
+
+<p>This passage warns us against self-righteousness. It is easy to expose the failures of others while excusing our own. We may criticize outward sins while ignoring pride, bitterness, envy, selfishness, or unbelief within our own hearts. God's judgment reaches far deeper than outward actions—it examines the heart.</p>
+
+<p>Rather than comparing ourselves with other people, we should compare ourselves with God's perfect standard. The more we understand His holiness, the more we realize our own need for His mercy. We all fall short of His glory and stand in need of His grace.</p>
+
+<p>God's judgment is certain, impartial, and according to truth. There is no position, reputation, religious background, or personal goodness that can exempt anyone from standing before Him. The only hope for sinful man is not his own righteousness, but the righteousness that God provides through Jesus Christ.</p>
+
+
+
+<h4>III. God's Goodness</h4>
+
+<p>After reminding us of God's righteous judgment, Paul now directs our attention to another wonderful attribute of God—His goodness. Although God is perfectly holy and just, He is also rich in goodness, forbearance, and longsuffering. Instead of giving sinners the judgment they immediately deserve, He patiently extends His mercy, giving them an opportunity to repent.</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 2:4
+<br>
+"Or despisest thou the riches of his goodness and forbearance and longsuffering; not knowing that the goodness of God leadeth thee to repentance?"
+</i></p>
+
+<p>The Apostle Paul asks another searching question: "Do you despise the riches of God's goodness?" To despise God's goodness is to treat His patience lightly. Many people mistake God's patience for His approval. Because judgment does not come immediately, they assume that God overlooks their sin or that they have plenty of time to change. But God's delay in judgment is not because He is indifferent to sin. Rather, it is because He is merciful.</p>
+
+<p>Every breath we take, every new day we receive, and every opportunity to hear the gospel is evidence of God's goodness. He continues to bless us even though we have sinned against Him. His goodness is intended to soften our hearts, not to encourage us to continue in sin.</p>
+
+<p>The Bible teaches that <i>"the goodness of God leadeth thee to repentance."</i> Repentance is more than simply feeling guilty. It is a change of mind that results in a change of direction. It is recognizing our sin before a holy God, turning away from it, and placing our faith in the Lord Jesus Christ.</p>
+
+<p>Sadly, many people reject God's goodness. They postpone repentance, believing there will always be another opportunity. Yet none of us knows what tomorrow holds. God's invitation to repent is extended today. While His goodness is abundant, His patience will not last forever. A day of judgment is coming for those who refuse His grace.</p>
+
+<p>As believers, we should never take God's goodness for granted. Instead, His mercy should produce gratitude, humility, and a greater desire to live in obedience to Him. The more we understand His grace, the more we should love Him and seek to honor Him with our lives.</p>
+
+<h4>Conclusion</h4>
+
+<p>Romans 2:1–4 reminds us that no one can stand before God on the basis of his own righteousness. Whether through religion, morality, or hypocrisy, every person falls short of God's perfect standard. God's judgment is righteous because it is according to truth, and no one can escape it through self-righteousness or comparison with others.</p>
+
+<p>Yet God, in His great mercy, has revealed His goodness. Instead of immediately judging sinners, He patiently calls them to repentance. Today is an opportunity to respond to His grace. Let us humble ourselves before Him, acknowledge our sin, and trust in the righteousness that is found only in the Lord Jesus Christ.</p>
+
+
+<p>God has patiently shown His goodness to each of us. Rather than relying on our own righteousness or delaying our response to Him, let us examine our hearts, repent of our sins, and live each day in grateful obedience to the One who is both perfectly holy and abundantly merciful.</p>
+
+
+
+    <border style="border-top:4px solid #9A3F3F; padding-left:200px; margin-left:0;">
+
+    <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+    <p style="color:#9A3F3F;"><i>
+    In what specific area of your life do you need to stop trusting your own righteousness and begin responding to God's goodness with genuine repentance?
+    </i></p>
+
+</border>
+
+
+</article>
+
+        `
+        },
+    {
        id: 6,
     slug: 'keep-your-heart',
 
