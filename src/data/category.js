@@ -1,6 +1,327 @@
 
 export const newsletter = [
     {
+       id: 20,
+    slug: 'my-god-and-my-love-life',
+
+    title: 'My God and My Love Life',
+
+    excerpt: "Knowing God's Character Before Pursuing Love",
+
+    date: 'July 9, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/03_keep.jpg',
+    
+    video:'https://www.youtube.com/embed/PAtoXC-EmLY?si=RhTI5SAFOSvjnEQD',
+
+    caption:'Youth Community | July 9, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'My God and My Love Life',
+      description: "Knowing God's Character Before Pursuing Love",
+      image:
+        '/newsletter/message/03_keep.jpg',
+    },
+  
+        content1: `
+<article>
+
+<p style="color:#9A3F3F;"><i>
+Text: Ruth 1:1–5
+
+<br>
+1 Now it came to pass in the days when the judges ruled, that there was a famine in the land. And a certain man of Bethlehemjudah went to sojourn in the country of Moab, he, and his wife, and his two sons.
+
+2 And the name of the man was Elimelech, and the name of his wife Naomi, and the name of his two sons Mahlon and Chilion, Ephrathites of Bethlehemjudah. And they came into the country of Moab, and continued there.
+
+3 And Elimelech Naomi's husband died; and she was left, and her two sons.
+
+4 And they took them wives of the women of Moab; the name of the one was Orpah, and the name of the other Ruth: and they dwelled there about ten years.
+
+5 And Mahlon and Chilion died also both of them; and the woman was left of her two sons and her husband.
+</i></p>
+
+<br>
+
+<h4>Introduction</h4>
+
+<p>
+One of the things I have learned as I have grown in the Lord is this: before knowing anyone else, God wants us first to know Him. Before entering into a relationship with another person, we must first have a relationship with God.
+</p>
+
+<p>
+I remember this saying:
+</p>
+
+<p><strong>"Find God before you find your love life."</strong></p>
+
+<p>
+Before Adam knew Eve, who did he know first? He knew God first. That teaches us an important principle. We should not seek another person before we seek the Lord. Our relationship with God must always come before our relationships with people.
+</p>
+
+<p>
+The Book of Ruth beautifully illustrates this truth. Before the love story of Ruth and Boaz unfolds, God first reveals His own character. The first lesson is this:
+</p>
+
+<br>
+
+<h4>I. God is a Righteous God</h4>
+
+<p style="color:#9A3F3F;"><i>
+Ruth 1:1
+</i></p>
+
+<p>
+The Bible opens the story of Ruth during the days of the Judges, a time when there was famine in Bethlehem, Judah. This is ironic because Bethlehem means <strong>"House of Bread,"</strong> a place known for its rich agricultural land. Yet despite its name, famine came upon the land.
+</p>
+
+<p>
+Why did this happen?
+</p>
+
+<p>
+The answer is found in the Book of Judges.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Judges 17:6
+
+<br>
+
+"In those days there was no king in Israel, but every man did that which was right in his own eyes."
+</i></p>
+
+<p>
+Israel had become a nation where everyone simply did what seemed right in his own eyes. Instead of following God's Word, they followed their own standards. Their morality was determined by personal opinion rather than by God's truth.
+</p>
+
+<p>
+Can you imagine a society where everyone decides for themselves what is right and wrong? That was exactly the condition of Israel during the time of the Judges. Such a society eventually falls into chaos because people reject God's authority.
+</p>
+
+<p>
+God had promised to bless Israel if they obeyed Him, but because of their continual disobedience, He allowed famine to come upon the land. The famine was not merely a natural disaster; it was a consequence of Israel's rebellion against God.
+</p>
+
+<p>
+Elimelech and his family left Bethlehem and traveled to Moab, a pagan nation, hoping to find a better life.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Ruth 1:2–3
+</i></p>
+
+<p>
+From a human perspective, their decision seems understandable. Many families today leave their homeland in search of better opportunities. However, in Israel's case, the famine itself was already God's discipline upon a disobedient nation.
+</p>
+
+<p>
+Instead of returning to the Lord, Elimelech sought another place to live. Yet tragedy still followed. Elimelech died, leaving Naomi alone with her two sons.
+</p>
+
+<p>
+The preacher emphasizes that this reveals an important truth about God's character: <strong>God is righteous.</strong> He is holy and just. He cannot simply overlook sin. If God ignored disobedience, He would no longer be the righteous God revealed in Scripture.
+</p>
+
+<p>
+God's judgment upon Israel reminds us that His holiness demands justice. Although He is loving and merciful, He is also righteous, and He deals with sin according to His perfect justice.
+</p>
+
+
+<br>
+
+<h4>II. God is Longsuffering</h4>
+
+<p style="color:#9A3F3F;"><i>
+Ruth 1:4–5
+<br>
+"And they took them wives of the women of Moab; the name of the one was Orpah, and the name of the other Ruth: and they dwelled there about ten years. And Mahlon and Chilion died also both of them; and the woman was left of her two sons and her husband."
+</i></p>
+
+<p>
+After Elimelech died, Mahlon and Chilion took wives from the women of Moab—Orpah and Ruth. They continued to live there for about ten years.
+</p>
+
+<p>
+The preacher emphasized that this was another act of disobedience. God had already given Israel instructions regarding marriage, yet they continued to disregard His commands. It was disobedience after disobedience.
+</p>
+
+<p>
+If God simply ignored the sins of His people, He would not be a righteous God. Because He is holy, He cannot overlook sin.
+</p>
+
+<p>
+However, notice that they lived in Moab for about <strong>ten years</strong>. Before God allowed judgment to come upon the family, He patiently endured with them. This reveals another wonderful truth about God's character—He is longsuffering.
+</p>
+
+<p>
+God did not immediately execute judgment. Instead, He gave them time. His patience demonstrated His mercy and His desire for people to return to Him.
+</p>
+
+<p>
+Eventually, Mahlon and Chilion also died, leaving Naomi without her husband and without her two sons.
+</p>
+
+<p>
+Although these events were painful, they revealed both the righteousness and the patience of God. God judges sin, but He is never hasty. He is longsuffering toward His people.
+</p>
+
+<p>
+The preacher also connected this truth to God's work of salvation. The reason Christ has not yet returned is because God is still patiently calling people to repentance. His longsuffering gives sinners the opportunity to come to Him.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Psalm 136:1
+<br>
+"O give thanks unto the LORD; for he is good: for his mercy endureth for ever."
+</i></p>
+
+<p>
+God's mercy endures forever. Even when He disciplines His people, His desire is not their destruction but their restoration. His patience reminds us that He is gracious, compassionate, and willing to receive those who turn back to Him.
+</p>
+
+
+<br>
+
+<h4>III. Jehovah-Jireh — God Provides</h4>
+
+<p style="color:#9A3F3F;"><i>
+Ruth 2:1–3
+<br>
+"And Naomi had a kinsman of her husband's, a mighty man of wealth, of the family of Elimelech; and his name was Boaz... And she went, and came, and gleaned in the field after the reapers: and her hap was to light on a part of the field belonging unto Boaz..."
+</i></p>
+
+<p>
+After Naomi returned to Bethlehem with Ruth, they were left with very little. As widows, they had no means of providing for themselves. According to the Law, the poor and the widows were allowed to glean the leftover grain after the harvest.
+</p>
+
+<p>
+Ruth simply went into the fields to gather grain for their daily needs. She was not looking for a husband, nor was she trying to arrange her own future. She was simply being faithful in the season where God had placed her.
+</p>
+
+<p>
+The Bible says that "her hap was to light" on the field belonging to Boaz. What appeared to be a coincidence was actually God's providence. The Lord was directing Ruth's steps all along.
+</p>
+
+<p>
+Boaz was a near kinsman of Elimelech's family. According to Jewish law, a near kinsman had the responsibility of acting as a kinsman-redeemer. Long before Ruth realized it, God had already prepared the person He would use to provide for her future.
+</p>
+
+<p>
+This reminds us that God is <strong>Jehovah-Jireh</strong>—the Lord who provides.
+</p>
+
+<p>
+Many young people become impatient, especially in the area of relationships. We often want God's blessings immediately, forgetting that God already knows what we need and when we need it.
+</p>
+
+<p>
+Ruth did not manipulate circumstances. She did not force a relationship with Boaz. She simply remained faithful in her responsibilities, and God orchestrated the events according to His perfect plan.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Ruth 2:11–12
+<br>
+"And Boaz answered and said unto her, It hath fully been shewed me, all that thou hast done unto thy mother in law since the death of thine husband... The LORD recompense thy work, and a full reward be given thee of the LORD God of Israel, under whose wings thou art come to trust."
+</i></p>
+
+<p>
+Boaz noticed Ruth's character before he ever considered her as a wife. He had heard of her faithfulness, her kindness toward Naomi, and her willingness to leave her own country to trust in the God of Israel.
+</p>
+
+<p>
+The preacher emphasized that while Ruth was single, she did not waste that season of her life. Instead, she grew in character, faithfully served Naomi, and trusted the Lord. She did not force God's timing. She simply remained faithful where God had placed her.
+</p>
+
+<p>
+This is the lesson for every believer. Waiting is not doing nothing. Waiting means faithfully serving God in the season He has given us. As we trust Him and remain faithful, He directs our steps and provides what is best in His perfect time.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Ruth 2:19–20
+<br>
+"And Naomi said unto her... The man's name with whom I wrought to day is Boaz. And Naomi said unto her daughter in law, Blessed be he of the LORD... the man is near of kin unto us, one of our next kinsmen."
+</i></p>
+
+<p>
+Naomi immediately recognized God's providence. Neither she nor Ruth forced the situation. They simply trusted the Lord, and God brought the right person into Ruth's life at the right time.
+</p>
+
+<p>
+When we know that God is Jehovah-Jireh, we can confidently surrender every area of our lives—including our future relationships—to Him. He knows what we need, He knows when we need it, and He faithfully provides according to His perfect will.
+</p>
+
+
+
+<br>
+
+<h4>Application</h4>
+
+<p>
+The Book of Ruth reminds us that before God writes our love story, He first wants us to know Him. Our greatest pursuit should never be a relationship with another person but a deeper relationship with God.
+</p>
+
+<p>
+If God is righteous, then we can trust His judgments. If God is longsuffering, then we can rest in His patience. If God is Jehovah-Jireh, then we can confidently believe that He will provide what we need in His perfect time.
+</p>
+
+<p>
+Like Ruth, we should not force the circumstances of our lives. Ruth did not manipulate events to meet Boaz. She simply remained faithful in the season where God had placed her. She faithfully cared for Naomi, diligently worked, and trusted the Lord. In God's perfect timing, He directed her steps and provided exactly what she needed.
+</p>
+
+<p>
+Waiting does not mean doing nothing. Waiting means faithfully serving God in the season He has given us. It means growing in our relationship with Him, developing godly character, serving others, and trusting Him with the future.
+</p>
+
+<p>
+Many people become impatient and try to control every area of their lives, especially their relationships. The more we force God's timing, the more painful the consequences often become. But when we surrender our plans to the Lord, we acknowledge that His ways are better than our own.
+</p>
+
+<p>
+If we truly believe that God is good, then we have every reason to entrust our future—including our love life—to Him.
+</p>
+
+<br>
+
+<h4>Conclusion</h4>
+
+<p>
+The story of Ruth begins not with a romance, but with a revelation of God's character. Before introducing Boaz, Scripture introduces the God who is righteous, longsuffering, and Jehovah-Jireh.
+</p>
+
+<p>
+These truths give us confidence to trust Him in every season of life. God knows what is best for us. He knows the right time, the right place, and the right person. Our responsibility is not to force His plan but to faithfully walk with Him each day.
+</p>
+
+<p>
+As we seek God first, grow in our relationship with Him, and remain faithful where He has placed us, we can trust that He will accomplish His perfect will for our lives—just as He did for Ruth.
+</p>
+
+<br>
+
+
+    <border style="border-top:4px solid #9A3F3F; padding-left:200px; margin-left:0;">
+
+    <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+    <p style="color:#9A3F3F;"><i>
+   How does your view of God as Jehovah Jireh (the Lord who provides) change the way you approach your love life? In what specific ways can you demonstrate trust in God's timing instead of trying to force your own plans? </i></p>
+
+</border>
+
+
+
+</article>
+        `
+
+        },
+    {
        id: 19,
     slug: 'the-holy-god',
 
