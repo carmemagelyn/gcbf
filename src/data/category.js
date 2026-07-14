@@ -1,6 +1,497 @@
 
 export const newsletter = [
     {
+       id: 21,
+    slug: 'the-pride-of-man-and-the-righteousness-of-god',
+
+    title: 'The Pride of Man and the Righteousness of God',
+
+    excerpt: "Romans Series: Man's Righteousness and God's Holiness",
+
+    date: 'July 12, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/03_faith.jpg',
+    
+    video:'https://www.youtube.com/embed/B8FPdXdqGuo',
+
+    caption:'Worship Service | July 12, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'The Pride of Man and the Righteousness of God',
+      description: "Series of Romans: Man's Righteousness and God's Holiness",
+      image:
+        '/newsletter/message/03_faith.jpg',
+    },
+  
+        content1: `
+<article>
+
+<p style="color:#9A3F3F;"><i>
+Text: Romans 3:23-28
+<br>
+"23 For all have sinned, and come short of the glory of God;
+
+24 Being justified freely by his grace through the redemption that is in Christ Jesus:
+
+25 Whom God hath set forth to be a propitiation through faith in his blood, to declare his righteousness for the remission of sins that are past, through the forbearance of God;
+
+26 To declare, I say, at this time his righteousness: that he might be just, and the justifier of him which believeth in Jesus.
+
+27 Where is boasting then? It is excluded. By what law? of works? Nay: but by the law of faith.
+
+28 Therefore we conclude that a man is justified by faith without the deeds of the law."
+</i></p>
+<br>
+
+<h4>Introduction</h4>
+
+<p>
+If you were here the last few Sundays, we started our series of lessons from the Book of Romans. We know that Romans is a beautiful book filled with rich doctrinal truths. Previously, we talked about man's righteousness and God's holiness.
+</p>
+
+<p>
+Before we understand salvation, we must first understand who God is and who we are. Unless we see the holiness of God, we will never truly recognize the seriousness of our sin.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Isaiah 6:3
+<br>
+"And one cried unto another, and said, Holy, holy, holy, is the LORD of hosts: the whole earth is full of his glory."
+</i></p>
+
+<p>
+The holiness of God means that He is absolutely pure, righteous, and without sin. Unfortunately, many people today emphasize only that God is loving while neglecting His holiness and justice.
+</p>
+
+<p>
+When people only see God as loving, they begin to justify their sins. They create a version of God that approves of their lifestyle instead of submitting themselves to the God revealed in Scripture.
+</p>
+
+<p>
+One of the dangers today is emphasizing only the attributes of God that make us comfortable while ignoring those that call us to repentance. We cannot truly know God unless we know that He is both loving and holy.
+</p>
+
+<p>
+Last Sunday we also learned about man's righteousness. Human righteousness is often nothing more than self-righteousness. It produces pride and a "holier-than-thou" attitude.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Luke 18:11
+<br>
+"The Pharisee stood and prayed thus with himself, God, I thank thee, that I am not as other men are, extortioners, unjust, adulterers, or even as this publican."
+</i></p>
+
+<p>
+The Pharisee believed he was righteous because he compared himself with other people. That is exactly what self-righteousness does. Instead of comparing ourselves with God's holiness, we compare ourselves with people whom we think are worse than us.
+</p>
+
+<p>
+The Book of Romans reveals the true condition of mankind. Men are not only sinners, but many even delight in sinful practices.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 1:32
+<br>
+"Who knowing the judgment of God, that they which commit such things are worthy of death, not only do the same, but have pleasure in them that do them."
+</i></p>
+
+<p>
+Sin is not merely a mistake; it is the greatest problem of mankind. Humanity has become comfortable with sin and even celebrates what God condemns.
+</p>
+
+
+<h4>I. The Problem — Man's Sinfulness</h4>
+
+<p>
+The real problem of mankind is not our environment, our education, or our circumstances. The real problem is sin. Sin originated with Lucifer when pride entered his heart.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Isaiah 14:12-14
+<br>
+"...I will ascend into heaven... I will exalt my throne above the stars of God... I will be like the most High."
+</i></p>
+
+<p>
+Lucifer desired to take God's place. Pride was the beginning of sin, and that same pride has entered the heart of man. Although God originally created man in His own image, sin corrupted humanity when Adam disobeyed God's command.
+</p>
+
+<p>
+A clear illustration of man's pride can be seen in the life of Marilyn Monroe. During the height of her fame, a well-known evangelist shared the gospel with her. Her response was, "I don't need your Jesus." Not long afterward, she was found dead. Whether famous or unknown, pride leads people to believe they do not need God.
+</p>
+
+<p>
+Sadly, even Christians struggle with this same attitude. There are mornings when we wake up and live as though we do not need God. We neglect prayer, neglect His Word, and depend upon ourselves instead of depending upon Him.
+</p>
+
+<p>
+This is exactly what man's righteousness produces—self-dependence instead of God-dependence.
+</p>
+
+<p>
+The Bible plainly declares that every person is a sinner.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 3:23
+<br>
+"For all have sinned, and come short of the glory of God;"
+</i></p>
+
+<p>
+Every one of us has fallen short of God's perfect standard. There is nothing within ourselves that can make us righteous before Him.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 3:10
+<br>
+"As it is written, There is none righteous, no, not one:"
+</i></p>
+
+<p>
+Our world teaches that people are naturally good, but the Bible teaches otherwise. Man is naturally sinful. Our hearts are inclined toward sin, not toward righteousness.
+</p>
+
+<p>
+This is exactly what happened during the time of the Judges.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Judges 21:25
+<br>
+"In those days there was no king in Israel: every man did that which was right in his own eyes."
+</i></p>
+
+<p>
+When people reject God as King, they become their own authority. Moral, social, and spiritual chaos follows because everyone decides for himself what is right.
+</p>
+
+<p>
+The Bible also tells us that even our best efforts cannot make us acceptable before God.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Isaiah 64:6
+<br>
+"But we are all as an unclean thing, and all our righteousnesses are as filthy rags..."
+</i></p>
+
+<p>
+There is no room for boasting. There is nothing we can be proud of before a holy God. Our own righteousness will never be enough to save us.
+</p>
+
+
+
+<h4>II. The Provision — Jesus Christ, God's Answer to Man's Greatest Problem</h4>
+
+<p>
+If sin is man's greatest problem, then what is God's provision? The answer is found in one Person—Jesus Christ. God did not leave mankind without hope. He provided His own Son as the only way for sinners to be reconciled to Him.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 3:24-25
+<br>
+"Being justified freely by his grace through the redemption that is in Christ Jesus: Whom God hath set forth to be a propitiation through faith in his blood..."
+</i></p>
+
+<p>
+Christ is God's ultimate provision for man's greatest need. Because God is holy and just, sin cannot simply be ignored. It must be judged. God did not overlook our sins or pretend they never happened. The penalty had to be paid.
+</p>
+
+<p>
+That is why Christ became our <b>propitiation</b>—our substitute. On the cross of Calvary more than two thousand years ago, Jesus willingly took our place and bore the punishment that we deserved.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+2 Corinthians 5:21
+<br>
+"For he hath made him to be sin for us, who knew no sin; that we might be made the righteousness of God in him."
+</i></p>
+
+<p>
+Jesus knew no sin, yet He became sin for us. He took upon Himself the judgment that belonged to us so that we could receive His righteousness.
+</p>
+
+<p>
+Sadly, many people think of Jesus only as a way to escape hell. While it is true that He saves us from eternal judgment, Christ is far more than an escape from punishment. Salvation is free, but it was never cheap. It cost the precious blood of the Son of God.
+</p>
+
+<p>
+Christ is not only our Savior; He is the most desirable Person in the universe. Many people seek fulfillment through achievements, relationships, possessions, or success, but none of these can truly satisfy the deepest needs of the heart.
+</p>
+
+<p>
+As C.S. Lewis wisely said:
+</p>
+
+<p style="margin-left:25px;">
+"Don't let your happiness depend on something you may lose."
+</p>
+
+<p>
+Everything this world offers can be taken away. Only Christ can satisfy the emptiness that every human heart experiences.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 5:8
+<br>
+"But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us."
+</i></p>
+
+<p>
+God demonstrated His love by giving His Son for us. Jesus willingly died in our place so that we might be forgiven and reconciled to God.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+1 Timothy 2:5-6
+<br>
+"For there is one God, and one mediator between God and men, the man Christ Jesus; Who gave himself a ransom for all..."
+</i></p>
+
+<p>
+Because sin separated us from God, Christ became the only Mediator between God and man. He gave Himself as our ransom so that we could once again have fellowship with God.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+John 6:35
+<br>
+"And Jesus said unto them, I am the bread of life: he that cometh to me shall never hunger; and he that believeth on me shall never thirst."
+</i></p>
+
+<p>
+Jesus offers more than forgiveness—He offers true satisfaction. If we desire fullness of life, we must allow Christ not only to be our Savior but also the Lord of our lives.
+</p>
+
+
+
+<p style="color:#9A3F3F;"><i>
+Text: Romans 3:24–26
+<br>
+"Being justified freely by his grace through the redemption that is in Christ Jesus:
+Whom God hath set forth to be a propitiation through faith in his blood, to declare his righteousness for the remission of sins that are past, through the forbearance of God;
+To declare, I say, at this time his righteousness: that he might be just, and the justifier of him which believeth in Jesus."
+</i></p>
+
+<br>
+
+<h4>III. The Provision</h4>
+
+<p>
+After seeing the problem of man, Paul now points us to God's only solution. Man cannot save himself because all have sinned and come short of the glory of God. Our righteousness can never satisfy God's holy standard. Therefore, God Himself provided the answer to mankind's greatest problem—Jesus Christ.
+</p>
+
+<p>
+Romans 3:24-26 tells us that we are justified freely by God's grace through the redemption that is found in Christ Jesus. Salvation is not something we earn through good works or religion. It is a gift made possible because Jesus paid the price for our sins.
+</p>
+
+<p>
+God did not simply overlook sin. Because He is holy and just, sin had to be punished. His justice demanded payment. That payment was completely satisfied when Jesus Christ became the propitiation—the substitute—for our sins on the cross.
+</p>
+
+<p>
+As 2 Corinthians 5:21 declares:
+</p>
+
+<p style="color:#9A3F3F;"><i>
+"For he hath made him to be sin for us, who knew no sin; that we might be made the righteousness of God in him."
+</i></p>
+
+<p>
+Jesus, who was perfectly sinless, willingly bore our sins so that we could receive His righteousness. The punishment that belonged to us was poured out upon Him at Calvary.
+</p>
+
+<p>
+Many people only think of Jesus as a way to escape hell. While trusting Christ certainly brings salvation, He is far more than an escape from judgment. Salvation is free to us, but it was not cheap. It cost the precious blood of the Son of God.
+</p>
+
+<p>
+Christ is not only God's provision for our forgiveness—He is also the satisfaction of our deepest need. Many people seek fulfillment through success, achievements, wealth, or relationships, but none of these can truly satisfy the heart.
+</p>
+
+<p>
+As C.S. Lewis wisely said:
+</p>
+
+<p style="padding-left:20px;"><i>
+"Don't let your happiness depend on something you may lose."
+</i></p>
+
+<p>
+Only Christ can fill the emptiness within us. As Jesus said in John 6:35:
+</p>
+
+<p style="color:#9A3F3F;"><i>
+"I am the bread of life: he that cometh to me shall never hunger; and he that believeth on me shall never thirst."
+</i></p>
+
+<p>
+The problem for many believers is that they still want to remain in control of their own lives. Instead of surrendering to Christ, they continue to pursue satisfaction in temporary things. But true joy is only found when Christ becomes the Lord of our lives.
+</p>
+
+<p>
+Romans 5:8 reminds us of God's incredible love:
+</p>
+
+<p style="color:#9A3F3F;"><i>
+"But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us."
+</i></p>
+
+<p>
+Jesus willingly became our ransom and our Mediator between God and man.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+"For there is one God, and one mediator between God and men, the man Christ Jesus;
+Who gave himself a ransom for all..."
+<br>— 1 Timothy 2:5-6
+</i></p>
+
+<p>
+Because of Christ, the broken relationship caused by sin can now be restored. He is God's greatest provision for mankind's greatest problem.
+</p>
+
+<p>
+Just as blind Bartimaeus cried out to Jesus because he knew only Christ could heal him (Mark 10:46-52), we must also come to Christ, recognizing that only He can satisfy the deepest longing of our souls.
+</p>
+
+<p>
+Jesus is not merely the way to avoid judgment. He is the greatest treasure anyone could ever possess—the only One who can truly satisfy the human heart.
+</p>
+
+
+<p style="color:#9A3F3F;"><i>
+Text: Romans 3:27–28
+<br><br>
+"Where is boasting then? It is excluded. By what law? of works? Nay: but by the law of faith.
+Therefore we conclude that a man is justified by faith without the deeds of the law."
+</i></p>
+
+<br>
+
+<h4>IV. The Privilege</h4>
+
+<p>
+After understanding the problem of sin and God's provision through Jesus Christ, Paul now points us to the wonderful privilege that belongs to every believer. It is a privilege—not a right—to become a child of God. We do not deserve it because we are sinners, but God graciously offers it through Christ.
+</p>
+
+<p>
+Romans 3:27 asks, <i>"Where is boasting then?"</i> The answer is simple: <strong>It is excluded.</strong> There is no room for pride because our salvation is not based on our own goodness, religious activities, or good works. It is received only through faith in Jesus Christ.
+</p>
+
+<p>
+Verse 28 concludes:
+</p>
+
+<p style="color:#9A3F3F;"><i>
+"Therefore we conclude that a man is justified by faith without the deeds of the law."
+</i></p>
+
+<p>
+Many people believe that being religious is enough to make them right before God. However, no amount of religion, morality, or good works can remove sin. Even the Pharisees, who were outwardly religious, were rebuked by Christ because they trusted in their own righteousness instead of God's grace.
+</p>
+
+<p>
+The moment a person places his faith in Jesus Christ, God gives him the privilege of becoming His child.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+"That we might receive the adoption of sons... And because ye are sons, God hath sent forth the Spirit of his Son into your hearts, crying, Abba, Father."
+<br>— Galatians 4:5–6
+</i></p>
+
+<p>
+When we trust Christ as our Lord and Savior, the Holy Spirit comes to dwell within us. Although we may not always experience dramatic emotions, God's Word assures us that His Spirit lives in every believer.
+</p>
+
+<p>
+The Bible also says:
+</p>
+
+<p style="color:#9A3F3F;"><i>
+"The Spirit itself beareth witness with our spirit, that we are the children of God."
+<br>— Romans 8:16
+</i></p>
+
+<p>
+What an amazing privilege! We who were once separated from God because of sin have now been adopted into His family through Jesus Christ. We are no longer strangers but sons and daughters of God, and heirs together with Christ.
+</p>
+
+<p>
+This privilege can be illustrated through the life of Moses. Although he was born a Hebrew slave, he was adopted by Pharaoh's daughter and became part of the royal family (Exodus 2:5–10). In a far greater way, God has adopted us into His own family. We did nothing to deserve this privilege—it is entirely because of His grace.
+</p>
+
+<p>
+Knowing this truth should completely remove our pride. Since our salvation is entirely God's work, there is nothing left for us to boast about. Instead, our hearts should overflow with gratitude and worship.
+</p>
+
+<br>
+
+<h4>Conclusion</h4>
+
+<p>
+Romans chapter 3 presents three wonderful truths about the gospel:
+</p>
+
+<ul>
+<li><strong>The Problem:</strong> Every person is a sinner and falls short of God's glory. Human righteousness can never save us.</li>
+<li><strong>The Provision:</strong> Jesus Christ became our substitute, paying the penalty for our sins through His death on the cross.</li>
+<li><strong>The Privilege:</strong> Through faith in Christ alone, we are justified, adopted into God's family, and become His children.</li>
+</ul>
+
+<p>
+The world teaches us to trust in ourselves, our achievements, and our own goodness. But God's Word teaches us to humble ourselves before Him, recognizing that salvation is entirely by grace through faith in Jesus Christ.
+</p>
+
+<p>
+Seeing God's holiness and experiencing His righteousness should move every believer to live a life that honors Him.
+</p>
+
+<br>
+
+<h4>Application</h4>
+
+<ol>
+<li>
+<strong>Seeing God's righteousness should humble us.</strong><br>
+There is no room for pride because our salvation is not based on our goodness but entirely on God's grace.
+</li>
+
+<li>
+<strong>Seeing God's righteousness should lead us to live for Christ.</strong><br>
+Since Christ gave His life for us, we should no longer live for ourselves but surrender our lives completely to Him.
+</li>
+
+<li>
+<strong>Seeing God's righteousness should move us to serve God faithfully.</strong><br>
+Our short lives are best spent serving the One who loved us, redeemed us, and made us His children.
+</li>
+</ol>
+
+<br>
+
+
+    <border style="border-top:4px solid #9A3F3F; padding-left:200px; margin-left:0;">
+
+    <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+    <p style="color:#9A3F3F;"><i>
+    In what specific area of your life do you need to stop trusting your own righteousness and begin responding to God's goodness with genuine repentance?
+    </i></p>
+
+</border>
+
+
+</article>
+
+        `
+        },
+    {
        id: 20,
     slug: 'my-god-and-my-love-life',
 
