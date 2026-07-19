@@ -1,6 +1,392 @@
 
 export const newsletter = [
     {
+       id: 20,
+    slug: 'my-god-and-my-love-life',
+
+    title: 'My God and My Love Life (Part 2)',
+
+    excerpt: "Knowing God's Character Before Pursuing Love",
+
+    date: 'July 16, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/03_keep.jpg',
+    
+    video:'https://www.youtube.com/embed/LLTQNgevWXw',
+
+    caption:'Youth Community | July 16, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'My God and My Love Life',
+      description: "Knowing God's Character Before Pursuing Love",
+      image:
+        '/newsletter/message/03_keep.jpg',
+    },
+  
+        content1: `
+<article>
+
+  <p style="color:#9A3F3F;"><i>
+
+    Theme Verse: 
+"Keep thy heart with all diligence; for out of it are the issues of life." – Proverbs 4:23
+
+  </i></p>
+
+<p style="color:#9A3F3F;"><i>
+Text: Ruth 3:1-18
+
+<br>
+
+1 Then Naomi her mother in law said unto her, My daughter, shall I not seek rest for thee, that it may be well with thee?
+
+<br>
+
+2 And now is not Boaz of our kindred, with whose maidens thou wast? Behold, he winnoweth barley to night in the threshingfloor.
+
+<br>
+
+3 Wash thyself therefore, and anoint thee, and put thy raiment upon thee, and get thee down to the floor: but make not thyself known unto the man, until he shall have done eating and drinking.
+
+<br>
+
+4 And it shall be, when he lieth down, that thou shalt mark the place where he shall lie, and thou shalt go in, and uncover his feet, and lay thee down; and he will tell thee what thou shalt do.
+
+<br>
+
+5 And she said unto her, All that thou sayest unto me I will do.
+<br>
+
+6 And she went down unto the floor, and did according to all that her mother in law bade her.
+
+<br>
+
+7 And when Boaz had eaten and drunk, and his heart was merry, he went to lie down at the end of the heap of corn: and she came softly, and uncovered his feet, and laid her down.
+
+<br>
+
+8 And it came to pass at midnight, that the man was afraid, and turned himself: and, behold, a woman lay at his feet.
+
+<br>
+
+9 And he said, Who art thou? And she answered, I am Ruth thine handmaid: spread therefore thy skirt over thine handmaid; for thou art a near kinsman.
+<br>
+10 And he said, Blessed be thou of the Lord, my daughter: for thou hast shewed more kindness in the latter end than at the beginning, inasmuch as thou followedst not young men, whether poor or rich.
+<br>
+11 And now, my daughter, fear not; I will do to thee all that thou requirest: for all the city of my people doth know that thou art a virtuous woman.
+<br>
+12 And now it is true that I am thy near kinsman: howbeit there is a kinsman nearer than I.
+<br>
+13 Tarry this night, and it shall be in the morning, that if he will perform unto thee the part of a kinsman, well; let him do the kinsman's part: but if he will not do the part of a kinsman to thee, then will I do the part of a kinsman to thee, as the Lord liveth: lie down until the morning.
+<br>
+14 And she lay at his feet until the morning: and she rose up before one could know another. And he said, Let it not be known that a woman came into the floor.
+<br>
+15 Also he said, Bring the vail that thou hast upon thee, and hold it. And when she held it, he measured six measures of barley, and laid it on her: and she went into the city.
+<br>
+16 And when she came to her mother in law, she said, Who art thou, my daughter? And she told her all that the man had done to her.
+<br>
+17 And she said, These six measures of barley gave he me; for he said to me, Go not empty unto thy mother in law.
+<br>
+18 Then said she, Sit still, my daughter, until thou know how the matter will fall: for the man will not be in rest, until he have finished the thing this day.
+</i></p>
+
+<br>
+
+<h4>I. Guard Your Heart by Seeking God's Will</h4>
+
+<p>
+The Bible commands every one of us to guard our hearts. Keeping our hearts is not the responsibility of our parents, our friends, or anyone else. It is our own responsibility because the issues of life flow from the heart. One of the greatest areas where we must guard our hearts is in our relationships. As we have learned throughout this series, we must first find God before we seek our love life.
+</p>
+
+<p>
+Before we continue into chapter three, let us briefly remember what has happened in the previous chapters. Naomi, together with her husband Elimelech and their two sons, left Bethlehem because of the famine in the land and traveled to Moab. While they were there, tragedy struck their family. Elimelech died, and eventually both of Naomi's sons also died, leaving Naomi, Ruth, and Orpah as widows. When Naomi heard that the Lord had once again blessed Bethlehem with bread, she decided to return home. She encouraged both of her daughters-in-law to remain in Moab, but while Orpah returned to her own people, Ruth remained faithful to Naomi and declared, "Thy people shall be my people, and thy God my God."
+</p>
+
+<p>
+When Naomi and Ruth arrived in Bethlehem, Ruth began gleaning in the fields to provide food for them. By God's providence, she came to the field of Boaz, one of the near kinsmen of Elimelech's family. Boaz showed kindness to Ruth, and Naomi immediately recognized that God was already working behind the scenes. That brings us to chapter three.
+</p>
+
+<p>
+The chapter opens with Naomi saying to Ruth,
+</p>
+
+<p style="color:#9A3F3F;"><i>
+"My daughter, shall I not seek rest for thee, that it may be well with thee?"
+</i></p>
+
+<p>
+Naomi was genuinely concerned about Ruth's future. She did not want Ruth to remain a widow for the rest of her life. She desired that Ruth would find rest—a settled home, security, and a husband who would care for her. There was a loving sense of responsibility in Naomi's heart toward her daughter-in-law.
+</p>
+
+<p>
+Naomi then reminded Ruth that Boaz was one of their near kinsmen and that he would be at the threshing floor that evening. During harvest season, the workers stayed at the threshing floor because that was where the grain was separated from the chaff, and they remained there through the night to guard the harvest from thieves. Boaz was there because it was the time of harvest.
+</p>
+
+<p>
+To understand this chapter correctly, we must also understand the law concerning the kinsman-redeemer.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Deuteronomy 25:5–6
+
+<br>
+
+"If brethren dwell together, and one of them die, and have no child, the wife of the dead shall not marry without unto a stranger: her husband's brother shall go in unto her, and take her to him to wife, and perform the duty of an husband's brother unto her."
+</i></p>
+
+<p>
+According to God's law, when a married man died without children, one of his nearest relatives had the responsibility of marrying the widow so that the family name and inheritance would continue in Israel. This responsibility belonged to the kinsman-redeemer. Boaz was one of those qualified to fulfill that responsibility for Ruth.
+</p>
+
+<p>
+Knowing this, Naomi instructed Ruth to wash herself, anoint herself, put on her garments, and go down to the threshing floor after Boaz had finished eating and drinking. She was to observe where Boaz lay down, uncover his feet, and lie there. To modern readers, this passage can easily be misunderstood, but we must read it according to the customs of Israel during that time. Naomi was not encouraging Ruth to do anything immoral. Rather, this was a respectful and symbolic way of asking Boaz to fulfill his responsibility as a kinsman-redeemer according to God's law.
+</p>
+
+<p>
+The uncovering of Boaz's feet was not an act of seduction but a humble request. Naomi, being a godly woman, would never have instructed Ruth to compromise her purity. Instead, she was directing Ruth to follow God's established order. Ruth trusted Naomi's wisdom and responded with a beautiful spirit of humility and obedience.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Ruth 3:5
+
+<br>
+
+"And she said unto her, All that thou sayest unto me I will do."
+</i></p>
+
+<p>
+Ruth did not argue or insist on doing things her own way. She willingly submitted to wise counsel and trusted the Lord's leading. Even before we see what happens between Ruth and Boaz, we already learn an important lesson about guarding our hearts. Instead of forcing circumstances or following our emotions, we should humbly submit ourselves to God's Word and trust His timing.
+</p>
+
+<br>
+
+<h4>II. Guard Your Heart by Living a Virtuous Life</h4>
+
+<p>
+Ruth faithfully followed Naomi's instructions and went down to the threshing floor, doing exactly as her mother-in-law had told her. After Boaz had finished eating and drinking, he lay down at the end of the heap of grain to rest for the night. As was the custom during harvest season, he remained there to guard the harvested grain from thieves. Quietly and respectfully, Ruth came to the place where Boaz was lying, uncovered his feet, and lay down.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Ruth 3:6–9
+
+<br>
+
+6 And she went down unto the floor, and did according to all that her mother in law bade her.
+
+<br><br>
+
+7 And when Boaz had eaten and drunk, and his heart was merry, he went to lie down at the end of the heap of corn: and she came softly, and uncovered his feet, and laid her down.
+
+<br><br>
+
+8 And it came to pass at midnight, that the man was afraid, and turned himself: and, behold, a woman lay at his feet.
+
+<br><br>
+
+9 And he said, Who art thou? And she answered, I am Ruth thine handmaid: spread therefore thy skirt over thine handmaid; for thou art a near kinsman.
+</i></p>
+
+<p>
+At midnight, Boaz awoke and was surprised to find a woman lying at his feet. Naturally, he asked, "Who art thou?" Ruth answered, "I am Ruth thine handmaid." She then made her request, "Spread therefore thy skirt over thine handmaid; for thou art a near kinsman."
+</p>
+
+<p>
+It is important that we understand this passage according to the customs of Israel and not according to modern thinking. Some people read this passage and immediately assume that Ruth was trying to seduce Boaz or that Naomi instructed her to do something immoral. That is not the point of the passage at all.
+</p>
+
+<p>
+Naomi was a godly woman. She would never encourage Ruth to commit sin. The uncovering of Boaz's feet was a symbolic act recognized in Jewish culture. Ruth was not making an immoral advance toward Boaz. Instead, she was respectfully asking him to fulfill his responsibility as one of the near kinsmen—to become her kinsman-redeemer according to God's law.
+</p>
+
+<p>
+Remember what we learned in chapter two. There was already mutual respect between Boaz and Ruth. Boaz had seen Ruth's kindness toward Naomi, her diligence in the fields, and her humble spirit. Ruth, in turn, had seen Boaz's generosity and godly character. This moment was not the beginning of their acquaintance but the continuation of what God had already been doing in their lives.
+</p>
+
+<p>
+Boaz immediately understood the meaning of Ruth's request because he was familiar with the law concerning the kinsman-redeemer. Under God's law, a near relative had both the privilege and the responsibility of redeeming the inheritance of a deceased family member and caring for the widow so that the family line would continue.
+</p>
+
+<p>
+When Boaz responded, his words revealed not only his understanding of God's law but also his admiration for Ruth's character.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Ruth 3:10–11
+
+<br>
+
+10 And he said, Blessed be thou of the LORD, my daughter: for thou hast shewed more kindness in the latter end than at the beginning, inasmuch as thou followedst not young men, whether poor or rich.
+
+<br><br>
+
+11 And now, my daughter, fear not; I will do to thee all that thou requirest: for all the city of my people doth know that thou art a virtuous woman.
+</i></p>
+
+<p>
+Instead of questioning Ruth's intentions, Boaz praised her. He acknowledged that she had shown even greater kindness now than before because she had not pursued younger men, whether rich or poor. Ruth could have sought someone else to marry, but instead she chose to honor God's design and patiently waited for His will to be accomplished.
+</p>
+
+<p>
+The preacher emphasizes that Ruth never lived as an immoral woman. There was no evidence of a loose lifestyle in her testimony. She guarded her heart. In a world where many people encourage relationships that ignore God's standards, Ruth chose purity instead of passion, obedience instead of impulse, and God's will instead of her own desires.
+</p>
+
+<p>
+This is a lesson especially for young men and young women today. When the time comes to marry, do not simply look for someone who is attractive, wealthy, or popular. Seek someone who is godly. A relationship built on appearance or emotion may not last, but a relationship built on godly character has a firm foundation.
+</p>
+
+<p>
+Boaz had already observed Ruth long before this night. He had seen her faithfulness in caring for Naomi, her humility in serving others, and her trust in the God of Israel. Because of the consistent testimony of her life, Boaz could confidently say,
+</p>
+
+<p style="color:#9A3F3F;"><i>
+"...for all the city of my people doth know that thou art a virtuous woman."
+</i></p>
+
+<p>
+Notice that Boaz did not say that only he knew her character. He said that the entire city knew she was a virtuous woman. Her testimony had become known throughout Bethlehem. She possessed high moral values. She lived a life of purity and integrity. Her character was evident to everyone around her.
+</p>
+
+<p>
+This reminds us that godly character is not developed overnight. It is built day after day through faithful obedience to God. Before Ruth became Boaz's wife, she first became known as a virtuous woman. Her reputation was established long before her relationship with Boaz ever developed.
+</p>
+
+<h4>III. Trust God Instead of Forcing His Timing</h4>
+
+<p style="color:#9A3F3F;"><i>
+Ruth 3:12–18
+</i></p>
+
+<p>
+Boaz then revealed something that Ruth probably did not expect. Although he was willing to become her kinsman-redeemer, there was another relative who was nearer than he was. According to the law, that nearer kinsman had the first right to redeem Ruth.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Ruth 3:12–13
+<br>
+"And now it is true that I am thy near kinsman: howbeit there is a kinsman nearer than I. Tarry this night, and it shall be in the morning, that if he will perform unto thee the part of a kinsman, well; let him do the kinsman's part: but if he will not do the part of a kinsman to thee, then will I do the part of a kinsman to thee, as the LORD liveth..."
+</i></p>
+
+<p>
+Boaz demonstrated remarkable godly character. Although he loved Ruth and desired to fulfill the role of kinsman-redeemer, he refused to force his own way. He respected God's law and waited for the proper process to take place. If the nearer kinsman chose to redeem Ruth, Boaz would accept it. But if that man refused, then Boaz would gladly fulfill the responsibility himself.
+</p>
+
+<p>
+This teaches an important lesson, especially in matters of the heart. When emotions are involved, we often allow our feelings to control our decisions. We tend to justify our actions because we believe our emotions are enough to determine what is right. Yet Boaz reminds us that a godly person does not allow emotions to overrule obedience to God. Instead, he patiently waits for God's will to unfold.
+</p>
+
+<p>
+Many people today force relationships because they fear losing someone they love. They manipulate situations, ignore biblical principles, or rush ahead because they believe waiting will cause them to miss their opportunity. Boaz did the exact opposite. He trusted the Lord enough to wait.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Ruth 3:14–17
+</i></p>
+
+<p>
+Ruth remained at Boaz's feet until morning. Before she left, Boaz gave her six measures of barley to bring home to Naomi. This generous gift assured Naomi that Boaz intended to fulfill his responsibility and that he would not neglect the matter.
+</p>
+
+<p>
+When Ruth returned home and told Naomi everything that had happened, Naomi gave her wise counsel.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Ruth 3:18
+<br>
+"Then said she, Sit still, my daughter, until thou know how the matter will fall: for the man will not be in rest, until he have finished the thing this day."
+</i></p>
+
+<p>
+Naomi's instruction is perhaps one of the greatest lessons in this chapter: <strong>"Sit still."</strong> Instead of taking matters into their own hands, Naomi encouraged Ruth to wait patiently and trust that God was already working.
+</p>
+
+<p>
+Many of the broken relationships experienced by young people today happen because they cannot wait on God's timing. They want to control every outcome instead of trusting the Lord. We often believe we know what is best, yet God asks us simply to trust Him.
+</p>
+
+<p>
+Waiting is never easy, especially when emotions are involved. Yet sometimes the most spiritual thing we can do is to remain still before the Lord and allow Him to accomplish His perfect will.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Psalm 46:10
+<br>
+"Be still, and know that I am God..."
+</i></p>
+
+<p>
+Before we can truly guard our hearts, we must first know God. Ruth learned this in chapter one when she declared to Naomi,
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Ruth 1:16
+<br>
+"...thy people shall be my people, and thy God my God."
+</i></p>
+
+<p>
+The more we know God, the more we learn to trust Him. When we know His character, we no longer feel the need to manipulate circumstances or force our own plans.
+</p>
+
+<p>
+The preacher also reminded us of Israel standing before the Red Sea. The people were trapped and could do nothing except trust the Lord.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Exodus 14:13
+<br>
+"Fear ye not, stand still, and see the salvation of the LORD..."
+</i></p>
+
+<p>
+Just as Israel had to stand still and trust God, we too must learn to trust Him with every area of our lives, especially our relationships. Instead of forcing doors open, we should surrender our future to the Lord, believing that His timing is always perfect.
+</p>
+
+<p>
+The central lesson of Ruth chapter 3 is that guarding our hearts means surrendering our emotions to God. Rather than manipulating situations or following our feelings, we choose to know God, trust His wisdom, wait upon His timing, and believe that His plans are always better than our own.
+</p>
+
+<br>
+
+<h4>Conclusion</h4>
+
+<p>
+Ruth chapter 3 teaches us what it truly means to guard our hearts. Naomi desired rest and a secure future for Ruth, but neither she nor Ruth attempted to accomplish God's plan through sinful means. Boaz, likewise, refused to force his own desires and chose instead to honor God's law and wait for His timing.
+</p>
+
+<p>
+Throughout this chapter, we see three important truths. First, we must guard our hearts by pursuing God's will above our own desires. Second, we must cultivate a godly character, just as Ruth was known throughout Bethlehem as a virtuous woman. Finally, we must trust God's perfect timing instead of trying to control the outcome ourselves.
+</p>
+
+<p>
+When we truly know God, we can confidently surrender every area of our lives—including our relationships—into His hands. We do not need to manipulate circumstances, because God is already working on our behalf. Our responsibility is simply to remain faithful, obey His Word, and patiently wait for His perfect plan to unfold.
+</p>
+
+<br>
+
+
+    <border style="border-top:4px solid #9A3F3F; padding-left:200px; margin-left:0;">
+
+    <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+    <p style="color:#9A3F3F;"><i>
+   In what areas of your life are you tempted to take control instead of trusting God's timing? How can Ruth, Boaz, and Naomi's example encourage you to guard your heart by patiently waiting and obeying God's will? </i></p>
+
+</border>
+
+
+
+</article>
+        `
+
+        },
+    {
        id: 21,
     slug: 'the-pride-of-man-and-the-righteousness-of-god',
 
@@ -495,7 +881,7 @@ Our short lives are best spent serving the One who loved us, redeemed us, and ma
        id: 20,
     slug: 'my-god-and-my-love-life',
 
-    title: 'My God and My Love Life',
+    title: 'My God and My Love Life (Part 1)',
 
     excerpt: "Knowing God's Character Before Pursuing Love",
 
