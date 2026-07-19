@@ -2,11 +2,11 @@
 export const newsletter = [
     {
        id: 20,
-    slug: 'my-god-and-my-love-life',
+    slug: 'my-god-and-my-love-life-part-2',
 
     title: 'My God and My Love Life (Part 2)',
 
-    excerpt: "Knowing God's Character Before Pursuing Love",
+    excerpt: "Trusting God with the Matters of Your Heart",
 
     date: 'July 16, 2026',
 
@@ -23,8 +23,8 @@ export const newsletter = [
     type: 'message',
 
     seo: {
-      title: 'My God and My Love Life',
-      description: "Knowing God's Character Before Pursuing Love",
+      title: 'My God and My Love Life (Part 2)',
+      description: "Trusting God with the Matters of Your Heart",
       image:
         '/newsletter/message/03_keep.jpg',
     },
