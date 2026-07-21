@@ -306,7 +306,7 @@ useHead({
       </div>
 
       <!-- EXCERPT -->
-      <p class="excerpt d-block text-center mb-5">
+      <p class="excerpt text-center mb-5" style="font-size: 1.25rem; font-weight: 500; color: #595959; letter-spacing: .15px; word-spacing: .5px;">
         {{ post.excerpt }}
       </p>
 
