@@ -39,24 +39,25 @@ onMounted(() => {
       </div>
     </section>
 
-    <div class="container py-3">
+    <div class="container py-3" style="line-height: 1.5;">
       <article class="program-page">
-        <section class="program-intro mt-4 mb-4" style="line-height: 1.5;">
+        <section text-muted class="program-intro mt-4 mb-4">
           <h2 class="h4" style="color:#537D5D ;">Program Features</h2>
-          
-          <ul text-black style="line-height: 1.5;">
+          <p>
+          <ul>
             <li>Online Bible lessons and assignments</li>
             <li>Flexible, self-paced learning</li>
             <li>Instructor support</li>
             <li>Diploma in Bible curriculum</li>
             <li>Access to the Bible Correspondence Portal</li>
           </ul>
+          </p>
         </section>
 
         <hr />
-        <section class="program-intro mt-4 mb-4">
+        <section text-muted class="program-intro mt-4 mb-4">
           <h2 class="h4" style="color: #537D5D;">Curriculum</h2>
-          
+          <p>
           <ul>
             <li>Theology</li>
             <li>Christology</li>
@@ -71,11 +72,12 @@ onMounted(() => {
             <li>Other Course Subjects*</li>
 
           </ul>
+          </p>
         </section>
 
         <hr />
 
-        <section class="face-to-face mt-4 mb-4">
+        <section text-muted class="face-to-face mt-4 mb-4">
           <h2 class="h4" style="color: #537D5D;">Additional Face-to-Face Learning Sessions</h2>
           <p>
             Students who desire personal interaction and classroom discussion are welcome to attend our weekly learning sessions.
@@ -91,7 +93,7 @@ onMounted(() => {
         </section>
 
         <hr />
-         <section class="program-intro mt-4 mb-4">
+         <section text-muted class="program-intro mt-4 mb-4">
           <h2 class="h4" style="color: #537D5D;">For Inquiries</h2>
           <p>
             Please message us through our Facebook page:  <a href="https://www.facebook.com/gracedcommunitybiblefellowship" target="_blank" class="footer">
@@ -105,7 +107,7 @@ onMounted(() => {
 
         <hr />
 
-        <section class="meet-the-team mt-5 mb-5">
+        <section text-muted class="meet-the-team mt-5 mb-5">
           <h2>Meet the Team</h2>
 
           <div class="team-grid mt-2">
