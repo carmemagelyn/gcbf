@@ -296,11 +296,11 @@ useHead({
             {{ isMessage ? 'Message by' : 'Written by' }}
           </small>
 
-          <p
-            class="fw-semibold d-block mb-0 author-name"
+          <small
+            class="fw-semibold d-block mb-0 author-label"
           >
             {{ post.author }}
-          </p>
+        </small>
         </div>
 
       </div>
