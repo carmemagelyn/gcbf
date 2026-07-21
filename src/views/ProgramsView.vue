@@ -41,7 +41,7 @@ onMounted(() => {
 
     <div class="container py-3" style="line-height: 1.5;">
       <article class="program-page">
-        <section text-muted class="program-intro mt-4 mb-4">
+        <section class="program-intro mt-4 mb-4">
           <h2 class="h4" style="color:#537D5D ;">Program Features</h2>
 
           <ul class="program-features" style="line-height: 1.5;">
@@ -54,7 +54,7 @@ onMounted(() => {
         </section>
 
         <hr />
-        <section text-muted class="program-intro mt-4 mb-4">
+        <section class="program-intro mt-4 mb-4">
           <h2 class="h4" style="color: #537D5D;">Curriculum</h2>
 
           <ul class="program-curriculum" style="line-height: 1.5;">
@@ -74,7 +74,7 @@ onMounted(() => {
 
         <hr />
 
-        <section text-muted class="face-to-face mt-4 mb-4">
+        <section class="face-to-face mt-4 mb-4">
           <h2 class="h4" style="color: #537D5D;">Additional Face-to-Face Learning Sessions</h2>
           <p class="program-description" style="line-height: 1.5;">
             Students who desire personal interaction and classroom discussion are welcome to attend our weekly learning sessions.
@@ -90,7 +90,7 @@ onMounted(() => {
         </section>
 
         <hr />
-         <section text-muted class="program-intro mt-4 mb-4">
+         <section class="program-intro mt-4 mb-4">
           <h2 class="h4" style="color: #537D5D;">For Inquiries</h2>
           <p class="program-description" style="line-height: 1.5;">
             Please message us through our Facebook page:  <a href="https://www.facebook.com/gracedcommunitybiblefellowship" target="_blank" class="footer">
@@ -251,6 +251,25 @@ onMounted(() => {
 .program-page ul {
   list-style: disc;
   padding-left: 1.25rem;
+}
+
+.program-page {
+  color: #333333;
+}
+
+.program-page h2,
+.program-page h3 {
+  color: #315d36;
+}
+
+.program-page p,
+.program-page ul,
+.program-page li,
+.program-page a,
+.program-page strong,
+.program-page em,
+.program-page i {
+  color: #333333;
 }
 
 .program-page ul li {
