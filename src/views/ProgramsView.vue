@@ -44,7 +44,7 @@ onMounted(() => {
         <section text-muted class="program-intro mt-4 mb-4">
           <h2 class="h4" style="color:#537D5D ;">Program Features</h2>
 
-          <ul>
+          <ul class="program-features" style="line-height: 1.5;">
             <li>Online Bible lessons and assignments</li>
             <li>Flexible, self-paced learning</li>
             <li>Instructor support</li>
@@ -57,7 +57,7 @@ onMounted(() => {
         <section text-muted class="program-intro mt-4 mb-4">
           <h2 class="h4" style="color: #537D5D;">Curriculum</h2>
 
-          <ul>
+          <ul class="program-curriculum" style="line-height: 1.5;">
             <li>Theology</li>
             <li>Christology</li>
             <li>Pneumatology</li>
@@ -76,12 +76,12 @@ onMounted(() => {
 
         <section text-muted class="face-to-face mt-4 mb-4">
           <h2 class="h4" style="color: #537D5D;">Additional Face-to-Face Learning Sessions</h2>
-          <p>
+          <p class="program-description" style="line-height: 1.5;">
             Students who desire personal interaction and classroom discussion are welcome to attend our weekly learning sessions.
           </p>
 
           <h3>Schedule</h3>
-          <p style="line-height: 1.5;color:#537D5D;">
+          <p class="program-description" style="line-height: 1.5;">
             <strong>Every Tuesday</strong><br />
             <strong>6:30 PM – 8:00 PM</strong><br />
             <strong>Graced Community Bible Fellowship</strong>
@@ -92,7 +92,7 @@ onMounted(() => {
         <hr />
          <section text-muted class="program-intro mt-4 mb-4">
           <h2 class="h4" style="color: #537D5D;">For Inquiries</h2>
-          <p>
+          <p class="program-description" style="line-height: 1.5;">
             Please message us through our Facebook page:  <a href="https://www.facebook.com/gracedcommunitybiblefellowship" target="_blank" class="footer">
           <i class="bi bi-facebook"> Graced Community Bible Fellowship</i> 
         </a> 
@@ -105,7 +105,7 @@ onMounted(() => {
         <hr />
 
         <section text-muted class="meet-the-team mt-5 mb-5">
-          <h2>Meet the Team</h2>
+          <h2 class="h4" style="color: #537D5D;">Meet the Team</h2>
 
           <div class="team-grid mt-2">
             <div class="team-member">
