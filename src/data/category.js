@@ -2,7 +2,7 @@
 export const newsletter = [
     {
      id: 22,
-    slug: 'why-does-god-allow-evil-to-exist',
+    slug: 'who-holds-authority-over-your-life',
 
     title: 'Who holds authority over your life?',
 
