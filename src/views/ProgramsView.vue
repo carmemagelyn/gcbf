@@ -41,7 +41,7 @@ onMounted(() => {
 
     <div class="container py-3">
       <article class="program-page">
-        <section class="program-intro mt-4 mb-4">
+        <section class="program-intro mt-4 mb-4" style="line-height: 1.5;">
           <h2>Program Features</h2>
           
           <ul>
