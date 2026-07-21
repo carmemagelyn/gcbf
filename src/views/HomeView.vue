@@ -439,10 +439,10 @@
     </section>
     <section >
     <div class="container text-center pt-5 pb-5">
-      <p class="display-6 fw-bold church-purple" style="font-size: 2rem;">
+      <p class="display-6 fw-medium black" style="font-size: 1.5rem;">
         Would you like to support the ministry through your giving?
       </p>
-      <p class="lead text-muted" style="font-size: 1rem;">Your generosity helps us continue sharing God's Word, supporting church ministries, discipleship programs, outreach efforts, and community services.</p>
+      <p class="lead text-muted" style="font-size: .8rem;">Your generosity helps us continue sharing God's Word, supporting church ministries, discipleship programs, outreach efforts, and community services.</p>
       <p>
       <button class="btn btn-outline-secondary" @click="showBPIModal = true">
         View BPI Account      
