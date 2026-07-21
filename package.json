@@ -10,7 +10,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npx wrangler pages deploy dist --project-name=gcbf --branch main"
+    "deploy": "npx wrangler pages deploy dist --project-name=gcbf-church-portal --branch main"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
