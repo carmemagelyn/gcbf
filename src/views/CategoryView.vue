@@ -29,7 +29,7 @@ const routeBase = computed(() => {
 
 <template>
   <div class="container py-3 mt-5 mb-5">
-    <h2 class="mb-4 fw-bold">{{ titleLabel }}</h2>
+    <h2 class="page-heading mb-4 fw-bold">{{ titleLabel }}</h2>
 
     <div v-if="posts.length === 0" class="text-center py-5">
       <p class="text-muted">No {{ titleLabel.toLowerCase() }} available yet.</p>
@@ -130,6 +130,9 @@ const routeBase = computed(() => {
 
 <style scoped>
 
+.page-heading {
+  color: #1f2937;
+}
 
 .newsletter-badge {
   position: absolute;
