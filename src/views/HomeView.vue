@@ -439,7 +439,7 @@
     </section>
     <section >
     <div class="container text-center pt-5 pb-5">
-      <p class="lead text-muted mb-2" style="font-size: 1rem;">
+      <p class="lead text-muted mb-2" style="font-size: 1.25rem;">
         Would you like to support the ministry through your giving?
       </p>
       <p class="lead text-muted" style="font-size: .8rem;">Your generosity helps us continue sharing God's Word, supporting church ministries, discipleship programs, outreach efforts, and community services.</p>
