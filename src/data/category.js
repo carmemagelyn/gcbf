@@ -1,5 +1,404 @@
 
 export const newsletter = [
+     {
+       id: 21,
+    slug: 'christ-obedience',
+
+    title: "Christ's Obedience",
+
+    excerpt: "Romans Series: Man's Righteousness and God's Holiness",
+
+    date: 'July 19, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/03_faith.jpg',
+    
+    video:'https://www.youtube.com/embed/f2uFpgZlwYg',
+
+    caption:'Worship Service | July 19, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: "Christ's Obedience",
+      description: "Series of Romans: Man's Righteousness and God's Holiness",
+      image:
+        '/newsletter/message/03_faith.jpg',
+    },
+  
+        content1: `
+<article>
+
+<p style="color:#9A3F3F;"><i>
+Text: Romans 6:1–6
+<br>
+1 What shall we say then? Shall we continue in sin, that grace may abound?
+<br>
+2 God forbid. How shall we, that are dead to sin, live any longer therein?
+<br>
+3 Know ye not, that so many of us as were baptized into Jesus Christ were baptized into his death?
+<br>
+4 Therefore we are buried with him by baptism into death: that like as Christ was raised up from the dead by the glory of the Father, even so we also should walk in newness of life.
+<br>
+5 For if we have been planted together in the likeness of his death, we shall be also in the likeness of his resurrection:
+<br>
+6 Knowing this, that our old man is crucified with him, that the body of sin might be destroyed, that henceforth we should not serve sin.
+</i></p>
+
+<br>
+
+<h4>Introduction</h4>
+
+<p>
+Good morning. If you read Romans chapter 6, especially verses 1 to 5, we also talked about this during the last few Sundays. Romans chapter 6 is somehow our response to the truths that we have seen from the previous chapters.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 6:1–2
+<br>
+"What shall we say then? Shall we continue in sin, that grace may abound?
+<br>
+God forbid. How shall we, that are dead to sin, live any longer therein?"
+</i></p>
+
+<p>
+Paul begins with a question: "What shall we say then? Shall we continue in sin, that grace may abound?" Then he immediately answers it: "God forbid." If we are already dead to sin, how shall we continue living in it?
+</p>
+
+<p>
+To understand this, we have to go back to Romans chapter 5.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 5:20
+<br>
+"Moreover the law entered, that the offence might abound. But where sin abounded, grace did much more abound:"
+</i></p>
+
+<p>
+We have already seen the obedience of Christ in the previous chapter. No matter how great our sin is, the grace of God abounds much more. Where sin abounded, grace did much more abound.
+</p>
+
+<p>
+We also learned from Romans chapter 3 that Christ became our substitute. Instead of us being punished for our sins, Christ took our place. Our past sins, present sins, and future sins were all laid upon Him. Yet many people still struggle to understand how a great and holy God would willingly die for sinners like us.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 3:24–25
+<br>
+"Being justified freely by his grace through the redemption that is in Christ Jesus:
+Whom God hath set forth to be a propitiation through faith in his blood..."
+</i></p>
+
+<p>
+Christ became our propitiation—our substitute. He received the punishment that we deserved so that we could receive His righteousness.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 5:19
+<br>
+"For as by one man's disobedience many were made sinners, so by the obedience of one shall many be made righteous."
+</i></p>
+
+<p>
+Because of Adam's disobedience, many were made sinners. But through the obedience of Jesus Christ, many are made righteous before God.
+</p>
+
+<p>
+Sadly, many Christians misunderstand salvation. Because salvation is free, they think they can simply live however they want. But if that is our understanding of salvation, then our understanding is very shallow. As we mentioned last Sunday, salvation is free, but it is never cheap. It was freely given to us, but it cost the precious life of Jesus Christ.
+</p>
+
+<p>
+Many people also assume they are saved simply because they raised their hand during an invitation or attended a church camp. There is nothing wrong with raising your hand, but salvation is more than an outward response. It must come from genuine personal faith and conviction.
+</p>
+
+<p>
+That is why we see many people who profess to be Christians, yet there is no real change in their lives. We have fallen into what many call "easy believism"—the idea that simply repeating a prayer or making an outward profession automatically means a person has truly trusted Christ, even without genuine repentance or faith.
+</p>
+
+<p>
+Christ did not merely tell us that He loves us—He demonstrated His love by sacrificing Himself on the cross for our sins.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+2 Corinthians 5:21
+<br>
+"For he hath made him to be sin for us, who knew no sin; that we might be made the righteousness of God in him."
+</i></p>
+
+<p>
+Knowing these truths is not simply about gaining more biblical knowledge. It is about understanding what these truths mean for our lives. Why should we know these things? Because God's grace is meant to transform the way we live.
+</p>
+<br>
+<h4>II. We Are Dead to Sin</h4>
+
+<p>
+After explaining the grace of God, Paul immediately asks another important question in Romans 6:2. If we have already been saved by grace, should we continue living in sin? The answer is very clear.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 6:2
+<br>
+"God forbid. How shall we, that are dead to sin, live any longer therein?"
+</i></p>
+
+<p>
+Paul says, "God forbid." How shall we, that are dead to sin, live any longer therein? If we have already been saved by grace, how can we go back to the same life by which we were enslaved for so many years?
+</p>
+
+<p>
+Let me give you an example from the Bible. When Moses led the nation of Israel out of Egypt, God performed one of the greatest miracles recorded in Scripture.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Exodus 14:21-22
+<br>
+"And Moses stretched out his hand over the sea; and the LORD caused the sea to go back by a strong east wind all that night, and made the sea dry land, and the waters were divided.
+<br>
+And the children of Israel went into the midst of the sea upon the dry ground: and the waters were a wall unto them on their right hand, and on their left."
+</i></p>
+
+<p>
+This was the moment when God delivered the nation of Israel from the bondage of Egypt. We often remember the miracle of the Red Sea, but before they crossed, many of the Israelites refused to follow Moses. Instead, they wanted to return to Egypt.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Exodus 14:11-12
+<br>
+"And they said unto Moses, Because there were no graves in Egypt, hast thou taken us away to die in the wilderness?... Is not this the word that we did tell thee in Egypt, saying, Let us alone, that we may serve the Egyptians?"
+</i></p>
+
+<p>
+When they reached the Red Sea, they felt trapped. Pharaoh's army was behind them, and they thought they had nowhere to go. Instead of trusting God, they complained to Moses and even asked to return to Egypt. After seeing God's mighty power through the plagues and His deliverance from slavery, they still wanted to go back to the very nation that had enslaved them for so many years.
+</p>
+
+<p>
+God's desire for Israel was never to bring them back to Egypt. His desire was to lead them into the Promised Land. Moses understood that, but the people kept longing for the life from which God had already delivered them.
+</p>
+
+<p>
+To understand how terrible their slavery was, look at how the Bible describes their condition in Egypt.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Exodus 1:13-14
+<br>
+"And the Egyptians made the children of Israel to serve with rigour:
+<br>
+And they made their lives bitter with hard bondage, in morter, and in brick, and in all manner of service in the field..."
+</i></p>
+
+<p>
+This was the life they wanted to return to—a life of bitter bondage. Yet God had already redeemed them.
+</p>
+
+<p>
+The same thing can happen in our Christian lives. We have experienced the redeeming grace of God. We know the truth. We know that before Christ we were in bondage to sin. We used to live in the darkness of this world, and it was only God who made a way for us to be saved.
+</p>
+
+<p>
+Yet after all these things, many Christians still desire to return to the same sins that once enslaved them. Isn't that exactly what happened to Israel after Moses led them out of Egypt?
+</p>
+
+<p>
+The Bible gives another illustration of this truth.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Proverbs 26:11
+<br>
+"As a dog returneth to his vomit, so a fool returneth to his folly."
+</i></p>
+
+<p>
+Many times, after experiencing God's grace, people return to the very sins from which God has delivered them. But the Bible says, "God forbid. How shall we, that are dead to sin, live any longer therein?"
+</p>
+
+<p>
+God has redeemed us from our sins. Therefore, we should no longer desire to go back to the same life that once held us in bondage.
+</p>
+<br>
+<h4>II. We Are Dead to Sin</h4>
+
+<p>
+After explaining the grace of God, Paul immediately asks another important question in Romans 6:2. If we have already been saved by grace, should we continue living in sin? The answer is very clear.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 6:2
+<br>
+"God forbid. How shall we, that are dead to sin, live any longer therein?"
+</i></p>
+
+<p>
+Paul says, "God forbid." How shall we, that are dead to sin, live any longer therein? If we have already been saved by grace, how can we go back to the same life by which we were enslaved for so many years?
+</p>
+
+<p>
+Let me give you an example from the Bible. When Moses led the nation of Israel out of Egypt, God performed one of the greatest miracles recorded in Scripture.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Exodus 14:21-22
+<br>
+"And Moses stretched out his hand over the sea; and the LORD caused the sea to go back by a strong east wind all that night, and made the sea dry land, and the waters were divided.
+<br>
+And the children of Israel went into the midst of the sea upon the dry ground: and the waters were a wall unto them on their right hand, and on their left."
+</i></p>
+
+<p>
+This was the moment when God delivered the nation of Israel from the bondage of Egypt. We often remember the miracle of the Red Sea, but before they crossed, many of the Israelites refused to follow Moses. Instead, they wanted to return to Egypt.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Exodus 14:11-12
+<br>
+"And they said unto Moses, Because there were no graves in Egypt, hast thou taken us away to die in the wilderness?... Is not this the word that we did tell thee in Egypt, saying, Let us alone, that we may serve the Egyptians?"
+</i></p>
+
+<p>
+When they reached the Red Sea, they felt trapped. Pharaoh's army was behind them, and they thought they had nowhere to go. Instead of trusting God, they complained to Moses and even asked to return to Egypt. After seeing God's mighty power through the plagues and His deliverance from slavery, they still wanted to go back to the very nation that had enslaved them for so many years.
+</p>
+
+<p>
+God's desire for Israel was never to bring them back to Egypt. His desire was to lead them into the Promised Land. Moses understood that, but the people kept longing for the life from which God had already delivered them.
+</p>
+
+<p>
+To understand how terrible their slavery was, look at how the Bible describes their condition in Egypt.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Exodus 1:13-14
+<br>
+"And the Egyptians made the children of Israel to serve with rigour:
+<br>
+And they made their lives bitter with hard bondage, in morter, and in brick, and in all manner of service in the field..."
+</i></p>
+
+<p>
+This was the life they wanted to return to—a life of bitter bondage. Yet God had already redeemed them.
+</p>
+
+<p>
+The same thing can happen in our Christian lives. We have experienced the redeeming grace of God. We know the truth. We know that before Christ we were in bondage to sin. We used to live in the darkness of this world, and it was only God who made a way for us to be saved.
+</p>
+
+<p>
+Yet after all these things, many Christians still desire to return to the same sins that once enslaved them. Isn't that exactly what happened to Israel after Moses led them out of Egypt?
+</p>
+
+<p>
+The Bible gives another illustration of this truth.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Proverbs 26:11
+<br>
+"As a dog returneth to his vomit, so a fool returneth to his folly."
+</i></p>
+
+<p>
+Many times, after experiencing God's grace, people return to the very sins from which God has delivered them. But the Bible says, "God forbid. How shall we, that are dead to sin, live any longer therein?"
+</p>
+
+<p>
+God has redeemed us from our sins. Therefore, we should no longer desire to go back to the same life that once held us in bondage.
+</p>
+<br>
+<h4>III. New Life in Christ</h4>
+
+<p>
+After understanding the grace of God and realizing that we are dead to sin, Paul now reminds us of the new life that every believer has in Christ. The Christian life is not simply about being forgiven; it is about living differently because we have been made new.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 6:3-5
+<br>
+"Know ye not, that so many of us as were baptized into Jesus Christ were baptized into his death?
+<br>
+Therefore we are buried with him by baptism into death: that like as Christ was raised up from the dead by the glory of the Father, even so we also should walk in newness of life.
+<br>
+For if we have been planted together in the likeness of his death, we shall be also in the likeness of his resurrection."
+</i></p>
+
+<p>
+These verses summarize everything that Paul has been teaching. After we understand the grace of God and our relationship to sin, we must also understand our present position in Christ. Since we have trusted Christ as our Lord and Savior, we are no longer the same person we used to be.
+</p>
+
+<p>
+God is helping us live a new life. Once we have trusted Christ as our Savior, our life should no longer be the same. The Bible says that we are to walk in newness of life. Our old life has passed away, and now we have been given a new life in Christ.
+</p>
+
+<p>
+As Christians, our goal is not only to preach the gospel or share our faith. Above everything else, our desire should be to know Christ more deeply.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Philippians 3:10
+<br>
+"That I may know him, and the power of his resurrection, and the fellowship of his sufferings, being made conformable unto his death;"
+</i></p>
+
+<p>
+Paul's greatest desire was to know Christ. The Christian life is more than outward service. It is a growing relationship with the Lord Jesus Christ. The more we know Him, the more our lives are transformed to become like Him.
+</p>
+
+<p>
+Paul also reminds us that our old life has been crucified with Christ.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Galatians 2:20
+<br>
+"I am crucified with Christ: nevertheless I live; yet not I, but Christ liveth in me: and the life which I now live in the flesh I live by the faith of the Son of God, who loved me, and gave himself for me."
+</i></p>
+
+<p>
+It is no longer our old sinful life that defines us. Christ now lives in us. The life we now live is to be lived by faith in the Son of God, who loved us and gave Himself for us.
+</p>
+
+<p>
+As we close, let us remember what we have learned. We have seen the grace of God through the obedience of Christ. Although we were great sinners, we experienced God's amazing grace. But that grace is never a license for us to continue living in sin.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 6:2
+<br>
+"God forbid. How shall we, that are dead to sin, live any longer therein?"
+</i></p>
+
+<p>
+The Lord has redeemed us from our sins, and He does not want us to return to the same things that enslaved us for so many years. Instead, He desires that we live our lives for Him and for His glory alone.
+</p>
+
+<p>
+We now have a new life in Christ Jesus. We are no longer the same people we once were before Christ saved us. Therefore, let us no longer dwell in the sins that once held us in bondage, but let us live our lives for the One who loved us and gave Himself for us.
+</p>
+
+
+
+
+<br>
+
+
+    <border style="border-top:4px solid #9A3F3F; padding-left:200px; margin-left:0;">
+
+    <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+    <p style="color:#9A3F3F;"><i>
+    How should God's grace change the way you respond to sin and the way you live your new life in Christ? </i></p>
+
+</border>
+
+
+</article>
+
+        `
+        },
     {
        id: 20,
     slug: 'my-god-and-my-love-life-part-2',
