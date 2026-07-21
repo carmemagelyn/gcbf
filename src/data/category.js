@@ -1,5 +1,83 @@
 
 export const newsletter = [
+    {
+     id: 22,
+    slug: 'why-does-god-allow-evil-to-exist',
+
+    title: 'Who holds authority over your life?',
+
+    excerpt: 'Submit yourselves therefore to God. Resist the devil, and he will flee from you. (James 4:7)',
+
+    date: 'July 22, 2026',
+
+    author: 'Christina Angela Devata',
+
+    authorImage: '/newsletter/author/christina-devata.jpg',
+
+    coverphoto: '/newsletter/02_letgo/hold.jpg',
+
+   
+
+    type: 'article',
+
+    seo: {
+      title: 'Who holds authority over your life?',
+      description: 'Submit yourselves therefore to God. Resist the devil, and he will flee from you. (James 4:7)',
+      image:
+        '/newsletter/02_letgo/hold.jpg',
+    },
+    caption: '',
+
+
+
+        content1: `
+            <article>
+
+            <p>Do you honestly think the devil has
+authority over you?</p>
+<p style="color:#9A3F3F;font-weight:500;">“No. All authority belongs to our sovereign
+God.</p>
+
+            <p>
+            That is why James first says, <i>“Submit
+yourselves therefore to God.”</i> Before we
+resist the devil, we must first surrender
+ourselves completely to the Lord. Submit
+your worries, your fears, your burdens, your
+anxieties, your temptations, your work, your
+plans, your life and even your sins to Him.</p>
+
+<p>
+            The enemy may prowl around looking for
+those he can deceive but he has no authority
+over those who belong to Christ. As children
+of God, our strength is not found in
+ourselves but in the One who lives within
+us.
+<span style="color:#9A3F3F;font-weight:500;">“Christ has already secured the victory.</span></p>
+
+            <p>
+            So when temptation comes, stand firm in
+God’s truth. Resist the devil and he will flee.
+Don’t live in fear of the enemy because
+there is no power that can compare to our
+God. Satan may try to attack, accuse, and deceive but he will never be greater than the
+Almighty.
+            </p>
+
+            <p>
+            Whatever you are facing today, remember
+God sees you, He is with you, and He fights
+for His children. Rest in His power, submit
+to His will, and stand firm in faith for
+<span style="color:#9A3F3F;font-weight:500;">“the
+God who holds all authority is the same
+God who holds you.</span></p>
+
+        </article>
+        `
+
+        },
      {
        id: 21,
     slug: 'christ-obedience',
