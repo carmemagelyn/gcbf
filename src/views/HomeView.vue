@@ -53,7 +53,7 @@
     <section class="booklet-section py-5 bg-white">
       <div class="container-fluid d-flex flex-column align-items-center">
         <div class="booklet-title text-center mb-4">
-          <h2 class="fw-lead mb-1">Jesus Christ Alone</h2>
+          Jesus Christ Alone
           <p class="lead booklet-subtitle mb-1" style="font-size: .8rem;">CAN SAVE AND SATISFY YOUR SOUL</p>
           <p class="booklet-description mb-0" style="font-size: .8rem;">Discover seven biblical truths about salvation and eternal life.</p>
         </div>
@@ -438,7 +438,7 @@
     </section>
     <section >
     <div class="container text-center pt-5 pb-5">
-      <h2 class="fw-lead">Would you like to support the ministry through your giving?</h2>
+      Would you like to support the ministry through your giving?
       <p class="lead text-muted" style="font-size: 1rem;">Your generosity helps us continue sharing God's Word, supporting church ministries, discipleship programs, outreach efforts, and community services.</p>
       <p>
       <button class="btn btn-outline-secondary" @click="showBPIModal = true">
