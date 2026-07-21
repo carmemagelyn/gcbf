@@ -1,57 +1,51 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-// Import views
-import HomeView from '../views/HomeView.vue'
-import CategoryView from '../views/CategoryView.vue'
-import CategorySingleView from '../views/CategorySingleView.vue'
-import ProgramsView from '../views/ProgramsView.vue'
-
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: HomeView
+    component: () => import('../views/HomeView.vue')
   },
   {
     path: '/newsletter',
     name: 'Newsletter',
-    component: CategoryView,
+    component: () => import('../views/CategoryView.vue'),
     meta: { contentType: 'newsletter' }
   },
   {
     path: '/newsletter/:slug',
     name: 'NewsletterSingle',
-    component: CategorySingleView,
+    component: () => import('../views/CategorySingleView.vue'),
     meta: { contentType: 'newsletter' }
   },
   {
     path: '/articles',
     name: 'Articles',
-    component: CategoryView,
+    component: () => import('../views/CategoryView.vue'),
     meta: { contentType: 'article' }
   },
   {
     path: '/articles/:slug',
     name: 'ArticleSingle',
-    component: CategorySingleView,
+    component: () => import('../views/CategorySingleView.vue'),
     meta: { contentType: 'article' }
   },
   {
     path: '/messages',
     name: 'Messages',
-    component: CategoryView,
+    component: () => import('../views/CategoryView.vue'),
     meta: { contentType: 'message' }
   },
   {
     path: '/messages/:slug',
     name: 'MessageSingle',
-    component: CategorySingleView,
+    component: () => import('../views/CategorySingleView.vue'),
     meta: { contentType: 'message' }
   },
   {
     path: '/programs',
     name: 'Programs',
-    component: ProgramsView
+    component: () => import('../views/ProgramsView.vue')
   },
 ]
 

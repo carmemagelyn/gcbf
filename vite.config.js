@@ -10,6 +10,21 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  build: {
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('bootstrap')) return 'vendor_bootstrap'
+            if (id.includes('vue-router')) return 'vendor_router'
+            if (id.includes('vue')) return 'vendor_vue'
+            return 'vendor'
+          }
+        }
+      }
+    }
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
