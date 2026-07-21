@@ -43,7 +43,7 @@ onMounted(() => {
       <article class="program-page">
         <section text-muted class="program-intro mt-4 mb-4">
           <h2 class="h4" style="color:#537D5D ;">Program Features</h2>
-          <p>
+
           <ul>
             <li>Online Bible lessons and assignments</li>
             <li>Flexible, self-paced learning</li>
@@ -51,13 +51,12 @@ onMounted(() => {
             <li>Diploma in Bible curriculum</li>
             <li>Access to the Bible Correspondence Portal</li>
           </ul>
-          </p>
         </section>
 
         <hr />
         <section text-muted class="program-intro mt-4 mb-4">
           <h2 class="h4" style="color: #537D5D;">Curriculum</h2>
-          <p>
+
           <ul>
             <li>Theology</li>
             <li>Christology</li>
@@ -70,9 +69,7 @@ onMounted(() => {
             <li>King James Bible</li>
             <li>Bible Interpretation</li>
             <li>Other Course Subjects*</li>
-
           </ul>
-          </p>
         </section>
 
         <hr />
