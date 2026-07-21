@@ -42,7 +42,7 @@ onMounted(() => {
     <div class="container py-3">
       <article class="program-page">
         <section class="program-intro mt-4 mb-4" style="line-height: 1.5;">
-          <h2>Program Features</h2>
+          <h2 class="h4" style="color: #9A3F3F;">Program Features</h2>
           
           <ul>
             <li>Online Bible lessons and assignments</li>
@@ -55,7 +55,7 @@ onMounted(() => {
 
         <hr />
         <section class="program-intro mt-4 mb-4">
-          <h2>Curriculum</h2>
+          <h2 class="h4" style="color: #9A3F3F;">Curriculum</h2>
           
           <ul>
             <li>Theology</li>
@@ -76,7 +76,7 @@ onMounted(() => {
         <hr />
 
         <section class="face-to-face mt-4 mb-4">
-          <h2>Additional Face-to-Face Learning Sessions</h2>
+          <h2 class="h4" style="color: #9A3F3F;">Additional Face-to-Face Learning Sessions</h2>
           <p>
             Students who desire personal interaction and classroom discussion are welcome to attend our weekly learning sessions.
           </p>
@@ -92,7 +92,7 @@ onMounted(() => {
 
         <hr />
          <section class="program-intro mt-4 mb-4">
-          <h2>For Inquiries</h2>
+          <h2 class="h4" style="color: #9A3F3F;">For Inquiries</h2>
           <p>
             Please message us through our Facebook page:  <a href="https://www.facebook.com/gracedcommunitybiblefellowship" target="_blank" class="footer">
           <i class="bi bi-facebook"> Graced Community Bible Fellowship</i> 
