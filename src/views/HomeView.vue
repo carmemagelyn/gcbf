@@ -49,15 +49,16 @@
         </div>
       </div>
     </section>
-
+   <!--
     <section class="booklet-section py-5 bg-white">
+   
       <div class="container-fluid d-flex flex-column align-items-center">
         <div class="booklet-title text-center mb-4">
-
-          <p class="lead booklet-subtitle mb-1" style="font-size: .8rem;">Jesus Christ Alone<br>CAN SAVE AND SATISFY YOUR SOUL</p>
+          <h2 class="fw-bold mb-1">Jesus Christ Alone</h2>
+          <p class="lead booklet-subtitle mb-1" style="font-size: .8rem;">CAN SAVE AND SATISFY YOUR SOUL</p>
           <p class="booklet-description mb-0" style="font-size: .8rem;">Discover seven biblical truths about salvation and eternal life.</p>
         </div>
-
+   
         
         <button class="btn btn-outline-primary btn-lg mb-0" @click="showBookletContent = !showBookletContent" style="text-decoration: none; color: inherit; font-size: .8rem;">
           Click here to read.
@@ -93,7 +94,7 @@
         </div>
       </div>
     </section>
-
+   -->
   
     <section id="services" class="py-5">
   <div class="container">
@@ -438,7 +439,7 @@
     </section>
     <section >
     <div class="container text-center pt-5 pb-5">
-      Would you like to support the ministry through your giving?
+      <h2>Would you like to support the ministry through your giving?</h2>
       <p class="lead text-muted" style="font-size: 1rem;">Your generosity helps us continue sharing God's Word, supporting church ministries, discipleship programs, outreach efforts, and community services.</p>
       <p>
       <button class="btn btn-outline-secondary" @click="showBPIModal = true">
