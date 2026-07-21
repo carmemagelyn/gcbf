@@ -638,7 +638,7 @@ const getWeeklyVerse = () => {
 }
 
 const weeklyVerse = ref(getWeeklyVerse())
-
+/*
 const bookletPages = [
   {
     pageNumber: 1,
@@ -777,6 +777,7 @@ const showPreviousBookletPage = () => {
   bookletDirection.value = 'prev'
   currentBookletPage.value = (currentBookletPage.value - 1 + bookletPages.length) % bookletPages.length
 }
+*/
 
 const latestNews = computed(() => newsletter.slice(0, 12))
 
