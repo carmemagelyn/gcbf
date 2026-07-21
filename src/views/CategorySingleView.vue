@@ -291,13 +291,13 @@ useHead({
 
         <div>
           <small
-            class="text-muted d-block author-label"
+            class="author-label d-block text-muted"
           >
             {{ isMessage ? 'Message by' : 'Written by' }}
           </small>
 
           <small
-            class="fw-semibold d-block mb-0 author-label"
+            class="author-name d-block text-muted"
           >
             {{ post.author }}
         </small>
@@ -306,7 +306,7 @@ useHead({
       </div>
 
       <!-- EXCERPT -->
-      <p class="text-center mb-4 excerpt">
+      <p class="excerpt text-center mb-5">
         {{ post.excerpt }}
       </p>
 
