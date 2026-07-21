@@ -53,7 +53,7 @@
     <section class="booklet-section py-5 bg-white">
       <div class="container-fluid d-flex flex-column align-items-center">
         <div class="booklet-title text-center mb-4">
-          Jesus Christ Alone
+          <p>Jesus Christ Alone</p>
           <p class="lead booklet-subtitle mb-1" style="font-size: .8rem;">CAN SAVE AND SATISFY YOUR SOUL</p>
           <p class="booklet-description mb-0" style="font-size: .8rem;">Discover seven biblical truths about salvation and eternal life.</p>
         </div>
