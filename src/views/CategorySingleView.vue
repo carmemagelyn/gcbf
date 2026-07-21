@@ -296,19 +296,19 @@ useHead({
             {{ isMessage ? 'Message by' : 'Written by' }}
           </small>
 
-          <small
+          <p
             class="fw-semibold d-block mb-0 author-name"
           >
             {{ post.author }}
-          </small>
+          </p>
         </div>
 
       </div>
 
       <!-- EXCERPT -->
-      <h5 class="text-center mb-4 excerpt">
+      <p class="text-center mb-4 excerpt">
         {{ post.excerpt }}
-      </h5>
+      </p>
 
       <!-- CONTENT 1 -->
       <div
