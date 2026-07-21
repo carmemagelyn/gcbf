@@ -54,8 +54,8 @@
       <div class="container-fluid d-flex flex-column align-items-center">
         <div class="booklet-title text-center mb-4">
           <h2 class="fw-bold mb-1">Jesus Christ Alone</h2>
-          <p class="lead text-dark mb-1" style="font-size: .8rem;">CAN SAVE AND SATISFY YOUR SOUL</p>
-          <p class="text-secondary mb-0" style="font-size: .8rem;">Discover seven biblical truths about salvation and eternal life.</p>
+          <p class="lead booklet-subtitle mb-1" style="font-size: .8rem;">CAN SAVE AND SATISFY YOUR SOUL</p>
+          <p class="booklet-description mb-0" style="font-size: .8rem;">Discover seven biblical truths about salvation and eternal life.</p>
         </div>
 
         
@@ -70,7 +70,7 @@
               <div class="booklet-page-number display-1 fw-bold text-dark">{{ bookletPages[currentBookletPage].pageNumber }}</div>
               <div>
                 <h3 class="booklet-page-title text-uppercase fw-bold mb-2">{{ bookletPages[currentBookletPage].title }}</h3>
-                <p class="booklet-page-subtitle text-secondary mb-0">{{ bookletPages[currentBookletPage].subtitle }}</p>
+                <p class="booklet-page-subtitle mb-0">{{ bookletPages[currentBookletPage].subtitle }}</p>
               </div>
             </div>
 
@@ -954,10 +954,22 @@ footer a:hover {
 
 .booklet-page-title {
   font-size: 1.55rem;
+  color: #1f1f1f;
 }
 
 .booklet-page-subtitle {
   font-size: 0.92rem;
+  color: #3a3a3a;
+}
+
+.booklet-subtitle,
+.booklet-description {
+  color: #333333;
+}
+
+.newsletter-author .text-muted,
+.newsletter-author .author-name {
+  color: #202020 !important;
 }
 
 .booklet-paragraph {
