@@ -69,16 +69,15 @@ export async function onRequest(context) {
 // Safe asset fetch helper for Pages Functions
 async function fetchFromAssets(env, request) {
   try {
-    if (env) {
-      if (env.page_assets && typeof env.page_assets.fetch === 'function') {
-        return await env.page_assets.fetch(request);
-      }
-      if (env.ASSETS && typeof env.ASSETS.fetch === 'function') {
-        return await env.ASSETS.fetch(request);
-      }
+    if (env?.page_assets?.fetch) {
+      return await env.page_assets.fetch(request);
     }
 
-    console.warn('No assets binding available on env; falling back to global fetch for', request.url);
+    if (env?.ASSETS?.fetch) {
+      return await env.ASSETS.fetch(request);
+    }
+
+    console.warn('No asset binding available on env; falling back to global fetch for', request.url);
     return await fetch(request);
   } catch (e) {
     console.error('fetchFromAssets error for', request.url, e);

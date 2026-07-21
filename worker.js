@@ -107,14 +107,16 @@ async function getIndexHtml(env, origin) {
 
 async function fetchFromAssets(env, request) {
   try {
-    // Cloudflare Pages Assets
+    if (env?.page_assets?.fetch) {
+      return await env.page_assets.fetch(request);
+    }
+
     if (env?.ASSETS?.fetch) {
       return await env.ASSETS.fetch(request);
     }
 
-    // Fallback
     console.warn(
-      'env.ASSETS unavailable, using fetch fallback:',
+      'No asset binding available on env; falling back to global fetch for',
       request.url
     );
 
