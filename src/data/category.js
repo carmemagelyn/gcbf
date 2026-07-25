@@ -1,6 +1,6 @@
 
 export const newsletter = [
-    /*
+/*
     {
      id: 23,
     slug: 'walk-the-narrow-way',
@@ -34,59 +34,64 @@ export const newsletter = [
         content1: `
             <article>
 
-            <p>Do you honestly think the devil has
-authority over you?</p>
-<p style="color:#9A3F3F;font-weight:500;">“No. All authority belongs to our sovereign
-God.</p>
+        
 
             <p>
-            That is why James first says, <i>“Submit
-yourselves therefore to God.”</i> Before we
-resist the devil, we must first surrender
-ourselves completely to the Lord. Submit
-your worries, your fears, your burdens, your
-anxieties, your temptations, your work, your
-plans, your life and even your sins to Him.</p>
+            Do you ever wonder why following Christ
+can feel so difficult? Because Jesus never
+said the road would be easy. He said it
+would be <i>narrow.</i> </p>
 
 <p>
-            The enemy may prowl around looking for
-those he can deceive but he has no authority
-over those who belong to Christ. As children
-of God, our strength is not found in
-ourselves but in the One who lives within
-us.
-<span style="color:#9A3F3F;font-weight:500;">“Christ has already secured the victory.</span></p>
+            Choosing Him often means saying no to the
+things our flesh wants and walking away
+from what once felt normal. The broad way
+is comfortable because everyone else is on
+it. The narrow way can feel lonely because
+not everyone is willing to follow Christ.
 
             <p>
-            So when temptation comes, stand firm in
-God’s truth. Resist the devil and he will flee.
-Don’t live in fear of the enemy because
-there is no power that can compare to our
-God. Satan may try to attack, accuse, and deceive but he will never be greater than the
-Almighty.
+            There was a time in my life when I always
+ran to the same wrong thing whenever life
+became overwhelming. It was familiar and it
+felt like an escape. But when I chose to
+follow Christ, there was a battle inside me.
+My flesh wanted to hold on while my spirit
+longed to obey God. There were moments of
+tears, frustration, and weakness. I also had to
+step away from friends who were trapped in
+that same lifestyle. It was painful. But I
+realized that following Jesus sometimes
+requires leaving behind what keeps us from
+drawing closer to Him.
             </p>
 
             <p>
-            Whatever you are facing today, remember
-God sees you, He is with you, and He fights
-for His children. Rest in His power, submit
-to His will, and stand firm in faith for
-<span style="color:#9A3F3F;font-weight:500;">“the
-God who holds all authority is the same
-God who holds you.</span></p>
+            The narrow way is not easy, but it is the only
+way that leads to life. Every sacrifice we
+make for Christ is worth it because nothing
+this world offers can compare to Him. If
+following Jesus feels difficult today, don’t
+be discouraged. The struggle does not mean
+you are on the wrong path. It may even be
+evidence that you are choosing the narrow
+one. Keep your eyes on Christ because
+<span style="color:#9A3F3F;font-weight:500;">the
+road may be narrow, but the destination
+is eternal life.</span></p>
 
         </article>
         `
 
         },
-        */
+*/
     {
      id: 22,
     slug: 'who-holds-authority-over-your-life',
 
     title: 'Who holds authority over your life?',
 
-    excerpt: 'Submit yourselves therefore to God. Resist the devil, and he will flee from you. (James 4:7)',
+    excerpt: 'Submit yourselves therefore to God. Resist the devil, and he will flee from you. - James 4:7',
 
     date: 'July 22, 2026',
 
@@ -102,7 +107,7 @@ God who holds you.</span></p>
 
     seo: {
       title: 'Who holds authority over your life?',
-      description: 'Submit yourselves therefore to God. Resist the devil, and he will flee from you. (James 4:7)',
+      description: 'Submit yourselves therefore to God. Resist the devil, and he will flee from you. - James 4:7',
       image:
         '/newsletter/02_letgo/hold.jpg',
     },
