@@ -208,55 +208,34 @@ God who holds you.</span></p>
 
 Text: Ruth 4:1–22
 
-<br><br>
-
+<br>
 1 Then went Boaz up to the gate, and sat him down there: and, behold, the kinsman of whom Boaz spake came by; unto whom he said, Ho, such a one! turn aside, sit down here. And he turned aside, and sat down.
+<br>
+2 And he took ten men of the elders of the city, and said, Sit ye down here. And they sat down.     
+<br>
+3 And he said unto the kinsman, Naomi, that is come again out of the country of Moab, selleth a parcel of land, which was our brother Elimelech's:  
+<br>
+4 And I thought to advertise thee, saying, Buy it before the inhabitants, and before the elders of my people. If thou wilt redeem it, redeem it: but if thou wilt not redeem it, then tell me, that I may know: for there is none to redeem it beside thee; and I am after thee. And he said, I will redeem it.     
+<br>
+5 Then said Boaz, What day thou buyest the field of the hand of Naomi, thou must buy it also of Ruth the Moabitess, the wife of the dead, to raise up the name of the dead upon his inheritance.        
+<br>
+6 And the kinsman said, I cannot redeem it for myself, lest I mar mine own inheritance: redeem thou my right to thyself; for I cannot redeem it.    
+<br>
+7 Now this was the manner in former time in Israel concerning redeeming and concerning changing, for to confirm all things; a man placed the sandal upon his neighbour's hand, and this was a testimony in Israel.      
+<br>
+8 So when the kinsman said unto Boaz, Buy it for thee, he drew off his sandal.  
+ <br>
+9 And Boaz said unto the elders, and unto all the people, Ye are witnesses this day, that I have bought all that was Elimelech's, and all that was Chilion's and Mahlon's, of the hand of Naomi.    
+<br>
+10 Moreover Ruth the Moabitess, the wife of Mahlon, have I purchased to be my wife, to raise up the name of the dead upon his inheritance, that the name of the dead be not cut off from among his brethren, and from the gate of his place: ye are witnesses this day.     
+<br>
+11 And all the people that were in the gate, and the elders, said, We are witnesses. The LORD make the woman that is come into thine house like Rachel and like Leah, which two did build the house of Israel: and do thou worthily in Ephratah, and be famous in Bethlehem:    
+<br>
 
-<br><br>
-
-2 And he took ten men of the elders of the city, and said, Sit ye down here. And they sat down.
-
-<br><br>
-
-3 And he said unto the kinsman, Naomi, that is come again out of the country of Moab, selleth a parcel of land, which was our brother Elimelech's:
-
-<br><br>
-
-4 And I thought to advertise thee, saying, Buy it before the inhabitants, and before the elders of my people. If thou wilt redeem it, redeem it: but if thou wilt not redeem it, then tell me, that I may know: for there is none to redeem it beside thee; and I am after thee. And he said, I will redeem it.
-
-<br><br>
-
-5 Then said Boaz, What day thou buyest the field of the hand of Naomi, thou must buy it also of Ruth the Moabitess, the wife of the dead, to raise up the name of the dead upon his inheritance.
-
-<br><br>
-
-6 And the kinsman said, I cannot redeem it for myself, lest I mar mine own inheritance: redeem thou my right to thyself; for I cannot redeem it.
-
-<br><br>
-
-7 Now this was the manner in former time in Israel concerning redeeming and concerning changing, for to confirm all things; a man plucked off his shoe, and gave it to his neighbour: and this was a testimony in Israel.
-
-<br><br>
-
-8 Therefore the kinsman said unto Boaz, Buy it for thee. So he drew off his shoe.
-
-<br><br>
-
-9 And Boaz said unto the elders, and unto all the people, Ye are witnesses this day, that I have bought all that was Elimelech's, and all that was Chilion's and Mahlon's, of the hand of Naomi.
-
-<br><br>
-
-10 Moreover Ruth the Moabitess, the wife of Mahlon, have I purchased to be my wife, to raise up the name of the dead upon his inheritance, that the name of the dead be not cut off from among his brethren, and from the gate of his place: ye are witnesses this day.
-
-<br><br>
-
-11 And all the people that were in the gate, and the elders, said, We are witnesses...
 
 </i></p>
 
-<br>
-
-<<h4>I. He Is an All-Knowing God</h4>
+<h4>I. He Is an All-Knowing God</h4>
 
 <p>
 As we come to the final chapter of the Book of Ruth, we see the beautiful conclusion of the story that God has been writing from the very beginning. Throughout the previous chapters, God has been quietly working behind the scenes in the lives of Naomi, Ruth, and Boaz. Although they could not always understand what He was doing, every event was unfolding according to His perfect plan.
@@ -278,7 +257,7 @@ Boaz understood this principle. Instead of taking matters into his own hands, he
 
 Ruth 4:1
 
-<br><br>
+<br>
 
 "Then went Boaz up to the gate, and sat him down there: and, behold, the kinsman of whom Boaz spake came by; unto whom he said, Ho, such a one! turn aside, sit down here. And he turned aside, and sat down."
 
@@ -304,7 +283,7 @@ This was exactly what Naomi encouraged Ruth to do at the end of the previous cha
 
 Ruth 3:18
 
-<br><br>
+<br>
 
 "Then said she, Sit still, my daughter, until thou know how the matter will fall: for the man will not be in rest, until he have finished the thing this day."
 
@@ -326,19 +305,19 @@ Boaz then gathered ten of the elders of the city to serve as witnesses. In Israe
 
 Ruth 4:2–4
 
-<br><br>
+<br>
 
 2 And he took ten men of the elders of the city, and said, Sit ye down here. And they sat down.
 
-<br><br>
+<br>
 
 3 And he said unto the kinsman, Naomi, that is come again out of the country of Moab, selleth a parcel of land, which was our brother Elimelech's:
 
-<br><br>
+<br>
 
 4 And I thought to advertise thee, saying, Buy it before the inhabitants, and before the elders of my people. If thou wilt redeem it, redeem it: but if thou wilt not redeem it, then tell me, that I may know: for there is none to redeem it beside thee; and I am after thee. And he said, I will redeem it.
 
-</i></p>
+</i>
 
 <p>
 At first, the nearer kinsman agreed to redeem the property. From his perspective, purchasing the land seemed beneficial. However, Boaz then explained that redeeming Naomi's inheritance also meant accepting Ruth the Moabitess as his wife in order to preserve the family line of Mahlon. This responsibility involved much more than simply acquiring land.
@@ -348,11 +327,11 @@ At first, the nearer kinsman agreed to redeem the property. From his perspective
 
 Ruth 4:5–6
 
-<br><br>
+<br>
 
 5 Then said Boaz, What day thou buyest the field of the hand of Naomi, thou must buy it also of Ruth the Moabitess, the wife of the dead, to raise up the name of the dead upon his inheritance.
 
-<br><br>
+<br>
 
 6 And the kinsman said, I cannot redeem it for myself, lest I mar mine own inheritance: redeem thou my right to thyself; for I cannot redeem it.
 
@@ -382,11 +361,11 @@ The same principle is found in the lives of Shadrach, Meshach, and Abednego. Whe
 
 Daniel 3:17–18
 
-<br><br>
+<br>
 
 17 If it be so, our God whom we serve is able to deliver us from the burning fiery furnace, and he will deliver us out of thine hand, O king.
 
-<br><br>
+<br>
 
 18 But if not, be it known unto thee, O king, that we will not serve thy gods, nor worship the golden image which thou hast set up.
 
@@ -416,11 +395,11 @@ After the legal matter had been settled and Boaz took Ruth to be his wife, the f
 
 Ruth 4:14–15
 
-<br><br>
+<br>
 
 14 And the women said unto Naomi, Blessed be the LORD, which hath not left thee this day without a kinsman, that his name may be famous in Israel.
 
-<br><br>
+<br>
 
 15 And he shall be unto thee a restorer of thy life, and a nourisher of thine old age: for thy daughter in law, which loveth thee, which is better to thee than seven sons, hath borne him.
 
@@ -434,11 +413,11 @@ The women of Bethlehem recognized that it was the Lord who had restored Naomi. A
 
 Ruth 1:20–21
 
-<br><br>
+<br>
 
 20 And she said unto them, Call me not Naomi, call me Mara: for the Almighty hath dealt very bitterly with me.
 
-<br><br>
+<br>
 
 21 I went out full, and the LORD hath brought me home again empty...
 
@@ -468,11 +447,11 @@ The Bible gives us another beautiful picture of God's restoring power in the lif
 
 John 4:13–14
 
-<br><br>
+<br>
 
 13 Jesus answered and said unto her, Whosoever drinketh of this water shall thirst again:
 
-<br><br>
+<br>
 
 14 But whosoever drinketh of the water that I shall give him shall never thirst; but the water that I shall give him shall be in him a well of water springing up into everlasting life.
 
@@ -510,11 +489,11 @@ The final verses of Ruth chapter 4 reveal that God's work extended far beyond th
 
 Ruth 4:16–17
 
-<br><br>
+<br>
 
 16 And Naomi took the child, and laid it in her bosom, and became nurse unto it.
 
-<br><br>
+<br>
 
 17 And the women her neighbours gave it a name, saying, There is a son born to Naomi; and they called his name Obed: he is the father of Jesse, the father of David.
 
@@ -544,15 +523,15 @@ The genealogy recorded in the Gospel of Matthew confirms the significance of thi
 
 Matthew 1:5–6, 16
 
-<br><br>
+<br>
 
 5 And Salmon begat Booz of Rachab; and Booz begat Obed of Ruth; and Obed begat Jesse;
 
-<br><br>
+<br>
 
 6 And Jesse begat David the king...
 
-<br><br>
+<br>
 
 16 And Jacob begat Joseph the husband of Mary, of whom was born Jesus, who is called Christ.
 
