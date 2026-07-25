@@ -85,6 +85,7 @@ is eternal life.</span></p>
 
         },
 */
+
     {
      id: 22,
     slug: 'who-holds-authority-over-your-life',
@@ -163,6 +164,456 @@ God who holds you.</span></p>
         `
 
         },
+
+        {
+       id: 22,
+    slug: 'my-god-and-my-love-life-part-3',
+
+    title: 'My God and My Love Life (Part 3)',
+
+    excerpt: 'Trusting the God Who Knows, Restores, and Reigns',
+
+    date: 'July 23, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/03_keep.jpg',
+    
+    video:'https://www.youtube.com/embed/Nv9ZnHSbvfU?si=u6B8XMv8BxHI2ERe',
+
+    caption:'Youth Community | July 23, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'My God and My Love Life (Part 3)',
+      description: 'Trusting the God Who Knows, Restores, and Reigns',
+      image:
+        '/newsletter/message/03_keep.jpg',
+    },
+  
+        content1: `
+<article>
+
+  <p style="color:#9A3F3F;"><i>
+
+    Theme Verse: 
+"Keep thy heart with all diligence; for out of it are the issues of life." – Proverbs 4:23
+
+  </i></p>
+
+<p style="color:#9A3F3F;"><i>
+
+Text: Ruth 4:1–22
+
+<br><br>
+
+1 Then went Boaz up to the gate, and sat him down there: and, behold, the kinsman of whom Boaz spake came by; unto whom he said, Ho, such a one! turn aside, sit down here. And he turned aside, and sat down.
+
+<br><br>
+
+2 And he took ten men of the elders of the city, and said, Sit ye down here. And they sat down.
+
+<br><br>
+
+3 And he said unto the kinsman, Naomi, that is come again out of the country of Moab, selleth a parcel of land, which was our brother Elimelech's:
+
+<br><br>
+
+4 And I thought to advertise thee, saying, Buy it before the inhabitants, and before the elders of my people. If thou wilt redeem it, redeem it: but if thou wilt not redeem it, then tell me, that I may know: for there is none to redeem it beside thee; and I am after thee. And he said, I will redeem it.
+
+<br><br>
+
+5 Then said Boaz, What day thou buyest the field of the hand of Naomi, thou must buy it also of Ruth the Moabitess, the wife of the dead, to raise up the name of the dead upon his inheritance.
+
+<br><br>
+
+6 And the kinsman said, I cannot redeem it for myself, lest I mar mine own inheritance: redeem thou my right to thyself; for I cannot redeem it.
+
+<br><br>
+
+7 Now this was the manner in former time in Israel concerning redeeming and concerning changing, for to confirm all things; a man plucked off his shoe, and gave it to his neighbour: and this was a testimony in Israel.
+
+<br><br>
+
+8 Therefore the kinsman said unto Boaz, Buy it for thee. So he drew off his shoe.
+
+<br><br>
+
+9 And Boaz said unto the elders, and unto all the people, Ye are witnesses this day, that I have bought all that was Elimelech's, and all that was Chilion's and Mahlon's, of the hand of Naomi.
+
+<br><br>
+
+10 Moreover Ruth the Moabitess, the wife of Mahlon, have I purchased to be my wife, to raise up the name of the dead upon his inheritance, that the name of the dead be not cut off from among his brethren, and from the gate of his place: ye are witnesses this day.
+
+<br><br>
+
+11 And all the people that were in the gate, and the elders, said, We are witnesses...
+
+</i></p>
+
+<br>
+
+<<h4>I. He Is an All-Knowing God</h4>
+
+<p>
+As we come to the final chapter of the Book of Ruth, we see the beautiful conclusion of the story that God has been writing from the very beginning. Throughout the previous chapters, God has been quietly working behind the scenes in the lives of Naomi, Ruth, and Boaz. Although they could not always understand what He was doing, every event was unfolding according to His perfect plan.
+</p>
+
+<p>
+At the end of chapter three, Boaz assured Ruth that he was willing to become her kinsman-redeemer. However, he also revealed an important detail. Although he was one of the near kinsmen, there was another relative who had a greater legal right to redeem Ruth. Boaz could not simply ignore God's order, even if he desired to marry Ruth. Before anything else could happen, the nearer kinsman had to be given the opportunity to fulfill his responsibility.
+</p>
+
+<p>
+This teaches us an important lesson about the Christian life. Many people today believe that as long as two people love each other, nothing else matters. The world tells us to follow our hearts and pursue whatever makes us happy. However, God's Word teaches us something entirely different. Our decisions should never be controlled merely by our emotions. Above our feelings, our desires, and our personal plans, our obedience to God must always come first.
+</p>
+
+<p>
+Boaz understood this principle. Instead of taking matters into his own hands, he chose to trust God's process. He believed that the Lord knew what was best, even if the outcome remained uncertain.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+
+Ruth 4:1
+
+<br><br>
+
+"Then went Boaz up to the gate, and sat him down there: and, behold, the kinsman of whom Boaz spake came by; unto whom he said, Ho, such a one! turn aside, sit down here. And he turned aside, and sat down."
+
+</i></p>
+
+<p>
+The city gate was the place where legal matters were conducted before the elders. Boaz did not secretly approach the nearer kinsman. Instead, he handled everything publicly and honestly. This demonstrated his integrity and his desire to honor God's law above his own personal interests.
+</p>
+
+<p>
+As we read this verse, it may appear that the meeting between Boaz and the nearer kinsman happened by chance. Yet there are no accidents in God's plan. What seemed like an ordinary encounter was actually the providence of God. The Lord had already arranged every detail at exactly the right time.
+</p>
+
+<p>
+God's knowledge is far greater than ours. While we often see only the present moment, God sees the beginning and the end. He knows every circumstance, every decision, and every outcome long before they happen. Because He is an all-knowing God, we can confidently trust His wisdom instead of relying on our own understanding.
+</p>
+
+<p>
+This was exactly what Naomi encouraged Ruth to do at the end of the previous chapter.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+
+Ruth 3:18
+
+<br><br>
+
+"Then said she, Sit still, my daughter, until thou know how the matter will fall: for the man will not be in rest, until he have finished the thing this day."
+
+</i></p>
+
+<p>
+Waiting is often one of the hardest parts of the Christian life, especially when our emotions are involved. Ruth could have worried about the future or attempted to influence the situation herself. Instead, Naomi instructed her to "sit still" and trust that God was already working through Boaz.
+</p>
+
+<p>
+Likewise, Boaz did not attempt to bypass God's order. He patiently followed the proper process, believing that if it was God's will, the Lord Himself would open the door. Their confidence was not in their own ability to control the situation but in the wisdom of an all-knowing God who always accomplishes what is best for His children.
+</p>
+
+<p>
+Boaz then gathered ten of the elders of the city to serve as witnesses. In Israel, important legal matters were settled publicly before respected leaders. By calling the elders together, Boaz demonstrated that everything he was about to do would be done honestly, lawfully, and according to God's established order.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+
+Ruth 4:2–4
+
+<br><br>
+
+2 And he took ten men of the elders of the city, and said, Sit ye down here. And they sat down.
+
+<br><br>
+
+3 And he said unto the kinsman, Naomi, that is come again out of the country of Moab, selleth a parcel of land, which was our brother Elimelech's:
+
+<br><br>
+
+4 And I thought to advertise thee, saying, Buy it before the inhabitants, and before the elders of my people. If thou wilt redeem it, redeem it: but if thou wilt not redeem it, then tell me, that I may know: for there is none to redeem it beside thee; and I am after thee. And he said, I will redeem it.
+
+</i></p>
+
+<p>
+At first, the nearer kinsman agreed to redeem the property. From his perspective, purchasing the land seemed beneficial. However, Boaz then explained that redeeming Naomi's inheritance also meant accepting Ruth the Moabitess as his wife in order to preserve the family line of Mahlon. This responsibility involved much more than simply acquiring land.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+
+Ruth 4:5–6
+
+<br><br>
+
+5 Then said Boaz, What day thou buyest the field of the hand of Naomi, thou must buy it also of Ruth the Moabitess, the wife of the dead, to raise up the name of the dead upon his inheritance.
+
+<br><br>
+
+6 And the kinsman said, I cannot redeem it for myself, lest I mar mine own inheritance: redeem thou my right to thyself; for I cannot redeem it.
+
+</i></p>
+
+<p>
+When the nearer kinsman understood the full responsibility, he willingly gave up his right to redeem Ruth. This opened the way for Boaz to fulfill his role as the kinsman-redeemer.
+</p>
+
+<p>
+What is remarkable is not simply that Boaz was finally given the opportunity to marry Ruth, but how he arrived at that moment. He did not skip the process. He did not ignore God's law. He did not manipulate the circumstances to get what he wanted. Instead, he patiently waited for God to work according to His perfect will.
+</p>
+
+<p>
+This is a valuable lesson, especially in the area of relationships. Many people today are tempted to follow their feelings without considering God's Word. They believe that love alone is enough to justify their decisions. Yet the Bible teaches that our love for God must always come before our personal desires. Obedience is more important than emotion.
+</p>
+
+<p>
+Boaz, Ruth, and Naomi all demonstrated hearts that were surrendered to the Lord. They understood that if they chose to follow their own desires instead of God's will, they would be acting in disobedience. Rather than forcing the outcome, they trusted the Lord to accomplish His purpose in His own time.
+</p>
+
+<p>
+The same principle is found in the lives of Shadrach, Meshach, and Abednego. When King Nebuchadnezzar commanded everyone to worship the golden image, these three young men refused to compromise, even though doing so placed their lives in danger.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+
+Daniel 3:17–18
+
+<br><br>
+
+17 If it be so, our God whom we serve is able to deliver us from the burning fiery furnace, and he will deliver us out of thine hand, O king.
+
+<br><br>
+
+18 But if not, be it known unto thee, O king, that we will not serve thy gods, nor worship the golden image which thou hast set up.
+
+</i></p>
+
+<p>
+Notice their confidence. They believed that God was able to deliver them, but even if He chose not to, they remained committed to obeying Him. Their faith was not based on receiving the outcome they desired but on trusting the character of God.
+</p>
+
+<p>
+The same is true for us today. Sometimes God grants the desires of our hearts, and sometimes His plans are different from our own. Whatever His answer may be, our responsibility is to obey Him. When we surrender our plans to the Lord, we acknowledge that He knows far more than we do. His wisdom is perfect, His timing is perfect, and His ways are always best.
+</p>
+
+<p>
+Boaz, Ruth, and Naomi trusted the Lord because they knew that He is an all-knowing God. They allowed Him to direct every step, and in doing so, they experienced the goodness of His perfect plan.
+</p>
+
+<br>
+
+<h4>II. He Is the God Who Restores</h4>
+
+<p>
+After the legal matter had been settled and Boaz took Ruth to be his wife, the focus of the story shifted back to Naomi. At the beginning of the book, Naomi believed that her life was empty and hopeless. Yet by the end of the story, God demonstrated that He is able to restore what seems beyond repair.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+
+Ruth 4:14–15
+
+<br><br>
+
+14 And the women said unto Naomi, Blessed be the LORD, which hath not left thee this day without a kinsman, that his name may be famous in Israel.
+
+<br><br>
+
+15 And he shall be unto thee a restorer of thy life, and a nourisher of thine old age: for thy daughter in law, which loveth thee, which is better to thee than seven sons, hath borne him.
+
+</i></p>
+
+<p>
+The women of Bethlehem recognized that it was the Lord who had restored Naomi. At the beginning of the book, Naomi returned from Moab feeling empty and broken. She had lost her husband, Elimelech, and both of her sons. Because of her grief, she even said,
+</p>
+
+<p style="color:#9A3F3F;"><i>
+
+Ruth 1:20–21
+
+<br><br>
+
+20 And she said unto them, Call me not Naomi, call me Mara: for the Almighty hath dealt very bitterly with me.
+
+<br><br>
+
+21 I went out full, and the LORD hath brought me home again empty...
+
+</i></p>
+
+<p>
+When Naomi first returned to Bethlehem, all she could see was her pain. She believed that everything she treasured had been taken away. Yet she could not see what God was already preparing for her future. While Naomi thought her story had ended in sorrow, God was quietly working behind the scenes to accomplish something far greater than she could have imagined.
+</p>
+
+<p>
+Now, in Ruth chapter 4, the Lord had completely changed her situation. Through Ruth and Boaz, Naomi received a grandson, Obed. The women of Bethlehem declared that this child would be "a restorer of thy life, and a nourisher of thine old age." What Naomi once believed was empty had now been filled by the goodness and grace of God.
+</p>
+
+<p>
+This reminds us that God is the One who restores broken lives. Sometimes we experience seasons of loss, disappointment, or failure. There are moments when we feel as though everything has been taken away from us. Yet the same God who restored Naomi is able to restore us as well.
+</p>
+
+<p>
+The Lord does not always restore us in the way we expect, but He always restores according to His perfect wisdom. Naomi did not receive back her husband or her two sons, but God gave her something even greater—a renewed hope and the privilege of seeing His redemptive plan unfold through her own family.
+</p>
+
+<p>
+The Bible gives us another beautiful picture of God's restoring power in the life of the Samaritan woman.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+
+John 4:13–14
+
+<br><br>
+
+13 Jesus answered and said unto her, Whosoever drinketh of this water shall thirst again:
+
+<br><br>
+
+14 But whosoever drinketh of the water that I shall give him shall never thirst; but the water that I shall give him shall be in him a well of water springing up into everlasting life.
+
+</i></p>
+
+<p>
+The Samaritan woman had searched for satisfaction in many places, yet her heart remained empty. She had experienced broken relationships and was still longing for something that could truly satisfy her soul. When she met the Lord Jesus Christ, she discovered that only He could give the living water that brings lasting satisfaction.
+</p>
+
+<p>
+This is true for every believer. No relationship, possession, achievement, or success can fill the deepest longing of the human heart. Only Jesus Christ can restore what sin has broken and satisfy the soul completely.
+</p>
+
+<p>
+We also see this truth illustrated in the parable of the prodigal son. The young man left his father's house believing that life would be better on his own. He went away full of dreams and possessions, but eventually he found himself empty, hungry, and hopeless. Only when he returned to his father did he experience forgiveness, restoration, and joy once again.
+</p>
+
+<p>
+Perhaps there are times when we, like Naomi, feel empty because of life's disappointments. Or perhaps, like the Samaritan woman, we have looked to the wrong places for satisfaction. The message of Ruth chapter 4 reminds us that our God is still a God who restores. He restores the brokenhearted, strengthens the weary, and fills those who come to Him in faith.
+</p>
+
+<p>
+Instead of placing our confidence in people or circumstances, let us place our trust in the Lord. He alone is able to restore our lives in ways that far exceed our expectations.
+</p>
+
+<br>
+
+<h4>III. He Is a Sovereign God</h4>
+
+<p>
+The final verses of Ruth chapter 4 reveal that God's work extended far beyond the lives of Naomi, Ruth, and Boaz. Their story was part of a much greater plan that God had established long before they were born.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+
+Ruth 4:16–17
+
+<br><br>
+
+16 And Naomi took the child, and laid it in her bosom, and became nurse unto it.
+
+<br><br>
+
+17 And the women her neighbours gave it a name, saying, There is a son born to Naomi; and they called his name Obed: he is the father of Jesse, the father of David.
+
+</i></p>
+
+<p>
+As the book of Ruth comes to a close, we are reminded that God was accomplishing far more than simply bringing together Ruth and Boaz in marriage. While they rejoiced in God's blessing, the Lord was fulfilling a much greater purpose that extended far beyond their own lives.
+</p>
+
+<p>
+Naomi probably never imagined that the grandson she held in her arms would become part of God's eternal plan of redemption. Obed would become the father of Jesse, Jesse would become the father of King David, and through David's lineage the promised Messiah would one day come into the world.
+</p>
+
+<p>
+This is a wonderful reminder that God is sovereign. He is always working, even when we cannot see what He is doing. Throughout the Book of Ruth, there were many moments when the future seemed uncertain. Naomi lost her husband and sons. Ruth became a widow in a foreign land. Boaz had to wait for the nearer kinsman to make his decision. Yet through every circumstance, God remained in complete control.
+</p>
+
+<p>
+From a human perspective, many of these events appeared to be ordinary or even tragic. But from God's perspective, every step was leading to the fulfillment of His perfect plan. Nothing happened by accident. Every detail was under His sovereign hand.
+</p>
+
+<p>
+The genealogy recorded in the Gospel of Matthew confirms the significance of this family.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+
+Matthew 1:5–6, 16
+
+<br><br>
+
+5 And Salmon begat Booz of Rachab; and Booz begat Obed of Ruth; and Obed begat Jesse;
+
+<br><br>
+
+6 And Jesse begat David the king...
+
+<br><br>
+
+16 And Jacob begat Joseph the husband of Mary, of whom was born Jesus, who is called Christ.
+
+</i></p>
+
+<p>
+What began as the story of a widow gleaning in a field became part of the genealogy of Jesus Christ. This is the beauty of God's sovereignty. He often uses ordinary people who simply choose to obey Him. Ruth was a Moabitess, Naomi was a grieving widow, and Boaz was a faithful servant of God. Yet the Lord used each of them to accomplish His eternal purpose.
+</p>
+
+<p>
+Sometimes we become discouraged because we cannot understand why certain things happen in our lives. We wonder why God allows disappointment, waiting, or suffering. Like Naomi, we may only see the present pain. However, God sees the entire picture. His plans are always greater than our understanding, and His timing is always perfect.
+</p>
+
+<p>
+This is why we must surrender every area of our lives to Him, especially the matters of our hearts. Rather than trying to control every circumstance, we should trust that the Lord is directing our steps. His sovereign hand is never absent, even when we cannot recognize His work.
+</p>
+
+<br>
+
+<h4>Conclusion</h4>
+
+<p>
+Ruth chapter 4 reveals three wonderful truths about the character of God.
+</p>
+
+<p>
+First, <strong>He is an All-Knowing God.</strong> Boaz, Ruth, and Naomi trusted the Lord instead of relying on their own understanding. They patiently followed God's process, believing that He knew what was best for them.
+</p>
+
+<p>
+Second, <strong>He is the God Who Restores.</strong> Naomi's life is a testimony that God is able to bring hope out of hopelessness and joy out of sorrow. He restores those who place their trust in Him and fills the empty heart with His grace.
+</p>
+
+<p>
+Third, <strong>He is a Sovereign God.</strong> The Lord was directing every event in Ruth's life to accomplish His greater purpose. Through Ruth and Boaz came Obed, then Jesse, then David, and ultimately Jesus Christ, the promised Messiah. What seemed like an ordinary love story became part of God's plan of redemption for the world.
+</p>
+
+<p>
+The same God who worked in the lives of Naomi, Ruth, and Boaz is the same God we serve today. He is all-knowing, He restores the brokenhearted, and He reigns sovereign over every circumstance. Therefore, let us surrender every area of our lives to Him. Instead of leaning on our own understanding or following our emotions, let us trust the Lord completely, knowing that His plans are always perfect and His ways are always best.
+</p>
+
+
+<br>
+
+
+    <border style="border-top:4px solid #9A3F3F; padding-left:200px; margin-left:0;">
+
+    <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+    <p style="color:#9A3F3F;"><i>
+   How have you seen God demonstrate His wisdom, His restoring grace, or His sovereignty in your own life? In what area do you need to trust Him more instead of relying on your own understanding?
+</border>
+
+
+
+
+</article>
+        `
+
+        },
+       
      {
        id: 21,
     slug: 'christ-obedience',
