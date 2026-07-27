@@ -1,6 +1,6 @@
 
 export const newsletter = [
-/*
+
     {
      id: 23,
     slug: 'walk-the-narrow-way',
@@ -84,7 +84,7 @@ is eternal life.</span></p>
         `
 
         },
-*/
+
 
     {
      id: 22,
@@ -94,7 +94,7 @@ is eternal life.</span></p>
 
     excerpt: 'Submit yourselves therefore to God. Resist the devil, and he will flee from you. - James 4:7',
 
-    date: 'July 22, 2026',
+    date: 'July 24, 2026',
 
     author: 'Christina Angela Devata',
 
