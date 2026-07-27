@@ -84,7 +84,280 @@ is eternal life.</span></p>
         `
 
         },
+{
+       id: 21,
+    slug: 'freedom-in-christ',
 
+    title: "Freedom in Christ",
+
+    excerpt: "Romans Series: Man's Righteousness and God's Holiness",
+
+    date: 'July 26, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/03_faith.jpg',
+    
+    video:'https://www.youtube.com/embed/pmMRvooupOs',
+
+    caption:'Worship Service | July 26, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: "Freedom in Christ",
+      description: "Series of Romans: Man's Righteousness and God's Holiness",
+      image:
+        '/newsletter/message/03_faith.jpg',
+    },
+  
+        content1: `
+<article>
+
+<p style="color:#9A3F3F;"><i>
+Text: Romans 6:14–18
+<br>
+14 For sin shall not have dominion over you: for ye are not under the law, but under grace.
+<br>
+15 What then? shall we sin, because we are not under the law, but under grace? God forbid.
+<br>
+16 Know ye not, that to whom ye yield yourselves servants to obey, his servants ye are to whom ye obey; whether of sin unto death, or of obedience unto righteousness?
+<br>
+17 But God be thanked, that ye were the servants of sin, but ye have obeyed from the heart that form of doctrine which was delivered you.
+<br>
+18 Being then made free from sin, ye became the servants of righteousness.
+</i></p>
+
+<br>
+
+<h4>Introduction</h4>
+
+<p>
+Good morning. We are still continuing our series of lessons from the Book of Romans. Today we will study Romans 6:14–18. Before we begin, let us think about something familiar to us as Filipinos. Last June 12, 2026, our nation celebrated its 128th year of independence. It reminds us of our freedom after more than three centuries of Spanish rule. Although history tells us that our nation was later occupied by another country, the celebration of independence continues to remind us of the value of freedom.
+</p>
+
+<p>
+Even today, the word <strong>freedom</strong> is often heard. We see people protesting in the streets, demanding freedom from different forms of oppression. Many people desire freedom, yet many do not realize that the greatest freedom a person can ever experience is not merely political or social freedom, it is <strong>freedom in Christ</strong>.
+</p>
+
+<p>
+That is exactly what Paul teaches in Romans chapter 6. What does it mean when the Bible says that we are free? What kind of freedom does Christ give? The passage before us answers these questions, and the first truth we find is that <strong>Freedom in Christ is freedom from sin.</strong>
+</p>
+
+<br>
+
+<h4>I. Freedom in Christ is Freedom from Sin</h4>
+
+<p style="color:#9A3F3F;"><i>
+Romans 6:14
+<br>
+"For sin shall not have dominion over you: for ye are not under the law, but under grace."
+</i></p>
+
+<p>
+The Bible clearly declares that sin shall not have dominion over those who are in Christ. Sin no longer has authority over the believer because Jesus Christ has already set us free. From the very beginning of this ministry, we have consistently taught that true freedom from sin can only be experienced by those who have personally trusted Jesus Christ as their Lord and Savior.
+</p>
+
+<p>
+Many people struggle to believe this truth, especially those who come from a difficult past. Some think that their sins are too great to be forgiven. Others believe they are beyond God's grace because of the things they have done. But according to the Scriptures, those thoughts are lies. The Bible says that those who are in Christ are no longer under the dominion of sin. Our past does not define our standing before God. Christ has already broken sin's authority over every believer.
+</p>
+
+<p>
+The preacher illustrated this truth with the example of an elephant. When an elephant is still young, it is tied with a heavy chain. Every attempt to break free only results in pain, and eventually it learns to stop trying. As the elephant grows, it becomes strong enough to break any rope, yet it remains standing because it still believes it cannot escape. It is no longer the rope that keeps it captive, it is the belief that it is still bound.
+</p>
+
+<p>
+In the same way, Satan wants believers to think that they are still slaves to the sins from which Christ has already delivered them. He wants Christians to believe that they are still powerless, even though the Word of God declares otherwise. The devil cannot take away the believer's salvation, but he desires to rob believers of the joy of their salvation by convincing them that they are still defeated by sin.
+</p>
+
+<p>
+But the Bible declares:
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 6:14
+<br>
+"For sin shall not have dominion over you: for ye are not under the law, but under grace."
+</i></p>
+
+<p>
+God's grace is more than enough for every believer. It is through His grace that we are no longer under the authority of sin. We acknowledge that we are sinners and that we have all fallen short of God's glory, but because of Christ's righteousness, we have been made righteous before God. Our standing before Him is not based on our own righteousness but upon the finished work of Jesus Christ.
+</p>
+
+<p>
+The preacher also shared the testimony of an incarcerated man whose life was transformed after finding Christ while in prison. Though he had committed serious crimes and experienced a difficult life behind bars, he found something that prison could not take away, true freedom in Christ. Even while confined, he experienced peace and joy because Christ had set him free from the bondage of sin.
+</p>
+
+<p>
+No matter what the devil whispers to us, God's Word remains true. Christ has already redeemed us. Sin no longer has dominion over those who belong to Him. This is the freedom that every believer possesses, not merely freedom from outward circumstances, but freedom from the power and dominion of sin through Jesus Christ.
+</p>
+
+<br>
+
+<h4>II. Freedom in Christ Empowers Us to Live for Him</h4>
+
+<p style="color:#9A3F3F;"><i>
+Romans 6:15
+<br>
+"What then? shall we sin, because we are not under the law, but under grace? God forbid."
+</i></p>
+
+<p>
+After explaining that believers are no longer under the dominion of sin, Paul asks another important question: "Shall we sin because we are not under the law, but under grace?" His answer is immediate and emphatic, "God forbid."
+</p>
+
+<p>
+The grace of God is never a license for us to continue living in sin. Many people misunderstand grace by thinking that because salvation is by grace, they are free to live however they please. But that is not what the Bible teaches.
+</p>
+
+<p>
+As we mentioned in the previous message, grace is not simply God's leniency toward sin. Grace is not God's permission for us to continue in sin. Rather, grace is God's power working in the believer's life. It is the grace of God that empowers us to live for Him instead of living for sin.
+</p>
+
+<p>
+Every believer has struggles. There are sins that we continually fight against. Sometimes we feel discouraged and think we are fighting alone. But the grace that God has given us is sufficient. It gives us the strength to continue fighting against sin instead of surrendering to it.
+</p>
+
+<p>
+The preacher reminded us that even the Apostle Paul experienced this same struggle.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 7:14–15
+<br>
+"For we know that the law is spiritual: but I am carnal, sold under sin.
+<br>
+For that which I do I allow not: for what I would, that do I not; but what I hate, that do I."
+</i></p>
+
+<p>
+Paul openly admitted that there were things he desired to do for the Lord, yet he struggled. He hated sin, yet he found himself battling against it. His struggle reminds us that every believer experiences spiritual battles. The Christian life is not free from temptation, but it is a life empowered by God's grace.
+</p>
+
+<p>
+If you are struggling with a particular sin, do not immediately conclude that there is no hope for you. In fact, the struggle itself is evidence that there is a new desire within you to please God. Before we came to Christ, sin was our natural way of life. But after salvation, there is now a conflict because the Holy Spirit is working in us.
+</p>
+
+<p>
+The goal of the Christian life is not sinless perfection in this present world. Complete freedom from the presence of sin will only be realized when we are with the Lord. Until then, the Christian life is a continual battle against sin, and God has not left us to fight alone. He has given us His grace to strengthen us every day.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Romans 6:18
+<br>
+"Being then made free from sin, ye became the servants of righteousness."
+</i></p>
+
+<p>
+Before we knew Christ, we were servants of sin. But now, through the grace of God, we have become servants of righteousness. Our lives have a new direction. We are no longer called to serve sin but to serve the Lord.
+</p>
+
+<p>
+Perhaps there are times when you think of yourself as worthless because of your past failures. Remember that your identity is no longer defined by who you were before Christ. The Lord has redeemed you. Through His grace, He empowers you to live for Him each day.
+</p>
+
+<p>
+Freedom in Christ does not leave us unchanged. It empowers us to pursue righteousness, to fight against sin, and to live a life that honors the One who redeemed us. This is the purpose of God's grace, not to encourage sinful living, but to strengthen believers to walk faithfully with Him.
+</p>
+<br>
+
+<h4>III. Freedom in Christ Leads to Obedience</h4>
+
+<p style="color:#9A3F3F;"><i>
+Romans 6:16–17
+<br>
+16 Know ye not, that to whom ye yield yourselves servants to obey, his servants ye are to whom ye obey; whether of sin unto death, or of obedience unto righteousness?
+<br>
+17 But God be thanked, that ye were the servants of sin, but ye have obeyed from the heart that form of doctrine which was delivered you.
+</i></p>
+
+<p>
+The final truth we learn from this passage is that <strong>freedom in Christ leads to obedience.</strong> Some people misunderstand Christian freedom. They think that because they have been forgiven and redeemed by Christ, they are now free to live however they want. But that is not what the Bible teaches.
+</p>
+
+<p>
+Paul reminds us that before we came to Christ, we were servants of sin. Sin ruled our lives, and we lived according to its desires. But everything changed when we trusted Jesus Christ as our Lord and Savior. The Bible says that we have "obeyed from the heart" the doctrine that was delivered to us. Genuine salvation produces a heart that desires to obey God.
+</p>
+
+<p>
+Freedom in Christ is not the freedom to do whatever we want. Rather, it is the freedom to obey God. The gospel that saved us also changes the direction of our lives. It leads us away from serving sin and toward serving righteousness.
+</p>
+
+<p>
+The preacher illustrated this truth by reminding us of Adam and Eve in the Garden of Eden.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Genesis 2:16–17
+<br>
+"And the LORD God commanded the man, saying, Of every tree of the garden thou mayest freely eat:
+<br>
+But of the tree of the knowledge of good and evil, thou shalt not eat of it: for in the day that thou eatest thereof thou shalt surely die."
+</i></p>
+
+<p>
+God gave Adam and Eve freedom, but He also gave them His command. Instead of obeying the Lord, they chose to go beyond His commandment. Their disobedience brought consequences, and they were driven out of the garden.
+</p>
+
+<p>
+The same principle applies to every believer today. God has given us freedom in Christ, but that freedom is never separated from obedience to His Word. True freedom does not mean living according to our own desires. It means willingly submitting ourselves to God's will because we love Him.
+</p>
+
+<p>
+When we ignore God's Word and choose our own way, we also experience the consequences of sin. But when we obey Him, we experience the kind of life He desires for His children.
+</p>
+
+<p>
+The preacher then pointed to the description of a blessed life found in the book of Psalms.
+</p>
+
+<p style="color:#9A3F3F;"><i>
+Psalm 1:1–3
+<br>
+"Blessed is the man that walketh not in the counsel of the ungodly, nor standeth in the way of sinners, nor sitteth in the seat of the scornful;
+<br>
+But his delight is in the law of the LORD; and in his law doth he meditate day and night.
+<br>
+And he shall be like a tree planted by the rivers of water, that bringeth forth his fruit in his season; his leaf also shall not wither; and whatsoever he doeth shall prosper."
+</i></p>
+
+<p>
+Where do we learn how to live this kind of life? We learn it from the Word of God. As we meditate on His Word day and night, our lives become like a tree planted by the rivers of water - fruitful, stable, and spiritually prosperous. This is the kind of life that obedience produces.
+</p>
+
+<p>
+As we conclude, let us remember these three truths from Romans 6:14-18. First, <strong>freedom in Christ is freedom from sin.</strong> Through Christ, sin no longer has dominion over us. Second, <strong>freedom in Christ empowers us to live for Him.</strong> God's grace gives us the strength to fight against sin and pursue righteousness. Finally, <strong>freedom in Christ leads to obedience.</strong> The gospel does not give us permission to live in sin; it calls us to faithfully obey the Lord.
+</p>
+
+<p>
+The world offers many ideas about freedom, but God's definition is far greater. Sin destroys the life of the believer, but Christ has redeemed us through His precious blood. The freedom He gives enables us to follow Him every day, to obey His Word, and to live lives that are fruitful for His glory. This is the true freedom that God desires every believer to experience, a life that is rooted in Christ, fruitful in obedience, and prosperous in walking with Him.
+</p>
+
+
+
+
+
+
+
+<br>
+
+
+    <border style="border-top:4px solid #9A3F3F; padding-left:200px; margin-left:0;">
+
+    <h4 style="color:#9A3F3F;"><i>Reflection Question</i></h4>
+
+    <p style="color:#9A3F3F;"><i>
+    What is one area of my life where I need to surrender to Christ and walk in greater obedience this week? </i></p>
+
+</border>
+
+
+</article>
+
+        `
+        },
 
     {
      id: 22,
