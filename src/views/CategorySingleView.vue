@@ -71,13 +71,6 @@ const pageTitle = computed(() => {
 /* -----------------------------------
    META DESCRIPTION
 ----------------------------------- */
-const metaDescription = computed(() => {
-  return (
-    post.value?.excerpt ||
-    'Grace Communion Bible Fellowship'
-  )
-})
-
 /* -----------------------------------
    CURRENT URL
 ----------------------------------- */
@@ -91,11 +84,6 @@ const currentUrl = computed(() => {
 const metaTags = computed(() => {
   const tags = [
     /* BASIC SEO */
-    {
-      name: 'description',
-      content: metaDescription.value
-    },
-
     /* OPEN GRAPH */
     {
       property: 'og:url',
@@ -111,11 +99,6 @@ const metaTags = computed(() => {
       property: 'og:title',
       content: post.value?.title
     },
-    {
-      property: 'og:description',
-      content: metaDescription.value
-    },
-
     /* ARTICLE META */
     {
       property: 'article:published_time',
@@ -136,10 +119,6 @@ const metaTags = computed(() => {
     {
       name: 'twitter:title',
       content: post.value?.title
-    },
-    {
-      name: 'twitter:description',
-      content: metaDescription.value
     }
   ]
 
