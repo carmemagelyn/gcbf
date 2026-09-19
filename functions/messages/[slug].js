@@ -1,0 +1,1 @@
+export { onRequest } from '../_post-metadata.js';
