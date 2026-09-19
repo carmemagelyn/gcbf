@@ -1,6 +1,101 @@
 
 export const newsletter = [
+ {
+     id: 24,
+    slug: 'lord-do-you-remember',
 
+    title: 'Lord, Do You Remember?',
+
+    excerpt: 'Poetry',
+
+    date: 'September 21, 2026',
+
+    author: 'Christina Angela Devata',
+
+    authorImage: '/newsletter/author/christina-devata.jpg',
+
+    coverphoto: '/newsletter/02_letgo/ldyr.jpg',
+
+   
+
+    type: 'article',
+
+    seo: {
+      title: 'Lord, Do You Remember?',
+      description: 'Poetry',
+      image:
+        '/newsletter/02_letgo/ldyr.jpg',
+    },
+    caption: '',
+
+
+
+        content1: `
+            <article>
+          
+<h1 style="text-align:center;">Lord, Do You Remember?</h1>
+<div style="text-align:center;">
+ <br>       
+
+            <p><i>Lord, do You remember? Of course, You do.
+            <br>That horrid time when it was just us two.
+            <br>Severely traumatized, and I cried.
+            <br>I wailed on Your name, my eyes feared wide.
+            </p>
+<br>
+            <p><i>"God, help me. I'm sorry, please."
+            <br>Hands shook against the cold breeze,
+            <br>It was 3 am, and I fell asleep.
+            <br>Not knowing You have heard your fallen sheep.
+            </p>
+<br>
+            <p><i>Months later, my trauma never left.
+            <br>Maybe calling for You didn't quite help.
+            <br>Until I had prayed on Your name,
+            <br>I was scared and so full of shame.
+            </p>
+<br>
+            <p><i>But You answered.
+            <br>Yes, You have heard.
+            <br>You said, <span style="color:#9A3F3F;"><i>"My daughter,
+            <br>It's Me, your Father."</span>
+            </p>
+<br>
+            <p style="color:#9A3F3F;"><i>"I hear you, I will not abandon you,
+            <br>For I am God, and I already knew."</i></span>
+            <br>With that, my heart broke.
+            <br>And my soul awoke.
+            </p>
+<br>
+            <p><i>I turned away from You, feeling dirty,
+            <br>And I could feel your eyes hurt with pity.
+            <br>"But I cursed Your name," I said,
+            <br>"I mocked You, and I have fled."
+            </p>
+<br>
+           <p><i>"I have done lots of evil," I cried.
+            <br>You said,<span style="color:#9A3F3F;"><i>"It's all done and crucified."</i></span>
+            <br>That day, the sky looked so blue,
+            <br>as you told me <span style="color:#9A3F3F;"><i>"I love you."</i></span>
+            </p>
+<br>
+            <p><i>Now, my trauma is healed.
+            <br>Lord, You have been my shield.
+            <br>Every evil that came to attack,
+            <br>You had simply taken it all back.
+            </p>
+<br>
+            <p><i>Thank You, My God, My Father.
+            <br>Promise, we'll be together.
+            <br>Forever, now and then,
+            <br><b>In Jesus' Name, Amen.</b>
+            </p>
+<br>
+</div>
+        </article>
+        `
+
+        },
     {
      id: 23,
     slug: 'walk-the-narrow-way',
