@@ -61,7 +61,7 @@ export const newsletter = [
             <br>It's Me, your Father."</span>
             </p>
 <br>
-            <p style="color:#9A3F3F;"><i>"I hear you, I will not abandon you,
+            <p><span style="color:#9A3F3F;"><i>"I hear you, I will not abandon you,
             <br>For I am God, and I already knew."</i></span>
             <br>With that, my heart broke.
             <br>And my soul awoke.
