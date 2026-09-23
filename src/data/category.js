@@ -284,7 +284,7 @@ export const newsletter = [
 
     title: 'Spiritually Minded',
 
-    excerpt: 'For to be carnally minded is death; but to be spiritually minded is life and peace. (Romans 8:6)',
+    excerpt: 'There is therefore now no condemnation to them which are in Christ Jesus, who walk not after the flesh, but after the Spirit. (Romans 8:1)',
 
     date: 'August 2, 2026',
 
@@ -302,7 +302,7 @@ export const newsletter = [
 
     seo: {
       title: 'Spiritually Minded',
-      description: 'For to be carnally minded is death; but to be spiritually minded is life and peace. (Romans 8:6)',
+      description: 'There is therefore now no condemnation to them which are in Christ Jesus, who walk not after the flesh, but after the Spirit. (Romans 8:1)',
       image:
         '/newsletter/message/03_faith.jpg',
     },
