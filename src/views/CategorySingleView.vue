@@ -234,9 +234,14 @@ useHead({
       </small>
 
       <!-- TITLE -->
-      <h1 class="newsletter-title text-center mb-5">
+      <h1 class="newsletter-title text-center mb-2">
         {{ post.title }}
       </h1>
+
+         <!-- EXCERPT -->
+      <p class="excerpt text-center mb-4" style="font-size: 1.25rem; font-weight: 500; color: #595959; letter-spacing: .15px; word-spacing: .5px;">
+        {{ post.excerpt }}
+      </p>
 
       <!-- FEATURED IMAGE -->
       <div
@@ -255,8 +260,10 @@ useHead({
         >
           {{ captionText }}
         </p>
-      </div>
 
+
+      </div>
+<div style="align-items: center; justify-content: center; display: flex; margin-bottom: 2rem;">
       <!-- AUTHOR -->
       <div class="newsletter-author">
 
@@ -284,10 +291,7 @@ useHead({
 
       </div>
 
-      <!-- EXCERPT -->
-      <p class="excerpt text-center mb-5" style="font-size: 1.25rem; font-weight: 500; color: #595959; letter-spacing: .15px; word-spacing: .5px;">
-        {{ post.excerpt }}
-      </p>
+     </div>
 
       <!-- CONTENT 1 -->
       <div

@@ -1,5 +1,187 @@
 
 export const newsletter = [
+     
+
+        /*
+    {
+     id: 25,
+    slug: 'almost-is-not-enough',
+
+    title: 'Almost is Not Enough',
+
+    excerpt: '“Then Agrippa said unto Paul, Almost thou persuadest me to be a Christian.” (Acts 26:28)',
+
+    date: 'September 26, 2026',
+
+    author: 'Magelyn Berdejo',
+
+    authorImage: '/newsletter/author/magelyn-berdejo.jpg',
+
+    coverphoto: '/newsletter/02_letgo/not.jpg',
+
+   
+
+    type: 'article',
+
+    seo: {
+      title: 'Almost is Not Enough',
+      description: '“Then Agrippa said unto Paul, Almost thou persuadest me to be a Christian.” (Acts 26:28)',
+      image:
+        '/newsletter/02_letgo/not.jpg',
+    },
+    caption: '',
+
+
+
+        content1: `
+            <article>
+
+        
+
+           
+
+            <p>
+            Agrippa II therefore grew up surrounded by power, politics, Judaism, and the events surrounding the early Christian movement. He was familiar with Jewish customs, religious matters, and the controversies surrounding the followers of Jesus. He was not someone who knew nothing about God or the events taking place around him. He already knew much about the things Paul was talking about.
+            </p>
+
+            <p>
+            This is why Paul's words in Acts 26:26 are significant:
+            <br><span style="color:#9A3F3F;font-weight:500;">“For the king knoweth of these things, before whom also I speak freely: for I am persuaded that none of these things are hidden from him; for this thing was not done in a corner.”</span>
+            </p>
+            
+            <p>
+            Paul was essentially telling Agrippa that these events were not secret. The life, death, and resurrection of Jesus had been openly proclaimed. What had happened was not some hidden event that took place in an obscure corner. Agrippa had heard about these things, and now Paul was standing before him personally explaining the Gospel.
+            </p>
+
+            <p>
+            Paul could have used this opportunity simply to defend himself against the accusations brought against him. Instead, he preached Christ. He shared his testimony, explaining how he had once persecuted the followers of Jesus but had encountered Christ and been completely changed. Paul was not merely giving Agrippa information. He was bringing him face-to-face with the truth of the Gospel.
+            </p>
+
+            <p>
+            Then came Agrippa's response:
+            <br><span style="color:#9A3F3F;font-weight:500;">“Almost thou persuadest me to be a Christian.”</span>
+            </p>
+
+            <p>
+            Almost.
+            </p>
+
+            <p>
+            What a powerful and sobering word.
+            </p>
+
+            <p>
+            Agrippa was not completely ignorant. He had heard the truth. He understood what Paul was saying. He was close enough to recognize the significance of the message. Yet, somewhere between hearing the Gospel and surrendering to Christ, he stopped at <span style="color:#9A3F3F;font-weight:500;">“almost.”</span>
+            </p>
+
+            <p>
+            And this is where Agrippa's story becomes relevant to us today.
+            </p>
+            
+            <p>
+            When we share the Gospel, we often think about people who have never heard about Jesus. Certainly, we should reach those people. But there are also many people today who have heard the Gospel countless times. They grew up in Christian homes. They attended church. They went to Sunday school. They listened to sermons. They know the Bible stories. They know that Jesus died on the cross and rose again. They know the Gospel.
+            </p>
+
+            <p>
+            But knowing the Gospel is not the same as responding to the Gospel.
+            </p>
+
+            <p>
+            A person can know about Jesus without trusting Jesus. Someone can know the right Bible verses, understand the story of the cross, and even become emotional during a sermon, yet never truly surrender their life to Christ. They can be familiar with Christianity without having a genuine relationship with Christ.
+            </p>
+
+            <p>
+            Sometimes, the people who have heard the Gospel many times may actually be in greater danger of becoming comfortable with it. The first time they hear about Jesus, their hearts may be deeply moved. But after hearing the same message repeatedly, the words can become familiar. They know what the preacher is going to say. They know the invitation. They know the verses. They may even say, “I already know that.”
+            </p>
+
+            <p>
+            But the question is not simply, <span style="color:#9A3F3F;font-weight:500;">“Do you know the Gospel?”</span>
+            </p>
+
+            <p>
+            The deeper question is, <span style="color:#9A3F3F;font-weight:500;">“What have you done with the Gospel?”</span>
+            </p>
+
+            <p>
+            Have you repented? Have you trusted Christ? Have you surrendered your life to Him? Is Jesus merely someone you know about, or is He truly your Lord and Savior?
+            </p>
+
+            <p>
+            There is a danger in continually saying, <span style="color:#9A3F3F;font-weight:500;">“Someday.”</span> Someday I will follow Christ. Someday I will surrender. Someday I will take my faith seriously. Someday I will change. Someday.
+            </p>
+
+            <p>
+            But <span style="color:#9A3F3F;font-weight:500;">“someday”</span> can become another form of <span style="color:#9A3F3F;font-weight:500;">“almost.”</span>
+            </p>
+
+            <p>
+            Almost believing. Almost repenting. Almost surrendering. Almost deciding to follow Christ.
+            </p>
+
+            <p>
+            Almost.
+            </p>
+
+            <p>
+            When we share the Gospel today, we should not become discouraged simply because someone tells us, <span style="color:#9A3F3F;font-weight:500;">“I already know.”</span> Knowing does not necessarily mean surrendering. Paul did not assume that Agrippa's knowledge meant Agrippa had already responded. He continued to speak. He continued to testify. He continued to proclaim Christ.
+            </p>
+
+            <p>
+            We should do the same.
+            </p>
+
+            <p>
+            Keep sharing the Gospel. Keep praying for people. Keep inviting them to church. Keep telling them what Jesus has done. Keep pointing people toward Christ. We do not know what God is doing in someone's heart. A person who seems uninterested today may respond tomorrow. Someone who has heard the Gospel for years may suddenly understand its seriousness. Someone sitting in church every Sunday may finally realize that knowing about Christ is not the same as knowing Christ.
+            </p>
+
+            <p>
+            And this message is not only for those outside the church. It is also for us who have heard the Gospel many times. We should never allow familiarity to replace faith. We should never become so accustomed to hearing God's Word that we stop allowing it to examine and change our hearts.
+            </p>
+
+            <p>
+            Agrippa stood before Paul and heard the truth. He was close. He was almost persuaded. But the Bible does not record that he surrendered his life to Christ.
+            </p>
+
+            <p>
+            That is the tragedy of <span style="color:#9A3F3F;font-weight:500;">“almost.”</span>
+            </p>
+
+            <p>
+            In many things in life, almost can be good enough. Almost winning can still mean you came close. Almost finishing can mean you are nearly there. But when it comes to our relationship with God and the salvation of our souls, <span style="color:#9A3F3F;font-weight:500;">“almost” is not enough.</span>
+            </p>
+
+            <p>
+            You can be almost persuaded, almost ready, almost convinced, and almost willing. But almost is still not surrender.
+            </p>
+
+            <p>
+            Paul's message to Agrippa reminds us that the Gospel demands a response. We cannot simply admire the message, agree with parts of it, or continue postponing our decision.
+            </p>
+
+            <p style="color:#9A3F3F;font-weight:500;"> Behold, now is the accepted time; behold, now is the day of salvation. - 2 Corinthians 6:2</p>
+
+            <p>
+            If you have heard the Gospel many times, don't simply ask, <span style="color:#9A3F3F;font-weight:500;">“Have I heard this before?”</span> Ask, <span style="color:#9A3F3F;font-weight:500;">“Have I responded to Christ?”</span>
+            </p>
+
+            <p>
+            And if you are sharing the Gospel with someone who already knows, don't give up. Keep praying. Keep loving them. Keep pointing them to Jesus.
+            </p>
+
+            <p>
+            Because there is a difference between being almost persuaded and completely surrendering to Christ.
+            </p>
+
+            <p>
+            <b>Almost is not enough.</b>
+            </p>
+
+
+        </article>
+        `
+
+        },
+        */
  {
      id: 24,
     slug: 'lord-do-you-remember',
@@ -96,13 +278,50 @@ export const newsletter = [
         `
 
         },
+        {
+       id: 22,
+    slug: 'keep-your-heart-from-red-flags',
+
+    title: 'Keep Your Heart From Red Flags',
+
+    excerpt: 'A prudent man foreseeth the evil, and hideth himself: but the simple pass on, and are punished. (Proverbs 22:3)',
+
+    date: 'July 30, 2026',
+
+    author: 'Pastor Joseph Tabuena',
+
+    authorImage: '/newsletter/author/joseph-tabuena.jpg',
+
+    coverphoto: '/newsletter/message/03_keep.jpg',
+    
+    video:'https://www.youtube.com/embed/VPKZ1ZPKqSA?si=-jQnDMwzI9p_ktZb',
+
+    caption:'Youth Community | July 30, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'Keep Your Heart From Red Flags',
+      description: 'A prudent man foreseeth the evil, and hideth himself: but the simple pass on, and are punished. (Proverbs 22:3)',
+      image:
+        '/newsletter/message/03_keep.jpg',
+    },
+  
+        content1: `
+<article>
+
+
+</article>
+        `
+
+        },
     {
      id: 23,
     slug: 'walk-the-narrow-way',
 
     title: 'Walk the Narrow Way',
 
-    excerpt: '“because strait is the gate, and narrow is the way, which leadeth unto life, and few there be that find it.” (Matthew 7:14)',
+    excerpt: 'because strait is the gate, and narrow is the way, which leadeth unto life, and few there be that find it. (Matthew 7:14)',
 
     date: 'July 27, 2026',
 
@@ -118,7 +337,7 @@ export const newsletter = [
 
     seo: {
       title: 'Walk the Narrow Way',
-      description: '“because strait is the gate, and narrow is the way, which leadeth unto life, and few there be that find it.” (Matthew 7:14)',
+      description: 'because strait is the gate, and narrow is the way, which leadeth unto life, and few there be that find it. (Matthew 7:14)',
       image:
         '/newsletter/02_letgo/narrow.jpg',
     },
@@ -460,7 +679,7 @@ The world offers many ideas about freedom, but God's definition is far greater. 
 
     title: 'Who holds authority over your life?',
 
-    excerpt: 'Submit yourselves therefore to God. Resist the devil, and he will flee from you. - James 4:7',
+    excerpt: 'Submit yourselves therefore to God. Resist the devil, and he will flee from you. (James 4:7)',
 
     date: 'July 24, 2026',
 
@@ -476,7 +695,7 @@ The world offers many ideas about freedom, but God's definition is far greater. 
 
     seo: {
       title: 'Who holds authority over your life?',
-      description: 'Submit yourselves therefore to God. Resist the devil, and he will flee from you. - James 4:7',
+      description: 'Submit yourselves therefore to God. Resist the devil, and he will flee from you. (James 4:7)',
       image:
         '/newsletter/02_letgo/hold.jpg',
     },
@@ -6922,7 +7141,7 @@ have to, but because I wanted to.
 
     title: 'Let Go and Let God',
 
-    excerpt: '“Be still, and know that I am God.” - Psalm 46:10',
+    excerpt: 'Be still, and know that I am God. (Psalm 46:10)',
 
     date: 'May 24, 2026',
 
@@ -6938,7 +7157,7 @@ have to, but because I wanted to.
 
     seo: {
       title: 'Let Go and Let God',
-      description: '“Be still, and know that I am God.” - Psalm 46:10',
+      description: 'Be still, and know that I am God. (Psalm 46:10)',
       image:
         '/newsletter/02_letgo/letgo.jpg',
     },
