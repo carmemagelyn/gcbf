@@ -2,14 +2,14 @@
 export const newsletter = [
      
 
-        /*
+/*
     {
      id: 25,
     slug: 'almost-is-not-enough',
 
     title: 'Almost is Not Enough',
 
-    excerpt: '“Then Agrippa said unto Paul, Almost thou persuadest me to be a Christian.” (Acts 26:28)',
+    excerpt: 'Then Agrippa said unto Paul, Almost thou persuadest me to be a Christian. (Acts 26:28)',
 
     date: 'September 26, 2026',
 
@@ -181,7 +181,7 @@ export const newsletter = [
         `
 
         },
-        */
+  */
  {
      id: 24,
     slug: 'lord-do-you-remember',
