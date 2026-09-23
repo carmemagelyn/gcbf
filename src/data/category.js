@@ -278,6 +278,43 @@ export const newsletter = [
         `
 
         },
+         {
+       id: 22,
+    slug: 'spiritually-minded',
+
+    title: 'Spiritually Minded',
+
+    excerpt: 'For to be carnally minded is death; but to be spiritually minded is life and peace. (Romans 8:6)',
+
+    date: 'August 2, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/03_faith.jpg',
+    
+    video:'https://www.youtube.com/embed/hMsVi9NHlXU?si=CJbL4uj32Kfhz6x2',
+
+    caption:'Worship Service | August 2, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'Spiritually Minded',
+      description: 'For to be carnally minded is death; but to be spiritually minded is life and peace. (Romans 8:6)',
+      image:
+        '/newsletter/message/03_faith.jpg',
+    },
+  
+        content1: `
+<article>
+
+
+</article>
+        `
+
+        },
         {
        id: 22,
     slug: 'keep-your-heart-from-red-flags',
