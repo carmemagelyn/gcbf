@@ -185,7 +185,7 @@ export const newsletter = [
 
     title: 'Lord, Do You Remember?',
 
-    excerpt: 'Poetry',
+    excerpt: 'Poetry of faith, healing, and remembering that God never forgets.',
 
     date: 'September 21, 2026',
 
@@ -201,7 +201,7 @@ export const newsletter = [
 
     seo: {
       title: 'Lord, Do You Remember?',
-      description: 'Poetry',
+      description: 'Poetry of faith, healing, and remembering that God never forgets.',
       image:
         '/newsletter/02_letgo/ldyr.jpg',
     },
