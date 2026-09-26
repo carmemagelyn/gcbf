@@ -278,6 +278,45 @@ export const newsletter = [
         `
 
         },
+
+    {
+       id: 22,
+    slug: 'keep-your-heart-from-red-flags',
+
+    title: 'My God and His Money',
+
+    excerpt: ' For where your treasure is, there will your heart be also. (Luke 12:34)',
+
+    date: 'August 7, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/04_money.jpg',
+    
+    video:'https://www.youtube.com/embed/ik0LK8FWCbk?si=6Sta1UCKH83C7gBJ',
+
+    caption:'Youth Community | August 7, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'My God and His Money',
+      description: 'For where your treasure is, there will your heart be also. (Luke 12:34)',
+      image:
+        '/newsletter/message/04_money.jpg',
+    },
+  
+        content1: `
+<article>
+
+
+</article>
+        `
+
+        },
+        
          {
        id: 22,
     slug: 'spiritually-minded',
