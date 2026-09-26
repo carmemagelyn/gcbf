@@ -1,8 +1,6 @@
 
 export const newsletter = [
      
-
-/*
     {
      id: 25,
     slug: 'almost-is-not-enough',
@@ -181,7 +179,6 @@ export const newsletter = [
         `
 
         },
-  */
  {
      id: 24,
     slug: 'lord-do-you-remember',
@@ -285,7 +282,7 @@ export const newsletter = [
 
     title: 'My God and His Money',
 
-    excerpt: ' For where your treasure is, there will your heart be also. (Luke 12:34)',
+    excerpt: 'The way we handle our money is a reflection of who God is in our lives, who we are as stewards and how we worship Him. (Luke 12:34)',
 
     date: 'August 7, 2026',
 
@@ -303,7 +300,7 @@ export const newsletter = [
 
     seo: {
       title: 'My God and His Money',
-      description: 'For where your treasure is, there will your heart be also. (Luke 12:34)',
+      description: 'The way we handle our money is a reflection of who God is in our lives, who we are as stewards and how we worship Him. (Luke 12:34)',
       image:
         '/newsletter/message/04_money.jpg',
     },
