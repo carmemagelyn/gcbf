@@ -7,7 +7,7 @@ export const newsletter = [
 
     title: 'Almost is Not Enough',
 
-    excerpt: 'Then Agrippa said unto Paul, Almost thou persuadest me to be a Christian. (Acts 26:28)',
+    excerpt: 'The tragedy of almost.',
 
     date: 'September 26, 2026',
 
@@ -23,7 +23,7 @@ export const newsletter = [
 
     seo: {
       title: 'Almost is Not Enough',
-      description: '“Then Agrippa said unto Paul, Almost thou persuadest me to be a Christian.” (Acts 26:28)',
+      description: 'The tragedy of almost.',
       image:
         '/newsletter/02_letgo/not.jpg',
     },
@@ -35,7 +35,7 @@ export const newsletter = [
             <article>
 
         
-
+<p style="color:#9A3F3F;font-weight:500;">“Then Agrippa said unto Paul, Almost thou persuadest me to be a Christian.” (Acts 26:28)</p>
            
 
             <p>
