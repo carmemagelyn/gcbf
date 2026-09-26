@@ -281,7 +281,7 @@ export const newsletter = [
 
     {
        id: 22,
-    slug: 'keep-your-heart-from-red-flags',
+    slug: 'my-god-and-his-money',
 
     title: 'My God and His Money',
 
