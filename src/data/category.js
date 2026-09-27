@@ -39,7 +39,7 @@ export const newsletter = [
            
 
             <p>
-            Agrippa II therefore grew up surrounded by power, politics, Judaism, and the events surrounding the early Christian movement. He was familiar with Jewish customs, religious matters, and the controversies surrounding the followers of Jesus. He was not someone who knew nothing about God or the events taking place around him. He already knew much about the things Paul was talking about.
+            Agrippa II grew up surrounded by power, politics, Judaism, and the events surrounding the early Christian movement. He was familiar with Jewish customs, religious matters, and the controversies surrounding the followers of Jesus. He was not someone who knew nothing about God or the events taking place around him. He already knew much about the things Paul was talking about.
             </p>
 
             <p>
