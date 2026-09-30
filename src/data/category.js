@@ -290,7 +290,7 @@ export const newsletter = [
 
     authorImage: '/newsletter/author/john-louie-berdejo.jpg',
 
-    coverphoto: '/newsletter/message/03_faith.jpg',
+    coverphoto: '/newsletter/message/04_suffer.jpg',
     
     video:'https://www.youtube.com/embed/VAsf8FflcSI?si=ufeSCZU7xWgtiDlF',
 
@@ -302,7 +302,7 @@ export const newsletter = [
       title: 'Glory in Sufferings',
       description: 'God is soveriegn over our sufferings.',
       image:
-        '/newsletter/message/03_faith.jpg',
+        '/newsletter/message/04_suffer.jpg',
     },
   
         content1: `
