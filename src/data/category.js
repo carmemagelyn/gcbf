@@ -276,43 +276,7 @@ export const newsletter = [
 
         },
 
-         {
-       id: 22,
-    slug: 'glory-in-sufferings',
-
-    title: 'Glory in Sufferings',
-
-    excerpt: 'God is soveriegn over our sufferings.',
-
-    date: 'August 9, 2026',
-
-    author: 'Pastor John Louie Berdejo',
-
-    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
-
-    coverphoto: '/newsletter/message/04_suffer.jpg',
-    
-    video:'https://www.youtube.com/embed/VAsf8FflcSI?si=ufeSCZU7xWgtiDlF',
-
-    caption:'Worship Service | August 9, 2026',
-
-    type: 'message',
-
-    seo: {
-      title: 'Glory in Sufferings',
-      description: 'God is soveriegn over our sufferings.',
-      image:
-        '/newsletter/message/04_suffer.jpg',
-    },
-  
-        content1: `
-<article>
-
-
-</article>
-        `
-
-        },
+         
 
     {
        id: 22,
