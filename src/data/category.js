@@ -181,43 +181,7 @@ export const newsletter = [
 
         },
 
-        {
-       id: 22,
-    slug: 'usapang-pera',
-
-    title: "Usapang Pera (Let's Talk About Money)",
-
-    excerpt: "We should do everything for the glory of God, because after all, the money we work hard for comes from Him.",
-
-    date: 'August 5, 2026',
-
-    author: 'Pastor John Joseph Tabuena',
-
-    authorImage: '/newsletter/author/joseph-tabuena.jpg',
-
-    coverphoto: '/newsletter/message/04_money.jpg',
-    
-    video:'https://www.youtube.com/embed/1giTQy_0frs?si=dAXxsgZeVDQ9skIN',
-
-    caption:'Youth Community | August 5, 2026',
-
-    type: 'message',
-
-    seo: {
-      title: 'Usapang Pera (Let\'s Talk About Money)',
-      description: "We should do everything for the glory of God, because after all, the money we work hard for comes from Him.",
-      image:
-        '/newsletter/message/04_money.jpg',
-    },
-  
-        content1: `
-<article>
-
-
-</article>
-        `
-
-        },
+      
  {
      id: 24,
     slug: 'lord-do-you-remember',
@@ -311,6 +275,44 @@ export const newsletter = [
 <br>
 </div>
         </article>
+        `
+
+        },
+
+          {
+       id: 22,
+    slug: 'usapang-pera',
+
+    title: "Usapang Pera (Let's Talk About Money)",
+
+    excerpt: "We should do everything for the glory of God, because after all, the money we work hard for comes from Him.",
+
+    date: 'August 14, 2026',
+
+    author: 'Pastor John Joseph Tabuena',
+
+    authorImage: '/newsletter/author/joseph-tabuena.jpg',
+
+    coverphoto: '/newsletter/message/04_money.jpg',
+    
+    video:'https://www.youtube.com/embed/1giTQy_0frs?si=dAXxsgZeVDQ9skIN',
+
+    caption:'Youth Community | August 14, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'Usapang Pera (Let\'s Talk About Money)',
+      description: "We should do everything for the glory of God, because after all, the money we work hard for comes from Him.",
+      image:
+        '/newsletter/message/04_money.jpg',
+    },
+  
+        content1: `
+<article>
+
+
+</article>
         `
 
         },
