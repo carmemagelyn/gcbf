@@ -279,6 +279,44 @@ export const newsletter = [
 
         },
 
+        {
+       id: 22,
+    slug: 'glory-in-sufferings',
+
+    title: 'God\'s Sovereignty & Security',
+
+    excerpt: 'There are things that we can see in sufferings that we can never see when days are just fine.',
+
+    date: 'August 16, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/message/04_suffer.jpg',
+    
+    video:'https://www.youtube.com/embed/_oxnifKsh-s?si=ayBCFaPQ0aqJkkJ4',
+
+    caption:'Worship Service | August 16, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'God\'s Sovereignty & Security',
+      description: 'There are things that we can see in sufferings that we can never see when days are just fine',
+      image:
+        '/newsletter/message/04_suffer.jpg',
+    },
+  
+        content1: `
+<article>
+
+
+</article>
+        `
+
+        },
+
           {
        id: 22,
     slug: 'usapang-pera',
@@ -287,7 +325,7 @@ export const newsletter = [
 
     excerpt: "We should do everything for the glory of God, because after all, the money we work hard for comes from Him.",
 
-    date: 'August 14, 2026',
+    date: 'August 13, 2026',
 
     author: 'Pastor John Joseph Tabuena',
 
@@ -297,7 +335,7 @@ export const newsletter = [
     
     video:'https://www.youtube.com/embed/1giTQy_0frs?si=dAXxsgZeVDQ9skIN',
 
-    caption:'Youth Community | August 14, 2026',
+    caption:'Youth Community | August 13, 2026',
 
     type: 'message',
 
