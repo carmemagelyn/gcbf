@@ -204,7 +204,7 @@ export const newsletter = [
     type: 'message',
 
     seo: {
-      title: 'Usapang Pera',
+      title: 'Usapang Pera (Let\'s Talk About Money)',
       description: "Money matters and What matters most",
       image:
         '/newsletter/message/04_money.jpg',
