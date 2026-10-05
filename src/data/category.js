@@ -1,5 +1,6 @@
 
 export const newsletter = [
+
      
     {
      id: 25,
@@ -176,6 +177,44 @@ export const newsletter = [
 
 
         </article>
+        `
+
+        },
+
+        {
+       id: 22,
+    slug: 'usapang-pera',
+
+    title: "Usapang Pera (Let's Talk About Money)",
+
+    excerpt: "Money matters and What matters most",
+
+    date: 'August 5, 2026',
+
+    author: 'Pastor John Joseph Tabuena',
+
+    authorImage: '/newsletter/author/joseph-tabuena.jpg',
+
+    coverphoto: '/newsletter/message/04_money.jpg',
+    
+    video:'https://www.youtube.com/embed/1giTQy_0frs?si=dAXxsgZeVDQ9skIN',
+
+    caption:'Youth Community | August 5, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'Usapang Pera',
+      description: "Money matters and What matters most",
+      image:
+        '/newsletter/message/04_money.jpg',
+    },
+  
+        content1: `
+<article>
+
+
+</article>
         `
 
         },
