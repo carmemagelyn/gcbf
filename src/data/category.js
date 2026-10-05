@@ -187,7 +187,7 @@ export const newsletter = [
 
     title: "Usapang Pera (Let's Talk About Money)",
 
-    excerpt: "Money matters and What matters most",
+    excerpt: "We should do everything for the glory of God, because after all, the money we work hard for comes from Him.",
 
     date: 'August 5, 2026',
 
@@ -205,7 +205,7 @@ export const newsletter = [
 
     seo: {
       title: 'Usapang Pera (Let\'s Talk About Money)',
-      description: "Money matters and What matters most",
+      description: "We should do everything for the glory of God, because after all, the money we work hard for comes from Him.",
       image:
         '/newsletter/message/04_money.jpg',
     },
