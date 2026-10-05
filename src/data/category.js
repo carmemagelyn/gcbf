@@ -281,7 +281,7 @@ export const newsletter = [
 
         {
        id: 22,
-    slug: 'glory-in-sufferings',
+    slug: 'god-sovereignty-and-security',
 
     title: 'God\'s Sovereignty & Security',
 
