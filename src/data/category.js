@@ -323,7 +323,7 @@ export const newsletter = [
 
     title: 'Glory in Sufferings',
 
-    excerpt: 'God is soveriegn over our sufferings.',
+    excerpt: 'God is sovereign over our sufferings.',
 
     date: 'August 9, 2026',
 
@@ -341,7 +341,7 @@ export const newsletter = [
 
     seo: {
       title: 'Glory in Sufferings',
-      description: 'God is soveriegn over our sufferings.',
+      description: 'God is sovereign over our sufferings.',
       image:
         '/newsletter/message/04_suffer.jpg',
     },
