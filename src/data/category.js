@@ -1,6 +1,42 @@
 
 export const newsletter = [
+ {
+       id: 22,
+    slug: 'a-fulfilled-life',
 
+    title: 'A Fulfilled Life',
+
+    excerpt: 'True fulfillment comes when we empty ourselves for Christ, surrender to His will and follow Him.',
+
+    date: 'October 1, 2026',
+
+    author: 'Pastor John Louie Berdejo',
+
+    authorImage: '/newsletter/author/john-louie-berdejo.jpg',
+
+    coverphoto: '/newsletter/02_letgo/fill.jpg',
+    
+    video:'https://www.youtube.com/embed/9bUir84sSNo?si=hhW0fI92LFhfVT9L',
+
+    caption:'Youth Community | October 1, 2026',
+
+    type: 'message',
+
+    seo: {
+      title: 'A Fulfilled Life',
+      description: 'True fulfillment comes when we empty ourselves for Christ, surrender to His will and follow Him.',
+      image:
+        '/newsletter/02_letgo/fill.jpg',
+    },
+  
+        content1: `
+<article>
+
+
+</article>
+        `
+
+        },
      
     {
      id: 25,
