@@ -14,7 +14,7 @@ export const newsletter = [
 
     authorImage: '/newsletter/author/john-louie-berdejo.jpg',
 
-    coverphoto: '/newsletter/02_letgo/fill.jpg',
+    coverphoto: '/newsletter/02_letgo/cup.jpg',
     
     video:'https://www.youtube.com/embed/9bUir84sSNo?si=hhW0fI92LFhfVT9L',
 
@@ -26,7 +26,7 @@ export const newsletter = [
       title: 'A Fulfilled Life',
       description: 'True fulfillment comes when we empty ourselves for Christ, surrender to His will and follow Him.',
       image:
-        '/newsletter/02_letgo/fill.jpg',
+        '/newsletter/02_letgo/cup.jpg',
     },
   
         content1: `
